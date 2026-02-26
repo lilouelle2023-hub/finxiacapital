@@ -307,12 +307,8 @@ export default function AboutPage() {
                 data-testid={`founder-card-${index}`}
               >
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-slate-200">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="w-20 h-20 bg-slate-900 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-serif text-2xl">{member.initials}</span>
                   </div>
                   <div>
                     <h3 className="font-serif text-2xl mb-1">{member.name}</h3>
