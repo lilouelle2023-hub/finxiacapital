@@ -309,7 +309,7 @@ const translations = {
       founder1Highlight2: 'Ancien PDG de K&B',
       founder1Highlight3: '25+ ans dans l\'investissement immobilier',
       founder2Name: 'Lila Benhammou',
-      founder2Role: 'Directrice des Investissements (CIO)',
+      founder2Role: 'Co-Fondatrice & Directrice des Investissements (CIO)',
       founder2Bio: 'Serial entrepreneur avec une expertise approfondie dans les technologies émergentes, l\'intelligence artificielle et la finance quantitative. Combine un solide parcours financier avec des stratégies d\'investissement innovantes. Apporte des approches novatrices à la gestion d\'actifs et à l\'optimisation de portefeuille.',
       founder2Highlight1: 'Serial entrepreneur en Tech & IA',
       founder2Highlight2: 'Solide parcours en finance quantitative',
