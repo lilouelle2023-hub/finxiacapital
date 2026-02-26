@@ -1,0 +1,189 @@
+{
+  "identity": {
+    "brand_name": "FINXIA CAPITAL",
+    "brand_values": [
+      "Institutional Solidity",
+      "Investment Discipline",
+      "Long-term Vision",
+      "Demanding Governance",
+      "Technical Expertise"
+    ],
+    "tone": "Sober, Structured, Institutional, International, Confident",
+    "target_audience": "Institutional investors, Family Offices, HNWIs",
+    "theme_mode": "light"
+  },
+  "design_system": {
+    "colors": {
+      "primary": {
+        "DEFAULT": "#0F172A",
+        "foreground": "#FFFFFF",
+        "description": "Deep Blue / Slate 900 - Main brand color, used for headers, footers, primary actions"
+      },
+      "secondary": {
+        "DEFAULT": "#334155",
+        "foreground": "#FFFFFF",
+        "description": "Charcoal / Slate 700 - Subheadings, secondary text"
+      },
+      "accent": {
+        "DEFAULT": "#A16207",
+        "foreground": "#FFFFFF",
+        "description": "Bronze / Yellow 700 - Subtle accents, lines, active states. NOT for main buttons"
+      },
+      "background": {
+        "DEFAULT": "#FFFFFF",
+        "secondary": "#F8FAFC",
+        "description": "White and very light slate for sections. Ample whitespace."
+      },
+      "text": {
+        "primary": "#0F172A",
+        "secondary": "#475569",
+        "muted": "#94A3B8"
+      }
+    },
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "light": 300,
+        "normal": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl lg:text-6xl tracking-tight leading-tight",
+        "h2": "text-3xl md:text-4xl tracking-tight leading-snug",
+        "h3": "text-2xl md:text-3xl tracking-normal",
+        "body": "text-base md:text-lg leading-relaxed text-slate-600",
+        "small": "text-sm text-slate-500",
+        "overline": "text-xs font-bold uppercase tracking-[0.2em] text-bronze-600"
+      }
+    },
+    "spacing": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "section_padding": "py-20 md:py-32",
+      "component_padding": "p-6 md:p-8",
+      "grid_gap": "gap-8 md:gap-12"
+    },
+    "radius": {
+      "default": "rounded-sm",
+      "card": "rounded-none",
+      "button": "rounded-sm"
+    },
+    "shadows": {
+      "card": "shadow-[0_4px_20px_-2px_rgba(0,0,0,0.1)]",
+      "hover": "shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)]",
+      "dropdown": "shadow-xl border border-slate-100"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-slate-900 text-white hover:bg-slate-800 rounded-sm px-8 py-3 text-sm font-medium tracking-wide transition-all duration-300",
+      "secondary": "bg-transparent border border-slate-200 text-slate-900 hover:border-slate-900 rounded-sm px-8 py-3 text-sm font-medium tracking-wide transition-all duration-300",
+      "link": "text-slate-900 hover:text-bronze-600 underline-offset-4 hover:underline transition-colors"
+    },
+    "cards": {
+      "strategy": "bg-white p-8 border-t-2 border-transparent hover:border-bronze-600 transition-all duration-300 group hover:-translate-y-1 h-full",
+      "feature": "bg-slate-50 p-8 h-full"
+    },
+    "navigation": {
+      "wrapper": "fixed w-full z-50 transition-all duration-300",
+      "scrolled": "bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100",
+      "transparent": "bg-transparent",
+      "link": "text-sm font-medium tracking-wide hover:text-bronze-600 transition-colors"
+    },
+    "map": {
+      "interactive": "Use react-simple-maps or custom SVG. Countries: France, Germany, Benelux, Spain, Italy. Highlight on hover. Default fill: Slate-200. Hover fill: Bronze-600/20. Stroke: White."
+    }
+  },
+  "layout_strategies": {
+    "homepage": {
+      "hero": "Full height (min-h-[80vh]). Split layout or centered institutional message. Background: Subtle architectural texture or clean white with heavy typography.",
+      "grid": "Bento Grid Mode A (Asymmetrical) for Strategy preview.",
+      "approach": "Interactive Map section. Clean, ample whitespace."
+    },
+    "strategies": {
+      "layout": "Grid of 4 cards. High imagery. 2x2 grid on desktop.",
+      "details": "Modal or expanded view for details."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1761916119939-166c5fd549b8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBldXJvcGVhbiUyMGFyY2hpdGVjdHVyZSUyMHNreXNjcmFwZXJzJTIwYmx1ZSUyMHNreXxlbnwwfHx8fDE3NzIxMTgwNDh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Modern Glass Skyscrapers Blue Sky",
+        "usage": "Homepage Hero Background (with overlay)"
+      },
+      "strategy_logistics": {
+        "url": "https://images.unsplash.com/photo-1766793110924-98e05b48eadc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzcyMTE4MDI2fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Modern Industrial Logistics Building",
+        "usage": "Strategy Card: Logistics Core & Value-Add"
+      },
+      "strategy_hospitality": {
+        "url": "https://images.unsplash.com/photo-1760453578577-20197cb91839?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBldXJvcGVhbiUyMGFyY2hpdGVjdHVyZSUyMHNreXNjcmFwZXJzJTIwYmx1ZSUyMHNreXxlbnwwfHx8fDE3NzIxMTgwNDh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Geometric Modern Facade",
+        "usage": "Strategy Card: Hospitality Premium (Abstract representation)"
+      },
+      "strategy_residential": {
+        "url": "https://images.unsplash.com/photo-1759904911949-afb024e03656?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBldXJvcGVhbiUyMGFyY2hpdGVjdHVyZSUyMHNreXNjcmFwZXJzJTIwYmx1ZSUyMHNreXxlbnwwfHx8fDE3NzIxMTgwNDh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Tall Residential Tower",
+        "usage": "Strategy Card: Residential / Flexible Living"
+      },
+      "strategy_capital": {
+        "url": "https://images.unsplash.com/photo-1770823207145-831fc065366f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBldXJvcGVhbiUyMGFyY2hpdGVjdHVyZSUyMHNreXNjcmFwZXJzJTIwYmx1ZSUyMHNreXxlbnwwfHx8fDE3NzIxMTgwNDh8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "City Skyline River Dusk",
+        "usage": "Strategy Card: Capital Opportunités"
+      },
+      "about_governance": {
+        "url": "https://images.unsplash.com/photo-1771530789155-b1f03fbf82b5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzcyMTE4MDI2fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Clean Interior Structure",
+        "usage": "About Us / Governance Section"
+      }
+    },
+    "icons": "Phosphor Icons (Light weight) or Lucide React (Stroke 1.5)",
+    "logo_placeholder": "Use text 'FINXIA CAPITAL' in Playfair Display Bold if image not provided."
+  },
+  "content_guidelines": {
+    "language": "Bilingual (FR/EN). Default to French if not specified, but provide Toggle.",
+    "restrictions": [
+      "NO IRR/MOIC figures",
+      "NO Aggressive commercial language",
+      "NO 'Sign up now' buttons (Use 'Contact Us' or 'Inquire')"
+    ],
+    "key_phrases": [
+      "Building Resilient Value Across Cycles",
+      "Institutional Solidity",
+      "Controlled Entrepreneurial Approach"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' and 'clsx' 'tailwind-merge' for utility.",
+    "Use 'Playfair Display' from Google Fonts via next/font or import in CSS.",
+    "Use 'Manrope' from Google Fonts.",
+    "Implement a LanguageContext to toggle between FR/EN text strings.",
+    "Ensure the 'European Approach' map is interactive (hover states for FR, DE, BE/NL/LU, ES, IT).",
+    "Contact form must point to 'contact@finxiacapital.com' (mailto behavior or simulated form submission).",
+    "Use the provided image URLs strictly. Do not search for new images unless absolutely necessary.",
+    "The footer must include legal notices placeholder."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts"
+  ]
+}
