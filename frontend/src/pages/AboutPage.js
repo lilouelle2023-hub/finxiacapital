@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { CheckCircle, Users, FileCheck, BarChart3, ShieldCheck } from 'lucide-react';
+import { CheckCircle, Users, FileCheck, BarChart3, ShieldCheck, Award, Briefcase, Lightbulb } from 'lucide-react';
 
 export default function AboutPage() {
   const { t } = useLanguage();
