@@ -129,6 +129,82 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Founding Team Section */}
+      <section className="py-24 md:py-32 bg-white" data-testid="team-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="overline mb-4">{t('about.teamTitle')}</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">{t('about.teamTitle')}</h2>
+            <div className="section-divider mx-auto mb-8" />
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+              {t('about.teamSubtitle')}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Jean-Pierre Véron */}
+            <div className="bg-slate-50 p-8 md:p-10" data-testid="founder-card-jpv">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center">
+                  <span className="text-white font-serif text-xl">JPV</span>
+                </div>
+                <div>
+                  <h3 className="font-serif text-2xl">{t('about.founder1Name')}</h3>
+                  <p className="text-amber-700 font-medium">{t('about.founder1Role')}</p>
+                </div>
+              </div>
+              <p className="text-slate-600 leading-relaxed mb-6">
+                {t('about.founder1Bio')}
+              </p>
+              <div className="space-y-3 border-t border-slate-200 pt-6">
+                <div className="flex items-center gap-3">
+                  <Award className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                  <span className="text-slate-700 text-sm">{t('about.founder1Highlight1')}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Briefcase className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                  <span className="text-slate-700 text-sm">{t('about.founder1Highlight2')}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                  <span className="text-slate-700 text-sm">{t('about.founder1Highlight3')}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Lila Benhammou */}
+            <div className="bg-slate-50 p-8 md:p-10" data-testid="founder-card-lila">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center">
+                  <span className="text-white font-serif text-xl">LB</span>
+                </div>
+                <div>
+                  <h3 className="font-serif text-2xl">{t('about.founder2Name')}</h3>
+                  <p className="text-amber-700 font-medium">{t('about.founder2Role')}</p>
+                </div>
+              </div>
+              <p className="text-slate-600 leading-relaxed mb-6">
+                {t('about.founder2Bio')}
+              </p>
+              <div className="space-y-3 border-t border-slate-200 pt-6">
+                <div className="flex items-center gap-3">
+                  <Lightbulb className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                  <span className="text-slate-700 text-sm">{t('about.founder2Highlight1')}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <BarChart3 className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                  <span className="text-slate-700 text-sm">{t('about.founder2Highlight2')}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-5 h-5 text-amber-700 flex-shrink-0" />
+                  <span className="text-slate-700 text-sm">{t('about.founder2Highlight3')}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
