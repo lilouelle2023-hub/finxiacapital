@@ -57,7 +57,6 @@ export default function AboutPage() {
         { icon: Briefcase, text: t('about.founder1Highlight2') },
         { icon: CheckCircle, text: t('about.founder1Highlight3') },
       ],
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop&crop=face'
     },
     {
       initials: 'LB',
@@ -69,7 +68,6 @@ export default function AboutPage() {
         { icon: BarChart3, text: t('about.founder2Highlight2') },
         { icon: CheckCircle, text: t('about.founder2Highlight3') },
       ],
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face'
     },
   ];
 
