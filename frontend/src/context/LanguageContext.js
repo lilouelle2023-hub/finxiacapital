@@ -72,7 +72,7 @@ const translations = {
       founder1Highlight2: 'Former CEO of K&B',
       founder1Highlight3: '25+ years in real estate investment',
       founder2Name: 'Lila Benhammou',
-      founder2Role: 'Chief Investment Officer',
+      founder2Role: 'Co-Founder & Chief Investment Officer',
       founder2Bio: 'Serial entrepreneur with deep expertise in emerging technologies, artificial intelligence, and quantitative finance. Combines a strong financial background with forward-thinking investment strategies. Brings innovative approaches to asset management and portfolio optimization.',
       founder2Highlight1: 'Serial entrepreneur in Tech & AI',
       founder2Highlight2: 'Strong quantitative finance background',
