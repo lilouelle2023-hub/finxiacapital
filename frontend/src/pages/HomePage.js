@@ -46,7 +46,7 @@ export default function HomePage() {
               <Link
                 to="/contact"
                 data-testid="hero-cta-contact"
-                className="btn-secondary border-white/30 text-white hover:border-white hover:bg-white/10"
+                className="inline-flex items-center justify-center px-8 py-3 text-sm font-medium tracking-wide border border-white/40 text-white hover:border-white hover:bg-white/10 transition-colors"
               >
                 {t('hero.ctaSecondary')}
               </Link>
