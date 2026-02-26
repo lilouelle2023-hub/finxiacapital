@@ -62,6 +62,21 @@ const translations = {
       gov3Text: 'Regular portfolio reviews and reporting',
       gov4Title: 'Risk Management',
       gov4Text: 'Continuous risk assessment and mitigation',
+      // Team section
+      teamTitle: 'Founding Team',
+      teamSubtitle: 'Experienced Leadership with Proven Track Records',
+      founder1Name: 'Jean-Pierre Véron',
+      founder1Role: 'Founder & Chairman',
+      founder1Bio: 'Seasoned real estate investment professional with over 25 years of experience. FINXIA CAPITAL represents his third institutional fund dedicated to European real estate. Former CEO of K&B, a leading pan-European real estate investment platform. Recognized for his disciplined approach to value creation and institutional governance.',
+      founder1Highlight1: 'Third institutional real estate fund',
+      founder1Highlight2: 'Former CEO of K&B',
+      founder1Highlight3: '25+ years in real estate investment',
+      founder2Name: 'Lila Benhammou',
+      founder2Role: 'Chief Investment Officer',
+      founder2Bio: 'Serial entrepreneur with deep expertise in emerging technologies, artificial intelligence, and quantitative finance. Combines a strong financial background with forward-thinking investment strategies. Brings innovative approaches to asset management and portfolio optimization.',
+      founder2Highlight1: 'Serial entrepreneur in Tech & AI',
+      founder2Highlight2: 'Strong quantitative finance background',
+      founder2Highlight3: 'Innovation-driven investment approach',
     },
     // Strategies
     strategies: {
