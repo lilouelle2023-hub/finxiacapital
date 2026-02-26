@@ -265,6 +265,21 @@ const translations = {
       gov3Text: 'Revues régulières du portefeuille et reporting',
       gov4Title: 'Gestion des Risques',
       gov4Text: 'Évaluation continue des risques et atténuation',
+      // Team section
+      teamTitle: 'Équipe Fondatrice',
+      teamSubtitle: 'Un Leadership Expérimenté aux Parcours Éprouvés',
+      founder1Name: 'Jean-Pierre Véron',
+      founder1Role: 'Fondateur & Président',
+      founder1Bio: 'Professionnel chevronné de l\'investissement immobilier avec plus de 25 ans d\'expérience. FINXIA CAPITAL représente son troisième fonds institutionnel dédié à l\'immobilier européen. Ancien PDG de K&B, plateforme d\'investissement immobilier pan-européenne de premier plan. Reconnu pour son approche disciplinée de la création de valeur et de la gouvernance institutionnelle.',
+      founder1Highlight1: 'Troisième fonds immobilier institutionnel',
+      founder1Highlight2: 'Ancien PDG de K&B',
+      founder1Highlight3: '25+ ans dans l\'investissement immobilier',
+      founder2Name: 'Lila Benhammou',
+      founder2Role: 'Directrice des Investissements (CIO)',
+      founder2Bio: 'Serial entrepreneur avec une expertise approfondie dans les technologies émergentes, l\'intelligence artificielle et la finance quantitative. Combine un solide parcours financier avec des stratégies d\'investissement innovantes. Apporte des approches novatrices à la gestion d\'actifs et à l\'optimisation de portefeuille.',
+      founder2Highlight1: 'Serial entrepreneur en Tech & IA',
+      founder2Highlight2: 'Solide parcours en finance quantitative',
+      founder2Highlight3: 'Approche d\'investissement axée sur l\'innovation',
     },
     // Strategies
     strategies: {
