@@ -48,7 +48,7 @@ export const Navigation = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/fd5q9ulh_image.png" 
               alt="FINXIA CAPITAL" 
-              className="h-12 w-auto"
+              className="h-16 md:h-20 w-auto"
             />
           </Link>
 
