@@ -69,13 +69,6 @@ export default function AboutPage() {
     },
   ];
 
-  const investmentTeam = [
-    { initials: 'MD', name: 'Marc Dubois', role: language === 'fr' ? 'Directeur Immobilier' : 'Head of Real Estate' },
-    { initials: 'SC', name: 'Sophie Chen', role: language === 'fr' ? 'Directrice Acquisitions' : 'Director, Acquisitions' },
-    { initials: 'PL', name: 'Philippe Laurent', role: language === 'fr' ? 'Directeur Asset Management' : 'Head of Asset Management' },
-    { initials: 'AR', name: 'Anna Rossi', role: language === 'fr' ? 'Relations Investisseurs' : 'Investor Relations' },
-  ];
-
   return (
     <div data-testid="about-page" className="pt-20">
       <Helmet>
@@ -253,25 +246,14 @@ export default function AboutPage() {
             ))}
           </div>
 
-          {/* Investment Team */}
-          <div className="mt-16">
-            <h3 className="font-serif text-2xl text-center mb-10">
-              {language === 'fr' ? 'Équipe d\'Investissement' : 'Investment Team'}
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {investmentTeam.map((member, index) => (
-                <div 
-                  key={index}
-                  className="bg-white p-6 text-center card-hover"
-                  data-testid={`team-member-${index}`}
-                >
-                  <div className="w-16 h-16 bg-[#1E2A3A] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white font-serif text-lg">{member.initials}</span>
-                  </div>
-                  <h4 className="font-medium text-slate-900">{member.name}</h4>
-                  <p className="text-sm text-[#C45A3B]">{member.role}</p>
-                </div>
-              ))}
+          {/* Accompanying Team */}
+          <div className="mt-16 text-center">
+            <div className="bg-white p-10 max-w-2xl mx-auto">
+              <p className="text-slate-600 text-lg leading-relaxed">
+                {language === 'fr' 
+                  ? 'Accompagnés par une équipe de professionnels spécialisés par domaine : immobilier, finance, juridique, technologie et opérations.'
+                  : 'Supported by a team of professionals specialized by domain: real estate, finance, legal, technology and operations.'}
+              </p>
             </div>
           </div>
         </div>
