@@ -67,9 +67,6 @@ export default function ContactPage() {
             <p className="overline mb-4">{t('nav.contact')}</p>
             <h1 className="font-serif text-4xl md:text-5xl mb-6">{t('contact.title')}</h1>
             <div className="section-divider mb-8" />
-            <p className="text-slate-600 text-xl leading-relaxed">
-              {t('contact.subtitle')}
-            </p>
           </div>
         </div>
       </section>
