@@ -45,7 +45,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Rotation sélective après stabilisation opérationnelle' : 'Selective rotation after operational stabilization',
       ],
       markets: 'Paris · Barcelone · Madrid · Milan',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80',
     },
     {
       icon: Home,
