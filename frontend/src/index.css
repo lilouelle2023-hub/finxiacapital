@@ -296,3 +296,14 @@ input:focus, textarea:focus, select:focus {
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide Emergent badge */
+[href*="emergent"],
+[class*="emergent"],
+iframe[src*="emergent"],
+div[style*="position: fixed"][style*="bottom"],
+a[target="_blank"][style*="position: fixed"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
