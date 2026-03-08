@@ -24,7 +24,7 @@ export const Navigation = () => {
   const navLinks = [
     { to: '/about', label: t('nav.about') },
     { to: '/strategies', label: t('nav.strategies') },
-    { to: '/risk-management', label: t('nav.riskManagement') },
+    { to: '/governance', label: t('nav.governance') },
     { to: '/european-approach', label: t('nav.europeanApproach') },
     { to: '/investors', label: t('nav.investors') },
     { to: '/contact', label: t('nav.contact') },
@@ -46,9 +46,9 @@ export const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" data-testid="nav-logo">
             <img 
-              src="https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/fd5q9ulh_image.png" 
+              src="https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/wllq2664_finxia_LOGO_DEFINITIF.png" 
               alt="FINXIA CAPITAL" 
-              className="h-16 md:h-20 w-auto"
+              className="h-14 md:h-16 w-auto"
             />
           </Link>
 
@@ -61,9 +61,9 @@ export const Navigation = () => {
                 data-testid={`nav-link-${link.to.slice(1)}`}
                 className={`text-sm font-medium tracking-wide transition-colors link-hover ${
                   isScrolled || !isHomePage
-                    ? 'text-slate-700 hover:text-amber-700'
+                    ? 'text-slate-700 hover:text-[#C45A3B]'
                     : 'text-white/90 hover:text-white'
-                } ${location.pathname === link.to ? 'text-amber-700' : ''}`}
+                } ${location.pathname === link.to ? 'text-[#C45A3B]' : ''}`}
               >
                 {link.label}
               </Link>

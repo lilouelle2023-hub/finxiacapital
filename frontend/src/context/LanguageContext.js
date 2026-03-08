@@ -6,7 +6,7 @@ const translations = {
     nav: {
       about: 'About',
       strategies: 'Strategies',
-      riskManagement: 'Risk Management',
+      governance: 'Governance & Risks',
       europeanApproach: 'European Approach',
       investors: 'Investors',
       contact: 'Contact',
@@ -253,7 +253,7 @@ const translations = {
     nav: {
       about: 'À Propos',
       strategies: 'Stratégies',
-      riskManagement: 'Gestion des Risques',
+      governance: 'Gouvernance & Risques',
       europeanApproach: 'Approche Européenne',
       investors: 'Investisseurs',
       contact: 'Contact',

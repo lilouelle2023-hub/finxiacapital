@@ -207,7 +207,7 @@ export default function ContactPage() {
               <div className="bg-slate-50 p-8">
                 <div className="mb-8">
                   <div className="flex items-center gap-3 mb-4">
-                    <MapPin className="w-5 h-5 text-amber-700" />
+                    <MapPin className="w-5 h-5 text-[#C45A3B]" />
                     <h3 className="font-serif text-lg">{t('contact.addressTitle')}</h3>
                   </div>
                   <p className="text-slate-600 text-sm">
@@ -218,12 +218,12 @@ export default function ContactPage() {
 
                 <div>
                   <div className="flex items-center gap-3 mb-4">
-                    <Mail className="w-5 h-5 text-amber-700" />
+                    <Mail className="w-5 h-5 text-[#C45A3B]" />
                     <h3 className="font-serif text-lg">{t('contact.emailTitle')}</h3>
                   </div>
                   <a 
                     href="mailto:contact@finxiacapital.com" 
-                    className="text-slate-600 text-sm hover:text-amber-700 transition-colors"
+                    className="text-slate-600 text-sm hover:text-[#C45A3B] transition-colors"
                   >
                     {t('contact.email')}
                   </a>

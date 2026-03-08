@@ -70,7 +70,7 @@ export default function EuropeanApproachPage() {
             {countries.map((country, index) => (
               <div 
                 key={country.key}
-                className="bg-slate-50 p-8 card-hover border-t-4 border-amber-700"
+                className="bg-slate-50 p-8 card-hover border-t-4 border-[#C45A3B]"
                 data-testid={`country-card-${country.key}`}
               >
                 <div className="flex items-center gap-4 mb-6">
@@ -86,7 +86,7 @@ export default function EuropeanApproachPage() {
 
                 <div className="border-t border-slate-200 pt-6 mb-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <MapPin className="w-4 h-4 text-amber-700" />
+                    <MapPin className="w-4 h-4 text-[#C45A3B]" />
                     <span className="text-sm font-medium text-slate-700">{t('europe.keyCities') || 'Villes Clés'}</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
@@ -100,7 +100,7 @@ export default function EuropeanApproachPage() {
 
                 <div>
                   <div className="flex items-center gap-2 mb-3">
-                    <Building2 className="w-4 h-4 text-amber-700" />
+                    <Building2 className="w-4 h-4 text-[#C45A3B]" />
                     <span className="text-sm font-medium text-slate-700">{t('europe.strategyFocus') || 'Stratégies'}</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
@@ -122,15 +122,15 @@ export default function EuropeanApproachPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="p-8">
-              <div className="text-5xl font-serif text-amber-700 mb-4">3</div>
+              <div className="text-5xl font-serif text-[#C45A3B] mb-4">3</div>
               <p className="text-slate-600 font-medium">{t('europe.statCountries') || 'Pays Cibles'}</p>
             </div>
             <div className="p-8">
-              <div className="text-5xl font-serif text-amber-700 mb-4">12+</div>
+              <div className="text-5xl font-serif text-[#C45A3B] mb-4">12+</div>
               <p className="text-slate-600 font-medium">{t('europe.statCities') || 'Métropoles Européennes'}</p>
             </div>
             <div className="p-8">
-              <div className="text-5xl font-serif text-amber-700 mb-4">3</div>
+              <div className="text-5xl font-serif text-[#C45A3B] mb-4">3</div>
               <p className="text-slate-600 font-medium">{t('europe.statStrategies') || 'Stratégies Immobilières'}</p>
             </div>
           </div>
@@ -150,19 +150,19 @@ export default function EuropeanApproachPage() {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-[#C45A3B] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-700">{t('europe.criteria1') || 'Marchés liquides avec profondeur institutionnelle'}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-[#C45A3B] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-700">{t('europe.criteria2') || 'Dynamique démographique et économique positive'}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-[#C45A3B] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-700">{t('europe.criteria3') || 'Cadre réglementaire stable et transparent'}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-[#C45A3B] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-700">{t('europe.criteria4') || 'Accès à des partenaires locaux de qualité'}</span>
                 </li>
               </ul>
@@ -179,10 +179,10 @@ export default function EuropeanApproachPage() {
       </section>
 
       {/* Diversification Strategy */}
-      <section className="py-24 md:py-32 bg-slate-900 text-white" data-testid="diversification-section">
+      <section className="py-24 md:py-32 bg-[#1E2A3A] text-white" data-testid="diversification-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="overline text-amber-500 mb-4">{t('europe.diversificationTitle')}</p>
+            <p className="overline text-[#C45A3B] mb-4">{t('europe.diversificationTitle')}</p>
             <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">{t('europe.diversificationTitle')}</h2>
             <div className="section-divider mx-auto mb-8" />
             <p className="text-slate-300 text-lg leading-relaxed">
