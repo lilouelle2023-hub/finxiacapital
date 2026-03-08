@@ -10,19 +10,36 @@ from typing import List, Optional
 import uuid
 from datetime import datetime, timezone
 
+# Configure logging first
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection
-mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
-
 # Create the main app without a prefix
-app = FastAPI()
+app = FastAPI(title="FINXIA Capital API")
 
 # Create a router with the /api prefix
 api_router = APIRouter(prefix="/api")
+
+# MongoDB connection - lazy initialization
+mongo_client: Optional[AsyncIOMotorClient] = None
+db = None
+
+def get_database():
+    global mongo_client, db
+    if mongo_client is None:
+        mongo_url = os.environ.get('MONGO_URL', '')
+        if mongo_url:
+            mongo_client = AsyncIOMotorClient(mongo_url, serverSelectionTimeoutMS=5000)
+            db_name = os.environ.get('DB_NAME', 'finxia_db')
+            db = mongo_client[db_name]
+            logger.info(f"MongoDB connected to database: {db_name}")
+    return db
 
 # Define Models
 class StatusCheck(BaseModel):
@@ -54,19 +71,37 @@ class ContactFormResponse(BaseModel):
     submitted_at: str
     status: str
 
-# Routes
+# Health check endpoint - simple and fast (no DB check for startup)
+@app.get("/health")
+async def root_health():
+    """Root health check for container startup"""
+    return {"status": "ok"}
+
 @api_router.get("/")
 async def root():
     return {"message": "FINXIA Capital API", "status": "operational"}
 
 @api_router.get("/health")
 async def health_check():
-    return {"status": "healthy", "service": "FINXIA Capital API"}
+    """API health check with optional DB status"""
+    try:
+        database = get_database()
+        if database is not None:
+            # Quick ping to check DB connection
+            await database.command('ping')
+            return {"status": "healthy", "service": "FINXIA Capital API", "database": "connected"}
+    except Exception as e:
+        logger.warning(f"Database health check failed: {e}")
+    return {"status": "healthy", "service": "FINXIA Capital API", "database": "not_checked"}
 
 @api_router.post("/contact", response_model=ContactFormResponse)
 async def submit_contact_form(form_data: ContactFormInput):
     """Submit contact form - stores in DB and can be forwarded to email"""
     try:
+        database = get_database()
+        if database is None:
+            raise HTTPException(status_code=503, detail="Database not available")
+            
         contact_id = str(uuid.uuid4())
         submitted_at = datetime.now(timezone.utc).isoformat()
         
@@ -83,7 +118,7 @@ async def submit_contact_form(form_data: ContactFormInput):
             "contact_email": "contact@finxiacapital.com"
         }
         
-        await db.contact_submissions.insert_one(doc)
+        await database.contact_submissions.insert_one(doc)
         
         return ContactFormResponse(
             id=contact_id,
@@ -96,32 +131,52 @@ async def submit_contact_form(form_data: ContactFormInput):
             submitted_at=submitted_at,
             status="submitted"
         )
+    except HTTPException:
+        raise
     except Exception as e:
-        logging.error(f"Contact form submission error: {str(e)}")
+        logger.error(f"Contact form submission error: {str(e)}")
         raise HTTPException(status_code=500, detail="Failed to submit contact form")
 
 @api_router.get("/contact", response_model=List[ContactFormResponse])
 async def get_contact_submissions():
     """Get all contact form submissions (admin endpoint)"""
-    submissions = await db.contact_submissions.find({}, {"_id": 0}).to_list(1000)
-    return submissions
+    try:
+        database = get_database()
+        if database is None:
+            return []
+        submissions = await database.contact_submissions.find({}, {"_id": 0}).sort("submitted_at", -1).to_list(100)
+        return submissions
+    except Exception as e:
+        logger.error(f"Error fetching submissions: {e}")
+        return []
 
 @api_router.post("/status", response_model=StatusCheck)
 async def create_status_check(input: StatusCheckCreate):
+    database = get_database()
+    if database is None:
+        raise HTTPException(status_code=503, detail="Database not available")
+    
     status_dict = input.model_dump()
     status_obj = StatusCheck(**status_dict)
     doc = status_obj.model_dump()
     doc['timestamp'] = doc['timestamp'].isoformat()
-    _ = await db.status_checks.insert_one(doc)
+    await database.status_checks.insert_one(doc)
     return status_obj
 
 @api_router.get("/status", response_model=List[StatusCheck])
 async def get_status_checks():
-    status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
-    for check in status_checks:
-        if isinstance(check['timestamp'], str):
-            check['timestamp'] = datetime.fromisoformat(check['timestamp'])
-    return status_checks
+    try:
+        database = get_database()
+        if database is None:
+            return []
+        status_checks = await database.status_checks.find({}, {"_id": 0}).to_list(100)
+        for check in status_checks:
+            if isinstance(check['timestamp'], str):
+                check['timestamp'] = datetime.fromisoformat(check['timestamp'])
+        return status_checks
+    except Exception as e:
+        logger.error(f"Error fetching status checks: {e}")
+        return []
 
 # Include the router in the main app
 app.include_router(api_router)
@@ -134,13 +189,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
+@app.on_event("startup")
+async def startup_event():
+    logger.info("FINXIA Capital API starting up...")
+    # Initialize database connection
+    get_database()
+    logger.info("FINXIA Capital API ready")
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
-    client.close()
+    global mongo_client
+    if mongo_client:
+        mongo_client.close()
+        logger.info("MongoDB connection closed")
