@@ -163,3 +163,4 @@ credentials.json
 *.pem
 *.key
 .credentials
+frontend-nextjs/.next/dev/cache/turbopack/e0739832/00000535.sst
