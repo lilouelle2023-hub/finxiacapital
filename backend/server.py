@@ -39,6 +39,8 @@ def get_database():
             db_name = os.environ.get('DB_NAME', 'finxia_db')
             db = mongo_client[db_name]
             logger.info(f"MongoDB connected to database: {db_name}")
+        else:
+            logger.warning("MONGO_URL not configured, database will be None")
     return db
 
 # Define Models

@@ -9,6 +9,7 @@ export default function HomePage() {
 
   const pillars = [
     { 
+      id: 'real-assets',
       icon: Shield, 
       title: language === 'fr' ? 'Actifs Réels' : 'Real Assets', 
       text: language === 'fr' 
@@ -16,6 +17,7 @@ export default function HomePage() {
         : 'Real assets remain the best ground for value creation. Datacenters, hospitality, residential — tangible foundations.'
     },
     { 
+      id: 'artificial-intelligence',
       icon: Cpu, 
       title: language === 'fr' ? 'Intelligence Artificielle' : 'Artificial Intelligence', 
       text: language === 'fr'
@@ -23,6 +25,7 @@ export default function HomePage() {
         : '18 AI agents operating in parallel at every stage of the fund lifecycle. Alpha is in augmented execution.'
     },
     { 
+      id: 'institutional-discipline',
       icon: Scale, 
       title: language === 'fr' ? 'Discipline Institutionnelle' : 'Institutional Discipline', 
       text: language === 'fr'
@@ -33,6 +36,7 @@ export default function HomePage() {
 
   const strategies = [
     {
+      id: 'titan-datacenter',
       num: '01',
       icon: Server,
       title: language === 'fr' ? 'Datacenter AI Brown-to-Green' : 'AI Datacenter Brown-to-Green',
@@ -43,6 +47,7 @@ export default function HomePage() {
       focus: 'France · Espagne · Italie'
     },
     {
+      id: 'hospitality-premium',
       num: '02',
       icon: Building,
       title: language === 'fr' ? 'Hôtellerie Premium' : 'Premium Hospitality',
@@ -53,6 +58,7 @@ export default function HomePage() {
       focus: 'Paris · Barcelone · Madrid · Milan'
     },
     {
+      id: 'residential-flex',
       num: '03',
       icon: Home,
       title: language === 'fr' ? 'Résidentiel & Flex Living' : 'Residential & Flex Living',
@@ -63,6 +69,7 @@ export default function HomePage() {
       focus: language === 'fr' ? 'Grandes Métropoles' : 'Major Metropolises'
     },
     {
+      id: 'capital-opportunities',
       num: '04',
       icon: TrendingUp,
       title: 'Capital Opportunités',
@@ -150,11 +157,11 @@ export default function HomePage() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {pillars.map((pillar, index) => (
+            {pillars.map((pillar) => (
               <div 
-                key={index}
+                key={pillar.id}
                 className="bg-slate-50 p-10 card-hover text-center"
-                data-testid={`pillar-card-${index}`}
+                data-testid={`pillar-card-${pillar.id}`}
               >
                 <div className="w-16 h-16 bg-[#C45A3B]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <pillar.icon className="w-8 h-8 text-[#C45A3B]" strokeWidth={1.5} />
@@ -184,11 +191,11 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {strategies.map((strategy, index) => (
+            {strategies.map((strategy) => (
               <div 
-                key={index}
+                key={strategy.id}
                 className="bg-white p-8 strategy-card card-hover"
-                data-testid={`strategy-preview-${index}`}
+                data-testid={`strategy-preview-${strategy.id}`}
               >
                 <div className="flex items-start gap-4 mb-4">
                   <span className="text-4xl font-serif text-[#C45A3B]">{strategy.num}</span>

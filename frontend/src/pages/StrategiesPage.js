@@ -8,6 +8,7 @@ export default function StrategiesPage() {
 
   const strategies = [
     {
+      id: 'titan-datacenter',
       icon: Server,
       num: '01',
       subtitle: 'TITAN',
@@ -28,6 +29,7 @@ export default function StrategiesPage() {
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     },
     {
+      id: 'hospitality-premium',
       icon: Building,
       num: '02',
       subtitle: language === 'fr' ? 'Rendement & Rotation' : 'Yield & Rotation',
@@ -48,6 +50,7 @@ export default function StrategiesPage() {
       image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80',
     },
     {
+      id: 'residential-flex',
       icon: Home,
       num: '03',
       subtitle: language === 'fr' ? 'Plateforme Urbaine' : 'Urban Platform',
@@ -68,6 +71,7 @@ export default function StrategiesPage() {
       image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
     },
     {
+      id: 'capital-opportunities',
       icon: TrendingUp,
       num: '04',
       subtitle: 'C.CAPITAL',
@@ -150,8 +154,8 @@ export default function StrategiesPage() {
                       {language === 'fr' ? 'Notre Approche' : 'Our Approach'}
                     </h4>
                     <ul className="space-y-3">
-                      {strategy.approach.map((item, i) => (
-                        <li key={i} className="flex items-start gap-3">
+                      {strategy.approach.map((item) => (
+                        <li key={item} className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-[#C45A3B] flex-shrink-0 mt-0.5" />
                           <span className="text-slate-600">{item}</span>
                         </li>

@@ -15,11 +15,11 @@ export const Navigation = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, []); // Empty deps is correct - we want this to run once
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
-  }, [location]);
+  }, [location]); // location is the correct dependency
 
   const navLinks = [
     { to: '/about', label: t('nav.about') },

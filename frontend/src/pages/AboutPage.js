@@ -10,28 +10,32 @@ export default function AboutPage() {
   const { language } = useLanguage();
 
   const differentiators = [
-    { 
+    {
+      id: 'hybrid-architecture',
       icon: Layers, 
       title: language === 'fr' ? 'Architecture Hybride' : 'Hybrid Architecture',
       text: language === 'fr'
         ? 'Structure multi-poches unique combinant immobilier (logistique, hôtellerie, résidentiel) avec des opportunités de capital late-stage pour des rendements amplifiés.'
         : 'Unique multi-pocket structure combining real estate (logistics, hospitality, residential) with late-stage capital opportunities for enhanced returns.'
     },
-    { 
+    {
+      id: 'tech-driven',
       icon: Brain, 
       title: language === 'fr' ? 'Avantage Technologique' : 'Tech-Driven Edge',
       text: language === 'fr'
         ? 'Infrastructure d\'agents IA propriétaires pour le sourcing, l\'optimisation de portefeuille et le suivi des risques en temps réel.'
         : 'Proprietary AI agent infrastructure for deal sourcing, portfolio optimization, and real-time risk monitoring.'
     },
-    { 
+    {
+      id: 'snowball-strategy',
       icon: Shield, 
       title: language === 'fr' ? 'Stratégie Snowball' : 'Snowball Strategy',
       text: language === 'fr'
         ? 'Mécanisme de recyclage du capital amplifiant les rendements par réinvestissement stratégique à travers les cycles.'
         : 'Capital recycling mechanism amplifying returns through strategic reinvestment across cycles.'
     },
-    { 
+    {
+      id: 'aligned-interests',
       icon: TrendingUp, 
       title: language === 'fr' ? 'Alignement des Intérêts' : 'Aligned Interests',
       text: language === 'fr'
@@ -42,6 +46,7 @@ export default function AboutPage() {
 
   const teamMembers = [
     {
+      id: 'jean-pierre-veron',
       initials: 'JPV',
       name: 'Jean-Pierre Véron',
       role: language === 'fr' ? 'Fondateur & Président' : 'Founder & Chairman',
@@ -55,6 +60,7 @@ export default function AboutPage() {
       ],
     },
     {
+      id: 'lila-benhammou',
       initials: 'LB',
       name: 'Lila Benhammou',
       role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements' : 'Co-Founder & Chief Investment Officer',
@@ -186,11 +192,11 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {differentiators.map((item, index) => (
+            {differentiators.map((item) => (
               <div 
-                key={index}
+                key={item.id}
                 className="bg-slate-50 p-8 border-t-4 border-[#C45A3B] card-hover"
-                data-testid={`differentiator-${index}`}
+                data-testid={`differentiator-${item.id}`}
               >
                 <item.icon className="w-10 h-10 text-[#C45A3B] mb-6" strokeWidth={1.5} />
                 <h3 className="font-serif text-xl mb-4">{item.title}</h3>
@@ -216,11 +222,11 @@ export default function AboutPage() {
 
           {/* Founders */}
           <div className="grid md:grid-cols-2 gap-12 mb-16">
-            {teamMembers.map((member, index) => (
+            {teamMembers.map((member) => (
               <div 
-                key={index}
+                key={member.id}
                 className="bg-white p-8 md:p-10 shadow-sm" 
-                data-testid={`founder-card-${index}`}
+                data-testid={`founder-card-${member.id}`}
               >
                 <div className="flex items-start gap-6 mb-6">
                   <div className="w-20 h-20 bg-[#1E2A3A] rounded-full flex items-center justify-center flex-shrink-0">
@@ -235,8 +241,8 @@ export default function AboutPage() {
                   {member.bio}
                 </p>
                 <div className="space-y-3 border-t border-slate-200 pt-6">
-                  {member.highlights.map((highlight, hIndex) => (
-                    <div key={hIndex} className="flex items-center gap-3">
+                  {member.highlights.map((highlight) => (
+                    <div key={`${member.id}-${highlight.text.substring(0, 20)}`} className="flex items-center gap-3">
                       <highlight.icon className="w-5 h-5 text-[#C45A3B] flex-shrink-0" />
                       <span className="text-slate-700 text-sm">{highlight.text}</span>
                     </div>
