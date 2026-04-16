@@ -92,7 +92,7 @@ export default function HomePage() {
       </Head>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-24" data-testid="hero-section">
+      <section className="relative min-h-screen flex items-center pt-20" data-testid="hero-section">
         <div 
           style={{ 
             position: 'absolute',

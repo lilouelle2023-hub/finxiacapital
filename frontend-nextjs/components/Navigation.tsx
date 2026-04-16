@@ -39,16 +39,18 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-sm border-b border-slate-100`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center">
             <img 
               src="https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/wllq2664_finxia_LOGO_DEFINITIF.png" 
               alt="FINXIA CAPITAL" 
-              className="h-14 w-auto"
+              className="h-10 w-auto"
+              style={{ maxWidth: '180px' }}
             />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex lg:items-center lg:gap-8" style={{ display: 'flex' }}>
             {navLinks.map((link) => (
               <Link
                 key={link.path}
