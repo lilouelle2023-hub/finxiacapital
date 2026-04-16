@@ -42,7 +42,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center gap-3">
             <img 
               src="https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/wllq2664_finxia_LOGO_DEFINITIF.png" 
-              alt="FINXIA CAPITAL" 
+              alt="FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg" 
               className="h-14 md:h-16 w-auto"
             />
           </Link>

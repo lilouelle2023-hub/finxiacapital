@@ -1,11 +1,29 @@
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { ArrowRight, Shield, Cpu, Scale, Server, Building, Home, TrendingUp } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function HomePage() {
   const { language } = useLanguage();
+
+  // Structured Data for Organization (Schema.org)
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FINXIA Capital",
+    "url": "https://finxiacapital.com",
+    "logo": "https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/wllq2664_finxia_LOGO_DEFINITIF.png",
+    "description": "Véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise. Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "LU"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@finxiacapital.com"
+    }
+  };
 
   const pillars = [
     { 
@@ -83,13 +101,12 @@ export default function HomePage() {
 
   return (
     <div data-testid="home-page">
-      <Head>
-        <title>FINXIA Capital — Gestion d&apos;Actifs Alternatifs · SCSp Luxembourg</title>
-        <meta name="description" content="Build in the real world, scaled with AI. FINXIA Capital est un fonds d'actifs alternatifs structuré en SCSp luxembourgeoise, déployant des stratégies institutionnelles augmentées par 18 agents IA." />
-        <meta property="og:title" content="FINXIA Capital — Build in the real world, scaled with AI" />
-        <meta property="og:description" content="Fonds d'actifs alternatifs européen · SCSp Luxembourg · AI-Native" />
-        <meta property="og:site_name" content="FINXIA Capital" />
-      </Head>
+      <SEO
+        title="Accueil — Build in the real world, Scaled with AI"
+        description="FINXIA Capital est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, déployant des stratégies institutionnelles augmentées par 18 agents IA."
+        canonical="https://finxiacapital.com/"
+        structuredData={structuredData}
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20" data-testid="hero-section">

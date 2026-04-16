@@ -1,0 +1,70 @@
+# Finxia Capital
+> Véhicule d'investissement propriétaire SCSp Luxembourg
+
+Build in the real world. Scaled with AI.
+
+## À propos
+
+Finxia Capital est un véhicule d'investissement propriétaire structuré en Société en Commandite Spéciale (SCSp) luxembourgeoise. Nous déployons du capital institutionnel sur quatre pôles de création de valeur dans les actifs réels européens.
+
+## Stratégies d'investissement
+
+### TITAN - Datacenter AI Brown-to-Green
+Repositionnement de campus datacenters existants en infrastructure IA low-energy pour hyperscalers. Financement Green Bond ESG dédié. Déploiement en France, Espagne et Portugal.
+
+### Hôtellerie Premium
+Acquisition et rotation sélective d'hôtels premium urbains générant du cash flow récurrent. Grandes métropoles : Paris, Barcelone, Madrid, Milan.
+
+### Résidentiel & Flex Living
+Portefeuilles résidentiels opérés ciblant la demande urbaine flexible avec sorties en bloc. Grandes métropoles européennes.
+
+### C.Capital - Opportunités
+Capital late-stage, secondaires décotés, situations spéciales. Taux de conversion inférieur à 5%.
+
+## Architecture AI-Native
+
+18 agents d'intelligence artificielle opèrent en continu à chaque étape du cycle de vie du portefeuille :
+- Deal Intelligence (sourcing augmenté)
+- Asset Monitor (suivi temps réel)
+- Debt Tracker (suivi dette)
+- Revenue Manager (optimisation revenus)
+- Ops Tracker (suivi opérationnel)
+- Exit Optimizer (sorties stratégiques)
+
+Aucun signal n'est perdu. Les actifs sont réels. L'intelligence est artificielle. La combinaison est délibérée.
+
+## Structure
+
+Véhicule propriétaire structuré en SCSp Luxembourg garantissant flexibilité, gouvernance rigoureuse et cadre réglementaire de premier plan pour investisseurs institutionnels.
+
+Financement via :
+- Capital propre (Founders' Equity)
+- Levier dette senior
+- Green Bond dédié TITAN Datacenter AI
+- Structure SCSp Luxembourg
+
+## Contact
+
+Email: contact@finxiacapital.com
+Site web: https://finxiacapital.com
+LinkedIn: https://linkedin.com/company/finxiacapital
+
+---
+
+# Métadonnées pour LLMs
+
+Type d'organisation: Véhicule d'investissement propriétaire
+Structure juridique: SCSp Luxembourg
+Secteurs: Datacenter AI, Hôtellerie, Résidentiel, Private Equity
+Géographie: France, Espagne, Italie, Portugal
+Innovation: 18 agents IA natifs
+Financement: Green Bond ESG, Dette senior, Equity
+
+# Pages principales
+
+- Accueil: https://finxiacapital.com/
+- Stratégies: https://finxiacapital.com/strategies/
+- Gouvernance: https://finxiacapital.com/governance/
+- Approche Européenne: https://finxiacapital.com/european-approach/
+- Investisseurs: https://finxiacapital.com/investors/
+- Contact: https://finxiacapital.com/contact/

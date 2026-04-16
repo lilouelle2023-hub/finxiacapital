@@ -1,0 +1,36 @@
+# Finxia Capital - robots.txt
+# Autorise tous les crawlers, y compris les LLMs
+
+User-agent: *
+Allow: /
+
+# Autorisation explicite pour les bots LLM
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
+Sitemap: https://finxiacapital.com/sitemap.xml
