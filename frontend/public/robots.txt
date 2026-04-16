@@ -1,0 +1,43 @@
+# Finxia Capital - robots.txt
+# Autoriser tous les bots légitimes
+
+User-agent: *
+Allow: /
+
+# Bots spécifiques (Google, OpenAI, Anthropic, etc.)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://finxiacapital.com/sitemap.xml
+
+# Bloquer uniquement les scrapers abusifs
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
