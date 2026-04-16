@@ -96,8 +96,13 @@ export const Footer = () => {
               ? 'FINXIA Capital est un fonds d\'investissement alternatif réservé aux investisseurs professionnels au sens de MiFID II. Les investissements dans des fonds alternatifs comportent des risques significatifs, notamment un risque de perte en capital. Les performances passées ne préjugent pas des performances futures. Ce site ne constitue pas une offre de vente ni une sollicitation d\'achat de titres.'
               : 'FINXIA Capital is an alternative investment fund reserved for professional investors within the meaning of MiFID II. Investments in alternative funds carry significant risks, including risk of capital loss. Past performance is not indicative of future results. This website does not constitute an offer to sell or a solicitation to buy securities.'}
           </p>
-          <p className="text-slate-500 text-xs">
-            © 2025 FINXIA Capital S.à r.l. — Luxembourg · SCSp · AIFMD
+          <p className="text-slate-500 text-xs leading-relaxed">
+            {language === 'fr'
+              ? 'SCSp Luxembourg — Structure Propriétaire · Capital propre · Levier dette · Green Bond TITAN'
+              : 'Luxembourg SCSp — Proprietary Structure · Equity Capital · Debt Leverage · TITAN Green Bond'}
+          </p>
+          <p className="text-slate-500 text-xs mt-2">
+            © 2025 FINXIA Capital S.à r.l.
           </p>
         </div>
       </div>

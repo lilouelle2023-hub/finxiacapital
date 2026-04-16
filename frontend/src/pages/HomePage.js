@@ -282,20 +282,30 @@ export default function HomePage() {
             <div className="order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
-                  <div className="text-2xl font-serif text-[#1E2A3A] mb-2">SCSp</div>
-                  <p className="text-slate-500 text-sm">Luxembourg Structure</p>
+                  <div className="text-xl font-serif text-[#1E2A3A] mb-2">
+                    {language === 'fr' ? 'Capital Propre' : 'Equity Capital'}
+                  </div>
+                  <p className="text-slate-500 text-sm">
+                    {language === 'fr' ? 'Founders\' Equity' : 'Founders\' Equity'}
+                  </p>
                 </div>
                 <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
-                  <div className="text-2xl font-serif text-[#1E2A3A] mb-2">AIFMD</div>
-                  <p className="text-slate-500 text-sm">Compliant Framework</p>
+                  <div className="text-xl font-serif text-[#1E2A3A] mb-2">
+                    {language === 'fr' ? 'Levier Dette' : 'Debt Leverage'}
+                  </div>
+                  <p className="text-slate-500 text-sm">
+                    {language === 'fr' ? 'Senior Leverage' : 'Senior Leverage'}
+                  </p>
                 </div>
                 <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
-                  <div className="text-2xl font-serif text-[#1E2A3A] mb-2">INREV</div>
-                  <p className="text-slate-500 text-sm">Reporting Standards</p>
+                  <div className="text-xl font-serif text-[#1E2A3A] mb-2">Green Bond</div>
+                  <p className="text-slate-500 text-sm">TITAN DC AI Financing</p>
                 </div>
                 <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
-                  <div className="text-2xl font-serif text-[#1E2A3A] mb-2">MiFID II</div>
-                  <p className="text-slate-500 text-sm">Professional Investors</p>
+                  <div className="text-xl font-serif text-[#1E2A3A] mb-2">SCSp</div>
+                  <p className="text-slate-500 text-sm">
+                    {language === 'fr' ? 'Structure Luxembourg' : 'Luxembourg Structure'}
+                  </p>
                 </div>
               </div>
             </div>

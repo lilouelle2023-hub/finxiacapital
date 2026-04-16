@@ -125,8 +125,8 @@ export default function GovernancePage() {
               <div className="section-divider mb-8" />
               <p className="text-slate-300 text-lg leading-relaxed mb-8">
                 {language === 'fr'
-                  ? 'FINXIA Capital est structurée comme une Société en Commandite Spéciale (SCSp) luxembourgeoise, garantissant flexibilité opérationnelle et gouvernance rigoureuse dans le respect du cadre AIFMD, avec supervision via un AIFM agréé par la CSSF.'
-                  : 'FINXIA Capital is structured as a Luxembourg Special Limited Partnership (SCSp), ensuring operational flexibility and rigorous governance within the AIFMD framework, with supervision through a CSSF-licensed AIFM.'}
+                  ? 'FINXIA Capital est structurée comme une Société en Commandite Spéciale (SCSp) luxembourgeoise, garantissant flexibilité opérationnelle et gouvernance rigoureuse. Structure propriétaire financée par capital propre (Founders\' Equity), levier dette senior au niveau des actifs, et Green Bond dédié pour le pôle TITAN.'
+                  : 'FINXIA Capital is structured as a Luxembourg Special Limited Partnership (SCSp), ensuring operational flexibility and rigorous governance. Proprietary structure financed by equity capital (Founders\' Equity), senior debt leverage at asset level, and dedicated Green Bond for the TITAN division.'}
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
