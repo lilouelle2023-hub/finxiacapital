@@ -497,10 +497,18 @@ const translations = {
   },
 };
 
-const LanguageContext = createContext();
+// TypeScript type for the context
+type LanguageContextType = {
+  language: 'en' | 'fr';
+  setLanguage: (lang: 'en' | 'fr') => void;
+  toggleLanguage: () => void;
+  t: (key: string) => string;
+};
 
-export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('fr');
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
+export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
+  const [language, setLanguage] = useState<'en' | 'fr'>('fr');
 
   const toggleLanguage = useCallback(() => {
     setLanguage((prev) => (prev === 'fr' ? 'en' : 'fr'));
@@ -509,9 +517,9 @@ export const LanguageProvider = ({ children }) => {
   }, []);
 
   const t = useCallback(
-    (key) => {
+    (key: string) => {
       const keys = key.split('.');
-      let value = translations[language];
+      let value: any = translations[language];
       for (const k of keys) {
         value = value?.[k];
       }

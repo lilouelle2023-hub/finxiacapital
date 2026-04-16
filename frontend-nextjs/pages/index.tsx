@@ -92,7 +92,7 @@ export default function HomePage() {
       </Head>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20" data-testid="hero-section">
+      <section className="relative min-h-screen flex items-center justify-center pt-20" data-testid="hero-section">
         <div 
           style={{ 
             position: 'absolute',
@@ -118,7 +118,7 @@ export default function HomePage() {
           }}
         />
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
           <div className="max-w-4xl">
             <p className="overline mb-6 text-[#C45A3B] animate-fade-in">
               {language === 'fr' 

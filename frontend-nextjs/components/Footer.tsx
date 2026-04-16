@@ -5,7 +5,8 @@ import { Mail } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function Footer() {
-  const { language } = useLanguage();
+  const context = useLanguage();
+  const language = context?.language || 'fr';
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
