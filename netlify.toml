@@ -1,0 +1,48 @@
+# Netlify Configuration for FINXIA Capital Next.js SSG
+
+[build]
+  # Root directory for the Next.js app
+  base = "frontend-nextjs"
+  
+  # Build command
+  command = "yarn build"
+  
+  # Output directory (Next.js static export)
+  publish = "out"
+
+# Environment variables (if needed)
+[build.environment]
+  NODE_VERSION = "20"
+  YARN_VERSION = "1.22.22"
+
+# Redirect rules for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+  
+# Custom headers for security and caching
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Custom domain (optional - configure in Netlify dashboard)
+# [[redirects]]
+#   from = "https://www.finxiacapital.com/*"
+#   to = "https://finxiacapital.com/:splat"
+#   status = 301
+#   force = true

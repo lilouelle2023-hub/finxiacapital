@@ -1,0 +1,5 @@
+# Redirect www to non-www
+https://www.finxiacapital.com/* https://finxiacapital.com/:splat 301!
+
+# Redirect http to https (if custom domain configured)
+http://finxiacapital.com/* https://finxiacapital.com/:splat 301!
