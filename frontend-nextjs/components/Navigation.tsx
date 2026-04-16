@@ -30,6 +30,7 @@ export default function Navigation() {
     { path: '/governance', label: language === 'fr' ? 'Gouvernance & Risques' : 'Governance & Risks' },
     { path: '/european-approach', label: language === 'fr' ? 'Approche Européenne' : 'European Approach' },
     { path: '/investors', label: language === 'fr' ? 'Investisseurs' : 'Investors' },
+    { path: '/blog', label: 'Blog' },
     { path: '/contact', label: 'Contact' },
   ];
 
