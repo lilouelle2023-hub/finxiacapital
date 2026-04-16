@@ -2,70 +2,74 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../context/LanguageContext';
-import { ArrowRight, Shield, Cpu, Scale } from 'lucide-react';
+import { ArrowRight, Shield, Cpu, Scale, Server, Building, Home, TrendingUp } from 'lucide-react';
 
 export default function HomePage() {
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
 
   const pillars = [
     { 
       icon: Shield, 
-      title: language === 'fr' ? 'Indépendance' : 'Independence', 
+      title: language === 'fr' ? 'Actifs Réels' : 'Real Assets', 
       text: language === 'fr' 
-        ? 'Aucun conflit d\'intérêt. Nos décisions sont guidées par la seule conviction de créer de la valeur durable.' 
-        : 'No conflicts of interest. Our decisions are guided solely by conviction to create lasting value.'
-    },
-    { 
-      icon: Scale, 
-      title: language === 'fr' ? 'Rigueur' : 'Rigor', 
-      text: language === 'fr'
-        ? 'Chaque investissement fait l\'objet d\'une analyse fondamentale approfondie avec une thèse défendable.'
-        : 'Every investment undergoes thorough fundamental analysis with a defensible thesis.'
+        ? 'Les actifs réels restent le meilleur terrain de création de valeur. Datacenters, hôtellerie, résidentiel — des fondations tangibles.' 
+        : 'Real assets remain the best ground for value creation. Datacenters, hospitality, residential — tangible foundations.'
     },
     { 
       icon: Cpu, 
-      title: language === 'fr' ? 'Technologie' : 'Technology', 
+      title: language === 'fr' ? 'Intelligence Artificielle' : 'Artificial Intelligence', 
       text: language === 'fr'
-        ? 'Infrastructure d\'agents IA propriétaires pour l\'analyse de marché et le monitoring — un avantage compétitif structurel.'
-        : 'Proprietary AI agent infrastructure for market analysis and monitoring — a structural competitive advantage.'
+        ? '18 agents IA opérant en parallèle à chaque étape du cycle de vie du fonds. L\'alpha est dans l\'exécution augmentée.'
+        : '18 AI agents operating in parallel at every stage of the fund lifecycle. Alpha is in augmented execution.'
+    },
+    { 
+      icon: Scale, 
+      title: language === 'fr' ? 'Discipline Institutionnelle' : 'Institutional Discipline', 
+      text: language === 'fr'
+        ? 'Une rigueur d\'exécution qui fait la différence. Chaque investissement fait l\'objet d\'une analyse fondamentale approfondie.'
+        : 'Execution rigor that makes the difference. Every investment undergoes thorough fundamental analysis.'
     },
   ];
 
   const strategies = [
     {
       num: '01',
-      title: language === 'fr' ? 'Logistique Brown-to-Green' : 'Brown-to-Green Logistics',
+      icon: Server,
+      title: language === 'fr' ? 'Datacenter AI Brown-to-Green' : 'AI Datacenter Brown-to-Green',
       subtitle: 'TITAN',
       text: language === 'fr' 
-        ? 'Transformation de plateformes logistiques d\'actifs énergétiquement obsolètes vers la certification LEED Platinum.'
-        : 'Transformation of energy-obsolete logistics platforms to LEED Platinum certification.',
+        ? 'Transformation de datacenters sous-performants en infrastructure IA décarbonée et certifiée.'
+        : 'Transformation of underperforming datacenters into decarbonized, certified AI infrastructure.',
       focus: 'France · Espagne · Italie'
     },
     {
       num: '02',
+      icon: Building,
       title: language === 'fr' ? 'Hôtellerie Premium' : 'Premium Hospitality',
       subtitle: language === 'fr' ? 'Rendement & Rotation' : 'Yield & Rotation',
       text: language === 'fr'
-        ? 'Portefeuille d\'hôtels premium combinant génération de revenus récurrents et rotation sélective.'
-        : 'Premium hotel portfolio combining recurring revenue generation and selective rotation.',
+        ? 'Cash flow récurrent et rotation sélective d\'hôtels premium urbains.'
+        : 'Recurring cash flow and selective rotation of premium urban hotels.',
       focus: 'Paris · Barcelone · Madrid · Milan'
     },
     {
       num: '03',
+      icon: Home,
       title: language === 'fr' ? 'Résidentiel & Flex Living' : 'Residential & Flex Living',
       subtitle: language === 'fr' ? 'Plateforme Urbaine' : 'Urban Platform',
       text: language === 'fr'
-        ? 'Stratégies résidentielles opérées ciblant la demande urbaine flexible avec sorties en blocs.'
-        : 'Operated residential strategies targeting flexible urban demand with block exits.',
+        ? 'Portefeuilles opérés ciblant la demande urbaine flexible avec sorties en bloc.'
+        : 'Operated portfolios targeting flexible urban demand with block exits.',
       focus: language === 'fr' ? 'Grandes Métropoles' : 'Major Metropolises'
     },
     {
       num: '04',
+      icon: TrendingUp,
       title: 'Capital Opportunités',
       subtitle: 'C.CAPITAL',
       text: language === 'fr'
-        ? 'Investissements late-stage, secondaires et situations spéciales avec approche hautement sélective.'
-        : 'Late-stage investments, secondaries and special situations with highly selective approach.',
+        ? 'Late-stage, secondaires décotés, situations spéciales. Taux de conversion <5%.'
+        : 'Late-stage, discounted secondaries, special situations. <5% conversion rate.',
       focus: 'Late-Stage · Secondaires'
     },
   ];
@@ -73,10 +77,10 @@ export default function HomePage() {
   return (
     <div data-testid="home-page">
       <Helmet>
-        <title>FINXIA Capital — Gestion d'Actifs Alternatifs · RAIF Luxembourg</title>
-        <meta name="description" content="FINXIA Capital est un fonds d'investissement alternatif européen structuré en RAIF luxembourgeois, déployant des stratégies institutionnelles en immobilier et capital privé." />
-        <meta property="og:title" content="FINXIA Capital — Gestion d'Actifs Alternatifs" />
-        <meta property="og:description" content="Gestionnaire d'actifs alternatifs européen · Structure RAIF Luxembourg" />
+        <title>FINXIA Capital — Gestion d'Actifs Alternatifs · SCSp Luxembourg</title>
+        <meta name="description" content="Build in the real world, scaled with AI. FINXIA Capital est un fonds d'actifs alternatifs structuré en SCSp luxembourgeoise, déployant des stratégies institutionnelles augmentées par 18 agents IA." />
+        <meta property="og:title" content="FINXIA Capital — Build in the real world, scaled with AI" />
+        <meta property="og:description" content="Fonds d'actifs alternatifs européen · SCSp Luxembourg · AI-Native" />
         <meta property="og:site_name" content="FINXIA Capital" />
       </Helmet>
 
@@ -94,18 +98,17 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <p className="overline mb-6 text-[#C45A3B] animate-fade-in">
               {language === 'fr' 
-                ? 'Gestion d\'Actifs Alternatifs · Structure RAIF · Luxembourg'
-                : 'Alternative Asset Management · RAIF Structure · Luxembourg'}
+                ? 'Gestion d\'Actifs Alternatifs · SCSp · Luxembourg'
+                : 'Alternative Asset Management · SCSp · Luxembourg'}
             </p>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-8 animate-slide-up">
-              {language === 'fr' 
-                ? 'Créer de la Valeur Durable. À Travers l\'Europe.'
-                : 'Creating Lasting Value. Across Europe.'}
+              Build in the real world.<br/>
+              <span className="text-[#C45A3B]">Scaled with AI.</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed animate-slide-up stagger-1 max-w-3xl">
               {language === 'fr'
-                ? 'FINXIA Capital déploie des stratégies alternatives multi-actifs sur les marchés immobiliers et de capitaux privés européens. Une approche institutionnelle, indépendante et disciplinée.'
-                : 'FINXIA Capital deploys multi-asset alternative strategies in European real estate and private capital markets. An institutional, independent, and disciplined approach.'}
+                ? 'Les actifs réels restent le meilleur terrain de création de valeur. L\'intelligence artificielle, le meilleur levier pour en extraire l\'alpha.'
+                : 'Real assets remain the best ground for value creation. Artificial intelligence, the best lever to extract alpha.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up stagger-2">
               <Link
@@ -139,9 +142,9 @@ export default function HomePage() {
       <section className="py-24 md:py-32 bg-white" data-testid="pillars-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="overline mb-4">{language === 'fr' ? 'Nos Piliers' : 'Our Pillars'}</p>
+            <p className="overline mb-4">{language === 'fr' ? 'Notre Conviction' : 'Our Conviction'}</p>
             <h2 className="font-serif text-3xl md:text-4xl mb-6">
-              {language === 'fr' ? 'Trois Convictions Fondamentales' : 'Three Core Convictions'}
+              {language === 'fr' ? 'Actifs Réels × Intelligence Artificielle' : 'Real Assets × Artificial Intelligence'}
             </h2>
             <div className="section-divider mx-auto" />
           </div>
@@ -175,8 +178,8 @@ export default function HomePage() {
             <div className="section-divider mx-auto mb-8" />
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
               {language === 'fr'
-                ? 'Une conviction commune : la rigueur d\'exécution fait la différence.'
-                : 'One common conviction: execution rigor makes the difference.'}
+                ? 'Une discipline d\'exécution institutionnelle. Une architecture AI-native sans équivalent.'
+                : 'Institutional execution discipline. An unmatched AI-native architecture.'}
             </p>
           </div>
 
@@ -212,65 +215,105 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Structure RAIF */}
-      <section className="py-24 md:py-32 bg-[#1E2A3A] text-white" data-testid="structure-section">
+      {/* AI Architecture Section */}
+      <section className="py-24 md:py-32 bg-[#1E2A3A] text-white" data-testid="ai-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="overline text-[#C45A3B] mb-4">
-                {language === 'fr' ? 'Structure & Cadre' : 'Structure & Framework'}
+                {language === 'fr' ? 'Architecture AI-Native' : 'AI-Native Architecture'}
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">
-                {language === 'fr' ? 'RAIF Luxembourg' : 'Luxembourg RAIF'}
+                {language === 'fr' 
+                  ? 'Ce n\'est pas un outil. C\'est une façon de gérer.'
+                  : 'It\'s not a tool. It\'s a way of managing.'}
               </h2>
               <div className="section-divider mb-8" />
-              <p className="text-slate-300 text-lg leading-relaxed mb-8">
+              <p className="text-slate-300 text-lg leading-relaxed mb-6">
                 {language === 'fr'
-                  ? 'FINXIA Capital est structurée comme un Reserved Alternative Investment Fund (RAIF) de droit luxembourgeois, garantissant une gouvernance rigoureuse et une supervision via notre AIFM agréé CSSF.'
-                  : 'FINXIA Capital is structured as a Luxembourg Reserved Alternative Investment Fund (RAIF), ensuring rigorous governance and supervision through our CSSF-licensed AIFM.'}
+                  ? 'Là où la gestion traditionnelle mobilise des équipes séquentielles, Finxia déploie 18 agents d\'intelligence artificielle opérant en parallèle, à chaque étape du cycle de vie du fonds.'
+                  : 'Where traditional management mobilizes sequential teams, Finxia deploys 18 artificial intelligence agents operating in parallel, at every stage of the fund lifecycle.'}
               </p>
-              <Link
-                to="/governance"
-                className="inline-flex items-center gap-2 text-white font-semibold hover:text-[#C45A3B] transition-colors"
-              >
-                {language === 'fr' ? 'En savoir plus' : 'Learn more'}
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+              <p className="text-slate-400 text-base leading-relaxed">
+                {language === 'fr'
+                  ? 'Les actifs sont réels. L\'intelligence est artificielle. La combinaison est délibérée.'
+                  : 'The assets are real. The intelligence is artificial. The combination is deliberate.'}
+              </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-3xl font-serif text-[#C45A3B] mb-2">RAIF</div>
-                <p className="text-slate-400 text-sm">Luxembourg Structure</p>
+                <div className="text-3xl font-serif text-[#C45A3B] mb-2">18</div>
+                <p className="text-slate-400 text-sm">AI Agents</p>
               </div>
               <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-3xl font-serif text-[#C45A3B] mb-2">CSSF</div>
-                <p className="text-slate-400 text-sm">AIFM Supervision</p>
+                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Deal Intel</div>
+                <p className="text-slate-400 text-sm">Sourcing Augmenté</p>
               </div>
               <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-3xl font-serif text-[#C45A3B] mb-2">INREV</div>
-                <p className="text-slate-400 text-sm">Reporting Standards</p>
+                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Asset Monitor</div>
+                <p className="text-slate-400 text-sm">Suivi Temps Réel</p>
               </div>
               <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-3xl font-serif text-[#C45A3B] mb-2">MiFID II</div>
-                <p className="text-slate-400 text-sm">Professional Investors</p>
+                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Exit Optimizer</div>
+                <p className="text-slate-400 text-sm">Sorties Stratégiques</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Structure SCSp */}
+      <section className="py-24 md:py-32 bg-white" data-testid="structure-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
+                  <div className="text-2xl font-serif text-[#1E2A3A] mb-2">SCSp</div>
+                  <p className="text-slate-500 text-sm">Luxembourg Structure</p>
+                </div>
+                <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
+                  <div className="text-2xl font-serif text-[#1E2A3A] mb-2">AIFMD</div>
+                  <p className="text-slate-500 text-sm">Compliant Framework</p>
+                </div>
+                <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
+                  <div className="text-2xl font-serif text-[#1E2A3A] mb-2">INREV</div>
+                  <p className="text-slate-500 text-sm">Reporting Standards</p>
+                </div>
+                <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
+                  <div className="text-2xl font-serif text-[#1E2A3A] mb-2">MiFID II</div>
+                  <p className="text-slate-500 text-sm">Professional Investors</p>
+                </div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <p className="overline mb-4">
+                {language === 'fr' ? 'Structure & Cadre' : 'Structure & Framework'}
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl mb-6">
+                SCSp Luxembourg
+              </h2>
+              <div className="section-divider mb-8" />
+              <p className="text-slate-600 text-lg leading-relaxed">
+                {language === 'fr'
+                  ? 'FINXIA Capital est structurée comme une Société en Commandite Spéciale (SCSp) de droit luxembourgeois, garantissant flexibilité, gouvernance rigoureuse et cadre réglementaire de premier plan pour les investisseurs professionnels.'
+                  : 'FINXIA Capital is structured as a Luxembourg Special Limited Partnership (SCSp), ensuring flexibility, rigorous governance, and a first-class regulatory framework for professional investors.'}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-white" data-testid="cta-section">
+      <section className="py-24 md:py-32 bg-slate-50" data-testid="cta-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl mb-6">
-            {language === 'fr' 
-              ? 'Entrons en Contact'
-              : 'Let\'s Connect'}
+            Build in the real world. Scaled with AI.
           </h2>
           <p className="text-slate-600 text-lg mb-10 max-w-2xl mx-auto">
             {language === 'fr'
-              ? 'Investisseurs institutionnels, partenaires stratégiques et contreparties : notre équipe est disponible pour répondre à vos questions.'
-              : 'Institutional investors, strategic partners and counterparties: our team is available to answer your questions.'}
+              ? 'Investisseurs institutionnels, partenaires stratégiques : notre équipe est disponible pour répondre à vos questions.'
+              : 'Institutional investors, strategic partners: our team is available to answer your questions.'}
           </p>
           <Link
             to="/contact"

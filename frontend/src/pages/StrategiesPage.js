@@ -1,31 +1,31 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '../context/LanguageContext';
-import { Warehouse, Building, Home, TrendingUp, CheckCircle } from 'lucide-react';
+import { Server, Building, Home, TrendingUp, CheckCircle } from 'lucide-react';
 
 export default function StrategiesPage() {
   const { language } = useLanguage();
 
   const strategies = [
     {
-      icon: Warehouse,
+      icon: Server,
       num: '01',
       subtitle: 'TITAN',
-      title: language === 'fr' ? 'Logistique Brown-to-Green' : 'Brown-to-Green Logistics',
+      title: language === 'fr' ? 'Datacenter AI Brown-to-Green' : 'AI Datacenter Brown-to-Green',
       headline: language === 'fr' 
-        ? 'Transformation de plateformes logistiques obsolètes vers la certification LEED Platinum'
-        : 'Transformation of obsolete logistics platforms to LEED Platinum certification',
+        ? 'L\'infrastructure de l\'IA a besoin d\'un terrain. Nous le construisons.'
+        : 'AI infrastructure needs ground. We build it.',
       thesis: language === 'fr'
-        ? 'Nous ciblons des plateformes logistiques existantes sous-performantes énergétiquement pour les repositionner aux meilleurs standards ESG européens. Notre thèse repose sur l\'écart de valeur entre actifs "brown" et actifs certifiés LEED ou BREEAM.'
-        : 'We target existing energy-underperforming logistics platforms to reposition them to the best European ESG standards. Our thesis rests on the value gap between "brown" assets and LEED or BREEAM certified assets.',
+        ? 'Le pôle TITAN cible des datacenters sous-performants — des actifs brown —, pour les transformer en infrastructure IA de nouvelle génération : décarbonée, certifiée, prête pour les workloads d\'intelligence artificielle. L\'explosion de la demande en capacité de calcul crée un écart de valeur massif entre les actifs existants et les standards qu\'exige l\'IA.'
+        : 'The TITAN division targets underperforming datacenters — brown assets —, to transform them into next-generation AI infrastructure: decarbonized, certified, ready for artificial intelligence workloads. The explosion in computing capacity demand creates a massive value gap between existing assets and the standards required by AI.',
       approach: [
-        language === 'fr' ? 'Acquisition d\'actifs Grade B/C avec potentiel de certification' : 'Acquisition of Grade B/C assets with certification potential',
-        language === 'fr' ? 'Programme de rénovation énergétique intensif (18-24 mois)' : 'Intensive energy renovation program (18-24 months)',
-        language === 'fr' ? 'Relocation à des locataires investment grade' : 'Relocation to investment grade tenants',
-        language === 'fr' ? 'Cession à des acquéreurs Core une fois la certification obtenue' : 'Sale to Core buyers once certification obtained',
+        language === 'fr' ? 'Acquisition de datacenters sous-performants énergétiquement' : 'Acquisition of energy-underperforming datacenters',
+        language === 'fr' ? 'Transformation vers infrastructure IA décarbonée' : 'Transformation to decarbonized AI infrastructure',
+        language === 'fr' ? 'Certification aux standards environnementaux' : 'Certification to environmental standards',
+        language === 'fr' ? 'Cession à des acquéreurs Core avec prime de transition' : 'Sale to Core buyers with transition premium',
       ],
       markets: 'France · Espagne · Italie',
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     },
     {
       icon: Building,
@@ -33,11 +33,11 @@ export default function StrategiesPage() {
       subtitle: language === 'fr' ? 'Rendement & Rotation' : 'Yield & Rotation',
       title: language === 'fr' ? 'Hôtellerie Premium' : 'Premium Hospitality',
       headline: language === 'fr'
-        ? 'Portefeuille d\'hôtels premium européens combinant génération de revenus récurrents et rotation sélective'
-        : 'Premium European hotel portfolio combining recurring revenue generation and selective rotation',
+        ? 'La résilience structurelle d\'un actif, l\'intelligence d\'un opérateur.'
+        : 'The structural resilience of an asset, the intelligence of an operator.',
       thesis: language === 'fr'
-        ? 'Le segment hôtelier premium urbain offre une résilience structurelle grâce à des RevPAR soutenus par la demande internationale. Notre approche hybride combine des actifs long terme générateurs de cash flow avec des opportunités de rotation après repositionnement.'
-        : 'The urban premium hotel segment offers structural resilience through RevPAR supported by international demand. Our hybrid approach combines long-term cash flow generating assets with rotation opportunities post-repositioning.',
+        ? 'Le segment hôtelier premium urbain génère des RevPAR soutenus par la demande internationale. Finxia combine des actifs long terme producteurs de cash flow avec des opportunités de rotation après repositionnement de marque.'
+        : 'The urban premium hotel segment generates RevPAR supported by international demand. Finxia combines long-term cash flow producing assets with rotation opportunities after brand repositioning.',
       approach: [
         language === 'fr' ? 'Acquisition d\'hôtels 4-5 étoiles dans les métropoles européennes' : 'Acquisition of 4-5 star hotels in European metropolises',
         language === 'fr' ? 'Asset management actif en partenariat avec des opérateurs de référence' : 'Active asset management in partnership with reference operators',
@@ -53,11 +53,11 @@ export default function StrategiesPage() {
       subtitle: language === 'fr' ? 'Plateforme Urbaine' : 'Urban Platform',
       title: language === 'fr' ? 'Résidentiel & Flex Living' : 'Residential & Flex Living',
       headline: language === 'fr'
-        ? 'Stratégies résidentielles opérées ciblant la demande urbaine flexible avec sorties en bloc institutionnelles'
-        : 'Operated residential strategies targeting flexible urban demand with institutional block exits',
+        ? 'La ville évolue. Le logement doit suivre.'
+        : 'The city evolves. Housing must follow.',
       thesis: language === 'fr'
-        ? 'La demande pour le logement flexible urbain (coliving, résidences services, build-to-rent) dépasse structurellement l\'offre dans les métropoles européennes. Nous constituons des portefeuilles opérés avec des partenaires spécialisés pour maximiser les taux d\'occupation et préparer des sorties en bloc.'
-        : 'Demand for flexible urban housing (coliving, serviced residences, build-to-rent) structurally exceeds supply in European metropolises. We build operated portfolios with specialized partners to maximize occupancy rates and prepare block exits.',
+        ? 'La demande pour le logement flexible — coliving, résidences services, build-to-rent — dépasse structurellement l\'offre dans les grandes métropoles. Finxia constitue des portefeuilles opérés avec des partenaires spécialisés, calibrés pour des sorties en bloc vers investisseurs Core.'
+        : 'Demand for flexible housing — coliving, serviced residences, build-to-rent — structurally exceeds supply in major metropolises. Finxia builds operated portfolios with specialized partners, calibrated for block exits to Core investors.',
       approach: [
         language === 'fr' ? 'Constitution de portefeuilles multi-actifs résidentiels' : 'Constitution of multi-asset residential portfolios',
         language === 'fr' ? 'Partenariats avec opérateurs spécialisés (coliving, PBSA)' : 'Partnerships with specialized operators (coliving, PBSA)',
@@ -73,11 +73,11 @@ export default function StrategiesPage() {
       subtitle: 'C.CAPITAL',
       title: 'Capital Opportunités',
       headline: language === 'fr'
-        ? 'Investissements late-stage, secondaires et situations spéciales avec une approche disciplinée et hautement sélective'
-        : 'Late-stage investments, secondaries and special situations with a disciplined and highly selective approach',
+        ? 'Là où la visibilité sur l\'actif crée l\'avantage informationnel.'
+        : 'Where asset visibility creates informational advantage.',
       thesis: language === 'fr'
-        ? 'Le segment late-stage et secondaires offre des opportunités de décote significatives avec une visibilité accrue sur les actifs sous-jacents. Notre approche ultra-sélective se concentre sur les situations où notre expertise sectorielle nous confère un avantage informationnel.'
-        : 'The late-stage and secondaries segment offers significant discount opportunities with increased visibility on underlying assets. Our ultra-selective approach focuses on situations where our sector expertise gives us an informational advantage.',
+        ? 'Late-stage, secondaires décotés, situations spéciales. Une approche ultra-sélective — taux de conversion inférieur à 5% — réservée aux opportunités où notre expertise sectorielle fait la différence.'
+        : 'Late-stage, discounted secondaries, special situations. An ultra-selective approach — conversion rate below 5% — reserved for opportunities where our sector expertise makes the difference.',
       approach: [
         language === 'fr' ? 'Participation à des tours de financement late-stage' : 'Participation in late-stage financing rounds',
         language === 'fr' ? 'Acquisition de positions secondaires décotées' : 'Acquisition of discounted secondary positions',
@@ -93,7 +93,7 @@ export default function StrategiesPage() {
     <div data-testid="strategies-page" className="pt-20">
       <Helmet>
         <title>Stratégies d'Investissement · FINXIA Capital</title>
-        <meta name="description" content="Découvrez nos quatre stratégies d'investissement : Logistique Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living et Capital Opportunités." />
+        <meta name="description" content="Quatre pôles de création de valeur : Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living et Capital Opportunités." />
       </Helmet>
 
       {/* Hero Section */}
@@ -111,8 +111,8 @@ export default function StrategiesPage() {
             <div className="section-divider mb-8" />
             <p className="text-slate-600 text-xl leading-relaxed">
               {language === 'fr'
-                ? 'Une conviction commune : la rigueur d\'exécution fait la différence. Chaque stratégie est déployée avec une discipline institutionnelle et un horizon de création de valeur clairement défini.'
-                : 'One common conviction: execution rigor makes the difference. Each strategy is deployed with institutional discipline and a clearly defined value creation horizon.'}
+                ? 'Une discipline d\'exécution institutionnelle. Une architecture AI-native qui n\'a pas d\'équivalent dans la gestion alternative européenne.'
+                : 'Institutional execution discipline. An AI-native architecture unmatched in European alternative management.'}
             </p>
           </div>
         </div>
