@@ -143,6 +143,9 @@ function useToast() {
         listeners.splice(index, 1)
       }
     };
+    // `listeners` is a module-level constant, not a reactive dependency
+    // `index` is computed inside the effect, not a dependency
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [setState])
 
   return {

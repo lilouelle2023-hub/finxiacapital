@@ -15,10 +15,14 @@ export const Navigation = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+    // handleScroll and setIsScrolled are stable, don't need to be in deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty deps is correct - we want this to run once
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    // setIsMobileMenuOpen is stable, location is the only reactive dep
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]); // location is the correct dependency
 
   const navLinks = [

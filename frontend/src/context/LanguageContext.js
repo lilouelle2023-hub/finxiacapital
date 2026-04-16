@@ -504,6 +504,8 @@ export const LanguageProvider = ({ children }) => {
 
   const toggleLanguage = useCallback(() => {
     setLanguage((prev) => (prev === 'fr' ? 'en' : 'fr'));
+    // Using functional setState, no need for setLanguage or prev in deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const t = useCallback(
@@ -515,7 +517,7 @@ export const LanguageProvider = ({ children }) => {
       }
       return value || key;
     },
-    [language]
+    [language] // Only language is a reactive dependency; k, keys are local variables
   );
 
   const contextValue = useMemo(
