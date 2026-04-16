@@ -14,18 +14,18 @@ export default function StrategiesPage() {
       subtitle: 'TITAN',
       title: language === 'fr' ? 'Datacenter AI Brown-to-Green' : 'AI Datacenter Brown-to-Green',
       headline: language === 'fr' 
-        ? 'L\'infrastructure de l\'IA a besoin d\'un terrain. Nous le construisons.'
-        : 'AI infrastructure needs ground. We build it.',
+        ? 'L\'infrastructure de l\'IA a besoin d\'un socle. Nous le transformons.'
+        : 'AI infrastructure needs a foundation. We transform it.',
       thesis: language === 'fr'
-        ? 'Le pôle TITAN est notre conviction centrale. Nous ciblons des datacenters sous-performants — des actifs brown — pour les transformer en infrastructure IA de nouvelle génération : décarbonée, certifiée, dimensionnée pour les workloads d\'intelligence artificielle. La demande en capacité de calcul croit structurellement plus vite que l\'offre qualifiée. L\'écart de valeur entre un actif brown repositionné et un datacenter IA-ready est notre thèse. TITAN se finance via un Green Bond dédié — instrument aligné avec la nature de la transformation : du carbone vers la performance, de l\'obsolescence vers la certification.'
-        : 'The TITAN division is our core conviction. We target underperforming datacenters — brown assets — to transform them into next-generation AI infrastructure: decarbonized, certified, sized for artificial intelligence workloads. Computing capacity demand grows structurally faster than qualified supply. The value gap between a repositioned brown asset and an AI-ready datacenter is our thesis. TITAN is financed via a dedicated Green Bond — an instrument aligned with the nature of the transformation: from carbon to performance, from obsolescence to certification.',
+        ? 'Le pôle TITAN est notre conviction centrale. Nous ciblons des campus existants sous-exploités pour les repositionner en infrastructure IA de nouvelle génération : low-energy, certifiée, dimensionnée pour des locataires hyperscaler en bail long terme. La thèse est simple. Un datacenter standard consomme trop, coûte trop, et ne répond plus aux exigences ESG des grands cloud providers. En déployant une infrastructure énergétique de rupture — refroidissement haute efficacité, récupération de chaleur serveurs, production d\'énergie on-site — nous comprimons les coûts opérationnels, améliorons le NOI, et créons une prime de sortie significative auprès des acquéreurs Core infrastructure. Du brown au green : moins d\'énergie consommée, plus de valeur créée. TITAN se finance via un Green Bond ESG dédié, instrument calibré pour cette transformation — labellisé, structuré avec nos partenaires bancaires, sans dilution equity.'
+        : 'The TITAN division is our core conviction. We target underutilized existing campuses to reposition them as next-generation AI infrastructure: low-energy, certified, sized for hyperscaler tenants on long-term leases. The thesis is simple. A standard datacenter consumes too much, costs too much, and no longer meets the ESG requirements of major cloud providers. By deploying breakthrough energy infrastructure — high-efficiency cooling, server heat recovery, on-site energy production — we compress operational costs, improve NOI, and create a significant exit premium with Core infrastructure buyers. From brown to green: less energy consumed, more value created. TITAN is financed via a dedicated ESG Green Bond, an instrument calibrated for this transformation — labeled, structured with our banking partners, without equity dilution.',
       approach: [
-        language === 'fr' ? 'Acquisition de datacenters sous-performants énergétiquement' : 'Acquisition of energy-underperforming datacenters',
-        language === 'fr' ? 'Transformation vers infrastructure IA décarbonée' : 'Transformation to decarbonized AI infrastructure',
-        language === 'fr' ? 'Certification aux standards environnementaux' : 'Certification to environmental standards',
-        language === 'fr' ? 'Cession à des acquéreurs Core avec prime de transition' : 'Sale to Core buyers with transition premium',
+        language === 'fr' ? 'Acquisition de campus datacenters sous-exploités' : 'Acquisition of underutilized datacenter campuses',
+        language === 'fr' ? 'Déploiement infrastructure énergétique : refroidissement haute efficacité, récupération chaleur' : 'Deployment of energy infrastructure: high-efficiency cooling, heat recovery',
+        language === 'fr' ? 'Production d\'énergie on-site et certification ESG' : 'On-site energy production and ESG certification',
+        language === 'fr' ? 'Location hyperscalers long terme et cession acquéreurs Core' : 'Long-term hyperscaler leasing and sale to Core buyers',
       ],
-      markets: 'France · Espagne · Italie',
+      markets: 'France · Espagne · Portugal',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     },
     {

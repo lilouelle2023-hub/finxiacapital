@@ -42,9 +42,9 @@ export default function HomePage() {
       title: language === 'fr' ? 'Datacenter AI Brown-to-Green' : 'AI Datacenter Brown-to-Green',
       subtitle: 'TITAN',
       text: language === 'fr' 
-        ? 'Transformation de datacenters sous-performants en infrastructure IA décarbonée et certifiée.'
-        : 'Transformation of underperforming datacenters into decarbonized, certified AI infrastructure.',
-      focus: 'France · Espagne · Italie'
+        ? 'Repositionnement de campus datacenters existants en infrastructure IA low-energy pour hyperscalers. Financement Green Bond ESG dédié.'
+        : 'Repositioning of existing datacenter campuses into low-energy AI infrastructure for hyperscalers. Dedicated ESG Green Bond financing.',
+      focus: 'France · Espagne · Portugal'
     },
     {
       id: 'hospitality-premium',
