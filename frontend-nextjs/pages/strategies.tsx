@@ -1,12 +1,22 @@
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { Server, Building, Home, TrendingUp, CheckCircle } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function StrategiesPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
+
+  return (
+    <div data-testid="strategies-page" className="pt-20">
+      <SEO
+        title={language === 'fr' ? "Stratégies — TITAN, Hôtellerie, Résidentiel, C.Capital" : "Strategies — TITAN, Hospitality, Residential, C.Capital"}
+        description={language === 'fr'
+          ? "4 stratégies d'investissement : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living, C.Capital. Financement Green Bond ESG dédié."
+          : "4 investment strategies: TITAN AI Datacenter Brown-to-Green, Premium Hospitality, Flex Living Residential, C.Capital. Dedicated ESG Green Bond financing."}
+        canonical="https://finxiacapital.com/strategies/"
+      />
 
   const strategies = [
     {

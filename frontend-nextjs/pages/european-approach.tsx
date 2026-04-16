@@ -1,10 +1,20 @@
 import React from 'react';
-import Head from 'next/head';
 import { useLanguage } from '@/context/LanguageContext';
 import { MapPin, Building2, CheckCircle } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function EuropeanApproachPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  return (
+    <div data-testid="european-approach-page" className="pt-20">
+      <SEO
+        title={language === 'fr' ? "Approche Européenne — France, Espagne, Italie" : "European Approach — France, Spain, Italy"}
+        description={language === 'fr'
+          ? "Déploiement stratégique sur 3 marchés européens : France, Espagne, Italie. Grandes métropoles, liquidité institutionnelle, infrastructure mature. Focus datacenters, hôtellerie, résidentiel."
+          : "Strategic deployment across 3 European markets: France, Spain, Italy. Major cities, institutional liquidity, mature infrastructure. Focus on datacenters, hospitality, residential."}
+        canonical="https://finxiacapital.com/european-approach/"
+      />
 
   const countries = [
     { 

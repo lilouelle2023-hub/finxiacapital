@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
-import Head from 'next/head';
+import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import { MapPin, Mail, CheckCircle, AlertCircle } from 'lucide-react';
-
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+import { Mail, MapPin } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function ContactPage() {
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
+
+  return (
+    <div data-testid="contact-page" className="pt-20">
+      <SEO
+        title={language === 'fr' ? "Contact — Nous Contacter" : "Contact — Get in Touch"}
+        description={language === 'fr'
+          ? "Contactez FINXIA Capital pour toute demande d'investissement ou renseignement. Luxembourg. Email: contact@finxiacapital.com"
+          : "Contact FINXIA Capital for investment inquiries. Luxembourg. Email: contact@finxiacapital.com"}
+        canonical="https://finxiacapital.com/contact/"
+      />
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -69,10 +77,13 @@ export default function ContactPage() {
 
   return (
     <div data-testid="contact-page" className="pt-20">
-      <Head>
-        <title>{t('contact.title')} · FINXIA Capital</title>
-        <meta name="description" content={t('contact.subtitle')} />
-      </Head>
+      <SEO
+        title={language === 'fr' ? "Contact — Nous Contacter" : "Contact — Get in Touch"}
+        description={language === 'fr'
+          ? "Contactez FINXIA Capital pour toute demande d'investissement ou renseignement. Luxembourg. Email: contact@finxiacapital.com"
+          : "Contact FINXIA Capital for investment inquiries. Luxembourg. Email: contact@finxiacapital.com"}
+        canonical="https://finxiacapital.com/contact/"
+      />
 
       {/* Hero Section */}
       <section className="py-24 md:py-32 bg-slate-50">

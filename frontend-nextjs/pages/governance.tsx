@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import { useLanguage } from '@/context/LanguageContext';
 import { 
   TrendingDown, 
@@ -9,10 +8,21 @@ import {
   Shield,
   CheckCircle
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function GovernancePage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
+
+  return (
+    <div data-testid="governance-page" className="pt-20">
+      <SEO
+        title={language === 'fr' ? "Gouvernance & Risques — Framework & Structure SCSp" : "Governance & Risks — Framework & SCSp Structure"}
+        description={language === 'fr'
+          ? "Gouvernance rigoureuse et gestion des risques par IA. Structure SCSp Luxembourg. Surveillance 24/7 par agents IA. Transparence totale pour investisseurs institutionnels."
+          : "Rigorous governance and AI-powered risk management. Luxembourg SCSp structure. 24/7 monitoring by AI agents. Full transparency for institutional investors."}
+        canonical="https://finxiacapital.com/governance/"
+      />
 
   const riskDimensions = [
     {

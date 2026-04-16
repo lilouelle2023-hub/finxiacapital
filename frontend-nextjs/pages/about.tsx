@@ -1,10 +1,10 @@
 import React from 'react';
-import Head from 'next/head';
 import { useLanguage } from '@/context/LanguageContext';
 import { 
   CheckCircle, Award, Briefcase, Lightbulb, BarChart3,
   TrendingUp, Shield, Brain, Layers
 } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function AboutPage() {
   const context = useLanguage();
@@ -78,10 +78,13 @@ export default function AboutPage() {
 
   return (
     <div data-testid="about-page" className="pt-20">
-      <Head>
-        <title>À Propos de FINXIA Capital · Gestion Alternative Européenne</title>
-        <meta name="description" content="FINXIA Capital est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, combinant discipline institutionnelle et architecture AI-native." />
-      </Head>
+      <SEO
+        title={language === 'fr' ? "À Propos — Notre Vision" : "About — Our Vision"}
+        description={language === 'fr' 
+          ? "FINXIA Capital combine actifs réels et intelligence artificielle. Équipe expérimentée en finance, immobilier et IA. SCSp Luxembourg, 18 agents IA natifs."
+          : "FINXIA Capital combines real assets and artificial intelligence. Experienced team in finance, real estate and AI. Luxembourg SCSp, 18 native AI agents."}
+        canonical="https://finxiacapital.com/about/"
+      />
 
       {/* Hero Section */}
       <section className="py-24 md:py-32 bg-slate-50">

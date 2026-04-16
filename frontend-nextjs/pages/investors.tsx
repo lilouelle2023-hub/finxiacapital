@@ -1,12 +1,22 @@
 import React from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { Handshake, Target, Eye, FileText, CheckCircle, ArrowRight } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 export default function InvestorsPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
+
+  return (
+    <div data-testid="investors-page" className="pt-20">
+      <SEO
+        title={language === 'fr' ? "Investisseurs — ILPA, Transparence, Reporting" : "Investors — ILPA, Transparency, Reporting"}
+        description={language === 'fr'
+          ? "Adhésion stricte aux principes ILPA. Reporting trimestriel transparent. Alignement des intérêts. Structure SCSp Luxembourg pour investisseurs institutionnels."
+          : "Strict adherence to ILPA principles. Transparent quarterly reporting. Alignment of interests. Luxembourg SCSp structure for institutional investors."}
+        canonical="https://finxiacapital.com/investors/"
+      />
 
   const values = [
     {
