@@ -15,13 +15,13 @@ export default function RiskManagementPage() {
   const { t } = useLanguage();
 
   const riskItems = [
-    { icon: PieChart, title: t('risk.item1Title'), text: t('risk.item1Text') },
-    { icon: TrendingDown, title: t('risk.item2Title'), text: t('risk.item2Text') },
-    { icon: Calculator, title: t('risk.item3Title'), text: t('risk.item3Text') },
-    { icon: Activity, title: t('risk.item4Title'), text: t('risk.item4Text') },
-    { icon: Calendar, title: t('risk.item5Title'), text: t('risk.item5Text') },
-    { icon: Layers, title: t('risk.item6Title'), text: t('risk.item6Text') },
-    { icon: Shield, title: t('risk.item7Title'), text: t('risk.item7Text') },
+    { id: 'risk-diversification', icon: PieChart, title: t('risk.item1Title'), text: t('risk.item1Text') },
+    { id: 'risk-market', icon: TrendingDown, title: t('risk.item2Title'), text: t('risk.item2Text') },
+    { id: 'risk-valuation', icon: Calculator, title: t('risk.item3Title'), text: t('risk.item3Text') },
+    { id: 'risk-monitoring', icon: Activity, title: t('risk.item4Title'), text: t('risk.item4Text') },
+    { id: 'risk-reporting', icon: Calendar, title: t('risk.item5Title'), text: t('risk.item5Text') },
+    { id: 'risk-governance', icon: Layers, title: t('risk.item6Title'), text: t('risk.item6Text') },
+    { id: 'risk-compliance', icon: Shield, title: t('risk.item7Title'), text: t('risk.item7Text') },
   ];
 
   return (
@@ -55,11 +55,11 @@ export default function RiskManagementPage() {
       <section className="py-24 md:py-32 bg-slate-50" data-testid="framework-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {riskItems.map((item, index) => (
+            {riskItems.map((item) => (
               <div 
-                key={index}
+                key={item.id}
                 className="bg-white p-8 border-l-2 border-transparent hover:border-amber-700 transition-colors card-hover"
-                data-testid={`risk-item-${index}`}
+                data-testid={`risk-item-${item.id}`}
               >
                 <item.icon className="w-10 h-10 text-slate-400 mb-6" strokeWidth={1.5} />
                 <h3 className="font-serif text-xl mb-4">{item.title}</h3>

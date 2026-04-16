@@ -14,28 +14,32 @@ export default function GovernancePage() {
   const { language } = useLanguage();
 
   const riskDimensions = [
-    { 
+    {
+      id: 'market-risk',
       icon: TrendingDown, 
       title: language === 'fr' ? 'Risque de Marché' : 'Market Risk', 
       text: language === 'fr'
         ? 'Suivi quotidien des valorisations, des cap rates de marché et des spreads de crédit par nos agents IA de monitoring. Alertes automatisées sur tout mouvement dépassant nos seuils de tolérance.'
         : 'Daily monitoring of valuations, market cap rates and credit spreads by our AI monitoring agents. Automated alerts on any movement exceeding our tolerance thresholds.'
     },
-    { 
+    {
+      id: 'credit-risk',
       icon: CreditCard, 
       title: language === 'fr' ? 'Risque de Crédit' : 'Credit Risk', 
       text: language === 'fr'
         ? 'Monitoring en temps réel des ratios LTV, DSCR et ICR sur l\'ensemble des structures de financement. Reporting covenant J-30 automatique.'
         : 'Real-time monitoring of LTV, DSCR and ICR ratios across all financing structures. Automatic D-30 covenant reporting.'
     },
-    { 
+    {
+      id: 'operational-risk',
       icon: Settings, 
       title: language === 'fr' ? 'Risque Opérationnel' : 'Operational Risk', 
       text: language === 'fr'
         ? 'Supervision du NOI actif par actif en temps réel via intégration BMS et Yardi. Détection d\'anomalies par machine learning. Alertes de vacance locative J-90.'
         : 'Real-time asset-by-asset NOI supervision via BMS and Yardi integration. Machine learning anomaly detection. D-90 vacancy alerts.'
     },
-    { 
+    {
+      id: 'esg-risk',
       icon: Leaf, 
       title: language === 'fr' ? 'Risque ESG' : 'ESG Risk', 
       text: language === 'fr'
@@ -92,11 +96,11 @@ export default function GovernancePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {riskDimensions.map((item, index) => (
+            {riskDimensions.map((item) => (
               <div 
-                key={index}
+                key={item.id}
                 className="bg-slate-50 p-8 border-l-4 border-[#C45A3B] card-hover"
-                data-testid={`risk-dimension-${index}`}
+                data-testid={`risk-dimension-${item.id}`}
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-[#C45A3B]/10 rounded-full flex items-center justify-center">

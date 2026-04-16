@@ -8,28 +8,32 @@ export default function InvestorsPage() {
   const { language } = useLanguage();
 
   const values = [
-    { 
+    {
+      id: 'long-term-partnerships',
       icon: Handshake, 
       title: language === 'fr' ? 'Partenariats Long Terme' : 'Long-term Partnerships',
       text: language === 'fr'
         ? 'Nous priorisons la construction de relations durables avec nos investisseurs, basées sur la confiance mutuelle et des objectifs d\'investissement partagés.'
         : 'We prioritize building lasting relationships with our investors, based on mutual trust and shared investment objectives.'
     },
-    { 
+    {
+      id: 'alignment-interests',
       icon: Target, 
       title: language === 'fr' ? 'Alignement des Intérêts' : 'Alignment of Interests',
       text: language === 'fr'
         ? 'Notre structure de frais et approche d\'investissement assurent un fort alignement entre les intérêts de notre équipe et de nos investisseurs.'
         : 'Our fee structure and investment approach ensure strong alignment between the interests of our team and our investors.'
     },
-    { 
+    {
+      id: 'transparency',
       icon: Eye, 
       title: language === 'fr' ? 'Transparence' : 'Transparency',
       text: language === 'fr'
         ? 'Un reporting régulier et complet fournit aux investisseurs une visibilité complète sur la performance du portefeuille et les expositions aux risques.'
         : 'Regular and comprehensive reporting provides investors with full visibility into portfolio performance and risk exposures.'
     },
-    { 
+    {
+      id: 'inrev-reporting',
       icon: FileText, 
       title: language === 'fr' ? 'Reporting INREV' : 'INREV Reporting',
       text: language === 'fr'
@@ -71,11 +75,11 @@ export default function InvestorsPage() {
       <section className="py-24 md:py-32 bg-white" data-testid="values-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">
-            {values.map((item, index) => (
+            {values.map((item) => (
               <div 
-                key={index}
+                key={item.id}
                 className="bg-slate-50 p-8 md:p-10 card-hover"
-                data-testid={`value-card-${index}`}
+                data-testid={`value-card-${item.id}`}
               >
                 <item.icon className="w-10 h-10 text-[#C45A3B] mb-6" strokeWidth={1.5} />
                 <h3 className="font-serif text-2xl mb-4">{item.title}</h3>

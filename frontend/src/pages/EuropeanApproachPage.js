@@ -90,8 +90,8 @@ export default function EuropeanApproachPage() {
                     <span className="text-sm font-medium text-slate-700">{t('europe.keyCities') || 'Villes Clés'}</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    {country.cities.map((city, i) => (
-                      <span key={i} className="text-xs bg-white px-3 py-1 text-slate-600 border border-slate-200">
+                    {country.cities.map((city) => (
+                      <span key={`${country.key}-city-${city}`} className="text-xs bg-white px-3 py-1 text-slate-600 border border-slate-200">
                         {city}
                       </span>
                     ))}
@@ -104,8 +104,8 @@ export default function EuropeanApproachPage() {
                     <span className="text-sm font-medium text-slate-700">{t('europe.strategyFocus') || 'Stratégies'}</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    {country.focus.map((f, i) => (
-                      <span key={i} className="text-xs bg-amber-50 px-3 py-1 text-amber-800 border border-amber-200">
+                    {country.focus.map((f) => (
+                      <span key={`${country.key}-focus-${f}`} className="text-xs bg-amber-50 px-3 py-1 text-amber-800 border border-amber-200">
                         {f}
                       </span>
                     ))}
