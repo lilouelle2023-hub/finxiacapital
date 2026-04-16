@@ -1,0 +1,38 @@
+# FINXIA Capital - Deployment Configuration
+
+## Application Type
+FastAPI backend serving Next.js static build
+
+## Architecture
+- **Backend**: FastAPI (port 8001) serves both API endpoints and Next.js static files
+- **Frontend**: Next.js 15 SSG (Static Site Generation)
+- **Database**: MongoDB Atlas (managed by Emergent in production)
+
+## Build Process
+1. Backend installs Python dependencies from requirements.txt
+2. Next.js builds static site to `/app/frontend-nextjs/out/`
+3. FastAPI serves static files from `/out` directory
+
+## Production Endpoints
+- **Static pages**: served by FastAPI at root `/`
+- **API endpoints**: `/api/health`, `/api/contact`, etc.
+- **Health check**: `GET /api/health`
+
+## Environment Variables (Production)
+- `MONGO_URL`: Provided by Emergent (MongoDB Atlas connection string)
+- `DB_NAME`: Database name for MongoDB
+- `CORS_ORIGINS`: "*" (allows all origins)
+- `NEXT_PUBLIC_BACKEND_URL`: Will be set to production domain
+
+## Pre-deployment Checklist
+✅ Next.js build completes successfully
+✅ Backend serves static files from /out directory
+✅ API health check responds with 200
+✅ All pages return 200 status code
+✅ CORS configured for production
+✅ MongoDB connection uses environment variable (not hardcoded)
+
+## Known Configuration
+- Backend binds to 0.0.0.0:8001
+- Frontend static files served via FastAPI
+- No separate frontend server needed in production
