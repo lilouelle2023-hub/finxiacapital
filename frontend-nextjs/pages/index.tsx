@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { ArrowRight, Shield, Cpu, Scale, Server, Building, Home, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
 import SEO from '@/components/SEO';
 
 export default function HomePage() {
@@ -13,7 +13,7 @@ export default function HomePage() {
     "@type": "Organization",
     "name": "FINXIA Capital",
     "url": "https://finxiacapital.com",
-    "logo": "https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/wllq2664_finxia_LOGO_DEFINITIF.png",
+    "logo": "https://finxiacapital.com/logo-finxia.png",
     "description": "Véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise. Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living.",
     "address": {
       "@type": "PostalAddress",
@@ -103,7 +103,7 @@ export default function HomePage() {
     <div data-testid="home-page">
       <SEO
         title="Accueil — Build in the real world, Scaled with AI"
-        description="FINXIA Capital est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, déployant des stratégies institutionnelles augmentées par 18 agents IA."
+        description="Finxia Capital — Véhicule d'investissement propriétaire SCSp Luxembourg. Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex. 18 agents IA natifs. Build in the real world. Scaled with AI."
         canonical="https://finxiacapital.com/"
         structuredData={structuredData}
       />

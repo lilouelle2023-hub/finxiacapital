@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Head from 'next/head';
 import { useLanguage } from '@/context/LanguageContext';
 import { MapPin, Mail, CheckCircle, AlertCircle } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
@@ -69,10 +69,11 @@ export default function ContactPage() {
 
   return (
     <div data-testid="contact-page" className="pt-20">
-      <Head>
-        <title>{t('contact.title')} · FINXIA Capital</title>
-        <meta name="description" content={t('contact.subtitle')} />
-      </Head>
+      <SEO
+        title="Contact — Nous Contacter | Finxia Capital"
+        description="Contactez Finxia Capital pour toute demande d'investissement institutionnel. SCSp Luxembourg. Email: contact@finxiacapital.com"
+        canonical="https://finxiacapital.com/contact/"
+      />
 
       {/* Hero Section */}
       <section className="py-24 md:py-32 bg-slate-50">
