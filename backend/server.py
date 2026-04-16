@@ -1,6 +1,4 @@
 from fastapi import FastAPI, APIRouter, HTTPException
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -193,47 +191,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Serve Next.js static files in production
-NEXTJS_OUT_DIR = Path(__file__).parent.parent / "frontend-nextjs" / "out"
-if NEXTJS_OUT_DIR.exists():
-    # Mount static assets (_next directory)
-    app.mount("/_next", StaticFiles(directory=str(NEXTJS_OUT_DIR / "_next")), name="next-static")
-    
-    # Serve HTML pages
-    @app.get("/{full_path:path}")
-    async def serve_nextjs_pages(full_path: str):
-        """Serve Next.js static pages"""
-        # Try to serve the exact path
-        file_path = NEXTJS_OUT_DIR / full_path
-        
-        # If it's a directory, serve index.html
-        if file_path.is_dir():
-            index_file = file_path / "index.html"
-            if index_file.exists():
-                return FileResponse(index_file, media_type="text/html")
-        
-        # If it's a file, serve it
-        if file_path.is_file():
-            return FileResponse(file_path)
-        
-        # Try with .html extension
-        html_file = NEXTJS_OUT_DIR / f"{full_path}.html"
-        if html_file.exists():
-            return FileResponse(html_file, media_type="text/html")
-        
-        # Try as directory with index.html
-        dir_index = NEXTJS_OUT_DIR / full_path / "index.html"
-        if dir_index.exists():
-            return FileResponse(dir_index, media_type="text/html")
-        
-        # Serve root index.html for client-side routing fallback
-        root_index = NEXTJS_OUT_DIR / "index.html"
-        if root_index.exists():
-            return FileResponse(root_index, media_type="text/html")
-        
-        raise HTTPException(status_code=404, detail="Page not found")
-else:
-    logger.warning(f"Next.js build directory not found at {NEXTJS_OUT_DIR}")
+# Note: Next.js frontend is deployed separately on Netlify
+# Backend only serves API endpoints under /api/*
+# No static file serving needed in Kubernetes deployment
 
 @app.on_event("startup")
 async def startup_event():
@@ -241,8 +201,6 @@ async def startup_event():
     # Initialize database connection
     get_database()
     logger.info("FINXIA Capital API ready")
-    if NEXTJS_OUT_DIR.exists():
-        logger.info(f"Serving Next.js static files from {NEXTJS_OUT_DIR}")
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
