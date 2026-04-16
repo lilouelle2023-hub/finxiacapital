@@ -127,9 +127,9 @@ export default function StrategiesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {strategies.map((strategy, index) => (
             <div 
-              key={index}
+              key={strategy.id}
               className={`py-16 ${index !== strategies.length - 1 ? 'border-b border-slate-200' : ''}`}
-              data-testid={`strategy-detail-${index}`}
+              data-testid={`strategy-detail-${strategy.id}`}
             >
               <div className="grid lg:grid-cols-2 gap-12 items-start">
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
