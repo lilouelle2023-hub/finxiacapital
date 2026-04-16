@@ -107,8 +107,8 @@ export default function HomePage() {
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed animate-slide-up stagger-1 max-w-3xl">
               {language === 'fr'
-                ? 'Les actifs réels restent le meilleur terrain de création de valeur. L\'intelligence artificielle, le meilleur levier pour en extraire l\'alpha.'
-                : 'Real assets remain the best ground for value creation. Artificial intelligence, the best lever to extract alpha.'}
+                ? 'Finxia Capital est un véhicule d\'investissement propriétaire, structuré en SCSp luxembourgeoise. Un capital de conviction, déployé avec une discipline institutionnelle sur quatre pôles de création de valeur.'
+                : 'Finxia Capital is a proprietary investment vehicle, structured as a Luxembourg SCSp. Conviction capital, deployed with institutional discipline across four value creation poles.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up stagger-2">
               <Link
@@ -231,31 +231,44 @@ export default function HomePage() {
               <div className="section-divider mb-8" />
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
                 {language === 'fr'
-                  ? 'Là où la gestion traditionnelle mobilise des équipes séquentielles, Finxia déploie 18 agents d\'intelligence artificielle opérant en parallèle, à chaque étape du cycle de vie du fonds.'
-                  : 'Where traditional management mobilizes sequential teams, Finxia deploys 18 artificial intelligence agents operating in parallel, at every stage of the fund lifecycle.'}
+                  ? 'Finxia est construit AI-native — pas dans le sens marketing du terme, dans le sens architectural. 18 agents d\'intelligence artificielle opèrent en continu à chaque étape du cycle de vie du portefeuille.'
+                  : 'Finxia is built AI-native — not in the marketing sense, but in the architectural sense. 18 artificial intelligence agents operate continuously at every stage of the portfolio lifecycle.'}
+              </p>
+              <p className="text-slate-300 text-base leading-relaxed mb-6">
+                {language === 'fr'
+                  ? 'Du Deal Intelligence qui identifie les opportunités avant le marché, à l\'Asset Monitor qui surveille la performance en temps réel — en passant par le Debt Tracker, le Revenue Manager, l\'Ops Tracker et l\'Exit Optimizer — chaque décision est augmentée.'
+                  : 'From Deal Intelligence that identifies opportunities before the market, to Asset Monitor that tracks performance in real-time — through Debt Tracker, Revenue Manager, Ops Tracker, and Exit Optimizer — every decision is augmented.'}
               </p>
               <p className="text-slate-400 text-base leading-relaxed">
                 {language === 'fr'
-                  ? 'Les actifs sont réels. L\'intelligence est artificielle. La combinaison est délibérée.'
-                  : 'The assets are real. The intelligence is artificial. The combination is deliberate.'}
+                  ? 'Aucun signal n\'est perdu. Les actifs sont réels. L\'intelligence est artificielle. La combinaison est délibérée.'
+                  : 'No signal is lost. The assets are real. The intelligence is artificial. The combination is deliberate.'}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-3xl font-serif text-[#C45A3B] mb-2">18</div>
-                <p className="text-slate-400 text-sm">AI Agents</p>
-              </div>
-              <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Deal Intel</div>
-                <p className="text-slate-400 text-sm">Sourcing Augmenté</p>
+                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Deal Intelligence</div>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Sourcing Augmenté' : 'Enhanced Sourcing'}</p>
               </div>
               <div className="bg-white/5 p-6 border border-white/10">
                 <div className="text-2xl font-serif text-[#C45A3B] mb-2">Asset Monitor</div>
-                <p className="text-slate-400 text-sm">Suivi Temps Réel</p>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Suivi Temps Réel' : 'Real-Time Tracking'}</p>
+              </div>
+              <div className="bg-white/5 p-6 border border-white/10">
+                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Debt Tracker</div>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Suivi Dette' : 'Debt Monitoring'}</p>
+              </div>
+              <div className="bg-white/5 p-6 border border-white/10">
+                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Revenue Manager</div>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Optimisation Revenus' : 'Revenue Optimization'}</p>
+              </div>
+              <div className="bg-white/5 p-6 border border-white/10">
+                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Ops Tracker</div>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Suivi Opérationnel' : 'Operations Tracking'}</p>
               </div>
               <div className="bg-white/5 p-6 border border-white/10">
                 <div className="text-2xl font-serif text-[#C45A3B] mb-2">Exit Optimizer</div>
-                <p className="text-slate-400 text-sm">Sorties Stratégiques</p>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Sorties Stratégiques' : 'Strategic Exits'}</p>
               </div>
             </div>
           </div>

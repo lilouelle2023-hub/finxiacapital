@@ -16,8 +16,8 @@ export default function StrategiesPage() {
         ? 'L\'infrastructure de l\'IA a besoin d\'un terrain. Nous le construisons.'
         : 'AI infrastructure needs ground. We build it.',
       thesis: language === 'fr'
-        ? 'Le pôle TITAN cible des datacenters sous-performants — des actifs brown —, pour les transformer en infrastructure IA de nouvelle génération : décarbonée, certifiée, prête pour les workloads d\'intelligence artificielle. L\'explosion de la demande en capacité de calcul crée un écart de valeur massif entre les actifs existants et les standards qu\'exige l\'IA.'
-        : 'The TITAN division targets underperforming datacenters — brown assets —, to transform them into next-generation AI infrastructure: decarbonized, certified, ready for artificial intelligence workloads. The explosion in computing capacity demand creates a massive value gap between existing assets and the standards required by AI.',
+        ? 'Le pôle TITAN est notre conviction centrale. Nous ciblons des datacenters sous-performants — des actifs brown — pour les transformer en infrastructure IA de nouvelle génération : décarbonée, certifiée, dimensionnée pour les workloads d\'intelligence artificielle. La demande en capacité de calcul croit structurellement plus vite que l\'offre qualifiée. L\'écart de valeur entre un actif brown repositionné et un datacenter IA-ready est notre thèse. TITAN se finance via un Green Bond dédié — instrument aligné avec la nature de la transformation : du carbone vers la performance, de l\'obsolescence vers la certification.'
+        : 'The TITAN division is our core conviction. We target underperforming datacenters — brown assets — to transform them into next-generation AI infrastructure: decarbonized, certified, sized for artificial intelligence workloads. Computing capacity demand grows structurally faster than qualified supply. The value gap between a repositioned brown asset and an AI-ready datacenter is our thesis. TITAN is financed via a dedicated Green Bond — an instrument aligned with the nature of the transformation: from carbon to performance, from obsolescence to certification.',
       approach: [
         language === 'fr' ? 'Acquisition de datacenters sous-performants énergétiquement' : 'Acquisition of energy-underperforming datacenters',
         language === 'fr' ? 'Transformation vers infrastructure IA décarbonée' : 'Transformation to decarbonized AI infrastructure',
@@ -36,8 +36,8 @@ export default function StrategiesPage() {
         ? 'La résilience structurelle d\'un actif, l\'intelligence d\'un opérateur.'
         : 'The structural resilience of an asset, the intelligence of an operator.',
       thesis: language === 'fr'
-        ? 'Le segment hôtelier premium urbain génère des RevPAR soutenus par la demande internationale. Finxia combine des actifs long terme producteurs de cash flow avec des opportunités de rotation après repositionnement de marque.'
-        : 'The urban premium hotel segment generates RevPAR supported by international demand. Finxia combines long-term cash flow producing assets with rotation opportunities after brand repositioning.',
+        ? 'Le segment hôtelier premium urbain génère des RevPAR soutenus par la demande internationale. Finxia combine des actifs long terme producteurs de cash flow avec des opportunités de rotation après repositionnement opérationnel.'
+        : 'The urban premium hotel segment generates RevPAR supported by international demand. Finxia combines long-term cash flow producing assets with rotation opportunities after operational repositioning.',
       approach: [
         language === 'fr' ? 'Acquisition d\'hôtels 4-5 étoiles dans les métropoles européennes' : 'Acquisition of 4-5 star hotels in European metropolises',
         language === 'fr' ? 'Asset management actif en partenariat avec des opérateurs de référence' : 'Active asset management in partnership with reference operators',
@@ -53,11 +53,11 @@ export default function StrategiesPage() {
       subtitle: language === 'fr' ? 'Plateforme Urbaine' : 'Urban Platform',
       title: language === 'fr' ? 'Résidentiel & Flex Living' : 'Residential & Flex Living',
       headline: language === 'fr'
-        ? 'La ville évolue. Le logement doit suivre.'
-        : 'The city evolves. Housing must follow.',
+        ? 'La ville évolue. Le logement suit.'
+        : 'The city evolves. Housing follows.',
       thesis: language === 'fr'
-        ? 'La demande pour le logement flexible — coliving, résidences services, build-to-rent — dépasse structurellement l\'offre dans les grandes métropoles. Finxia constitue des portefeuilles opérés avec des partenaires spécialisés, calibrés pour des sorties en bloc vers investisseurs Core.'
-        : 'Demand for flexible housing — coliving, serviced residences, build-to-rent — structurally exceeds supply in major metropolises. Finxia builds operated portfolios with specialized partners, calibrated for block exits to Core investors.',
+        ? 'Coliving, résidences services, build-to-rent — la demande dépasse structurellement l\'offre dans les métropoles européennes. Finxia constitue des portefeuilles opérés avec des partenaires spécialisés, calibrés pour des sorties en bloc vers investisseurs Core.'
+        : 'Coliving, serviced residences, build-to-rent — demand structurally exceeds supply in European metropolises. Finxia builds operated portfolios with specialized partners, calibrated for block exits to Core investors.',
       approach: [
         language === 'fr' ? 'Constitution de portefeuilles multi-actifs résidentiels' : 'Constitution of multi-asset residential portfolios',
         language === 'fr' ? 'Partenariats avec opérateurs spécialisés (coliving, PBSA)' : 'Partnerships with specialized operators (coliving, PBSA)',
@@ -76,8 +76,8 @@ export default function StrategiesPage() {
         ? 'Là où la visibilité sur l\'actif crée l\'avantage informationnel.'
         : 'Where asset visibility creates informational advantage.',
       thesis: language === 'fr'
-        ? 'Late-stage, secondaires décotés, situations spéciales. Une approche ultra-sélective — taux de conversion inférieur à 5% — réservée aux opportunités où notre expertise sectorielle fait la différence.'
-        : 'Late-stage, discounted secondaries, special situations. An ultra-selective approach — conversion rate below 5% — reserved for opportunities where our sector expertise makes the difference.',
+        ? 'Late-stage, secondaires décotés, situations spéciales. Une approche ultra-sélective — réservée aux opportunités où notre expertise sectorielle nous confère un avantage décisif. Taux de conversion volontairement bas. Conviction maximale sur chaque position.'
+        : 'Late-stage, discounted secondaries, special situations. An ultra-selective approach — reserved for opportunities where our sector expertise confers a decisive advantage. Deliberately low conversion rate. Maximum conviction on each position.',
       approach: [
         language === 'fr' ? 'Participation à des tours de financement late-stage' : 'Participation in late-stage financing rounds',
         language === 'fr' ? 'Acquisition de positions secondaires décotées' : 'Acquisition of discounted secondary positions',
