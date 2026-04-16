@@ -92,14 +92,31 @@ export default function HomePage() {
       </Head>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center" data-testid="hero-section">
+      <section className="relative min-h-screen flex items-center pt-24" data-testid="hero-section">
         <div 
-          className="absolute inset-0 bg-cover bg-center"
           style={{ 
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
             backgroundImage: 'url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            zIndex: 0
           }}
         />
-        <div className="absolute inset-0 hero-overlay" />
+        <div 
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'linear-gradient(135deg, rgba(30, 42, 58, 0.92) 0%, rgba(30, 42, 58, 0.75) 50%, rgba(30, 42, 58, 0.6) 100%)',
+            zIndex: 0
+          }}
+        />
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="max-w-4xl">

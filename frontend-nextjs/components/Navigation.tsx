@@ -36,25 +36,27 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-sm border-b border-slate-100`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <Link href="/" className="font-serif text-2xl font-bold text-[#1E2A3A] hover:text-[#C45A3B] transition-colors">
-            FINXIA
+        <div className="flex justify-between items-center h-24">
+          <Link href="/" className="flex items-center">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/wllq2664_finxia_LOGO_DEFINITIF.png" 
+              alt="FINXIA CAPITAL" 
+              className="h-14 w-auto"
+            />
           </Link>
 
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 href={link.path}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-sm font-medium tracking-wide transition-colors link-hover ${
                   router.pathname === link.path
                     ? 'text-[#C45A3B]'
-                    : 'text-slate-600 hover:text-[#C45A3B]'
+                    : 'text-slate-700 hover:text-[#C45A3B]'
                 }`}
               >
                 {link.label}
@@ -62,7 +64,7 @@ export default function Navigation() {
             ))}
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 hover:text-[#C45A3B] transition-colors border border-slate-200 rounded-md hover:border-[#C45A3B]"
+              className="flex items-center gap-2 px-3 py-1.5 rounded text-sm font-medium transition-colors text-slate-700 hover:bg-slate-100"
               data-testid="language-toggle"
             >
               <Globe className="w-4 h-4" />
