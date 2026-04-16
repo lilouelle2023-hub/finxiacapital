@@ -1,0 +1,9 @@
+# Netlify Redirects for FINXIA Capital Next.js SSG
+
+# SPA fallback for client-side routing (not needed for SSG but good practice)
+/*    /404.html   404
+
+# Force HTTPS (optional - can be enabled in Netlify dashboard)
+# http://finxiacapital.com/*    https://finxiacapital.com/:splat  301!
+# http://www.finxiacapital.com/*    https://finxiacapital.com/:splat  301!
+# https://www.finxiacapital.com/*   https://finxiacapital.com/:splat  301!
