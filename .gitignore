@@ -183,3 +183,12 @@ credentials.json
 *.key
 .credentials
 frontend-nextjs/.next/dev/cache/turbopack/e0739832/00000906.sst
+-e 
+# Environment and credential files
+.env
+.env.*
+*.env
+credentials.json
+*.pem
+*.key
+.credentials
