@@ -25,6 +25,26 @@ export default function ContactPage() {
     { value: 'other', label: t('contact.other') },
   ];
 
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://finxiacapital.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": language === 'fr' ? "Contact" : "Contact",
+        "item": "https://finxiacapital.com/contact"
+      }
+    ]
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -73,6 +93,8 @@ export default function ContactPage() {
         title="Contact — Nous Contacter | Finxia Capital"
         description="Contactez Finxia Capital pour toute demande d'investissement institutionnel. SCSp Luxembourg. Email: contact@finxiacapital.com"
         canonical="https://finxiacapital.com/contact/"
+        keywords="contact Finxia Capital Luxembourg, investissement alternatif contact, SCSp Luxembourg contact, demande investisseur institutionnel"
+        breadcrumbSchema={breadcrumbSchema}
       />
 
       {/* Hero Section */}

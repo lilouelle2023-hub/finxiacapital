@@ -1,22 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { Server, Building, Home, TrendingUp, CheckCircle } from 'lucide-react';
+import { Server, Building, Home, TrendingUp, CheckCircle, ArrowRight } from 'lucide-react';
 import SEO from '@/components/SEO';
 
 export default function StrategiesPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
-
-  return (
-    <div data-testid="strategies-page" className="pt-20">
-      <SEO
-        title={language === 'fr' ? "Stratégies — TITAN, Hôtellerie, Résidentiel, C.Capital" : "Strategies — TITAN, Hospitality, Residential, C.Capital"}
-        description={language === 'fr'
-          ? "4 stratégies d'investissement : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living, C.Capital. Financement Green Bond ESG dédié."
-          : "4 investment strategies: TITAN AI Datacenter Brown-to-Green, Premium Hospitality, Flex Living Residential, C.Capital. Dedicated ESG Green Bond financing."}
-        canonical="https://finxiacapital.com/strategies/"
-      />
 
   const strategies = [
     {
@@ -105,12 +95,70 @@ export default function StrategiesPage() {
     },
   ];
 
+  // FAQ Schema for Strategies page
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce que la stratégie TITAN ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TITAN est la stratégie phare de Finxia Capital : acquisition et transformation de datacenters en infrastructure IA décarbonée, financée via un Green Bond ESG, ciblant des locataires hyperscaler en bail long terme."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment Finxia Capital finance-t-elle la stratégie TITAN ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TITAN se finance via un Green Bond ESG dédié, instrument calibré pour cette transformation — labellisé SFDR Art.9, structuré avec nos partenaires bancaires, sans dilution equity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelles sont les 4 stratégies d'investissement de Finxia Capital ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Finxia Capital déploie 4 stratégies : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living (coliving, PBSA, build-to-rent), et C.Capital (late-stage, secondaires décotés, situations spéciales)."
+        }
+      }
+    ]
+  };
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://finxiacapital.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": language === 'fr' ? "Stratégies" : "Strategies",
+        "item": "https://finxiacapital.com/strategies"
+      }
+    ]
+  };
+
   return (
     <div data-testid="strategies-page" className="pt-20">
-      <Head>
-        <title>Stratégies d'Investissement · FINXIA Capital</title>
-        <meta name="description" content="Quatre pôles de création de valeur : Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living et Capital Opportunités." />
-      </Head>
+      <SEO
+        title={language === 'fr' ? "Stratégies — TITAN, Hôtellerie, Résidentiel, C.Capital" : "Strategies — TITAN, Hospitality, Residential, C.Capital"}
+        description={language === 'fr'
+          ? "4 stratégies d'investissement : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living, C.Capital. Financement Green Bond ESG dédié."
+          : "4 investment strategies: TITAN AI Datacenter Brown-to-Green, Premium Hospitality, Flex Living Residential, C.Capital. Dedicated ESG Green Bond financing."}
+        canonical="https://finxiacapital.com/strategies/"
+        keywords="datacenter AI brown to green, hôtellerie premium Europe, coliving investissement, late-stage secondaires Luxembourg, Green Bond ESG SFDR, hyperscaler lease"
+        faqSchema={faqSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
 
       {/* Hero Section */}
       <section className="py-24 md:py-32 bg-slate-50">
@@ -129,6 +177,34 @@ export default function StrategiesPage() {
               {language === 'fr'
                 ? 'Une discipline d\'exécution institutionnelle. Une architecture AI-native qui n\'a pas d\'équivalent dans la gestion alternative européenne.'
                 : 'Institutional execution discipline. An AI-native architecture unmatched in European alternative management.'}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO-Rich Context Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-slate-700 leading-relaxed mb-6">
+              {language === 'fr' 
+                ? "FINXIA Capital déploie ses stratégies d'investissement sur quatre pôles complémentaires, avec une approche institutionnelle rigoureuse. Notre stratégie phare, TITAN Datacenter AI, cible la transformation brown-to-green d'infrastructures datacenters en Europe, positionnées pour répondre à la demande croissante des hyperscalers en quête de baux long terme et d'infrastructure décarbonée." 
+                : "FINXIA Capital deploys its investment strategies across four complementary pillars, with a rigorous institutional approach. Our flagship strategy, TITAN Datacenter AI, targets the brown-to-green transformation of datacenter infrastructure in Europe, positioned to meet the growing demand from hyperscalers seeking long-term leases and decarbonized infrastructure."}
+            </p>
+            <p className="text-slate-700 leading-relaxed mb-6">
+              {language === 'fr'
+                ? "Cette transformation s'appuie sur un financement structuré via Green Bond ESG conforme SFDR Article 9, permettant de financer la décarbonation sans dilution du capital propriétaire. L'approche combine acquisition de campus existants, déploiement d'infrastructure énergétique de rupture (refroidissement haute efficacité, récupération chaleur, production on-site), et certification ESG pour créer une prime de sortie significative."
+                : "This transformation relies on structured financing via SFDR Article 9 compliant ESG Green Bonds, enabling decarbonization financing without equity dilution. The approach combines acquisition of existing campuses, deployment of breakthrough energy infrastructure (high-efficiency cooling, heat recovery, on-site production), and ESG certification to create significant exit premiums."}
+            </p>
+            <p className="text-slate-700 leading-relaxed mb-6">
+              {language === 'fr'
+                ? "En parallèle, nos stratégies Hôtellerie Premium et Résidentiel Flex Living (coliving, PBSA, build-to-rent) capitalisent sur la dynamique structurelle de la demande urbaine européenne, avec des sorties calibrées vers investisseurs Core. Le pôle C.Capital cible des opportunités late-stage et secondaires décotés, avec un taux de conversion volontairement inférieur à 5 % pour maximiser la conviction sur chaque position."
+                : "In parallel, our Premium Hospitality and Flex Living Residential strategies (coliving, PBSA, build-to-rent) capitalize on the structural dynamics of European urban demand, with exits calibrated for Core investors. The C.Capital division targets late-stage and discounted secondary opportunities, with a deliberately sub-5% conversion rate to maximize conviction on each position."}
+            </p>
+            <p className="text-slate-700 leading-relaxed">
+              {language === 'fr'
+                ? "Structurée en SCSp Luxembourg avec capital propre et sans levée externe, FINXIA Capital allie discipline institutionnelle, architecture AI-native (18 agents IA opérant en continu), et expertise sectorielle approfondie pour créer de la valeur durable sur les actifs réels européens."
+                : "Structured as a Luxembourg SCSp with proprietary capital and no external fundraising, FINXIA Capital combines institutional discipline, AI-native architecture (18 AI agents operating continuously), and deep sector expertise to create sustainable value in European real assets."}
             </p>
           </div>
         </div>
@@ -192,6 +268,42 @@ export default function StrategiesPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Internal Links CTA */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <Link href="/governance" className="group p-8 bg-white card-hover border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-3 group-hover:text-[#C45A3B] transition-colors">
+                {language === 'fr' ? 'Gouvernance & Risques' : 'Governance & Risks'}
+              </h3>
+              <p className="text-slate-600 text-sm mb-4">
+                {language === 'fr' 
+                  ? 'Découvrez notre cadre de gestion des risques et structure SCSp Luxembourg.'
+                  : 'Discover our risk management framework and Luxembourg SCSp structure.'}
+              </p>
+              <span className="text-[#C45A3B] text-sm font-medium inline-flex items-center gap-2">
+                {language === 'fr' ? 'En savoir plus' : 'Learn more'}
+                <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+            <Link href="/investors" className="group p-8 bg-white card-hover border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-3 group-hover:text-[#C45A3B] transition-colors">
+                {language === 'fr' ? 'Espace Investisseurs' : 'Investors'}
+              </h3>
+              <p className="text-slate-600 text-sm mb-4">
+                {language === 'fr' 
+                  ? 'Reporting INREV, conformité ILPA et transparence totale pour investisseurs institutionnels.'
+                  : 'INREV reporting, ILPA compliance and full transparency for institutional investors.'}
+              </p>
+              <span className="text-[#C45A3B] text-sm font-medium inline-flex items-center gap-2">
+                {language === 'fr' ? 'En savoir plus' : 'Learn more'}
+                <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

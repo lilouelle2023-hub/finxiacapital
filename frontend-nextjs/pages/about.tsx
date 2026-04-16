@@ -1,8 +1,9 @@
 import React from 'react';
+import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { 
   CheckCircle, Award, Briefcase, Lightbulb, BarChart3,
-  TrendingUp, Shield, Brain, Layers
+  TrendingUp, Shield, Brain, Layers, ArrowRight
 } from 'lucide-react';
 import SEO from '@/components/SEO';
 
@@ -76,6 +77,58 @@ export default function AboutPage() {
     },
   ];
 
+  // FAQ Schema for About page
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce que Finxia Capital ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Finxia Capital est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, déployant du capital sur 4 pôles : Datacenter AI Brown-to-Green (TITAN), Hôtellerie Premium, Résidentiel Flex Living et Capital Opportunités, avec une architecture AI-native de 18 agents IA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment fonctionne l'approche AI-native de Finxia Capital ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Finxia Capital déploie 18 agents d'intelligence artificielle opérant en continu : Deal Intelligence, Asset Monitor, Debt Tracker, Revenue Manager, Ops Tracker, Exit Optimizer — couvrant chaque étape du cycle de vie du portefeuille."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la structure juridique de Finxia Capital ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Finxia Capital est structurée en SCSp (Société en Commandite Spéciale) luxembourgeoise, véhicule propriétaire sans levée externe, finançant TITAN via Green Bond ESG et dette senior."
+        }
+      }
+    ]
+  };
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://finxiacapital.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": language === 'fr' ? "À Propos" : "About",
+        "item": "https://finxiacapital.com/about"
+      }
+    ]
+  };
+
   return (
     <div data-testid="about-page" className="pt-20">
       <SEO
@@ -84,6 +137,9 @@ export default function AboutPage() {
           ? "FINXIA Capital combine actifs réels et intelligence artificielle. Équipe expérimentée en finance, immobilier et IA. SCSp Luxembourg, 18 agents IA natifs."
           : "FINXIA Capital combines real assets and artificial intelligence. Experienced team in finance, real estate and AI. Luxembourg SCSp, 18 native AI agents."}
         canonical="https://finxiacapital.com/about/"
+        keywords="Finxia Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Jean-Pierre Véron, Lila Benhammou"
+        faqSchema={faqSchema}
+        breadcrumbSchema={breadcrumbSchema}
       />
 
       {/* Hero Section */}
@@ -265,6 +321,42 @@ export default function AboutPage() {
                   : 'Supported by a team of professionals specialized by domain: real estate, finance, legal, technology and operations.'}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Links CTA */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <Link href="/european-approach" className="group p-8 bg-slate-50 card-hover border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-3 group-hover:text-[#C45A3B] transition-colors">
+                {language === 'fr' ? 'Approche Européenne' : 'European Approach'}
+              </h3>
+              <p className="text-slate-600 text-sm mb-4">
+                {language === 'fr' 
+                  ? 'Découvrez notre stratégie de déploiement sur les marchés français, espagnol et italien.'
+                  : 'Discover our deployment strategy across French, Spanish and Italian markets.'}
+              </p>
+              <span className="text-[#C45A3B] text-sm font-medium inline-flex items-center gap-2">
+                {language === 'fr' ? 'En savoir plus' : 'Learn more'}
+                <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+            <Link href="/contact" className="group p-8 bg-slate-50 card-hover border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-3 group-hover:text-[#C45A3B] transition-colors">
+                {language === 'fr' ? 'Nous Contacter' : 'Contact Us'}
+              </h3>
+              <p className="text-slate-600 text-sm mb-4">
+                {language === 'fr' 
+                  ? 'Investisseurs institutionnels et partenaires stratégiques : contactez notre équipe.'
+                  : 'Institutional investors and strategic partners: contact our team.'}
+              </p>
+              <span className="text-[#C45A3B] text-sm font-medium inline-flex items-center gap-2">
+                {language === 'fr' ? 'Nous contacter' : 'Contact us'}
+                <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

@@ -105,6 +105,7 @@ export default function HomePage() {
         title="Accueil — Build in the real world, Scaled with AI"
         description="Finxia Capital — Véhicule d'investissement propriétaire SCSp Luxembourg. Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex. 18 agents IA natifs. Build in the real world. Scaled with AI."
         canonical="https://finxiacapital.com/"
+        keywords="gestion actifs alternatifs Luxembourg, SCSp Luxembourg, AI-native fund, investissement alternatif Europe, datacenter AI brown to green, Green Bond ESG"
         structuredData={structuredData}
       />
 
@@ -379,14 +380,30 @@ export default function HomePage() {
               ? 'Investisseurs institutionnels, partenaires stratégiques : notre équipe est disponible pour répondre à vos questions.'
               : 'Institutional investors, strategic partners: our team is available to answer your questions.'}
           </p>
-          <Link
-            href="/contact"
-            data-testid="cta-contact"
-            className="btn-primary inline-flex items-center gap-2"
-          >
-            {language === 'fr' ? 'Nous Contacter' : 'Contact Us'}
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/strategies"
+              className="btn-secondary inline-flex items-center gap-2"
+            >
+              {language === 'fr' ? 'Découvrir nos Stratégies' : 'Discover our Strategies'}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/about"
+              className="btn-secondary inline-flex items-center gap-2"
+            >
+              {language === 'fr' ? 'Notre Équipe' : 'Our Team'}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/contact"
+              data-testid="cta-contact"
+              className="btn-primary inline-flex items-center gap-2"
+            >
+              {language === 'fr' ? 'Nous Contacter' : 'Contact Us'}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
     </div>

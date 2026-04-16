@@ -8,16 +8,6 @@ export default function InvestorsPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
 
-  return (
-    <div data-testid="investors-page" className="pt-20">
-      <SEO
-        title={language === 'fr' ? "Investisseurs — ILPA, Transparence, Reporting" : "Investors — ILPA, Transparency, Reporting"}
-        description={language === 'fr'
-          ? "Adhésion stricte aux principes ILPA. Reporting trimestriel transparent. Alignement des intérêts. Structure SCSp Luxembourg pour investisseurs institutionnels."
-          : "Strict adherence to ILPA principles. Transparent quarterly reporting. Alignment of interests. Luxembourg SCSp structure for institutional investors."}
-        canonical="https://finxiacapital.com/investors/"
-      />
-
   const values = [
     {
       id: 'long-term-partnerships',
@@ -53,12 +43,37 @@ export default function InvestorsPage() {
     },
   ];
 
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://finxiacapital.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": language === 'fr' ? "Investisseurs" : "Investors",
+        "item": "https://finxiacapital.com/investors"
+      }
+    ]
+  };
+
   return (
     <div data-testid="investors-page" className="pt-20">
-      <Head>
-        <title>Espace Investisseurs · FINXIA Capital</title>
-        <meta name="description" content="Espace dédié aux investisseurs institutionnels. Reporting INREV, gouvernance ILPA et transparence totale." />
-      </Head>
+      <SEO
+        title={language === 'fr' ? "Investisseurs — ILPA, Transparence, Reporting" : "Investors — ILPA, Transparency, Reporting"}
+        description={language === 'fr'
+          ? "Adhésion stricte aux principes ILPA. Reporting trimestriel transparent. Alignement des intérêts. Structure SCSp Luxembourg pour investisseurs institutionnels."
+          : "Strict adherence to ILPA principles. Transparent quarterly reporting. Alignment of interests. Luxembourg SCSp structure for institutional investors."}
+        canonical="https://finxiacapital.com/investors/"
+        keywords="investisseur qualifié Luxembourg, SCSp capital propriétaire, fonds alternatif institutionnel, ILPA compliance, INREV reporting"
+        breadcrumbSchema={breadcrumbSchema}
+      />
 
       {/* Hero Section */}
       <section className="py-24 md:py-32 bg-slate-50">

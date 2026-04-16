@@ -5,7 +5,10 @@ interface SEOProps {
   description: string;
   canonical?: string;
   ogImage?: string;
+  keywords?: string;
   structuredData?: any;
+  faqSchema?: any;
+  breadcrumbSchema?: any;
 }
 
 export default function SEO({ 
@@ -13,9 +16,16 @@ export default function SEO({
   description, 
   canonical = 'https://finxiacapital.com',
   ogImage = 'https://finxiacapital.com/og-image.jpg',
-  structuredData 
+  keywords,
+  structuredData,
+  faqSchema,
+  breadcrumbSchema
 }: SEOProps) {
   const fullTitle = `${title} | FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg`;
+  
+  // Default keywords if not provided
+  const defaultKeywords = "Finxia Capital, SCSp Luxembourg, Datacenter AI, Hôtellerie Premium, Résidentiel Flex Living, Gestion Actifs Alternatifs, Green Bond ESG, Intelligence Artificielle";
+  const finalKeywords = keywords || defaultKeywords;
   
   return (
     <Head>
@@ -41,15 +51,35 @@ export default function SEO({
       <meta name="twitter:image" content={ogImage} />
       
       {/* Additional SEO */}
-      <meta name="keywords" content="Finxia Capital, SCSp Luxembourg, Datacenter AI, Hôtellerie Premium, Résidentiel Flex Living, Gestion Actifs Alternatifs, Green Bond ESG, Intelligence Artificielle" />
+      <meta name="keywords" content={finalKeywords} />
       <meta name="author" content="FINXIA Capital" />
       <meta name="language" content="fr" />
       
-      {/* Structured Data */}
+      {/* Hreflang for bilingual support */}
+      <link rel="alternate" hrefLang="fr" href={canonical} />
+      <link rel="alternate" hrefLang="en" href={canonical.replace('finxiacapital.com', 'finxiacapital.com/en')} />
+      
+      {/* Structured Data - Organization/Website */}
       {structuredData && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
+      
+      {/* FAQ Schema */}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      
+      {/* Breadcrumb Schema */}
+      {breadcrumbSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       )}
     </Head>

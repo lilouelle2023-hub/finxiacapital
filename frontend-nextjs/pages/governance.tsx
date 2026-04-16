@@ -14,16 +14,6 @@ export default function GovernancePage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
 
-  return (
-    <div data-testid="governance-page" className="pt-20">
-      <SEO
-        title={language === 'fr' ? "Gouvernance & Risques — Framework & Structure SCSp" : "Governance & Risks — Framework & SCSp Structure"}
-        description={language === 'fr'
-          ? "Gouvernance rigoureuse et gestion des risques par IA. Structure SCSp Luxembourg. Surveillance 24/7 par agents IA. Transparence totale pour investisseurs institutionnels."
-          : "Rigorous governance and AI-powered risk management. Luxembourg SCSp structure. 24/7 monitoring by AI agents. Full transparency for institutional investors."}
-        canonical="https://finxiacapital.com/governance/"
-      />
-
   const riskDimensions = [
     {
       id: 'market-risk',
@@ -59,12 +49,37 @@ export default function GovernancePage() {
     },
   ];
 
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://finxiacapital.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": language === 'fr' ? "Gouvernance & Risques" : "Governance & Risks",
+        "item": "https://finxiacapital.com/governance"
+      }
+    ]
+  };
+
   return (
     <div data-testid="governance-page" className="pt-20">
-      <Head>
-        <title>Gouvernance & Risques · FINXIA Capital</title>
-        <meta name="description" content="Cadre de risque institutionnel, structure SCSp et gouvernance rigoureuse. Découvrez notre approche de la gestion des risques." />
-      </Head>
+      <SEO
+        title={language === 'fr' ? "Gouvernance & Risques — Framework & Structure SCSp" : "Governance & Risks — Framework & SCSp Structure"}
+        description={language === 'fr'
+          ? "Gouvernance rigoureuse et gestion des risques par IA. Structure SCSp Luxembourg. Surveillance 24/7 par agents IA. Transparence totale pour investisseurs institutionnels."
+          : "Rigorous governance and AI-powered risk management. Luxembourg SCSp structure. 24/7 monitoring by AI agents. Full transparency for institutional investors."}
+        canonical="https://finxiacapital.com/governance/"
+        keywords="gouvernance fonds alternatif Luxembourg, SCSp gestion risques, Green Bond ESG datacenter, surveillance IA temps réel"
+        breadcrumbSchema={breadcrumbSchema}
+      />
 
       {/* Hero Section */}
       <section className="py-24 md:py-32 bg-slate-50">
