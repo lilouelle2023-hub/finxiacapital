@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* FINXIA Brand Colors - New Orange/Terracotta Palette */
+  --finxia-charcoal: #1E2A3A;
+  --finxia-dark: #0F172A;
+  --finxia-terracotta: #C45A3B;
+  --finxia-terracotta-light: #D4715A;
+  --finxia-terracotta-dark: #A84830;
+  --finxia-slate-700: #334155;
+  --finxia-slate-600: #475569;
+  --finxia-slate-500: #64748b;
+  --finxia-slate-400: #94A3B8;
+  --finxia-slate-200: #E2E8F0;
+  --finxia-slate-100: #F1F5F9;
+  --finxia-slate-50: #F8FAFC;
+  --finxia-white: #FFFFFF;
+  
+  /* Shadcn tokens */
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 47.4% 11.2%;
+  --radius: 0.125rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--finxia-white);
+  color: var(--finxia-charcoal);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--finxia-charcoal);
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--finxia-slate-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--finxia-slate-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--finxia-slate-600);
+}
+
+/* Selection - Terracotta */
+::selection {
+  background-color: var(--finxia-terracotta);
+  color: var(--finxia-white);
+}
+
+/* Custom Classes - Terracotta theme */
+.text-terracotta {
+  color: var(--finxia-terracotta);
+}
+
+.bg-terracotta {
+  background-color: var(--finxia-terracotta);
+}
+
+.border-terracotta {
+  border-color: var(--finxia-terracotta);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+/* Stagger animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Hero gradient overlay - Darker */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 42, 58, 0.92) 0%,
+    rgba(30, 42, 58, 0.75) 50%,
+    rgba(30, 42, 58, 0.6) 100%
+  );
+}
+
+/* Section divider - Terracotta */
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--finxia-terracotta);
+}
+
+/* Link hover effect - Terracotta */
+.link-hover {
+  position: relative;
+}
+
+.link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--finxia-terracotta);
+  transition: width 0.3s ease;
+}
+
+.link-hover:hover::after {
+  width: 100%;
+}
+
+/* Button styles - Terracotta */
+.btn-primary {
+  background-color: var(--finxia-terracotta);
+  color: var(--finxia-white);
+  padding: 1rem 2.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--finxia-terracotta-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--finxia-slate-200);
+  color: var(--finxia-charcoal);
+  padding: 1rem 2.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--finxia-terracotta);
+  color: var(--finxia-terracotta);
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.12);
+}
+
+/* Overline text - Terracotta */
+.overline {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--finxia-terracotta);
+}
+
+/* Form focus states - Terracotta */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--finxia-terracotta);
+  box-shadow: 0 0 0 3px rgba(196, 90, 59, 0.15);
+}
+
+/* Responsive container */
+.container-narrow {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-narrow {
+    padding: 0 2rem;
+  }
+}
+
+/* Strategy card border */
+.strategy-card {
+  border-top: 4px solid var(--finxia-terracotta);
+}
+
+/* Number accent */
+.number-accent {
+  color: var(--finxia-terracotta);
+  font-family: 'Playfair Display', serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Hide Emergent badge */
+[href*="emergent"],
+[class*="emergent"],
+iframe[src*="emergent"],
+div[style*="position: fixed"][style*="bottom"],
+a[target="_blank"][style*="position: fixed"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
