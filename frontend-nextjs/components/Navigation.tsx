@@ -25,10 +25,9 @@ export default function Navigation() {
   }, [router.pathname]);
 
   const navLinks = [
-    { path: '/', label: language === 'fr' ? 'Accueil' : 'Home' },
     { path: '/about', label: language === 'fr' ? 'À Propos' : 'About' },
     { path: '/strategies', label: language === 'fr' ? 'Stratégies' : 'Strategies' },
-    { path: '/governance', label: 'Gouvernance' },
+    { path: '/governance', label: language === 'fr' ? 'Gouvernance & Risques' : 'Governance & Risks' },
     { path: '/european-approach', label: language === 'fr' ? 'Approche Européenne' : 'European Approach' },
     { path: '/investors', label: language === 'fr' ? 'Investisseurs' : 'Investors' },
     { path: '/contact', label: 'Contact' },
@@ -39,24 +38,23 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-sm border-b border-slate-100`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center">
+        <div className="flex items-center justify-between h-24">
+          <Link href="/" className="flex items-center gap-3">
             <img 
               src="https://customer-assets.emergentagent.com/job_silly-mcclintock-1/artifacts/wllq2664_finxia_LOGO_DEFINITIF.png" 
               alt="FINXIA CAPITAL" 
-              className="h-10 w-auto"
-              style={{ maxWidth: '180px' }}
+              className="h-14 md:h-16 w-auto"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:gap-8" style={{ display: 'flex' }}>
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
-                href={link.path}
+                href={link.path + '/'}
                 className={`text-sm font-medium tracking-wide transition-colors link-hover ${
-                  router.pathname === link.path
+                  router.pathname === link.path || router.pathname === link.path + '/'
                     ? 'text-[#C45A3B]'
                     : 'text-slate-700 hover:text-[#C45A3B]'
                 }`}
@@ -64,53 +62,50 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-1.5 rounded text-sm font-medium transition-colors text-slate-700 hover:bg-slate-100"
-              data-testid="language-toggle"
-            >
-              <Globe className="w-4 h-4" />
-              {language.toUpperCase()}
-            </button>
           </div>
 
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6 text-slate-900" />
-            ) : (
-              <Menu className="w-6 h-6 text-slate-900" />
-            )}
-          </button>
+          {/* Language Toggle & Mobile Menu Button */}
+          <div className="flex items-center gap-4">
+            <button
+              onClick={toggleLanguage}
+              data-testid="language-toggle"
+              className="flex items-center gap-2 px-3 py-1.5 rounded text-sm font-medium transition-colors text-slate-700 hover:bg-slate-100"
+            >
+              <Globe className="w-4 h-4" />
+              <span>{language.toUpperCase()}</span>
+            </button>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              data-testid="mobile-menu-button"
+              className="lg:hidden p-2 rounded transition-colors text-slate-700 hover:bg-slate-100"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-slate-200">
-          <div className="px-4 py-4 space-y-3">
+        <div className="lg:hidden bg-white border-t border-slate-100 shadow-lg" data-testid="mobile-menu">
+          <div className="px-4 py-6 space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
-                href={link.path}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  router.pathname === link.path
-                    ? 'bg-[#C45A3B]/10 text-[#C45A3B]'
-                    : 'text-slate-700 hover:bg-slate-50'
+                href={link.path + '/'}
+                data-testid={`mobile-nav-link-${link.path.slice(1)}`}
+                className={`block py-2 text-base font-medium transition-colors ${
+                  router.pathname === link.path || router.pathname === link.path + '/'
+                    ? 'text-[#C45A3B]'
+                    : 'text-slate-700 hover:text-[#C45A3B]'
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-            <button
-              onClick={toggleLanguage}
-              className="w-full flex items-center justify-center gap-2 px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 rounded-md border border-slate-200"
-            >
-              <Globe className="w-4 h-4" />
-              {language === 'fr' ? 'English' : 'Français'}
-            </button>
           </div>
         </div>
       )}
