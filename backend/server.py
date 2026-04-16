@@ -2,6 +2,7 @@ from fastapi import FastAPI, APIRouter, HTTPException
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
+from motor.core import AgnosticDatabase
 import os
 import logging
 from pathlib import Path
@@ -28,9 +29,13 @@ api_router = APIRouter(prefix="/api")
 
 # MongoDB connection - lazy initialization
 mongo_client: Optional[AsyncIOMotorClient] = None
-db = None
+db: Optional[AgnosticDatabase] = None
 
-def get_database():
+def get_database() -> Optional[AgnosticDatabase]:
+    """
+    Initialize and return MongoDB database connection.
+    Returns None if MONGO_URL is not configured.
+    """
     global mongo_client, db
     if mongo_client is None:
         mongo_url = os.environ.get('MONGO_URL', '')
@@ -75,16 +80,17 @@ class ContactFormResponse(BaseModel):
 
 # Health check endpoint - simple and fast (no DB check for startup)
 @app.get("/health")
-async def root_health():
+async def root_health() -> dict:
     """Root health check for container startup"""
     return {"status": "ok"}
 
 @api_router.get("/")
-async def root():
+async def root() -> dict:
+    """Root API endpoint"""
     return {"message": "FINXIA Capital API", "status": "operational"}
 
 @api_router.get("/health")
-async def health_check():
+async def health_check() -> dict:
     """API health check with optional DB status"""
     try:
         database = get_database()
@@ -166,7 +172,8 @@ async def create_status_check(input: StatusCheckCreate):
     return status_obj
 
 @api_router.get("/status", response_model=List[StatusCheck])
-async def get_status_checks():
+async def get_status_checks() -> List[dict]:
+    """Get all status checks"""
     try:
         database = get_database()
         if database is None:
