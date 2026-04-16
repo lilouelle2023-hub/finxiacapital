@@ -1,8 +1,22 @@
 const fs = require('fs');
 const path = require('path');
-const puppeteer = require('puppeteer');
 const http = require('http');
 const handler = require('serve-handler');
+
+// Check if we're in a CI/container environment where Puppeteer might not work
+const isCI = process.env.CI === 'true' || process.env.DOCKER_BUILD === 'true';
+
+// Only run prerendering in local development or if explicitly enabled
+const ENABLE_PRERENDERING = process.env.ENABLE_PRERENDERING !== 'false' && !isCI;
+
+if (!ENABLE_PRERENDERING) {
+  console.log('⚠️  Prerendering skipped (CI/container environment detected)');
+  console.log('   The app will still work as a client-side SPA');
+  console.log('   To enable prerendering, set ENABLE_PRERENDERING=true');
+  process.exit(0);
+}
+
+const puppeteer = require('puppeteer');
 
 // Routes à pré-rendre
 const routes = [
@@ -36,10 +50,17 @@ async function prerender() {
   await new Promise((resolve) => server.listen(PORT, resolve));
   console.log(`✓ Static server running on http://localhost:${PORT}\n`);
 
-  // Lancer Puppeteer
+  // Lancer Puppeteer avec options pour environnement containerisé
   const browser = await puppeteer.launch({
     headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
+      '--single-process',
+      '--no-zygote'
+    ]
   });
 
   try {
