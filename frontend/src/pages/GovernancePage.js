@@ -48,7 +48,7 @@ export default function GovernancePage() {
     <div data-testid="governance-page" className="pt-20">
       <Helmet>
         <title>Gouvernance & Risques · FINXIA Capital</title>
-        <meta name="description" content="Cadre de risque institutionnel, structure RAIF et supervision CSSF. Découvrez notre approche de la gestion des risques." />
+        <meta name="description" content="Cadre de risque institutionnel, structure SCSp et gouvernance rigoureuse. Découvrez notre approche de la gestion des risques." />
       </Helmet>
 
       {/* Hero Section */}
@@ -111,13 +111,13 @@ export default function GovernancePage() {
         </div>
       </section>
 
-      {/* Structure RAIF & Supervision */}
-      <section className="py-24 md:py-32 bg-[#1E2A3A] text-white" data-testid="raif-section">
+      {/* Structure SCSp & Supervision */}
+      <section className="py-24 md:py-32 bg-[#1E2A3A] text-white" data-testid="structure-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="overline text-[#C45A3B] mb-4">
-                {language === 'fr' ? 'Structure RAIF & Supervision' : 'RAIF Structure & Supervision'}
+                {language === 'fr' ? 'Structure SCSp & Gouvernance' : 'SCSp Structure & Governance'}
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">
                 {language === 'fr' ? 'Cadre Réglementaire Institutionnel' : 'Institutional Regulatory Framework'}
@@ -125,8 +125,8 @@ export default function GovernancePage() {
               <div className="section-divider mb-8" />
               <p className="text-slate-300 text-lg leading-relaxed mb-8">
                 {language === 'fr'
-                  ? 'FINXIA Capital est organisée comme un Reserved Alternative Investment Fund (RAIF) luxembourgeois. La supervision prudentielle est assurée via notre AIFM agréé par la CSSF, garantissant aux investisseurs professionnels le cadre réglementaire le plus robuste disponible pour les fonds alternatifs en Europe.'
-                  : 'FINXIA Capital is organized as a Luxembourg Reserved Alternative Investment Fund (RAIF). Prudential supervision is provided through our CSSF-licensed AIFM, guaranteeing professional investors the most robust regulatory framework available for alternative funds in Europe.'}
+                  ? 'FINXIA Capital est structurée comme une Société en Commandite Spéciale (SCSp) luxembourgeoise, garantissant flexibilité opérationnelle et gouvernance rigoureuse dans le respect du cadre AIFMD, avec supervision via un AIFM agréé par la CSSF.'
+                  : 'FINXIA Capital is structured as a Luxembourg Special Limited Partnership (SCSp), ensuring operational flexibility and rigorous governance within the AIFMD framework, with supervision through a CSSF-licensed AIFM.'}
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">

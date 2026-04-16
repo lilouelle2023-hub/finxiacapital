@@ -28,8 +28,8 @@ export const Footer = () => {
             />
             <p className="text-slate-400 text-sm leading-relaxed max-w-md mb-6">
               {language === 'fr'
-                ? 'Gestionnaire d\'actifs alternatifs européen indépendant, structuré en RAIF luxembourgeois, déployant des stratégies institutionnelles en immobilier et capital privé.'
-                : 'Independent European alternative asset manager, structured as a Luxembourg RAIF, deploying institutional strategies in real estate and private capital.'}
+                ? 'Véhicule d\'investissement propriétaire structuré en SCSp luxembourgeoise, déployant des stratégies institutionnelles en datacenter AI, hôtellerie premium et résidentiel flexible.'
+                : 'Proprietary investment vehicle structured as a Luxembourg SCSp, deploying institutional strategies in AI datacenters, premium hospitality, and flexible residential.'}
             </p>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3 text-slate-400">
@@ -97,7 +97,7 @@ export const Footer = () => {
               : 'FINXIA Capital is an alternative investment fund reserved for professional investors within the meaning of MiFID II. Investments in alternative funds carry significant risks, including risk of capital loss. Past performance is not indicative of future results. This website does not constitute an offer to sell or a solicitation to buy securities.'}
           </p>
           <p className="text-slate-500 text-xs">
-            © 2025 FINXIA Capital S.à r.l. — Luxembourg · RAIF · AIFMD
+            © 2025 FINXIA Capital S.à r.l. — Luxembourg · SCSp · AIFMD
           </p>
         </div>
       </div>

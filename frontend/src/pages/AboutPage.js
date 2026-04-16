@@ -73,7 +73,7 @@ export default function AboutPage() {
     <div data-testid="about-page" className="pt-20">
       <Helmet>
         <title>À Propos de FINXIA Capital · Gestion Alternative Européenne</title>
-        <meta name="description" content="FINXIA Capital est un gestionnaire d'actifs alternatifs indépendant avec un focus pan-européen, structuré en RAIF Luxembourg." />
+        <meta name="description" content="FINXIA Capital est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, combinant discipline institutionnelle et architecture AI-native." />
       </Helmet>
 
       {/* Hero Section */}
@@ -89,8 +89,8 @@ export default function AboutPage() {
             <div className="section-divider mb-8" />
             <p className="text-slate-600 text-xl leading-relaxed">
               {language === 'fr'
-                ? 'FINXIA Capital est un gestionnaire d\'actifs alternatifs indépendant, structuré en RAIF luxembourgeois, combinant expertise immobilière institutionnelle et innovation technologique.'
-                : 'FINXIA Capital is an independent alternative asset manager, structured as a Luxembourg RAIF, combining institutional real estate expertise and technological innovation.'}
+                ? 'FINXIA Capital est un véhicule d\'investissement propriétaire, structuré en SCSp luxembourgeoise, combinant discipline institutionnelle et architecture AI-native pour créer de la valeur sur les actifs réels.'
+                : 'FINXIA Capital is a proprietary investment vehicle, structured as a Luxembourg SCSp, combining institutional discipline and AI-native architecture to create value in real assets.'}
             </p>
           </div>
         </div>
