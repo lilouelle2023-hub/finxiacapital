@@ -106,6 +106,7 @@ export default function HomePage() {
         description="Finxia Capital — Véhicule d'investissement propriétaire SCSp Luxembourg. Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex. 18 agents IA natifs. Build in the real world. Scaled with AI."
         canonical="https://finxiacapital.com/"
         keywords="gestion actifs alternatifs Luxembourg, SCSp Luxembourg, AI-native fund, investissement alternatif Europe, datacenter AI brown to green, Green Bond ESG"
+        ogImage="https://finxiacapital.com/og-image.jpg"
         structuredData={structuredData}
       />
 
