@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import { MapPin, Mail, CheckCircle, AlertCircle } from 'lucide-react';
+import { MapPin, Mail } from 'lucide-react';
 import SEO from '@/components/SEO';
 
 export default function ContactPage() {
   const { t, language } = useLanguage();
-  const [status, setStatus] = useState({ type: '', message: '' });
 
   const investorTypes = [
     { value: 'institutional', label: t('contact.institutionalInvestor') },
@@ -33,17 +32,6 @@ export default function ContactPage() {
         "item": "https://finxiacapital.com/contact"
       }
     ]
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    // Netlify Forms will handle the submission automatically
-    // Just show a success message
-    setStatus({ 
-      type: 'success', 
-      message: language === 'fr' 
-        ? 'Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.'
-        : 'Your message has been sent successfully. We will respond to you as soon as possible.'
-    });
   };
 
   return (
@@ -75,36 +63,13 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <h2 className="font-serif text-2xl mb-8">{t('contact.formTitle')}</h2>
               
-              {status.type && (
-                <div 
-                  className={`mb-8 p-4 flex items-start gap-3 ${
-                    status.type === 'success' 
-                      ? 'bg-green-50 text-green-800 border border-green-200' 
-                      : 'bg-red-50 text-red-800 border border-red-200'
-                  }`}
-                  data-testid="form-status"
-                >
-                  {status.type === 'success' ? (
-                    <CheckCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  ) : (
-                    <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  )}
-                  <div>
-                    <p className="font-medium">
-                      {status.type === 'success' ? t('contact.successTitle') : 'Error'}
-                    </p>
-                    <p className="text-sm">{status.message}</p>
-                  </div>
-                </div>
-              )}
-
               {/* Contact Form */}
               <form 
                 name="contact" 
                 method="POST" 
                 data-netlify="true"
                 netlify-honeypot="bot-field"
-                onSubmit={handleSubmit} 
+                action="/contact?success=true"
                 className="space-y-6" 
                 data-testid="contact-form"
               >
