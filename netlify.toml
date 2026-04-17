@@ -15,13 +15,9 @@
   NODE_VERSION = "20"
   YARN_VERSION = "1.22.22"
 
-# Redirect rules for SPA routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
-  
+# NO REDIRECTS - Let Netlify serve static files
+# The _redirects file handles 404 fallback
+
 # Custom headers for security and caching
 [[headers]]
   for = "/*"
@@ -40,9 +36,3 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-# Custom domain (optional - configure in Netlify dashboard)
-# [[redirects]]
-#   from = "https://www.finxiacapital.com/*"
-#   to = "https://finxiacapital.com/:splat"
-#   status = 301
-#   force = true
