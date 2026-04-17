@@ -1,14 +1,6 @@
-# Netlify Redirects for FINXIA Capital Next.js SSG
+# Netlify configuration for Next.js SSG export
+# Let Netlify serve static files first, then fallback to 404
 
-# Redirect /page to /page/ (with trailing slash)
-/about    /about/    301
-/strategies    /strategies/    301
-/governance    /governance/    301
-/european-approach    /european-approach/    301
-/investors    /investors/    301
-/blog    /blog/    301
-/contact    /contact/    301
-
-# SPA fallback for 404 (only if nothing else matches)
+# Custom 404 page
 /*    /404.html   404
 
