@@ -6,6 +6,11 @@ interface SEOProps {
   canonical?: string;
   ogImage?: string;
   keywords?: string;
+  language?: 'fr' | 'en';
+  ogLocale?: string;
+  hreflangFr?: string;
+  hreflangEn?: string;
+  hreflangDefault?: string;
   structuredData?: any;
   faqSchema?: any;
   breadcrumbSchema?: any;
@@ -15,17 +20,25 @@ export default function SEO({
   title, 
   description, 
   canonical = 'https://finxiacapital.com',
-  ogImage = 'https://finxiacapital.com/logo-finxia.png',
+  ogImage = 'https://finxiacapital.com/og-image.jpg',
   keywords,
+  language = 'fr',
+  ogLocale = 'fr_FR',
+  hreflangFr,
+  hreflangEn,
+  hreflangDefault,
   structuredData,
   faqSchema,
   breadcrumbSchema
 }: SEOProps) {
-  const fullTitle = `${title} | FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg`;
+  const fullTitle = language === 'fr' 
+    ? `${title} | FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg`
+    : `${title} | FINXIA Capital - Alternative Asset Management Luxembourg`;
   
   // Default keywords if not provided
-  const defaultKeywords = "Finxia Capital, SCSp Luxembourg, Datacenter AI, Hôtellerie Premium, Résidentiel Flex Living, Gestion Actifs Alternatifs, Green Bond ESG, Intelligence Artificielle";
-  const finalKeywords = keywords || defaultKeywords;
+  const defaultKeywordsFr = "Finxia Capital, SCSp Luxembourg, Datacenter AI, Hôtellerie Premium, Résidentiel Flex Living, Gestion Actifs Alternatifs, Green Bond ESG, Intelligence Artificielle";
+  const defaultKeywordsEn = "Finxia Capital, Luxembourg SCSp, Datacenter AI, Premium Hospitality, Flex Living Residential, Alternative Asset Management, Green Bond ESG, Artificial Intelligence";
+  const finalKeywords = keywords || (language === 'fr' ? defaultKeywordsFr : defaultKeywordsEn);
   
   return (
     <Head>
@@ -42,6 +55,7 @@ export default function SEO({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content="FINXIA Capital" />
+      <meta property="og:locale" content={ogLocale} />
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -53,11 +67,12 @@ export default function SEO({
       {/* Additional SEO */}
       <meta name="keywords" content={finalKeywords} />
       <meta name="author" content="FINXIA Capital" />
-      <meta name="language" content="fr" />
+      <meta name="language" content={language === 'fr' ? 'fr-FR' : 'en-US'} />
       
       {/* Hreflang for bilingual support */}
-      <link rel="alternate" hrefLang="fr" href={canonical} />
-      <link rel="alternate" hrefLang="en" href={canonical.replace('finxiacapital.com', 'finxiacapital.com/en')} />
+      {hreflangFr && <link rel="alternate" hrefLang="fr" href={hreflangFr} />}
+      {hreflangEn && <link rel="alternate" hrefLang="en" href={hreflangEn} />}
+      {hreflangDefault && <link rel="alternate" hrefLang="x-default" href={hreflangDefault} />}
       
       {/* Structured Data - Organization/Website */}
       {structuredData && (
