@@ -134,14 +134,14 @@ export default function AboutPage() {
       <SEO
         title={language === 'fr' ? "À Propos — Notre Vision" : "About — Our Vision"}
         description={language === 'fr' 
-          ? "FINXIA Capital combine actifs réels et intelligence artificielle. Équipe expérimentée en finance, immobilier et IA. SCSp Luxembourg, 18 agents IA natifs."
-          : "FINXIA Capital combines real assets and artificial intelligence. Experienced team in finance, real estate and AI. Luxembourg SCSp, 18 native AI agents."}
-        canonical="https://finxiacapital.com/about/"
+          ? "FINXIA Capital — architecture AI-native avec 18 agents autonomes. Gestionnaire alternatif luxembourgeois spécialisé dans la transformation d'actifs réels par l'IA."
+          : "FINXIA Capital — AI-native architecture with 18 autonomous agents. Luxembourg alternative asset manager specializing in AI-driven real asset transformation."}
+        canonical={language === 'fr' ? "https://finxiacapital.com/about/" : "https://finxiacapital.com/en/about/"}
         keywords="Finxia Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Jean-Pierre Véron, Lila Benhammou"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/about/"
         hreflangEn="https://finxiacapital.com/en/about/"
         hreflangDefault="https://finxiacapital.com/about/"

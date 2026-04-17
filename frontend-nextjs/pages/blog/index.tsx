@@ -71,9 +71,9 @@ export default function BlogIndexPage() {
       <SEO
         title={language === 'fr' ? "Blog — Recherche & Stratégie" : "Blog — Research & Strategy"}
         description={language === 'fr'
-          ? "Analyses approfondies sur les datacenters IA, l'investissement alternatif et l'architecture AI-native par Finxia Capital. Thought leadership sur les actifs réels en Europe."
-          : "In-depth analysis on AI datacenters, alternative investment and AI-native architecture by Finxia Capital. Thought leadership on real assets in Europe."}
-        canonical="https://finxiacapital.com/blog/"
+          ? "Analyses expertes sur les datacenters européens, optimisation PUE, réglementation EED et gestion de fonds alternative par IA — par FINXIA Capital."
+          : "Expert analysis on European datacenters, PUE optimization, EED regulation and AI-driven alternative fund management — by FINXIA Capital."}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/" : "https://finxiacapital.com/en/blog/"}
         keywords="blog Finxia Capital, datacenter IA Europe, investissement alternatif, AI-native fund, thought leadership immobilier, analyse marché datacenters"
         breadcrumbSchema={breadcrumbSchema}
         language="fr"

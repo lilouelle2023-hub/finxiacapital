@@ -31,9 +31,18 @@ export default function SEO({
   faqSchema,
   breadcrumbSchema
 }: SEOProps) {
+  // Translate page name "Accueil" -> "Home" for EN pages
+  const translateTitle = (t: string, lang: string) => {
+    if (lang === 'en') {
+      return t.replace(/^Accueil/, 'Home');
+    }
+    return t;
+  };
+  
+  const translatedTitle = translateTitle(title, language);
   const fullTitle = language === 'fr' 
-    ? `${title} | FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg`
-    : `${title} | FINXIA Capital - Alternative Asset Management Luxembourg`;
+    ? `${translatedTitle} | FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg`
+    : `${translatedTitle} | FINXIA Capital - Alternative Asset Management Luxembourg`;
   
   // Default keywords if not provided
   const defaultKeywordsFr = "Finxia Capital, SCSp Luxembourg, Datacenter AI, Hôtellerie Premium, Résidentiel Flex Living, Gestion Actifs Alternatifs, Green Bond ESG, Intelligence Artificielle";

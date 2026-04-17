@@ -131,12 +131,14 @@ export default function HomePage() {
     <div data-testid="home-page">
       <SEO
         title="Accueil — Build in the real world, Scaled with AI"
-        description="Finxia Capital — Véhicule d'investissement propriétaire SCSp Luxembourg. Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex. 18 agents IA natifs. Build in the real world. Scaled with AI."
-        canonical="https://finxiacapital.com/"
+        description={language === 'fr' 
+          ? "FINXIA Capital, gestionnaire d'actifs alternatifs AI-native (SCSp luxembourgeoise). 4 stratégies, 18 agents IA : TITAN DC AI, Hôtellerie Premium, Résidentiel Urbain, C.CAPITAL." 
+          : "FINXIA Capital, AI-native alternative asset management vehicle (Luxembourg SCSp). 4 strategies, 18 AI agents: TITAN DC AI, Premium Hospitality, Urban Residential, C.CAPITAL."}
+        canonical={language === 'fr' ? "https://finxiacapital.com/" : "https://finxiacapital.com/en/"}
         keywords="gestion actifs alternatifs Luxembourg, SCSp Luxembourg, AI-native fund, investissement alternatif Europe, datacenter AI brown to green, Green Bond ESG"
         ogImage="https://finxiacapital.com/og-image.jpg"
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/"
         hreflangEn="https://finxiacapital.com/en/"
         hreflangDefault="https://finxiacapital.com/"

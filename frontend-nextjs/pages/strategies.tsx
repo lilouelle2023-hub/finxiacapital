@@ -152,14 +152,14 @@ export default function StrategiesPage() {
       <SEO
         title={language === 'fr' ? "Stratégies — TITAN, Hôtellerie, Résidentiel, C.Capital" : "Strategies — TITAN, Hospitality, Residential, C.Capital"}
         description={language === 'fr'
-          ? "4 stratégies d'investissement : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living, C.Capital. Financement Green Bond ESG dédié."
-          : "4 investment strategies: TITAN AI Datacenter Brown-to-Green, Premium Hospitality, Flex Living Residential, C.Capital. Dedicated ESG Green Bond financing."}
-        canonical="https://finxiacapital.com/strategies/"
+          ? "Découvrez les 4 stratégies de FINXIA Capital : TITAN DC AI (datacenter brown-to-green), Hôtellerie Premium, Résidentiel Urbain Flex et C.CAPITAL."
+          : "Discover FINXIA Capital's 4 strategies: TITAN DC AI (datacenter brown-to-green transformation), Premium Hospitality, Urban Residential Flex, and C.CAPITAL."}
+        canonical={language === 'fr' ? "https://finxiacapital.com/strategies/" : "https://finxiacapital.com/en/strategies/"}
         keywords="datacenter AI brown to green, hôtellerie premium Europe, coliving investissement, late-stage secondaires Luxembourg, Green Bond ESG SFDR, hyperscaler lease"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/strategies/"
         hreflangEn="https://finxiacapital.com/en/strategies/"
         hreflangDefault="https://finxiacapital.com/strategies/"
