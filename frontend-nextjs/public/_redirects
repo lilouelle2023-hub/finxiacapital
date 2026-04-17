@@ -1,6 +1,22 @@
-# Netlify configuration for Next.js SSG export
-# Let Netlify serve static files first, then fallback to 404
+# Netlify Redirects for Next.js SSG with Trailing Slash
+# Documentation: https://docs.netlify.com/routing/redirects/
+
+# Force trailing slash redirects (Next.js generates /page/index.html)
+/contact              /contact/           301
+/about                /about/             301
+/strategies           /strategies/        301
+/european-approach    /european-approach/ 301
+/governance           /governance/        301
+/investors            /investors/         301
+/blog                 /blog/              301
+
+# Blog articles (preserve trailing slash)
+/blog/sustainable-investing    /blog/sustainable-investing/    301
+/blog/european-approach       /blog/european-approach/        301
+/blog/governance-matters      /blog/governance-matters/       301
+
+# Serve blog articles correctly
+/blog/*               /blog/:splat        200
 
 # Custom 404 page
 /*    /404.html   404
-
