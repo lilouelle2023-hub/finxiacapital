@@ -46,6 +46,7 @@ export default function SEO({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta name="robots" content="index, follow" />
+      <meta name="msvalidate.01" content="6794AC65382D0A98594B01BC1432995A" />
       <link rel="canonical" href={canonical} />
       
       {/* Open Graph / Facebook */}
