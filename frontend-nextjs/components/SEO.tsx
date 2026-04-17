@@ -15,7 +15,7 @@ export default function SEO({
   title, 
   description, 
   canonical = 'https://finxiacapital.com',
-  ogImage = 'https://finxiacapital.com/og-image.jpg',
+  ogImage = 'https://finxiacapital.com/logo-finxia.png',
   keywords,
   structuredData,
   faqSchema,
