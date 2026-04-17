@@ -200,8 +200,8 @@ export default function EuropeanApproachPage() {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80" 
-                alt="European cityscape"
+                src="https://images.unsplash.com/photo-1761916119939-166c5fd549b8?w=800&q=80" 
+                alt="Modern corporate office buildings in Europe"
                 className="w-full h-auto"
               />
             </div>
