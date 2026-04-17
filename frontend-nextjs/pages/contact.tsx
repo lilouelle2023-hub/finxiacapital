@@ -3,19 +3,9 @@ import { useLanguage } from '@/context/LanguageContext';
 import { MapPin, Mail, CheckCircle, AlertCircle } from 'lucide-react';
 import SEO from '@/components/SEO';
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
-
 export default function ContactPage() {
   const { t, language } = useLanguage();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    investor_type: '',
-    message: '',
-  });
   const [status, setStatus] = useState({ type: '', message: '' });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const investorTypes = [
     { value: 'institutional', label: t('contact.institutionalInvestor') },
@@ -45,46 +35,15 @@ export default function ContactPage() {
     ]
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setStatus({ type: '', message: '' });
-
-    try {
-      const response = await fetch(`${BACKEND_URL}/api/contact`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ...formData,
-          language,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      
-      setStatus({ type: 'success', message: t('contact.successText') });
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        investor_type: '',
-        message: '',
-      });
-    } catch (error) {
-      console.error('Contact form error:', error);
-      setStatus({ type: 'error', message: t('contact.errorText') });
-    } finally {
-      setIsSubmitting(false);
-    }
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    // Netlify Forms will handle the submission automatically
+    // Just show a success message
+    setStatus({ 
+      type: 'success', 
+      message: language === 'fr' 
+        ? 'Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.'
+        : 'Your message has been sent successfully. We will respond to you as soon as possible.'
+    });
   };
 
   return (
@@ -139,7 +98,27 @@ export default function ContactPage() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
+              {/* Contact Form */}
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                onSubmit={handleSubmit} 
+                className="space-y-6" 
+                data-testid="contact-form"
+              >
+                {/* Hidden fields for Netlify Forms */}
+                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="language" value={language} />
+                
+                {/* Honeypot field for spam protection */}
+                <p style={{ display: 'none' }}>
+                  <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                  </label>
+                </p>
+
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-2">
@@ -148,8 +127,6 @@ export default function ContactPage() {
                     <input
                       type="text"
                       name="name"
-                      value={formData.name}
-                      onChange={handleChange}
                       required
                       placeholder={t('contact.namePlaceholder')}
                       className="w-full px-4 py-3 border border-slate-200 bg-white text-slate-900 placeholder-slate-400 transition-colors"
@@ -163,8 +140,6 @@ export default function ContactPage() {
                     <input
                       type="email"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       required
                       placeholder={t('contact.emailPlaceholder')}
                       className="w-full px-4 py-3 border border-slate-200 bg-white text-slate-900 placeholder-slate-400 transition-colors"
@@ -181,8 +156,6 @@ export default function ContactPage() {
                     <input
                       type="text"
                       name="company"
-                      value={formData.company}
-                      onChange={handleChange}
                       placeholder={t('contact.companyPlaceholder')}
                       className="w-full px-4 py-3 border border-slate-200 bg-white text-slate-900 placeholder-slate-400 transition-colors"
                       data-testid="input-company"
@@ -194,8 +167,6 @@ export default function ContactPage() {
                     </label>
                     <select
                       name="investor_type"
-                      value={formData.investor_type}
-                      onChange={handleChange}
                       className="w-full px-4 py-3 border border-slate-200 bg-white text-slate-900 transition-colors"
                       data-testid="select-investor-type"
                     >
@@ -215,8 +186,6 @@ export default function ContactPage() {
                   </label>
                   <textarea
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     required
                     rows={6}
                     placeholder={t('contact.messagePlaceholder')}
@@ -227,11 +196,10 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="btn-primary"
                   data-testid="submit-button"
                 >
-                  {isSubmitting ? t('contact.submitting') : t('contact.submitButton')}
+                  {t('contact.submitButton')}
                 </button>
               </form>
             </div>
