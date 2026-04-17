@@ -507,9 +507,12 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  // Detect language from URL pathname
+export const LanguageProvider = ({ children, initialLanguage }: { children: React.ReactNode; initialLanguage?: 'en' | 'fr' }) => {
+  // Detect language from URL pathname or use initialLanguage prop
   const [language, setLanguage] = useState<'en' | 'fr'>(() => {
+    if (initialLanguage) {
+      return initialLanguage;
+    }
     if (typeof window !== 'undefined') {
       const pathname = window.location.pathname;
       return pathname.startsWith('/en') || pathname.startsWith('/en/') ? 'en' : 'fr';
