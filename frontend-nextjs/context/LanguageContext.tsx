@@ -508,12 +508,37 @@ type LanguageContextType = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguage] = useState<'en' | 'fr'>('fr');
+  // Detect language from URL pathname
+  const [language, setLanguage] = useState<'en' | 'fr'>(() => {
+    if (typeof window !== 'undefined') {
+      const pathname = window.location.pathname;
+      return pathname.startsWith('/en') || pathname.startsWith('/en/') ? 'en' : 'fr';
+    }
+    return 'fr'; // Default to French on server-side
+  });
 
   const toggleLanguage = useCallback(() => {
-    setLanguage((prev) => (prev === 'fr' ? 'en' : 'fr'));
-    // Using functional setState, no need for setLanguage or prev in deps
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setLanguage((prev) => {
+      const newLang = prev === 'fr' ? 'en' : 'fr';
+      
+      // Update URL when toggling language
+      if (typeof window !== 'undefined') {
+        const currentPath = window.location.pathname;
+        let newPath: string;
+        
+        if (newLang === 'en') {
+          // Switch to English: add /en/ prefix
+          newPath = currentPath.startsWith('/en') ? currentPath : `/en${currentPath}`;
+        } else {
+          // Switch to French: remove /en/ prefix
+          newPath = currentPath.replace(/^\/en/, '') || '/';
+        }
+        
+        window.history.pushState({}, '', newPath);
+      }
+      
+      return newLang;
+    });
   }, []);
 
   const t = useCallback(
@@ -525,7 +550,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
       }
       return value || key;
     },
-    [language] // Only language is a reactive dependency; k, keys are local variables
+    [language]
   );
 
   const contextValue = useMemo(
