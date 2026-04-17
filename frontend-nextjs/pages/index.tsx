@@ -7,22 +7,50 @@ import SEO from '@/components/SEO';
 export default function HomePage() {
   const { language } = useLanguage();
 
-  // Structured Data for Organization (Schema.org)
+  // Structured Data for Organization (Schema.org) - FR
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "FINXIA Capital",
-    "url": "https://finxiacapital.com",
-    "logo": "https://finxiacapital.com/logo-finxia.png",
-    "description": "Véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise. Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "LU"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "contact@finxiacapital.com"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://finxiacapital.com/#organization",
+        "name": "FINXIA Capital",
+        "url": "https://finxiacapital.com",
+        "description": "AI-native alternative asset management vehicle. Luxembourg SCSp. Strategies: TITAN DC AI (datacenter brown-to-green transformation), Premium Hospitality, Urban Residential, C.CAPITAL. 18 AI agents operating continuously across portfolio lifecycle.",
+        "foundingDate": "2024",
+        "legalName": "FINXIA Capital SCSp",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "LU",
+          "addressLocality": "Luxembourg"
+        },
+        "email": "contact@finxiacapital.com",
+        "sameAs": [
+          "https://linkedin.com/company/finxiacapital",
+          "https://www.crunchbase.com/organization/finxia-capital"
+        ],
+        "knowsAbout": [
+          "Alternative Asset Management",
+          "Datacenter Investment",
+          "AI Infrastructure Optimization",
+          "European Real Estate",
+          "SFDR Article 9",
+          "Brown-to-Green Transformation",
+          "PUE Optimization",
+          "Energy Efficiency Datacenters"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://finxiacapital.com/#website",
+        "url": "https://finxiacapital.com",
+        "name": "FINXIA Capital",
+        "publisher": {
+          "@id": "https://finxiacapital.com/#organization"
+        },
+        "inLanguage": ["fr", "en"]
+      }
+    ]
   };
 
   const pillars = [
@@ -107,6 +135,11 @@ export default function HomePage() {
         canonical="https://finxiacapital.com/"
         keywords="gestion actifs alternatifs Luxembourg, SCSp Luxembourg, AI-native fund, investissement alternatif Europe, datacenter AI brown to green, Green Bond ESG"
         ogImage="https://finxiacapital.com/og-image.jpg"
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/"
+        hreflangEn="https://finxiacapital.com/en/"
+        hreflangDefault="https://finxiacapital.com/"
         structuredData={structuredData}
       />
 
