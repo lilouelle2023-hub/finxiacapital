@@ -158,6 +158,11 @@ export default function StrategiesPage() {
         keywords="datacenter AI brown to green, hôtellerie premium Europe, coliving investissement, late-stage secondaires Luxembourg, Green Bond ESG SFDR, hyperscaler lease"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/strategies/"
+        hreflangEn="https://finxiacapital.com/en/strategies/"
+        hreflangDefault="https://finxiacapital.com/strategies/"
       />
 
       {/* Hero Section */}

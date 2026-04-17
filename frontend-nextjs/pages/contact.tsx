@@ -42,6 +42,11 @@ export default function ContactPage() {
         canonical="https://finxiacapital.com/contact/"
         keywords="contact Finxia Capital Luxembourg, investissement alternatif contact, SCSp Luxembourg contact, demande investisseur institutionnel"
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/contact/"
+        hreflangEn="https://finxiacapital.com/en/contact/"
+        hreflangDefault="https://finxiacapital.com/contact/"
       />
 
       {/* Hero Section */}

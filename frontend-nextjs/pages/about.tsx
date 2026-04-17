@@ -140,6 +140,11 @@ export default function AboutPage() {
         keywords="Finxia Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Jean-Pierre Véron, Lila Benhammou"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/about/"
+        hreflangEn="https://finxiacapital.com/en/about/"
+        hreflangDefault="https://finxiacapital.com/about/"
       />
 
       {/* Hero Section */}

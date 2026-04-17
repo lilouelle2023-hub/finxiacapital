@@ -68,6 +68,11 @@ export default function Article3Page() {
         keywords="marché datacenters Europe 2026, investissement datacenter Europe secondaire, Madrid Barcelone Milan datacenter, compression cap rates infrastructure, hyperscaler Europe marchés secondaires"
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/"
+        hreflangEn="https://finxiacapital.com/en/blog/european-datacenters-2026-investor-opportunity/"
+        hreflangDefault="https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/"
       />
 
       {/* Article Header */}

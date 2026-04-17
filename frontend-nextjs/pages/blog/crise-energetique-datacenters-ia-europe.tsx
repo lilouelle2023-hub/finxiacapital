@@ -68,6 +68,11 @@ export default function Article1Page() {
         keywords="datacenter IA Europe, PUE efficacité énergétique, hyperscaler Microsoft Google AWS, brown to green transformation, Green Bond ESG SFDR, infrastructure IA Europe"
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/blog/crise-energetique-datacenters-ia-europe/"
+        hreflangEn="https://finxiacapital.com/en/blog/ai-energy-crisis-european-datacenters/"
+        hreflangDefault="https://finxiacapital.com/blog/crise-energetique-datacenters-ia-europe/"
       />
 
       {/* Article Header */}

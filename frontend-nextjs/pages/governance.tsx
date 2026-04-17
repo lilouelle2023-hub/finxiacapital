@@ -79,6 +79,11 @@ export default function GovernancePage() {
         canonical="https://finxiacapital.com/governance/"
         keywords="gouvernance fonds alternatif Luxembourg, SCSp gestion risques, Green Bond ESG datacenter, surveillance IA temps réel"
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/governance/"
+        hreflangEn="https://finxiacapital.com/en/governance/"
+        hreflangDefault="https://finxiacapital.com/governance/"
       />
 
       {/* Hero Section */}

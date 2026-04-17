@@ -73,6 +73,11 @@ export default function InvestorsPage() {
         canonical="https://finxiacapital.com/investors/"
         keywords="investisseur qualifié Luxembourg, SCSp capital propriétaire, fonds alternatif institutionnel, ILPA compliance, INREV reporting"
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/investors/"
+        hreflangEn="https://finxiacapital.com/en/investors/"
+        hreflangDefault="https://finxiacapital.com/investors/"
       />
 
       {/* Hero Section */}

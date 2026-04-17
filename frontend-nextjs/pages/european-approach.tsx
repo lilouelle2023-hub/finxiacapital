@@ -63,6 +63,11 @@ export default function EuropeanApproachPage() {
         canonical="https://finxiacapital.com/european-approach/"
         keywords="investissement alternatif Europe du Sud, France Espagne Italie Portugal immobilier, datacenter AI Europe, hôtellerie premium Europe"
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/european-approach/"
+        hreflangEn="https://finxiacapital.com/en/european-approach/"
+        hreflangDefault="https://finxiacapital.com/european-approach/"
       />
 
       {/* Hero Section */}

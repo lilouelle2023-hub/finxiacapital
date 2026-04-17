@@ -68,6 +68,11 @@ export default function Article2Page() {
         keywords="AI-native fund, 18 agents IA investissement, gestion actifs alternatifs IA, Deal Intelligence Agent, Asset Monitor, architecture multi-agents, alternative asset management automatisé"
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/"
+        hreflangEn="https://finxiacapital.com/en/blog/managing-alternative-fund-18-ai-agents/"
+        hreflangDefault="https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/"
       />
 
       {/* Article Header */}

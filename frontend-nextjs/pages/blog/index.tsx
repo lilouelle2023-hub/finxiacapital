@@ -76,6 +76,11 @@ export default function BlogIndexPage() {
         canonical="https://finxiacapital.com/blog/"
         keywords="blog Finxia Capital, datacenter IA Europe, investissement alternatif, AI-native fund, thought leadership immobilier, analyse marché datacenters"
         breadcrumbSchema={breadcrumbSchema}
+        language="fr"
+        ogLocale="fr_FR"
+        hreflangFr="https://finxiacapital.com/blog/"
+        hreflangEn="https://finxiacapital.com/en/blog/"
+        hreflangDefault="https://finxiacapital.com/blog/"
       />
 
       {/* Hero Section */}
