@@ -1,0 +1,12 @@
+{
+  "name": "finxia-capital-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend-nextjs && yarn install && yarn build && cd .. && mkdir -p out && cp -r frontend-nextjs/out/* out/",
+    "dev": "cd frontend-nextjs && yarn dev"
+  },
+  "engines": {
+    "node": "20"
+  }
+}

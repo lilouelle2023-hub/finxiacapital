@@ -2,7 +2,7 @@
 
 [build]
   # Root directory for the Next.js app
-  base = "frontend-nextjs"
+  base = "."
   
   # Build command
   command = "yarn build"
