@@ -35,8 +35,8 @@ export default function Article5Page() {
     "headline": t.title,
     "description": t.description,
     "image": "https://finxiacapital.com/logo-finxia.png",
-    "datePublished": "2026-04-20T09:00:00+01:00",
-    "dateModified": "2026-04-20T09:00:00+01:00",
+    "datePublished": "2026-04-15T09:00:00+01:00",
+    "dateModified": "2026-04-15T09:00:00+01:00",
     "author": {
       "@type": "Person",
       "name": "Lila Benhammou",
@@ -111,7 +111,7 @@ export default function Article5Page() {
                 {t.tag}
               </span>
               <span className="text-slate-400">•</span>
-              <time className="text-slate-600 flex items-center gap-2" dateTime="2026-04-20">
+              <time className="text-slate-600 flex items-center gap-2" dateTime="2026-04-15">
                 <Calendar className="w-4 h-4" />
                 {t.date}
               </time>

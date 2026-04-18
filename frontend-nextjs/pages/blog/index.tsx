@@ -16,7 +16,7 @@ export default function BlogIndexPage() {
       excerpt: language === 'fr'
         ? "La stratégie d'investissement de FINXIA Capital dédiée à l'acquisition et la transformation des datacenters européens legacy en plateformes haute efficacité pour l'IA."
         : "FINXIA Capital's investment strategy dedicated to acquiring and transforming European legacy datacenters into high-efficiency AI platforms.",
-      date: '2026-04-25',
+      date: '2026-04-15',
       category: 'TITAN Strategy',
       readTime: '10 min'
     },
@@ -28,7 +28,7 @@ export default function BlogIndexPage() {
       excerpt: language === 'fr'
         ? "Le 15 mai 2026 est la première échéance de déclaration obligatoire imposée par l'EED Article 12. Guide complet pour les opérateurs de datacenters."
         : "May 15, 2026 is the first mandatory declaration deadline imposed by EED Article 12. Complete guide for datacenter operators.",
-      date: '2026-04-22',
+      date: '2026-04-15',
       category: 'Regulatory Compliance',
       readTime: '10 min'
     },
@@ -40,7 +40,7 @@ export default function BlogIndexPage() {
       excerpt: language === 'fr'
         ? "Le PUE est devenu l'indicateur de performance le plus scruté de l'industrie des datacenters. Guide complet d'optimisation et de certification IPMVP."
         : "PUE has become the most scrutinized performance indicator in the datacenter industry. Complete optimization and IPMVP certification guide.",
-      date: '2026-04-20',
+      date: '2026-04-15',
       category: 'Technical Guide',
       readTime: '11 min'
     },

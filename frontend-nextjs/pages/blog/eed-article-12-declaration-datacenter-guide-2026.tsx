@@ -32,8 +32,8 @@ export default function Article6Page() {
     "headline": t.title,
     "description": t.description,
     "image": "https://finxiacapital.com/logo-finxia.png",
-    "datePublished": "2026-04-22T09:00:00+01:00",
-    "dateModified": "2026-04-22T09:00:00+01:00",
+    "datePublished": "2026-04-15T09:00:00+01:00",
+    "dateModified": "2026-04-15T09:00:00+01:00",
     "author": {
       "@type": "Person",
       "name": "Lila Benhammou",
@@ -65,7 +65,7 @@ export default function Article6Page() {
             <div className="flex items-center gap-4 mb-6 text-sm">
               <span className="inline-flex items-center gap-2 text-[#C45A3B] font-medium uppercase tracking-wider"><Tag className="w-4 h-4" />{t.tag}</span>
               <span className="text-slate-400">•</span>
-              <time className="text-slate-600 flex items-center gap-2" dateTime="2026-04-22"><Calendar className="w-4 h-4" />{t.date}</time>
+              <time className="text-slate-600 flex items-center gap-2" dateTime="2026-04-15"><Calendar className="w-4 h-4" />{t.date}</time>
               <span className="text-slate-400">•</span>
               <span className="text-slate-600">{t.readTime}</span>
             </div>
