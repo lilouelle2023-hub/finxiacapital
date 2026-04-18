@@ -9,6 +9,54 @@ export default function BlogIndexPage() {
 
   const articles = [
     {
+      slug: language === 'fr' ? 'titan-dc-ai-strategie-datacenters-europeens-finxia' : 'titan-dc-ai-european-datacenters-strategy-finxia',
+      title: language === 'fr'
+        ? "TITAN DC AI : La Transformation des Datacenters Européens Legacy"
+        : "TITAN DC AI: Transforming European Legacy Datacenters",
+      excerpt: language === 'fr'
+        ? "La stratégie d'investissement de FINXIA Capital dédiée à l'acquisition et la transformation des datacenters européens legacy en plateformes haute efficacité pour l'IA."
+        : "FINXIA Capital's investment strategy dedicated to acquiring and transforming European legacy datacenters into high-efficiency AI platforms.",
+      date: '2026-04-25',
+      category: 'TITAN Strategy',
+      readTime: '10 min'
+    },
+    {
+      slug: language === 'fr' ? 'eed-article-12-declaration-datacenter-guide-2026' : 'eed-article-12-datacenter-declaration-guide-2026',
+      title: language === 'fr'
+        ? "EED Article 12 : Guide Complet pour la Déclaration Obligatoire avant le 15 Mai 2026"
+        : "EED Article 12: Complete Guide for Mandatory Declaration before May 15, 2026",
+      excerpt: language === 'fr'
+        ? "Le 15 mai 2026 est la première échéance de déclaration obligatoire imposée par l'EED Article 12. Guide complet pour les opérateurs de datacenters."
+        : "May 15, 2026 is the first mandatory declaration deadline imposed by EED Article 12. Complete guide for datacenter operators.",
+      date: '2026-04-22',
+      category: 'Regulatory Compliance',
+      readTime: '10 min'
+    },
+    {
+      slug: language === 'fr' ? 'pue-optimisation-datacenters-europeens-guide-2026' : 'pue-optimization-european-datacenters-guide-2026',
+      title: language === 'fr'
+        ? "Optimisation PUE dans les Datacenters Européens : Guide 2026"
+        : "PUE Optimization in European Datacenters: 2026 Guide",
+      excerpt: language === 'fr'
+        ? "Le PUE est devenu l'indicateur de performance le plus scruté de l'industrie des datacenters. Guide complet d'optimisation et de certification IPMVP."
+        : "PUE has become the most scrutinized performance indicator in the datacenter industry. Complete optimization and IPMVP certification guide.",
+      date: '2026-04-20',
+      category: 'Technical Guide',
+      readTime: '11 min'
+    },
+    {
+      slug: language === 'fr' ? 'scsp-vs-raif-vehicule-investissement-luxembourgeois' : 'luxembourg-scsp-vs-raif-investment-vehicle',
+      title: language === 'fr'
+        ? "SCSp Luxembourgeoise vs RAIF : Quel Véhicule pour les Actifs Alternatifs ?"
+        : "Luxembourg SCSp vs RAIF: Which Vehicle for Alternative Assets?",
+      excerpt: language === 'fr'
+        ? "FINXIA Capital est structurée en SCSp luxembourgeoise, et non en RAIF. Cette distinction reflète des choix stratégiques précis en matière de gouvernance."
+        : "FINXIA Capital is structured as a Luxembourg SCSp, not a RAIF. This distinction reflects specific strategic choices in governance.",
+      date: '2026-04-15',
+      category: 'Structure & Governance',
+      readTime: '10 min'
+    },
+    {
       slug: 'crise-energetique-datacenters-ia-europe',
       title: language === 'fr'
         ? "La prochaine crise énergétique de l'IA se joue dans les datacenters européens"

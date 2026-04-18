@@ -202,6 +202,86 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/" />
   </url>
 
+  <!-- BLOG ARTICLE 4 FR - SCSp vs RAIF -->
+  <url>
+    <loc>https://finxiacapital.com/blog/scsp-vs-raif-vehicule-investissement-luxembourgeois/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/scsp-vs-raif-vehicule-investissement-luxembourgeois/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/luxembourg-scsp-vs-raif-investment-vehicle/" />
+  </url>
+
+  <!-- BLOG ARTICLE 4 EN - SCSp vs RAIF -->
+  <url>
+    <loc>https://finxiacapital.com/en/blog/luxembourg-scsp-vs-raif-investment-vehicle/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/luxembourg-scsp-vs-raif-investment-vehicle/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/scsp-vs-raif-vehicule-investissement-luxembourgeois/" />
+  </url>
+
+  <!-- BLOG ARTICLE 5 FR - PUE Optimization -->
+  <url>
+    <loc>https://finxiacapital.com/blog/pue-optimisation-datacenters-europeens-guide-2026/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/pue-optimisation-datacenters-europeens-guide-2026/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/pue-optimization-european-datacenters-guide-2026/" />
+  </url>
+
+  <!-- BLOG ARTICLE 5 EN - PUE Optimization -->
+  <url>
+    <loc>https://finxiacapital.com/en/blog/pue-optimization-european-datacenters-guide-2026/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/pue-optimization-european-datacenters-guide-2026/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/pue-optimisation-datacenters-europeens-guide-2026/" />
+  </url>
+
+  <!-- BLOG ARTICLE 6 FR - EED Article 12 -->
+  <url>
+    <loc>https://finxiacapital.com/blog/eed-article-12-declaration-datacenter-guide-2026/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/eed-article-12-declaration-datacenter-guide-2026/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/eed-article-12-datacenter-declaration-guide-2026/" />
+  </url>
+
+  <!-- BLOG ARTICLE 6 EN - EED Article 12 -->
+  <url>
+    <loc>https://finxiacapital.com/en/blog/eed-article-12-datacenter-declaration-guide-2026/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/eed-article-12-datacenter-declaration-guide-2026/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/eed-article-12-declaration-datacenter-guide-2026/" />
+  </url>
+
+  <!-- BLOG ARTICLE 7 FR - TITAN DC AI -->
+  <url>
+    <loc>https://finxiacapital.com/blog/titan-dc-ai-strategie-datacenters-europeens-finxia/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/titan-dc-ai-strategie-datacenters-europeens-finxia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/titan-dc-ai-european-datacenters-strategy-finxia/" />
+  </url>
+
+  <!-- BLOG ARTICLE 7 EN - TITAN DC AI -->
+  <url>
+    <loc>https://finxiacapital.com/en/blog/titan-dc-ai-european-datacenters-strategy-finxia/</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/titan-dc-ai-european-datacenters-strategy-finxia/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/titan-dc-ai-strategie-datacenters-europeens-finxia/" />
+  </url>
+
   <!-- CONTACT FR -->
   <url>
     <loc>https://finxiacapital.com/contact/</loc>
