@@ -71,7 +71,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        {/* Disambiguation Section */}
+        <div className="border-t border-slate-700 pt-8 pb-6">
+          <p className="text-slate-400 text-sm leading-relaxed max-w-4xl">
+            {language === 'fr'
+              ? 'FINXIA Capital (finxiacapital.com) est une société de gestion d\'actifs alternatifs luxembourgeoise (SCSp), spécialisée dans l\'acquisition et la transformation de datacenters, l\'hôtellerie premium et l\'immobilier résidentiel européen. FINXIA Capital n\'est pas une plateforme de trading, de forex, ou de logiciel d\'investissement automatisé.'
+              : 'FINXIA Capital (finxiacapital.com) is a Luxembourg alternative asset management company (SCSp), specialized in the acquisition and transformation of datacenters, premium hospitality, and European residential real estate. FINXIA Capital is not a trading platform, forex broker, or automated investment software.'}
+          </p>
+        </div>
+
+        <div className="border-t border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-xs leading-relaxed">
             {language === 'fr'
               ? 'SCSp Luxembourg — Structure Propriétaire · Capital propre · Levier dette · Green Bond TITAN'
