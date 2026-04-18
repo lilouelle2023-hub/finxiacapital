@@ -83,8 +83,8 @@ export default function Footer() {
         <div className="border-t border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 text-xs leading-relaxed">
             {language === 'fr'
-              ? 'SCSp Luxembourg — Structure Propriétaire · Capital propre · Levier dette · Green Bond TITAN'
-              : 'Luxembourg SCSp — Proprietary Structure · Equity Capital · Debt Leverage · TITAN Green Bond'}
+              ? 'SCSp Luxembourg — Véhicule Propriétaire · Capital Propre · Levier Dette · Green Bond TITAN DC AI'
+              : 'Luxembourg SCSp — Proprietary Vehicle · Own Capital · Debt Leverage · TITAN DC AI Green Bond'}
           </p>
           <p className="text-slate-500 text-xs mt-2">
             © {currentYear} FINXIA Capital S.à r.l.
