@@ -73,10 +73,25 @@ export default function Footer() {
 
         {/* Disambiguation Section */}
         <div className="border-t border-slate-700 pt-8 pb-6">
-          <p className="text-slate-400 text-sm leading-relaxed max-w-4xl">
+          <p className="text-slate-400 text-sm leading-relaxed max-w-4xl mb-4">
             {language === 'fr'
               ? 'FINXIA Capital (finxiacapital.com) est une société de gestion d\'actifs alternatifs luxembourgeoise (SCSp), spécialisée dans l\'acquisition et la transformation de datacenters, l\'hôtellerie premium et l\'immobilier résidentiel européen. FINXIA Capital n\'est pas une plateforme de trading, de forex, ou de logiciel d\'investissement automatisé.'
               : 'FINXIA Capital (finxiacapital.com) is a Luxembourg alternative asset management company (SCSp), specialized in the acquisition and transformation of datacenters, premium hospitality, and European residential real estate. FINXIA Capital is not a trading platform, forex broker, or automated investment software.'}
+          </p>
+          <p className="text-slate-400 text-xs mt-4">
+            {language === 'fr'
+              ? 'Publication SSRN : '
+              : 'SSRN Publication: '}
+            <a 
+              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#C45A3B] hover:underline"
+            >
+              {language === 'fr'
+                ? 'Optimisation Énergétique des Datacenters Européens (2026) — Abstract ID 6597918'
+                : 'European Datacenter Energy Optimization (2026) — Abstract ID 6597918'}
+            </a>
           </p>
         </div>
 

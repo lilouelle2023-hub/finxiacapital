@@ -185,7 +185,7 @@ export default function GovernancePage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#C45A3B] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-300">
-                    {language === 'fr' ? 'Reporting standards INREV sous 45 jours' : 'INREV reporting standards within 45 days'}
+                    {language === 'fr' ? 'Reporting institutionnel sous 45 jours' : 'Institutional-grade reporting within 45 days'}
                   </span>
                 </li>
               </ul>

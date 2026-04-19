@@ -53,26 +53,28 @@ export default function AboutPage() {
       name: 'Jean-Pierre Véron',
       role: language === 'fr' ? 'Fondateur & Président' : 'Founder & Chairman',
       bio: language === 'fr'
-        ? 'Professionnel chevronné de l\'investissement immobilier avec plus de 25 ans d\'expérience. FINXIA CAPITAL représente son troisième fonds institutionnel dédié à l\'immobilier européen. Ancien PDG de K&B, plateforme d\'investissement immobilier pan-européenne de premier plan.'
-        : 'Seasoned real estate investment professional with over 25 years of experience. FINXIA CAPITAL represents his third institutional fund dedicated to European real estate. Former CEO of K&B, a leading pan-European real estate investment platform.',
+        ? "Professionnel de référence de l'investissement immobilier français et européen. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée à un acteur espagnol coté. Directeur Général France de Kaufman & Broad pendant 20 ans — l'un des premiers promoteurs immobiliers cotés en France. Président de Financière Norev. Plus de 25 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe."
+        : "Leading figure in French and European real estate investment. Founder of Financière Rive Gauche, a pan-European real estate investment platform acquired by a listed Spanish operator. Managing Director France of Kaufman & Broad for 20 years — one of France's premier listed real estate developers. Chairman of Financière Norev. Over 25 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets across Europe.",
+      linkedin: 'https://linkedin.com/in/jean-pierre-veron',
       highlights: [
-        { icon: Award, text: language === 'fr' ? '3ème fonds immobilier institutionnel' : 'Third institutional real estate fund' },
-        { icon: Briefcase, text: language === 'fr' ? 'Ancien PDG de K&B' : 'Former CEO of K&B' },
-        { icon: CheckCircle, text: language === 'fr' ? '25+ ans en investissement immobilier' : '25+ years in real estate investment' },
+        { icon: Award, text: language === 'fr' ? 'Fondateur Financière Rive Gauche' : 'Founder Financière Rive Gauche' },
+        { icon: Briefcase, text: language === 'fr' ? 'DG France Kaufman & Broad (20 ans)' : 'Managing Director France K&B (20 years)' },
+        { icon: CheckCircle, text: language === 'fr' ? '25+ ans track record immobilier' : '25+ years real estate track record' },
       ],
     },
     {
       id: 'lila-benhammou',
       initials: 'LB',
       name: 'Lila Benhammou',
-      role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements' : 'Co-Founder & Chief Investment Officer',
+      role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements (CIO)' : 'Co-Founder & Chief Investment Officer (CIO)',
       bio: language === 'fr'
-        ? 'Serial entrepreneur avec une expertise approfondie dans les technologies émergentes, l\'intelligence artificielle et la finance quantitative. Apporte des approches novatrices à la gestion d\'actifs et à l\'optimisation de portefeuille.'
-        : 'Serial entrepreneur with deep expertise in emerging technologies, artificial intelligence, and quantitative finance. Brings innovative approaches to asset management and portfolio optimization.',
+        ? "Serial entrepreneur avec 13+ ans d'expérience opérationnelle. Ancienne Orange Telecom, spécialiste de la structuration d'actifs alternatifs et des applications d'intelligence artificielle à la gestion d'actifs. Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes) et co-fondatrice de THERMIS B.V., la plateforme d'optimisation thermique IA pour datacenters certifiée TÜV Rheinland. Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam."
+        : "Serial entrepreneur with 13+ years of operational experience. Former Orange Telecom, specialist in alternative asset structuring and AI application to asset management. Architect of FINXIA Capital's AI infrastructure (18 autonomous agents) and co-founder of THERMIS B.V., the TÜV Rheinland-certified AI thermal optimization platform for datacenters. Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam.",
+      linkedin: 'https://linkedin.com/in/lilabenhammou',
       highlights: [
-        { icon: Lightbulb, text: language === 'fr' ? 'Serial entrepreneur en Tech & IA' : 'Serial entrepreneur in Tech & AI' },
-        { icon: BarChart3, text: language === 'fr' ? 'Finance quantitative' : 'Quantitative finance background' },
-        { icon: CheckCircle, text: language === 'fr' ? 'Approche innovation' : 'Innovation-driven approach' },
+        { icon: Lightbulb, text: language === 'fr' ? 'Architecte infrastructure IA (18 agents)' : 'AI infrastructure architect (18 agents)' },
+        { icon: BarChart3, text: language === 'fr' ? 'Co-fondatrice THERMIS B.V.' : 'Co-founder THERMIS B.V.' },
+        { icon: CheckCircle, text: language === 'fr' ? 'Lead author SSRN 2026' : 'SSRN lead author 2026' },
       ],
     },
   ];
@@ -132,12 +134,12 @@ export default function AboutPage() {
   return (
     <div data-testid="about-page" className="pt-20">
       <SEO
-        title={language === 'fr' ? "À Propos — Notre Vision" : "About — Our Vision"}
+        title={language === 'fr' ? "Jean-Pierre Véron & Lila Benhammou — Équipe FINXIA Capital SCSp Luxembourg | 25 ans track record immobilier + AI-native" : "Jean-Pierre Véron & Lila Benhammou — FINXIA Capital Team Luxembourg SCSp | 25-year real estate track record + AI-native"}
         description={language === 'fr' 
-          ? "FINXIA Capital — architecture AI-native avec 18 agents autonomes. Gestionnaire alternatif luxembourgeois spécialisé dans la transformation d'actifs réels par l'IA."
-          : "FINXIA Capital — AI-native architecture with 18 autonomous agents. Luxembourg alternative asset manager specializing in AI-driven real asset transformation."}
+          ? "Jean-Pierre Véron (Fondateur, 25+ ans immobilier) & Lila Benhammou (CIO, 13+ ans IA) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
+          : "Jean-Pierre Véron (Founder, 25+ years real estate) & Lila Benhammou (CIO, 13+ years AI) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
         canonical={language === 'fr' ? "https://finxiacapital.com/about/" : "https://finxiacapital.com/en/about/"}
-        keywords="Finxia Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Jean-Pierre Véron, Lila Benhammou"
+        keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, THERMIS, Kaufman Broad, Financière Rive Gauche"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
@@ -312,6 +314,19 @@ export default function AboutPage() {
                       <span className="text-slate-700 text-sm">{highlight.text}</span>
                     </div>
                   ))}
+                  {member.linkedin && (
+                    <a 
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-[#C45A3B] hover:underline text-sm font-medium mt-4"
+                    >
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                      </svg>
+                      LinkedIn
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
@@ -324,6 +339,20 @@ export default function AboutPage() {
                 {language === 'fr' 
                   ? 'Accompagnés par une équipe de professionnels spécialisés par domaine : immobilier, finance, juridique, technologie et opérations.'
                   : 'Supported by a team of professionals specialized by domain: real estate, finance, legal, technology and operations.'}
+              </p>
+            </div>
+          </div>
+
+          {/* AI-Native Architecture Section */}
+          <div className="mt-16">
+            <div className="bg-[#1E2A3A] p-10 md:p-12 max-w-4xl mx-auto">
+              <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">
+                {language === 'fr' ? 'Une architecture native — pas une couche' : 'Native architecture — not a layer'}
+              </h3>
+              <p className="text-slate-300 text-lg leading-relaxed">
+                {language === 'fr'
+                  ? "FINXIA Capital n'a pas ajouté l'intelligence artificielle à un modèle de gestion traditionnel. Le fonds a été conçu dès le premier jour comme un véhicule AI-native : les 18 agents autonomes de FINXIA ne sont pas des outils d'aide à la décision — ils sont l'infrastructure opérationnelle du fonds, couvrant l'ensemble du cycle d'investissement de la détection de deal à la sortie d'actif."
+                  : "FINXIA Capital did not add artificial intelligence to a traditional management model. The vehicle was designed from day one as AI-native: FINXIA's 18 autonomous agents are not decision-support tools — they are the fund's operational infrastructure, covering the full investment lifecycle from deal origination to asset exit."}
               </p>
             </div>
           </div>

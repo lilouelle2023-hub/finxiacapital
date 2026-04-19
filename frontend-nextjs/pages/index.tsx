@@ -90,7 +90,7 @@ export default function HomePage() {
       text: language === 'fr' 
         ? 'Repositionnement de campus datacenters existants en infrastructure IA low-energy pour hyperscalers. Financement Green Bond ESG dédié.'
         : 'Repositioning of existing datacenter campuses into low-energy AI infrastructure for hyperscalers. Dedicated ESG Green Bond financing.',
-      focus: 'France · Espagne · Portugal'
+      focus: language === 'fr' ? 'France · Espagne · Europe' : 'France · Spain · Europe'
     },
     {
       id: 'hospitality-premium',

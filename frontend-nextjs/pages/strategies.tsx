@@ -27,7 +27,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Production d\'énergie on-site et certification ESG' : 'On-site energy production and ESG certification',
         language === 'fr' ? 'Location hyperscalers long terme et cession acquéreurs Core' : 'Long-term hyperscaler leasing and sale to Core buyers',
       ],
-      markets: 'France · Espagne · Portugal',
+      markets: language === 'fr' ? 'France · Espagne · Europe' : 'France · Spain · Europe',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     },
     {
