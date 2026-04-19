@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { 
   CheckCircle, Award, Briefcase, Lightbulb, BarChart3,
-  TrendingUp, Shield, Brain, Layers, ArrowRight
+  TrendingUp, Shield, Brain, Layers, ArrowRight, FileText
 } from 'lucide-react';
 import SEO from '@/components/SEO';
 
@@ -355,6 +355,18 @@ export default function AboutPage() {
                   : "FINXIA Capital did not add artificial intelligence to a traditional management model. The vehicle was designed from day one as AI-native: FINXIA's 18 autonomous agents are not decision-support tools — they are the fund's operational infrastructure, covering the full investment lifecycle from deal origination to asset exit."}
               </p>
             </div>
+          </div>
+
+          {/* PDF Download Button */}
+          <div className="mt-12 text-center">
+            <a
+              href="/documents/FINXIA_LivreBlancPUE_V3_FINAL.pdf"
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#C45A3B] border-2 border-white font-medium rounded hover:bg-white/90 transition-colors"
+            >
+              <FileText className="w-5 h-5" />
+              {language === 'fr' ? 'Télécharger le livre blanc (PDF)' : 'Download White Paper (PDF)'}
+            </a>
           </div>
         </div>
       </section>

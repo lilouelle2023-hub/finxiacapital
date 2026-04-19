@@ -31,6 +31,7 @@ export default function Navigation() {
     { path: '/european-approach', label: language === 'fr' ? 'Approche Européenne' : 'European Approach' },
     { path: '/investors', label: language === 'fr' ? 'Investisseurs' : 'Investors' },
     { path: '/blog', label: 'Blog' },
+    { path: '/press', label: language === 'fr' ? 'Presse' : 'Press' },
     { path: '/contact', label: 'Contact' },
   ];
 

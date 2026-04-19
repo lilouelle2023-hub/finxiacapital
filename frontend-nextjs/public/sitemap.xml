@@ -132,6 +132,26 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/" />
   </url>
 
+  <!-- PRESS FR -->
+  <url>
+    <loc>https://finxiacapital.com/press/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/press/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/press/" />
+  </url>
+
+  <!-- PRESS EN -->
+  <url>
+    <loc>https://finxiacapital.com/en/press/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/press/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/press/" />
+  </url>
+
   <!-- BLOG INDEX EN -->
   <url>
     <loc>https://finxiacapital.com/en/blog/</loc>

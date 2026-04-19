@@ -194,7 +194,7 @@ export default function HomePage() {
                 data-testid="hero-cta-strategies"
                 className="btn-primary inline-flex items-center justify-center gap-2"
               >
-                {language === 'fr' ? 'Découvrir nos Stratégies' : 'Discover Our Strategies'}
+                {language === 'fr' ? 'Découvrir TITAN DC AI' : 'Explore TITAN DC AI'}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
@@ -401,6 +401,95 @@ export default function HomePage() {
                   : 'FINXIA Capital is structured as a Luxembourg Special Limited Partnership (SCSp), ensuring flexibility, rigorous governance, and a first-class regulatory framework for professional investors.'}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Figures Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl mb-4">
+              {language === 'fr' ? 'Chiffres Clés' : 'Key Figures'}
+            </h2>
+            <div className="w-16 h-1 bg-[#C45A3B] mx-auto" />
+          </div>
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {[
+              { value: '25+', label: language === 'fr' ? 'ans — Track record immobilier institutionnel' : 'years — Institutional real estate track record', sublabel: 'Jean-Pierre Véron' },
+              { value: '13+', label: language === 'fr' ? 'ans — Expérience opérationnelle IA & telecom' : 'years — AI & telecom operational experience', sublabel: 'Lila Benhammou' },
+              { value: '18', label: language === 'fr' ? 'agents IA autonomes — Architecture opérationnelle native' : 'autonomous AI agents — Native operational architecture', sublabel: '' },
+              { value: '4', label: language === 'fr' ? 'stratégies d\'investissement complémentaires' : 'complementary investment strategies', sublabel: '' },
+              { value: '3', label: language === 'fr' ? 'marchés : France, Espagne, Europe du Sud' : 'markets: France, Spain, Southern Europe', sublabel: '' },
+              { value: '1', label: language === 'fr' ? 'publication académique — SSRN Abstract ID 6597918' : 'academic publication — SSRN Abstract ID 6597918', sublabel: '' },
+            ].map((stat, idx) => (
+              <div key={idx} className="text-center p-6 bg-slate-50">
+                <div className="text-4xl font-bold text-[#C45A3B] mb-2">{stat.value}</div>
+                <div className="text-slate-700 text-sm leading-tight">{stat.label}</div>
+                {stat.sublabel && <div className="text-slate-500 text-xs mt-1">{stat.sublabel}</div>}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI-First Differentiator Quote */}
+      <section className="py-16 bg-[#1E2A3A]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-white text-2xl md:text-3xl font-serif leading-relaxed">
+            {language === 'fr'
+              ? '"Là où les gestionnaires traditionnels utilisent l\'IA comme outil, FINXIA l\'utilise comme système d\'exploitation."'
+              : '"Where traditional managers use AI as a tool, FINXIA uses it as an operating system."'}
+          </p>
+        </div>
+      </section>
+
+      {/* News Section */}
+      <section className="py-16 md:py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl mb-4">
+              {language === 'fr' ? 'Actualités' : 'News'}
+            </h2>
+            <div className="w-16 h-1 bg-[#C45A3B] mx-auto" />
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                date: language === 'fr' ? 'Avril 2026' : 'April 2026',
+                title: language === 'fr' ? 'Publication SSRN — Optimisation Énergétique Datacenters' : 'SSRN Publication — Datacenter Energy Optimization',
+                excerpt: language === 'fr' ? 'Livre blanc académique sur l\'optimisation PUE des datacenters européens publié sur SSRN.' : 'Academic white paper on European datacenter PUE optimization published on SSRN.',
+                link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918',
+                tag: 'SSRN'
+              },
+              {
+                date: language === 'fr' ? 'Avril 2026' : 'April 2026',
+                title: language === 'fr' ? 'TITAN DC AI — Stratégie Datacenters' : 'TITAN DC AI — Datacenter Strategy',
+                excerpt: language === 'fr' ? 'Présentation de la stratégie TITAN DC AI : transformation brown-to-green des datacenters européens.' : 'TITAN DC AI strategy presentation: brown-to-green transformation of European datacenters.',
+                link: language === 'fr' ? '/blog/titan-dc-ai-strategie-datacenters-europeens-finxia' : '/en/blog/titan-dc-ai-european-datacenters-strategy-finxia',
+                tag: 'Strategy'
+              },
+              {
+                date: language === 'fr' ? 'Avril 2026' : 'April 2026',
+                title: language === 'fr' ? 'EED Article 12 — Guide Conformité 15 Mai' : 'EED Article 12 — Compliance Guide May 15',
+                excerpt: language === 'fr' ? 'Guide complet pour la déclaration obligatoire des datacenters européens avant le 15 mai 2026.' : 'Complete guide for mandatory European datacenter declaration before May 15, 2026.',
+                link: language === 'fr' ? '/blog/eed-article-12-declaration-datacenter-guide-2026' : '/en/blog/eed-article-12-datacenter-declaration-guide-2026',
+                tag: 'Regulatory'
+              }
+            ].map((news, idx) => (
+              <Link 
+                key={idx} 
+                href={news.link}
+                target={news.link.startsWith('http') ? '_blank' : '_self'}
+                rel={news.link.startsWith('http') ? 'noopener noreferrer' : ''}
+                className="bg-white p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow"
+              >
+                <div className="text-[#C45A3B] text-xs font-medium uppercase mb-2">{news.tag}</div>
+                <div className="text-slate-500 text-sm mb-3">{news.date}</div>
+                <h3 className="font-serif text-xl mb-3">{news.title}</h3>
+                <p className="text-slate-600 text-sm">{news.excerpt}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
