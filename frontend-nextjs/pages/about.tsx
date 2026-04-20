@@ -51,7 +51,7 @@ export default function AboutPage() {
       id: 'jean-pierre-veron',
       initials: 'JPV',
       name: 'Jean-Pierre Véron',
-      role: language === 'fr' ? 'Fondateur & Président' : 'Founder & Chairman',
+      role: language === 'fr' ? 'Co-Fondateur & Président' : 'Co-Founder & Chairman',
       bio: language === 'fr'
         ? "Professionnel de référence de l'investissement immobilier français et européen. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée à un acteur espagnol coté. Directeur Général France de Kaufman & Broad pendant 20 ans — l'un des premiers promoteurs immobiliers cotés en France. Président de Financière Norev. Plus de 25 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe."
         : "Leading figure in French and European real estate investment. Founder of Financière Rive Gauche, a pan-European real estate investment platform acquired by a listed Spanish operator. Managing Director France of Kaufman & Broad for 20 years — one of France's premier listed real estate developers. Chairman of Financière Norev. Over 25 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets across Europe.",
@@ -136,8 +136,8 @@ export default function AboutPage() {
       <SEO
         title={language === 'fr' ? "Jean-Pierre Véron & Lila Benhammou — Équipe FINXIA Capital SCSp Luxembourg | 25 ans track record immobilier + AI-native" : "Jean-Pierre Véron & Lila Benhammou — FINXIA Capital Team Luxembourg SCSp | 25-year real estate track record + AI-native"}
         description={language === 'fr' 
-          ? "Jean-Pierre Véron (Fondateur, 25+ ans immobilier) & Lila Benhammou (CIO, 13+ ans IA) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
-          : "Jean-Pierre Véron (Founder, 25+ years real estate) & Lila Benhammou (CIO, 13+ years AI) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
+          ? "Jean-Pierre Véron (Co-Fondateur, 25+ ans immobilier) & Lila Benhammou (Co-Fondatrice & CIO, 13+ ans IA) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
+          : "Jean-Pierre Véron (Co-Founder, 25+ years real estate) & Lila Benhammou (Co-Founder & CIO, 13+ years AI) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
         canonical={language === 'fr' ? "https://finxiacapital.com/about/" : "https://finxiacapital.com/en/about/"}
         keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, THERMIS, Kaufman Broad, Financière Rive Gauche"
         faqSchema={faqSchema}
