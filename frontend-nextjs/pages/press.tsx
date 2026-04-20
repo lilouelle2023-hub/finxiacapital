@@ -113,20 +113,6 @@ export default function PressPage() {
         </div>
       </section>
 
-      {/* PDF Download Button */}
-      <section className="py-8 bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <a
-            href="/documents/FINXIA_LivreBlancPUE_V3_FINAL.pdf"
-            download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#C45A3B] text-white font-medium rounded hover:bg-[#A04A2F] transition-colors"
-          >
-            <FileText className="w-5 h-5" />
-            {language === 'fr' ? 'Télécharger le livre blanc (PDF)' : 'Download White Paper (PDF)'}
-          </a>
-        </div>
-      </section>
-
       {/* Press Items */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

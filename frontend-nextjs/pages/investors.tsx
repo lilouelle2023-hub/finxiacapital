@@ -126,11 +126,14 @@ export default function InvestorsPage() {
                   : "These opportunities are reserved for professional investors under MiFID II. Each co-investment opportunity is presented individually, with no global fund commitment required."}
               </p>
               <p className="text-slate-700 leading-relaxed">
+                <span className="text-slate-600 text-sm font-medium block mb-1">
+                  {language === 'fr' ? 'Relations Investisseurs' : 'Investor Relations'}
+                </span>
                 {language === 'fr'
                   ? "Pour toute discussion relative à une opportunité de co-investissement : "
                   : "For co-investment inquiries: "}
-                <a href="mailto:contact@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
-                  contact@finxiacapital.com
+                <a href="mailto:invest@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
+                  invest@finxiacapital.com
                 </a>
               </p>
             </div>
@@ -193,6 +196,20 @@ export default function InvestorsPage() {
                 {language === 'fr'
                   ? "Les actifs TITAN DC AI visent la classification SFDR Article 9 et l'alignement avec la Taxonomie Verte Européenne (Règlement 2020/852)."
                   : "TITAN DC AI assets target SFDR Article 9 classification and alignment with the EU Taxonomy (Regulation 2020/852)."}
+              </p>
+
+              <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                {language === 'fr' ? 'Publication de référence : ' : 'Reference publication: '}
+                <a
+                  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C45A3B] hover:underline"
+                >
+                  {language === 'fr'
+                    ? 'SSRN — European Datacenter Energy Optimization, 2026'
+                    : 'SSRN — European Datacenter Energy Optimization, 2026'}
+                </a>
               </p>
               
               <p className="text-slate-700 leading-relaxed">
@@ -263,8 +280,8 @@ export default function InvestorsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-slate-600 text-sm leading-relaxed max-w-4xl">
             {language === 'fr'
-              ? "FINXIA Capital SCSp, Luxembourg. Ce contenu est fourni à titre informatif uniquement. Il ne constitue pas une offre de souscription ni un conseil en investissement. FINXIA Capital est réservé aux investisseurs professionnels au sens de la Directive MiFID II (2014/65/UE). FINXIA Capital n'est pas une plateforme de trading, de forex, ni un logiciel d'investissement automatisé."
-              : "FINXIA Capital SCSp, Luxembourg. This content is provided for informational purposes only. It does not constitute a subscription offer or investment advice. FINXIA Capital is reserved for professional investors within the meaning of MiFID II Directive (2014/65/EU). FINXIA Capital is not a trading platform, forex broker, or automated investment software."}
+              ? "FINXIA Capital SCSp, Luxembourg. Ce contenu est fourni à titre informatif uniquement. Il ne constitue pas une offre de souscription ni un conseil en investissement. FINXIA Capital est réservé aux investisseurs professionnels au sens de la Directive MiFID II (2014/65/UE)."
+              : "FINXIA Capital SCSp, Luxembourg. This content is provided for informational purposes only. It does not constitute a subscription offer or investment advice. FINXIA Capital is reserved for professional investors within the meaning of MiFID II Directive (2014/65/EU)."}
           </p>
         </div>
       </section>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { 
   CheckCircle, Award, Briefcase, Lightbulb, BarChart3,
-  TrendingUp, Shield, Brain, Layers, ArrowRight, FileText
+  TrendingUp, Shield, Brain, Layers, ArrowRight
 } from 'lucide-react';
 import SEO from '@/components/SEO';
 
@@ -356,18 +356,6 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-
-          {/* PDF Download Button */}
-          <div className="mt-12 text-center">
-            <a
-              href="/documents/FINXIA_LivreBlancPUE_V3_FINAL.pdf"
-              download
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#C45A3B] border-2 border-white font-medium rounded hover:bg-white/90 transition-colors"
-            >
-              <FileText className="w-5 h-5" />
-              {language === 'fr' ? 'Télécharger le livre blanc (PDF)' : 'Download White Paper (PDF)'}
-            </a>
-          </div>
         </div>
       </section>
 
@@ -403,15 +391,6 @@ export default function AboutPage() {
                 <ArrowRight className="w-4 h-4" />
               </span>
             </Link>
-          </div>
-
-          {/* Disambiguation Notice */}
-          <div className="mt-16 pt-8 border-t border-slate-200">
-            <p className="text-slate-600 text-sm leading-relaxed max-w-4xl mx-auto text-center">
-              {language === 'fr'
-                ? 'FINXIA Capital (finxiacapital.com) est une société de gestion d\'actifs alternatifs luxembourgeoise (SCSp), spécialisée dans l\'acquisition et la transformation de datacenters, l\'hôtellerie premium et l\'immobilier résidentiel européen. FINXIA Capital n\'est pas une plateforme de trading, de forex, ou de logiciel d\'investissement automatisé.'
-                : 'FINXIA Capital (finxiacapital.com) is a Luxembourg alternative asset management company (SCSp), specialized in the acquisition and transformation of datacenters, premium hospitality, and European residential real estate. FINXIA Capital is not a trading platform, forex broker, or automated investment software.'}
-            </p>
           </div>
         </div>
       </section>
