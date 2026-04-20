@@ -130,7 +130,7 @@ export default function HomePage() {
   return (
     <div data-testid="home-page">
       <SEO
-        title={language === 'fr' ? "Accueil — L'intelligence artificielle au service des actifs réels européens | FINXIA Capital" : "Home — Build in the real world, Scaled with AI | FINXIA Capital"}
+        title={language === 'fr' ? "Accueil — L'intelligence artificielle au service des actifs réels européens | FINXIA Capital" : "Home — Artificial intelligence serving European real assets | FINXIA Capital"}
         description={language === 'fr' 
           ? "FINXIA Capital, gestionnaire d'actifs alternatifs AI-native (SCSp luxembourgeoise). 4 stratégies, 18 agents IA : TITAN DC AI, Hôtellerie Premium, Résidentiel Urbain, C.CAPITAL." 
           : "FINXIA Capital, AI-native alternative asset management vehicle (Luxembourg SCSp). 4 strategies, 18 AI agents: TITAN DC AI, Premium Hospitality, Urban Residential, C.CAPITAL."}
@@ -187,8 +187,8 @@ export default function HomePage() {
                 </>
               ) : (
                 <>
-                  Build in the real world.<br/>
-                  <span className="text-[#C45A3B]">Scaled with AI.</span>
+                  Artificial intelligence<br/>
+                  <span className="text-[#C45A3B]">serving European real assets.</span>
                 </>
               )}
             </h1>
@@ -419,7 +419,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl mb-4">
-              {language === 'fr' ? 'Chiffres Clés' : 'Key Figures'}
+              {language === 'fr' ? 'Notre ADN' : 'Our DNA'}
             </h2>
             <div className="w-16 h-1 bg-[#C45A3B] mx-auto" />
           </div>
@@ -507,7 +507,9 @@ export default function HomePage() {
       <section className="py-24 md:py-32 bg-slate-50" data-testid="cta-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl mb-6">
-            Build in the real world. Scaled with AI.
+            {language === 'fr'
+              ? "Discuter d'une opportunité de co-investissement"
+              : "Discuss a co-investment opportunity"}
           </h2>
           <p className="text-slate-600 text-lg mb-10 max-w-2xl mx-auto">
             {language === 'fr'
