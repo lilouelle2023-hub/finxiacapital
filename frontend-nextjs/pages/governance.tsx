@@ -228,8 +228,8 @@ export default function GovernancePage() {
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Fondateur de FINXIA Capital et apporteur du capital propre du véhicule SCSp. Ancien PDG du groupe K&B, architecte du 3ème fonds immobilier européen. 30+ ans d'expérience en structuration d'actifs alternatifs et gouvernance institutionnelle."
-                      : "Founder of FINXIA Capital and provider of the SCSp vehicle's proprietary capital. Former CEO of K&B Group, architect of the 3rd European real estate fund. 30+ years of experience in alternative asset structuring and institutional governance."}
+                      ? "Fondateur de FINXIA Capital. Ancien PDG du groupe K&B, architecte du 3ème fonds immobilier européen. 30+ ans d'expérience en structuration d'actifs alternatifs et gouvernance institutionnelle."
+                      : "Founder of FINXIA Capital. Former CEO of K&B Group, architect of the 3rd European real estate fund. 30+ years of experience in alternative asset structuring and institutional governance."}
                   </p>
                 </div>
                 <div>
