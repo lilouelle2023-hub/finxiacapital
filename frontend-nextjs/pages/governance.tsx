@@ -190,6 +190,71 @@ export default function GovernancePage() {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Investment Committee Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-8">
+              <p className="text-[#C45A3B] font-medium uppercase tracking-wider text-sm mb-4">
+                {language === 'fr' ? 'Comité d\'investissement' : 'Investment Committee'}
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl mb-6">
+                {language === 'fr' ? 'Gouvernance & Comité d\'investissement' : 'Governance & Investment Committee'}
+              </h2>
+              <div className="w-16 h-1 bg-[#C45A3B] mb-8" />
+            </div>
+
+            <div className="prose prose-slate prose-lg max-w-none mb-8">
+              <p className="text-slate-700 leading-relaxed">
+                {language === 'fr'
+                  ? "Finxia Capital est dotée d'un comité d'investissement indépendant chargé d'approuver chaque décision d'allocation. Le comité se réunit avant tout engagement de capital et produit un procès-verbal consultable par les investisseurs sur demande."
+                  : "Finxia Capital has an independent investment committee responsible for approving each allocation decision. The committee meets before any capital commitment and produces minutes available to investors upon request."}
+              </p>
+            </div>
+
+            <div className="bg-slate-50 p-8 border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-slate-800">
+                {language === 'fr' ? 'Composition du Comité' : 'Committee Composition'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? "La composition complète du comité est communiquée aux investisseurs qualifiés sur demande — contact : "
+                  : "The complete committee composition is communicated to qualified investors upon request — contact: "}
+                <a href="mailto:invest@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
+                  invest@finxiacapital.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Regulatory Framework Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white p-8 border border-slate-200">
+              <h3 className="font-serif text-xl mb-4 text-slate-800">
+                {language === 'fr' ? 'Cadre Réglementaire' : 'Regulatory Framework'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? "Finxia Capital opère dans le cadre réglementaire européen applicable aux fonds d'investissement alternatifs. Documents réglementaires disponibles sur demande auprès des investisseurs qualifiés."
+                  : "Finxia Capital operates within the European regulatory framework applicable to alternative investment funds. Regulatory documents available upon request to qualified investors."}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Commitment Section */}
+      <section className="py-24 md:py-32 bg-[#1E2A3A]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
             <div className="bg-white/5 p-10 border border-white/10">
               <Shield className="w-16 h-16 text-[#C45A3B] mb-6" strokeWidth={1} />
               <h3 className="font-serif text-2xl text-white mb-4">
