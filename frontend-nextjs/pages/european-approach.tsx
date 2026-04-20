@@ -56,12 +56,12 @@ export default function EuropeanApproachPage() {
   return (
     <div data-testid="european-approach-page" className="pt-20">
       <SEO
-        title={language === 'fr' ? "Approche Européenne — France, Espagne, Italie, Portugal" : "European Approach — France, Spain, Italy, Portugal"}
+        title={language === 'fr' ? "Approche Européenne — France, Espagne, Italie" : "European Approach — France, Spain, Italy"}
         description={language === 'fr'
           ? "Déploiement stratégique sur 3 marchés européens : France, Espagne, Italie. Grandes métropoles, liquidité institutionnelle, infrastructure mature. Focus datacenters, hôtellerie, résidentiel."
           : "Strategic deployment across 3 European markets: France, Spain, Italy. Major cities, institutional liquidity, mature infrastructure. Focus on datacenters, hospitality, residential."}
         canonical="https://finxiacapital.com/european-approach/"
-        keywords="investissement alternatif Europe du Sud, France Espagne Italie Portugal immobilier, datacenter AI Europe, hôtellerie premium Europe"
+        keywords="investissement alternatif Europe du Sud, France Espagne Italie immobilier, datacenter AI Europe, hôtellerie premium Europe"
         breadcrumbSchema={breadcrumbSchema}
         language="fr"
         ogLocale="fr_FR"

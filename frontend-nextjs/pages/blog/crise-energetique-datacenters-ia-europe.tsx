@@ -171,8 +171,11 @@ export default function Article1Page() {
               {t.title}
             </h1>
             
-            <p className="text-slate-500 text-sm">
-              Finxia Capital | {language === 'fr' ? 'Recherche & Stratégie' : 'Research & Strategy'}
+            <p className="text-[#C45A3B] text-sm font-medium mb-2">
+              {language === 'fr' ? "Par l'équipe Finxia Capital · Recherche & Stratégie" : "By Finxia Capital Team · Research & Strategy"}
+            </p>
+            <p className="text-slate-500 text-xs">
+              Finxia Capital | {language === 'fr' ? 'Janvier 2026' : 'January 2026'}
             </p>
           </div>
         </header>

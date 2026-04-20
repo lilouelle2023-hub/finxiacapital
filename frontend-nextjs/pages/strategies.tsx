@@ -256,6 +256,60 @@ export default function StrategiesPage() {
                     </ul>
                   </div>
 
+                  {/* TITAN DC AI - Certification PUE */}
+                  {strategy.id === 'titan-datacenter' && (
+                    <>
+                      <div className="my-8 p-6 bg-gradient-to-br from-[#1E2A3A] to-[#2A3A4A] text-white rounded-lg border-l-4 border-[#C45A3B]">
+                        <h4 className="font-semibold text-white mb-4">
+                          {language === 'fr' ? 'Certification énergétique indépendante' : 'Independent Energy Certification'}
+                        </h4>
+                        <div className="flex items-center gap-6 mb-4">
+                          <div className="text-center">
+                            <div className="text-5xl font-bold text-[#C45A3B]">1,08</div>
+                            <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">PUE</div>
+                          </div>
+                          <div className="flex-1">
+                            <div className="text-xs font-medium text-[#C45A3B] uppercase tracking-wider mb-1">
+                              {language === 'fr' ? 'Certifié IPMVP Bureau Veritas' : 'IPMVP Bureau Veritas Certified'}
+                            </div>
+                            <p className="text-sm text-slate-300 leading-relaxed">
+                              {language === 'fr'
+                                ? "Le datacenter partenaire de TITAN DC AI affiche un PUE mesuré de 1,08 — certifié selon la méthode IPMVP Option C par Bureau Veritas. Cette certification conditionne les clauses SLL des green bonds ICMA et constitue la preuve technique de la thèse brown-to-green."
+                                : "TITAN DC AI partner datacenter displays a measured PUE of 1.08 — certified according to IPMVP Option C method by Bureau Veritas. This certification conditions ICMA green bond SLL clauses and constitutes technical proof of the brown-to-green thesis."}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* TITAN DC AI - Timeline */}
+                      <div className="my-8 p-6 bg-slate-50 rounded-lg">
+                        <h4 className="font-semibold text-slate-800 mb-6">
+                          {language === 'fr' ? 'Calendrier d\'exécution' : 'Execution Timeline'}
+                        </h4>
+                        <div className="space-y-4">
+                          {[
+                            { quarter: 'Q2 2026', event: language === 'fr' ? 'LOI signée avec premier datacenter partenaire' : 'LOI signed with first partner datacenter' },
+                            { quarter: 'Q3 2026', event: language === 'fr' ? 'Déploiement plateforme IA · Baseline IPMVP active' : 'AI platform deployment · Active IPMVP baseline' },
+                            { quarter: 'Q4 2026', event: language === 'fr' ? 'Closing TITAN DC AI · Première certification BV' : 'TITAN DC AI closing · First BV certification' },
+                            { quarter: '2027', event: language === 'fr' ? 'Mise en service · Première distribution investisseurs' : 'Commissioning · First investor distribution' },
+                          ].map((item, idx) => (
+                            <div key={idx} className="flex items-start gap-4">
+                              <div className="flex-shrink-0 w-20 pt-1">
+                                <span className="text-xs font-bold text-[#C45A3B] uppercase tracking-wider">{item.quarter}</span>
+                              </div>
+                              <div className="flex-1 relative">
+                                <div className="absolute left-0 top-2 w-2 h-2 bg-[#C45A3B] rounded-full" />
+                                <div className="pl-4 border-l-2 border-slate-200 pb-4 last:border-0">
+                                  <span className="text-slate-700 text-sm">{item.event}</span>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </>
+                  )}
+
                   <p className="text-sm font-semibold text-[#C45A3B] uppercase tracking-wider">
                     {strategy.markets}
                   </p>

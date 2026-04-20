@@ -180,25 +180,66 @@ export default function ContactPage() {
                 <div className="mb-8">
                   <div className="flex items-center gap-3 mb-4">
                     <MapPin className="w-5 h-5 text-[#C45A3B]" />
-                    <h3 className="font-serif text-lg">{t('contact.addressTitle')}</h3>
+                    <h3 className="font-serif text-lg">
+                      {language === 'fr' ? 'Adresse principale' : 'Main Address'}
+                    </h3>
                   </div>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    <strong>Finxia Capital S.C.Sp</strong><br />
+                    [Adresse Luxembourg à compléter]<br />
+                    Luxembourg
+                  </p>
+                </div>
+
+                <div className="mb-8">
+                  <h4 className="font-medium text-slate-800 text-sm mb-2">
+                    {language === 'fr' ? 'Bureau France' : 'France Office'}
+                  </h4>
                   <p className="text-slate-600 text-sm">
-                    {t('contact.addressLine1')}<br />
-                    {t('contact.addressLine2')}
+                    Paris, France
                   </p>
                 </div>
 
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <Mail className="w-5 h-5 text-[#C45A3B]" />
-                    <h3 className="font-serif text-lg">{t('contact.emailTitle')}</h3>
+                    <h3 className="font-serif text-lg">
+                      {language === 'fr' ? 'Emails' : 'Emails'}
+                    </h3>
                   </div>
-                  <a 
-                    href="mailto:contact@finxiacapital.com" 
-                    className="text-slate-600 text-sm hover:text-[#C45A3B] transition-colors"
-                  >
-                    {t('contact.email')}
-                  </a>
+                  <div className="space-y-3 text-sm">
+                    <div>
+                      <p className="text-slate-500 text-xs mb-1">
+                        {language === 'fr' ? 'Contact investisseurs' : 'Investor Contact'}
+                      </p>
+                      <a 
+                        href="mailto:invest@finxiacapital.com" 
+                        className="text-[#C45A3B] hover:underline"
+                      >
+                        invest@finxiacapital.com
+                      </a>
+                    </div>
+                    <div>
+                      <p className="text-slate-500 text-xs mb-1">
+                        {language === 'fr' ? 'Contact général' : 'General Contact'}
+                      </p>
+                      <a 
+                        href="mailto:contact@finxiacapital.com" 
+                        className="text-[#C45A3B] hover:underline"
+                      >
+                        contact@finxiacapital.com
+                      </a>
+                    </div>
+                    <div>
+                      <p className="text-slate-500 text-xs mb-1">Lila Benhammou, CIO</p>
+                      <a 
+                        href="mailto:lb@finxiacapital.com" 
+                        className="text-[#C45A3B] hover:underline"
+                      >
+                        lb@finxiacapital.com
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -102,7 +102,10 @@ export default function Article2Page() {
               Gérer un fonds alternatif avec 18 agents IA : ce que ça change vraiment
             </h1>
             
-            <p className="text-slate-500 text-sm">
+            <p className="text-[#C45A3B] text-sm font-medium mb-2">
+              {language === 'fr' ? "Par l'équipe Finxia Capital · Recherche & Stratégie" : "By Finxia Capital Team · Research & Strategy"}
+            </p>
+            <p className="text-slate-500 text-xs">
               Finxia Capital | Recherche & Stratégie
             </p>
           </div>

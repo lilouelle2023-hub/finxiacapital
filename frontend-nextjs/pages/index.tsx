@@ -130,7 +130,7 @@ export default function HomePage() {
   return (
     <div data-testid="home-page">
       <SEO
-        title="Accueil — Build in the real world, Scaled with AI"
+        title={language === 'fr' ? "Accueil — L'intelligence artificielle au service des actifs réels européens | FINXIA Capital" : "Home — Build in the real world, Scaled with AI | FINXIA Capital"}
         description={language === 'fr' 
           ? "FINXIA Capital, gestionnaire d'actifs alternatifs AI-native (SCSp luxembourgeoise). 4 stratégies, 18 agents IA : TITAN DC AI, Hôtellerie Premium, Résidentiel Urbain, C.CAPITAL." 
           : "FINXIA Capital, AI-native alternative asset management vehicle (Luxembourg SCSp). 4 strategies, 18 AI agents: TITAN DC AI, Premium Hospitality, Urban Residential, C.CAPITAL."}
@@ -180,8 +180,17 @@ export default function HomePage() {
                 : 'Alternative Asset Management · SCSp · Luxembourg'}
             </p>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-8 animate-slide-up">
-              Build in the real world.<br/>
-              <span className="text-[#C45A3B]">Scaled with AI.</span>
+              {language === 'fr' ? (
+                <>
+                  L'intelligence artificielle<br/>
+                  <span className="text-[#C45A3B]">au service des actifs réels européens.</span>
+                </>
+              ) : (
+                <>
+                  Build in the real world.<br/>
+                  <span className="text-[#C45A3B]">Scaled with AI.</span>
+                </>
+              )}
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed animate-slide-up stagger-1 max-w-3xl">
               {language === 'fr'
