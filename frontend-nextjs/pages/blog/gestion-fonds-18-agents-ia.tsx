@@ -192,7 +192,7 @@ export default function Article2Page() {
             {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-slate-200">
               <p className="text-slate-600 text-sm leading-relaxed">
-                <strong className="text-slate-900">Lila Benhammou</strong> est Co-Fondatrice et Directrice des Investissements (CIO) de FINXIA Capital SCSp. Architecte de l'infrastructure IA du fonds (18 agents autonomes) et co-fondatrice de THERMIS B.V., plateforme d'optimisation thermique IA pour datacenters certifiée TÜV Rheinland. Co-auteure du livre blanc "Optimisation Énergétique des Datacenters Européens" (SSRN, Abstract ID 6597918, 2026).
+                <strong className="text-slate-900">Lila Benhammou</strong> est Co-Fondatrice et Directrice des Investissements (CIO) de FINXIA Capital SCSp. Architecte de l'infrastructure IA du fonds (18 agents autonomes). Co-auteure du livre blanc "Optimisation Énergétique des Datacenters Européens" (SSRN, Abstract ID 6597918, 2026).
               </p>
               <div className="mt-4 flex flex-wrap gap-4 text-sm">
                 <a href="mailto:contact@finxiacapital.com" className="text-[#C45A3B] hover:underline">

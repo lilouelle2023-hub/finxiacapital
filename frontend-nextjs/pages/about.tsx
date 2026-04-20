@@ -68,12 +68,12 @@ export default function AboutPage() {
       name: 'Lila Benhammou',
       role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements (CIO)' : 'Co-Founder & Chief Investment Officer (CIO)',
       bio: language === 'fr'
-        ? "Serial entrepreneur avec 13+ ans d'expérience opérationnelle. Ancienne Orange Telecom, spécialiste de la structuration d'actifs alternatifs et des applications d'intelligence artificielle à la gestion d'actifs. Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes) et co-fondatrice de THERMIS B.V., la plateforme d'optimisation thermique IA pour datacenters certifiée TÜV Rheinland. Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam."
-        : "Serial entrepreneur with 13+ years of operational experience. Former Orange Telecom, specialist in alternative asset structuring and AI application to asset management. Architect of FINXIA Capital's AI infrastructure (18 autonomous agents) and co-founder of THERMIS B.V., the TÜV Rheinland-certified AI thermal optimization platform for datacenters. Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam.",
+        ? "Serial entrepreneur avec 13+ ans d'expérience opérationnelle. Ancienne Orange Telecom, spécialiste de la structuration d'actifs alternatifs et des applications d'intelligence artificielle à la gestion d'actifs. Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes). Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam."
+        : "Serial entrepreneur with 13+ years of operational experience. Former Orange Telecom, specialist in alternative asset structuring and AI application to asset management. Architect of FINXIA Capital's AI infrastructure (18 autonomous agents). Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam.",
       linkedin: 'https://linkedin.com/in/lilabenhammou',
       highlights: [
         { icon: Lightbulb, text: language === 'fr' ? 'Architecte infrastructure IA (18 agents)' : 'AI infrastructure architect (18 agents)' },
-        { icon: BarChart3, text: language === 'fr' ? 'Co-fondatrice THERMIS B.V.' : 'Co-founder THERMIS B.V.' },
+        { icon: BarChart3, text: language === 'fr' ? 'Ex-Orange Telecom · 13+ ans IA appliquée' : 'Ex-Orange Telecom · 13+ years applied AI' },
         { icon: CheckCircle, text: language === 'fr' ? 'Lead author SSRN 2026' : 'SSRN lead author 2026' },
       ],
     },
@@ -139,7 +139,7 @@ export default function AboutPage() {
           ? "Jean-Pierre Véron (Co-Fondateur, 25+ ans immobilier) & Lila Benhammou (Co-Fondatrice & CIO, 13+ ans IA) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
           : "Jean-Pierre Véron (Co-Founder, 25+ years real estate) & Lila Benhammou (Co-Founder & CIO, 13+ years AI) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
         canonical={language === 'fr' ? "https://finxiacapital.com/about/" : "https://finxiacapital.com/en/about/"}
-        keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, THERMIS, Kaufman Broad, Financière Rive Gauche"
+        keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Kaufman Broad, Financière Rive Gauche"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}

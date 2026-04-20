@@ -20,8 +20,8 @@ export default function PressPage() {
       link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918',
       external: true,
       description: language === 'fr'
-        ? 'Publication académique sur SSRN analysant les stratégies d\'optimisation PUE pour les datacenters européens, avec focus sur la conformité EED Article 12 et les technologies de rupture (ORC, THERMIS).'
-        : 'Academic publication on SSRN analyzing PUE optimization strategies for European datacenters, focusing on EED Article 12 compliance and breakthrough technologies (ORC, THERMIS).'
+        ? 'Publication académique sur SSRN analysant les stratégies d\'optimisation PUE pour les datacenters européens, avec focus sur la conformité EED Article 12 et les technologies de rupture (ORC, récupération chaleur fatale).'
+        : 'Academic publication on SSRN analyzing PUE optimization strategies for European datacenters, focusing on EED Article 12 compliance and breakthrough technologies (ORC, waste heat recovery).'
     },
     {
       id: 'prlog-press-release',
@@ -83,8 +83,8 @@ export default function PressPage() {
           : "SSRN academic publications, press releases and research articles on European datacenter energy optimization by FINXIA Capital."}
         canonical={language === 'fr' ? "https://finxiacapital.com/press/" : "https://finxiacapital.com/en/press/"}
         keywords={language === 'fr'
-          ? "FINXIA Capital presse, publication SSRN datacenters, livre blanc PUE, EED Article 12, THERMIS, communiqué presse"
-          : "FINXIA Capital press, SSRN datacenter publication, PUE white paper, EED Article 12, THERMIS, press release"}
+          ? "FINXIA Capital presse, publication SSRN datacenters, livre blanc PUE, EED Article 12, communiqué presse"
+          : "FINXIA Capital press, SSRN datacenter publication, PUE white paper, EED Article 12, press release"}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}

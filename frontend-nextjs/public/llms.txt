@@ -4,7 +4,7 @@
 
 ## Core Strategies
 
-- [TITAN DC AI](/strategies/): Brown-to-green transformation of underutilized European datacenter campuses. Partner: THERMIS B.V. (TÜV Rheinland certified AI optimization platform). Geographic focus: Europe-wide (France, Spain, Italy primary markets). ESG Green Bond / SFDR Article 9.
+- [TITAN DC AI](/strategies/): Brown-to-green transformation of underutilized European datacenter campuses. Geographic focus: Europe-wide (France, Spain, Italy primary markets). ESG Green Bond / SFDR Article 9.
 - [Premium Hospitality](/strategies/): 4-5 star European hotels with operational repositioning
 - [Urban Residential Flex](/strategies/): Coliving, build-to-rent, PBSA across major European cities
 - [C.CAPITAL](/strategies/): Ultra-selective late-stage, secondaries and special situations

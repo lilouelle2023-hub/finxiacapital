@@ -87,7 +87,7 @@ export default function Article5Page() {
         title={t.title}
         description={t.description}
         canonical={language === 'fr' ? "https://finxiacapital.com/blog/pue-optimisation-datacenters-europeens-guide-2026/" : "https://finxiacapital.com/en/blog/pue-optimization-european-datacenters-guide-2026/"}
-        keywords={language === 'fr' ? "PUE datacenter, Power Usage Effectiveness, optimisation PUE, IPMVP, EED Article 12, THERMIS, datacenter efficacité énergétique" : "datacenter PUE, Power Usage Effectiveness, PUE optimization, IPMVP, EED Article 12, THERMIS, datacenter energy efficiency"}
+        keywords={language === 'fr' ? "PUE datacenter, Power Usage Effectiveness, optimisation PUE, IPMVP, EED Article 12, datacenter efficacité énergétique" : "datacenter PUE, Power Usage Effectiveness, PUE optimization, IPMVP, EED Article 12, datacenter energy efficiency"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
@@ -146,8 +146,8 @@ export default function Article5Page() {
 
               <p className="text-slate-600 text-sm mt-8 p-4 bg-slate-50 border-l-4 border-[#C45A3B]">
                 {language === 'fr'
-                  ? "Pour en savoir plus sur la stratégie TITAN DC AI de FINXIA Capital et le déploiement de THERMIS B.V. sur vos actifs datacenter : contact@finxiacapital.com"
-                  : "To learn more about FINXIA Capital's TITAN DC AI strategy and THERMIS B.V. deployment on your datacenter assets: contact@finxiacapital.com"}
+                  ? "Pour en savoir plus sur la stratégie TITAN DC AI de FINXIA Capital : contact@finxiacapital.com"
+                  : "To learn more about FINXIA Capital's TITAN DC AI strategy: contact@finxiacapital.com"}
               </p>
             </div>
 

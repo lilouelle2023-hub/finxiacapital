@@ -79,7 +79,7 @@ export default function Article6Page() {
               <p className="text-xl text-slate-700 font-medium leading-relaxed mb-8">
                 {language === 'fr' ? "Le 15 mai 2026 est la première échéance de déclaration obligatoire imposée par l'Article 12 de la Directive sur l'Efficacité Énergétique. Tout datacenter dépassant 500 kW de puissance installée dans l'UE doit déclarer cinq indicateurs de performance énergétique." : "May 15, 2026 is the first mandatory declaration deadline imposed by Article 12 of the Energy Efficiency Directive. Every datacenter exceeding 500 kW of installed capacity in the EU must declare five energy performance indicators."}
               </p>
-              <p>{language === 'fr' ? "FINXIA Capital accompagne les opérateurs de datacenters dans leur mise en conformité EED via sa stratégie TITAN DC AI et son partenariat avec THERMIS B.V." : "FINXIA Capital supports datacenter operators in their EED compliance via its TITAN DC AI strategy and partnership with THERMIS B.V."}</p>
+              <p>{language === 'fr' ? "FINXIA Capital accompagne les opérateurs de datacenters dans leur mise en conformité EED via sa stratégie TITAN DC AI." : "FINXIA Capital supports datacenter operators in their EED compliance via its TITAN DC AI strategy."}</p>
               <p className="text-slate-600 text-sm mt-8 p-4 bg-slate-50 border-l-4 border-[#C45A3B]">Contact : contact@finxiacapital.com</p>
             </div>
             <div className="mt-16 pt-8 border-t border-slate-200">

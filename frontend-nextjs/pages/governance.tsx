@@ -239,8 +239,8 @@ export default function GovernancePage() {
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes), co-fondatrice de THERMIS B.V. (plateforme d'optimisation thermique datacenter certifiée TÜV Rheinland), co-auteure du livre blanc SSRN \"Optimisation Énergétique des Datacenters Européens\" (2026)."
-                      : "Architect of FINXIA Capital's AI infrastructure (18 autonomous agents), co-founder of THERMIS B.V. (TÜV Rheinland-certified datacenter thermal optimization platform), co-author of the SSRN white paper \"European Datacenter Energy Optimization\" (2026)."}
+                      ? "Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes), co-auteure du livre blanc SSRN \"Optimisation Énergétique des Datacenters Européens\" (2026)."
+                      : "Architect of FINXIA Capital's AI infrastructure (18 autonomous agents), co-author of the SSRN white paper \"European Datacenter Energy Optimization\" (2026)."}
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-200">
