@@ -222,25 +222,25 @@ export default function GovernancePage() {
               </h3>
               <div className="space-y-6">
                 <div>
+                  <p className="font-serif text-lg text-slate-900 mb-1">Jean-Pierre Véron</p>
+                  <p className="text-[#C45A3B] text-sm font-medium mb-2">
+                    {language === 'fr' ? "Président du Comité d'investissement · Fondateur" : "Chair of the Investment Committee · Founder"}
+                  </p>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {language === 'fr'
+                      ? "Fondateur de FINXIA Capital et apporteur du capital propre du véhicule SCSp. Ancien PDG du groupe K&B, architecte du 3ème fonds immobilier européen. 30+ ans d'expérience en structuration d'actifs alternatifs et gouvernance institutionnelle."
+                      : "Founder of FINXIA Capital and provider of the SCSp vehicle's proprietary capital. Former CEO of K&B Group, architect of the 3rd European real estate fund. 30+ years of experience in alternative asset structuring and institutional governance."}
+                  </p>
+                </div>
+                <div>
                   <p className="font-serif text-lg text-slate-900 mb-1">Lila Benhammou</p>
                   <p className="text-[#C45A3B] text-sm font-medium mb-2">
-                    {language === 'fr' ? "Présidente du Comité d'investissement · Co-Fondatrice & CIO" : "Chair of the Investment Committee · Co-Founder & CIO"}
+                    {language === 'fr' ? "Membre du Comité · Co-Fondatrice & CIO" : "Committee Member · Co-Founder & CIO"}
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
                       ? "Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes), co-fondatrice de THERMIS B.V. (plateforme d'optimisation thermique datacenter certifiée TÜV Rheinland), co-auteure du livre blanc SSRN \"Optimisation Énergétique des Datacenters Européens\" (2026)."
                       : "Architect of FINXIA Capital's AI infrastructure (18 autonomous agents), co-founder of THERMIS B.V. (TÜV Rheinland-certified datacenter thermal optimization platform), co-author of the SSRN white paper \"European Datacenter Energy Optimization\" (2026)."}
-                  </p>
-                </div>
-                <div>
-                  <p className="font-serif text-lg text-slate-900 mb-1">Jean-Pierre Véron</p>
-                  <p className="text-[#C45A3B] text-sm font-medium mb-2">
-                    {language === 'fr' ? "Membre du Comité · Fondateur & Président" : "Committee Member · Founder & Chairman"}
-                  </p>
-                  <p className="text-slate-600 text-sm leading-relaxed">
-                    {language === 'fr'
-                      ? "Ancien PDG du groupe K&B, architecte du 3ème fonds immobilier européen. 30+ ans d'expérience en structuration d'actifs alternatifs et gouvernance institutionnelle."
-                      : "Former CEO of K&B Group, architect of the 3rd European real estate fund. 30+ years of experience in alternative asset structuring and institutional governance."}
                   </p>
                 </div>
                 <div className="pt-4 border-t border-slate-200">
