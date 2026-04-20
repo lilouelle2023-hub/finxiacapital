@@ -186,7 +186,6 @@ export default function ContactPage() {
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     <strong>Finxia Capital S.C.Sp</strong><br />
-                    [Adresse Luxembourg à compléter]<br />
                     Luxembourg
                   </p>
                 </div>
