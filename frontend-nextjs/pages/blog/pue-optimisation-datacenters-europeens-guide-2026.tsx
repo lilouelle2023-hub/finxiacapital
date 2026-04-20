@@ -14,7 +14,7 @@ export default function Article5Page() {
       date: "Avril 2026",
       readTime: "11 min de lecture",
       backToBlog: "Retour au blog",
-      author: "Lila Benhammou, Managing Partner"
+      author: "Lila Benhammou, Co-Fondatrice & CIO"
     },
     en: {
       title: "PUE Optimization in European Datacenters: Technical and Regulatory Guide 2026",
@@ -23,7 +23,7 @@ export default function Article5Page() {
       date: "April 2026",
       readTime: "11 min read",
       backToBlog: "Back to blog",
-      author: "Lila Benhammou, Managing Partner"
+      author: "Lila Benhammou, Co-Founder & CIO"
     }
   };
 
@@ -40,7 +40,7 @@ export default function Article5Page() {
     "author": {
       "@type": "Person",
       "name": "Lila Benhammou",
-      "jobTitle": "Managing Partner",
+      "jobTitle": "Co-Founder & Chief Investment Officer",
       "worksFor": {
         "@type": "Organization",
         "name": "FINXIA Capital"

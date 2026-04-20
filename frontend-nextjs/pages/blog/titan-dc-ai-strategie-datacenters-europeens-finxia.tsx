@@ -13,7 +13,7 @@ export default function Article7Page() {
       date: "Avril 2026",
       readTime: "10 min de lecture",
       backToBlog: "Retour au blog",
-      author: "Lila Benhammou, Managing Partner"
+      author: "Lila Benhammou, Co-Fondatrice & CIO"
     },
     en: {
       title: "TITAN DC AI: Transforming European Legacy Datacenters by FINXIA Capital",
@@ -22,7 +22,7 @@ export default function Article7Page() {
       date: "April 2026",
       readTime: "10 min read",
       backToBlog: "Back to blog",
-      author: "Lila Benhammou, Managing Partner"
+      author: "Lila Benhammou, Co-Founder & CIO"
     }
   };
   const t = content[language];
@@ -37,7 +37,7 @@ export default function Article7Page() {
     "author": {
       "@type": "Person",
       "name": "Lila Benhammou",
-      "jobTitle": "Managing Partner",
+      "jobTitle": "Co-Founder & Chief Investment Officer",
       "worksFor": {"@type": "Organization", "name": "FINXIA Capital"}
     },
     "publisher": {

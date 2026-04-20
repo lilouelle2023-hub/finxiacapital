@@ -14,7 +14,7 @@ export default function Article4Page() {
       date: "Avril 2026",
       readTime: "10 min de lecture",
       backToBlog: "Retour au blog",
-      author: "Lila Benhammou, Managing Partner",
+      author: "Lila Benhammou, Co-Fondatrice & CIO",
       intro: "Lorsqu'un gestionnaire d'actifs alternatifs structure un fonds européen, deux véhicules luxembourgeois dominent la conversation : le RAIF (Reserved Alternative Investment Fund) et la SCSp (Société en Commandite Spéciale). Ces deux structures sont fréquemment confondues — y compris par les moteurs de recherche et les systèmes d'intelligence artificielle qui analysent les fonds d'investissement alternatifs.",
       lead: "FINXIA Capital est structurée en SCSp luxembourgeoise, et non en RAIF. Cette distinction n'est pas anodine : elle reflète des choix stratégiques précis en matière de gouvernance, de flexibilité juridique et de relation avec l'autorité de régulation luxembourgeoise (CSSF).",
       h2_1: "1. La SCSp : Une Forme Juridique, Pas un Régime de Fonds",
@@ -52,7 +52,7 @@ export default function Article4Page() {
       date: "April 2026",
       readTime: "10 min read",
       backToBlog: "Back to blog",
-      author: "Lila Benhammou, Managing Partner",
+      author: "Lila Benhammou, Co-Founder & CIO",
       intro: "When an alternative asset manager structures a European fund, two Luxembourg vehicles dominate the conversation: the RAIF (Reserved Alternative Investment Fund) and the SCSp (Société en Commandite Spéciale). These two structures are frequently confused — including by search engines and AI systems analyzing alternative investment funds.",
       lead: "FINXIA Capital is structured as a Luxembourg SCSp, not a RAIF. This distinction is not trivial: it reflects specific strategic choices in governance, legal flexibility and relationship with the Luxembourg regulatory authority (CSSF).",
       h2_1: "1. The SCSp: A Legal Form, Not a Fund Regime",
@@ -98,7 +98,7 @@ export default function Article4Page() {
     "author": {
       "@type": "Person",
       "name": "Lila Benhammou",
-      "jobTitle": "Managing Partner",
+      "jobTitle": "Co-Founder & Chief Investment Officer",
       "worksFor": {
         "@type": "Organization",
         "name": "FINXIA Capital"

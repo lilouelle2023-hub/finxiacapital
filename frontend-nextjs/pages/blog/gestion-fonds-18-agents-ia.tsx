@@ -17,9 +17,14 @@ export default function Article2Page() {
     "datePublished": "2026-01-16T09:00:00+01:00",
     "dateModified": "2026-01-16T09:00:00+01:00",
     "author": {
-      "@type": "Organization",
-      "name": "Finxia Capital",
-      "url": "https://finxiacapital.com"
+      "@type": "Person",
+      "name": "Lila Benhammou",
+      "jobTitle": "Co-Founder & Chief Investment Officer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Finxia Capital",
+        "url": "https://finxiacapital.com"
+      }
     },
     "publisher": {
       "@type": "Organization",
@@ -103,10 +108,10 @@ export default function Article2Page() {
             </h1>
             
             <p className="text-[#C45A3B] text-sm font-medium mb-2">
-              {language === 'fr' ? "Par l'équipe Finxia Capital · Recherche & Stratégie" : "By Finxia Capital Team · Research & Strategy"}
+              {language === 'fr' ? "Par Lila Benhammou · Co-Fondatrice & CIO" : "By Lila Benhammou · Co-Founder & CIO"}
             </p>
             <p className="text-slate-500 text-xs">
-              Finxia Capital | Recherche & Stratégie
+              Finxia Capital | {language === 'fr' ? 'Architecture AI-Native' : 'AI-Native Architecture'}
             </p>
           </div>
         </header>
@@ -187,7 +192,7 @@ export default function Article2Page() {
             {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-slate-200">
               <p className="text-slate-600 text-sm leading-relaxed">
-                <strong className="text-slate-900">Finxia Capital</strong> est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, déployant du capital sur des stratégies d'actifs alternatifs en Europe.
+                <strong className="text-slate-900">Lila Benhammou</strong> est Co-Fondatrice et Directrice des Investissements (CIO) de FINXIA Capital SCSp. Architecte de l'infrastructure IA du fonds (18 agents autonomes) et co-fondatrice de THERMIS B.V., plateforme d'optimisation thermique IA pour datacenters certifiée TÜV Rheinland. Co-auteure du livre blanc "Optimisation Énergétique des Datacenters Européens" (SSRN, Abstract ID 6597918, 2026).
               </p>
               <div className="mt-4 flex flex-wrap gap-4 text-sm">
                 <a href="mailto:contact@finxiacapital.com" className="text-[#C45A3B] hover:underline">

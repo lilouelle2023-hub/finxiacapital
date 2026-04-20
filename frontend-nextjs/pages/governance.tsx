@@ -220,14 +220,40 @@ export default function GovernancePage() {
               <h3 className="font-serif text-xl mb-4 text-slate-800">
                 {language === 'fr' ? 'Composition du Comité' : 'Committee Composition'}
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                {language === 'fr'
-                  ? "La composition complète du comité est communiquée aux investisseurs qualifiés sur demande — contact : "
-                  : "The complete committee composition is communicated to qualified investors upon request — contact: "}
-                <a href="mailto:invest@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
-                  invest@finxiacapital.com
-                </a>
-              </p>
+              <div className="space-y-6">
+                <div>
+                  <p className="font-serif text-lg text-slate-900 mb-1">Lila Benhammou</p>
+                  <p className="text-[#C45A3B] text-sm font-medium mb-2">
+                    {language === 'fr' ? "Présidente du Comité d'investissement · Co-Fondatrice & CIO" : "Chair of the Investment Committee · Co-Founder & CIO"}
+                  </p>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {language === 'fr'
+                      ? "Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes), co-fondatrice de THERMIS B.V. (plateforme d'optimisation thermique datacenter certifiée TÜV Rheinland), co-auteure du livre blanc SSRN \"Optimisation Énergétique des Datacenters Européens\" (2026)."
+                      : "Architect of FINXIA Capital's AI infrastructure (18 autonomous agents), co-founder of THERMIS B.V. (TÜV Rheinland-certified datacenter thermal optimization platform), co-author of the SSRN white paper \"European Datacenter Energy Optimization\" (2026)."}
+                  </p>
+                </div>
+                <div>
+                  <p className="font-serif text-lg text-slate-900 mb-1">Jean-Pierre Véron</p>
+                  <p className="text-[#C45A3B] text-sm font-medium mb-2">
+                    {language === 'fr' ? "Membre du Comité · Fondateur & Président" : "Committee Member · Founder & Chairman"}
+                  </p>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {language === 'fr'
+                      ? "Ancien PDG du groupe K&B, architecte du 3ème fonds immobilier européen. 30+ ans d'expérience en structuration d'actifs alternatifs et gouvernance institutionnelle."
+                      : "Former CEO of K&B Group, architect of the 3rd European real estate fund. 30+ years of experience in alternative asset structuring and institutional governance."}
+                  </p>
+                </div>
+                <div className="pt-4 border-t border-slate-200">
+                  <p className="text-slate-600 text-xs leading-relaxed">
+                    {language === 'fr'
+                      ? "Le comité intègre également un membre externe indépendant (risques & conformité), dont l'identité est communiquée aux investisseurs qualifiés sur demande — contact : "
+                      : "The committee also includes an independent external member (risk & compliance), whose identity is communicated to qualified investors upon request — contact: "}
+                    <a href="mailto:invest@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
+                      invest@finxiacapital.com
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -26,19 +26,19 @@ export default function Article1Page() {
       p6: "Les turbines à cycle Rankine organique — ORC — représentent aujourd'hui l'avancée la plus sous-estimée dans l'économie des datacenters. Le principe : capter la chaleur fatale émise par les serveurs — entre 35°C et 40°C — pour la transformer en électricité via un fluide frigorigène basse température.",
       p7: "Résultat : un datacenter équipé de cette technologie peut auto-produire entre 5 et 8 MW d'électricité à partir de sa propre chaleur résiduelle, réduire son PUE net à 1,08 dès l'acquisition, et économiser jusqu'à 10 millions d'euros par an sur sa facture énergétique. Ces économies se capitalisent directement en valeur d'actif — à un cap rate de 5,5%, chaque million d'euros de NOI supplémentaire génère 18 millions d'euros de valeur à la sortie.",
       h2_3: "Pourquoi l'Europe du Sud en premier",
-      p8: "La France, l'Espagne, l'Italie et le Portugal concentrent plusieurs facteurs favorables rarement réunis : des actifs existants sous-exploités, des réseaux électriques en cours de décarbonation, des régimes fiscaux attractifs pour l'infrastructure verte, et — surtout — un déficit structurel de datacenters certifiés dans des marchés secondaires où la demande hyperscaler progresse plus vite que l'offre.",
+      p8: "La France, l'Espagne et l'Italie concentrent plusieurs facteurs favorables rarement réunis : des actifs existants sous-exploités, des réseaux électriques en cours de décarbonation, des régimes fiscaux attractifs pour l'infrastructure verte, et — surtout — un déficit structurel de datacenters certifiés dans des marchés secondaires où la demande hyperscaler progresse plus vite que l'offre.",
       p9: "Les marchés primaires — Amsterdam, Francfort, Dublin, Londres — sont saturés. Les contraintes de puissance disponible y rendent tout nouveau développement de grande envergure quasi-impossible à court terme. Les hyperscalers regardent désormais vers Madrid, Barcelone, Milan, Lyon, Lisbonne — des marchés où 40 MW de puissance réservée, certifiée et louée 15 ans en bail NNN représente aujourd'hui une rareté absolue.",
       h2_4: "Le financement comme levier de transformation",
       p10: "La dimension ESG de cette thèse n'est pas cosmétique. Un actif datacenter dont la transformation est financée via Green Bond labellisé SFDR Art.9 accède à un pool d'acheteurs — fonds infrastructure Core européens, assureurs, caisses de retraite — dont le coût du capital est structurellement inférieur à celui des acquéreurs opportunistes. C'est précisément cette compression du taux de sortie qui valide la thèse financière : non pas un pari sur la croissance, mais une mécanique de repositionnement avec une prime d'entrée et une décote de sortie prévisibles.",
       h2_5: "Ce que les investisseurs regardent encore ailleurs",
       p11: "La grande ironie de ce moment de marché : pendant que les capitaux s'accumulent sur les marchés primaires en hypercompétition, le segment brown-to-green en Europe du Sud reste largement sous-adressé. Les acteurs capables d'exécuter — équipe technique, réseau hyperscaler, structuration Green Bond, expertise ESG — se comptent sur les doigts d'une main.",
       p12: "La fenêtre d'entrée ne durera pas. Les exit windows 2028-2029 sur les actifs acquis aujourd'hui correspondent exactement au pic de compression des cap rates que le marché européen des datacenters anticipe. Après cette date, la prime de transformation aura été arbitrée.",
-      authorBio: "Finxia Capital est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, déployant du capital sur des stratégies d'actifs alternatifs en Europe.",
+      authorBio: "est Co-Fondatrice et Directrice des Investissements (CIO) de FINXIA Capital SCSp, véhicule d'investissement propriétaire luxembourgeois positionné sur les actifs réels et l'infrastructure IA. Elle est co-auteure du livre blanc \"Optimisation Énergétique des Datacenters Européens\" (SSRN, Abstract ID 6597918, 2026).",
       learnMoreTitle: "En savoir plus",
       link1Title: "Nos Stratégies",
       link1Desc: "Découvrez TITAN et nos 3 autres pôles d'investissement",
       link2Title: "Approche Européenne",
-      link2Desc: "France, Espagne, Italie, Portugal : nos marchés cibles"
+      link2Desc: "France, Espagne, Italie : nos marchés cibles européens"
     },
     en: {
       title: "AI's Next Energy Crisis Is Unfolding in European Datacenters — And Investors Haven't Seen It Coming",
@@ -58,19 +58,19 @@ export default function Article1Page() {
       p6: "Organic Rankine Cycle turbines — ORC — represent today the most underestimated advance in datacenter economics. The principle: capture the waste heat emitted by servers — between 35°C and 40°C — to transform it into electricity via a low-temperature refrigerant fluid.",
       p7: "Result: a datacenter equipped with this technology can self-produce between 5 and 8 MW of electricity from its own residual heat, reduce its net PUE to 1.08 upon acquisition, and save up to 10 million euros per year on its energy bill. These savings capitalize directly into asset value — at a 5.5% cap rate, each million euros of additional NOI generates 18 million euros of value at exit.",
       h2_3: "Why Southern Europe First",
-      p8: "France, Spain, Italy, and Portugal concentrate several favorable factors rarely combined: underutilized existing assets, electricity grids undergoing decarbonization, attractive tax regimes for green infrastructure, and — above all — a structural deficit of certified datacenters in secondary markets where hyperscaler demand is growing faster than supply.",
-      p9: "Primary markets — Amsterdam, Frankfurt, Dublin, London — are saturated. Available power constraints make any new large-scale development virtually impossible in the short term. Hyperscalers are now looking toward Madrid, Barcelona, Milan, Lyon, Lisbon — markets where 40 MW of reserved, certified power leased for 15 years on an NNN lease represents an absolute rarity today.",
+      p8: "France, Spain and Italy concentrate several favorable factors rarely combined: underutilized existing assets, electricity grids undergoing decarbonization, attractive tax regimes for green infrastructure, and — above all — a structural deficit of certified datacenters in secondary markets where hyperscaler demand is growing faster than supply.",
+      p9: "Primary markets — Amsterdam, Frankfurt, Dublin, London — are saturated. Available power constraints make any new large-scale development virtually impossible in the short term. Hyperscalers are now looking toward Madrid, Barcelona, Milan, Lyon — markets where 40 MW of reserved, certified power leased for 15 years on an NNN lease represents an absolute rarity today.",
       h2_4: "Financing as a Transformation Lever",
       p10: "The ESG dimension of this thesis is not cosmetic. A datacenter asset whose transformation is financed via SFDR Art.9 labeled Green Bond accesses a pool of buyers — European Core infrastructure funds, insurers, pension funds — whose cost of capital is structurally lower than that of opportunistic acquirers. It is precisely this compression of the exit rate that validates the financial thesis: not a bet on growth, but a repositioning mechanism with a predictable entry premium and exit discount.",
       h2_5: "What Investors Are Still Looking Elsewhere",
       p11: "The great irony of this market moment: while capital accumulates on hypercompetitive primary markets, the brown-to-green segment in Southern Europe remains largely underaddressed. The players capable of execution — technical team, hyperscaler network, Green Bond structuring, ESG expertise — can be counted on one hand.",
       p12: "The entry window won't last. The 2028-2029 exit windows on assets acquired today correspond exactly to the peak cap rate compression that the European datacenter market anticipates. After that date, the transformation premium will have been arbitraged away.",
-      authorBio: "Finxia Capital is a proprietary investment vehicle structured as a Luxembourg SCSp, deploying capital on alternative asset strategies in Europe.",
+      authorBio: "is Co-Founder and Chief Investment Officer (CIO) of FINXIA Capital SCSp, a Luxembourg proprietary investment vehicle positioned on real assets and AI infrastructure. She is co-author of the white paper \"European Datacenter Energy Optimization\" (SSRN, Abstract ID 6597918, 2026).",
       learnMoreTitle: "Learn more",
       link1Title: "Our Strategies",
       link1Desc: "Discover TITAN and our 3 other investment poles",
       link2Title: "European Approach",
-      link2Desc: "France, Spain, Italy, Portugal: our target markets"
+      link2Desc: "France, Spain, Italy: our European target markets"
     }
   };
 
@@ -86,9 +86,14 @@ export default function Article1Page() {
     "datePublished": "2026-01-16T09:00:00+01:00",
     "dateModified": "2026-01-16T09:00:00+01:00",
     "author": {
-      "@type": "Organization",
-      "name": "Finxia Capital",
-      "url": "https://finxiacapital.com"
+      "@type": "Person",
+      "name": "Lila Benhammou",
+      "jobTitle": "Co-Founder & Chief Investment Officer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Finxia Capital",
+        "url": "https://finxiacapital.com"
+      }
     },
     "publisher": {
       "@type": "Organization",
@@ -172,7 +177,7 @@ export default function Article1Page() {
             </h1>
             
             <p className="text-[#C45A3B] text-sm font-medium mb-2">
-              {language === 'fr' ? "Par l'équipe Finxia Capital · Recherche & Stratégie" : "By Finxia Capital Team · Research & Strategy"}
+              {language === 'fr' ? "Par Lila Benhammou · Co-Fondatrice & CIO" : "By Lila Benhammou · Co-Founder & CIO"}
             </p>
             <p className="text-slate-500 text-xs">
               Finxia Capital | {language === 'fr' ? 'Janvier 2026' : 'January 2026'}
@@ -215,7 +220,7 @@ export default function Article1Page() {
             {/* Author Bio */}
             <div className="mt-16 pt-8 border-t border-slate-200">
               <p className="text-slate-600 text-sm leading-relaxed">
-                <strong className="text-slate-900">Finxia Capital</strong> {t.authorBio}
+                <strong className="text-slate-900">Lila Benhammou</strong> {t.authorBio}
               </p>
               <div className="mt-4 flex flex-wrap gap-4 text-sm">
                 <a href="mailto:contact@finxiacapital.com" className="text-[#C45A3B] hover:underline">
