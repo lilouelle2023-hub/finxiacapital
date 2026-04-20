@@ -240,6 +240,24 @@ export default function InvestorsPage() {
         </div>
       </section>
 
+      {/* Regulatory Context Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-slate-50 p-8 border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-2xl mb-4 text-slate-800">
+                {language === 'fr' ? 'Contexte Réglementaire' : 'Regulatory Context'}
+              </h3>
+              <p className="text-slate-700 leading-relaxed">
+                {language === 'fr'
+                  ? "Le cadre législatif français évolue en faveur des datacenters à haute efficacité énergétique. La loi de simplification économique (avril 2026) introduit un statut PINM qui accélère les procédures pour les projets combinant transition numérique et écologique — précisément le profil des actifs TITAN DC AI."
+                  : "The French legislative framework is evolving in favor of high energy efficiency datacenters. The economic simplification law (April 2026) introduces a PINM status that accelerates procedures for projects combining digital and ecological transition — precisely the profile of TITAN DC AI assets."}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Disclaimer */}
       <section className="py-12 bg-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

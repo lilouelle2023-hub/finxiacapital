@@ -307,6 +307,58 @@ export default function StrategiesPage() {
                           ))}
                         </div>
                       </div>
+
+                      {/* TITAN DC AI - Cadre réglementaire favorable */}
+                      <div className="my-8 p-6 bg-white border-2 border-[#C45A3B]/20 rounded-lg">
+                        <h4 className="font-semibold text-slate-800 mb-6 flex items-center gap-2">
+                          <span className="text-[#C45A3B]">✓</span>
+                          {language === 'fr' ? 'Cadre réglementaire favorable' : 'Favorable Regulatory Framework'}
+                        </h4>
+                        <div className="space-y-6">
+                          {/* Loi PINM */}
+                          <div className="border-l-4 border-[#C45A3B] pl-4">
+                            <h5 className="font-medium text-slate-800 mb-2">
+                              {language === 'fr' ? 'Loi PINM (avril 2026)' : 'PINM Law (April 2026)'}
+                            </h5>
+                            <p className="text-slate-600 text-sm leading-relaxed">
+                              {language === 'fr'
+                                ? "La loi de simplification économique adoptée le 14 avril 2026 crée un statut de Projet d'Intérêt National Majeur pour les datacenters, réduisant les délais administratifs de 5-7 ans à fast track. Les actifs TITAN DC AI sont structurés pour qualifier à ce statut."
+                                : "The economic simplification law adopted on April 14, 2026 creates a Major National Interest Project status for datacenters, reducing administrative delays from 5-7 years to fast track. TITAN DC AI assets are structured to qualify for this status."}
+                            </p>
+                          </div>
+
+                          {/* EED Article 12 */}
+                          <div className="border-l-4 border-slate-300 pl-4">
+                            <h5 className="font-medium text-slate-800 mb-2">
+                              {language === 'fr' ? 'EED Article 12 — deadline 15 mai 2026' : 'EED Article 12 — May 15, 2026 deadline'}
+                            </h5>
+                            <p className="text-slate-600 text-sm leading-relaxed">
+                              {language === 'fr'
+                                ? "Première échéance de déclaration obligatoire pour les datacenters européens. Les actifs TITAN DC AI anticipent cette conformité avec certification IPMVP Bureau Veritas."
+                                : "First mandatory declaration deadline for European datacenters. TITAN DC AI assets anticipate this compliance with IPMVP Bureau Veritas certification."}
+                              {' '}
+                              <a 
+                                href={language === 'fr' ? '/blog/eed-article-12-declaration-datacenter-guide-2026' : '/en/blog/eed-article-12-datacenter-declaration-guide-2026'}
+                                className="text-[#C45A3B] hover:underline text-xs font-medium"
+                              >
+                                {language === 'fr' ? '→ Lire notre guide complet' : '→ Read our complete guide'}
+                              </a>
+                            </p>
+                          </div>
+
+                          {/* Avantage B2G */}
+                          <div className="border-l-4 border-slate-300 pl-4">
+                            <h5 className="font-medium text-slate-800 mb-2">
+                              {language === 'fr' ? 'Avantage brown-to-green explicite' : 'Explicit brown-to-green advantage'}
+                            </h5>
+                            <p className="text-slate-600 text-sm leading-relaxed">
+                              {language === 'fr'
+                                ? "En repositionnant des sites raccordés existants, TITAN DC AI contourne la file d'attente RTE qui représentait 50% des demandes de raccordement en 2025."
+                                : "By repositioning existing connected sites, TITAN DC AI bypasses the RTE queue which represented 50% of connection requests in 2025."}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </>
                   )}
 

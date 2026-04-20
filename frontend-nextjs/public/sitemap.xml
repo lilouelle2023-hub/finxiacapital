@@ -302,6 +302,26 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/titan-dc-ai-strategie-datacenters-europeens-finxia/" />
   </url>
 
+  <!-- BLOG ARTICLE 8 FR - LOI PINM -->
+  <url>
+    <loc>https://finxiacapital.com/blog/loi-pinm-statut-datacenter-brown-to-green/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/loi-pinm-statut-datacenter-brown-to-green/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/pinm-law-datacenter-brown-to-green-status/" />
+  </url>
+
+  <!-- BLOG ARTICLE 8 EN - PINM LAW -->
+  <url>
+    <loc>https://finxiacapital.com/en/blog/pinm-law-datacenter-brown-to-green-status/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/pinm-law-datacenter-brown-to-green-status/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/blog/loi-pinm-statut-datacenter-brown-to-green/" />
+  </url>
+
   <!-- CONTACT FR -->
   <url>
     <loc>https://finxiacapital.com/contact/</loc>

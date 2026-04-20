@@ -9,6 +9,18 @@ export default function BlogIndexPage() {
 
   const articles = [
     {
+      slug: language === 'fr' ? 'loi-pinm-statut-datacenter-brown-to-green' : 'pinm-law-datacenter-brown-to-green-status',
+      title: language === 'fr'
+        ? "Loi PINM : ce que le statut de Projet d'Intérêt National Majeur change pour les datacenters B2G"
+        : "PINM Law: What the Major National Interest Project Status Changes for B2G Datacenters",
+      excerpt: language === 'fr'
+        ? "Le 14 avril 2026, l'Assemblée nationale adopte la loi PINM. Analyse de l'avantage structurel brown-to-green pour les datacenters européens."
+        : "On April 14, 2026, the National Assembly adopts the PINM law. Analysis of the brown-to-green structural advantage for European datacenters.",
+      date: '2026-04-20',
+      category: 'TITAN Strategy',
+      readTime: '8 min'
+    },
+    {
       slug: language === 'fr' ? 'titan-dc-ai-strategie-datacenters-europeens-finxia' : 'titan-dc-ai-european-datacenters-strategy-finxia',
       title: language === 'fr'
         ? "TITAN DC AI : La Transformation des Datacenters Européens Legacy"
