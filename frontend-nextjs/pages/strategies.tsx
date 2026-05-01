@@ -28,7 +28,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Location hyperscalers long terme et cession acquéreurs Core' : 'Long-term hyperscaler leasing and sale to Core buyers',
       ],
       markets: language === 'fr' ? 'France · Espagne · Europe' : 'France · Spain · Europe',
-      image: '/images/datacenter.jpg',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     },
     {
       id: 'hospitality-premium',
@@ -49,7 +49,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Rotation sélective après stabilisation opérationnelle' : 'Selective rotation after operational stabilization',
       ],
       markets: 'Paris · Barcelone · Madrid · Milan',
-      image: '/images/hotel.jpg',
+      image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80',
     },
     {
       id: 'residential-flex',
@@ -70,7 +70,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Préparation de sorties en bloc vers investisseurs Core' : 'Preparation of block exits to Core investors',
       ],
       markets: language === 'fr' ? 'Grandes Métropoles Européennes' : 'Major European Metropolises',
-      image: '/images/residential.jpg',
+      image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
     },
     {
       id: 'capital-opportunities',
@@ -91,7 +91,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Approche disciplinée avec taux de conversion <5%' : 'Disciplined approach with <5% conversion rate',
       ],
       markets: 'Late-Stage · Secondaires · Special Situations',
-      image: '/images/coliving.jpg',
+      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
     },
   ];
 
