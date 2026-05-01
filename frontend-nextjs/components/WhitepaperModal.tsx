@@ -16,6 +16,30 @@ function encode(data: Record<string, string>) {
     .join('&');
 }
 
+const PERSONAL_EMAIL_DOMAINS = new Set([
+  'gmail.com', 'googlemail.com',
+  'yahoo.com', 'yahoo.fr', 'yahoo.co.uk', 'yahoo.es', 'yahoo.it', 'ymail.com', 'rocketmail.com',
+  'hotmail.com', 'hotmail.fr', 'hotmail.co.uk', 'hotmail.es', 'hotmail.it',
+  'outlook.com', 'outlook.fr', 'live.com', 'live.fr', 'msn.com',
+  'icloud.com', 'me.com', 'mac.com',
+  'aol.com', 'aol.fr',
+  'protonmail.com', 'proton.me', 'pm.me',
+  'gmx.com', 'gmx.fr', 'gmx.de', 'gmx.net',
+  'mail.com', 'tutanota.com', 'zoho.com', 'fastmail.com',
+  'orange.fr', 'wanadoo.fr', 'free.fr', 'sfr.fr', 'laposte.net', 'neuf.fr', 'club-internet.fr',
+  'bbox.fr', 'numericable.fr', 'aliceadsl.fr', 'noos.fr', 'cegetel.net', 'tiscali.fr',
+  'web.de', 't-online.de', 'mailbox.org',
+  'qq.com', '163.com', '126.com', 'sina.com', 'yandex.com', 'yandex.ru',
+]);
+
+function isCorporateEmail(email: string): boolean {
+  const at = email.lastIndexOf('@');
+  if (at === -1) return false;
+  const domain = email.slice(at + 1).toLowerCase().trim();
+  if (!domain || domain.indexOf('.') === -1) return false;
+  return !PERSONAL_EMAIL_DOMAINS.has(domain);
+}
+
 export const WhitepaperModal: React.FC<WhitepaperModalProps> = ({ isOpen, onClose }) => {
   const { language } = useLanguage();
   const [firstName, setFirstName] = useState('');
@@ -52,6 +76,12 @@ export const WhitepaperModal: React.FC<WhitepaperModalProps> = ({ isOpen, onClos
     setError(null);
     if (!consent) {
       setError(language === 'fr' ? 'Veuillez accepter les conditions RGPD pour continuer.' : 'Please accept the GDPR terms to continue.');
+      return;
+    }
+    if (!isCorporateEmail(email)) {
+      setError(language === 'fr'
+        ? "Merci d'utiliser une adresse email professionnelle (entreprise, organisation). Les adresses personnelles (Gmail, Yahoo, Outlook, etc.) ne sont pas acceptées."
+        : "Please use a professional email address (company, organization). Personal addresses (Gmail, Yahoo, Outlook, etc.) are not accepted.");
       return;
     }
     setSubmitting(true);
@@ -94,7 +124,7 @@ export const WhitepaperModal: React.FC<WhitepaperModalProps> = ({ isOpen, onClos
     company: language === 'fr' ? 'Société / Organisation' : 'Company / Organization',
     role: language === 'fr' ? 'Fonction / Titre (optionnel)' : 'Role / Title (optional)',
     rolePlaceholder: language === 'fr' ? 'ex. Directeur Technique, CFO, Responsable Investissement' : 'e.g. CTO, CFO, Head of Investments',
-    email: language === 'fr' ? 'Adresse email professionnelle' : 'Professional email',
+    email: language === 'fr' ? 'Adresse email professionnelle (entreprise.com)' : 'Professional email address (company.com)',
     consent: language === 'fr'
       ? "J'accepte que FINXIA Capital conserve mes coordonnées pour me tenir informé de ses publications et actualités. Données traitées conformément au RGPD. Aucune cession à des tiers."
       : "I accept that FINXIA Capital retains my contact details to inform me of its publications and news. Data processed under GDPR. No third-party transfer.",
@@ -182,8 +212,14 @@ export const WhitepaperModal: React.FC<WhitepaperModalProps> = ({ isOpen, onClos
               <label className="block text-slate-700 text-xs font-medium mb-1" htmlFor="wp-email">{t.email} *</label>
               <input id="wp-email" name="email" type="email" required value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                placeholder={language === 'fr' ? 'prenom.nom@entreprise.com' : 'first.last@company.com'}
                 className="w-full px-3 py-2 border border-slate-300 rounded-none focus:outline-none focus:border-[#C45A3B] text-sm"
                 data-testid="whitepaper-email" />
+              <p className="text-slate-500 text-xs mt-1 italic">
+                {language === 'fr'
+                  ? "Email professionnel requis · Gmail, Yahoo, Outlook, etc. ne sont pas acceptés."
+                  : "Professional email required · Gmail, Yahoo, Outlook, etc. not accepted."}
+              </p>
             </div>
 
             <label className="flex items-start gap-3 cursor-pointer pt-2">
