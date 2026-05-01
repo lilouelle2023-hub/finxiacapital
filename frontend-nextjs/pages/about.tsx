@@ -263,163 +263,159 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <figure className="group" data-testid="heritage-centorial">
-              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
-                <img
-                  src="/images/centorial.jpg"
-                  alt={language === 'fr' ? "Le Centorial — Façade haussmannienne classée, ancien siège Crédit Lyonnais Paris" : "Le Centorial — Listed Haussmannian façade, former Crédit Lyonnais headquarters Paris"}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <figcaption>
-                <h3 className="font-serif text-lg mb-1">Le Centorial</h3>
-                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Ancien siège Crédit Lyonnais · 47 000 m²' : 'Former Crédit Lyonnais HQ · 47,000 sqm'}
+          {/* Block 1 — Le Centorial */}
+          <div className="mb-20" data-testid="heritage-block-centorial">
+            <div className="grid lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-5">
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-3">
+                  {language === 'fr' ? 'Réalisation N°01' : 'Realization No. 01'}
+                </p>
+                <h3 className="font-serif text-2xl md:text-3xl mb-4">Le Centorial</h3>
+                <p className="text-slate-500 text-sm mb-6 font-medium">
+                  {language === 'fr' ? 'Ancien siège Crédit Lyonnais · 47 000 m² · Paris IXe' : 'Former Crédit Lyonnais HQ · 47,000 sqm · Paris 9th arr.'}
+                </p>
+                <p className="text-slate-700 leading-relaxed mb-4">
+                  {language === 'fr'
+                    ? "Restructuration lourde de l'un des plus emblématiques sièges bancaires parisiens du XIXe siècle. La façade haussmannienne et la verrière intérieure de type Eiffel ont été intégralement préservées et classées monuments historiques."
+                    : "Heavy restructuring of one of the most iconic 19th-century Parisian banking headquarters. The Haussmannian façade and the Eiffel-style interior glass dome were fully preserved and listed as historical monuments."}
                 </p>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {language === 'fr'
-                    ? "Façade haussmannienne classée — Paris IXe."
-                    : "Listed Haussmannian façade — Paris 9th arr."}
+                    ? "Repositionnement complet en plateforme tertiaire institutionnelle multi-locataires."
+                    : "Full repositioning into a multi-tenant institutional tertiary platform."}
                 </p>
-              </figcaption>
-            </figure>
-
-            <figure className="group" data-testid="heritage-centorial-atrium">
-              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
-                <img
-                  src="/images/centorial-2.jpg"
-                  alt={language === 'fr' ? "Atrium intérieur du Centorial — verrière Eiffel classée monument historique" : "Centorial interior atrium — Eiffel-style listed glass roof"}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
               </div>
-              <figcaption>
-                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Centorial — Atrium' : 'Centorial — Atrium'}</h3>
-                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Verrière classée · Patrimoine historique' : 'Listed glass dome · Historical heritage'}
+              <div className="lg:col-span-7 grid grid-cols-2 gap-3">
+                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
+                  <img src="/images/centorial.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Centorial — Façade haussmannienne, ancien Crédit Lyonnais" : "Centorial — Haussmannian façade, former Crédit Lyonnais"}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
+                  <img src="/images/centorial-2.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Centorial — Atrium intérieur sous verrière classée" : "Centorial — Interior atrium under listed glass dome"}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Block 2 — Cœur Défense */}
+          <div className="mb-20" data-testid="heritage-block-coeur-defense">
+            <div className="grid lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-7 grid grid-cols-2 gap-3 lg:order-1 order-2">
+                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
+                  <img src="/images/coeur-defense.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Cœur Défense — Façade courbe extérieure, Paris La Défense" : "Cœur Défense — Curved exterior façade, Paris La Défense"}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
+                  <img src="/images/coeur-defense-2.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Cœur Défense — Atrium intérieur, espaces communs" : "Cœur Défense — Interior atrium, common areas"}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+              </div>
+              <div className="lg:col-span-5 lg:order-2 order-1">
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-3">
+                  {language === 'fr' ? 'Réalisation N°02' : 'Realization No. 02'}
+                </p>
+                <h3 className="font-serif text-2xl md:text-3xl mb-4">Cœur Défense</h3>
+                <p className="text-slate-500 text-sm mb-6 font-medium">
+                  {language === 'fr' ? 'Tertiaire grand format · Paris La Défense' : 'Large-scale tertiary · Paris La Défense'}
+                </p>
+                <p className="text-slate-700 leading-relaxed mb-4">
+                  {language === 'fr'
+                    ? "Opération institutionnelle de référence sur l'un des plus grands ensembles de bureaux d'Europe. Démonstration d'une discipline d'exécution — coordination travaux, négociation multi-locataires, gouvernance technique — sur un actif de plus de 350 000 m²."
+                    : "Reference institutional operation on one of Europe's largest office complexes. Demonstration of execution discipline — works coordination, multi-tenant negotiation, technical governance — on an asset of over 350,000 sqm."}
                 </p>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {language === 'fr'
-                    ? "Préservation patrimoniale combinée à la mise aux standards institutionnels."
-                    : "Heritage preservation combined with upgrade to institutional standards."}
+                    ? "Repositionnement en plateforme multi-locataires premium avec espaces communs et services intégrés."
+                    : "Repositioning into a premium multi-tenant platform with common areas and integrated services."}
                 </p>
-              </figcaption>
-            </figure>
-
-            <figure className="group" data-testid="heritage-coeur-defense">
-              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
-                <img
-                  src="/images/coeur-defense.jpg"
-                  alt={language === 'fr' ? "Cœur Défense — Façade courbe extérieure, Paris La Défense" : "Cœur Défense — Curved exterior façade, Paris La Défense"}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
               </div>
-              <figcaption>
-                <h3 className="font-serif text-lg mb-1">Cœur Défense</h3>
-                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Paris La Défense · Tertiaire grand format' : 'Paris La Défense · Large-scale tertiary'}
-                </p>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  {language === 'fr'
-                    ? "Opération institutionnelle de référence — discipline d'exécution."
-                    : "Reference institutional operation — execution discipline."}
-                </p>
-              </figcaption>
-            </figure>
+            </div>
+          </div>
 
-            <figure className="group" data-testid="heritage-coeur-defense-atrium">
-              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
-                <img
-                  src="/images/coeur-defense-2.jpg"
-                  alt={language === 'fr' ? "Cœur Défense — Atrium central, espaces communs grand format" : "Cœur Défense — Central atrium, large-format common areas"}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <figcaption>
-                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Cœur Défense — Atrium' : 'Cœur Défense — Atrium'}</h3>
-                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Espaces communs · Multi-tenants' : 'Common areas · Multi-tenant'}
+          {/* Block 3 — Washington Plaza */}
+          <div className="mb-20" data-testid="heritage-block-washington-plaza">
+            <div className="grid lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-5">
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-3">
+                  {language === 'fr' ? 'Réalisation N°03' : 'Realization No. 03'}
                 </p>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  {language === 'fr'
-                    ? "Repositionnement d'actif tertiaire grand format en plateforme multi-locataires."
-                    : "Repositioning of large-scale tertiary asset into multi-tenant platform."}
-                </p>
-              </figcaption>
-            </figure>
-
-            <figure className="group" data-testid="heritage-washington-plaza">
-              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
-                <img
-                  src="/images/washington-plaza-2.jpg"
-                  alt={language === 'fr' ? "Washington Plaza — Façade Art Déco signée, ex-Shell Petroleum Paris" : "Washington Plaza — Signed Art Deco façade, ex-Shell Petroleum Paris"}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <figcaption>
-                <h3 className="font-serif text-lg mb-1">Washington Plaza</h3>
-                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
+                <h3 className="font-serif text-2xl md:text-3xl mb-4">Washington Plaza</h3>
+                <p className="text-slate-500 text-sm mb-6 font-medium">
                   {language === 'fr' ? 'Ex-Shell Petroleum · Paris VIIIe' : 'Ex-Shell Petroleum · Paris 8th arr.'}
                 </p>
+                <p className="text-slate-700 leading-relaxed mb-4">
+                  {language === 'fr'
+                    ? "Repositionnement complet d'un siège corporate emblématique des années 1970 — l'ancien quartier général de Shell Petroleum — en plateforme tertiaire institutionnelle premium au cœur du 8ᵉ arrondissement parisien."
+                    : "Full repositioning of an iconic 1970s corporate headquarters — the former Shell Petroleum HQ — into a premium institutional tertiary platform in the heart of Paris's 8th arrondissement."}
+                </p>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {language === 'fr'
-                    ? "Repositionnement complet d'un siège corporate vers usage institutionnel premium."
-                    : "Full repositioning of a corporate headquarters towards premium institutional use."}
+                    ? "Architecture curvilinéaire emblématique préservée, mise aux standards énergétiques et tertiaires modernes."
+                    : "Iconic curvilinear architecture preserved, upgraded to modern energy and tertiary standards."}
                 </p>
-              </figcaption>
-            </figure>
-
-            <figure className="group" data-testid="heritage-washington-plaza-aerial">
-              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
-                <img
-                  src="/images/washington-plaza.jpg"
-                  alt={language === 'fr' ? "Washington Plaza — Vue aérienne du complexe curvilinéaire ex-Shell" : "Washington Plaza — Aerial view of the curvilinear ex-Shell complex"}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
               </div>
-              <figcaption>
-                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Washington Plaza — Aérien' : 'Washington Plaza — Aerial'}</h3>
-                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Architecture curvilinéaire emblématique' : 'Iconic curvilinear architecture'}
-                </p>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  {language === 'fr'
-                    ? "Site emblématique du tertiaire parisien des années 1970."
-                    : "Iconic site of 1970s Parisian tertiary architecture."}
-                </p>
-              </figcaption>
-            </figure>
-
-            <figure className="group lg:col-span-1" data-testid="heritage-camincourt-logistics">
-              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4 relative">
-                <img
-                  src="/images/camincourt-logistics.jpg"
-                  alt={language === 'fr' ? "Plateforme logistique Vallée du Camincourt — 116 991 m² SDP, Saint-Sauveur (80)" : "Camincourt logistics platform — 116,991 sqm GFA, Saint-Sauveur (80) France"}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <span className="absolute top-3 right-3 bg-[#C45A3B] text-white text-[10px] uppercase tracking-wider px-2 py-1 font-medium">
-                  {language === 'fr' ? 'ADN TITAN DC AI' : 'TITAN DC AI DNA'}
-                </span>
+              <div className="lg:col-span-7 grid grid-cols-3 gap-3">
+                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group col-span-2">
+                  <img src="/images/washington-plaza-2.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Washington Plaza — Façade Art Déco signée, ex-Shell Petroleum Paris" : "Washington Plaza — Signed Art Deco façade, ex-Shell Petroleum Paris"}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div className="grid grid-rows-2 gap-3">
+                  <div className="aspect-square overflow-hidden bg-slate-100 group">
+                    <img src="/images/washington-plaza.jpg" loading="lazy"
+                      alt={language === 'fr' ? "Washington Plaza — Vue aérienne du complexe curvilinéaire" : "Washington Plaza — Aerial view of the curvilinear complex"}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>
+                  <div className="aspect-square overflow-hidden bg-slate-100 group">
+                    <img src="/images/washington-plaza-3.jpg" loading="lazy"
+                      alt={language === 'fr' ? "Washington Plaza — Façade extérieure secondaire" : "Washington Plaza — Secondary exterior façade"}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>
+                </div>
               </div>
-              <figcaption>
-                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Vallée du Camincourt' : 'Camincourt Valley'}</h3>
-                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Plateforme logistique · 116 991 m² · Saint-Sauveur (80)' : 'Logistics platform · 116,991 sqm · Saint-Sauveur (80) FR'}
+            </div>
+          </div>
+
+          {/* Block 4 — Vallée du Camincourt — Logistics → TITAN DC AI */}
+          <div className="mb-8" data-testid="heritage-block-camincourt">
+            <div className="grid lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-7 lg:order-1 order-2">
+                <div className="aspect-[16/9] overflow-hidden bg-slate-100 group relative">
+                  <img src="/images/camincourt-logistics.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Plateforme logistique Vallée du Camincourt — 116 991 m² SDP, Saint-Sauveur (80)" : "Camincourt logistics platform — 116,991 sqm GFA, Saint-Sauveur (80) France"}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <span className="absolute top-3 right-3 bg-[#C45A3B] text-white text-[10px] uppercase tracking-wider px-3 py-1.5 font-medium">
+                    {language === 'fr' ? 'ADN TITAN DC AI' : 'TITAN DC AI DNA'}
+                  </span>
+                </div>
+              </div>
+              <div className="lg:col-span-5 lg:order-2 order-1">
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-3">
+                  {language === 'fr' ? 'Réalisation N°04 — Pivot industriel' : 'Realization No. 04 — Industrial pivot'}
                 </p>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <h3 className="font-serif text-2xl md:text-3xl mb-4">{language === 'fr' ? 'Vallée du Camincourt' : 'Camincourt Valley'}</h3>
+                <p className="text-slate-500 text-sm mb-6 font-medium">
+                  {language === 'fr' ? 'Plateforme logistique · 116 991 m² SDP · Saint-Sauveur (80) · Partenariat Elcimaï' : 'Logistics platform · 116,991 sqm GFA · Saint-Sauveur (80) FR · Elcimaï partnership'}
+                </p>
+                <p className="text-slate-700 leading-relaxed mb-4">
                   {language === 'fr'
-                    ? "Développement industriel grand format en partenariat avec Elcimaï — même savoir-faire structurel et énergétique transposé aujourd'hui aux datacenters européens via TITAN DC AI."
-                    : "Large-scale industrial development in partnership with Elcimaï — the same structural and energy expertise transposed today to European datacenters via TITAN DC AI."}
+                    ? "Développement industriel grand format sur un terrain de 294 659 m². Vente en État Futur d'Achèvement, en partenariat avec Elcimaï — référence française de la conception logistique haute performance."
+                    : "Large-scale industrial development on a 294,659 sqm site. Off-plan sale (VEFA) structure, in partnership with Elcimaï — French reference in high-performance logistics design."}
                 </p>
-              </figcaption>
-            </figure>
+                <div className="border-l-4 border-[#C45A3B] pl-4 py-2 bg-slate-50">
+                  <p className="text-slate-700 text-sm leading-relaxed">
+                    {language === 'fr'
+                      ? <><strong className="text-slate-900">Lien stratégique TITAN DC AI :</strong> même savoir-faire structurel — dalle technique grand format, raccordement énergétique haute densité, conformité ICPE — directement transposable aux datacenters AI européens.</>
+                      : <><strong className="text-slate-900">Strategic link to TITAN DC AI:</strong> same structural know-how — large-format technical slabs, high-density energy connection, ICPE compliance — directly transposable to European AI datacenters.</>}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <p className="text-center text-slate-500 text-sm italic mt-12 max-w-3xl mx-auto">
