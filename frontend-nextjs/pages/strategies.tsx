@@ -452,8 +452,8 @@ export default function StrategiesPage() {
               </h3>
               <p className="text-slate-600 text-sm mb-4">
                 {language === 'fr' 
-                  ? 'Co-investissement TITAN DC AI, Green Bonds et structure SCSp pour partenaires institutionnels MiFID II.'
-                  : 'TITAN DC AI co-investment, Green Bonds and SCSp structure for MiFID II institutional partners.'}
+                  ? 'TITAN DC AI déployé sur capital propre FINXIA + Green Bonds. Structure SCSp Luxembourg pour partenaires institutionnels MiFID II.'
+                  : 'TITAN DC AI deployed on FINXIA own equity + Green Bonds. Luxembourg SCSp structure for MiFID II institutional partners.'}
               </p>
               <span className="text-[#C45A3B] text-sm font-medium inline-flex items-center gap-2">
                 {language === 'fr' ? 'En savoir plus' : 'Learn more'}

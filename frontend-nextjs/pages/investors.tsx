@@ -32,12 +32,12 @@ export default function InvestorsPage() {
       <SEO
         title={language === 'fr' ? "Partenaires Institutionnels — FINXIA Capital SCSp Luxembourg" : "Institutional Partners — FINXIA Capital SCSp Luxembourg"}
         description={language === 'fr'
-          ? "FINXIA Capital est un véhicule propriétaire SCSp luxembourgeois. Co-investissement TITAN DC AI et financement Green Bond pour investisseurs professionnels MiFID II."
-          : "FINXIA Capital is a Luxembourg SCSp proprietary vehicle. TITAN DC AI co-investment and Green Bond financing for MiFID II professional investors."}
+          ? "FINXIA Capital est un véhicule propriétaire SCSp luxembourgeois. TITAN DC AI déployé sur capital propre + financement Green Bond pour investisseurs professionnels MiFID II."
+          : "FINXIA Capital is a Luxembourg SCSp proprietary vehicle. TITAN DC AI deployed on own equity + Green Bond financing for MiFID II professional investors."}
         canonical={language === 'fr' ? "https://finxiacapital.com/investors/" : "https://finxiacapital.com/en/investors/"}
         keywords={language === 'fr' 
-          ? "FINXIA Capital SCSp, véhicule propriétaire Luxembourg, co-investissement TITAN DC AI, Green Bond datacenter, investisseurs professionnels MiFID II"
-          : "FINXIA Capital SCSp, Luxembourg proprietary vehicle, TITAN DC AI co-investment, datacenter Green Bond, MiFID II professional investors"}
+          ? "FINXIA Capital SCSp, véhicule propriétaire Luxembourg, TITAN DC AI capital propre, Green Bond datacenter, investisseurs professionnels MiFID II"
+          : "FINXIA Capital SCSp, Luxembourg proprietary vehicle, TITAN DC AI own equity, datacenter Green Bond, MiFID II professional investors"}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
@@ -99,7 +99,7 @@ export default function InvestorsPage() {
         </div>
       </section>
 
-      {/* Section 2 - Co-investissement TITAN DC AI */}
+      {/* Section 2 - Capital propre TITAN DC AI */}
       <section className="py-16 md:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
@@ -109,7 +109,7 @@ export default function InvestorsPage() {
               </div>
               <div className="flex-1">
                 <h2 className="font-serif text-3xl md:text-4xl mb-6">
-                  {language === 'fr' ? 'Co-investissement TITAN DC AI' : 'TITAN DC AI Co-Investment'}
+                  {language === 'fr' ? 'TITAN DC AI — Déploiement Capital Propre' : 'TITAN DC AI — Own Equity Deployment'}
                 </h2>
               </div>
             </div>
@@ -117,21 +117,21 @@ export default function InvestorsPage() {
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-700 leading-relaxed mb-4">
                 {language === 'fr'
-                  ? "FINXIA Capital ouvre des opportunités de co-investissement deal-by-deal aux partenaires institutionnels qualifiés pour la stratégie TITAN DC AI (acquisition et transformation de datacenters européens legacy en plateformes haute efficacité pour charges de travail IA)."
-                  : "FINXIA Capital opens deal-by-deal co-investment opportunities to qualified institutional partners for the TITAN DC AI strategy (acquisition and transformation of legacy European datacenters into high-efficiency AI infrastructure platforms)."}
+                  ? "La stratégie TITAN DC AI (acquisition et transformation de datacenters européens legacy en plateformes haute efficacité pour charges de travail IA) est déployée intégralement sur le capital propre du véhicule SCSp FINXIA Capital — sans levée auprès d'investisseurs tiers, sans poche de co-investissement."
+                  : "The TITAN DC AI strategy (acquisition and transformation of legacy European datacenters into high-efficiency AI infrastructure platforms) is deployed entirely on FINXIA Capital SCSp own equity — without third-party fundraising, without co-investment pocket."}
               </p>
               <p className="text-slate-700 leading-relaxed mb-4">
                 {language === 'fr'
-                  ? "Ces opportunités sont réservées aux investisseurs professionnels au sens de MiFID II. Chaque opportunité de co-investissement est présentée individuellement, sans engagement de fonds global."
-                  : "These opportunities are reserved for professional investors under MiFID II. Each co-investment opportunity is presented individually, with no global fund commitment required."}
+                  ? "Cette discipline garantit l'alignement total entre le General Partner et l'exécution de la stratégie : décisions d'investissement libres de tout cycle de levée, conviction maximale sur chaque acquisition, et absence de conflits d'intérêts inhérents aux structures multi-LP."
+                  : "This discipline guarantees total alignment between the General Partner and strategy execution: investment decisions free from any fundraising cycle, maximum conviction on each acquisition, and absence of conflicts of interest inherent in multi-LP structures."}
               </p>
               <p className="text-slate-700 leading-relaxed">
                 <span className="text-slate-600 text-sm font-medium block mb-1">
-                  {language === 'fr' ? 'Relations Investisseurs' : 'Investor Relations'}
+                  {language === 'fr' ? 'Relations Institutionnelles' : 'Institutional Relations'}
                 </span>
                 {language === 'fr'
-                  ? "Pour toute discussion relative à une opportunité de co-investissement : "
-                  : "For co-investment inquiries: "}
+                  ? "Pour toute discussion stratégique avec FINXIA Capital : "
+                  : "For strategic inquiries with FINXIA Capital: "}
                 <a href="mailto:invest@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
                   invest@finxiacapital.com
                 </a>
