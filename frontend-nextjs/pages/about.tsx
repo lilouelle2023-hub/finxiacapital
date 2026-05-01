@@ -51,7 +51,7 @@ export default function AboutPage() {
       id: 'jean-pierre-veron',
       initials: 'JPV',
       name: 'Jean-Pierre Véron',
-      role: language === 'fr' ? 'Co-Fondateur & Président' : 'Co-Founder & Chairman',
+      role: language === 'fr' ? 'Président & Fondateur' : 'Chairman & Founder',
       bio: language === 'fr'
         ? "Professionnel de référence de l'investissement immobilier français et européen. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée en 2006 au groupe espagnol coté Fadesa — sortie réussie marquant l'aboutissement d'un cycle d'acquisition, développement et valorisation d'envergure. Directeur Général France de Kaufman & Broad pendant 20 ans — l'un des premiers promoteurs immobiliers cotés en France. Président de Financière Norev. Plus de 40 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe."
         : "Leading figure in French and European real estate investment. Founder of Financière Rive Gauche, a pan-European real estate investment platform divested in 2006 to listed Spanish group Fadesa — a successful exit marking the completion of a large-scale acquisition, development and value-creation cycle. Managing Director France of Kaufman & Broad for 20 years — one of France's premier listed real estate developers. Chairman of Financière Norev. Over 40 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets across Europe.",
@@ -136,8 +136,8 @@ export default function AboutPage() {
       <SEO
         title={language === 'fr' ? "Jean-Pierre Véron & Lila Benhammou — Équipe FINXIA Capital SCSp Luxembourg | 40 ans track record immobilier + AI-native" : "Jean-Pierre Véron & Lila Benhammou — FINXIA Capital Team Luxembourg SCSp | 40-year real estate track record + AI-native"}
         description={language === 'fr' 
-          ? "Jean-Pierre Véron (Co-Fondateur, 40+ ans immobilier — exit Rive Gauche → Fadesa 2006) & Lila Benhammou (Co-Fondatrice & CIO, MBA Kellogg Northwestern, exit H4H 2023, finance · IA · telecom) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
-          : "Jean-Pierre Véron (Co-Founder, 40+ years real estate — Rive Gauche exit → Fadesa 2006) & Lila Benhammou (Co-Founder & CIO, MBA Kellogg Northwestern, H4H exit 2023, finance · AI · telecom) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
+          ? "Jean-Pierre Véron (Fondateur, 40+ ans immobilier — exit Rive Gauche → Fadesa 2006) & Lila Benhammou (Co-Fondatrice & CIO, MBA Kellogg Northwestern, exit H4H 2023, finance · IA · telecom) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
+          : "Jean-Pierre Véron (Founder, 40+ years real estate — Rive Gauche exit → Fadesa 2006) & Lila Benhammou (Co-Founder & CIO, MBA Kellogg Northwestern, H4H exit 2023, finance · AI · telecom) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
         canonical={language === 'fr' ? "https://finxiacapital.com/about/" : "https://finxiacapital.com/en/about/"}
         keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Kaufman Broad, Financière Rive Gauche, Fadesa exit 2006, H4H exit 2023, Kellogg Northwestern MBA"
         faqSchema={faqSchema}

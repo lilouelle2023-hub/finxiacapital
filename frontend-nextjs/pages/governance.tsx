@@ -224,12 +224,12 @@ export default function GovernancePage() {
                 <div>
                   <p className="font-serif text-lg text-slate-900 mb-1">Jean-Pierre Véron</p>
                   <p className="text-[#C45A3B] text-sm font-medium mb-2">
-                    {language === 'fr' ? "Président du Comité d'investissement · Co-Fondateur" : "Chair of the Investment Committee · Co-Founder"}
+                    {language === 'fr' ? "Président du Comité d'investissement · Fondateur" : "Chair of the Investment Committee · Founder"}
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Co-Fondateur de FINXIA Capital. Ancien PDG du groupe K&B, architecte du 3ème fonds immobilier européen. 30+ ans d'expérience en structuration d'actifs alternatifs et gouvernance institutionnelle."
-                      : "Co-Founder of FINXIA Capital. Former CEO of K&B Group, architect of the 3rd European real estate fund. 30+ years of experience in alternative asset structuring and institutional governance."}
+                      ? "Fondateur de FINXIA Capital. Ancien PDG du groupe K&B, architecte du 3ème fonds immobilier européen. 40+ ans d'expérience en structuration d'actifs alternatifs et gouvernance institutionnelle."
+                      : "Founder of FINXIA Capital. Former CEO of K&B Group, architect of the 3rd European real estate fund. 40+ years of experience in alternative asset structuring and institutional governance."}
                   </p>
                 </div>
                 <div>
