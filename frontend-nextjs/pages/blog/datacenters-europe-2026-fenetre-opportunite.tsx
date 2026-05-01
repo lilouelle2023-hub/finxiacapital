@@ -107,11 +107,11 @@ export default function Article3Page() {
               Datacenters en Europe : pourquoi 2026 est l'année où les investisseurs en retard paieront le prix fort
             </h1>
             
-            <p className="text-[#C45A3B] text-sm font-medium mb-2">
-              {language === 'fr' ? "Par Lila Benhammou · Co-Fondatrice & CIO" : "By Lila Benhammou · Co-Founder & CIO"}
+            <p className="text-slate-500 text-sm">
+              {language === 'fr' ? 'Par Lila Benhammou, Co-Fondatrice & CIO — FINXIA Capital' : 'By Lila Benhammou, Co-Founder & CIO — FINXIA Capital'}
             </p>
-            <p className="text-slate-500 text-xs">
-              Finxia Capital | {language === 'fr' ? 'Recherche & Stratégie' : 'Research & Strategy'}
+            <p className="text-slate-400 text-xs mt-1">
+              {language === 'fr' ? 'Recherche & Stratégie' : 'Research & Strategy'}
             </p>
           </div>
         </header>

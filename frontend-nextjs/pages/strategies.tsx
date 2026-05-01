@@ -13,19 +13,21 @@ export default function StrategiesPage() {
       id: 'titan-datacenter',
       icon: Server,
       num: '01',
-      subtitle: 'TITAN',
-      title: language === 'fr' ? 'Datacenter AI Brown-to-Green' : 'AI Datacenter Brown-to-Green',
+      subtitle: language === 'fr' ? 'Stratégie brownfield · Campus 40 MW · EU Taxonomy 8.1' : 'Brownfield strategy · 40 MW Campus · EU Taxonomy 8.1',
+      title: language === 'fr' ? 'TITAN DC AI — Datacenters IA Souverains Européens' : 'TITAN DC AI — Sovereign European AI Datacenters',
       headline: language === 'fr' 
         ? 'L\'infrastructure de l\'IA a besoin d\'un socle. Nous le transformons.'
         : 'AI infrastructure needs a foundation. We transform it.',
       thesis: language === 'fr'
-        ? 'Le pôle TITAN est notre conviction centrale. Nous ciblons des campus existants sous-exploités pour les repositionner en infrastructure IA de nouvelle génération : low-energy, certifiée, dimensionnée pour des locataires hyperscaler en bail long terme. La thèse est simple. Un datacenter standard consomme trop, coûte trop, et ne répond plus aux exigences ESG des grands cloud providers. En déployant une infrastructure énergétique de rupture — refroidissement haute efficacité, récupération de chaleur serveurs, production d\'énergie on-site — nous comprimons les coûts opérationnels, améliorons le NOI, et créons une prime de sortie significative auprès des acquéreurs Core infrastructure. Du brown au green : moins d\'énergie consommée, plus de valeur créée. TITAN se finance via un Green Bond ESG dédié, instrument calibré pour cette transformation — labellisé, structuré avec nos partenaires bancaires, sans dilution equity.'
-        : 'The TITAN division is our core conviction. We target underutilized existing campuses to reposition them as next-generation AI infrastructure: low-energy, certified, sized for hyperscaler tenants on long-term leases. The thesis is simple. A standard datacenter consumes too much, costs too much, and no longer meets the ESG requirements of major cloud providers. By deploying breakthrough energy infrastructure — high-efficiency cooling, server heat recovery, on-site energy production — we compress operational costs, improve NOI, and create a significant exit premium with Core infrastructure buyers. From brown to green: less energy consumed, more value created. TITAN is financed via a dedicated ESG Green Bond, an instrument calibrated for this transformation — labeled, structured with our banking partners, without equity dilution.',
+        ? "L'Europe dispose d'un stock massif d'actifs industriels sous-valorisés — friches manufacturières, anciens sites auto, entrepôts de première génération — dont les caractéristiques structurelles (dalle technique, raccordement électrique haute densité, emprise foncière) les rendent directement convertibles en datacenters IA de nouvelle génération. TITAN DC AI cible ce segment brownfield, systématiquement ignoré par les grands acteurs institutionnels focalisés sur le greenfield, et crée de la valeur par la transformation plutôt que par la construction."
+        : "Europe holds a massive stock of undervalued industrial assets — manufacturing brownfields, former automotive sites, first-generation warehouses — whose structural characteristics (technical slabs, high-density electrical connection, land footprint) make them directly convertible into next-generation AI datacenters. TITAN DC AI targets this brownfield segment, systematically ignored by major institutional players focused on greenfield, and creates value through transformation rather than construction.",
       approach: [
-        language === 'fr' ? 'Acquisition de campus datacenters sous-exploités' : 'Acquisition of underutilized datacenter campuses',
-        language === 'fr' ? 'Déploiement infrastructure énergétique : refroidissement haute efficacité, récupération chaleur' : 'Deployment of energy infrastructure: high-efficiency cooling, heat recovery',
-        language === 'fr' ? 'Production d\'énergie on-site et certification ESG' : 'On-site energy production and ESG certification',
-        language === 'fr' ? 'Location hyperscalers long terme et cession acquéreurs Core' : 'Long-term hyperscaler leasing and sale to Core buyers',
+        language === 'fr' ? 'Cible d\'actifs : sites industriels brownfield 20-70 MW IT en France, Espagne, Italie et Europe du Nord' : 'Target assets: 20-70 MW IT brownfield industrial sites in France, Spain, Italy and Northern Europe',
+        language === 'fr' ? 'Avantage coût : entrée significativement moins chère au MW que le greenfield, délais de mise en service réduits' : 'Cost advantage: significantly cheaper entry per MW than greenfield, reduced commissioning timelines',
+        language === 'fr' ? 'Clients : opérateurs cloud tier-2 européens, acteurs IA inférence, administrations publiques, souveraineté des données' : 'Tenants: European tier-2 cloud operators, AI inference players, public administrations, data sovereignty',
+        language === 'fr' ? 'Bail NNN long terme (10-15 ans) signé avant ou au commissioning · revenu locatif contractualisé pré-engagement capital' : 'Long-term NNN lease (10-15 years) signed before or at commissioning · rental revenue contracted before full capital deployment',
+        language === 'fr' ? 'Efficacité énergétique : protocole IPMVP, PUE certifié EU Taxonomy 8.1 et conforme Directive EED' : 'Energy efficiency: IPMVP protocol, EU Taxonomy 8.1-certified PUE and EED Directive-compliant',
+        language === 'fr' ? 'Financement : capital propre + dette senior amortissante + Green Bond ESG ICMA conditionné aux objectifs PUE' : 'Financing: own equity + senior amortizing debt + ICMA ESG Green Bond conditioned on PUE targets',
       ],
       markets: language === 'fr' ? 'France · Espagne · Europe' : 'France · Spain · Europe',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
@@ -358,6 +360,43 @@ export default function StrategiesPage() {
                             </p>
                           </div>
                         </div>
+                      </div>
+
+                      {/* Pourquoi maintenant */}
+                      <div className="my-8 p-6 bg-[#1E2A3A] text-white rounded-lg">
+                        <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
+                          <span className="text-[#C45A3B] text-2xl">→</span>
+                          {language === 'fr' ? 'Pourquoi maintenant' : 'Why now'}
+                        </h4>
+                        <p className="text-slate-300 text-sm leading-relaxed">
+                          {language === 'fr'
+                            ? "La Directive Efficacité Énergétique impose aux datacenters européens de déclarer leur consommation avant mai 2026 et d'atteindre un PUE ≤ 1,30 d'ici janvier 2027. Les actifs non conformes subissent une décote de valeur immédiate. TITAN DC AI acquiert précisément ces actifs en période de stress réglementaire, les met en conformité, et les repositionne comme infrastructure certifiée premium — capturant la compression de rendement entre l'entrée et la sortie."
+                            : "The Energy Efficiency Directive requires European datacenters to declare their consumption before May 2026 and to achieve a PUE ≤ 1.30 by January 2027. Non-compliant assets suffer immediate value discount. TITAN DC AI acquires precisely these assets during regulatory stress, brings them into compliance, and repositions them as certified premium infrastructure — capturing the yield compression between entry and exit."}
+                        </p>
+                      </div>
+
+                      {/* Horizon d'investissement */}
+                      <div className="my-8 p-6 bg-white border-2 border-slate-200 rounded-lg">
+                        <h4 className="font-semibold text-slate-800 mb-4">
+                          {language === 'fr' ? "Horizon d'investissement" : 'Investment horizon'}
+                        </h4>
+                        <div className="grid sm:grid-cols-3 gap-4 mb-4">
+                          {[
+                            { period: language === 'fr' ? 'Acquisition' : 'Acquisition', date: language === 'fr' ? 'À partir de 2026' : 'From 2026' },
+                            { period: language === 'fr' ? 'Transformation & Stabilisation' : 'Transformation & Stabilization', date: '2027 — 2029' },
+                            { period: language === 'fr' ? 'Sorties stratégiques' : 'Strategic exits', date: language === 'fr' ? 'À partir de 2031' : 'From 2031' },
+                          ].map((phase, idx) => (
+                            <div key={idx} className="border-l-4 border-[#C45A3B] pl-3 py-1">
+                              <p className="text-[#C45A3B] text-xs uppercase tracking-wider font-medium mb-1">{phase.period}</p>
+                              <p className="text-slate-700 text-sm font-medium">{phase.date}</p>
+                            </div>
+                          ))}
+                        </div>
+                        <p className="text-slate-600 text-sm leading-relaxed">
+                          {language === 'fr'
+                            ? 'Horizon cible de détention : 5 à 6 ans par actif.'
+                            : 'Target holding horizon: 5 to 6 years per asset.'}
+                        </p>
                       </div>
                     </>
                   )}

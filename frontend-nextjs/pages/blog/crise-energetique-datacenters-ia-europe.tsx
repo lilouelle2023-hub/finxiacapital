@@ -176,11 +176,11 @@ export default function Article1Page() {
               {t.title}
             </h1>
             
-            <p className="text-[#C45A3B] text-sm font-medium mb-2">
-              {language === 'fr' ? "Par Lila Benhammou · Co-Fondatrice & CIO" : "By Lila Benhammou · Co-Founder & CIO"}
+            <p className="text-slate-500 text-sm">
+              {language === 'fr' ? 'Par Lila Benhammou, Co-Fondatrice & CIO — FINXIA Capital' : 'By Lila Benhammou, Co-Founder & CIO — FINXIA Capital'}
             </p>
-            <p className="text-slate-500 text-xs">
-              Finxia Capital | {language === 'fr' ? 'Janvier 2026' : 'January 2026'}
+            <p className="text-slate-400 text-xs mt-1">
+              {language === 'fr' ? 'Janvier 2026' : 'January 2026'}
             </p>
           </div>
         </header>

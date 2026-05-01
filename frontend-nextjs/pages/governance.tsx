@@ -211,8 +211,8 @@ export default function GovernancePage() {
             <div className="prose prose-slate prose-lg max-w-none mb-8">
               <p className="text-slate-700 leading-relaxed">
                 {language === 'fr'
-                  ? "Finxia Capital est dotée d'un comité d'investissement indépendant chargé d'approuver chaque décision d'allocation. Le comité se réunit avant tout engagement de capital et produit un procès-verbal consultable par les investisseurs sur demande."
-                  : "Finxia Capital has an independent investment committee responsible for approving each allocation decision. The committee meets before any capital commitment and produces minutes available to investors upon request."}
+                  ? "Le Comité d'Investissement de FINXIA Capital réunit les deux co-fondateurs du véhicule. Chaque décision d'allocation, d'acquisition et de sortie est prise collégialement, avec engagement direct du capital propre des décideurs. Aucune décision d'investissement significative ne peut être prise par un seul membre."
+                  : "FINXIA Capital's Investment Committee brings together the vehicle's two co-founders. Every allocation, acquisition and exit decision is taken collegially, with direct engagement of the decision-makers' own capital. No significant investment decision can be made by a single member."}
               </p>
             </div>
 
@@ -224,35 +224,48 @@ export default function GovernancePage() {
                 <div>
                   <p className="font-serif text-lg text-slate-900 mb-1">Jean-Pierre Véron</p>
                   <p className="text-[#C45A3B] text-sm font-medium mb-2">
-                    {language === 'fr' ? "Président du Comité d'investissement · Fondateur" : "Chair of the Investment Committee · Founder"}
+                    {language === 'fr' ? "Président du Comité d'Investissement" : "Chair of the Investment Committee"}
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Fondateur de FINXIA Capital. Ancien PDG du groupe K&B, architecte du 3ème fonds immobilier européen. 40+ ans d'expérience en structuration d'actifs alternatifs et gouvernance institutionnelle."
-                      : "Founder of FINXIA Capital. Former CEO of K&B Group, architect of the 3rd European real estate fund. 40+ years of experience in alternative asset structuring and institutional governance."}
+                      ? "Responsable de la validation des thèses d'acquisition, de la gouvernance des actifs en portefeuille et de la discipline de sortie. 40+ ans d'expérience sur cycles complets immobilier institutionnel européen."
+                      : "Responsible for validating acquisition theses, portfolio asset governance and exit discipline. 40+ years of experience on full-cycle European institutional real estate."}
                   </p>
                 </div>
                 <div>
                   <p className="font-serif text-lg text-slate-900 mb-1">Lila Benhammou</p>
                   <p className="text-[#C45A3B] text-sm font-medium mb-2">
-                    {language === 'fr' ? "Membre du Comité · Co-Fondatrice & CIO" : "Committee Member · Co-Founder & CIO"}
+                    {language === 'fr' ? "Membre du Comité d'Investissement, CIO" : "Investment Committee Member, CIO"}
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes), co-auteure du livre blanc SSRN \"Optimisation Énergétique des Datacenters Européens\" (2026)."
-                      : "Architect of FINXIA Capital's AI infrastructure (18 autonomous agents), co-author of the SSRN white paper \"European Datacenter Energy Optimization\" (2026)."}
+                      ? "Responsable de l'analyse financière, de la modélisation des risques, de l'infrastructure IA et de la stratégie ESG. Architecte du cadre de décision AI-native du véhicule."
+                      : "Responsible for financial analysis, risk modeling, AI infrastructure and ESG strategy. Architect of the vehicle's AI-native decision framework."}
                   </p>
                 </div>
-                <div className="pt-4 border-t border-slate-200">
-                  <p className="text-slate-600 text-xs leading-relaxed">
-                    {language === 'fr'
-                      ? "Le comité intègre également un membre externe indépendant (risques & conformité), dont l'identité est communiquée aux investisseurs qualifiés sur demande — contact : "
-                      : "The committee also includes an independent external member (risk & compliance), whose identity is communicated to qualified investors upon request — contact: "}
-                    <a href="mailto:invest@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
-                      invest@finxiacapital.com
-                    </a>
-                  </p>
-                </div>
+              </div>
+            </div>
+
+            <div className="mt-10">
+              <h3 className="font-serif text-xl mb-4 text-slate-800">
+                {language === 'fr' ? 'Processus de décision' : 'Decision Process'}
+              </h3>
+              <p className="text-slate-700 leading-relaxed mb-6">
+                {language === 'fr'
+                  ? "Toute opportunité d'investissement passe par quatre étapes séquentielles : sourcing et pré-qualification IA, due diligence financière et technique, validation du Comité d'Investissement à l'unanimité, structuration et closing. Aucun investissement ne peut être engagé sans accord des deux membres du Comité."
+                  : "Every investment opportunity goes through four sequential stages: AI sourcing and pre-qualification, financial and technical due diligence, unanimous Investment Committee validation, structuring and closing. No investment can be committed without the agreement of both Committee members."}
+              </p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                {[
+                  language === 'fr' ? '01 · Sourcing & Pré-qualification IA' : '01 · AI Sourcing & Pre-qualification',
+                  language === 'fr' ? '02 · Due diligence financière & technique' : '02 · Financial & Technical Due Diligence',
+                  language === 'fr' ? '03 · Validation Comité (unanimité)' : '03 · Committee Validation (unanimous)',
+                  language === 'fr' ? '04 · Structuration & Closing' : '04 · Structuring & Closing',
+                ].map((step, idx) => (
+                  <div key={idx} className="bg-white border-l-2 border-[#C45A3B] p-4">
+                    <p className="text-slate-700 text-sm font-medium leading-snug">{step}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

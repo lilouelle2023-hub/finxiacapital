@@ -70,7 +70,7 @@ export default function Article7Page() {
               <span className="text-slate-600">{t.readTime}</span>
             </div>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight">{t.title}</h1>
-            <p className="text-slate-500 text-sm">{t.author} | Finxia Capital</p>
+            <p className="text-slate-500 text-sm">{language === 'fr' ? 'Par ' : 'By '}{t.author} — FINXIA Capital</p>
           </div>
         </header>
         <div className="py-16 md:py-24">

@@ -124,7 +124,7 @@ export default function Article5Page() {
             </h1>
             
             <p className="text-slate-500 text-sm">
-              {t.author} | Finxia Capital
+              {language === 'fr' ? 'Par ' : 'By '}{t.author} — FINXIA Capital
             </p>
           </div>
         </header>

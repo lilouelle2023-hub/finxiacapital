@@ -88,11 +88,8 @@ export default function Article8Page() {
               {t.title}
             </h1>
             
-            <p className="text-[#C45A3B] text-sm font-medium mb-2">
-              {t.author}
-            </p>
-            <p className="text-slate-500 text-xs">
-              Finxia Capital
+            <p className="text-slate-500 text-sm">
+              {language === 'fr' ? 'Par ' : 'By '}{t.author} — FINXIA Capital
             </p>
           </div>
         </header>

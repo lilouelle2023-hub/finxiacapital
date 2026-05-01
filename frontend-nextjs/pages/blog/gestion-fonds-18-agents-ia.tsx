@@ -107,11 +107,11 @@ export default function Article2Page() {
               Gérer un fonds alternatif avec 18 agents IA : ce que ça change vraiment
             </h1>
             
-            <p className="text-[#C45A3B] text-sm font-medium mb-2">
-              {language === 'fr' ? "Par Lila Benhammou · Co-Fondatrice & CIO" : "By Lila Benhammou · Co-Founder & CIO"}
+            <p className="text-slate-500 text-sm">
+              {language === 'fr' ? 'Par Lila Benhammou, Co-Fondatrice & CIO — FINXIA Capital' : 'By Lila Benhammou, Co-Founder & CIO — FINXIA Capital'}
             </p>
-            <p className="text-slate-500 text-xs">
-              Finxia Capital | {language === 'fr' ? 'Architecture AI-Native' : 'AI-Native Architecture'}
+            <p className="text-slate-400 text-xs mt-1">
+              {language === 'fr' ? 'Architecture AI-Native' : 'AI-Native Architecture'}
             </p>
           </div>
         </header>
