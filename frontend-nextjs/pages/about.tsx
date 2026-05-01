@@ -245,7 +245,121 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Differentiators */}
+      {/* Notre Héritage — Realisations Track Record */}
+      <section className="py-24 md:py-32 bg-white" data-testid="heritage-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="overline mb-4">
+              {language === 'fr' ? 'Notre Héritage' : 'Our Heritage'}
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">
+              {language === 'fr' ? '40 ans de track record immobilier institutionnel' : '40 years of institutional real estate track record'}
+            </h2>
+            <div className="section-divider mx-auto mb-8" />
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
+              {language === 'fr'
+                ? "Quatre décennies de structuration d'opérations immobilières complexes en Europe — restructurations patrimoniales, repositionnements corporate, co-promotions de grande envergure. Le même ADN brownfield qui structure aujourd'hui la thèse TITAN DC AI."
+                : "Four decades of structuring complex real estate operations across Europe — heritage restructurings, corporate repositionings, large-scale co-developments. The same brownfield DNA that structures the TITAN DC AI thesis today."}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <figure className="group" data-testid="heritage-centorial">
+              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
+                <img
+                  src="/images/centorial.jpg"
+                  alt={language === 'fr' ? "Le Centorial — Restructuration patrimoniale, ancien siège Crédit Lyonnais" : "Le Centorial — Heritage restructuring, former Crédit Lyonnais headquarters"}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <figcaption>
+                <h3 className="font-serif text-lg mb-1">Le Centorial</h3>
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
+                  {language === 'fr' ? 'Ancien siège Crédit Lyonnais · 47 000 m²' : 'Former Crédit Lyonnais HQ · 47,000 sqm'}
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "Restructuration lourde, façades classées préservées."
+                    : "Heavy restructuring, listed façades preserved."}
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="group" data-testid="heritage-centorial-2">
+              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
+                <img
+                  src="/images/centorial-2.jpg"
+                  alt={language === 'fr' ? "Façades historiques classées du Centorial" : "Listed historical façades of Le Centorial"}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <figcaption>
+                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Patrimoine classé' : 'Listed Heritage'}</h3>
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
+                  {language === 'fr' ? 'Façades historiques · Centorial' : 'Historical façades · Centorial'}
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "Préservation patrimoniale combinée à une mise aux standards institutionnels."
+                    : "Heritage preservation combined with upgrade to institutional standards."}
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="group" data-testid="heritage-coeur-defense">
+              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
+                <img
+                  src="/images/coeur-defense.jpg"
+                  alt={language === 'fr' ? "Cœur Défense — Discipline institutionnelle Paris La Défense" : "Cœur Défense — Institutional discipline Paris La Défense"}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <figcaption>
+                <h3 className="font-serif text-lg mb-1">Cœur Défense</h3>
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
+                  {language === 'fr' ? 'Paris La Défense' : 'Paris La Défense'}
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "Opération institutionnelle de référence — discipline d'exécution sur grand actif tertiaire."
+                    : "Reference institutional operation — execution discipline on large-scale tertiary asset."}
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="group" data-testid="heritage-washington-plaza">
+              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
+                <img
+                  src="/images/washington-plaza.jpg"
+                  alt={language === 'fr' ? "Washington Plaza — Repositionnement corporate Shell Petroleum" : "Washington Plaza — Corporate repositioning Shell Petroleum"}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <figcaption>
+                <h3 className="font-serif text-lg mb-1">Washington Plaza</h3>
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
+                  {language === 'fr' ? 'Ex-Shell Petroleum · Paris' : 'Ex-Shell Petroleum · Paris'}
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "Repositionnement complet d'un siège corporate vers usage institutionnel premium."
+                    : "Full repositioning of a corporate headquarters towards premium institutional use."}
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <p className="text-center text-slate-500 text-sm italic mt-12 max-w-3xl mx-auto">
+            {language === 'fr'
+              ? "Réalisations historiques de l'équipe fondatrice. Le même savoir-faire — restructuration brownfield, négociation institutionnelle, certification — est aujourd'hui appliqué aux datacenters européens via TITAN DC AI."
+              : "Historical track record of the founding team. The same know-how — brownfield restructuring, institutional negotiation, certification — is today applied to European datacenters via TITAN DC AI."}
+          </p>
+        </div>
+      </section>
       <section className="py-24 md:py-32 bg-white" data-testid="differentiators-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">

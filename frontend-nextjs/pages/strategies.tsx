@@ -28,7 +28,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Location hyperscalers long terme et cession acquéreurs Core' : 'Long-term hyperscaler leasing and sale to Core buyers',
       ],
       markets: language === 'fr' ? 'France · Espagne · Europe' : 'France · Spain · Europe',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+      image: '/images/datacenter.jpg',
     },
     {
       id: 'hospitality-premium',
@@ -49,7 +49,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Rotation sélective après stabilisation opérationnelle' : 'Selective rotation after operational stabilization',
       ],
       markets: 'Paris · Barcelone · Madrid · Milan',
-      image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80',
+      image: '/images/hotel.jpg',
     },
     {
       id: 'residential-flex',
@@ -70,7 +70,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Préparation de sorties en bloc vers investisseurs Core' : 'Preparation of block exits to Core investors',
       ],
       markets: language === 'fr' ? 'Grandes Métropoles Européennes' : 'Major European Metropolises',
-      image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+      image: '/images/residential.jpg',
     },
     {
       id: 'capital-opportunities',
@@ -91,7 +91,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Approche disciplinée avec taux de conversion <5%' : 'Disciplined approach with <5% conversion rate',
       ],
       markets: 'Late-Stage · Secondaires · Special Situations',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
+      image: '/images/coliving.jpg',
     },
   ];
 
@@ -362,6 +362,52 @@ export default function StrategiesPage() {
                     </>
                   )}
 
+                  {/* C.CAPITAL - Portfolio Targets */}
+                  {strategy.id === 'capital-opportunities' && (
+                    <div className="my-8 p-6 bg-slate-50 rounded-lg border-l-4 border-[#C45A3B]">
+                      <h4 className="font-semibold text-slate-800 mb-2">
+                        {language === 'fr' ? 'Sociétés ciblées' : 'Target Companies'}
+                      </h4>
+                      <p className="text-slate-500 text-xs uppercase tracking-wider mb-6">
+                        {language === 'fr' ? 'Late-stage IA · Infrastructure · Secondaires' : 'Late-stage AI · Infrastructure · Secondaries'}
+                      </p>
+                      <ul className="space-y-4">
+                        <li className="flex items-baseline gap-3">
+                          <span className="text-[#C45A3B] font-bold">·</span>
+                          <div>
+                            <span className="font-semibold text-slate-900">Cohere</span>
+                            <span className="text-slate-600 text-sm ml-2">
+                              — {language === 'fr' ? 'IA générative entreprise · Series C' : 'Enterprise generative AI · Series C'}
+                            </span>
+                          </div>
+                        </li>
+                        <li className="flex items-baseline gap-3">
+                          <span className="text-[#C45A3B] font-bold">·</span>
+                          <div>
+                            <span className="font-semibold text-slate-900">Scale AI</span>
+                            <span className="text-slate-600 text-sm ml-2">
+                              — {language === 'fr' ? 'Infrastructure données IA · Late-stage' : 'AI data infrastructure · Late-stage'}
+                            </span>
+                          </div>
+                        </li>
+                        <li className="flex items-baseline gap-3">
+                          <span className="text-[#C45A3B] font-bold">·</span>
+                          <div>
+                            <span className="font-semibold text-slate-900">Databricks</span>
+                            <span className="text-slate-600 text-sm ml-2">
+                              — {language === 'fr' ? 'Lakehouse IA & analytics · Secondaires' : 'AI Lakehouse & analytics · Secondaries'}
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                      <p className="text-slate-500 text-xs italic mt-6 leading-relaxed">
+                        {language === 'fr'
+                          ? "Liste indicative des sociétés visées par le pôle C.CAPITAL. Chaque position fait l'objet d'une analyse approfondie ; le taux de conversion est volontairement maintenu sous 5%."
+                          : "Indicative list of companies targeted by the C.CAPITAL division. Each position undergoes thorough analysis; the conversion rate is deliberately maintained below 5%."}
+                      </p>
+                    </div>
+                  )}
+
                   <p className="text-sm font-semibold text-[#C45A3B] uppercase tracking-wider">
                     {strategy.markets}
                   </p>
@@ -406,8 +452,8 @@ export default function StrategiesPage() {
               </h3>
               <p className="text-slate-600 text-sm mb-4">
                 {language === 'fr' 
-                  ? 'Reporting INREV, conformité ILPA et transparence totale pour investisseurs institutionnels.'
-                  : 'INREV reporting, ILPA compliance and full transparency for institutional investors.'}
+                  ? 'Co-investissement TITAN DC AI, Green Bonds et structure SCSp pour partenaires institutionnels MiFID II.'
+                  : 'TITAN DC AI co-investment, Green Bonds and SCSp structure for MiFID II institutional partners.'}
               </p>
               <span className="text-[#C45A3B] text-sm font-medium inline-flex items-center gap-2">
                 {language === 'fr' ? 'En savoir plus' : 'Learn more'}
