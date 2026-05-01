@@ -425,8 +425,8 @@ export default function HomePage() {
           </div>
           <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
-              { value: '25+', label: language === 'fr' ? 'ans — Track record immobilier institutionnel' : 'years — Institutional real estate track record', sublabel: 'Jean-Pierre Véron' },
-              { value: '13+', label: language === 'fr' ? 'ans — Expérience opérationnelle IA & telecom' : 'years — AI & telecom operational experience', sublabel: 'Lila Benhammou' },
+              { value: '40+', label: language === 'fr' ? 'ans — Track record immobilier institutionnel' : 'years — Institutional real estate track record', sublabel: 'Jean-Pierre Véron' },
+              { value: '2', label: language === 'fr' ? 'sorties réussies — Rive Gauche & H4H' : 'successful exits — Rive Gauche & H4H', sublabel: language === 'fr' ? 'Fadesa 2006 · H4H 2023' : 'Fadesa 2006 · H4H 2023' },
               { value: '18', label: language === 'fr' ? 'agents IA autonomes — Architecture opérationnelle native' : 'autonomous AI agents — Native operational architecture', sublabel: '' },
               { value: '4', label: language === 'fr' ? 'stratégies d\'investissement complémentaires' : 'complementary investment strategies', sublabel: '' },
               { value: '3', label: language === 'fr' ? 'marchés : France, Espagne, Europe du Sud' : 'markets: France, Spain, Southern Europe', sublabel: '' },
