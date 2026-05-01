@@ -53,11 +53,11 @@ export default function AboutPage() {
       name: 'Jean-Pierre Véron',
       role: language === 'fr' ? 'Président & Fondateur' : 'Chairman & Founder',
       bio: language === 'fr'
-        ? "Professionnel de référence de l'investissement immobilier français et européen. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée en 2006 au groupe espagnol coté Fadesa — sortie réussie marquant l'aboutissement d'un cycle d'acquisition, développement et valorisation d'envergure. Directeur Général France de Kaufman & Broad pendant 20 ans — l'un des premiers promoteurs immobiliers cotés en France. Président de Financière Norev. Plus de 40 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe."
-        : "Leading figure in French and European real estate investment. Founder of Financière Rive Gauche, a pan-European real estate investment platform divested in 2006 to listed Spanish group Fadesa — a successful exit marking the completion of a large-scale acquisition, development and value-creation cycle. Managing Director France of Kaufman & Broad for 20 years — one of France's premier listed real estate developers. Chairman of Financière Norev. Over 40 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets across Europe.",
+        ? "Professionnel de référence de l'investissement immobilier français et européen. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée en 2006 à un groupe immobilier européen coté — sortie réalisée deux ans avant la crise immobilière qui a restructuré le secteur. Directeur Général France de Kaufman & Broad pendant 20 ans — l'un des premiers promoteurs immobiliers cotés en France, plusieurs milliards d'euros de chiffre d'affaires cumulé. Président de Financière Norev. Plus de 40 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe."
+        : "Leading figure in French and European real estate investment. Founder of Financière Rive Gauche, a pan-European real estate investment platform divested in 2006 to a listed European real estate group — exit executed two years before the real estate crisis that restructured the sector. Managing Director France of Kaufman & Broad for 20 years — one of France's premier listed real estate developers, several billion euros of cumulative revenue. Chairman of Financière Norev. Over 40 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets across Europe.",
       linkedin: 'https://linkedin.com/in/jean-pierre-veron',
       highlights: [
-        { icon: Award, text: language === 'fr' ? 'Fondateur Financière Rive Gauche' : 'Founder Financière Rive Gauche' },
+        { icon: Award, text: language === 'fr' ? 'Sortie Financière Rive Gauche (2006, pré-crise)' : 'Financière Rive Gauche exit (2006, pre-crisis)' },
         { icon: Briefcase, text: language === 'fr' ? 'DG France Kaufman & Broad (20 ans)' : 'Managing Director France K&B (20 years)' },
         { icon: CheckCircle, text: language === 'fr' ? '40+ ans track record immobilier' : '40+ years real estate track record' },
       ],
@@ -68,12 +68,12 @@ export default function AboutPage() {
       name: 'Lila Benhammou',
       role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements (CIO)' : 'Co-Founder & Chief Investment Officer (CIO)',
       bio: language === 'fr'
-        ? "Serial entrepreneur senior avec un parcours croisé en finance, intelligence artificielle et télécoms. Fondatrice de H4H — sortie réussie en 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes). Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam."
-        : "Senior serial entrepreneur with a cross-functional background in finance, artificial intelligence and telecoms. Founder of H4H — successful exit in 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architect of FINXIA Capital's AI infrastructure (18 autonomous agents). Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam.",
+        ? "Serial entrepreneur senior avec un parcours croisé en finance, intelligence artificielle et télécoms. Fondatrice de Humans4Help (H4H), spécialiste IA et automation d'entreprise — sortie réussie en 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes). Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam."
+        : "Senior serial entrepreneur with a cross-functional background in finance, artificial intelligence and telecoms. Founder of Humans4Help (H4H), enterprise AI and automation specialist — successful exit in 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architect of FINXIA Capital's AI infrastructure (18 autonomous agents). Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam.",
       linkedin: 'https://linkedin.com/in/lilabenhammou',
       highlights: [
         { icon: Lightbulb, text: language === 'fr' ? 'Architecte infrastructure IA (18 agents)' : 'AI infrastructure architect (18 agents)' },
-        { icon: BarChart3, text: language === 'fr' ? 'Sortie H4H réussie (2023)' : 'H4H successful exit (2023)' },
+        { icon: BarChart3, text: language === 'fr' ? 'Sortie Humans4Help IA & automation (2023)' : 'Humans4Help AI & automation exit (2023)' },
         { icon: CheckCircle, text: language === 'fr' ? 'Lead author SSRN 2026' : 'SSRN lead author 2026' },
       ],
     },
@@ -136,10 +136,10 @@ export default function AboutPage() {
       <SEO
         title={language === 'fr' ? "Jean-Pierre Véron & Lila Benhammou — Équipe FINXIA Capital SCSp Luxembourg | 40 ans track record immobilier + AI-native" : "Jean-Pierre Véron & Lila Benhammou — FINXIA Capital Team Luxembourg SCSp | 40-year real estate track record + AI-native"}
         description={language === 'fr' 
-          ? "Jean-Pierre Véron (Fondateur, 40+ ans immobilier — exit Rive Gauche → Fadesa 2006) & Lila Benhammou (Co-Fondatrice & CIO, MBA Kellogg Northwestern, exit H4H 2023, finance · IA · telecom) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
-          : "Jean-Pierre Véron (Founder, 40+ years real estate — Rive Gauche exit → Fadesa 2006) & Lila Benhammou (Co-Founder & CIO, MBA Kellogg Northwestern, H4H exit 2023, finance · AI · telecom) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
+          ? "Jean-Pierre Véron (Fondateur, 40+ ans immobilier — sortie Rive Gauche 2006 pré-crise) & Lila Benhammou (Co-Fondatrice & CIO, MBA Kellogg Northwestern, sortie Humans4Help 2023, finance · IA · telecom) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
+          : "Jean-Pierre Véron (Founder, 40+ years real estate — Rive Gauche exit 2006 pre-crisis) & Lila Benhammou (Co-Founder & CIO, MBA Kellogg Northwestern, Humans4Help exit 2023, finance · AI · telecom) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
         canonical={language === 'fr' ? "https://finxiacapital.com/about/" : "https://finxiacapital.com/en/about/"}
-        keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Kaufman Broad, Financière Rive Gauche, Fadesa exit 2006, H4H exit 2023, Kellogg Northwestern MBA"
+        keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Kaufman Broad, Financière Rive Gauche, Humans4Help, Kellogg Northwestern MBA"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
@@ -204,8 +204,8 @@ export default function AboutPage() {
                     </h4>
                     <p className="text-slate-400 text-sm">
                       {language === 'fr' 
-                        ? 'Structuration SCSp, partenariats stratégiques, acquisition sites brownfield. Ambition : campus datacenter IA souverain 40 MW, optimisation énergétique certifiée EU Taxonomy 8.1, financement Green Bond ESG.'
-                        : 'SCSp structuring, strategic partnerships, brownfield site acquisition. Ambition: sovereign 40 MW AI datacenter campus, EU Taxonomy 8.1-certified energy optimization, ESG Green Bond financing.'}
+                        ? "Structuration SCSp, partenariats stratégiques. Identification de sites brownfield en cours — France, Espagne, Italie. Ambition : campus datacenter IA souverain 40 MW, optimisation énergétique certifiée EU Taxonomy 8.1, financement Green Bond ESG."
+                        : "SCSp structuring, strategic partnerships. Brownfield site identification underway — France, Spain, Italy. Ambition: sovereign 40 MW AI datacenter campus, EU Taxonomy 8.1-certified energy optimization, ESG Green Bond financing."}
                     </p>
                   </div>
                 </div>
@@ -347,8 +347,8 @@ export default function AboutPage() {
                 <h3 className="font-serif text-2xl md:text-3xl mb-2">Cœur Défense</h3>
                 <p className="text-slate-400 text-xs italic mb-4">
                   {language === 'fr'
-                    ? 'Rôle : Jean-Pierre Véron — Directeur Général France, Kaufman & Broad'
-                    : 'Role: Jean-Pierre Véron — Managing Director France, Kaufman & Broad'}
+                    ? 'Rôle : Jean-Pierre Véron — Intervenant sur le repositionnement (période DG France, Kaufman & Broad)'
+                    : 'Role: Jean-Pierre Véron — Contributor on repositioning (during Managing Director France tenure at Kaufman & Broad)'}
                 </p>
                 <p className="text-slate-500 text-sm mb-6 font-medium">
                   {language === 'fr' ? 'Tertiaire grand format · Paris La Défense' : 'Large-scale tertiary · Paris La Défense'}
@@ -526,6 +526,27 @@ export default function AboutPage() {
                 <p className="text-slate-600 leading-relaxed mb-6">
                   {member.bio}
                 </p>
+                {member.id === 'lila-benhammou' && (
+                  <div className="mb-6 p-4 bg-slate-50 border-l-4 border-[#C45A3B]" data-testid="lila-ssrn-citation">
+                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-2">
+                      {language === 'fr' ? 'Publication académique' : 'Academic publication'}
+                    </p>
+                    <a
+                      href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-700 hover:text-[#C45A3B] text-sm leading-relaxed block"
+                    >
+                      <span className="font-medium">Benhammou, L. (2026).</span>{' '}
+                      <em>
+                        {language === 'fr'
+                          ? "Optimisation Énergétique des Datacenters Européens."
+                          : "European Datacenter Energy Optimization."}
+                      </em>{' '}
+                      <span className="text-[#C45A3B] underline">SSRN (Abstract ID 6597918) ↗</span>
+                    </a>
+                  </div>
+                )}
                 <div className="space-y-3 border-t border-slate-200 pt-6">
                   {member.highlights.map((highlight, idx) => (
                     <div key={`${member.id}-highlight-${idx}`} className="flex items-center gap-3">
