@@ -57,7 +57,8 @@
     "zod": "^3.24.4"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "node server.js",
+    "start:cra": "craco start",
     "build": "craco build",
     "postbuild": "node prerender.js",
     "test": "craco test"
