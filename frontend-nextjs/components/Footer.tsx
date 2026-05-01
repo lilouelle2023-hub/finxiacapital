@@ -1,13 +1,16 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import { Mail } from 'lucide-react';
+import { Mail, Download } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import WhitepaperModal from '@/components/WhitepaperModal';
 
 export default function Footer() {
   const context = useLanguage();
   const language = context?.language || 'fr';
   const currentYear = new Date().getFullYear();
+  const [whitepaperOpen, setWhitepaperOpen] = useState(false);
 
   const footerLinks = [
     { path: '/about', label: language === 'fr' ? 'À Propos' : 'About' },
@@ -88,6 +91,18 @@ export default function Footer() {
                 : 'European Datacenter Energy Optimization (2026) — Abstract ID 6597918'}
             </a>
           </p>
+          <p className="text-slate-400 text-xs mt-3">
+            {language === 'fr' ? 'Livre Blanc complet (PDF, 60+ pages) — ' : 'Complete White Paper (PDF, 60+ pages) — '}
+            <button
+              type="button"
+              onClick={() => setWhitepaperOpen(true)}
+              data-testid="whitepaper-cta-footer"
+              className="text-[#C45A3B] hover:underline inline-flex items-center gap-1 font-medium"
+            >
+              <Download className="w-3 h-3" />
+              {language === 'fr' ? 'Télécharger' : 'Download'}
+            </button>
+          </p>
         </div>
 
         <div className="border-t border-slate-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
@@ -101,6 +116,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      <WhitepaperModal isOpen={whitepaperOpen} onClose={() => setWhitepaperOpen(false)} />
     </footer>
   );
 }

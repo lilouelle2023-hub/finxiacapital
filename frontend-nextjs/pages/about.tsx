@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { 
   CheckCircle, Award, Briefcase, Lightbulb, BarChart3,
-  TrendingUp, Shield, Brain, Layers, ArrowRight
+  TrendingUp, Shield, Brain, Layers, ArrowRight, FileText, Download
 } from 'lucide-react';
 import SEO from '@/components/SEO';
+import WhitepaperModal from '@/components/WhitepaperModal';
 
 export default function AboutPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
+  const [whitepaperOpen, setWhitepaperOpen] = useState(false);
 
   const differentiators = [
     {
@@ -465,6 +467,48 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+      {/* Whitepaper — Research Publication Download */}
+      <section className="py-20 md:py-24 bg-slate-50 border-y border-slate-200" data-testid="whitepaper-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-10 items-center max-w-5xl mx-auto">
+            <div className="lg:col-span-2 flex justify-center lg:justify-start">
+              <div className="w-20 h-20 bg-[#C45A3B]/10 border-l-4 border-[#C45A3B] flex items-center justify-center">
+                <FileText className="w-10 h-10 text-[#C45A3B]" />
+              </div>
+            </div>
+            <div className="lg:col-span-10">
+              <p className="overline mb-3 text-[#C45A3B]">
+                {language === 'fr' ? 'Publication de Recherche — FINXIA Capital' : 'Research Publication — FINXIA Capital'}
+              </p>
+              <h2 className="font-serif text-2xl md:text-3xl mb-4 text-slate-900">
+                {language === 'fr'
+                  ? 'Optimisation Énergétique des Datacenters Européens sous la Directive EED'
+                  : 'European Datacenter Energy Optimization under the EED Directive'}
+              </h2>
+              <p className="text-slate-500 text-sm mb-5 font-medium">
+                {language === 'fr' ? 'Livre Blanc — Avril 2026 · 60+ pages' : 'White Paper — April 2026 · 60+ pages'}
+              </p>
+              <p className="text-slate-700 leading-relaxed mb-6 max-w-3xl">
+                {language === 'fr'
+                  ? "Analyse réglementaire complète de la Directive Efficacité Énergétique (Art. 12 et 21), cadre IPMVP, anatomie du PUE, stratégies d'optimisation certifiables et perspective investisseur. Destiné aux directeurs techniques, responsables énergie et équipes d'investissement infrastructure."
+                  : "Complete regulatory analysis of the Energy Efficiency Directive (Art. 12 and 21), IPMVP framework, PUE anatomy, certifiable optimization strategies and investor perspective. Designed for technical directors, energy managers and infrastructure investment teams."}
+              </p>
+              <button
+                type="button"
+                onClick={() => setWhitepaperOpen(true)}
+                data-testid="whitepaper-cta-about"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#C45A3B] text-white font-medium hover:bg-[#A04A2F] transition-colors"
+              >
+                <Download className="w-4 h-4" />
+                {language === 'fr' ? 'Télécharger le Livre Blanc' : 'Download the White Paper'}
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 md:py-32 bg-white" data-testid="differentiators-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -639,6 +683,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <WhitepaperModal isOpen={whitepaperOpen} onClose={() => setWhitepaperOpen(false)} />
     </div>
   );
 }
