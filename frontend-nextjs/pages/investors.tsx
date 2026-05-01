@@ -199,11 +199,11 @@ export default function InvestorsPage() {
               </p>
 
               <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                {language === 'fr' ? 'Publication de référence : ' : 'Reference publication: '}
+                {language === 'fr' ? 'Publication de référence (en cours de revue SSRN) : ' : 'Reference publication (under SSRN review): '}
                 <a
                   href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="text-[#C45A3B] hover:underline"
                 >
                   {language === 'fr'

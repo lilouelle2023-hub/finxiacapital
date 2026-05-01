@@ -529,12 +529,12 @@ export default function AboutPage() {
                 {member.id === 'lila-benhammou' && (
                   <div className="mb-6 p-4 bg-slate-50 border-l-4 border-[#C45A3B]" data-testid="lila-ssrn-citation">
                     <p className="text-slate-500 text-xs uppercase tracking-wider mb-2">
-                      {language === 'fr' ? 'Publication académique' : 'Academic publication'}
+                      {language === 'fr' ? 'Publication académique — en cours de revue SSRN' : 'Academic publication — under SSRN review'}
                     </p>
                     <a
                       href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       className="text-slate-700 hover:text-[#C45A3B] text-sm leading-relaxed block"
                     >
                       <span className="font-medium">Benhammou, L. (2026).</span>{' '}
@@ -545,6 +545,11 @@ export default function AboutPage() {
                       </em>{' '}
                       <span className="text-[#C45A3B] underline">SSRN (Abstract ID 6597918) ↗</span>
                     </a>
+                    <p className="text-slate-500 text-xs italic mt-2">
+                      {language === 'fr'
+                        ? "Note : papier actuellement en cours de revue sur SSRN (under review)."
+                        : "Note: paper currently under SSRN review."}
+                    </p>
                   </div>
                 )}
                 <div className="space-y-3 border-t border-slate-200 pt-6">

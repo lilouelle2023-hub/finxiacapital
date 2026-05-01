@@ -20,8 +20,8 @@ export default function PressPage() {
       link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918',
       external: true,
       description: language === 'fr'
-        ? 'Publication académique sur SSRN analysant les stratégies d\'optimisation PUE pour les datacenters européens, avec focus sur la conformité EED Article 12 et les technologies de rupture (ORC, récupération chaleur fatale).'
-        : 'Academic publication on SSRN analyzing PUE optimization strategies for European datacenters, focusing on EED Article 12 compliance and breakthrough technologies (ORC, waste heat recovery).'
+        ? 'Publication académique sur SSRN (actuellement en cours de revue) analysant les stratégies d\'optimisation PUE pour les datacenters européens, avec focus sur la conformité EED Article 12 et les technologies de rupture (ORC, récupération chaleur fatale).'
+        : 'Academic publication on SSRN (currently under review) analyzing PUE optimization strategies for European datacenters, focusing on EED Article 12 compliance and breakthrough technologies (ORC, waste heat recovery).'
     },
     {
       id: 'prlog-press-release',
@@ -152,7 +152,7 @@ export default function PressPage() {
                 <a
                   href={item.link}
                   target={item.external ? '_blank' : '_self'}
-                  rel={item.external ? 'noopener noreferrer' : ''}
+                  rel={item.external ? 'noopener noreferrer nofollow' : ''}
                   className="inline-flex items-center gap-2 text-[#C45A3B] hover:underline font-medium"
                 >
                   {language === 'fr' ? 'Lire la suite' : 'Read more'}

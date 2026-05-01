@@ -75,12 +75,12 @@ export default function Footer() {
         <div className="border-t border-slate-700 pt-8 pb-6">
           <p className="text-slate-400 text-xs">
             {language === 'fr'
-              ? 'Publication SSRN : '
-              : 'SSRN Publication: '}
+              ? 'Publication SSRN (en cours de revue) : '
+              : 'SSRN Publication (under review): '}
             <a 
               href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918" 
               target="_blank" 
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="text-[#C45A3B] hover:underline"
             >
               {language === 'fr'

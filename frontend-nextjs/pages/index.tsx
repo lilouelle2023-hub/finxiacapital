@@ -430,7 +430,7 @@ export default function HomePage() {
               { value: '18', label: language === 'fr' ? 'agents IA autonomes — Architecture opérationnelle native' : 'autonomous AI agents — Native operational architecture', sublabel: '' },
               { value: '4', label: language === 'fr' ? 'stratégies d\'investissement complémentaires' : 'complementary investment strategies', sublabel: '' },
               { value: '3', label: language === 'fr' ? 'marchés : France, Espagne, Europe du Sud' : 'markets: France, Spain, Southern Europe', sublabel: '' },
-              { value: '1', label: language === 'fr' ? 'publication académique — SSRN Abstract ID 6597918' : 'academic publication — SSRN Abstract ID 6597918', sublabel: '' },
+              { value: '1', label: language === 'fr' ? 'publication académique — SSRN (en cours de revue)' : 'academic publication — SSRN (under review)', sublabel: 'Abstract ID 6597918' },
             ].map((stat, idx) => (
               <div key={idx} className="text-center p-6 bg-slate-50">
                 <div className="text-4xl font-bold text-[#C45A3B] mb-2">{stat.value}</div>
@@ -466,8 +466,8 @@ export default function HomePage() {
             {[
               {
                 date: language === 'fr' ? 'Avril 2026' : 'April 2026',
-                title: language === 'fr' ? 'Publication SSRN — Optimisation Énergétique Datacenters' : 'SSRN Publication — Datacenter Energy Optimization',
-                excerpt: language === 'fr' ? 'Livre blanc académique sur l\'optimisation PUE des datacenters européens publié sur SSRN.' : 'Academic white paper on European datacenter PUE optimization published on SSRN.',
+                title: language === 'fr' ? 'Publication SSRN — Optimisation Énergétique Datacenters (en cours de revue)' : 'SSRN Publication — Datacenter Energy Optimization (Under Review)',
+                excerpt: language === 'fr' ? 'Livre blanc académique sur l\'optimisation PUE des datacenters européens, actuellement en cours de revue sur SSRN.' : 'Academic white paper on European datacenter PUE optimization, currently under review on SSRN.',
                 link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918',
                 tag: 'SSRN'
               },
