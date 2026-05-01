@@ -53,8 +53,8 @@ export default function AboutPage() {
       name: 'Jean-Pierre Véron',
       role: language === 'fr' ? 'Président & Fondateur' : 'Chairman & Founder',
       bio: language === 'fr'
-        ? "Professionnel de référence de l'investissement immobilier français et européen. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée en 2006 à un groupe immobilier européen coté — sortie réalisée deux ans avant la crise immobilière qui a restructuré le secteur. Directeur Général France de Kaufman & Broad pendant 20 ans — l'un des premiers promoteurs immobiliers cotés en France, plusieurs milliards d'euros de chiffre d'affaires cumulé. Président de Financière Norev. Plus de 40 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe."
-        : "Leading figure in French and European real estate investment. Founder of Financière Rive Gauche, a pan-European real estate investment platform divested in 2006 to a listed European real estate group — exit executed two years before the real estate crisis that restructured the sector. Managing Director France of Kaufman & Broad for 20 years — one of France's premier listed real estate developers, several billion euros of cumulative revenue. Chairman of Financière Norev. Over 40 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets across Europe.",
+        ? "Professionnel de référence de l'investissement immobilier français et européen. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée en 2006 à un groupe immobilier européen coté — sortie réalisée deux ans avant la crise immobilière qui a restructuré le secteur. Directeur Général France de Kaufman & Broad pendant 20 ans — sous sa direction, la filiale France a réalisé plusieurs milliards d'euros de chiffre d'affaires cumulé. Président de Financière Norev. Plus de 40 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe."
+        : "Leading figure in French and European real estate investment. Founder of Financière Rive Gauche, a pan-European real estate investment platform divested in 2006 to a listed European real estate group — exit executed two years before the real estate crisis that restructured the sector. Managing Director France of Kaufman & Broad for 20 years — under his leadership, the French subsidiary generated several billion euros in cumulative revenue. Chairman of Financière Norev. Over 40 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets across Europe.",
       linkedin: 'https://linkedin.com/in/jean-pierre-veron',
       highlights: [
         { icon: Award, text: language === 'fr' ? 'Sortie Financière Rive Gauche (2006, pré-crise)' : 'Financière Rive Gauche exit (2006, pre-crisis)' },
@@ -219,8 +219,8 @@ export default function AboutPage() {
                     </h4>
                     <p className="text-slate-400 text-sm">
                       {language === 'fr'
-                        ? 'Création de valeur par gestion active, expansion géographique'
-                        : 'Value creation through active management, geographic expansion'}
+                        ? 'Transformation des actifs acquis, certification énergétique EU Taxonomy, stabilisation des baux NNN long terme, expansion géographique ciblée.'
+                        : 'Transformation of acquired assets, EU Taxonomy energy certification, stabilization of long-term NNN leases, targeted geographic expansion.'}
                     </p>
                   </div>
                 </div>
@@ -591,8 +591,8 @@ export default function AboutPage() {
               </h3>
               <p className="text-slate-300 text-lg leading-relaxed">
                 {language === 'fr'
-                  ? "FINXIA Capital n'a pas ajouté l'intelligence artificielle à un modèle de gestion traditionnel. Le fonds a été conçu dès le premier jour comme un véhicule AI-native : les 18 agents autonomes de FINXIA ne sont pas des outils d'aide à la décision — ils sont l'infrastructure opérationnelle du fonds, couvrant l'ensemble du cycle d'investissement de la détection de deal à la sortie d'actif."
-                  : "FINXIA Capital did not add artificial intelligence to a traditional management model. The vehicle was designed from day one as AI-native: FINXIA's 18 autonomous agents are not decision-support tools — they are the fund's operational infrastructure, covering the full investment lifecycle from deal origination to asset exit."}
+                  ? "FINXIA Capital n'a pas ajouté l'intelligence artificielle à un modèle de gestion traditionnel. Le fonds a été conçu dès le premier jour comme un véhicule AI-native : les 18 agents autonomes de FINXIA ne sont pas des outils d'aide à la décision — ils sont l'infrastructure opérationnelle du fonds, couvrant l'ensemble du cycle d'investissement de la détection de deal à la sortie d'actif. À titre d'exemples : identification d'opportunités brownfield, modélisation financière, suivi de performance, veille réglementaire, gestion des risques ESG."
+                  : "FINXIA Capital did not add artificial intelligence to a traditional management model. The vehicle was designed from day one as AI-native: FINXIA's 18 autonomous agents are not decision-support tools — they are the fund's operational infrastructure, covering the full investment lifecycle from deal origination to asset exit. Examples include: brownfield opportunity identification, financial modeling, performance monitoring, regulatory watch, ESG risk management."}
               </p>
             </div>
           </div>
@@ -623,8 +623,8 @@ export default function AboutPage() {
               </h3>
               <p className="text-slate-600 text-sm mb-4">
                 {language === 'fr' 
-                  ? 'Partenaires opérationnels, institutionnels et co-investisseurs potentiels : contactez notre équipe.'
-                  : 'Operational partners, institutional partners and potential co-investors: contact our team.'}
+                  ? 'Partenaires opérationnels, institutionnels et co-investisseurs sur opérations ciblées : contactez notre équipe.'
+                  : 'Operational partners, institutional partners and co-investors on targeted transactions: contact our team.'}
               </p>
               <span className="text-[#C45A3B] text-sm font-medium inline-flex items-center gap-2">
                 {language === 'fr' ? 'Nous contacter' : 'Contact us'}
