@@ -293,7 +293,7 @@ export default function StrategiesPage() {
                             { quarter: 'Q2 2026', event: language === 'fr' ? 'LOI signée avec premier datacenter partenaire' : 'LOI signed with first partner datacenter' },
                             { quarter: 'Q3 2026', event: language === 'fr' ? 'Déploiement plateforme IA · Baseline IPMVP active' : 'AI platform deployment · Active IPMVP baseline' },
                             { quarter: 'Q4 2026', event: language === 'fr' ? 'Closing TITAN DC AI · Première certification BV' : 'TITAN DC AI closing · First BV certification' },
-                            { quarter: '2027', event: language === 'fr' ? 'Mise en service · Première distribution investisseurs' : 'Commissioning · First investor distribution' },
+                            { quarter: '2027', event: language === 'fr' ? 'Mise en service · Déploiement opérationnel des actifs acquis' : 'Commissioning · Operational deployment of acquired assets' },
                           ].map((item, idx) => (
                             <div key={idx} className="flex items-start gap-4">
                               <div className="flex-shrink-0 w-20 pt-1">
