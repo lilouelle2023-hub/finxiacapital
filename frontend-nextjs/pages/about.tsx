@@ -268,7 +268,7 @@ export default function AboutPage() {
               <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
                 <img
                   src="/images/centorial.jpg"
-                  alt={language === 'fr' ? "Le Centorial — Restructuration patrimoniale, ancien siège Crédit Lyonnais" : "Le Centorial — Heritage restructuring, former Crédit Lyonnais headquarters"}
+                  alt={language === 'fr' ? "Le Centorial — Façade haussmannienne classée, ancien siège Crédit Lyonnais Paris" : "Le Centorial — Listed Haussmannian façade, former Crédit Lyonnais headquarters Paris"}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -280,29 +280,29 @@ export default function AboutPage() {
                 </p>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {language === 'fr'
-                    ? "Restructuration lourde, façades classées préservées."
-                    : "Heavy restructuring, listed façades preserved."}
+                    ? "Façade haussmannienne classée — Paris IXe."
+                    : "Listed Haussmannian façade — Paris 9th arr."}
                 </p>
               </figcaption>
             </figure>
 
-            <figure className="group" data-testid="heritage-centorial-2">
+            <figure className="group" data-testid="heritage-centorial-atrium">
               <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
                 <img
                   src="/images/centorial-2.jpg"
-                  alt={language === 'fr' ? "Façades historiques classées du Centorial" : "Listed historical façades of Le Centorial"}
+                  alt={language === 'fr' ? "Atrium intérieur du Centorial — verrière Eiffel classée monument historique" : "Centorial interior atrium — Eiffel-style listed glass roof"}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <figcaption>
-                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Patrimoine classé' : 'Listed Heritage'}</h3>
+                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Centorial — Atrium' : 'Centorial — Atrium'}</h3>
                 <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Façades historiques · Centorial' : 'Historical façades · Centorial'}
+                  {language === 'fr' ? 'Verrière classée · Patrimoine historique' : 'Listed glass dome · Historical heritage'}
                 </p>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {language === 'fr'
-                    ? "Préservation patrimoniale combinée à une mise aux standards institutionnels."
+                    ? "Préservation patrimoniale combinée à la mise aux standards institutionnels."
                     : "Heritage preservation combined with upgrade to institutional standards."}
                 </p>
               </figcaption>
@@ -312,7 +312,7 @@ export default function AboutPage() {
               <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
                 <img
                   src="/images/coeur-defense.jpg"
-                  alt={language === 'fr' ? "Cœur Défense — Discipline institutionnelle Paris La Défense" : "Cœur Défense — Institutional discipline Paris La Défense"}
+                  alt={language === 'fr' ? "Cœur Défense — Façade courbe extérieure, Paris La Défense" : "Cœur Défense — Curved exterior façade, Paris La Défense"}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -320,12 +320,34 @@ export default function AboutPage() {
               <figcaption>
                 <h3 className="font-serif text-lg mb-1">Cœur Défense</h3>
                 <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Paris La Défense' : 'Paris La Défense'}
+                  {language === 'fr' ? 'Paris La Défense · Tertiaire grand format' : 'Paris La Défense · Large-scale tertiary'}
                 </p>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {language === 'fr'
-                    ? "Opération institutionnelle de référence — discipline d'exécution sur grand actif tertiaire."
-                    : "Reference institutional operation — execution discipline on large-scale tertiary asset."}
+                    ? "Opération institutionnelle de référence — discipline d'exécution."
+                    : "Reference institutional operation — execution discipline."}
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="group" data-testid="heritage-coeur-defense-atrium">
+              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
+                <img
+                  src="/images/coeur-defense-2.jpg"
+                  alt={language === 'fr' ? "Cœur Défense — Atrium central, espaces communs grand format" : "Cœur Défense — Central atrium, large-format common areas"}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <figcaption>
+                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Cœur Défense — Atrium' : 'Cœur Défense — Atrium'}</h3>
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
+                  {language === 'fr' ? 'Espaces communs · Multi-tenants' : 'Common areas · Multi-tenant'}
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "Repositionnement d'actif tertiaire grand format en plateforme multi-locataires."
+                    : "Repositioning of large-scale tertiary asset into multi-tenant platform."}
                 </p>
               </figcaption>
             </figure>
@@ -333,8 +355,8 @@ export default function AboutPage() {
             <figure className="group" data-testid="heritage-washington-plaza">
               <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
                 <img
-                  src="/images/washington-plaza.jpg"
-                  alt={language === 'fr' ? "Washington Plaza — Repositionnement corporate Shell Petroleum" : "Washington Plaza — Corporate repositioning Shell Petroleum"}
+                  src="/images/washington-plaza-2.jpg"
+                  alt={language === 'fr' ? "Washington Plaza — Façade Art Déco signée, ex-Shell Petroleum Paris" : "Washington Plaza — Signed Art Deco façade, ex-Shell Petroleum Paris"}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -342,7 +364,7 @@ export default function AboutPage() {
               <figcaption>
                 <h3 className="font-serif text-lg mb-1">Washington Plaza</h3>
                 <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
-                  {language === 'fr' ? 'Ex-Shell Petroleum · Paris' : 'Ex-Shell Petroleum · Paris'}
+                  {language === 'fr' ? 'Ex-Shell Petroleum · Paris VIIIe' : 'Ex-Shell Petroleum · Paris 8th arr.'}
                 </p>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   {language === 'fr'
@@ -351,12 +373,59 @@ export default function AboutPage() {
                 </p>
               </figcaption>
             </figure>
+
+            <figure className="group" data-testid="heritage-washington-plaza-aerial">
+              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4">
+                <img
+                  src="/images/washington-plaza.jpg"
+                  alt={language === 'fr' ? "Washington Plaza — Vue aérienne du complexe curvilinéaire ex-Shell" : "Washington Plaza — Aerial view of the curvilinear ex-Shell complex"}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <figcaption>
+                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Washington Plaza — Aérien' : 'Washington Plaza — Aerial'}</h3>
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
+                  {language === 'fr' ? 'Architecture curvilinéaire emblématique' : 'Iconic curvilinear architecture'}
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "Site emblématique du tertiaire parisien des années 1970."
+                    : "Iconic site of 1970s Parisian tertiary architecture."}
+                </p>
+              </figcaption>
+            </figure>
+
+            <figure className="group lg:col-span-1" data-testid="heritage-camincourt-logistics">
+              <div className="aspect-[4/3] overflow-hidden bg-slate-100 mb-4 relative">
+                <img
+                  src="/images/camincourt-logistics.jpg"
+                  alt={language === 'fr' ? "Plateforme logistique Vallée du Camincourt — 116 991 m² SDP, Saint-Sauveur (80)" : "Camincourt logistics platform — 116,991 sqm GFA, Saint-Sauveur (80) France"}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <span className="absolute top-3 right-3 bg-[#C45A3B] text-white text-[10px] uppercase tracking-wider px-2 py-1 font-medium">
+                  {language === 'fr' ? 'ADN TITAN DC AI' : 'TITAN DC AI DNA'}
+                </span>
+              </div>
+              <figcaption>
+                <h3 className="font-serif text-lg mb-1">{language === 'fr' ? 'Vallée du Camincourt' : 'Camincourt Valley'}</h3>
+                <p className="text-[#C45A3B] text-xs uppercase tracking-wider mb-2">
+                  {language === 'fr' ? 'Plateforme logistique · 116 991 m² · Saint-Sauveur (80)' : 'Logistics platform · 116,991 sqm · Saint-Sauveur (80) FR'}
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "Développement industriel grand format en partenariat avec Elcimaï — même savoir-faire structurel et énergétique transposé aujourd'hui aux datacenters européens via TITAN DC AI."
+                    : "Large-scale industrial development in partnership with Elcimaï — the same structural and energy expertise transposed today to European datacenters via TITAN DC AI."}
+                </p>
+              </figcaption>
+            </figure>
           </div>
 
           <p className="text-center text-slate-500 text-sm italic mt-12 max-w-3xl mx-auto">
             {language === 'fr'
-              ? "Réalisations historiques de l'équipe fondatrice. Le même savoir-faire — restructuration brownfield, négociation institutionnelle, certification — est aujourd'hui appliqué aux datacenters européens via TITAN DC AI."
-              : "Historical track record of the founding team. The same know-how — brownfield restructuring, institutional negotiation, certification — is today applied to European datacenters via TITAN DC AI."}
+              ? "Réalisations historiques de l'équipe fondatrice — tertiaire prime, patrimoine classé et infrastructure logistique grand format. Le même savoir-faire — restructuration brownfield, négociation institutionnelle, certification — est aujourd'hui appliqué aux datacenters européens via TITAN DC AI."
+              : "Historical track record of the founding team — prime tertiary, listed heritage and large-scale logistics infrastructure. The same know-how — brownfield restructuring, institutional negotiation, certification — is today applied to European datacenters via TITAN DC AI."}
           </p>
         </div>
       </section>
