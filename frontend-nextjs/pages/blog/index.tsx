@@ -9,6 +9,18 @@ export default function BlogIndexPage() {
 
   const articles = [
     {
+      slug: 'data-centers-brown-to-green-europe-strategie-investissement',
+      title: language === 'fr'
+        ? "Data centers brown-to-green : pourquoi les actifs existants vont battre les greenfields en Europe"
+        : "Brown-to-Green Datacenters: Why Existing Assets Will Beat Greenfields in Europe",
+      excerpt: language === 'fr'
+        ? "Les data centers existants mal optimisés offrent un rendement supérieur aux greenfields en Europe. Pourquoi le brown-to-green est la thèse de la décennie."
+        : "Existing, poorly optimized datacenters offer superior returns over greenfields in Europe. Why brown-to-green is the decade's investment thesis.",
+      date: '2026-05-23',
+      category: 'Investment Strategy',
+      readTime: '12 min'
+    },
+    {
       slug: 'data-centers-ia-energie-strategie-europe-2030',
       title: language === 'fr'
         ? "Data centers IA : l'angle mort énergétique de la stratégie européenne"

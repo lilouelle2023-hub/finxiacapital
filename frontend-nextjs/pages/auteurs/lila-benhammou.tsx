@@ -5,6 +5,7 @@ import { useLanguage } from '../../context/LanguageContext';
 
 const articles = [
   { href: "/guides/eed-directive-datacenter-2026/", title: "Guide complet EED datacenters 2026 — Articles 12 et 21", tag: "Guide de référence" },
+  { href: "/blog/data-centers-brown-to-green-europe-strategie-investissement/", title: "Data centers brown-to-green : pourquoi les actifs existants vont battre les greenfields en Europe", tag: "Investment Strategy" },
   { href: "/blog/data-centers-ia-energie-strategie-europe-2030/", title: "Data centers IA : l'angle mort énergétique de la stratégie européenne", tag: "Digital Infrastructure" },
   { href: "/blog/stackit-lidl-cloud-souverain-infrastructure-data-centers-europe/", title: "Lidl, STACKIT et le cloud souverain européen : la souveraineté se joue dans le béton", tag: "Digital Infrastructure" },
   { href: "/blog/eed-directive-secret-commercial-pue-datacenters-europe/", title: "Directive EED, secret commercial et PUE : ce que l'Europe ne veut pas voir sur ses data centers", tag: "Regulatory" },
