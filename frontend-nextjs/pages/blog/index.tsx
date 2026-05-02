@@ -9,6 +9,42 @@ export default function BlogIndexPage() {
 
   const articles = [
     {
+      slug: 'data-centers-ia-energie-strategie-europe-2030',
+      title: language === 'fr'
+        ? "Data centers IA : l'angle mort énergétique de la stratégie européenne"
+        : "AI Datacenters: The Energy Blind Spot of European Strategy",
+      excerpt: language === 'fr'
+        ? "L'IA fait exploser la demande électrique des data centers. L'Europe peut-elle aligner ambitions IA et contraintes réseau ? Analyse chiffrée (IEA, Irlande 21%) et stratégie FINXIA."
+        : "AI is exploding datacenter electricity demand. Can Europe align AI ambitions with grid constraints? Data-driven analysis and FINXIA strategy.",
+      date: '2026-05-16',
+      category: 'Digital Infrastructure',
+      readTime: '11 min'
+    },
+    {
+      slug: 'stackit-lidl-cloud-souverain-infrastructure-data-centers-europe',
+      title: language === 'fr'
+        ? "Lidl, STACKIT et le cloud souverain européen : la souveraineté se joue dans le béton"
+        : "Lidl, STACKIT and European Sovereign Cloud: Sovereignty is Built in Concrete",
+      excerpt: language === 'fr'
+        ? "STACKIT et Lidl font les gros titres pour le cloud souverain européen. Mais la souveraineté réelle se joue dans les MW, le réseau et l'efficacité énergétique."
+        : "STACKIT and Lidl make headlines for European sovereign cloud. But real sovereignty is fought in megawatts, grid and energy efficiency.",
+      date: '2026-05-09',
+      category: 'Digital Infrastructure',
+      readTime: '11 min'
+    },
+    {
+      slug: 'eed-directive-secret-commercial-pue-datacenters-europe',
+      title: language === 'fr'
+        ? "Directive EED, secret commercial et PUE : ce que l'Europe ne veut pas voir sur ses data centers"
+        : "EED Directive, Trade Secret and PUE: What Europe Won't Look at on its Datacenters",
+      excerpt: language === 'fr'
+        ? "L'Article 12 EED impose un reporting annuel aux data centers UE. Mais la transparence reste partielle. Ce que cela change pour les investisseurs et les actifs."
+        : "EED Article 12 imposes annual reporting on EU datacenters. But transparency remains partial. What this changes for investors and assets.",
+      date: '2026-05-02',
+      category: 'Regulatory Compliance',
+      readTime: '10 min'
+    },
+    {
       slug: language === 'fr' ? 'loi-pinm-statut-datacenter-brown-to-green' : 'pinm-law-datacenter-brown-to-green-status',
       title: language === 'fr'
         ? "Loi PINM : ce que le statut de Projet d'Intérêt National Majeur change pour les datacenters B2G"

@@ -342,4 +342,44 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/contact/" />
   </url>
 
+  <!-- GUIDE EED DATACENTERS 2026 -->
+  <url>
+    <loc>https://finxiacapital.com/guides/eed-directive-datacenter-2026/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- AUTEURE LILA BENHAMMOU -->
+  <url>
+    <loc>https://finxiacapital.com/auteurs/lila-benhammou/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- BLOG: EED DIRECTIVE SECRET COMMERCIAL PUE -->
+  <url>
+    <loc>https://finxiacapital.com/blog/eed-directive-secret-commercial-pue-datacenters-europe/</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- BLOG: STACKIT LIDL CLOUD SOUVERAIN -->
+  <url>
+    <loc>https://finxiacapital.com/blog/stackit-lidl-cloud-souverain-infrastructure-data-centers-europe/</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- BLOG: DATA CENTERS IA ENERGIE STRATEGIE EUROPE 2030 -->
+  <url>
+    <loc>https://finxiacapital.com/blog/data-centers-ia-energie-strategie-europe-2030/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

@@ -5,6 +5,9 @@ import { useLanguage } from '../../context/LanguageContext';
 
 const articles = [
   { href: "/guides/eed-directive-datacenter-2026/", title: "Guide complet EED datacenters 2026 — Articles 12 et 21", tag: "Guide de référence" },
+  { href: "/blog/data-centers-ia-energie-strategie-europe-2030/", title: "Data centers IA : l'angle mort énergétique de la stratégie européenne", tag: "Digital Infrastructure" },
+  { href: "/blog/stackit-lidl-cloud-souverain-infrastructure-data-centers-europe/", title: "Lidl, STACKIT et le cloud souverain européen : la souveraineté se joue dans le béton", tag: "Digital Infrastructure" },
+  { href: "/blog/eed-directive-secret-commercial-pue-datacenters-europe/", title: "Directive EED, secret commercial et PUE : ce que l'Europe ne veut pas voir sur ses data centers", tag: "Regulatory" },
   { href: "/blog/eed-article-12-declaration-datacenter-guide-2026/", title: "EED Article 12 : Guide complet pour la déclaration obligatoire des datacenters avant le 15 mai 2026", tag: "Regulatory" },
   { href: "/blog/pue-optimisation-datacenters-europeens-guide-2026/", title: "PUE : Guide complet d'optimisation des datacenters européens en 2026", tag: "Performance" },
   { href: "/blog/titan-dc-ai-strategie-datacenters-europeens-finxia/", title: "TITAN DC AI — Stratégie datacenters européens FINXIA Capital", tag: "Stratégie" },
