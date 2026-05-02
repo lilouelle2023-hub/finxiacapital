@@ -46,7 +46,7 @@ Root Directory: ./
 Ajoutez cette variable dans les Settings du projet :
 
 ```
-NEXT_PUBLIC_BACKEND_URL=https://silly-mcclintock-1.preview.emergentagent.com
+NEXT_PUBLIC_BACKEND_URL=https://finxia-preview.preview.emergentagent.com
 ```
 
 ### **6. Déployer**

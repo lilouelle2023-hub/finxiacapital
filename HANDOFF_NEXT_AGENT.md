@@ -162,7 +162,7 @@
 
 ### **Frontend Next.js** (`/app/frontend-nextjs/.env.local`)
 ```env
-NEXT_PUBLIC_BACKEND_URL=https://silly-mcclintock-1.preview.emergentagent.com
+NEXT_PUBLIC_BACKEND_URL=https://finxia-preview.preview.emergentagent.com
 ```
 
 ### **Backend FastAPI** (`/app/backend/.env`)
@@ -214,7 +214,7 @@ Créer une page simple avec :
 
 4. ✅ **Test formulaire Contact** :
    ```bash
-   curl -X POST https://silly-mcclintock-1.preview.emergentagent.com/api/contact \
+   curl -X POST https://finxia-preview.preview.emergentagent.com/api/contact \
      -H "Content-Type: application/json" \
      -d '{"name":"Test","email":"test@example.com","message":"Test message"}'
    ```

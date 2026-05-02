@@ -39,7 +39,7 @@ In Netlify dashboard, go to:
 
 Add:
 ```
-NEXT_PUBLIC_BACKEND_URL=https://silly-mcclintock-1.preview.emergentagent.com
+NEXT_PUBLIC_BACKEND_URL=https://finxia-preview.preview.emergentagent.com
 ```
 
 *(Replace with your actual backend URL if different)*

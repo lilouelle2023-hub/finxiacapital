@@ -22,7 +22,7 @@
 
 ### 🔧 Backend (FastAPI)
 **Hébergement** : Emergent Kubernetes  
-**URL** : https://silly-mcclintock-1.preview.emergentagent.com  
+**URL** : https://finxia-preview.preview.emergentagent.com  
 **Port** : 8001
 
 **Configuration** :
@@ -82,7 +82,7 @@ Séparation complète Frontend/Backend :
 
 ### Frontend (.env.local)
 ```env
-NEXT_PUBLIC_BACKEND_URL=https://silly-mcclintock-1.preview.emergentagent.com
+NEXT_PUBLIC_BACKEND_URL=https://finxia-preview.preview.emergentagent.com
 ```
 
 ### Backend (.env)
@@ -104,7 +104,7 @@ User → finxiacapital.com (Netlify CDN)
 
 ### 2. Appel API (ex: Formulaire de Contact)
 ```
-Browser → fetch('https://silly-mcclintock-1.preview.emergentagent.com/api/contact')
+Browser → fetch('https://finxia-preview.preview.emergentagent.com/api/contact')
         → FastAPI backend (Kubernetes)
         → MongoDB Atlas
         → Response JSON
@@ -161,10 +161,10 @@ curl -s https://finxiacapital.com | grep "FINXIA Capital"
 ### Backend
 ```bash
 # Health check
-curl https://silly-mcclintock-1.preview.emergentagent.com/api/health
+curl https://finxia-preview.preview.emergentagent.com/api/health
 
 # Contact form
-curl -X POST https://silly-mcclintock-1.preview.emergentagent.com/api/contact \
+curl -X POST https://finxia-preview.preview.emergentagent.com/api/contact \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Test",

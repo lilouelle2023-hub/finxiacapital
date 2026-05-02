@@ -43,7 +43,7 @@
 
 4. **Variables d'environnement** :
    ```
-   NEXT_PUBLIC_BACKEND_URL=https://silly-mcclintock-1.preview.emergentagent.com
+   NEXT_PUBLIC_BACKEND_URL=https://finxia-preview.preview.emergentagent.com
    ```
 
 5. **Cliquer sur "Deploy"** → Vercel va :
