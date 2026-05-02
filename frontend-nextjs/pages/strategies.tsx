@@ -25,7 +25,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Cible d\'actifs : sites industriels brownfield 20-70 MW IT en France, Espagne, Italie et Europe du Nord' : 'Target assets: 20-70 MW IT brownfield industrial sites in France, Spain, Italy and Northern Europe',
         language === 'fr' ? 'Avantage coût : entrée significativement moins chère au MW que le greenfield, délais de mise en service réduits' : 'Cost advantage: significantly cheaper entry per MW than greenfield, reduced commissioning timelines',
         language === 'fr' ? 'Clients : opérateurs cloud tier-2 européens, acteurs IA inférence, administrations publiques, souveraineté des données' : 'Tenants: European tier-2 cloud operators, AI inference players, public administrations, data sovereignty',
-        language === 'fr' ? 'Bail NNN long terme (10-15 ans) signé avant ou au commissioning · revenu locatif contractualisé pré-engagement capital' : 'Long-term NNN lease (10-15 years) signed before or at commissioning · rental revenue contracted before full capital deployment',
+        language === 'fr' ? 'Modèle cible : bail NNN long terme (10-15 ans) · engagement locataire recherché avant ou au commissioning · revenu contractualisé conditionné à la conformité technique' : 'Target model: long-term NNN lease (10-15 years) · tenant commitment sought before or at commissioning · contractualized revenue conditioned on technical compliance',
         language === 'fr' ? 'Efficacité énergétique : protocole IPMVP, PUE certifié EU Taxonomy 8.1 et conforme Directive EED' : 'Energy efficiency: IPMVP protocol, EU Taxonomy 8.1-certified PUE and EED Directive-compliant',
         language === 'fr' ? 'Financement : capital propre + dette senior amortissante + Green Bond ESG ICMA conditionné aux objectifs PUE' : 'Financing: own equity + senior amortizing debt + ICMA ESG Green Bond conditioned on PUE targets',
       ],
@@ -322,17 +322,17 @@ export default function StrategiesPage() {
                         </h4>
                         <div className="flex items-center gap-6 mb-4">
                           <div className="text-center">
-                            <div className="text-5xl font-bold text-[#C45A3B]">1,08</div>
-                            <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">PUE</div>
+                            <div className="text-5xl font-bold text-[#C45A3B]">≤ 1,30</div>
+                            <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'PUE cible' : 'Target PUE'}</div>
                           </div>
                           <div className="flex-1">
                             <div className="text-xs font-medium text-[#C45A3B] uppercase tracking-wider mb-1">
-                              {language === 'fr' ? 'Certifié IPMVP Bureau Veritas' : 'IPMVP Bureau Veritas Certified'}
+                              {language === 'fr' ? 'Méthode IPMVP Option C' : 'IPMVP Option C Method'}
                             </div>
                             <p className="text-sm text-slate-300 leading-relaxed">
                               {language === 'fr'
-                                ? "Le datacenter partenaire de TITAN DC AI affiche un PUE mesuré de 1,08 — certifié selon la méthode IPMVP Option C par Bureau Veritas. Cette certification conditionne les clauses SLL des green bonds ICMA et constitue la preuve technique de la thèse brown-to-green."
-                                : "TITAN DC AI partner datacenter displays a measured PUE of 1.08 — certified according to IPMVP Option C method by Bureau Veritas. This certification conditions ICMA green bond SLL clauses and constitutes technical proof of the brown-to-green thesis."}
+                                ? "Pour chaque actif acquis dans le cadre de TITAN DC AI, FINXIA Capital cible un PUE inférieur ou égal à 1,30 — seuil de référence de l'Article 21 EED à horizon 2027. La progression PUE sera mesurée selon la méthode IPMVP Option C et documentée en vue d'une certification indépendante."
+                                : "For each asset acquired under TITAN DC AI, FINXIA Capital targets a PUE below or equal to 1.30 — the EED Article 21 reference threshold by 2027. PUE progression will be measured according to IPMVP Option C methodology and documented for independent certification."}
                             </p>
                           </div>
                         </div>
@@ -391,8 +391,8 @@ export default function StrategiesPage() {
                             </h5>
                             <p className="text-slate-600 text-sm leading-relaxed">
                               {language === 'fr'
-                                ? "Première échéance de déclaration obligatoire pour les datacenters européens. Les actifs TITAN DC AI anticipent cette conformité avec certification IPMVP Bureau Veritas."
-                                : "First mandatory declaration deadline for European datacenters. TITAN DC AI assets anticipate this compliance with IPMVP Bureau Veritas certification."}
+                                ? "Première échéance de déclaration obligatoire pour les datacenters européens. La stratégie TITAN DC AI est structurée pour anticiper cette conformité dès l'acquisition des premiers actifs — méthode IPMVP et certification indépendante intégrées au plan de rénovation."
+                                : "First mandatory declaration deadline for European datacenters. The TITAN DC AI strategy is structured to anticipate this compliance from the first asset acquisitions — IPMVP methodology and independent certification integrated into the retrofit plan."}
                               {' '}
                               <a 
                                 href={language === 'fr' ? '/blog/eed-article-12-declaration-datacenter-guide-2026' : '/en/blog/eed-article-12-datacenter-declaration-guide-2026'}
@@ -494,39 +494,10 @@ export default function StrategiesPage() {
                       <p className="text-slate-500 text-xs uppercase tracking-wider mb-6">
                         {language === 'fr' ? 'Late-stage IA · Infrastructure · Secondaires' : 'Late-stage AI · Infrastructure · Secondaries'}
                       </p>
-                      <ul className="space-y-4">
-                        <li className="flex items-baseline gap-3">
-                          <span className="text-[#C45A3B] font-bold">·</span>
-                          <div>
-                            <span className="font-semibold text-slate-900">Cohere</span>
-                            <span className="text-slate-600 text-sm ml-2">
-                              — {language === 'fr' ? 'IA générative entreprise · Series C' : 'Enterprise generative AI · Series C'}
-                            </span>
-                          </div>
-                        </li>
-                        <li className="flex items-baseline gap-3">
-                          <span className="text-[#C45A3B] font-bold">·</span>
-                          <div>
-                            <span className="font-semibold text-slate-900">Scale AI</span>
-                            <span className="text-slate-600 text-sm ml-2">
-                              — {language === 'fr' ? 'Infrastructure données IA · Late-stage' : 'AI data infrastructure · Late-stage'}
-                            </span>
-                          </div>
-                        </li>
-                        <li className="flex items-baseline gap-3">
-                          <span className="text-[#C45A3B] font-bold">·</span>
-                          <div>
-                            <span className="font-semibold text-slate-900">Databricks</span>
-                            <span className="text-slate-600 text-sm ml-2">
-                              — {language === 'fr' ? 'Lakehouse IA & analytics · Secondaires' : 'AI Lakehouse & analytics · Secondaries'}
-                            </span>
-                          </div>
-                        </li>
-                      </ul>
-                      <p className="text-slate-500 text-xs italic mt-6 leading-relaxed">
+                      <p className="text-slate-700 leading-relaxed">
                         {language === 'fr'
-                          ? "Liste indicative des sociétés visées par le pôle C.CAPITAL. Chaque position fait l'objet d'une analyse approfondie ; le taux de conversion est volontairement maintenu sous 5%."
-                          : "Indicative list of companies targeted by the C.CAPITAL division. Each position undergoes thorough analysis; the conversion rate is deliberately maintained below 5%."}
+                          ? "Univers cible indicatif : sociétés late-stage dans l'IA, l'infrastructure cloud et les marchés secondaires décotés. Chaque position fait l'objet d'une analyse approfondie avant engagement. Taux de conversion volontairement maintenu sous 5%."
+                          : "Indicative target universe: late-stage companies in AI, cloud infrastructure, and discounted secondary markets. Every position undergoes thorough analysis before commitment. Conversion rate deliberately maintained below 5%."}
                       </p>
                     </div>
                   )}

@@ -187,8 +187,8 @@ export default function AboutPage() {
               <div className="section-divider mb-8" />
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
                 {language === 'fr'
-                  ? 'FINXIA Capital ambitionne de devenir un gestionnaire d\'actifs alternatifs pan-européen de référence, reconnu pour sa discipline institutionnelle, sa capacité d\'innovation et son aptitude à générer une valeur durable à travers les cycles de marché.'
-                  : 'FINXIA Capital aims to become a reference pan-European alternative asset manager, recognized for its institutional discipline, innovation capacity, and ability to generate sustainable value across market cycles.'}
+                  ? "FINXIA Capital ambitionne de constituer un portefeuille d'actifs réels européens de référence, géré avec une discipline institutionnelle et un avantage technologique distinctif."
+                  : "FINXIA Capital aims to build a reference portfolio of European real assets, managed with institutional discipline and a distinctive technological edge."}
               </p>
             </div>
             <div>

@@ -370,8 +370,8 @@ export default function HomePage() {
                 <div className="text-[#C45A3B] text-xs font-semibold uppercase tracking-wider mb-3">TITAN DC AI</div>
                 <p className="text-slate-300 text-sm leading-relaxed italic">
                   {language === 'fr'
-                    ? "Le Deal Intelligence identifie les friches industrielles correspondant aux critères techniques TITAN (emprise, raccordement HT, conformité ICPE) avant mise sur le marché. L'Asset Monitor suit en continu la conformité PUE et les indicateurs réglementaires EED sur chaque actif en portefeuille."
-                    : "Deal Intelligence identifies industrial brownfields matching TITAN technical criteria (footprint, HV connection, ICPE compliance) before going to market. Asset Monitor continuously tracks PUE compliance and EED regulatory indicators across each portfolio asset."}
+                    ? "Le Deal Intelligence identifie les friches industrielles correspondant aux critères techniques TITAN (emprise, raccordement HT, conformité ICPE) avant mise sur le marché. L'Asset Monitor est conçu pour suivre en continu la conformité PUE et les indicateurs réglementaires EED sur chaque actif acquis en portefeuille."
+                    : "Deal Intelligence identifies industrial brownfields matching TITAN technical criteria (footprint, HV connection, ICPE compliance) before going to market. Asset Monitor is designed to continuously track PUE compliance and EED regulatory indicators on each acquired portfolio asset."}
                 </p>
               </div>
               <div className="bg-white/5 p-6 border-l-2 border-[#C45A3B]">
