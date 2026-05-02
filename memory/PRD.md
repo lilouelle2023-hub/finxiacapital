@@ -40,6 +40,13 @@ Build a bilingual (FR/EN) institutional website for FINXIA Capital positioning t
   - Added `data-testid="home-news-card-<slug>"` for each card
   - Verified in static HTML: top 3 now correctly show brown-to-green (23 mai), data-centers-ia (16 mai), stackit-lidl (9 mai)
   - Future posts will surface automatically by adding an entry to `blogPosts`
+- **2026-02-06** Auto-generated sitemap.xml:
+  - Extracted blog data to `/app/frontend-nextjs/data/blogPosts.json` (pure JSON = shared source of truth)
+  - `blogPosts.ts` now re-exports typed from JSON
+  - New `/app/frontend-nextjs/scripts/generate-sitemap.mjs` — reads JSON + static page registry, outputs `public/sitemap.xml`
+  - Wired to `prebuild` hook in `package.json` → runs automatically before `next build`
+  - 40 URLs generated (20 static bilingual + 16 bilingual articles + 4 FR-only)
+  - hreflang alternates auto-computed, `<lastmod>` tied to each post's `date` field
 
 ## Backlog
 - P1: Translate the 3 long-form articles (EED, PUE, Guide, Author) to English
