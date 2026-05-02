@@ -203,7 +203,7 @@ export default function HomePage() {
                 data-testid="hero-cta-strategies"
                 className="btn-primary inline-flex items-center justify-center gap-2"
               >
-                {language === 'fr' ? 'Découvrir TITAN DC AI' : 'Explore TITAN DC AI'}
+                {language === 'fr' ? "Découvrir nos axes d'investissements" : 'Explore our investment pillars'}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
