@@ -95,14 +95,53 @@ export default function GuideEedPage() {
               <span className="text-slate-400">•</span>
               <span className="text-slate-300">{t.readTime}</span>
             </div>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight">{t.title}</h1>
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-white">{t.title}</h1>
             <p className="text-slate-300 text-sm">Par <Link href="/auteurs/lila-benhammou/" className="text-[#C45A3B] hover:underline">{t.author}</Link> — FINXIA Capital</p>
           </div>
         </header>
 
         <div className="py-16 md:py-24">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="prose prose-slate prose-lg max-w-none">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:grid lg:grid-cols-4 lg:gap-12">
+
+            {/* TOC Sidebar — desktop only */}
+            <aside className="hidden lg:block lg:col-span-1">
+              <nav
+                data-testid="guide-toc"
+                aria-label="Table des matières"
+                className="sticky top-28 border-l-2 border-slate-200"
+              >
+                <p className="text-[#C45A3B] text-xs font-semibold uppercase tracking-wider pl-4 mb-4">Sommaire</p>
+                <ul className="space-y-2">
+                  {[
+                    { id: 'contexte', label: 'Contexte' },
+                    { id: 'article-12', label: 'Article 12 — Déclaration 15 mai 2026' },
+                    { id: 'article-21', label: 'Article 21 — PUE ≤ 1,30' },
+                    { id: 'ipmvp', label: 'IPMVP Option C' },
+                    { id: 'taxonomy', label: 'EU Taxonomy 8.1' },
+                    { id: 'plan-90-jours', label: 'Plan 90 jours' },
+                    { id: 'faq', label: 'FAQ — 12 questions' },
+                  ].map((item) => (
+                    <li key={item.id}>
+                      <a
+                        href={`#${item.id}`}
+                        className="block pl-4 py-1.5 text-sm text-slate-600 hover:text-[#C45A3B] hover:border-l-2 hover:border-[#C45A3B] hover:-ml-[2px] transition-colors leading-snug"
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-8 pl-4 pt-4 border-t border-slate-200">
+                  <p className="text-xs text-slate-500 mb-2">Auteure</p>
+                  <Link href="/auteurs/lila-benhammou/" className="text-sm font-medium text-slate-700 hover:text-[#C45A3B] transition-colors">
+                    Lila Benhammou →
+                  </Link>
+                </div>
+              </nav>
+            </aside>
+
+            <div className="lg:col-span-3 max-w-3xl">
+            <div className="prose prose-slate prose-lg max-w-none scroll-mt-28 [&_h2]:scroll-mt-28 [&_h3]:scroll-mt-28">
               <p className="text-xl text-slate-700 font-medium leading-relaxed mb-8">
                 La Directive européenne sur l&apos;efficacité énergétique (EED 2023/1791, refonte adoptée le 13 septembre 2023 et entrée en vigueur le 10 octobre 2023) marque la transformation réglementaire la plus structurante qu&apos;ait connu le secteur européen des datacenters depuis la directive IED de 2010. En consacrant pour la première fois un régime spécifique aux datacenters, l&apos;Union européenne trace une trajectoire binaire : d&apos;ici janvier 2027, chaque datacenter dépassant 500 kW IT devra être soit conforme (PUE ≤ 1,30, déclaration Article 12 à jour, REF documenté), soit sortir du marché institutionnel — disqualifié des appels d&apos;offres publics, exclu du financement Green Bond, décoté à la revente de 15 à 30 %.
               </p>
@@ -113,7 +152,7 @@ export default function GuideEedPage() {
                 Il s&apos;adresse aux opérateurs de datacenters (hyperscalers, colocations, enterprise DC), aux directeurs financiers et ESG devant piloter la mise en conformité, aux investisseurs institutionnels qui évaluent l&apos;éligibilité Taxonomie de leurs actifs, et aux consultants techniques accompagnant ces transitions.
               </p>
 
-              <h2>Contexte : pourquoi l&apos;UE régule l&apos;efficacité des datacenters</h2>
+              <h2 id="contexte">Contexte : pourquoi l&apos;UE régule l&apos;efficacité des datacenters</h2>
               <p>
                 Entre 2015 et 2024, la consommation énergétique des datacenters européens a augmenté de <strong>76 %</strong>, passant de 53 TWh à environ 93 TWh selon le dernier rapport consolidé du Joint Research Centre publié en novembre 2024. Cette progression, largement portée par la demande cloud puis IA, représente désormais environ 3 % de la consommation électrique finale de l&apos;UE — avec des concentrations supérieures à 15 % dans certaines zones urbaines (Dublin, Amsterdam, Francfort, Paris).
               </p>
@@ -130,7 +169,7 @@ export default function GuideEedPage() {
                 Cette architecture à trois étages — mesure, norme, financement — est sans équivalent dans les autres grandes économies. Aux États-Unis, la régulation reste sectorielle et décentralisée (programmes EnergyStar non contraignants). Au Japon, le Top Runner Program impose des benchmarks mais sans déclaration publique. En Chine, les quotas par province sont appliqués mais sans transparence internationale. L&apos;Europe devient donc le premier bloc à imposer un régime complet et harmonisé — avec l&apos;ambition de créer un benchmark mondial.
               </p>
 
-              <h2>Article 12 — déclaration obligatoire avant le 15 mai 2026</h2>
+              <h2 id="article-12">Article 12 — déclaration obligatoire avant le 15 mai 2026</h2>
               <h3>Qui doit déclarer</h3>
               <p>Tout datacenter situé sur le territoire de l&apos;UE dont la puissance IT installée dépasse <strong>500 kW</strong>. Le seuil s&apos;entend de la puissance électrique nominale des équipements IT (serveurs, stockage, réseau), hors auxiliaires refroidissement et alimentation. Les colocations multi-tenants, les datacenters d&apos;entreprise captifs, les salles informatiques industrielles centralisées sont tous couverts dès qu&apos;ils franchissent ce seuil.</p>
               <h3>Quoi déclarer (5 indicateurs)</h3>
@@ -154,7 +193,7 @@ export default function GuideEedPage() {
                 <li><strong>J90+</strong> — Optionnel mais recommandé : vérification indépendante par tiers accrédité sous IPMVP Option C</li>
               </ol>
 
-              <h2>Article 21 — PUE ≤ 1,30 au 2 janvier 2027</h2>
+              <h2 id="article-21">Article 21 — PUE ≤ 1,30 au 2 janvier 2027</h2>
               <p>L&apos;Article 21 introduit les premiers seuils contraignants de performance énergétique appliqués aux datacenters européens. Son entrée en vigueur au <strong>2 janvier 2027</strong> crée l&apos;urgence de la mise en conformité dès 2026.</p>
               <h3>Les seuils retenus</h3>
               <ul>
@@ -174,7 +213,7 @@ export default function GuideEedPage() {
               <p>Les études JRC 2024-2025 estiment que <strong>plus de 60 % du parc européen existant</strong> affiche un PUE supérieur à 1,30 et nécessitera des travaux de mise en conformité. L&apos;enveloppe d&apos;investissement totale est estimée entre <strong>40 et 70 milliards d&apos;euros sur cinq ans</strong> (CBRE Global Data Center Investment Forecast, juin 2025).</p>
               <p>Cette enveloppe se répartit en trois catégories : 20 % du parc — actifs récents déjà conformes (100-400 €/kW IT) ; 50 % du parc — actifs intermédiaires nécessitant un programme free cooling + UPS + confinement (600-1 500 €/kW IT) ; 30 % du parc — actifs anciens pour lesquels la rénovation est souvent non rentable (1 500-3 000 €/kW IT). C&apos;est cette troisième catégorie que <strong>TITAN DC AI</strong> cible prioritairement via une stratégie brown-to-green.</p>
 
-              <h2>IPMVP — le protocole de mesure certifiable</h2>
+              <h2 id="ipmvp">IPMVP — le protocole de mesure certifiable</h2>
               <p>Le protocole IPMVP, développé par l&apos;EVO (Efficiency Valuation Organization) et reconnu par la Commission européenne comme le standard de référence, encadre la mesure et la vérification indépendante des performances énergétiques. Pour les datacenters, l&apos;<strong>Option C (Whole Facility)</strong> est le standard opérationnel.</p>
               <h3>Les 6 étapes d&apos;une certification IPMVP Option C</h3>
               <ol>
@@ -189,7 +228,7 @@ export default function GuideEedPage() {
               <p>Bureau Veritas, TÜV Rheinland, SGS, DNV, Apave, Socotec. Pour les sites entre 5 et 20 MW IT, le coût se situe entre <strong>40 000 et 120 000 €</strong>, amortis sur 3 ans.</p>
               <p>IPMVP présente trois avantages face aux alternatives : reconnaissance institutionnelle (BEI, BERD, ICMA, Commission), rigueur méthodologique (ajustement statistique des variables externes), bankabilité (les rapports sont directement utilisables comme pièces justificatives Green Bond).</p>
 
-              <h2>EU Taxonomy 8.1 — impact sur le financement Green Bond</h2>
+              <h2 id="taxonomy">EU Taxonomy 8.1 — impact sur le financement Green Bond</h2>
               <p>L&apos;EU Taxonomy Regulation (2020/852) et son Acte Délégué Climat (juin 2023) ont créé la catégorie <strong>8.1 — Data processing, hosting and related activities</strong> comme l&apos;une des rares activités datacenter éligibles à la finance verte alignée.</p>
               <h3>Les cinq conditions d&apos;alignement Taxonomie 8.1</h3>
               <ol>
@@ -207,7 +246,7 @@ export default function GuideEedPage() {
                 <li><strong>Critères ESG corporate</strong> : les grandes entreprises avec engagements Net Zero auditables intègrent l&apos;alignement 8.1 dans leurs sélections de fournisseurs</li>
               </ul>
 
-              <h2>Plan de mise en conformité — 90 jours</h2>
+              <h2 id="plan-90-jours">Plan de mise en conformité — 90 jours</h2>
               <h3>Jour 0-30 : Audit et cartographie</h3>
               <ul>
                 <li>Audit d&apos;instrumentation existante (compteurs, DCIM, BMS)</li>
@@ -236,7 +275,7 @@ export default function GuideEedPage() {
                 <li>Communication commerciale : positionnement « conformité EED en avance »</li>
               </ul>
 
-              <h2>FAQ complète — 12 questions</h2>
+              <h2 id="faq">FAQ complète — 12 questions</h2>
               {faqDataFr.map((faq, idx) => (
                 <div key={idx} className="mb-6">
                   <h3 className="font-semibold text-slate-900 mb-2">{idx + 1}. {faq.q}</h3>
@@ -265,6 +304,7 @@ export default function GuideEedPage() {
                   <li>→ <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918" target="_blank" rel="noopener noreferrer nofollow" className="text-[#C45A3B] hover:underline">Publication SSRN — PUE Optimization & EED (en cours de revue)</a></li>
                 </ul>
               </div>
+            </div>
             </div>
           </div>
         </div>

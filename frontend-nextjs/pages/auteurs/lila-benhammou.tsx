@@ -69,7 +69,7 @@ export default function AuteurLilaPage() {
             <ArrowLeft className="w-4 h-4" />Retour à l&apos;accueil
           </Link>
           <p className="text-[#C45A3B] text-xs font-medium uppercase tracking-wider mb-4">Auteure</p>
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight">Lila Benhammou</h1>
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-6 leading-tight text-white">Lila Benhammou</h1>
           <p className="text-slate-300 text-lg">Co-Fondatrice &amp; Chief Investment Officer, FINXIA Capital</p>
         </div>
       </header>
