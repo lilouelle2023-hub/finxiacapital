@@ -345,10 +345,10 @@ export default function StrategiesPage() {
                         </h4>
                         <div className="space-y-4">
                           {[
-                            { quarter: 'Q2 2026', event: language === 'fr' ? 'LOI signée avec premier datacenter partenaire' : 'LOI signed with first partner datacenter' },
-                            { quarter: 'Q3 2026', event: language === 'fr' ? 'Déploiement plateforme IA · Baseline IPMVP active' : 'AI platform deployment · Active IPMVP baseline' },
-                            { quarter: 'Q4 2026', event: language === 'fr' ? 'Closing TITAN DC AI · Première certification BV' : 'TITAN DC AI closing · First BV certification' },
-                            { quarter: '2027', event: language === 'fr' ? 'Mise en service · Déploiement opérationnel des actifs acquis' : 'Commissioning · Operational deployment of acquired assets' },
+                            { quarter: 'Q2 2026', event: language === 'fr' ? 'Premier LOI signé sur actif TITAN DC AI · Due diligence technique lancée' : 'First LOI signed on TITAN DC AI asset · Technical due diligence launched' },
+                            { quarter: 'Q3 2026', event: language === 'fr' ? 'Acquisition finalisée · Baseline PUE établie selon méthode IPMVP Option C' : 'Acquisition finalized · PUE baseline established per IPMVP Option C methodology' },
+                            { quarter: 'Q4 2026', event: language === 'fr' ? 'Plan de rénovation énergétique en cours · Dossier Green Bond structuré' : 'Energy retrofit program in progress · Green Bond dossier structured' },
+                            { quarter: '2027', event: language === 'fr' ? 'Première certification Bureau Veritas · Actif opérationnel IA-ready · Locataire en place' : 'First Bureau Veritas certification · Asset operational and AI-ready · Tenant in place' },
                           ].map((item, idx) => (
                             <div key={idx} className="flex items-start gap-4">
                               <div className="flex-shrink-0 w-20 pt-1">
