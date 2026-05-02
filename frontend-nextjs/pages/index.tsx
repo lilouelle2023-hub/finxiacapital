@@ -90,7 +90,7 @@ export default function HomePage() {
       text: language === 'fr' 
         ? 'Repositionnement de campus datacenters existants en infrastructure IA low-energy pour hyperscalers. Financement Green Bond ESG dédié.'
         : 'Repositioning of existing datacenter campuses into low-energy AI infrastructure for hyperscalers. Dedicated ESG Green Bond financing.',
-      focus: language === 'fr' ? 'France · Espagne · Europe' : 'France · Spain · Europe'
+      focus: language === 'fr' ? 'France · Espagne · Italie · Europe du Nord' : 'France · Spain · Italy · Northern Europe'
     },
     {
       id: 'hospitality-premium',
@@ -359,6 +359,43 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
+          {/* Examples by Vertical */}
+          <div className="mt-16 pt-12 border-t border-white/10">
+            <h3 className="font-serif text-2xl md:text-3xl text-white mb-8">
+              {language === 'fr' ? 'Exemples de valeur ajoutée par verticale' : 'Value Added Examples by Vertical'}
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white/5 p-6 border-l-2 border-[#C45A3B]">
+                <div className="text-[#C45A3B] text-xs font-semibold uppercase tracking-wider mb-3">TITAN DC AI</div>
+                <p className="text-slate-300 text-sm leading-relaxed italic">
+                  {language === 'fr'
+                    ? "Le Deal Intelligence identifie les friches industrielles correspondant aux critères techniques TITAN (emprise, raccordement HT, conformité ICPE) avant mise sur le marché. L'Asset Monitor suit en continu la conformité PUE et les indicateurs réglementaires EED sur chaque actif en portefeuille."
+                    : "Deal Intelligence identifies industrial brownfields matching TITAN technical criteria (footprint, HV connection, ICPE compliance) before going to market. Asset Monitor continuously tracks PUE compliance and EED regulatory indicators across each portfolio asset."}
+                </p>
+              </div>
+              <div className="bg-white/5 p-6 border-l-2 border-[#C45A3B]">
+                <div className="text-[#C45A3B] text-xs font-semibold uppercase tracking-wider mb-3">
+                  {language === 'fr' ? 'Hôtellerie Premium' : 'Premium Hospitality'}
+                </div>
+                <p className="text-slate-300 text-sm leading-relaxed italic">
+                  {language === 'fr'
+                    ? "Le Revenue Manager optimise les stratégies tarifaires en temps réel par établissement. L'Ops Tracker surveille les ratios de performance opérationnelle (RevPAR, GOP) et déclenche des alertes sur les dérives de coûts."
+                    : "Revenue Manager optimizes pricing strategies in real time per property. Ops Tracker monitors operational performance ratios (RevPAR, GOP) and triggers alerts on cost drifts."}
+                </p>
+              </div>
+              <div className="bg-white/5 p-6 border-l-2 border-[#C45A3B]">
+                <div className="text-[#C45A3B] text-xs font-semibold uppercase tracking-wider mb-3">
+                  {language === 'fr' ? 'Résidentiel & Flex Living' : 'Residential & Flex Living'}
+                </div>
+                <p className="text-slate-300 text-sm leading-relaxed italic">
+                  {language === 'fr'
+                    ? "Le Deal Intelligence analyse les dynamiques de demande locative par micro-marché urbain. L'Exit Optimizer modélise les fenêtres de sortie optimales en fonction des conditions de marché pour les cessions en bloc."
+                    : "Deal Intelligence analyzes rental demand dynamics by urban micro-market. Exit Optimizer models optimal exit windows based on market conditions for block disposals."}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -409,6 +446,65 @@ export default function HomePage() {
                   ? 'FINXIA Capital est structurée comme une Société en Commandite Spéciale (SCSp) de droit luxembourgeois, garantissant flexibilité, gouvernance rigoureuse et cadre réglementaire de premier plan pour les investisseurs professionnels.'
                   : 'FINXIA Capital is structured as a Luxembourg Special Limited Partnership (SCSp), ensuring flexibility, rigorous governance, and a first-class regulatory framework for professional investors.'}
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Capital & Structure */}
+      <section className="py-24 md:py-32 bg-white" data-testid="capital-structure-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <p className="overline mb-4">
+                {language === 'fr' ? 'Capital & Structure' : 'Capital & Structure'}
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl mb-6">
+                {language === 'fr' ? 'Capital & Structure' : 'Capital & Structure'}
+              </h2>
+              <div className="section-divider mb-8" />
+              <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                {language === 'fr'
+                  ? "FINXIA Capital investit exclusivement ses fonds propres au travers d'une SCSp luxembourgeoise. Il n'y a pas de levée de capitaux auprès d'investisseurs tiers, pas de souscription publique, pas de LP. Chaque décision d'allocation engage directement le capital des associés fondateurs."
+                  : "FINXIA Capital invests exclusively its own equity through a Luxembourg SCSp. There is no third-party fundraising, no public subscription, no LPs. Every allocation decision directly commits the founders' capital."}
+              </p>
+              <p className="text-slate-600 text-lg leading-relaxed">
+                {language === 'fr'
+                  ? "Sur certaines opérations ciblées, FINXIA Capital peut structurer des co-investissements institutionnels via SPV dédiés — permettant à des partenaires sélectionnés de participer deal-by-deal, sans entrée dans la structure SCSp principale."
+                  : "On selected transactions, FINXIA Capital may structure institutional co-investments through dedicated SPVs — allowing selected partners to participate deal-by-deal, without entering the main SCSp structure."}
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
+                <div className="text-xl font-serif text-[#1E2A3A] mb-2">
+                  {language === 'fr' ? 'Capital propriétaire' : 'Proprietary Capital'}
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "100% fonds propres des associés fondateurs. Aucun LP, aucune levée externe."
+                    : "100% founders' own equity. No LPs, no external fundraising."}
+                </p>
+              </div>
+              <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
+                <div className="text-xl font-serif text-[#1E2A3A] mb-2">
+                  {language === 'fr' ? 'Co-investissement deal-by-deal' : 'Deal-by-Deal Co-investment'}
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "SPV dédiés sur opérations ciblées pour partenaires institutionnels sélectionnés."
+                    : "Dedicated SPVs on targeted operations for selected institutional partners."}
+                </p>
+              </div>
+              <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B]">
+                <div className="text-xl font-serif text-[#1E2A3A] mb-2">
+                  {language === 'fr' ? 'Alignement direct' : 'Direct Alignment'}
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {language === 'fr'
+                    ? "Chaque décision d'allocation engage le capital des associés. Skin in the game total."
+                    : "Every allocation decision commits founders' capital. Total skin in the game."}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -468,7 +564,7 @@ export default function HomePage() {
               {
                 date: language === 'fr' ? 'Avril 2026' : 'April 2026',
                 title: language === 'fr' ? 'Publication SSRN — Optimisation Énergétique Datacenters (en cours de revue)' : 'SSRN Publication — Datacenter Energy Optimization (Under Review)',
-                excerpt: language === 'fr' ? 'Livre blanc académique sur l\'optimisation PUE des datacenters européens, actuellement en cours de revue sur SSRN.' : 'Academic white paper on European datacenter PUE optimization, currently under review on SSRN.',
+                excerpt: language === 'fr' ? 'Livre blanc académique sur l\'optimisation PUE des datacenters européens, actuellement en cours de revue sur SSRN. Cette recherche fonde directement l\'avantage compétitif de TITAN DC AI : identification et certification de l\'efficacité énergétique comme levier de valeur sur les actifs brownfield européens.' : 'Academic white paper on European datacenter PUE optimization, currently under review on SSRN. This research directly underpins TITAN DC AI\'s competitive edge: identification and certification of energy efficiency as a value lever on European brownfield assets.',
                 link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918',
                 tag: 'SSRN'
               },

@@ -29,7 +29,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Efficacité énergétique : protocole IPMVP, PUE certifié EU Taxonomy 8.1 et conforme Directive EED' : 'Energy efficiency: IPMVP protocol, EU Taxonomy 8.1-certified PUE and EED Directive-compliant',
         language === 'fr' ? 'Financement : capital propre + dette senior amortissante + Green Bond ESG ICMA conditionné aux objectifs PUE' : 'Financing: own equity + senior amortizing debt + ICMA ESG Green Bond conditioned on PUE targets',
       ],
-      markets: language === 'fr' ? 'France · Espagne · Europe' : 'France · Spain · Europe',
+      markets: language === 'fr' ? 'France · Espagne · Italie · Europe du Nord' : 'France · Spain · Italy · Northern Europe',
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     },
     {
@@ -217,6 +217,61 @@ export default function StrategiesPage() {
         </div>
       </section>
 
+      {/* Portfolio Overview Table */}
+      <section className="py-16 bg-slate-50" data-testid="portfolio-overview-table">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="font-serif text-3xl md:text-4xl mb-4">
+              {language === 'fr' ? "Vue d'ensemble du portefeuille" : 'Portfolio Overview'}
+            </h2>
+            <div className="w-16 h-1 bg-[#C45A3B] mx-auto" />
+          </div>
+          <div className="overflow-x-auto bg-white border border-slate-200">
+            <table className="w-full text-left">
+              <thead className="bg-[#1E2A3A] text-white">
+                <tr>
+                  <th className="px-5 py-4 text-xs font-semibold uppercase tracking-wider">{language === 'fr' ? 'Pôle' : 'Pillar'}</th>
+                  <th className="px-5 py-4 text-xs font-semibold uppercase tracking-wider">{language === 'fr' ? 'Rôle dans FINXIA' : 'Role within FINXIA'}</th>
+                  <th className="px-5 py-4 text-xs font-semibold uppercase tracking-wider">{language === 'fr' ? 'Profil' : 'Profile'}</th>
+                  <th className="px-5 py-4 text-xs font-semibold uppercase tracking-wider">{language === 'fr' ? 'Horizon' : 'Horizon'}</th>
+                  <th className="px-5 py-4 text-xs font-semibold uppercase tracking-wider">{language === 'fr' ? 'Univers' : 'Universe'}</th>
+                </tr>
+              </thead>
+              <tbody className="text-sm text-slate-700">
+                <tr className="border-t border-slate-200">
+                  <td className="px-5 py-4 font-semibold text-[#1E2A3A]">TITAN DC AI</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Infrastructure core IA' : 'Core AI infrastructure'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Rendement + croissance long terme' : 'Yield + long-term growth'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? '5–7 ans' : '5–7 years'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Datacenters brownfield EU' : 'EU brownfield datacenters'}</td>
+                </tr>
+                <tr className="border-t border-slate-200 bg-slate-50/50">
+                  <td className="px-5 py-4 font-semibold text-[#1E2A3A]">{language === 'fr' ? 'Hôtellerie Premium' : 'Premium Hospitality'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Cash-flow récurrent & rotation sélective' : 'Recurring cash-flow & selective rotation'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Rendement courant' : 'Current yield'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? '4–6 ans' : '4–6 years'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Hôtels urbains EU 4–5★' : '4–5★ EU urban hotels'}</td>
+                </tr>
+                <tr className="border-t border-slate-200">
+                  <td className="px-5 py-4 font-semibold text-[#1E2A3A]">{language === 'fr' ? 'Résidentiel & Flex Living' : 'Residential & Flex Living'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Plateforme opérée, sorties en bloc' : 'Operated platform, block exits'}</td>
+                  <td className="px-5 py-4">Value-add</td>
+                  <td className="px-5 py-4">{language === 'fr' ? '5–8 ans' : '5–8 years'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Résidentiel flexible grandes métropoles' : 'Flexible residential, major metros'}</td>
+                </tr>
+                <tr className="border-t border-slate-200 bg-slate-50/50">
+                  <td className="px-5 py-4 font-semibold text-[#1E2A3A]">C.CAPITAL</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Opportuniste / convexité' : 'Opportunistic / convexity'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'High alpha, <5% conversion' : 'High alpha, <5% conversion'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? '3–5 ans' : '3–5 years'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Late-stage, secondaires décotés, situations spéciales' : 'Late-stage, discounted secondaries, special situations'}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* Strategies Detail */}
       <section className="py-16 bg-white" data-testid="strategies-detail">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -372,6 +427,35 @@ export default function StrategiesPage() {
                           {language === 'fr'
                             ? "La Directive Efficacité Énergétique impose aux datacenters européens de déclarer leur consommation avant mai 2026 et d'atteindre un PUE ≤ 1,30 d'ici janvier 2027. Les actifs non conformes subissent une décote de valeur immédiate. TITAN DC AI acquiert précisément ces actifs en période de stress réglementaire, les met en conformité, et les repositionne comme infrastructure certifiée premium — capturant la compression de rendement entre l'entrée et la sortie."
                             : "The Energy Efficiency Directive requires European datacenters to declare their consumption before May 2026 and to achieve a PUE ≤ 1.30 by January 2027. Non-compliant assets suffer immediate value discount. TITAN DC AI acquires precisely these assets during regulatory stress, brings them into compliance, and repositions them as certified premium infrastructure — capturing the yield compression between entry and exit."}
+                        </p>
+                      </div>
+
+                      {/* SSRN Research Anchor */}
+                      <div className="my-8 p-6 bg-white border-l-4 border-[#C45A3B] rounded-lg">
+                        <p className="text-slate-700 text-sm leading-relaxed italic">
+                          {language === 'fr' ? (
+                            <>FINXIA Capital a publié en 2026 une analyse académique sur SSRN portant sur l'optimisation PUE et le cadre réglementaire EED, qui structure directement la thèse d'investissement TITAN.{' '}
+                              <a
+                                href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                className="text-[#C45A3B] hover:underline font-medium not-italic"
+                              >
+                                Consulter la publication SSRN →
+                              </a>
+                            </>
+                          ) : (
+                            <>FINXIA Capital published in 2026 an academic analysis on SSRN covering PUE optimization and the EED regulatory framework, which directly structures the TITAN investment thesis.{' '}
+                              <a
+                                href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                className="text-[#C45A3B] hover:underline font-medium not-italic"
+                              >
+                                View SSRN publication →
+                              </a>
+                            </>
+                          )}
                         </p>
                       </div>
 
