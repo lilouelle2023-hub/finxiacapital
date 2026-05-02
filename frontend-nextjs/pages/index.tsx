@@ -562,25 +562,25 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                date: language === 'fr' ? 'Avril 2026' : 'April 2026',
-                title: language === 'fr' ? 'Publication SSRN — Optimisation Énergétique Datacenters (en cours de revue)' : 'SSRN Publication — Datacenter Energy Optimization (Under Review)',
-                excerpt: language === 'fr' ? 'Livre blanc académique sur l\'optimisation PUE des datacenters européens, actuellement en cours de revue sur SSRN. Cette recherche fonde directement l\'avantage compétitif de TITAN DC AI : identification et certification de l\'efficacité énergétique comme levier de valeur sur les actifs brownfield européens.' : 'Academic white paper on European datacenter PUE optimization, currently under review on SSRN. This research directly underpins TITAN DC AI\'s competitive edge: identification and certification of energy efficiency as a value lever on European brownfield assets.',
-                link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918',
-                tag: 'SSRN'
+                date: language === 'fr' ? '23 mai 2026' : 'May 23, 2026',
+                title: language === 'fr' ? 'Data centers brown-to-green : pourquoi les actifs existants vont battre les greenfields en Europe' : 'Brown-to-Green Datacenters: Why Existing Assets Will Beat Greenfields in Europe',
+                excerpt: language === 'fr' ? 'Face aux délais de raccordement de 4-7 ans, aux coûts greenfield en hausse et aux contraintes PUE imposées par l\'EED, les data centers existants mal optimisés représentent la meilleure opportunité d\'investissement en Europe.' : 'Facing 4-7 year grid connection delays, rising greenfield costs and PUE constraints imposed by the EED, existing, poorly optimized datacenters represent the best investment opportunity in Europe.',
+                link: '/blog/data-centers-brown-to-green-europe-strategie-investissement/',
+                tag: 'Investment Strategy'
               },
               {
-                date: language === 'fr' ? 'Avril 2026' : 'April 2026',
-                title: language === 'fr' ? 'TITAN DC AI — Stratégie Datacenters' : 'TITAN DC AI — Datacenter Strategy',
-                excerpt: language === 'fr' ? 'Présentation de la stratégie TITAN DC AI : transformation brown-to-green des datacenters européens.' : 'TITAN DC AI strategy presentation: brown-to-green transformation of European datacenters.',
-                link: language === 'fr' ? '/blog/titan-dc-ai-strategie-datacenters-europeens-finxia' : '/en/blog/titan-dc-ai-european-datacenters-strategy-finxia',
-                tag: 'Strategy'
+                date: language === 'fr' ? '16 mai 2026' : 'May 16, 2026',
+                title: language === 'fr' ? 'Data centers IA : l\'angle mort énergétique de la stratégie européenne' : 'AI Datacenters: The Energy Blind Spot of European Strategy',
+                excerpt: language === 'fr' ? 'L\'IA fait exploser la demande électrique des data centers : 415 TWh en 2024, potentiellement 945 TWh en 2030 (IEA). En Irlande, les data centers pèsent déjà 21% de la consommation nationale. Comment l\'Europe peut-elle aligner ambitions IA et contraintes réseau ?' : 'AI is exploding datacenter electricity demand: 415 TWh in 2024, potentially 945 TWh in 2030 (IEA). In Ireland, datacenters already account for 21% of national consumption. How can Europe align AI ambitions with grid constraints?',
+                link: '/blog/data-centers-ia-energie-strategie-europe-2030/',
+                tag: 'Digital Infrastructure'
               },
               {
-                date: language === 'fr' ? 'Avril 2026' : 'April 2026',
-                title: language === 'fr' ? 'EED Article 12 — Guide Conformité 15 Mai' : 'EED Article 12 — Compliance Guide May 15',
-                excerpt: language === 'fr' ? 'Guide complet pour la déclaration obligatoire des datacenters européens avant le 15 mai 2026.' : 'Complete guide for mandatory European datacenter declaration before May 15, 2026.',
-                link: language === 'fr' ? '/blog/eed-article-12-declaration-datacenter-guide-2026' : '/en/blog/eed-article-12-datacenter-declaration-guide-2026',
-                tag: 'Regulatory'
+                date: language === 'fr' ? '2 mai 2026' : 'May 2, 2026',
+                title: language === 'fr' ? 'Directive EED, secret commercial et PUE : ce que l\'Europe ne veut pas voir sur ses data centers' : 'EED Directive, Trade Secret and PUE: What Europe Won\'t Look at on its Datacenters',
+                excerpt: language === 'fr' ? 'L\'Article 12 EED impose un reporting annuel aux data centers UE dès 500 kW. Mais la transparence reste partielle et crée un marché à deux vitesses dont les investisseurs spécialisés peuvent tirer parti.' : 'EED Article 12 imposes annual reporting on EU datacenters from 500 kW. But transparency remains partial and creates a two-tier market that specialized investors can leverage.',
+                link: '/blog/eed-directive-secret-commercial-pue-datacenters-europe/',
+                tag: 'Regulatory Compliance'
               }
             ].map((news, idx) => (
               <Link 
