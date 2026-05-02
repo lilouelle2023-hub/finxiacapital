@@ -115,7 +115,7 @@ export default function StrategiesPage() {
         "name": "Comment Finxia Capital finance-t-elle la stratégie TITAN ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "TITAN se finance via un Green Bond ESG dédié, instrument calibré pour cette transformation — labellisé SFDR Art.9, structuré avec nos partenaires bancaires, sans dilution equity."
+          "text": "TITAN se finance via un Green Bond ESG dédié, instrument calibré pour cette transformation — structuré selon les principes ICMA Green Bond et la Taxonomie Verte Européenne, avec nos partenaires bancaires, sans dilution equity."
         }
       },
       {
@@ -157,7 +157,7 @@ export default function StrategiesPage() {
           ? "Découvrez les 4 stratégies de FINXIA Capital : TITAN DC AI (datacenter brown-to-green), Hôtellerie Premium, Résidentiel Urbain Flex et C.CAPITAL."
           : "Discover FINXIA Capital's 4 strategies: TITAN DC AI (datacenter brown-to-green transformation), Premium Hospitality, Urban Residential Flex, and C.CAPITAL."}
         canonical={language === 'fr' ? "https://finxiacapital.com/strategies/" : "https://finxiacapital.com/en/strategies/"}
-        keywords="datacenter AI brown to green, hôtellerie premium Europe, coliving investissement, late-stage secondaires Luxembourg, Green Bond ESG SFDR, hyperscaler lease"
+        keywords="datacenter AI brown to green, hôtellerie premium Europe, coliving investissement, late-stage secondaires Luxembourg, Green Bond ESG ICMA, hyperscaler lease"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
@@ -200,8 +200,8 @@ export default function StrategiesPage() {
             </p>
             <p className="text-slate-700 leading-relaxed mb-6">
               {language === 'fr'
-                ? "Cette transformation s'appuie sur un financement structuré via Green Bond ESG conforme SFDR Article 9, permettant de financer la décarbonation sans dilution du capital propriétaire. L'approche combine acquisition de campus existants, déploiement d'infrastructure énergétique de rupture (refroidissement haute efficacité, récupération chaleur, production on-site), et certification ESG pour créer une prime de sortie significative."
-                : "This transformation relies on structured financing via SFDR Article 9 compliant ESG Green Bonds, enabling decarbonization financing without equity dilution. The approach combines acquisition of existing campuses, deployment of breakthrough energy infrastructure (high-efficiency cooling, heat recovery, on-site production), and ESG certification to create significant exit premiums."}
+                ? "Cette transformation s'appuie sur un financement structuré via Green Bond ESG aligné ICMA Green Bond Principles et Taxonomie Verte Européenne (Règlement 2020/852), permettant de financer la décarbonation sans dilution du capital propriétaire. L'approche combine acquisition de campus existants, déploiement d'infrastructure énergétique de rupture (refroidissement haute efficacité, récupération chaleur, production on-site), et certification ESG pour créer une prime de sortie significative."
+                : "This transformation relies on structured financing via ESG Green Bonds aligned with ICMA Green Bond Principles and the EU Taxonomy (Regulation 2020/852), enabling decarbonization financing without equity dilution. The approach combines acquisition of existing campuses, deployment of breakthrough energy infrastructure (high-efficiency cooling, heat recovery, on-site production), and ESG certification to create significant exit premiums."}
             </p>
             <p className="text-slate-700 leading-relaxed mb-6">
               {language === 'fr'

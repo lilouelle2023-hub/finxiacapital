@@ -28,24 +28,24 @@ export default function GovernancePage() {
       icon: CreditCard, 
       title: language === 'fr' ? 'Risque de Crédit' : 'Credit Risk', 
       text: language === 'fr'
-        ? 'Monitoring en temps réel des ratios LTV, DSCR et ICR sur l\'ensemble des structures de financement. Reporting covenant J-30 automatique.'
-        : 'Real-time monitoring of LTV, DSCR and ICR ratios across all financing structures. Automatic D-30 covenant reporting.'
+        ? 'Monitoring en temps réel des ratios LTV, DSCR et ICR sur l\'ensemble des structures de financement. Reporting covenant J-30 automatique — activé à chaque mise en place de financement.'
+        : 'Real-time monitoring of LTV, DSCR and ICR ratios across all financing structures. Automatic D-30 covenant reporting — activated upon each financing arrangement.'
     },
     {
       id: 'operational-risk',
       icon: Settings, 
       title: language === 'fr' ? 'Risque Opérationnel' : 'Operational Risk', 
       text: language === 'fr'
-        ? 'Supervision du NOI actif par actif en temps réel via intégration BMS et Yardi. Détection d\'anomalies par machine learning. Alertes de vacance locative J-90.'
-        : 'Real-time asset-by-asset NOI supervision via BMS and Yardi integration. Machine learning anomaly detection. D-90 vacancy alerts.'
+        ? 'Supervision du NOI actif par actif via intégration BMS et Yardi — déployée sur chaque actif acquis en portefeuille. Détection d\'anomalies par machine learning. Alertes de vacance locative J-90 activées sur chaque actif en portefeuille.'
+        : 'Asset-by-asset NOI supervision via BMS and Yardi integration — deployed on each acquired portfolio asset. Machine learning anomaly detection. D-90 vacancy alerts activated on each portfolio asset.'
     },
     {
       id: 'esg-risk',
       icon: Leaf, 
       title: language === 'fr' ? 'Risque ESG' : 'ESG Risk', 
       text: language === 'fr'
-        ? 'Suivi de la progression BREEAM et LEED sur l\'ensemble du portefeuille immobilier. Conformité SFDR Article 8 documentée en continu. Reporting ESG trimestriel automatisé.'
-        : 'Tracking of BREEAM and LEED progression across the real estate portfolio. Continuous SFDR Article 8 compliance documentation. Automated quarterly ESG reporting.'
+        ? 'Suivi des certifications environnementales (BREEAM, LEED) intégré dès l\'acquisition de chaque actif. Alignement Taxonomie Verte Européenne (Règlement 2020/852) documenté en continu. Reporting ESG trimestriel automatisé.'
+        : 'Environmental certification tracking (BREEAM, LEED) integrated from each asset acquisition. Continuous EU Taxonomy (Regulation 2020/852) alignment documentation. Automated quarterly ESG reporting.'
     },
   ];
 
@@ -167,7 +167,7 @@ export default function GovernancePage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#C45A3B] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-300">
-                    {language === 'fr' ? 'Comité d\'investissement indépendant' : 'Independent investment committee'}
+                    {language === 'fr' ? 'Comité d\'investissement collégial' : 'Collegial investment committee'}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -282,8 +282,8 @@ export default function GovernancePage() {
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? "Finxia Capital opère dans le cadre réglementaire européen applicable aux fonds d'investissement alternatifs. Documents réglementaires disponibles sur demande auprès des investisseurs qualifiés."
-                  : "Finxia Capital operates within the European regulatory framework applicable to alternative investment funds. Regulatory documents available upon request to qualified investors."}
+                  ? "FINXIA Capital est structurée en SCSp luxembourgeoise et opère selon les standards de gouvernance institutionnelle applicables aux véhicules d'investissement professionnels. Documents de structuration disponibles sur demande auprès de partenaires qualifiés."
+                  : "FINXIA Capital is structured as a Luxembourg SCSp and operates under institutional governance standards applicable to professional investment vehicles. Structuring documents available upon request to qualified partners."}
               </p>
             </div>
           </div>
@@ -301,8 +301,8 @@ export default function GovernancePage() {
               </h3>
               <p className="text-slate-400 leading-relaxed">
                 {language === 'fr'
-                  ? 'La protection du capital et la gestion des risques sont au cœur de tout ce que nous faisons. Notre cadre institutionnel assure que les intérêts des investisseurs sont toujours protégés.'
-                  : 'Capital protection and risk management are at the heart of everything we do. Our institutional framework ensures that investor interests are always protected.'}
+                  ? 'La protection du capital des associés fondateurs et la rigueur de gestion des risques sont au cœur de tout ce que nous faisons. Notre cadre institutionnel assure un alignement total entre les décisions stratégiques et l\'exécution opérationnelle.'
+                  : 'Protecting the founders\' capital and rigorous risk management are at the heart of everything we do. Our institutional framework ensures full alignment between strategic decisions and operational execution.'}
               </p>
             </div>
           </div>

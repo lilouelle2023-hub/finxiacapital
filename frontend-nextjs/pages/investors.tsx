@@ -91,8 +91,8 @@ export default function InvestorsPage() {
               </p>
               <p className="text-slate-700 leading-relaxed">
                 {language === 'fr'
-                  ? "Pour la stratégie TITAN DC AI, le financement des acquisitions et transformations de datacenters est assuré par levier dette (dette sénior, dette mezzanine) et Green Bonds — conformément au cadre SFDR Article 9 visé pour cette stratégie."
-                  : "For the TITAN DC AI strategy, acquisitions and datacenter transformation financing is provided through debt leverage (senior debt, mezzanine) and Green Bonds — in line with the targeted SFDR Article 9 classification for this strategy."}
+                  ? "Pour la stratégie TITAN DC AI, le financement des acquisitions et transformations de datacenters est assuré par levier dette (dette sénior, dette mezzanine) et Green Bonds — structuré selon la Taxonomie Verte Européenne (Règlement 2020/852) et les principes ICMA Green Bond."
+                  : "For the TITAN DC AI strategy, acquisitions and datacenter transformation financing is provided through debt leverage (senior debt, mezzanine) and Green Bonds — structured according to the EU Taxonomy (Regulation 2020/852) and ICMA Green Bond Principles."}
               </p>
             </div>
           </div>
@@ -194,8 +194,8 @@ export default function InvestorsPage() {
 
               <p className="text-slate-700 leading-relaxed mb-4">
                 {language === 'fr'
-                  ? "Les actifs TITAN DC AI visent la classification SFDR Article 9 et l'alignement avec la Taxonomie Verte Européenne (Règlement 2020/852)."
-                  : "TITAN DC AI assets target SFDR Article 9 classification and alignment with the EU Taxonomy (Regulation 2020/852)."}
+                  ? "La stratégie TITAN DC AI est structurée selon les standards ESG de la Taxonomie Verte Européenne (Règlement 2020/852) et les principes ICMA Green Bond."
+                  : "The TITAN DC AI strategy is structured according to EU Taxonomy (Regulation 2020/852) ESG standards and ICMA Green Bond Principles."}
               </p>
 
               <p className="text-slate-600 text-sm leading-relaxed mb-4">

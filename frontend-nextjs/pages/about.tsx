@@ -31,12 +31,12 @@ export default function AboutPage() {
         : 'Proprietary AI agent infrastructure for deal sourcing, portfolio optimization, and real-time risk monitoring.'
     },
     {
-      id: 'snowball-strategy',
+      id: 'capital-recycling',
       icon: Shield, 
-      title: language === 'fr' ? 'Stratégie Snowball' : 'Snowball Strategy',
+      title: language === 'fr' ? 'Recyclage du Capital' : 'Capital Recycling',
       text: language === 'fr'
-        ? 'Mécanisme de recyclage du capital amplifiant les rendements par réinvestissement stratégique à travers les cycles.'
-        : 'Capital recycling mechanism amplifying returns through strategic reinvestment across cycles.'
+        ? "Le capital libéré par les sorties d'actifs est réinvesti dans de nouvelles opportunités, sans dépendance aux cycles de levée externe."
+        : "Capital released from asset exits is reinvested into new opportunities, without reliance on external fundraising cycles."
     },
     {
       id: 'proprietary-discipline',
@@ -158,8 +158,8 @@ export default function AboutPage() {
             <p className="overline mb-4">{language === 'fr' ? 'À Propos' : 'About'}</p>
             <h1 className="font-serif text-4xl md:text-5xl mb-6">
               {language === 'fr' 
-                ? 'Gestion Alternative avec Excellence Européenne'
-                : 'Alternative Management with European Excellence'}
+                ? 'Investissement Propriétaire avec Excellence Européenne'
+                : 'Proprietary Investment with European Excellence'}
             </h1>
             <div className="section-divider mb-8" />
             <p className="text-slate-600 text-xl leading-relaxed">
@@ -206,8 +206,8 @@ export default function AboutPage() {
                     </h4>
                     <p className="text-slate-400 text-sm">
                       {language === 'fr' 
-                        ? "Structuration SCSp, partenariats stratégiques. Identification de sites brownfield en cours — France, Espagne, Italie. Ambition : campus datacenter IA souverain 40 MW, optimisation énergétique certifiée EU Taxonomy 8.1, financement Green Bond ESG."
-                        : "SCSp structuring, strategic partnerships. Brownfield site identification underway — France, Spain, Italy. Ambition: sovereign 40 MW AI datacenter campus, EU Taxonomy 8.1-certified energy optimization, ESG Green Bond financing."}
+                        ? "Structuration juridique et fiscale SCSp finalisée. Identification de sites brownfield cibles en France, Espagne, Italie. Ambition : campus datacenter IA souverain 40 MW, optimisation énergétique certifiée EU Taxonomy 8.1, financement Green Bond ESG."
+                        : "SCSp legal and tax structuring finalized. Target brownfield site identification across France, Spain, Italy. Ambition: sovereign 40 MW AI datacenter campus, EU Taxonomy 8.1-certified energy optimization, ESG Green Bond financing."}
                     </p>
                   </div>
                 </div>
