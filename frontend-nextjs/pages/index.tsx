@@ -194,8 +194,8 @@ export default function HomePage() {
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed animate-slide-up stagger-1 max-w-3xl">
               {language === 'fr'
-                ? 'Finxia Capital est un véhicule d\'investissement propriétaire, structuré en SCSp luxembourgeoise. Un capital de conviction, déployé avec une discipline institutionnelle sur quatre pôles de création de valeur.'
-                : 'Finxia Capital is a proprietary investment vehicle, structured as a Luxembourg SCSp. Conviction capital, deployed with institutional discipline across four value creation poles.'}
+                ? 'FINXIA Capital est un véhicule d\'investissement propriétaire structuré en SCSp luxembourgeoise, déployant un capital de conviction avec une discipline institutionnelle à travers quatre piliers de création de valeur.'
+                : 'FINXIA Capital is a proprietary investment vehicle structured as a Luxembourg SCSp, deploying conviction capital with institutional discipline across four value creation pillars.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up stagger-2">
               <Link
@@ -426,7 +426,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
               { value: '40+', label: language === 'fr' ? 'ans — Track record immobilier institutionnel' : 'years — Institutional real estate track record', sublabel: 'Jean-Pierre Véron' },
-              { value: '2', label: language === 'fr' ? 'sorties réussies — Rive Gauche & Humans4Help' : 'successful exits — Rive Gauche & Humans4Help', sublabel: language === 'fr' ? '2006 (pré-crise) · 2023' : '2006 (pre-crisis) · 2023' },
+              { value: '2', label: language === 'fr' ? 'sorties réussies — Financière Rive Gauche & Humans4Help' : 'successful exits — Financière Rive Gauche & Humans4Help', sublabel: language === 'fr' ? '2006 (pré-crise) · 2023' : '2006 (pre-crisis) · 2023' },
               { value: '18', label: language === 'fr' ? 'agents IA autonomes — Architecture opérationnelle native' : 'autonomous AI agents — Native operational architecture', sublabel: '' },
               { value: '4', label: language === 'fr' ? 'stratégies d\'investissement complémentaires' : 'complementary investment strategies', sublabel: '' },
               { value: '3', label: language === 'fr' ? 'marchés : France, Espagne, Europe du Sud' : 'markets: France, Spain, Southern Europe', sublabel: '' },
@@ -513,8 +513,8 @@ export default function HomePage() {
           </h2>
           <p className="text-slate-600 text-lg mb-10 max-w-2xl mx-auto">
             {language === 'fr'
-              ? 'Investisseurs institutionnels, partenaires stratégiques : notre équipe est disponible pour répondre à vos questions.'
-              : 'Institutional investors, strategic partners: our team is available to answer your questions.'}
+              ? 'Partenaires opérationnels, institutionnels et co-investisseurs sur opérations ciblées : notre équipe est disponible pour échanger.'
+              : 'Operational partners, institutional investors and co-investors on targeted transactions: our team is available to engage.'}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
