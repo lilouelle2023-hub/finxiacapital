@@ -40,9 +40,18 @@ export default function SEO({
   };
   
   const translatedTitle = translateTitle(title, language);
-  const fullTitle = language === 'fr' 
-    ? `${translatedTitle} | FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg`
-    : `${translatedTitle} | FINXIA Capital - Alternative Asset Management Luxembourg`;
+
+  // Build the full <title>, avoiding duplication when the page-supplied
+  // title already ends with "| FINXIA Capital" (a common pattern across the site).
+  const brandSuffixFr = "FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg";
+  const brandSuffixEn = 'FINXIA Capital - Alternative Asset Management Luxembourg';
+  const brandSuffix = language === 'fr' ? brandSuffixFr : brandSuffixEn;
+
+  const fullTitle = /\|\s*FINXIA Capital\s*$/i.test(translatedTitle)
+    // Replace the trailing "| FINXIA Capital" by the descriptive variant.
+    ? translatedTitle.replace(/\|\s*FINXIA Capital\s*$/i, `| ${brandSuffix}`)
+    // No brand suffix yet — append the full descriptive one.
+    : `${translatedTitle} | ${brandSuffix}`;
   
   // Default keywords if not provided
   const defaultKeywordsFr = "Finxia Capital, SCSp Luxembourg, Datacenter AI, Hôtellerie Premium, Résidentiel Flex Living, Gestion Actifs Alternatifs, Green Bond ESG, Intelligence Artificielle";
@@ -56,6 +65,13 @@ export default function SEO({
       <meta name="description" content={description} />
       <meta name="robots" content="index, follow" />
       <meta name="msvalidate.01" content="6794AC65382D0A98594B01BC1432995A" />
+      {/* Google Search Console verification — set via NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION env var. */}
+      {process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && (
+        <meta
+          name="google-site-verification"
+          content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
+        />
+      )}
       <link rel="canonical" href={canonical} />
       
       {/* Open Graph / Facebook */}

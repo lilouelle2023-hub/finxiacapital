@@ -36,13 +36,14 @@ export default function HomePage() {
         ],
         "knowsAbout": [
           "Alternative Asset Management",
+          "Proprietary SCSp Investment Vehicle",
           "Datacenter Investment",
           "AI Infrastructure Optimization",
           "European Real Estate",
-          "SFDR Article 9",
           "Brown-to-Green Transformation",
           "PUE Optimization",
-          "Energy Efficiency Datacenters"
+          "Energy Efficiency Datacenters",
+          "EED Directive Compliance"
         ]
       },
       {
