@@ -33,6 +33,13 @@ Build a bilingual (FR/EN) institutional website for FINXIA Capital positioning t
   - Organization schema already present on homepage (verified)
   - `sameAs` left empty on Person schema per user choice
   - FR only for this pass (EN pages keep stub placeholder)
+- **2026-02-06** Homepage "Actualités" section refactored to dynamic pull:
+  - New single-source-of-truth data file `/app/frontend-nextjs/data/blogPosts.ts`
+  - Homepage now maps `getLatestBlogPosts(3)` — auto-sorted by `date` DESC
+  - Localized date formatter + bilingual title/excerpt fields
+  - Added `data-testid="home-news-card-<slug>"` for each card
+  - Verified in static HTML: top 3 now correctly show brown-to-green (23 mai), data-centers-ia (16 mai), stackit-lidl (9 mai)
+  - Future posts will surface automatically by adding an entry to `blogPosts`
 
 ## Backlog
 - P1: Translate the 3 long-form articles (EED, PUE, Guide, Author) to English

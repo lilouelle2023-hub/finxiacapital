@@ -3,6 +3,11 @@ import { useLanguage } from '@/context/LanguageContext';
 import { ArrowRight, Shield, Cpu, Scale, Server, Building, Home, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
 import SEO from '@/components/SEO';
+import {
+  getLatestBlogPosts,
+  getBlogPostHref,
+  formatBlogDate,
+} from '@/data/blogPosts';
 
 export default function HomePage() {
   const { language } = useLanguage();
@@ -560,42 +565,22 @@ export default function HomePage() {
             <div className="w-16 h-1 bg-[#C45A3B] mx-auto" />
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                date: language === 'fr' ? '23 mai 2026' : 'May 23, 2026',
-                title: language === 'fr' ? 'Data centers brown-to-green : pourquoi les actifs existants vont battre les greenfields en Europe' : 'Brown-to-Green Datacenters: Why Existing Assets Will Beat Greenfields in Europe',
-                excerpt: language === 'fr' ? 'Face aux délais de raccordement de 4-7 ans, aux coûts greenfield en hausse et aux contraintes PUE imposées par l\'EED, les data centers existants mal optimisés représentent la meilleure opportunité d\'investissement en Europe.' : 'Facing 4-7 year grid connection delays, rising greenfield costs and PUE constraints imposed by the EED, existing, poorly optimized datacenters represent the best investment opportunity in Europe.',
-                link: '/blog/data-centers-brown-to-green-europe-strategie-investissement/',
-                tag: 'Investment Strategy'
-              },
-              {
-                date: language === 'fr' ? '16 mai 2026' : 'May 16, 2026',
-                title: language === 'fr' ? 'Data centers IA : l\'angle mort énergétique de la stratégie européenne' : 'AI Datacenters: The Energy Blind Spot of European Strategy',
-                excerpt: language === 'fr' ? 'L\'IA fait exploser la demande électrique des data centers : 415 TWh en 2024, potentiellement 945 TWh en 2030 (IEA). En Irlande, les data centers pèsent déjà 21% de la consommation nationale. Comment l\'Europe peut-elle aligner ambitions IA et contraintes réseau ?' : 'AI is exploding datacenter electricity demand: 415 TWh in 2024, potentially 945 TWh in 2030 (IEA). In Ireland, datacenters already account for 21% of national consumption. How can Europe align AI ambitions with grid constraints?',
-                link: '/blog/data-centers-ia-energie-strategie-europe-2030/',
-                tag: 'Digital Infrastructure'
-              },
-              {
-                date: language === 'fr' ? '2 mai 2026' : 'May 2, 2026',
-                title: language === 'fr' ? 'Directive EED, secret commercial et PUE : ce que l\'Europe ne veut pas voir sur ses data centers' : 'EED Directive, Trade Secret and PUE: What Europe Won\'t Look at on its Datacenters',
-                excerpt: language === 'fr' ? 'L\'Article 12 EED impose un reporting annuel aux data centers UE dès 500 kW. Mais la transparence reste partielle et crée un marché à deux vitesses dont les investisseurs spécialisés peuvent tirer parti.' : 'EED Article 12 imposes annual reporting on EU datacenters from 500 kW. But transparency remains partial and creates a two-tier market that specialized investors can leverage.',
-                link: '/blog/eed-directive-secret-commercial-pue-datacenters-europe/',
-                tag: 'Regulatory Compliance'
-              }
-            ].map((news, idx) => (
-              <Link 
-                key={idx} 
-                href={news.link}
-                target={news.link.startsWith('http') ? '_blank' : '_self'}
-                rel={news.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                className="bg-white p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow"
-              >
-                <div className="text-[#C45A3B] text-xs font-medium uppercase mb-2">{news.tag}</div>
-                <div className="text-slate-500 text-sm mb-3">{news.date}</div>
-                <h3 className="font-serif text-xl mb-3">{news.title}</h3>
-                <p className="text-slate-600 text-sm">{news.excerpt}</p>
-              </Link>
-            ))}
+            {getLatestBlogPosts(3).map((post) => {
+              const href = getBlogPostHref(post, language);
+              return (
+                <Link
+                  key={post.frSlug}
+                  href={href}
+                  className="bg-white p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow"
+                  data-testid={`home-news-card-${post.frSlug}`}
+                >
+                  <div className="text-[#C45A3B] text-xs font-medium uppercase mb-2">{post.category}</div>
+                  <div className="text-slate-500 text-sm mb-3">{formatBlogDate(post.date, language)}</div>
+                  <h3 className="font-serif text-xl mb-3">{post.title[language]}</h3>
+                  <p className="text-slate-600 text-sm">{post.excerpt[language]}</p>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
