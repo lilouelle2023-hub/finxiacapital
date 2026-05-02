@@ -6,8 +6,8 @@ Build a bilingual (FR/EN) institutional website for FINXIA Capital positioning t
 ## Architecture
 - `/app/frontend-nextjs/` — Next.js 15 app (Pages Router, `output: 'export'`)
 - `/app/frontend/server.js` — serve-handler serving `out/` on supervisor port 3000
-- Pages: `/`, `/about`, `/strategies`, `/investors`, `/governance`, `/press`, `/contact`, `/european-approach`, `/blog/*`, plus `/en/*` mirrors (re-export pattern with `initialLanguage`)
-- Components: `WhitepaperModal.tsx`, `SEO.tsx`, `Navigation.tsx`, `Footer.tsx`
+- Pages: `/`, `/about`, `/strategies`, `/investors`, `/governance`, `/press`, `/contact`, `/european-approach`, `/blog/*`, `/guides/*`, `/auteurs/*`, plus `/en/*` mirrors
+- Components: `WhitepaperModal.tsx`, `SEO.tsx`, `Navigation.tsx` (with Ressources dropdown), `Footer.tsx`
 - Integrations: Netlify Forms (whitepaper gated download)
 
 ## Completed
@@ -22,19 +22,32 @@ Build a bilingual (FR/EN) institutional website for FINXIA Capital positioning t
 - SSRN links updated with nofollow "under review"
 - **2026-02-05** Fixed 3 homepage text bugs (hero FR, CTA FR/EN, Financière Rive Gauche full name)
 - **2026-02-05** Split DNA "2 exits" into 2 distinct cards (JPV 2006 / LB 2023)
-- **2026-02-05** Audit Perplexity — 5 chantiers + bonus :
-  - C1: Ajout bloc "Capital & Structure" sur homepage après SCSp Luxembourg (exclusivité fonds propres + co-invest SPV)
-  - C2: Confirmation — "Notre ADN" présente en FR et EN (ternary déjà en place, 7 stats)
-  - C3: TITAN geography harmonisée "France · Espagne · Italie · Europe du Nord" (FR) / "France · Spain · Italy · Northern Europe" (EN) sur index.tsx + strategies.tsx
-  - C4: Ajout tableau synthétique "Vue d'ensemble du portefeuille" sur /strategies (4 pôles × 5 colonnes)
-  - C5a: News SSRN homepage enrichie du lien avantage compétitif TITAN DC AI
-  - C5b: Bloc SSRN sur /strategies après "Pourquoi maintenant" (lien SSRN Abstract ID 6597918)
-  - BONUS: Section "Exemples de valeur ajoutée par verticale" (3 cartes : TITAN, Hôtellerie, Résidentiel) sur homepage
+- **2026-02-05** Audit Perplexity — 5 chantiers + bonus (Capital & Structure block, TITAN geography harmonized, portfolio table on /strategies, SSRN linked to TITAN, 18 agents examples)
+- **2026-02-05** SEO LLM content strategy — 6-step audit executed:
+  - Rewrote EED Article 12 blog from stub (~200 mots) to 2 500+ mots with 7 H2 + 8 FAQ + FAQPage JSON-LD
+  - Rewrote PUE guide blog from stub (~350 mots) to 2 500+ mots with 7 H2 + 8 FAQ + anonymized case study + FAQPage JSON-LD
+  - Created NEW `/guides/eed-directive-datacenter-2026/` definitive reference guide (4 000+ mots, 8 H2, 12 FAQ, Article + FAQPage + BreadcrumbList JSON-LD)
+  - Created NEW `/auteurs/lila-benhammou/` author profile page with Person JSON-LD (E-E-A-T signal)
+  - Added "Ressources" dropdown in main navigation (Guide EED + Blog)
+  - Internal link cluster: bylines link to author page, cross-links between articles, anchor text "guide complet EED datacenters 2026" → /guides/eed-directive-datacenter-2026/
+  - Organization schema already present on homepage (verified)
+  - `sameAs` left empty on Person schema per user choice
+  - FR only for this pass (EN pages keep stub placeholder)
 
 ## Backlog
+- P1: Translate the 3 long-form articles (EED, PUE, Guide, Author) to English
 - P1: Inform user to purge Netlify/Cloudflare cache to see deployed updates
+- P2: LinkedIn articles — manually republish EED Art.12, PUE, TITAN brownfield under Lila profile with canonical links back
+- P2: SSRN accepted paper — add backlink in abstract to /guides/eed-directive-datacenter-2026/
 - P2: LinkedIn Company Page + Google Business Profile setup
 - P2: Custom email addresses (contact@finxiacapital.com)
+- P2: Add sameAs to Lila Person Schema once LinkedIn profile URL confirmed
 
 ## Tech Stack
 Next.js 15, React 18, TypeScript, Tailwind, Netlify Forms (SSG deploy).
+
+## Draft artifacts
+- `/app/memory/drafts/01_eed-article-12-rewrite.md`
+- `/app/memory/drafts/02_pue-guide-rewrite.md`
+- `/app/memory/drafts/03_guide-eed-definitif.md`
+- `/app/memory/drafts/04_auteur-lila-benhammou.md`
