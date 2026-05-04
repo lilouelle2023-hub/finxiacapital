@@ -265,13 +265,13 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Stat Banner — 300 M€+ */}
+          {/* Stat Banner — 3 Md€+ */}
           <div className="mb-20" data-testid="heritage-stat-banner">
             <div className="bg-[#C45A3B]/5 border-l-4 border-[#C45A3B] px-8 py-10 md:py-12 max-w-4xl mx-auto">
               <div className="flex flex-col md:flex-row md:items-center md:gap-10 gap-4">
                 <div className="shrink-0">
                   <p className="font-serif text-5xl md:text-6xl text-[#C45A3B] leading-none">
-                    300 M€<span className="text-3xl md:text-4xl align-top">+</span>
+                    3 Md€<span className="text-3xl md:text-4xl align-top">+</span>
                   </p>
                 </div>
                 <div className="md:border-l md:border-[#C45A3B]/30 md:pl-8">
