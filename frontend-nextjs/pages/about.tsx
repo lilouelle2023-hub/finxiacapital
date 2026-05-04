@@ -330,15 +330,10 @@ export default function AboutPage() {
           {/* Block 2 — Cœur Défense */}
           <div className="mb-20" data-testid="heritage-block-coeur-defense">
             <div className="grid lg:grid-cols-12 gap-8 items-start">
-              <div className="lg:col-span-7 grid grid-cols-2 gap-3 lg:order-1 order-2">
-                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
+              <div className="lg:col-span-7 grid grid-cols-1 gap-3 lg:order-1 order-2">
+                <div className="aspect-[16/10] overflow-hidden bg-slate-100 group">
                   <img src="/images/coeur-defense-2.jpg" loading="lazy"
-                    alt={language === 'fr' ? "Cœur Défense — Atrium intérieur, espaces communs" : "Cœur Défense — Interior atrium, common areas"}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                </div>
-                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
-                  <img src="/images/coeur-defense.jpg" loading="lazy"
-                    alt={language === 'fr' ? "Cœur Défense — Façade courbe extérieure, Paris La Défense" : "Cœur Défense — Curved exterior façade, Paris La Défense"}
+                    alt={language === 'fr' ? "Cœur Défense — Façade emblématique, Paris La Défense" : "Cœur Défense — Iconic façade, Paris La Défense"}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
               </div>
@@ -396,23 +391,16 @@ export default function AboutPage() {
                     : "Iconic curvilinear architecture preserved, upgraded to modern energy and tertiary standards."}
                 </p>
               </div>
-              <div className="lg:col-span-7 grid grid-cols-3 gap-3">
-                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group col-span-2">
+              <div className="lg:col-span-7 grid grid-cols-2 gap-3">
+                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
                   <img src="/images/washington-plaza-2.jpg" loading="lazy"
                     alt={language === 'fr' ? "Washington Plaza — Façade Art Déco signée, ex-Shell Petroleum Paris" : "Washington Plaza — Signed Art Deco façade, ex-Shell Petroleum Paris"}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
-                <div className="grid grid-rows-2 gap-3">
-                  <div className="aspect-square overflow-hidden bg-slate-100 group">
-                    <img src="/images/washington-plaza.jpg" loading="lazy"
-                      alt={language === 'fr' ? "Washington Plaza — Vue aérienne du complexe curvilinéaire" : "Washington Plaza — Aerial view of the curvilinear complex"}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  </div>
-                  <div className="aspect-square overflow-hidden bg-slate-100 group">
-                    <img src="/images/washington-plaza-3.jpg" loading="lazy"
-                      alt={language === 'fr' ? "Washington Plaza — Façade extérieure secondaire" : "Washington Plaza — Secondary exterior façade"}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  </div>
+                <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
+                  <img src="/images/washington-plaza.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Washington Plaza — Hall d'accueil intérieur design contemporain" : "Washington Plaza — Contemporary design entrance lobby"}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
               </div>
             </div>
