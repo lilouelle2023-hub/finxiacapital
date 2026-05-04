@@ -332,13 +332,13 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-12 gap-8 items-start">
               <div className="lg:col-span-7 grid grid-cols-2 gap-3 lg:order-1 order-2">
                 <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
-                  <img src="/images/coeur-defense.jpg" loading="lazy"
-                    alt={language === 'fr' ? "Cœur Défense — Façade courbe extérieure, Paris La Défense" : "Cœur Défense — Curved exterior façade, Paris La Défense"}
+                  <img src="/images/coeur-defense-2.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Cœur Défense — Atrium intérieur, espaces communs" : "Cœur Défense — Interior atrium, common areas"}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <div className="aspect-[3/4] overflow-hidden bg-slate-100 group">
-                  <img src="/images/coeur-defense-2.jpg" loading="lazy"
-                    alt={language === 'fr' ? "Cœur Défense — Atrium intérieur, espaces communs" : "Cœur Défense — Interior atrium, common areas"}
+                  <img src="/images/coeur-defense.jpg" loading="lazy"
+                    alt={language === 'fr' ? "Cœur Défense — Façade courbe extérieure, Paris La Défense" : "Cœur Défense — Curved exterior façade, Paris La Défense"}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 </div>
               </div>
