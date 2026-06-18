@@ -93,6 +93,7 @@ export default function HomePage() {
       icon: Server,
       title: language === 'fr' ? 'Datacenter AI Brown-to-Green' : 'AI Datacenter Brown-to-Green',
       subtitle: 'TITAN',
+      founder: language === 'fr' ? 'Porté par Lila Benhammou' : 'Led by Lila Benhammou',
       text: language === 'fr' 
         ? 'Repositionnement de campus datacenters existants en infrastructure IA low-energy pour hyperscalers. Financement Green Bond ESG dédié.'
         : 'Repositioning of existing datacenter campuses into low-energy AI infrastructure for hyperscalers. Dedicated ESG Green Bond financing.',
@@ -104,6 +105,7 @@ export default function HomePage() {
       icon: Building,
       title: language === 'fr' ? 'Hôtellerie Premium' : 'Premium Hospitality',
       subtitle: language === 'fr' ? 'Rendement & Rotation' : 'Yield & Rotation',
+      founder: language === 'fr' ? 'Porté par Jean-Pierre Véron' : 'Led by Jean-Pierre Véron',
       text: language === 'fr'
         ? 'Cash flow récurrent et rotation sélective d\'hôtels premium urbains.'
         : 'Recurring cash flow and selective rotation of premium urban hotels.',
@@ -115,6 +117,7 @@ export default function HomePage() {
       icon: Home,
       title: language === 'fr' ? 'Résidentiel & Flex Living' : 'Residential & Flex Living',
       subtitle: language === 'fr' ? 'Plateforme Urbaine' : 'Urban Platform',
+      founder: language === 'fr' ? 'Porté par Jean-Pierre Véron' : 'Led by Jean-Pierre Véron',
       text: language === 'fr'
         ? 'Portefeuilles opérés ciblant la demande urbaine flexible avec sorties en bloc.'
         : 'Operated portfolios targeting flexible urban demand with block exits.',
@@ -126,6 +129,7 @@ export default function HomePage() {
       icon: TrendingUp,
       title: 'Capital Opportunités',
       subtitle: 'C.CAPITAL',
+      founder: language === 'fr' ? 'Porté par Lila Benhammou' : 'Led by Lila Benhammou',
       text: language === 'fr'
         ? 'Late-stage, secondaires décotés, situations spéciales. Taux de conversion <5%.'
         : 'Late-stage, discounted secondaries, special situations. <5% conversion rate.',
@@ -291,6 +295,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">{strategy.text}</p>
+                <p className="text-xs font-medium text-[#C45A3B] uppercase tracking-wider mb-4">{strategy.founder}</p>
                 <p className="text-xs font-medium text-slate-400 uppercase tracking-wider">{strategy.focus}</p>
               </div>
             ))}
