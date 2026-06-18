@@ -235,12 +235,12 @@ export default function GovernancePage() {
                 <div>
                   <p className="font-serif text-lg text-slate-900 mb-1">Lila Benhammou</p>
                   <p className="text-[#C45A3B] text-sm font-medium mb-2">
-                    {language === 'fr' ? "Membre du Comité d'Investissement, CIO" : "Investment Committee Member, CIO"}
+                    {language === 'fr' ? "Co-fondatrice, Membre du Comité d'Investissement, CIO" : "Co-founder, Investment Committee Member, CIO"}
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Responsable des thèses TITAN DC AI et C.CAPITAL, de l'analyse financière, de la modélisation des risques, du financement structuré et de la stratégie ESG. Architecte du cadre de décision opérationnelle augmentée du véhicule."
-                      : "Responsible for TITAN DC AI and C.CAPITAL theses, financial analysis, risk modeling, structured financing and ESG strategy. Architect of the vehicle's augmented operational discipline framework."}
+                      ? "Responsable des décisions d'investissement pour les 4 pôles (TITAN DC AI, Hôtellerie Premium, Résidentiel & Flex Living, C.CAPITAL), de l'analyse financière, de la modélisation des risques, du financement structuré et de la stratégie ESG. Architecte du cadre de décision opérationnelle augmentée du véhicule."
+                      : "Responsible for investment decisions across all 4 poles (TITAN DC AI, Premium Hospitality, Residential & Flex Living, C.CAPITAL), financial analysis, risk modeling, structured financing and ESG strategy. Architect of the vehicle's augmented operational discipline framework."}
                   </p>
                 </div>
               </div>
