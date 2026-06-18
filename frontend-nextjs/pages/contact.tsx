@@ -38,9 +38,9 @@ export default function ContactPage() {
     <div data-testid="contact-page" className="pt-20">
       <SEO
         title="Contact — Nous Contacter | Finxia Capital"
-        description="Contactez Finxia Capital pour toute demande d'investissement institutionnel. SCSp Luxembourg. Email: contact@finxiacapital.com"
+        description="Contactez Finxia Capital pour toute demande d'investissement institutionnel en infrastructure TITAN DC AI. SCSp Luxembourg. Email: contact@finxiacapital.com"
         canonical="https://finxiacapital.com/contact/"
-        keywords="contact Finxia Capital Luxembourg, investissement alternatif contact, SCSp Luxembourg contact, demande investisseur institutionnel"
+        keywords="contact Finxia Capital Luxembourg, investissement TITAN DC AI, SCSp Luxembourg contact, co-investissement datacenter, Green Bond ESG"
         breadcrumbSchema={breadcrumbSchema}
         language="fr"
         ogLocale="fr_FR"
