@@ -21,7 +21,7 @@ export default function HomePage() {
         "@id": "https://finxiacapital.com/#organization",
         "name": "FINXIA Capital",
         "url": "https://finxiacapital.com",
-        "description": "AI-native alternative asset management vehicle. Luxembourg SCSp. Strategies: TITAN DC AI (datacenter brown-to-green transformation), Premium Hospitality, Urban Residential, C.CAPITAL. 18 AI agents operating continuously across portfolio lifecycle.",
+        "description": "Proprietary investment vehicle Luxembourg SCSp. Flagship strategy TITAN DC AI (datacenter brown-to-green transformation for AI in Europe), financed by equity + debt + Green Bond. Premium Hospitality, Urban Residential, C.CAPITAL. Augmented operational discipline across portfolio lifecycle.",
         "foundingDate": "2024",
         "legalName": "FINXIA Capital SCSp",
         "address": {
@@ -69,12 +69,12 @@ export default function HomePage() {
         : 'Real assets remain the best ground for value creation. Datacenters, hospitality, residential — tangible foundations.'
     },
     { 
-      id: 'artificial-intelligence',
+      id: 'titan-datacenter',
       icon: Cpu, 
-      title: language === 'fr' ? 'Intelligence Artificielle' : 'Artificial Intelligence', 
+      title: language === 'fr' ? 'TITAN DC — Infrastructure IA' : 'TITAN DC — AI Infrastructure', 
       text: language === 'fr'
-        ? '18 agents IA opérant en parallèle à chaque étape du cycle de vie du fonds. L\'alpha est dans l\'exécution augmentée.'
-        : '18 AI agents operating in parallel at every stage of the fund lifecycle. Alpha is in augmented execution.'
+        ? 'Datacenters brown-to-green : acquisition de friches industrielles, transformation en infrastructure IA basse consommation, certification PUE et financement Green Bond dédié.'
+        : 'Brown-to-green datacenters: acquisition of industrial brownfields, transformation into low-energy AI infrastructure, PUE certification and dedicated Green Bond financing.'
     },
     { 
       id: 'institutional-discipline',
@@ -136,10 +136,10 @@ export default function HomePage() {
   return (
     <div data-testid="home-page">
       <SEO
-        title={language === 'fr' ? "Accueil — L'intelligence artificielle au service des actifs réels européens | FINXIA Capital" : "Home — Artificial intelligence serving European real assets | FINXIA Capital"}
+        title={language === 'fr' ? "Accueil — TITAN DC : Infrastructure Data Center low-energy pour l'IA en Europe | FINXIA Capital" : "Home — TITAN DC: Low-Energy Data Center Infrastructure for AI in Europe | FINXIA Capital"}
         description={language === 'fr' 
-          ? "FINXIA Capital, gestionnaire d'actifs alternatifs AI-native (SCSp luxembourgeoise). 4 stratégies, 18 agents IA : TITAN DC AI, Hôtellerie Premium, Résidentiel Urbain, C.CAPITAL." 
-          : "FINXIA Capital, AI-native alternative asset management vehicle (Luxembourg SCSp). 4 strategies, 18 AI agents: TITAN DC AI, Premium Hospitality, Urban Residential, C.CAPITAL."}
+          ? "FINXIA Capital, véhicule d'investissement propriétaire SCSp luxembourgeois. Stratégie phare TITAN DC AI — infrastructure datacenter brown-to-green pour l'IA en Europe, financée par capital propre + dette + Green Bond." 
+          : "FINXIA Capital, proprietary investment vehicle Luxembourg SCSp. Flagship TITAN DC AI — brown-to-green datacenter infrastructure for AI in Europe, financed by equity + debt + Green Bond."}
         canonical={language === 'fr' ? "https://finxiacapital.com/" : "https://finxiacapital.com/en/"}
         keywords="gestion actifs alternatifs Luxembourg, SCSp Luxembourg, AI-native fund, investissement alternatif Europe, datacenter AI brown to green, Green Bond ESG"
         ogImage="https://finxiacapital.com/og-image.jpg"
@@ -182,26 +182,26 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <p className="overline mb-6 text-[#C45A3B] animate-fade-in">
               {language === 'fr' 
-                ? 'Gestion d\'Actifs Alternatifs · SCSp · Luxembourg'
-                : 'Alternative Asset Management · SCSp · Luxembourg'}
+                ? 'TITAN DC · Infrastructure IA · SCSp · Luxembourg'
+                : 'TITAN DC · AI Infrastructure · SCSp · Luxembourg'}
             </p>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-8 animate-slide-up">
               {language === 'fr' ? (
                 <>
-                  L'intelligence artificielle<br/>
-                  <span className="text-[#C45A3B]">au service des actifs réels européens.</span>
+                  TITAN DC : Infrastructure<br/>
+                  <span className="text-[#C45A3B]">Data Center low-energy pour l'IA en Europe.</span>
                 </>
               ) : (
                 <>
-                  Artificial intelligence<br/>
-                  <span className="text-[#C45A3B]">serving European real assets.</span>
+                  TITAN DC: Low-Energy<br/>
+                  <span className="text-[#C45A3B]">Data Center Infrastructure for AI in Europe.</span>
                 </>
               )}
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed animate-slide-up stagger-1 max-w-3xl">
               {language === 'fr'
-                ? 'FINXIA Capital est un véhicule d\'investissement propriétaire structuré en SCSp luxembourgeoise, déployant un capital de conviction avec une discipline institutionnelle à travers quatre piliers de création de valeur.'
-                : 'FINXIA Capital is a proprietary investment vehicle structured as a Luxembourg SCSp, deploying conviction capital with institutional discipline across four value creation pillars.'}
+                ? 'FINXIA Capital est un véhicule d\'investissement propriétaire structuré en SCSp luxembourgeoise, déployant capital propre + dette + Green Bond sur la stratégie phare TITAN DC AI — transformation brown-to-green de datacenters européens en infrastructure IA basse consommation.'
+                : 'FINXIA Capital is a proprietary investment vehicle structured as a Luxembourg SCSp, deploying equity + debt + Green Bond on its flagship TITAN DC AI strategy — brown-to-green transformation of European datacenters into low-energy AI infrastructure.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up stagger-2">
               <Link
@@ -237,7 +237,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <p className="overline mb-4">{language === 'fr' ? 'Notre Conviction' : 'Our Conviction'}</p>
             <h2 className="font-serif text-3xl md:text-4xl mb-6">
-              {language === 'fr' ? 'Actifs Réels × Intelligence Artificielle' : 'Real Assets × Artificial Intelligence'}
+              {language === 'fr' ? 'Actifs Réels × Infrastructure IA' : 'Real Assets × AI Infrastructure'}
             </h2>
             <div className="section-divider mx-auto" />
           </div>
@@ -271,8 +271,8 @@ export default function HomePage() {
             <div className="section-divider mx-auto mb-8" />
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
               {language === 'fr'
-                ? 'Une discipline d\'exécution institutionnelle. Une architecture AI-native sans équivalent.'
-                : 'Institutional execution discipline. An unmatched AI-native architecture.'}
+                ? 'Une discipline d\'exécution institutionnelle. Une architecture opérationnelle augmentée, calibrée pour la transformation brown-to-green de datacenters européens.'
+                : 'Institutional execution discipline. An augmented operational architecture, calibrated for brown-to-green European datacenter transformation.'}
             </p>
           </div>
 
@@ -308,34 +308,75 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* Double Culture Real Estate × IA Section */}
+      <section className="py-24 md:py-32 bg-white" data-testid="double-culture-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="overline mb-4">{language === 'fr' ? 'Notre Différence' : 'Our Edge'}</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">
+              {language === 'fr' ? 'Double Culture Real Estate × IA' : 'Double Culture: Real Estate × AI'}
+            </h2>
+            <div className="section-divider mx-auto mb-8" />
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+              {language === 'fr'
+                ? "Les seuls à comprendre le métier de nos clients. 40 ans d'expertise immobilière institutionnelle croisée avec une maîtrise opérationnelle de l'IA et des infrastructures télécoms — fibre optique, raccordement HT, réseaux."
+                : "The only ones who truly understand our clients' business. 40 years of institutional real estate expertise crossed with operational mastery of AI and telecom infrastructure — fiber optics, HV connection, networks."}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-slate-50 p-8 border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">
+                {language === 'fr' ? 'Langage bilingue' : 'Bilingual fluency'}
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                {language === 'fr'
+                  ? "Nous parlons le langage des ingénieurs réseau et des banques d'investissement. Nous savons pourquoi un hyperscaler exige un PUE < 1,2 ET une structure juridique luxembourgeoise."
+                  : "We speak the language of network engineers and investment banks. We know why a hyperscaler demands PUE < 1.2 AND a Luxembourg legal structure."}
+              </p>
+            </div>
+            <div className="bg-slate-50 p-8 border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">
+                {language === 'fr' ? 'Infrastructure tangible' : 'Tangible infrastructure'}
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                {language === 'fr'
+                  ? "Nous ne déployons pas de code. Nous raccordons des câbles HT, certifions des dalles techniques, structurons des Green Bonds. L'IA est un levier, pas un produit."
+                  : "We don't deploy code. We connect HV cables, certify technical slabs, structure Green Bonds. AI is a lever, not a product."}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* AI Architecture Section */}
       <section className="py-24 md:py-32 bg-[#1E2A3A] text-white" data-testid="ai-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="overline text-[#C45A3B] mb-4">
-                {language === 'fr' ? 'Architecture AI-Native' : 'AI-Native Architecture'}
+                {language === 'fr' ? 'Discipline Opérationnelle Augmentée' : 'Augmented Operational Discipline'}
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">
                 {language === 'fr' 
-                  ? 'Ce n\'est pas un outil. C\'est une façon de gérer.'
-                  : 'It\'s not a tool. It\'s a way of managing.'}
+                  ? 'La technologie au service de l\'exécution, pas du storytelling.'
+                  : 'Technology in service of execution, not storytelling.'}
               </h2>
               <div className="section-divider mb-8" />
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
                 {language === 'fr'
-                  ? 'Finxia est construit AI-native — pas dans le sens marketing du terme, dans le sens architectural. 18 agents d\'intelligence artificielle opèrent en continu à chaque étape du cycle de vie du portefeuille.'
-                  : 'Finxia is built AI-native — not in the marketing sense, but in the architectural sense. 18 artificial intelligence agents operate continuously at every stage of the portfolio lifecycle.'}
+                  ? 'Finxia intègre une discipline opérationnelle augmentée — des outils propriétaires couvrent le sourcing, le suivi de performance, la veille réglementaire et l\'optimisation des sorties. L\'objectif : aucun signal perdu sur des actifs réels complexes.'
+                  : 'Finxia integrates augmented operational discipline — proprietary tools cover sourcing, performance tracking, regulatory watch and exit optimization. Goal: no signal lost on complex real assets.'}
               </p>
               <p className="text-slate-300 text-base leading-relaxed mb-6">
                 {language === 'fr'
-                  ? 'Du Deal Intelligence qui identifie les opportunités avant le marché, à l\'Asset Monitor qui surveille la performance en temps réel — en passant par le Debt Tracker, le Revenue Manager, l\'Ops Tracker et l\'Exit Optimizer — chaque décision est augmentée.'
-                  : 'From Deal Intelligence that identifies opportunities before the market, to Asset Monitor that tracks performance in real-time — through Debt Tracker, Revenue Manager, Ops Tracker, and Exit Optimizer — every decision is augmented.'}
+                  ? 'Du sourcing augmenté qui identifie les friches industrielles avant le marché, au suivi de conformité PUE en temps réel — en passant par le suivi de dette, la gestion des revenus et l\'optimisation des sorties — chaque décision sur les actifs TITAN DC est augmentée.'
+                  : 'From enhanced sourcing that identifies industrial brownfields before the market, to real-time PUE compliance tracking — through debt monitoring, revenue management and exit optimization — every decision on TITAN DC assets is augmented.'}
               </p>
               <p className="text-slate-400 text-base leading-relaxed">
                 {language === 'fr'
-                  ? 'Aucun signal n\'est perdu. Les actifs sont réels. L\'intelligence est artificielle. La combinaison est délibérée.'
-                  : 'No signal is lost. The assets are real. The intelligence is artificial. The combination is deliberate.'}
+                  ? 'Aucun signal n\'est perdu. Les actifs sont réels. L\'infrastructure est tangible. La combinaison est délibérée.'
+                  : 'No signal is lost. The assets are real. The infrastructure is tangible. The combination is deliberate.'}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -376,8 +417,8 @@ export default function HomePage() {
                 <div className="text-[#C45A3B] text-xs font-semibold uppercase tracking-wider mb-3">TITAN DC AI</div>
                 <p className="text-slate-300 text-sm leading-relaxed italic">
                   {language === 'fr'
-                    ? "Le Deal Intelligence identifie les friches industrielles correspondant aux critères techniques TITAN (emprise, raccordement HT, conformité ICPE) avant mise sur le marché. L'Asset Monitor est conçu pour suivre en continu la conformité PUE et les indicateurs réglementaires EED sur chaque actif acquis en portefeuille."
-                    : "Deal Intelligence identifies industrial brownfields matching TITAN technical criteria (footprint, HV connection, ICPE compliance) before going to market. Asset Monitor is designed to continuously track PUE compliance and EED regulatory indicators on each acquired portfolio asset."}
+                    ? "Le sourcing augmenté identifie les friches industrielles correspondant aux critères techniques TITAN (emprise, raccordement HT, conformité ICPE) avant mise sur le marché. Le suivi de conformité PUE et les indicateurs réglementaires EED sont monitorés en continu sur chaque actif acquis en portefeuille."
+                    : "Enhanced sourcing identifies industrial brownfields matching TITAN technical criteria (footprint, HV connection, ICPE compliance) before going to market. PUE compliance and EED regulatory indicators are continuously monitored on each acquired portfolio asset."}
                 </p>
               </div>
               <div className="bg-white/5 p-6 border-l-2 border-[#C45A3B]">
@@ -516,6 +557,59 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* Campus IA Formation Section */}
+      <section className="py-24 md:py-32 bg-slate-50" data-testid="campus-formation-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="overline mb-4">{language === 'fr' ? 'Impact Territorial' : 'Local Impact'}</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">
+              {language === 'fr' ? 'Campus IA Formation' : 'AI Training Campuses'}
+            </h2>
+            <div className="section-divider mx-auto mb-8" />
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+              {language === 'fr'
+                ? "Là où nous installons des datacenters, nous créons de l'emploi local."
+                : "Where we install datacenters, we create local jobs."}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-8 border-t-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Public cible' : 'Target audience'}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? "Jeunes de 18 à 25 ans, sans diplôme requis. Recrutement local sur les territoires d'implantation des sites TITAN DC."
+                  : "Young people aged 18-25, no diploma required. Local recruitment on the territories where TITAN DC sites are located."}
+              </p>
+            </div>
+            <div className="bg-white p-8 border-t-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Formation pratique' : 'Hands-on training'}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? "Formation sur équipement réel : serveurs, racks, câblage réseau, UPS, baies de distribution électrique. Apprentissage par la pratique sur le site."
+                  : "Training on real equipment: servers, racks, network cabling, UPS, electrical distribution bays. Learning by doing on site."}
+              </p>
+            </div>
+            <div className="bg-white p-8 border-t-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Emploi garanti' : 'Guaranteed employment'}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? "Garantie d'embauche via les partenaires opérateurs qui louent les sites. Objectif : 70%+ d'emploi à 6 mois."
+                  : "Hiring guarantee via operator partners who lease the sites. Target: 70%+ employment at 6 months."}
+              </p>
+            </div>
+            <div className="bg-white p-8 border-t-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Territoires en transition' : 'Territories in transition'}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? "Les projets DC s'implantent sur des territoires en transition — les emplois doivent rester sur ces territoires."
+                  : "DC projects are located in transitioning territories — jobs must stay in those territories."}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Figures Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -530,7 +624,7 @@ export default function HomePage() {
               { value: '40+', label: language === 'fr' ? 'ans — Track record immobilier institutionnel' : 'years — Institutional real estate track record', sublabel: 'Jean-Pierre Véron' },
               { value: '2006', label: language === 'fr' ? 'Jean-Pierre Véron — Sortie Financière Rive Gauche' : 'Jean-Pierre Véron — Financière Rive Gauche exit', sublabel: language === 'fr' ? 'pré-crise' : 'pre-crisis' },
               { value: '2023', label: language === 'fr' ? 'Lila Benhammou — Fondatrice & sortie Humans4Help IA & automation' : 'Lila Benhammou — Founder & Humans4Help AI & automation exit', sublabel: '' },
-              { value: '18', label: language === 'fr' ? 'agents IA autonomes — Architecture opérationnelle native' : 'autonomous AI agents — Native operational architecture', sublabel: '' },
+              { value: '1', label: language === 'fr' ? 'Green Bond TITAN DC AI — Financement structuré dédié' : 'Green Bond TITAN DC AI — Dedicated structured financing', sublabel: '' },
               { value: '4', label: language === 'fr' ? 'stratégies d\'investissement complémentaires' : 'complementary investment strategies', sublabel: '' },
               { value: '3', label: language === 'fr' ? 'marchés : France, Espagne, Europe du Sud' : 'markets: France, Spain, Southern Europe', sublabel: '' },
               { value: '1', label: language === 'fr' ? 'publication académique — SSRN (en cours de revue)' : 'academic publication — SSRN (under review)', sublabel: 'Abstract ID 6597918' },
@@ -550,8 +644,8 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-white text-2xl md:text-3xl font-serif leading-relaxed">
             {language === 'fr'
-              ? '"Là où les gestionnaires traditionnels utilisent l\'IA comme outil, FINXIA l\'utilise comme système d\'exploitation."'
-              : '"Where traditional managers use AI as a tool, FINXIA uses it as an operating system."'}
+              ? '"Là où d\'autres construisent des outils, nous construisons des infrastructures — des datacenters aux formations locales, en passant par les Green Bonds."'
+              : '"Where others build tools, we build infrastructure — from datacenters to local training, through Green Bonds."'}
           </p>
         </div>
       </section>
