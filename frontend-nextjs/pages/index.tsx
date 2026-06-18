@@ -264,6 +264,60 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Energy & Sovereignty Stats Section */}
+      <section className="py-16 bg-[#1E2A3A] text-white" data-testid="energy-sovereignty-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="overline text-[#C45A3B] mb-4">{language === 'fr' ? 'Le contexte' : 'The Context'}</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">
+              {language === 'fr' ? 'Capacité électrique · Souveraineté · Décarbonation' : 'Electrical Capacity · Sovereignty · Decarbonization'}
+            </h2>
+            <div className="section-divider mx-auto mb-8" />
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
+              <div className="text-4xl font-bold text-[#C45A3B] mb-2">18 GW</div>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Demande réservée aux datacenters en France — seulement ~15% concrétisée'
+                  : 'Reserved datacenter demand in France — only ~15% realized'}
+              </p>
+            </div>
+            <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
+              <div className="text-4xl font-bold text-[#C45A3B] mb-2">95%</div>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Électricité française décarbonisée — exportant 20% de sa production'
+                  : 'French electricity decarbonized — exporting 20% of its production'}
+              </p>
+            </div>
+            <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
+              <div className="text-4xl font-bold text-[#C45A3B] mb-2">92%</div>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Données occidentales stockées aux USA — dépendance stratégique totale'
+                  : 'Western data stored in the USA — total strategic dependence'}
+              </p>
+            </div>
+            <div className="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
+              <div className="text-4xl font-bold text-[#C45A3B] mb-2">≤ 1,30</div>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'PUE cible TITAN DC — seuil EED Article 21 à horizon 2027'
+                  : 'TITAN DC target PUE — EED Article 21 threshold by 2027'}
+              </p>
+            </div>
+          </div>
+          <div className="mt-10 max-w-4xl mx-auto text-center">
+            <p className="text-slate-300 text-lg leading-relaxed">
+              {language === 'fr'
+                ? 'La France dispose d\'une énergie propre et abondante, mais la file d\'attente RTE bloque 50% des nouvelles demandes. TITAN DC AI contourne cette contrainte en ciblant des sites brownfield déjà raccordés — capturant la double prime de la souveraineté numérique et de la décarbonation.'
+                : 'France has clean, abundant energy, but the RTE queue blocks 50% of new requests. TITAN DC AI bypasses this constraint by targeting already-connected brownfield sites — capturing the double premium of digital sovereignty and decarbonization.'}
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Strategies Overview */}
       <section className="py-24 md:py-32 bg-slate-50" data-testid="strategies-overview">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
