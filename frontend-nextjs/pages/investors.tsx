@@ -86,8 +86,8 @@ export default function InvestorsPage() {
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-700 leading-relaxed mb-4">
                 {language === 'fr'
-                  ? "FINXIA Capital opère en tant que véhicule propriétaire — le capital déployé est le capital propre du General Partner, structuré pour maximiser l'agilité opérationnelle et l'alignement stratégique. Cette architecture élimine les conflits d'intérêts inhérents aux structures de fonds traditionnels et permet une prise de décision d'investissement indépendante des cycles de levée."
-                  : "FINXIA Capital operates as a proprietary vehicle — capital deployed is the General Partner's own capital, structured to maximize operational agility and strategic alignment. This architecture eliminates the conflicts of interest inherent in traditional fund structures and enables investment decision-making independent of fundraising cycles."}
+                  ? "FINXIA Capital opère en tant que véhicule propriétaire — le capital déployé est le capital propre du General Partner, complété par un levier dette structuré et un Green Bond TITAN DC AI dédié. Cette architecture triple (capital propre + dette + Green Bond) élimine les conflits d'intérêts inhérents aux structures de fonds traditionnels et permet une prise de décision d'investissement indépendante des cycles de levée."
+                  : "FINXIA Capital operates as a proprietary vehicle — capital deployed is the General Partner's own equity, supplemented by structured debt leverage and a dedicated TITAN DC AI Green Bond. This triple architecture (equity + debt + Green Bond) eliminates conflicts of interest inherent in traditional fund structures and enables investment decision-making independent of fundraising cycles."}
               </p>
               <p className="text-slate-700 leading-relaxed">
                 {language === 'fr'
@@ -117,8 +117,8 @@ export default function InvestorsPage() {
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-700 leading-relaxed mb-4">
                 {language === 'fr'
-                  ? "La stratégie TITAN DC AI (acquisition et transformation de datacenters européens legacy en plateformes haute efficacité pour charges de travail IA) est déployée intégralement sur le capital propre du véhicule SCSp FINXIA Capital — sans levée auprès d'investisseurs tiers, sans poche de co-investissement."
-                  : "The TITAN DC AI strategy (acquisition and transformation of legacy European datacenters into high-efficiency AI infrastructure platforms) is deployed entirely on FINXIA Capital SCSp own equity — without third-party fundraising, without co-investment pocket."}
+                  ? "La stratégie TITAN DC AI (acquisition et transformation de datacenters européens legacy en plateformes haute efficacité pour charges de travail IA) est financée par une structure en trois piliers : capital propre du véhicule SCSp FINXIA Capital (skin in the game total), levier dette sénior et mezzanine par actif, et Green Bond TITAN DC AI dédié aligné sur la Taxonomie Verte Européenne — sans dilution equity, sans levée auprès d'investisseurs tiers."
+                  : "The TITAN DC AI strategy (acquisition and transformation of legacy European datacenters into high-efficiency AI infrastructure platforms) is financed by a three-pillar structure: own equity of the FINXIA Capital SCSp vehicle (total skin in the game), senior and mezzanine debt leverage per asset, and a dedicated TITAN DC AI Green Bond aligned with the EU Taxonomy — without equity dilution, without third-party fundraising."}
               </p>
               <p className="text-slate-700 leading-relaxed mb-4">
                 {language === 'fr'
@@ -161,11 +161,19 @@ export default function InvestorsPage() {
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-slate-700 leading-relaxed mb-6">
                 {language === 'fr'
-                  ? "La stratégie TITAN DC AI est structurée pour mobiliser des financements ESG à conditions préférentielles :"
-                  : "The TITAN DC AI strategy is structured to mobilize ESG financing at preferential terms:"}
+                  ? "La stratégie TITAN DC AI est structurée selon une architecture de financement en trois piliers, calibrée pour préserver l'intégrité du capital propre tout en mobilisant des financements ESG à conditions préférentielles :"
+                  : "The TITAN DC AI strategy is structured according to a three-pillar financing architecture, calibrated to preserve equity integrity while mobilizing ESG financing at preferential terms:"}
               </p>
               
               <ul className="space-y-3 mb-6">
+                <li className="flex items-start gap-3 text-slate-700">
+                  <span className="text-[#C45A3B] mt-1">•</span>
+                  <span>
+                    {language === 'fr'
+                      ? "Capital propre fondateurs : 100% skin in the game, aucune dilution externe, alignement total entre décideurs et exécution"
+                      : "Founders' equity: 100% skin in the game, no external dilution, total alignment between decision-makers and execution"}
+                  </span>
+                </li>
                 <li className="flex items-start gap-3 text-slate-700">
                   <span className="text-[#C45A3B] mt-1">•</span>
                   <span>
@@ -194,8 +202,8 @@ export default function InvestorsPage() {
 
               <p className="text-slate-700 leading-relaxed mb-4">
                 {language === 'fr'
-                  ? "La stratégie TITAN DC AI est structurée selon les standards ESG de la Taxonomie Verte Européenne (Règlement 2020/852) et les principes ICMA Green Bond."
-                  : "The TITAN DC AI strategy is structured according to EU Taxonomy (Regulation 2020/852) ESG standards and ICMA Green Bond Principles."}
+                  ? "La stratégie TITAN DC AI est structurée selon les standards ESG de la Taxonomie Verte Européenne (Règlement 2020/852) et les principes ICMA Green Bond. La structure en trois piliers (capital propre + dette + Green Bond) permet de financer la transformation brown-to-green sans dilution du capital fondateurs."
+                  : "The TITAN DC AI strategy is structured according to EU Taxonomy (Regulation 2020/852) ESG standards and ICMA Green Bond Principles. The three-pillar structure (equity + debt + Green Bond) enables brown-to-green transformation financing without dilution of founders' capital."}
               </p>
 
               <p className="text-slate-600 text-sm leading-relaxed mb-4">
