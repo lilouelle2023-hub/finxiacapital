@@ -19,23 +19,23 @@ export default function AboutPage() {
       icon: Layers, 
       title: language === 'fr' ? 'Architecture Hybride' : 'Hybrid Architecture',
       text: language === 'fr'
-        ? 'Structure multi-poches unique combinant immobilier (logistique, hôtellerie, résidentiel) avec des opportunités de capital late-stage pour des rendements amplifiés.'
-        : 'Unique multi-pocket structure combining real estate (logistics, hospitality, residential) with late-stage capital opportunities for enhanced returns.'
+        ? "Structure multi-poches unique où l'expertise immobilier institutionnel de Jean-Pierre Véron (hôtellerie, résidentiel, logistique) se combine avec le profil tech/finance/IA de Lila Benhammou pour créer un véhicule hybride sans équivalent en Europe."
+        : 'Unique multi-pocket structure where Jean-Pierre Véron\'s institutional real estate expertise (hospitality, residential, logistics) combines with Lila Benhammou\'s tech/finance/AI profile to create a hybrid vehicle without equivalent in Europe.'
     },
     {
       id: 'tech-driven',
       icon: Brain, 
       title: language === 'fr' ? 'Avantage Technologique' : 'Tech-Driven Edge',
       text: language === 'fr'
-        ? 'Discipline opérationnelle augmentée pour le sourcing, l\'optimisation de portefeuille et le suivi des risques en temps réel — calibrée pour la transformation brown-to-green de datacenters européens.'
-        : 'Augmented operational discipline for deal sourcing, portfolio optimization, and real-time risk monitoring — calibrated for brown-to-green European datacenter transformation.'
+        ? "Discipline opérationnelle augmentée pour le sourcing, l'optimisation de portefeuille et le suivi des risques en temps réel — calibrée pour la transformation brown-to-green de datacenters européens. Dirigée par l'expertise IA et télécoms de Lila Benhammou."
+        : 'Augmented operational discipline for deal sourcing, portfolio optimization, and real-time risk monitoring — calibrated for brown-to-green European datacenter transformation. Led by Lila Benhammou\'s AI and telecom expertise.'
     },
     {
       id: 'capital-recycling',
       icon: Shield, 
       title: language === 'fr' ? 'Recyclage du Capital' : 'Capital Recycling',
       text: language === 'fr'
-        ? "Le capital libéré par les sorties d'actifs est réinvesti dans de nouvelles opportunités, sans dépendance aux cycles de levée externe."
+        ? 'Le capital libéré par les sorties d\'actifs est réinvesti dans de nouvelles opportunités, sans dépendance aux cycles de levée externe.'
         : "Capital released from asset exits is reinvested into new opportunities, without reliance on external fundraising cycles."
     },
     {
@@ -55,8 +55,8 @@ export default function AboutPage() {
       name: 'Jean-Pierre Véron',
       role: language === 'fr' ? 'Président & Fondateur' : 'Chairman & Founder',
       bio: language === 'fr'
-        ? "Professionnel de référence de l'investissement immobilier français et européen. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée en 2006 à un groupe immobilier européen coté — sortie réalisée deux ans avant la crise immobilière qui a restructuré le secteur. Directeur Général France de Kaufman & Broad pendant 20 ans — sous sa direction, la filiale France a réalisé plusieurs milliards d'euros de chiffre d'affaires cumulé. Président de Financière Norev. Plus de 40 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe."
-        : "Leading figure in French and European real estate investment. Founder of Financière Rive Gauche, a pan-European real estate investment platform divested in 2006 to a listed European real estate group — exit executed two years before the real estate crisis that restructured the sector. Managing Director France of Kaufman & Broad for 20 years — under his leadership, the French subsidiary generated several billion euros in cumulative revenue. Chairman of Financière Norev. Over 40 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets across Europe.",
+        ? "Professionnel de référence de l'investissement immobilier français et européen. Lead des stratégies Hôtellerie Premium et Résidentiel & Flex Living de FINXIA. Fondateur de Financière Rive Gauche, plateforme d'investissement immobilier paneuropéenne cédée en 2006 à un groupe immobilier européen coté — sortie réalisée deux ans avant la crise immobilière qui a restructuré le secteur. Directeur Général France de Kaufman & Broad pendant 20 ans — sous sa direction, la filiale France a réalisé plusieurs milliards d'euros de chiffre d'affaires cumulé. Président de Financière Norev. Plus de 40 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels (hôtellerie, résidentiel, logistique) en Europe. L'ADN immobilier de FINXIA."
+        : "Leading figure in French and European real estate investment. Lead of FINXIA's Premium Hospitality and Residential & Flex Living strategies. Founder of Financière Rive Gauche, a pan-European real estate investment platform divested in 2006 to a listed European real estate group — exit executed two years before the real estate crisis that restructured the sector. Managing Director France of Kaufman & Broad for 20 years — under his leadership, the French subsidiary generated several billion euros in cumulative revenue. Chairman of Financière Norev. Over 40 years of full-cycle track record across acquisition, development, restructuring and disposal of institutional real estate assets (hospitality, residential, logistics) across Europe. The real estate DNA of FINXIA.",
       linkedin: 'https://linkedin.com/in/jean-pierre-veron',
       highlights: [
         { icon: Award, text: language === 'fr' ? 'Sortie Financière Rive Gauche (2006, pré-crise)' : 'Financière Rive Gauche exit (2006, pre-crisis)' },
@@ -70,8 +70,8 @@ export default function AboutPage() {
       name: 'Lila Benhammou',
       role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements (CIO)' : 'Co-Founder & Chief Investment Officer (CIO)',
       bio: language === 'fr'
-        ? "Serial entrepreneur senior avec un parcours croisé en finance, intelligence artificielle et télécoms. Fondatrice de Humans4Help (H4H), spécialiste IA et automation d'entreprise — sortie réussie en 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architecte de la stratégie TITAN DC AI et de son infrastructure opérationnelle. Expertise télécoms : fibre optique, raccordement HT, infrastructures réseau. Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam."
-        : "Senior serial entrepreneur with a cross-functional background in finance, artificial intelligence and telecoms. Founder of Humans4Help (H4H), enterprise AI and automation specialist — successful exit in 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architect of the TITAN DC AI strategy and its operational infrastructure. Telecom expertise: fiber optics, HV connection, network infrastructure. Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam.",
+        ? "Serial entrepreneur senior avec un parcours croisé en finance, intelligence artificielle et télécoms. Lead des stratégies TITAN DC AI (datacenter + infrastructure télécom) et C.CAPITAL (investissements late-stage IA/tech) de FINXIA. Fondatrice de Humans4Help (H4H), spécialiste IA et automation d'entreprise — sortie réussie en 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architecte de la stratégie TITAN DC AI et de son infrastructure opérationnelle. Expertise télécoms : fibre optique, raccordement HT, infrastructures réseau. Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam. L'ADN investissement et tech de FINXIA."
+        : "Senior serial entrepreneur with a cross-functional background in finance, artificial intelligence and telecoms. Lead of FINXIA's TITAN DC AI (datacenter + telecom infrastructure) and C.CAPITAL (late-stage AI/tech investments) strategies. Founder of Humans4Help (H4H), enterprise AI and automation specialist — successful exit in 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architect of the TITAN DC AI strategy and its operational infrastructure. Telecom expertise: fiber optics, HV connection, network infrastructure. Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam. The investment and tech DNA of FINXIA.",
       linkedin: 'https://linkedin.com/in/lilabenhammou',
       highlights: [
         { icon: Lightbulb, text: language === 'fr' ? 'Architecte TITAN DC AI — infrastructure datacenter + télécoms' : 'TITAN DC AI architect — datacenter + telecom infrastructure' },
