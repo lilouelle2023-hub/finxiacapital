@@ -514,10 +514,22 @@ export default function StrategiesPage() {
                       <p className="text-slate-500 text-xs uppercase tracking-wider mb-6">
                         {language === 'fr' ? 'Late-stage IA · Infrastructure · Secondaires' : 'Late-stage AI · Infrastructure · Secondaries'}
                       </p>
-                      <p className="text-slate-700 leading-relaxed">
+                      <p className="text-slate-700 leading-relaxed mb-4">
                         {language === 'fr'
                           ? "Univers cible indicatif : sociétés late-stage dans l'IA, l'infrastructure cloud et les marchés secondaires décotés. Chaque position fait l'objet d'une analyse approfondie avant engagement. Taux de conversion volontairement maintenu sous 5%."
                           : "Indicative target universe: late-stage companies in AI, cloud infrastructure, and discounted secondary markets. Every position undergoes thorough analysis before commitment. Conversion rate deliberately maintained below 5%."}
+                      </p>
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-4">
+                        {['Cohere', 'Mercor', 'OpenAI', 'Revolut', 'Anthropic', 'Cursor'].map((company) => (
+                          <div key={company} className="bg-white px-3 py-2 text-sm text-slate-700 font-medium border border-slate-200">
+                            {company}
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-slate-500 text-xs mt-4 italic">
+                        {language === 'fr'
+                          ? "Source secondaire : marchés de liquidité pré-IPO via Forge Global."
+                          : "Secondary source: pre-IPO liquidity markets via Forge Global."}
                       </p>
                     </div>
                   )}
