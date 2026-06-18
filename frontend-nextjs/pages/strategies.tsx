@@ -182,8 +182,8 @@ export default function StrategiesPage() {
             <div className="section-divider mb-8" />
             <p className="text-slate-600 text-xl leading-relaxed">
               {language === 'fr'
-                ? 'Une discipline d\'exécution institutionnelle. Une architecture AI-native qui n\'a pas d\'équivalent dans la gestion alternative européenne.'
-                : 'Institutional execution discipline. An AI-native architecture unmatched in European alternative management.'}
+                ? 'Une discipline d\'exécution institutionnelle. Une architecture opérationnelle calibrée pour la transformation brown-to-green de datacenters européens.'
+                : 'Institutional execution discipline. An operational architecture calibrated for brown-to-green European datacenter transformation.'}
             </p>
           </div>
         </div>
@@ -210,8 +210,8 @@ export default function StrategiesPage() {
             </p>
             <p className="text-slate-700 leading-relaxed">
               {language === 'fr'
-                ? "Structurée en SCSp Luxembourg avec capital propre et sans levée externe, FINXIA Capital allie discipline institutionnelle, architecture AI-native (18 agents IA opérant en continu), et expertise sectorielle approfondie pour créer de la valeur durable sur les actifs réels européens."
-                : "Structured as a Luxembourg SCSp with proprietary capital and no external fundraising, FINXIA Capital combines institutional discipline, AI-native architecture (18 AI agents operating continuously), and deep sector expertise to create sustainable value in European real assets."}
+                ? "Structurée en SCSp Luxembourg avec capital propre et sans levée externe, FINXIA Capital allie discipline institutionnelle, expertise sectorielle approfondie (immobilier institutionnel, télécoms, IA) et financement structuré (Green Bond + dette) pour créer de la valeur durable sur les actifs réels européens."
+                : "Structured as a Luxembourg SCSp with proprietary capital and no external fundraising, FINXIA Capital combines institutional discipline, deep sector expertise (institutional real estate, telecoms, AI) and structured financing (Green Bond + debt) to create sustainable value in European real assets."}
             </p>
           </div>
         </div>
@@ -312,6 +312,26 @@ export default function StrategiesPage() {
                       ))}
                     </ul>
                   </div>
+
+
+                  {/* TITAN DC AI - Campus IA Formation */}
+                  {strategy.id === 'titan-datacenter' && (
+                    <div className="my-8 p-6 bg-white border-l-4 border-[#C45A3B] rounded-lg">
+                      <h4 className="font-semibold text-slate-800 mb-4">
+                        {language === 'fr' ? 'Campus IA Formation' : 'AI Training Campus'}
+                      </h4>
+                      <p className="text-slate-700 text-sm leading-relaxed mb-4">
+                        {language === 'fr'
+                          ? "Là où nous installons des datacenters, nous créons de l'emploi local. Chaque site TITAN DC intègre un campus de formation pour jeunes de 18 à 25 ans (sans diplôme requis), avec formation pratique sur équipement réel : serveurs, racks, câblage, UPS."
+                          : "Where we install datacenters, we create local jobs. Each TITAN DC site includes a training campus for young people aged 18-25 (no diploma required), with hands-on training on real equipment: servers, racks, cabling, UPS."}
+                      </p>
+                      <p className="text-slate-700 text-sm leading-relaxed">
+                        {language === 'fr'
+                          ? "Garantie d'embauche via les partenaires opérateurs qui louent les sites. Objectif : 70%+ d'emploi à 6 mois. Les projets DC s'implantent sur des territoires en transition — les emplois doivent rester sur ces territoires."
+                          : "Hiring guarantee via operator partners who lease the sites. Target: 70%+ employment at 6 months. DC projects are located in transitioning territories — jobs must stay in those territories."}
+                      </p>
+                    </div>
+                  )}
 
                   {/* TITAN DC AI - Certification PUE */}
                   {strategy.id === 'titan-datacenter' && (
