@@ -228,8 +228,8 @@ export default function GovernancePage() {
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Responsable de la validation des thèses d'acquisition, de la gouvernance des actifs en portefeuille et de la discipline de sortie. 40+ ans d'expérience sur cycles complets immobilier institutionnel européen."
-                      : "Responsible for validating acquisition theses, portfolio asset governance and exit discipline. 40+ years of experience on full-cycle European institutional real estate."}
+                      ? "Responsable des thèses immobilières (Hôtellerie Premium, Résidentiel & Flex Living) et de la gouvernance des actifs en portefeuille. 40+ ans d'expérience sur cycles complets immobilier institutionnel européen."
+                      : "Responsible for real estate theses (Premium Hospitality, Residential & Flex Living) and portfolio asset governance. 40+ years of experience on full-cycle European institutional real estate."}
                   </p>
                 </div>
                 <div>
@@ -239,8 +239,8 @@ export default function GovernancePage() {
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Responsable de l'analyse financière, de la modélisation des risques, de l'infrastructure TITAN DC AI et de la stratégie ESG. Architecte du cadre de décision opérationnelle augmentée du véhicule."
-                      : "Responsible for financial analysis, risk modeling, TITAN DC AI infrastructure and ESG strategy. Architect of the vehicle's augmented operational discipline framework."}
+                      ? "Responsable des thèses TITAN DC AI et C.CAPITAL, de l'analyse financière, de la modélisation des risques, du financement structuré et de la stratégie ESG. Architecte du cadre de décision opérationnelle augmentée du véhicule."
+                      : "Responsible for TITAN DC AI and C.CAPITAL theses, financial analysis, risk modeling, structured financing and ESG strategy. Architect of the vehicle's augmented operational discipline framework."}
                   </p>
                 </div>
               </div>
