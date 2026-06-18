@@ -574,33 +574,33 @@ export default function HomePage() {
             <div className="section-divider mx-auto mb-8" />
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
               {language === 'fr'
-                ? "Là où nous installons des datacenters, nous créons de l'emploi local."
-                : "Where we install datacenters, we create local jobs."}
+                ? "FINXIA Capital structure des partenariats avec des formateurs et opérateurs locaux pour former des talents techniques là où nos datacenters s'implantent."
+                : "FINXIA Capital builds partnerships with local trainers and operators to develop technical talent where our datacenters are located."}
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-8 border-t-4 border-[#C45A3B]">
-              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Public cible' : 'Target audience'}</h3>
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Partenariats locaux' : 'Local partnerships'}</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? "Jeunes de 18 à 25 ans, sans diplôme requis. Recrutement local sur les territoires d'implantation des sites TITAN DC."
-                  : "Young people aged 18-25, no diploma required. Local recruitment on the territories where TITAN DC sites are located."}
+                  ? "Via des partenaires formateurs et opérateurs locaux, nous identifions des jeunes de 18 à 25 ans sur les territoires d'implantation des sites TITAN DC. Aucun diplôme requis."
+                  : "Through local training and operator partners, we identify young people aged 18-25 on the territories where TITAN DC sites are located. No diploma required."}
               </p>
             </div>
             <div className="bg-white p-8 border-t-4 border-[#C45A3B]">
-              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Formation pratique' : 'Hands-on training'}</h3>
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Formation immersive' : 'Immersive training'}</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? "Formation sur équipement réel : serveurs, racks, câblage réseau, UPS, baies de distribution électrique. Apprentissage par la pratique sur le site."
-                  : "Training on real equipment: servers, racks, network cabling, UPS, electrical distribution bays. Learning by doing on site."}
+                  ? "Les partenaires formateurs dispensent des cursus pratiques sur équipement réel — serveurs, racks, câblage, UPS — en immersion sur les sites TITAN DC."
+                  : "Training partners deliver practical courses on real equipment — servers, racks, cabling, UPS — immersed on TITAN DC sites."}
               </p>
             </div>
             <div className="bg-white p-8 border-t-4 border-[#C45A3B]">
-              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Emploi garanti' : 'Guaranteed employment'}</h3>
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Insertion professionnelle' : 'Professional integration'}</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? "Garantie d'embauche via les partenaires opérateurs qui louent les sites. Objectif : 70%+ d'emploi à 6 mois."
-                  : "Hiring guarantee via operator partners who lease the sites. Target: 70%+ employment at 6 months."}
+                  ? "Les partenaires opérateurs qui louent les sites garantissent l'embauche des talents formés. Objectif : 70%+ d'emploi à 6 mois."
+                  : "Operator partners who lease the sites guarantee hiring of trained talent. Target: 70%+ employment at 6 months."}
               </p>
             </div>
             <div className="bg-white p-8 border-t-4 border-[#C45A3B]">
