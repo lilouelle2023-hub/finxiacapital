@@ -364,50 +364,42 @@ export default function HomePage() {
               </p>
               <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">
                 {language === 'fr' 
-                  ? 'La technologie au service de l\'exécution, pas du storytelling.'
-                  : 'Technology in service of execution, not storytelling.'}
+                  ? 'Augmentés par l\'IA. Pas remplacés.'
+                  : 'Augmented by AI. Not replaced.'}
               </h2>
               <div className="section-divider mb-8" />
               <p className="text-slate-300 text-lg leading-relaxed mb-6">
                 {language === 'fr'
-                  ? 'Finxia intègre une discipline opérationnelle augmentée — des outils propriétaires couvrent le sourcing, le suivi de performance, la veille réglementaire et l\'optimisation des sorties. L\'objectif : aucun signal perdu sur des actifs réels complexes.'
-                  : 'Finxia integrates augmented operational discipline — proprietary tools cover sourcing, performance tracking, regulatory watch and exit optimization. Goal: no signal lost on complex real assets.'}
+                  ? "Lila Benhammou maîtrise les outils d'intelligence artificielle et la programmation d'agents IA autonomes pour supporter chaque étape de l'activité FINXIA — du sourcing de friches industrielles à la surveillance de conformité PUE en temps réel."
+                  : "Lila Benhammou masters AI tools and autonomous AI agent programming to support every stage of FINXIA's activity — from industrial brownfield sourcing to real-time PUE compliance monitoring."}
               </p>
               <p className="text-slate-300 text-base leading-relaxed mb-6">
                 {language === 'fr'
-                  ? 'Du sourcing augmenté qui identifie les friches industrielles avant le marché, au suivi de conformité PUE en temps réel — en passant par le suivi de dette, la gestion des revenus et l\'optimisation des sorties — chaque décision sur les actifs TITAN DC est augmentée.'
-                  : 'From enhanced sourcing that identifies industrial brownfields before the market, to real-time PUE compliance tracking — through debt monitoring, revenue management and exit optimization — every decision on TITAN DC assets is augmented.'}
+                  ? "L'objectif n'est pas le storytelling tech. C'est l'amélioration mesurable des IRR : détection des opportunités avant le marché, optimisation des fenêtres de sortie, réduction des dérives de coûts opérationnels, et pilotage fin du levier dette. Chaque décision est augmentée — aucun signal n'est perdu."
+                  : "The goal is not tech storytelling. It's measurable IRR improvement: detecting opportunities before the market, optimizing exit windows, reducing operational cost drifts, and fine-tuning debt leverage. Every decision is augmented — no signal is lost."}
               </p>
               <p className="text-slate-400 text-base leading-relaxed">
                 {language === 'fr'
-                  ? 'Aucun signal n\'est perdu. Les actifs sont réels. L\'infrastructure est tangible. La combinaison est délibérée.'
-                  : 'No signal is lost. The assets are real. The infrastructure is tangible. The combination is deliberate.'}
+                  ? "Les actifs sont réels. L'infrastructure est tangible. L'intelligence artificielle est un levier, pas un produit."
+                  : "The assets are real. The infrastructure is tangible. Artificial intelligence is a lever, not a product."}
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Deal Intelligence</div>
-                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Sourcing Augmenté' : 'Enhanced Sourcing'}</p>
+            <div className="space-y-6">
+              <div className="bg-white/5 p-6 border-l-4 border-[#C45A3B]">
+                <div className="text-xl font-serif text-[#C45A3B] mb-2">{language === 'fr' ? 'Sourcing augmenté' : 'Enhanced sourcing'}</div>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Identification des friches industrielles avant leur mise sur le marché public' : 'Identifying industrial brownfields before public market listing'}</p>
               </div>
-              <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Asset Monitor</div>
-                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Suivi Temps Réel' : 'Real-Time Tracking'}</p>
+              <div className="bg-white/5 p-6 border-l-4 border-[#C45A3B]">
+                <div className="text-xl font-serif text-[#C45A3B] mb-2">{language === 'fr' ? 'Suivi de conformité PUE' : 'PUE compliance tracking'}</div>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Monitoring réglementaire EED en temps réel sur chaque actif' : 'Real-time EED regulatory monitoring on each asset'}</p>
               </div>
-              <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Debt Tracker</div>
-                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Suivi Dette' : 'Debt Monitoring'}</p>
+              <div className="bg-white/5 p-6 border-l-4 border-[#C45A3B]">
+                <div className="text-xl font-serif text-[#C45A3B] mb-2">{language === 'fr' ? 'Optimisation des sorties' : 'Exit optimization'}</div>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Modélisation des fenêtres de sortie optimales en fonction des conditions de marché' : 'Modeling optimal exit windows based on market conditions'}</p>
               </div>
-              <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Revenue Manager</div>
-                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Optimisation Revenus' : 'Revenue Optimization'}</p>
-              </div>
-              <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Ops Tracker</div>
-                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Suivi Opérationnel' : 'Operations Tracking'}</p>
-              </div>
-              <div className="bg-white/5 p-6 border border-white/10">
-                <div className="text-2xl font-serif text-[#C45A3B] mb-2">Exit Optimizer</div>
-                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Sorties Stratégiques' : 'Strategic Exits'}</p>
+              <div className="bg-white/5 p-6 border-l-4 border-[#C45A3B]">
+                <div className="text-xl font-serif text-[#C45A3B] mb-2">{language === 'fr' ? 'Pilotage du levier' : 'Leverage management'}</div>
+                <p className="text-slate-400 text-sm">{language === 'fr' ? 'Suivi des ratios de couverture et alertes sur les dérives de coûts' : 'Coverage ratio tracking and cost drift alerts'}</p>
               </div>
             </div>
           </div>
@@ -432,8 +424,8 @@ export default function HomePage() {
                 </div>
                 <p className="text-slate-300 text-sm leading-relaxed italic">
                   {language === 'fr'
-                    ? "Le Revenue Manager optimise les stratégies tarifaires en temps réel par établissement. L'Ops Tracker surveille les ratios de performance opérationnelle (RevPAR, GOP) et déclenche des alertes sur les dérives de coûts."
-                    : "Revenue Manager optimizes pricing strategies in real time per property. Ops Tracker monitors operational performance ratios (RevPAR, GOP) and triggers alerts on cost drifts."}
+                    ? "Optimisation des stratégies tarifaires en temps réel par établissement. Surveillance des ratios de performance opérationnelle (RevPAR, GOP) et alertes sur les dérives de coûts."
+                    : "Real-time pricing strategy optimization per property. Monitoring of operational performance ratios (RevPAR, GOP) and alerts on cost drifts."}
                 </p>
               </div>
               <div className="bg-white/5 p-6 border-l-2 border-[#C45A3B]">
@@ -442,8 +434,8 @@ export default function HomePage() {
                 </div>
                 <p className="text-slate-300 text-sm leading-relaxed italic">
                   {language === 'fr'
-                    ? "Le Deal Intelligence analyse les dynamiques de demande locative par micro-marché urbain. L'Exit Optimizer modélise les fenêtres de sortie optimales en fonction des conditions de marché pour les cessions en bloc."
-                    : "Deal Intelligence analyzes rental demand dynamics by urban micro-market. Exit Optimizer models optimal exit windows based on market conditions for block disposals."}
+                    ? "Analyse des dynamiques de demande locative par micro-marché urbain. Modélisation des fenêtres de sortie optimales en fonction des conditions de marché pour les cessions en bloc."
+                    : "Analysis of rental demand dynamics by urban micro-market. Modeling of optimal exit windows based on market conditions for block disposals."}
                 </p>
               </div>
             </div>
