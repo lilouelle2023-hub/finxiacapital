@@ -20,16 +20,16 @@ export default function GovernancePage() {
       icon: TrendingDown, 
       title: language === 'fr' ? 'Risque de Marché' : 'Market Risk', 
       text: language === 'fr'
-        ? 'Suivi quotidien des valorisations, des cap rates de marché et des spreads de crédit par nos agents IA de monitoring. Alertes automatisées sur tout mouvement dépassant nos seuils de tolérance.'
-        : 'Daily monitoring of valuations, market cap rates and credit spreads by our AI monitoring agents. Automated alerts on any movement exceeding our tolerance thresholds.'
+        ? 'Suivi quotidien des valorisations, des cap rates de marché et des spreads de crédit. Alertes automatisées sur tout mouvement dépassant nos seuils de tolérance.'
+        : 'Daily monitoring of valuations, market cap rates and credit spreads. Automated alerts on any movement exceeding our tolerance thresholds.'
     },
     {
       id: 'credit-risk',
       icon: CreditCard, 
       title: language === 'fr' ? 'Risque de Crédit' : 'Credit Risk', 
       text: language === 'fr'
-        ? 'Monitoring en temps réel des ratios LTV, DSCR et ICR sur l\'ensemble des structures de financement. Reporting covenant J-30 automatique — activé à chaque mise en place de financement.'
-        : 'Real-time monitoring of LTV, DSCR and ICR ratios across all financing structures. Automatic D-30 covenant reporting — activated upon each financing arrangement.'
+        ? 'Monitoring en temps réel des ratios LTV, DSCR et ICR sur l\'ensemble des structures de financement TITAN DC AI. Reporting covenant J-30 automatique — activé à chaque mise en place de financement.'
+        : 'Real-time monitoring of LTV, DSCR and ICR ratios across all TITAN DC AI financing structures. Automatic D-30 covenant reporting — activated upon each financing arrangement.'
     },
     {
       id: 'operational-risk',
@@ -44,8 +44,8 @@ export default function GovernancePage() {
       icon: Leaf, 
       title: language === 'fr' ? 'Risque ESG' : 'ESG Risk', 
       text: language === 'fr'
-        ? 'Suivi des certifications environnementales (BREEAM, LEED) intégré dès l\'acquisition de chaque actif. Alignement Taxonomie Verte Européenne (Règlement 2020/852) documenté en continu. Reporting ESG trimestriel automatisé.'
-        : 'Environmental certification tracking (BREEAM, LEED) integrated from each asset acquisition. Continuous EU Taxonomy (Regulation 2020/852) alignment documentation. Automated quarterly ESG reporting.'
+        ? 'Suivi des certifications environnementales (BREEAM, LEED) et conformité PUE cible TITAN DC AI intégré dès l\'acquisition de chaque actif. Alignement Taxonomie Verte Européenne (Règlement 2020/852) et Directive EED documenté en continu. Reporting ESG trimestriel automatisé.'
+        : 'Environmental certification tracking (BREEAM, LEED) and TITAN DC AI target PUE compliance integrated from each asset acquisition. Continuous EU Taxonomy (Regulation 2020/852) and EED Directive alignment documentation. Automated quarterly ESG reporting.'
     },
   ];
 
@@ -74,10 +74,10 @@ export default function GovernancePage() {
       <SEO
         title={language === 'fr' ? "Gouvernance & Risques — Framework & Structure SCSp" : "Governance & Risks — Framework & SCSp Structure"}
         description={language === 'fr'
-          ? "Gouvernance rigoureuse et gestion des risques par IA. Structure SCSp Luxembourg. Surveillance 24/7 par agents IA. Transparence totale pour investisseurs institutionnels."
-          : "Rigorous governance and AI-powered risk management. Luxembourg SCSp structure. 24/7 monitoring by AI agents. Full transparency for institutional investors."}
+          ? "Gouvernance rigoureuse et discipline opérationnelle augmentée. Structure SCSp Luxembourg. Surveillance 24/7 des actifs TITAN DC AI. Transparence totale pour investisseurs institutionnels."
+          : "Rigorous governance and augmented operational discipline. Luxembourg SCSp structure. 24/7 monitoring of TITAN DC AI assets. Full transparency for institutional investors."}
         canonical="https://finxiacapital.com/governance/"
-        keywords="gouvernance fonds alternatif Luxembourg, SCSp gestion risques, Green Bond ESG datacenter, surveillance IA temps réel"
+        keywords="gouvernance fonds alternatif Luxembourg, SCSp gestion risques, Green Bond ESG datacenter, surveillance TITAN DC AI temps réel"
         breadcrumbSchema={breadcrumbSchema}
         language="fr"
         ogLocale="fr_FR"
@@ -239,8 +239,8 @@ export default function GovernancePage() {
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     {language === 'fr'
-                      ? "Responsable de l'analyse financière, de la modélisation des risques, de l'infrastructure IA et de la stratégie ESG. Architecte du cadre de décision AI-native du véhicule."
-                      : "Responsible for financial analysis, risk modeling, AI infrastructure and ESG strategy. Architect of the vehicle's AI-native decision framework."}
+                      ? "Responsable de l'analyse financière, de la modélisation des risques, de l'infrastructure TITAN DC AI et de la stratégie ESG. Architecte du cadre de décision opérationnelle augmentée du véhicule."
+                      : "Responsible for financial analysis, risk modeling, TITAN DC AI infrastructure and ESG strategy. Architect of the vehicle's augmented operational discipline framework."}
                   </p>
                 </div>
               </div>
@@ -252,12 +252,12 @@ export default function GovernancePage() {
               </h3>
               <p className="text-slate-700 leading-relaxed mb-6">
                 {language === 'fr'
-                  ? "Toute opportunité d'investissement passe par quatre étapes séquentielles : sourcing et pré-qualification IA, due diligence financière et technique, validation du Comité d'Investissement à l'unanimité, structuration et closing. Aucun investissement ne peut être engagé sans accord des deux membres du Comité."
-                  : "Every investment opportunity goes through four sequential stages: AI sourcing and pre-qualification, financial and technical due diligence, unanimous Investment Committee validation, structuring and closing. No investment can be committed without the agreement of both Committee members."}
+                  ? "Toute opportunité d'investissement passe par quatre étapes séquentielles : sourcing augmenté de friches industrielles, due diligence financière et technique, validation du Comité d'Investissement à l'unanimité, structuration et closing. Aucun investissement ne peut être engagé sans accord des deux membres du Comité."
+                  : "Every investment opportunity goes through four sequential stages: enhanced sourcing of industrial brownfields, financial and technical due diligence, unanimous Investment Committee validation, structuring and closing. No investment can be committed without the agreement of both Committee members."}
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
                 {[
-                  language === 'fr' ? '01 · Sourcing & Pré-qualification IA' : '01 · AI Sourcing & Pre-qualification',
+                  language === 'fr' ? '01 · Sourcing augmenté de friches industrielles' : '01 · Enhanced industrial brownfield sourcing',
                   language === 'fr' ? '02 · Due diligence financière & technique' : '02 · Financial & Technical Due Diligence',
                   language === 'fr' ? '03 · Validation Comité (unanimité)' : '03 · Committee Validation (unanimous)',
                   language === 'fr' ? '04 · Structuration & Closing' : '04 · Structuring & Closing',
