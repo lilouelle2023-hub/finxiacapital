@@ -19,8 +19,8 @@ export default function StrategiesPage() {
         ? 'L\'infrastructure de l\'IA a besoin d\'un socle. Nous le transformons.'
         : 'AI infrastructure needs a foundation. We transform it.',
       thesis: language === 'fr'
-        ? "L'Europe dispose d'un stock massif d'actifs industriels sous-valorisés — friches manufacturières, anciens sites auto, entrepôts de première génération — dont les caractéristiques structurelles (dalle technique, raccordement électrique haute densité, emprise foncière) les rendent directement convertibles en datacenters IA de nouvelle génération. TITAN DC AI cible ce segment brownfield, systématiquement ignoré par les grands acteurs institutionnels focalisés sur le greenfield, et crée de la valeur par la transformation plutôt que par la construction."
-        : "Europe holds a massive stock of undervalued industrial assets — manufacturing brownfields, former automotive sites, first-generation warehouses — whose structural characteristics (technical slabs, high-density electrical connection, land footprint) make them directly convertible into next-generation AI datacenters. TITAN DC AI targets this brownfield segment, systematically ignored by major institutional players focused on greenfield, and creates value through transformation rather than construction.",
+        ? <><strong>Stratégie portée par Lila Benhammou</strong> — CIO & architecte de l'infrastructure TITAN DC AI. <br/><br/>L'Europe dispose d'un stock massif d'actifs industriels sous-valorisés — friches manufacturières, anciens sites auto, entrepôts de première génération — dont les caractéristiques structurelles (dalle technique, raccordement électrique haute densité, emprise foncière) les rendent directement convertibles en datacenters IA de nouvelle génération. TITAN DC AI cible ce segment brownfield, systématiquement ignoré par les grands acteurs institutionnels focalisés sur le greenfield, et crée de la valeur par la transformation plutôt que par la construction.</>
+        : <><strong>Strategy led by Lila Benhammou</strong> — CIO & architect of TITAN DC AI infrastructure. <br/><br/>Europe holds a massive stock of undervalued industrial assets — manufacturing brownfields, former automotive sites, first-generation warehouses — whose structural characteristics (technical slabs, high-density electrical connection, land footprint) make them directly convertible into next-generation AI datacenters. TITAN DC AI targets this brownfield segment, systematically ignored by major institutional players focused on greenfield, and creates value through transformation rather than construction.</>,
       approach: [
         language === 'fr' ? 'Cible d\'actifs : sites industriels brownfield 20-70 MW IT en France, Espagne, Italie et Europe du Nord' : 'Target assets: 20-70 MW IT brownfield industrial sites in France, Spain, Italy and Northern Europe',
         language === 'fr' ? 'Avantage coût : entrée significativement moins chère au MW que le greenfield, délais de mise en service réduits' : 'Cost advantage: significantly cheaper entry per MW than greenfield, reduced commissioning timelines',
@@ -42,8 +42,8 @@ export default function StrategiesPage() {
         ? 'La résilience structurelle d\'un actif, l\'intelligence d\'un opérateur.'
         : 'The structural resilience of an asset, the intelligence of an operator.',
       thesis: language === 'fr'
-        ? 'Le segment hôtelier premium urbain génère des RevPAR soutenus par la demande internationale. Finxia combine des actifs long terme producteurs de cash flow avec des opportunités de rotation après repositionnement opérationnel.'
-        : 'The urban premium hotel segment generates RevPAR supported by international demand. Finxia combines long-term cash flow producing assets with rotation opportunities after operational repositioning.',
+        ? <><strong>Stratégie portée par Jean-Pierre Véron</strong> — Président, 40+ ans d'immobilier institutionnel. <br/><br/>Le segment hôtelier premium urbain génère des RevPAR soutenus par la demande internationale. Finxia combine des actifs long terme producteurs de cash flow avec des opportunités de rotation après repositionnement opérationnel.</>
+        : <><strong>Strategy led by Jean-Pierre Véron</strong> — Chairman, 40+ years of institutional real estate. <br/><br/>The urban premium hotel segment generates RevPAR supported by international demand. Finxia combines long-term cash flow producing assets with rotation opportunities after operational repositioning.</>,
       approach: [
         language === 'fr' ? 'Acquisition d\'hôtels 4-5 étoiles dans les métropoles européennes' : 'Acquisition of 4-5 star hotels in European metropolises',
         language === 'fr' ? 'Asset management actif en partenariat avec des opérateurs de référence' : 'Active asset management in partnership with reference operators',
@@ -63,8 +63,8 @@ export default function StrategiesPage() {
         ? 'La ville évolue. Le logement suit.'
         : 'The city evolves. Housing follows.',
       thesis: language === 'fr'
-        ? 'Coliving, résidences services, build-to-rent — la demande dépasse structurellement l\'offre dans les métropoles européennes. Finxia constitue des portefeuilles opérés avec des partenaires spécialisés, calibrés pour des sorties en bloc vers investisseurs Core.'
-        : 'Coliving, serviced residences, build-to-rent — demand structurally exceeds supply in European metropolises. Finxia builds operated portfolios with specialized partners, calibrated for block exits to Core investors.',
+        ? <><strong>Stratégie portée par Jean-Pierre Véron</strong> — Président, 40+ ans d'immobilier institutionnel. <br/><br/>Coliving, résidences services, build-to-rent — la demande dépasse structurellement l'offre dans les métropoles européennes. Finxia constitue des portefeuilles opérés avec des partenaires spécialisés, calibrés pour des sorties en bloc vers investisseurs Core.</>
+        : <><strong>Strategy led by Jean-Pierre Véron</strong> — Chairman, 40+ years of institutional real estate. <br/><br/>Coliving, serviced residences, build-to-rent — demand structurally exceeds supply in European metropolises. Finxia builds operated portfolios with specialized partners, calibrated for block exits to Core investors.</>,
       approach: [
         language === 'fr' ? 'Constitution de portefeuilles multi-actifs résidentiels' : 'Constitution of multi-asset residential portfolios',
         language === 'fr' ? 'Partenariats avec opérateurs spécialisés (coliving, PBSA)' : 'Partnerships with specialized operators (coliving, PBSA)',
@@ -84,8 +84,8 @@ export default function StrategiesPage() {
         ? 'Là où la visibilité sur l\'actif crée l\'avantage informationnel.'
         : 'Where asset visibility creates informational advantage.',
       thesis: language === 'fr'
-        ? 'Late-stage, secondaires décotés, situations spéciales. Une approche ultra-sélective — réservée aux opportunités où notre expertise sectorielle nous confère un avantage décisif. Taux de conversion volontairement bas. Conviction maximale sur chaque position.'
-        : 'Late-stage, discounted secondaries, special situations. An ultra-selective approach — reserved for opportunities where our sector expertise confers a decisive advantage. Deliberately low conversion rate. Maximum conviction on each position.',
+        ? <><strong>Stratégie portée par Lila Benhammou</strong> — CIO, expertise finance × IA. <br/><br/>Late-stage, secondaires décotés, situations spéciales. Une approche ultra-sélective — réservée aux opportunités où notre expertise sectorielle nous confère un avantage décisif. Taux de conversion volontairement bas. Conviction maximale sur chaque position.</>
+        : <><strong>Strategy led by Lila Benhammou</strong> — CIO, finance × AI expertise. <br/><br/>Late-stage, discounted secondaries, special situations. An ultra-selective approach — reserved for opportunities where our sector expertise confers a decisive advantage. Deliberately low conversion rate. Maximum conviction on each position.</>,
       approach: [
         language === 'fr' ? 'Participation à des tours de financement late-stage' : 'Participation in late-stage financing rounds',
         language === 'fr' ? 'Acquisition de positions secondaires décotées' : 'Acquisition of discounted secondary positions',
