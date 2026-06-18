@@ -27,8 +27,8 @@ export default function AboutPage() {
       icon: Brain, 
       title: language === 'fr' ? 'Avantage Technologique' : 'Tech-Driven Edge',
       text: language === 'fr'
-        ? 'Infrastructure d\'agents IA propriétaires pour le sourcing, l\'optimisation de portefeuille et le suivi des risques en temps réel.'
-        : 'Proprietary AI agent infrastructure for deal sourcing, portfolio optimization, and real-time risk monitoring.'
+        ? 'Discipline opérationnelle augmentée pour le sourcing, l\'optimisation de portefeuille et le suivi des risques en temps réel — calibrée pour la transformation brown-to-green de datacenters européens.'
+        : 'Augmented operational discipline for deal sourcing, portfolio optimization, and real-time risk monitoring — calibrated for brown-to-green European datacenter transformation.'
     },
     {
       id: 'capital-recycling',
@@ -70,11 +70,11 @@ export default function AboutPage() {
       name: 'Lila Benhammou',
       role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements (CIO)' : 'Co-Founder & Chief Investment Officer (CIO)',
       bio: language === 'fr'
-        ? "Serial entrepreneur senior avec un parcours croisé en finance, intelligence artificielle et télécoms. Fondatrice de Humans4Help (H4H), spécialiste IA et automation d'entreprise — sortie réussie en 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architecte de l'infrastructure IA de FINXIA Capital (18 agents autonomes). Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam."
-        : "Senior serial entrepreneur with a cross-functional background in finance, artificial intelligence and telecoms. Founder of Humans4Help (H4H), enterprise AI and automation specialist — successful exit in 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architect of FINXIA Capital's AI infrastructure (18 autonomous agents). Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam.",
+        ? "Serial entrepreneur senior avec un parcours croisé en finance, intelligence artificielle et télécoms. Fondatrice de Humans4Help (H4H), spécialiste IA et automation d'entreprise — sortie réussie en 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architecte de la stratégie TITAN DC AI et de son infrastructure opérationnelle. Expertise télécoms : fibre optique, raccordement HT, infrastructures réseau. Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam."
+        : "Senior serial entrepreneur with a cross-functional background in finance, artificial intelligence and telecoms. Founder of Humans4Help (H4H), enterprise AI and automation specialist — successful exit in 2023. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Architect of the TITAN DC AI strategy and its operational infrastructure. Telecom expertise: fiber optics, HV connection, network infrastructure. Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam.",
       linkedin: 'https://linkedin.com/in/lilabenhammou',
       highlights: [
-        { icon: Lightbulb, text: language === 'fr' ? 'Architecte infrastructure IA (18 agents)' : 'AI infrastructure architect (18 agents)' },
+        { icon: Lightbulb, text: language === 'fr' ? 'Architecte TITAN DC AI — infrastructure datacenter + télécoms' : 'TITAN DC AI architect — datacenter + telecom infrastructure' },
         { icon: BarChart3, text: language === 'fr' ? 'Sortie Humans4Help IA & automation (2023)' : 'Humans4Help AI & automation exit (2023)' },
         { icon: CheckCircle, text: language === 'fr' ? 'Lead author SSRN 2026' : 'SSRN lead author 2026' },
       ],
@@ -91,15 +91,15 @@ export default function AboutPage() {
         "name": "Qu'est-ce que Finxia Capital ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Finxia Capital est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, déployant du capital sur 4 pôles : Datacenter AI Brown-to-Green (TITAN), Hôtellerie Premium, Résidentiel Flex Living et Capital Opportunités, avec une architecture AI-native de 18 agents IA."
+          "text": "Finxia Capital est un véhicule d'investissement propriétaire structuré en SCSp luxembourgeoise, déployant du capital sur 4 pôles : Datacenter AI Brown-to-Green (TITAN), Hôtellerie Premium, Résidentiel Flex Living et Capital Opportunités. Stratégie phare TITAN DC AI financée par capital propre + dette + Green Bond dédié."
         }
       },
       {
         "@type": "Question",
-        "name": "Comment fonctionne l'approche AI-native de Finxia Capital ?",
+        "name": "Comment fonctionne l'approche opérationnelle de Finxia Capital ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Finxia Capital déploie 18 agents d'intelligence artificielle opérant en continu : Deal Intelligence, Asset Monitor, Debt Tracker, Revenue Manager, Ops Tracker, Exit Optimizer — couvrant chaque étape du cycle de vie du portefeuille."
+          "text": "Finxia Capital intègre une discipline opérationnelle augmentée couvrant chaque étape du cycle de vie du portefeuille : sourcing de friches industrielles, suivi de conformité PUE, gestion de dette, optimisation des revenus, suivi opérationnel et optimisation des sorties — le tout calibré pour la transformation brown-to-green de datacenters européens."
         }
       },
       {
@@ -136,12 +136,12 @@ export default function AboutPage() {
   return (
     <div data-testid="about-page" className="pt-20">
       <SEO
-        title={language === 'fr' ? "Jean-Pierre Véron & Lila Benhammou — Équipe FINXIA Capital SCSp Luxembourg | 40 ans track record immobilier + AI-native" : "Jean-Pierre Véron & Lila Benhammou — FINXIA Capital Team Luxembourg SCSp | 40-year real estate track record + AI-native"}
+        title={language === 'fr' ? "Jean-Pierre Véron & Lila Benhammou — Équipe FINXIA Capital SCSp Luxembourg | 40 ans track record immobilier + TITAN DC AI" : "Jean-Pierre Véron & Lila Benhammou — FINXIA Capital Team Luxembourg SCSp | 40-year real estate track record + TITAN DC AI"}
         description={language === 'fr' 
-          ? "Jean-Pierre Véron (Fondateur, 40+ ans immobilier — sortie Rive Gauche 2006 pré-crise) & Lila Benhammou (Co-Fondatrice & CIO, MBA Kellogg Northwestern, sortie Humans4Help 2023, finance · IA · telecom) — Architecture AI-native 18 agents autonomes. FINXIA Capital SCSp Luxembourg."
-          : "Jean-Pierre Véron (Founder, 40+ years real estate — Rive Gauche exit 2006 pre-crisis) & Lila Benhammou (Co-Founder & CIO, MBA Kellogg Northwestern, Humans4Help exit 2023, finance · AI · telecom) — AI-native architecture 18 autonomous agents. FINXIA Capital Luxembourg SCSp."}
+          ? "Jean-Pierre Véron (Fondateur, 40+ ans immobilier — sortie Rive Gauche 2006 pré-crise) & Lila Benhammou (Co-Fondatrice & CIO, MBA Kellogg Northwestern, sortie Humans4Help 2023, finance · IA · telecom) — Architecte de TITAN DC AI, infrastructure datacenter brown-to-green pour l'IA en Europe. FINXIA Capital SCSp Luxembourg."
+          : "Jean-Pierre Véron (Founder, 40+ years real estate — Rive Gauche exit 2006 pre-crisis) & Lila Benhammou (Co-Founder & CIO, MBA Kellogg Northwestern, Humans4Help exit 2023, finance · AI · telecom) — Architect of TITAN DC AI, brown-to-green datacenter infrastructure for AI in Europe. FINXIA Capital Luxembourg SCSp."}
         canonical={language === 'fr' ? "https://finxiacapital.com/about/" : "https://finxiacapital.com/en/about/"}
-        keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, 18 agents IA investissement, AI-native asset management, Kaufman Broad, Financière Rive Gauche, Humans4Help, Kellogg Northwestern MBA"
+        keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, TITAN DC AI investissement, datacenter brown-to-green, Green Bond, Kaufman Broad, Financière Rive Gauche, Humans4Help, Kellogg Northwestern MBA"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
@@ -456,6 +456,43 @@ export default function AboutPage() {
         </div>
       </section>
 
+
+      {/* Campus IA Formation */}
+      <section className="py-24 md:py-32 bg-slate-50" data-testid="campus-formation-about-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="overline mb-4">{language === 'fr' ? 'Impact Territorial' : 'Local Impact'}</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">
+              {language === 'fr' ? 'Campus IA Formation' : 'AI Training Campuses'}
+            </h2>
+            <div className="section-divider mx-auto mb-8" />
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
+              {language === 'fr'
+                ? "Là où nous installons des datacenters, nous créons de l'emploi local."
+                : "Where we install datacenters, we create local jobs."}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white p-8 border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Formation sur site' : 'On-site training'}</h3>
+              <p className="text-slate-600 leading-relaxed">
+                {language === 'fr'
+                  ? "Campus de formation pour jeunes de 18 à 25 ans (sans diplôme requis), implantés sur les sites TITAN DC. Formation pratique sur équipement réel : serveurs, racks, câblage, UPS."
+                  : "Training campuses for young people aged 18-25 (no diploma required), located on TITAN DC sites. Hands-on training on real equipment: servers, racks, cabling, UPS."}
+              </p>
+            </div>
+            <div className="bg-white p-8 border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Insertion professionnelle' : 'Professional integration'}</h3>
+              <p className="text-slate-600 leading-relaxed">
+                {language === 'fr'
+                  ? "Garantie d'embauche via les partenaires opérateurs qui louent les sites. Objectif : 70%+ d'emploi à 6 mois. Les projets DC s'implantent sur des territoires en transition — les emplois doivent rester sur ces territoires."
+                  : "Hiring guarantee via operator partners who lease the sites. Target: 70%+ employment at 6 months. DC projects are located in transitioning territories — jobs must stay in those territories."}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Whitepaper — Research Publication Download */}
       <section className="py-20 md:py-24 bg-slate-50 border-y border-slate-200" data-testid="whitepaper-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -492,6 +529,47 @@ export default function AboutPage() {
                 {language === 'fr' ? 'Télécharger le Livre Blanc' : 'Download the White Paper'}
                 <ArrowRight className="w-4 h-4" />
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Double Culture Real Estate × IA */}
+      <section className="py-24 md:py-32 bg-slate-50" data-testid="double-culture-about-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="overline mb-4">{language === 'fr' ? 'Notre Différence' : 'Our Edge'}</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">
+              {language === 'fr' ? 'Double Culture Real Estate × IA' : 'Double Culture: Real Estate × AI'}
+            </h2>
+            <div className="section-divider mx-auto mb-8" />
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
+              {language === 'fr'
+                ? "Les seuls à comprendre le métier de nos clients. 40 ans d'expertise immobilière institutionnelle + expertise opérationnelle en IA + background télécoms (fibre, HT, réseaux). Nous parlons le langage des ingénieurs réseau et des banques d'investissement."
+                : "The only ones who truly understand our clients' business. 40 years of institutional real estate expertise + operational AI expertise + telecom background (fiber, HV, networks). We speak the language of network engineers and investment banks."}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white p-8 border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">
+                {language === 'fr' ? 'Nous savons ce que demande un hyperscaler' : 'We know what a hyperscaler demands'}
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                {language === 'fr'
+                  ? "Nous savons pourquoi un hyperscaler exige un PUE < 1,2 ET une structure juridique luxembourgeoise. Nous comprenons la différence entre un raccordement HT et une ligne fibre — parce que nous avons structuré les deux."
+                  : "We know why a hyperscaler demands PUE < 1.2 AND a Luxembourg legal structure. We understand the difference between an HV connection and a fiber line — because we have structured both."}
+              </p>
+            </div>
+            <div className="bg-white p-8 border-l-4 border-[#C45A3B]">
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">
+                {language === 'fr' ? 'Infrastructure avant le code' : 'Infrastructure before code'}
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                {language === 'fr'
+                  ? "Nous ne déployons pas de logiciels. Nous raccordons des câbles HT, certifions des dalles techniques, structurons des Green Bonds. L'IA est un levier opérationnel, pas un produit fini."
+                  : "We don't deploy software. We connect HV cables, certify technical slabs, structure Green Bonds. AI is an operational lever, not a finished product."}
+              </p>
             </div>
           </div>
         </div>
@@ -624,12 +702,12 @@ export default function AboutPage() {
           <div className="mt-16">
             <div className="bg-[#1E2A3A] p-10 md:p-12 max-w-4xl mx-auto">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">
-                {language === 'fr' ? 'Une architecture native — pas une couche' : 'Native architecture — not a layer'}
+                {language === 'fr' ? 'Discipline Opérationnelle Augmentée' : 'Augmented Operational Discipline'}
               </h3>
               <p className="text-slate-300 text-lg leading-relaxed">
                 {language === 'fr'
-                  ? "FINXIA Capital n'a pas ajouté l'intelligence artificielle à un modèle de gestion traditionnel. Le fonds a été conçu dès le premier jour comme un véhicule AI-native : les 18 agents autonomes de FINXIA ne sont pas des outils d'aide à la décision — ils sont l'infrastructure opérationnelle du fonds, couvrant l'ensemble du cycle d'investissement de la détection de deal à la sortie d'actif. À titre d'exemples : identification d'opportunités brownfield, modélisation financière, suivi de performance, veille réglementaire, gestion des risques ESG."
-                  : "FINXIA Capital did not add artificial intelligence to a traditional management model. The vehicle was designed from day one as AI-native: FINXIA's 18 autonomous agents are not decision-support tools — they are the fund's operational infrastructure, covering the full investment lifecycle from deal origination to asset exit. Examples include: brownfield opportunity identification, financial modeling, performance monitoring, regulatory watch, ESG risk management."}
+                  ? "FINXIA Capital intègre une discipline opérationnelle augmentée à chaque étape du cycle d'investissement — du sourcing de friches industrielles à la certification PUE, en passant par le suivi de dette et l'optimisation des sorties. Les outils propriétaires de FINXIA couvrent l'ensemble du cycle : identification d'opportunités brownfield, modélisation financière, suivi de performance réglementaire (EED, EU Taxonomy), gestion des risques ESG et structuration de Green Bonds."
+                  : "FINXIA Capital integrates augmented operational discipline at every stage of the investment cycle — from sourcing industrial brownfields to PUE certification, through debt monitoring and exit optimization. FINXIA's proprietary tools cover the full cycle: brownfield opportunity identification, financial modeling, regulatory performance tracking (EED, EU Taxonomy), ESG risk management and Green Bond structuring."}
               </p>
             </div>
           </div>
