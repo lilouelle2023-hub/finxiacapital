@@ -468,25 +468,25 @@ export default function AboutPage() {
             <div className="section-divider mx-auto mb-8" />
             <p className="text-slate-600 text-lg max-w-3xl mx-auto leading-relaxed">
               {language === 'fr'
-                ? "Là où nous installons des datacenters, nous créons de l'emploi local."
-                : "Where we install datacenters, we create local jobs."}
+                ? "FINXIA Capital structure des partenariats avec des formateurs et opérateurs locaux pour former des talents techniques là où nos datacenters s'implantent."
+                : "FINXIA Capital builds partnerships with local trainers and operators to develop technical talent where our datacenters are located."}
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-8 border-l-4 border-[#C45A3B]">
-              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Formation sur site' : 'On-site training'}</h3>
+              <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Formation immersive' : 'Immersive training'}</h3>
               <p className="text-slate-600 leading-relaxed">
                 {language === 'fr'
-                  ? "Campus de formation pour jeunes de 18 à 25 ans (sans diplôme requis), implantés sur les sites TITAN DC. Formation pratique sur équipement réel : serveurs, racks, câblage, UPS."
-                  : "Training campuses for young people aged 18-25 (no diploma required), located on TITAN DC sites. Hands-on training on real equipment: servers, racks, cabling, UPS."}
+                  ? "Via des partenaires formateurs et opérateurs locaux, des cursus pratiques sont dispensés sur équipement réel — serveurs, racks, câblage, UPS — en immersion sur les sites TITAN DC. Jeunes de 18 à 25 ans, sans diplôme requis."
+                  : "Through local training and operator partners, practical courses are delivered on real equipment — servers, racks, cabling, UPS — immersed on TITAN DC sites. Young people aged 18-25, no diploma required."}
               </p>
             </div>
             <div className="bg-white p-8 border-l-4 border-[#C45A3B]">
               <h3 className="font-serif text-xl mb-4 text-[#1E2A3A]">{language === 'fr' ? 'Insertion professionnelle' : 'Professional integration'}</h3>
               <p className="text-slate-600 leading-relaxed">
                 {language === 'fr'
-                  ? "Garantie d'embauche via les partenaires opérateurs qui louent les sites. Objectif : 70%+ d'emploi à 6 mois. Les projets DC s'implantent sur des territoires en transition — les emplois doivent rester sur ces territoires."
-                  : "Hiring guarantee via operator partners who lease the sites. Target: 70%+ employment at 6 months. DC projects are located in transitioning territories — jobs must stay in those territories."}
+                  ? "Les partenaires opérateurs qui louent les sites garantissent l'embauche des talents formés. Objectif : 70%+ d'emploi à 6 mois. Les projets DC s'implantent sur des territoires en transition — les emplois doivent rester sur ces territoires."
+                  : "Operator partners who lease the sites guarantee hiring of trained talent. Target: 70%+ employment at 6 months. DC projects are located in transitioning territories — jobs must stay in those territories."}
               </p>
             </div>
           </div>
