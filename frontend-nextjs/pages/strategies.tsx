@@ -19,14 +19,15 @@ export default function StrategiesPage() {
         ? 'L\'infrastructure de l\'IA a besoin d\'un socle. Nous le transformons.'
         : 'AI infrastructure needs a foundation. We transform it.',
       thesis: language === 'fr'
-        ? <><strong>Stratégie portée par Lila Benhammou</strong> — CIO & architecte de l'infrastructure TITAN DC AI. <br/><br/>L'Europe dispose d'un stock massif d'actifs industriels sous-valorisés — friches manufacturières, anciens sites auto, entrepôts de première génération — dont les caractéristiques structurelles (dalle technique, raccordement électrique haute densité, emprise foncière) les rendent directement convertibles en datacenters IA de nouvelle génération. TITAN DC AI cible ce segment brownfield, systématiquement ignoré par les grands acteurs institutionnels focalisés sur le greenfield, et crée de la valeur par la transformation plutôt que par la construction.</>
-        : <><strong>Strategy led by Lila Benhammou</strong> — CIO & architect of TITAN DC AI infrastructure. <br/><br/>Europe holds a massive stock of undervalued industrial assets — manufacturing brownfields, former automotive sites, first-generation warehouses — whose structural characteristics (technical slabs, high-density electrical connection, land footprint) make them directly convertible into next-generation AI datacenters. TITAN DC AI targets this brownfield segment, systematically ignored by major institutional players focused on greenfield, and creates value through transformation rather than construction.</>,
+        ? <><strong>Stratégie portée par Lila Benhammou</strong> — CIO & architecte de l'infrastructure TITAN DC AI. <br/><br/>L'Europe dispose d'un stock massif d'actifs industriels sous-valorisés — friches manufacturières, anciens sites auto, entrepôts de première génération — dont les caractéristiques structurelles (dalle technique, raccordement électrique haute densité, emprise foncière) les rendent directement convertibles en datacenters IA de nouvelle génération. <br/><br/><strong>Le défi énergétique est central</strong> : RTE, le gestionnaire de réseau de transport français, a identifié près de <strong>18 GW de demande réservée aux datacenters</strong> sur le territoire français, dont seulement ~15% sont aujourd'hui concrétisés. La file d'attente de raccordement bloque 50% des nouvelles demandes. En 2025, l'État français a identifié 5 sites « fast track » pour accélérer les projets stratégiques. TITAN DC AI cible précisément des sites brownfield <strong>déjà raccordés</strong>, contournant cette contrainte structurelle. <br/><br/><strong>La souveraineté numérique est un impératif</strong> : 92% des données de l'Occident sont stockées sur le sol américain. L'IA générative, la défense, la santé et les administrations publiques européennes ont besoin d'infrastructure de calcul souveraine. La France dispose d'un atout décisif : un mix électrique <strong>95% décarbonisé</strong> et exportant 20% de sa production — ce qui fait de son territoire une destination de choix pour les hyperscalers en quête d'image carbone. TITAN DC AI transforme cette énergie disponible en infrastructure IA certifiée, capturant la prime de souveraineté et de décarbonation.</>
+        : <><strong>Strategy led by Lila Benhammou</strong> — CIO & architect of TITAN DC AI infrastructure. <br/><br/>Europe holds a massive stock of undervalued industrial assets — manufacturing brownfields, former automotive sites, first-generation warehouses — whose structural characteristics (technical slabs, high-density electrical connection, land footprint) make them directly convertible into next-generation AI datacenters. <br/><br/><strong>The energy challenge is central</strong>: RTE, the French transmission system operator, has identified nearly <strong>18 GW of datacenter demand</strong> on French territory, of which only ~15% is currently realized. The connection queue blocks 50% of new requests. In 2025, the French government identified 5 "fast track" sites to accelerate strategic projects. TITAN DC AI specifically targets <strong>already-connected</strong> brownfield sites, bypassing this structural constraint. <br/><br/><strong>Digital sovereignty is imperative</strong>: 92% of Western data is stored on US soil. Generative AI, defense, healthcare, and European public administrations need sovereign computing infrastructure. France has a decisive advantage: an electricity mix that is <strong>95% decarbonized</strong> and exports 20% of its production — making its territory a destination of choice for hyperscalers seeking carbon reputation. TITAN DC AI transforms this available energy into certified AI infrastructure, capturing the sovereignty and decarbonization premium.</>,
       approach: [
         language === 'fr' ? 'Cible d\'actifs : sites industriels brownfield 20-70 MW IT en France, Espagne, Italie et Europe du Nord' : 'Target assets: 20-70 MW IT brownfield industrial sites in France, Spain, Italy and Northern Europe',
         language === 'fr' ? 'Avantage coût : entrée significativement moins chère au MW que le greenfield, délais de mise en service réduits' : 'Cost advantage: significantly cheaper entry per MW than greenfield, reduced commissioning timelines',
+        language === 'fr' ? 'Avantage réseau : les sites brownfield sont déjà raccordés au réseau HT — contournement de la file d\'attente RTE qui bloque 50% des nouvelles demandes de raccordement datacenter en France' : 'Grid advantage: brownfield sites are already connected to the HV grid — bypassing the RTE queue which blocks 50% of new datacenter connection requests in France',
         language === 'fr' ? 'Clients : opérateurs cloud tier-2 européens, acteurs IA inférence, administrations publiques, souveraineté des données' : 'Tenants: European tier-2 cloud operators, AI inference players, public administrations, data sovereignty',
         language === 'fr' ? 'Modèle cible : bail NNN long terme (10-15 ans) · engagement locataire recherché avant ou au commissioning · revenu contractualisé conditionné à la conformité technique' : 'Target model: long-term NNN lease (10-15 years) · tenant commitment sought before or at commissioning · contractualized revenue conditioned on technical compliance',
-        language === 'fr' ? 'Efficacité énergétique : protocole IPMVP, PUE certifié EU Taxonomy 8.1 et conforme Directive EED' : 'Energy efficiency: IPMVP protocol, EU Taxonomy 8.1-certified PUE and EED Directive-compliant',
+        language === 'fr' ? 'Efficacité énergétique : protocole IPMVP, PUE certifié EU Taxonomy 8.1 et conforme Directive EED (PUE ≤ 1,30 d\'ici 2027)' : 'Energy efficiency: IPMVP protocol, EU Taxonomy 8.1-certified PUE and EED Directive-compliant (PUE ≤ 1.30 by 2027)',
         language === 'fr' ? 'Financement : capital propre + dette senior amortissante + Green Bond ESG ICMA conditionné aux objectifs PUE' : 'Financing: own equity + senior amortizing debt + ICMA ESG Green Bond conditioned on PUE targets',
       ],
       markets: language === 'fr' ? 'France · Espagne · Italie · Europe du Nord' : 'France · Spain · Italy · Northern Europe',
@@ -500,6 +501,73 @@ export default function StrategiesPage() {
                           {language === 'fr'
                             ? 'Horizon cible de détention : 5 à 6 ans par actif.'
                             : 'Target holding horizon: 5 to 6 years per asset.'}
+                        </p>
+                      </div>
+
+                      {/* La crise de capacité électrique — avantage brownfield */}
+                      <div className="my-8 p-6 bg-gradient-to-br from-[#C45A3B]/10 to-white border-l-4 border-[#C45A3B] rounded-lg">
+                        <h4 className="font-semibold text-slate-800 mb-4 flex items-center gap-2">
+                          <span className="text-[#C45A3B] text-2xl">⚡</span>
+                          {language === 'fr' ? 'La crise de capacité électrique : un avantage structurel pour le brownfield' : 'The capacity crisis: a structural advantage for brownfield'}
+                        </h4>
+                        <div className="space-y-4">
+                          <div className="grid sm:grid-cols-3 gap-4">
+                            <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
+                              <div className="text-3xl font-bold text-[#C45A3B]">18 GW</div>
+                              <div className="text-xs text-slate-500 uppercase tracking-wider mt-1">{language === 'fr' ? 'Demande réservée datacenters France' : 'Reserved datacenter demand France'}</div>
+                            </div>
+                            <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
+                              <div className="text-3xl font-bold text-[#C45A3B]">~15%</div>
+                              <div className="text-xs text-slate-500 uppercase tracking-wider mt-1">{language === 'fr' ? 'Concrétisé aujourd\'hui' : 'Realized today'}</div>
+                            </div>
+                            <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
+                              <div className="text-3xl font-bold text-[#C45A3B]">5</div>
+                              <div className="text-xs text-slate-500 uppercase tracking-wider mt-1">{language === 'fr' ? 'Sites fast track identifiés par l\'État' : 'Fast track sites identified by the State'}</div>
+                            </div>
+                          </div>
+                          <p className="text-slate-700 text-sm leading-relaxed">
+                            {language === 'fr'
+                              ? "RTE, le gestionnaire de réseau de transport français, fait face à une tension structurelle : 18 GW de capacité électrique sont aujourd'hui réservés aux projets datacenter sur le territoire français, mais seulement une fraction (~15%) est effectivement raccordée et opérationnelle. La file d'attente de raccordement bloque 50% des nouvelles demandes. Les acteurs greenfield attendent 5 à 7 ans pour un raccordement neuf."
+                              : "RTE, the French transmission system operator, faces structural tension: 18 GW of electrical capacity is currently reserved for datacenter projects on French territory, but only a fraction (~15%) is actually connected and operational. The connection queue blocks 50% of new requests. Greenfield players wait 5 to 7 years for a new connection."}
+                          </p>
+                          <p className="text-slate-700 text-sm leading-relaxed">
+                            {language === 'fr'
+                              ? "TITAN DC AI contourne cette contrainte en ciblant des sites industriels brownfield <strong>déjà raccordés au réseau HT</strong> — anciennes usines, friches manufacturières, entrepôts de première génération disposant d'un substation existant. Pas de file d'attente RTE. Pas de spéculation sur la capacité. Un raccordement existant = un avantage de temps de 3 à 5 ans."
+                              : "TITAN DC AI bypasses this constraint by targeting brownfield industrial sites <strong>already connected to the HV grid</strong> — former factories, manufacturing brownfields, first-generation warehouses with an existing substation. No RTE queue. No capacity speculation. An existing connection = a 3 to 5 year time advantage."}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Souveraineté numérique et atout énergétique français */}
+                      <div className="my-8 p-6 bg-[#1E2A3A] text-white rounded-lg">
+                        <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
+                          <span className="text-[#C45A3B] text-2xl">🛡️</span>
+                          {language === 'fr' ? 'Souveraineté numérique française & européenne' : 'French & European digital sovereignty'}
+                        </h4>
+                        <div className="grid sm:grid-cols-2 gap-4 mb-4">
+                          <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
+                            <div className="text-3xl font-bold text-[#C45A3B]">92%</div>
+                            <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Données occidentales stockées aux USA' : 'Western data stored in the USA'}</div>
+                          </div>
+                          <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
+                            <div className="text-3xl font-bold text-[#C45A3B]">95%</div>
+                            <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Électricité française décarbonisée' : 'French electricity decarbonized'}</div>
+                          </div>
+                        </div>
+                        <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                          {language === 'fr'
+                            ? "L'IA générative, la défense européenne, la santé et les administrations publiques ont un besoin impératif d'infrastructure de calcul souveraine. Or, 92% des données de l'Occident sont stockées sur le sol américain. La dépendance stratégique est totale."
+                            : "Generative AI, European defense, healthcare, and public administrations have an imperative need for sovereign computing infrastructure. Yet, 92% of Western data is stored on US soil. The strategic dependence is total."}
+                        </p>
+                        <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                          {language === 'fr'
+                            ? "La France dispose d'un atout énergétique unique en Europe : un mix électrique <strong>95% décarbonisé</strong> (nucléaire + renouvelables), et un pays qui <strong>exporte 20% de sa production électrique</strong>. Cela fait du territoire français une destination de choix pour les hyperscalers en quête d'image carbone et de souveraineté."
+                            : "France has a unique energy advantage in Europe: an electricity mix that is <strong>95% decarbonized</strong> (nuclear + renewables), and a country that <strong>exports 20% of its electricity production</strong>. This makes French territory a destination of choice for hyperscalers seeking carbon reputation and sovereignty."}
+                        </p>
+                        <p className="text-slate-300 text-sm leading-relaxed">
+                          {language === 'fr'
+                            ? "TITAN DC AI transforme cet atout énergétique en infrastructure IA certifiée — capturant la double prime de la souveraineté numérique et de la décarbonation. Les locataires cibles (opérateurs cloud européens, administrations publiques, acteurs IA) paient un premium pour cette garantie."
+                            : "TITAN DC AI transforms this energy advantage into certified AI infrastructure — capturing the double premium of digital sovereignty and decarbonization. Target tenants (European cloud operators, public administrations, AI actors) pay a premium for this guarantee."}
                         </p>
                       </div>
                     </>
