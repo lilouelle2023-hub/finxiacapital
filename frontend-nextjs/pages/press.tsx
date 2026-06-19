@@ -71,7 +71,7 @@ export default function PressPage() {
       description: language === 'fr'
         ? 'Participation à la table ronde "From digital with love" aux côtés d\'Élisabeth Moreno (Fondation Femmes@Numérique). Thèmes : impact humain dans les transformations numériques, inclusion, diversité et digital comme levier d\'émancipation.'
         : 'Panel participation "From digital with love" alongside Élisabeth Moreno (Femmes@Numérique Foundation). Topics: human impact in digital transformations, inclusion, diversity, and digital as a lever for empowerment.',
-      image: 'https://media.licdn.com/dms/image/v2/D4D22AQG_cuxcArTz9Q/feedshare-shrink_800/feedshare-shrink_800/0/1779899102871?e=1783555200&v=beta&t=PIKNHdIlt-IBLtX3FOwg5lAZMqI1i1SRvjDHgV0ZajI',
+      image: 'https://media.licdn.com/dms/image/v2/D4D22AQG_cuxcArTz9Q/feedshare-shrink_800/B4DZ5qQPT9GcAc-/0/1779899102872?e=1783555200&v=beta&t=AKacdp1NCZz1307cyouwEum38LrodxafXL90eXq18FE',
       link: 'https://www.linkedin.com/posts/techboosther-share-7465437931567022080-sXz8/',
     },
     {
@@ -334,7 +334,7 @@ export default function PressPage() {
             </div>
             <div>
               <img
-                src="https://media.licdn.com/dms/image/v2/D4D22AQG_cuxcArTz9Q/feedshare-shrink_800/feedshare-shrink_800/0/1779899102871?e=1783555200&v=beta&t=PIKNHdIlt-IBLtX3FOwg5lAZMqI1i1SRvjDHgV0ZajI"
+                src="https://media.licdn.com/dms/image/v2/D4D22AQG_cuxcArTz9Q/feedshare-shrink_800/B4DZ5qQPT9GcAc-/0/1779899102872?e=1783555200&v=beta&t=AKacdp1NCZz1307cyouwEum38LrodxafXL90eXq18FE"
                 alt="Tech Boost'her — Lila Benhammou et Élisabeth Moreno"
                 className="w-full rounded-lg shadow-2xl"
                 onError={(e) => {
