@@ -354,8 +354,8 @@ export default function PressPage() {
           </h2>
           <p className="text-slate-600 text-lg mb-10 max-w-2xl mx-auto">
             {language === 'fr'
-              ? 'Pour toute demande de presse, d\'intervention ou de partenariat autour de l\'IA et de l\'automatisation.'
-              : 'For any press, speaking, or partnership request around AI and automation.'}
+              ? 'Pour toute demande de presse, d\'intervention ou de partenariat autour de la stratégie TITAN DC AI et de l\'intelligence artificielle.'
+              : 'For any press, speaking, or partnership request around the TITAN DC AI strategy and artificial intelligence.'}
           </p>
           <a
             href="mailto:contact@finxiacapital.com"
