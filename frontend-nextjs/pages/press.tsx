@@ -66,7 +66,7 @@ export default function PressPage() {
       id: 'tech-boosther',
       title: 'Tech Boost\'her',
       subtitle: language === 'fr' ? 'Social Builder · France Travail · Apec' : 'Social Builder · France Travail · Apec',
-      date: '3 juin 2026',
+      date: '3 et 4 juin 2026',
       location: 'CENTQUATRE-PARIS',
       description: language === 'fr'
         ? 'Participation à la table ronde "From digital with love" aux côtés d\'Élisabeth Moreno (Fondation Femmes@Numérique). Thèmes : impact humain dans les transformations numériques, inclusion, diversité et digital comme levier d\'émancipation.'
@@ -99,19 +99,7 @@ export default function PressPage() {
       link: 'https://www.linkedin.com/in/lila-benhammou/',
     },
     {
-      id: 'elevate24',
-      title: 'Elevate24',
-      subtitle: 'monday.com · Partner',
-      date: '2024',
-      location: 'Paris',
-      description: language === 'fr'
-        ? 'Participation à l\'événement Elevate24 avec notre partenaire monday.com. Contenu riche et témoignages sur la transformation digitale et l\'automatisation.'
-        : 'Participation at Elevate24 with partner monday.com. Rich content and testimonials on digital transformation and automation.',
-      image: 'https://media.licdn.com/dms/image/v2/D4E22AQE2l-YK72_7RQ/feedshare-shrink_800/feedshare-shrink_800/0/1726055471863?e=1783555200&v=beta&t=pABCK9rP8u5OsNjXRIbTq0u-mRRt2V6yj8Yrg018Fnk',
-      link: 'https://www.linkedin.com/in/lila-benhammou/',
-    },
-    {
-      id: 'pegasystems',
+      id: 'women-tech-power',
       title: 'Pegasystems',
       subtitle: language === 'fr' ? 'Podcast · Hyperautomation' : 'Podcast · Hyperautomation',
       date: '2022',
