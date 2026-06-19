@@ -123,18 +123,6 @@ export default function PressPage() {
       link: 'https://www.linkedin.com/in/lila-benhammou/',
     },
     {
-      id: 'greenster-csrd',
-      title: 'Greenster CSRD-GPT',
-      subtitle: 'H4H Humans4Help · Kiosk',
-      date: '2024',
-      location: 'Paris',
-      description: language === 'fr'
-        ? 'Lancement de Greenster CSRD-GPT, notre assistant IA entraîné pour répondre aux questions techniques et sectorielles de la CSRD. Partenariat stratégique avec Kiosk.'
-        : 'Launch of Greenster CSRD-GPT, our AI assistant trained to answer technical and sectoral CSRD questions. Strategic partnership with Kiosk.',
-      image: 'https://media.licdn.com/dms/image/v2/D4E22AQHopdvur-m0zQ/feedshare-shrink_800/feedshare-shrink_800/0/1718630583394?e=1783555200&v=beta&t=NBDS9hLtdG-6BdZ7D5PezkYetmkdF1yFeDvAWnn_NRI',
-      link: 'https://www.linkedin.com/in/lila-benhammou/',
-    },
-    {
       id: 'women-tech-power',
       title: language === 'fr' ? '#Women #Tech #Power' : '#Women #Tech #Power',
       subtitle: 'H4H Humans4Help',
