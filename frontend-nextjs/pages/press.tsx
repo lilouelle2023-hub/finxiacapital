@@ -87,6 +87,18 @@ export default function PressPage() {
       link: 'https://www.linkedin.com/in/lila-benhammou/',
     },
     {
+      id: 'salon-ia-actual',
+      title: language === 'fr' ? 'Salon de l\'IA' : 'AI Salon',
+      subtitle: 'ACTUAL · Numeum · Grand Rex',
+      date: '2025',
+      location: 'Grand Rex, Paris',
+      description: language === 'fr'
+        ? 'Intervention au Salon de l\'IA organisé par ACTUAL au Grand Rex à Paris. Événement phare sur l\'impact de l\'intelligence artificielle pour les entreprises, en partenariat avec Numeum.'
+        : 'Speaking at the AI Salon organized by ACTUAL at the Grand Rex in Paris. Flagship event on the impact of artificial intelligence for businesses, in partnership with Numeum.',
+      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+      link: 'https://www.linkedin.com/in/lila-benhammou/',
+    },
+    {
       id: 'viva-technology',
       title: 'Viva Technology',
       subtitle: 'UiPath · Partner Gold',
