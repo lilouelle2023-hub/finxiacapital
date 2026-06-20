@@ -579,6 +579,39 @@ export default function PressPage() {
         </div>
       </section>
 
+      {/* Autre profil — Jean-Pierre Véron */}
+      <section className="py-16 bg-[#F5F5F5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm border border-slate-200">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-1">
+                <p className="overline mb-2">
+                  {language === 'fr' ? 'Co-fondateur' : 'Co-founder'}
+                </p>
+                <h2 className="font-serif text-2xl md:text-3xl mb-4">
+                  Jean-Pierre Véron
+                </h2>
+                <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                  {language === 'fr'
+                    ? '40+ ans de track record immobilier institutionnel. Fondateur de Financière Rive Gauche, Norev et NRE Partners. Découvrez son parcours et ses mentions dans la presse.'
+                    : '40+ years of institutional real estate track record. Founder of Financière Rive Gauche, Norev and NRE Partners. Discover his career and press mentions.'}
+                </p>
+                <a
+                  href="/press/jean-pierre-veron"
+                  className="inline-flex items-center gap-2 bg-[#C45A3B] text-white px-6 py-3 text-sm font-semibold hover:bg-[#a34a2f] transition-colors"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  {language === 'fr' ? 'Voir son profil presse' : 'View his press profile'}
+                </a>
+              </div>
+              <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#1E2A3A] flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-serif text-2xl md:text-4xl">JPV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
