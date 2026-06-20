@@ -346,6 +346,239 @@ export default function PressPage() {
         </div>
       </section>
 
+      {/* Sponsors Tech Boost'her */}
+      <section className="py-16 bg-[#F5F5F5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-2xl md:text-3xl text-center mb-2">
+            {language === 'fr' ? 'Sponsors & Partenaires' : 'Sponsors & Partners'}
+          </h2>
+          <p className="text-slate-600 text-center mb-10 max-w-2xl mx-auto">
+            {language === 'fr'
+              ? "Tech Boost'her bénéficie du soutien de grands acteurs institutionnels, publics et privés."
+              : "Tech Boost'her benefits from the support of major institutional, public and private actors."}
+          </p>
+
+          {/* Co-porteurs */}
+          <div className="mb-12">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-6 text-center">
+              {language === 'fr' ? 'Co-porteurs' : 'Co-organizers'}
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/Logo_Social_Builder_avec_mention_mixit_numrique_blanche_b6cb93f6-cc9b-4f43-8a62-b87ea92aea3d.png"
+                alt="Social Builder"
+                className="h-12 md:h-16 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logoFT-republique-1920x1080_71d4cbce-a394-4c38-8d0c-2d1cfe428a07.png"
+                alt="France Travail"
+                className="h-12 md:h-16 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/Novapec--Apec--fond-transparent_cfae11df-d5b4-43e1-a56b-3a02424f5301.png"
+                alt="Apec"
+                className="h-12 md:h-16 object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Partenaires institutionnels */}
+          <div className="mb-12">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-6 text-center">
+              {language === 'fr' ? 'Partenaires Institutionnels' : 'Institutional Partners'}
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/bpifranceetlafrenchlab_00d4611e-b7b9-4d07-a650-e98a29626e90.png"
+                alt="Bpifrance"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/EDF_47900116-b3e4-4e4b-b4c1-bfa30ba99b22.png"
+                alt="EDF"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/enedis_5be511e1-3f90-4044-82c8-6909d1d2fdf9.jpg"
+                alt="Enedis"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logoSG_d44de2c6-8a8c-47a0-98d9-a5fb197052b7.png"
+                alt="Société Générale"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logototal_d3d6a48c-f411-4dff-82c5-22aa99d3a35c.png"
+                alt="Total"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/Logo_du_Mouvement_des_entreprises_de_France_MEDEF.svg_53f1b2e2-2c7e-4d2f-91b3-7b93e82c07c0.png"
+                alt="MEDEF"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/CCIParisIDF_30097e06-5d57-4915-bb77-05bb4411082a.png"
+                alt="CCI Paris IDF"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/verkor_9d4edb5f-43e6-4a7d-b1f3-19a8d5f7dc27.jpg"
+                alt="Verkor"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/banque_des_territoires_e7874970-a222-484a-b05c-2c6ba6c3931d.jpg"
+                alt="Banque des Territoires"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/campus_cyber_12866c58-e52f-4a6b-a3fd-2f77857fc472.jpg"
+                alt="Campus Cyber"
+                className="h-10 md:h-12 object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Partenaires écosystème */}
+          <div className="mb-12">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-6 text-center">
+              {language === 'fr' ? 'Partenaires Écosystème' : 'Ecosystem Partners'}
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/cefcys_bc534635-b069-4fe6-bebe-fb693eec4a5a.png"
+                alt="EFCYS"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/yeeso_45f06b73-5c9a-4a50-8a38-4e77ab5face7.png"
+                alt="Yeeso"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/LaFrancesengage_ab8afdc0-e084-456c-a691-679461003def.png"
+                alt="La France s'engage"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logoWIN_142e69cd-cc52-4b44-8226-3a9946a92836.png"
+                alt="WIN France"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/Numeum_336e0860-48da-4c3b-9f99-5655be3a6431.png"
+                alt="Numeum"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logoFemmesnumriques_f97872ae-2663-418f-a42c-65a339f45315.png"
+                alt="Femmes Numérique"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/CMQ_BTP_numerique_occitanie_f3f44e23-eea9-49f4-ac7c-aa0b4ccff388.png"
+                alt="Campus des Métiers BTP Occitanie"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/CMQ_industrie_idf_6f8c0591-2be8-4ce1-9b27-40e352297917.png"
+                alt="Campus des Métiers Industrie IDF"
+                className="h-10 md:h-12 object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Partenaires fondations */}
+          <div className="mb-12">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-6 text-center">
+              {language === 'fr' ? 'Fondations Partenaires' : 'Partner Foundations'}
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logoFondationRandstad_bf79f488-afd5-4a1e-b4c6-9c66f47597c7.png"
+                alt="Fondation Randstad"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logo_fondationcovea_bleu_long_40c2bdde-9650-4e83-96af-c125bb8255ff.png"
+                alt="Fondation Covea"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logofondationedf_e75e3bc9-098e-44fd-83ca-ecfe2449ec06.png"
+                alt="Fondation EDF"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logofondationRATP_436a32ff-b3b8-4981-aaa7-02edc6121d37.png"
+                alt="Fondation RATP"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logosfondationAdecco_df242d88-a886-4a81-8db3-177d366e787c.png"
+                alt="Fondation Adecco"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logoIBMSkillsBuild_fb7affb2-0831-4027-a40c-ceffd3dbe692.png"
+                alt="IBM SkillsBuild"
+                className="h-10 md:h-12 object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Partenaires médias */}
+          <div className="mb-12">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-6 text-center">
+              {language === 'fr' ? 'Partenaires Médias' : 'Media Partners'}
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/carenews-logo_71c283f0-0e81-4110-9742-13fef92f3bef.png"
+                alt="Carenews"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/maddyness-logo-vector_1f64e48f-5277-4a85-988e-f644109ec495.png"
+                alt="Maddyness"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/logo-Latribune-blue_ea1470d7-1c50-4b51-a206-68a85ef0e3be.svg"
+                alt="La Tribune"
+                className="h-10 md:h-12 object-contain"
+              />
+            </div>
+          </div>
+
+          {/* Soutien public */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-6 text-center">
+              {language === 'fr' ? 'Soutien Public' : 'Public Support'}
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/france_2030_1b665f09-581e-4273-8272-2988a442ee51.png"
+                alt="France 2030"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/republique_francaise_509920ac-b390-41cc-ad7d-a305f447d804.png"
+                alt="République Française"
+                className="h-10 md:h-12 object-contain"
+              />
+              <img
+                src="https://mobicheckin-assets.s3.eu-west-1.amazonaws.com/uploads/events/688383179530632f8e703a5a/assets-folder68a32d9225096d93d5604313/NextgenerationEU_71ffb7e3-c62a-4dea-80ce-f6947f3db508.png"
+                alt="Next Generation EU"
+                className="h-10 md:h-12 object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
