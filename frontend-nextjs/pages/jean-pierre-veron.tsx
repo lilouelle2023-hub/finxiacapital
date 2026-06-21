@@ -57,26 +57,6 @@ export default function PressJPVPage() {
       url: 'https://www.lesechos.fr/1996/03/des-francais-tres-discrets-831468',
       category: language === 'fr' ? 'Presse économique' : 'Economic Press',
     },
-    {
-      id: 'societe-com',
-      date: '2023-11-14',
-      source: 'Société.com',
-      title: language === 'fr' 
-        ? 'Fiche dirigeant — Jean-Pierre Véron, 40+ ans de track record immobilier' 
-        : 'Executive Profile — Jean-Pierre Véron, 40+ years of real estate track record',
-      url: 'https://www.societe.com/manager/Jean-Pierre.VERON.y4lKLiFrzv2.html',
-      category: language === 'fr' ? 'Profil' : 'Profile',
-    },
-    {
-      id: 'norev-realestate',
-      date: '2024',
-      source: 'NOREV Real Estate',
-      title: language === 'fr' 
-        ? 'L\'équipe de direction — Jean-Pierre Véron, Président' 
-        : 'Management Team — Jean-Pierre Véron, Chairman',
-      url: 'https://www.norevre.fr/index.php?option=com_content&view=article&id=14&Itemid=28&lang=fr',
-      category: language === 'fr' ? 'Site corporate' : 'Corporate Website',
-    },
   ];
 
   const milestones = [
