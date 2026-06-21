@@ -16,6 +16,7 @@ const nextConfig: NextConfig = {
     ],
   },
   trailingSlash: true,
+  // Force rebuild trigger - 2026-06-20
   // Note: Next.js i18n routing is not compatible with output: 'export'
   // We use manual locale detection via URL pathname in LanguageContext
 };
