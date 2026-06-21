@@ -10,6 +10,7 @@ export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+  const [isPressOpen, setIsPressOpen] = useState(false);
   const { language, toggleLanguage } = useLanguage();
   const router = useRouter();
 
@@ -24,6 +25,7 @@ export default function Navigation() {
   useEffect(() => {
     setIsMobileMenuOpen(false);
     setIsResourcesOpen(false);
+    setIsPressOpen(false);
   }, [router.pathname]);
 
   const navLinks = [
@@ -39,12 +41,17 @@ export default function Navigation() {
     { path: '/blog/', label: 'Blog' },
   ];
 
+  const pressLinks = [
+    { path: '/lila-benhammou', label: 'Lila Benhammou' },
+    { path: '/jean-pierre-veron', label: 'Jean-Pierre Véron' },
+  ];
+
   const secondaryLinks = [
-    { path: '/press', label: language === 'fr' ? 'Presse' : 'Press' },
     { path: '/contact', label: 'Contact' },
   ];
 
   const isResourcesActive = router.pathname.startsWith('/guides') || router.pathname.startsWith('/blog') || router.pathname.startsWith('/auteurs');
+  const isPressActive = router.pathname === '/lila-benhammou' || router.pathname === '/lila-benhammou/' || router.pathname === '/jean-pierre-veron' || router.pathname === '/jean-pierre-veron/';
 
   return (
     <nav
@@ -104,6 +111,46 @@ export default function Navigation() {
                         href={link.path}
                         className={`block px-4 py-2.5 text-sm transition-colors ${
                           router.pathname.startsWith(link.path.replace(/\/$/, ''))
+                            ? 'text-[#C45A3B] bg-slate-50'
+                            : 'text-slate-700 hover:text-[#C45A3B] hover:bg-slate-50'
+                        }`}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Presse dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsPressOpen(true)}
+              onMouseLeave={() => setIsPressOpen(false)}
+            >
+              <button
+                data-testid="nav-press-trigger"
+                onClick={() => setIsPressOpen(!isPressOpen)}
+                className={`inline-flex items-center gap-1 text-sm font-medium tracking-wide transition-colors link-hover ${
+                  isPressActive ? 'text-[#C45A3B]' : 'text-slate-700 hover:text-[#C45A3B]'
+                }`}
+              >
+                {language === 'fr' ? 'Presse' : 'Press'}
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isPressOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isPressOpen && (
+                <div
+                  data-testid="nav-press-dropdown"
+                  className="absolute top-full left-0 pt-2 min-w-[200px]"
+                >
+                  <div className="bg-white border border-slate-200 shadow-lg py-2">
+                    {pressLinks.map((link) => (
+                      <Link
+                        key={link.path}
+                        href={link.path + '/'}
+                        className={`block px-4 py-2.5 text-sm transition-colors ${
+                          router.pathname === link.path || router.pathname === link.path + '/'
                             ? 'text-[#C45A3B] bg-slate-50'
                             : 'text-slate-700 hover:text-[#C45A3B] hover:bg-slate-50'
                         }`}
@@ -184,6 +231,26 @@ export default function Navigation() {
                   key={link.path}
                   href={link.path}
                   className="block py-2 text-base font-medium text-slate-700 hover:text-[#C45A3B]"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Mobile Presse group */}
+            <div className="pt-2 border-t border-slate-100">
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">
+                {language === 'fr' ? 'Presse' : 'Press'}
+              </p>
+              {pressLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  href={link.path + '/'}
+                  className={`block py-2 text-base font-medium transition-colors ${
+                    router.pathname === link.path || router.pathname === link.path + '/'
+                      ? 'text-[#C45A3B]'
+                      : 'text-slate-700 hover:text-[#C45A3B]'
+                  }`}
                 >
                   {link.label}
                 </Link>
