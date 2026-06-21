@@ -3,7 +3,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { ExternalLink, Calendar, User, Camera, MapPin, Mail } from 'lucide-react';
 import SEO from '@/components/SEO';
 
-export default function PressPage() {
+export default function LilaPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
 
@@ -20,8 +20,8 @@ export default function PressPage() {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": language === 'fr' ? "Presse & Médias" : "Press & Media",
-        "item": "https://finxiacapital.com/press"
+        "name": language === 'fr' ? "Lila Benhammou" : "Lila Benhammou",
+        "item": "https://finxiacapital.com/lila-benhammou"
       }
     ]
   };
@@ -151,7 +151,7 @@ export default function PressPage() {
   return (
     <div data-testid="lila-page" className="pt-20">
       <SEO
-        title={language === 'fr' ? "Lila Benhammou — Presse title={language === 'fr' ? "Presse & Médias — Lila Benhammou | Finxia Capital" : "Press & Media — Lila Benhammou | Finxia Capital"} Médias | Finxia Capital" : "Lila Benhammou — Press title={language === 'fr' ? "Presse & Médias — Lila Benhammou | Finxia Capital" : "Press & Media — Lila Benhammou | Finxia Capital"} Media | Finxia Capital"}
+        title={language === 'fr' ? "Presse & Médias — Lila Benhammou | Finxia Capital" : "Press & Media — Lila Benhammou | Finxia Capital"}
         description={language === 'fr'
           ? "Retrouvez les articles, interviews, podcasts et événements de Lila Benhammou, co-fondatrice de Finxia Capital. Tech Boost'her, France Travail, BFM Business, Bpifrance, podcasts."
           : "Find articles, interviews, podcasts and events featuring Lila Benhammou, co-founder of Finxia Capital. Tech Boost'her, France Travail, BFM Business, Bpifrance, podcasts."}
@@ -170,7 +170,7 @@ export default function PressPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="overline mb-4">
-              {language === 'fr' ? 'Lila Benhammou' : 'Lila Benhammou'}
+              {language === 'fr' ? 'Presse & Médias' : 'Press & Media'}
             </p>
             <h1 className="font-serif text-4xl md:text-5xl mb-6">
               {language === 'fr'
