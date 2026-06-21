@@ -3,7 +3,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { ExternalLink, Calendar, User, Camera, MapPin, Mail } from 'lucide-react';
 import SEO from '@/components/SEO';
 
-export default function LilaPage() {
+export default function PressPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
 
@@ -20,8 +20,8 @@ export default function LilaPage() {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": language === 'fr' ? "Lila Benhammou" : "Lila Benhammou",
-        "item": "https://finxiacapital.com/lila-benhammou"
+        "name": language === 'fr' ? "Presse & Médias" : "Press & Media",
+        "item": "https://finxiacapital.com/press"
       }
     ]
   };
@@ -151,7 +151,7 @@ export default function LilaPage() {
   return (
     <div data-testid="lila-page" className="pt-20">
       <SEO
-        title={language === 'fr' ? "Presse & Médias — Lila Benhammou | Finxia Capital" : "Press & Media — Lila Benhammou | Finxia Capital"}
+        title={language === 'fr' ? "Lila Benhammou — Presse title={language === 'fr' ? "Presse & Médias — Lila Benhammou | Finxia Capital" : "Press & Media — Lila Benhammou | Finxia Capital"} Médias | Finxia Capital" : "Lila Benhammou — Press title={language === 'fr' ? "Presse & Médias — Lila Benhammou | Finxia Capital" : "Press & Media — Lila Benhammou | Finxia Capital"} Media | Finxia Capital"}
         description={language === 'fr'
           ? "Retrouvez les articles, interviews, podcasts et événements de Lila Benhammou, co-fondatrice de Finxia Capital. Tech Boost'her, France Travail, BFM Business, Bpifrance, podcasts."
           : "Find articles, interviews, podcasts and events featuring Lila Benhammou, co-founder of Finxia Capital. Tech Boost'her, France Travail, BFM Business, Bpifrance, podcasts."}
@@ -170,7 +170,7 @@ export default function LilaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="overline mb-4">
-              {language === 'fr' ? 'Presse & Médias' : 'Press & Media'}
+              {language === 'fr' ? 'Lila Benhammou' : 'Lila Benhammou'}
             </p>
             <h1 className="font-serif text-4xl md:text-5xl mb-6">
               {language === 'fr'
@@ -183,6 +183,74 @@ export default function LilaPage() {
                 ? 'Co-fondatrice de Finxia Capital, Lila Benhammou est une voix reconnue dans l\'écosystème IA, l\'automatisation et l\'entrepreneuriat tech. Retrouvez ses interventions, interviews et événements.'
                 : 'Co-founder of Finxia Capital, Lila Benhammou is a recognized voice in the AI ecosystem, automation, and tech entrepreneurship. Find her appearances, interviews, and events.'}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Parcours / Timeline */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <p className="overline mb-4">{language === 'fr' ? 'Parcours' : 'Career'}</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">
+              {language === 'fr' ? '13+ ans d\'expérience IA & Automation' : '13+ years of AI & Automation experience'}
+            </h2>
+            <div className="section-divider mb-8" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[#C45A3B] text-sm font-bold">2013</span>
+              </div>
+              <h3 className="font-serif text-lg mb-2">
+                {language === 'fr' ? 'Fondation de Humans4Help' : 'Foundation of Humans4Help'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Création de H4H Humans4Help, cabinet de conseil spécialisé en data, IA et automatisation des processus métiers. Lancement de la méthodologie d\'hyperautomation.'
+                  : 'Creation of H4H Humans4Help, a consulting firm specializing in data, AI and business process automation. Launch of the hyperautomation methodology.'}
+              </p>
+            </div>
+            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[#C45A3B] text-sm font-bold">2017</span>
+              </div>
+              <h3 className="font-serif text-lg mb-2">
+                {language === 'fr' ? 'Partenariat UiPath Gold' : 'UiPath Gold Partnership'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Partenariat stratégique avec UiPath (leader mondial de la RPA). Intégration de la robotisation de processus et déploiement d\'agents IA autonomes.'
+                  : 'Strategic partnership with UiPath (world leader in RPA). Integration of process robotization and deployment of autonomous AI agents.'}
+              </p>
+            </div>
+            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[#C45A3B] text-sm font-bold">2021</span>
+              </div>
+              <h3 className="font-serif text-lg mb-2">
+                {language === 'fr' ? 'Voix reconnue dans la tech' : 'Recognized voice in tech'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Interventions régulières sur BFM Business, Bpifrance, podcasts et conférences. Table ronde Tech Boost\'her aux côtés d\'Élisabeth Moreno.'
+                  : 'Regular appearances on BFM Business, Bpifrance, podcasts and conferences. Tech Boost\'her panel alongside Élisabeth Moreno.'}
+              </p>
+            </div>
+            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[#C45A3B] text-sm font-bold">2023</span>
+              </div>
+              <h3 className="font-serif text-lg mb-2">
+                {language === 'fr' ? 'Co-fondation de FINXIA Capital' : 'Co-foundation of FINXIA Capital'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Association avec Jean-Pierre Véron pour créer FINXIA Capital. Déploiement de 18 agents IA autonomes dans le cycle de vie du portefeuille. Stratégie TITAN DC AI.'
+                  : 'Partnership with Jean-Pierre Véron to create FINXIA Capital. Deployment of 18 autonomous AI agents in the portfolio lifecycle. TITAN DC AI strategy.'}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -574,39 +642,6 @@ export default function LilaPage() {
                 alt="Next Generation EU"
                 className="h-10 md:h-12 object-contain"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Autre profil — Jean-Pierre Véron */}
-      <section className="py-16 bg-[#F5F5F5]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm border border-slate-200">
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-1">
-                <p className="overline mb-2">
-                  {language === 'fr' ? 'Co-fondateur' : 'Co-founder'}
-                </p>
-                <h2 className="font-serif text-2xl md:text-3xl mb-4">
-                  Jean-Pierre Véron
-                </h2>
-                <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                  {language === 'fr'
-                    ? '40+ ans de track record immobilier institutionnel. Fondateur de Financière Rive Gauche, Norev et NRE Partners. Découvrez son parcours et ses mentions dans la presse.'
-                    : '40+ years of institutional real estate track record. Founder of Financière Rive Gauche, Norev and NRE Partners. Discover his career and press mentions.'}
-                </p>
-                <a
-                  href="/press/jean-pierre-veron"
-                  className="inline-flex items-center gap-2 bg-[#C45A3B] text-white px-6 py-3 text-sm font-semibold hover:bg-[#a34a2f] transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  {language === 'fr' ? 'Voir son profil presse' : 'View his press profile'}
-                </a>
-              </div>
-              <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#1E2A3A] flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-serif text-2xl md:text-4xl">JPV</span>
-              </div>
             </div>
           </div>
         </div>
