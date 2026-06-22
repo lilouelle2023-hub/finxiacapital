@@ -3,7 +3,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { ExternalLink, Calendar, User, Camera, MapPin, Mail } from 'lucide-react';
 import SEO from '@/components/SEO';
 
-export default function PressPage() {
+export default function LilaPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
 
@@ -20,8 +20,8 @@ export default function PressPage() {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": language === 'fr' ? "Presse & Médias" : "Press & Media",
-        "item": "https://finxiacapital.com/press"
+        "name": language === 'fr' ? "Lila Benhammou" : "Lila Benhammou",
+        "item": "https://finxiacapital.com/lila-benhammou"
       }
     ]
   };
@@ -164,28 +164,6 @@ export default function PressPage() {
         hreflangEn="https://finxiacapital.com/en/lila-benhammou/"
         hreflangDefault="https://finxiacapital.com/lila-benhammou/"
       />
-
-      {/* Hero Section */}
-      <section className="py-24 md:py-32 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="overline mb-4">
-              {language === 'fr' ? 'Lila Benhammou' : 'Lila Benhammou'}
-            </p>
-            <h1 className="font-serif text-4xl md:text-5xl mb-6">
-              {language === 'fr'
-                ? 'Lila Benhammou dans la Presse'
-                : 'Lila Benhammou in the Press'}
-            </h1>
-            <div className="section-divider mb-8" />
-            <p className="text-slate-600 text-xl leading-relaxed">
-              {language === 'fr'
-                ? 'Co-fondatrice de Finxia Capital, Lila Benhammou est une voix reconnue dans l\'écosystème IA, l\'automatisation et l\'entrepreneuriat tech. Retrouvez ses interventions, interviews et événements.'
-                : 'Co-founder of Finxia Capital, Lila Benhammou is a recognized voice in the AI ecosystem, automation, and tech entrepreneurship. Find her appearances, interviews, and events.'}
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Parcours / Timeline */}
       <section className="py-16 bg-white">
