@@ -22,3 +22,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+// force rebuild: 2026-07-06T19:42:19.961992
