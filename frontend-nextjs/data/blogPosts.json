@@ -1,5 +1,65 @@
 [
   {
+    "frSlug": "anthropic-mistral-ia-francaise-datacenters-europe",
+    "enSlug": "anthropic-mistral-french-ai-european-datacenters",
+    "date": "2026-06-22",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "Anthropic, Mistral et l'IA française : qui alimente vraiment les datacenters européens ?",
+      "en": "Anthropic, Mistral and French AI: Who Really Powers European Datacenters?"
+    },
+    "excerpt": {
+      "fr": "Anthropic lève 3,5 milliards de dollars, Mistral devient la licorne française de l'IA. Mais derrière ces modèles linguistiques, une question stratégique : où sont hébergés les datacenters qui les font tourner ?",
+      "en": "Anthropic raises $3.5 billion, Mistral becomes France's AI unicorn. But behind these language models, a strategic question: where are the datacenters that run them hosted?"
+    }
+  },
+  {
+    "frSlug": "clouds-chinois-europe-datacenter-investissement",
+    "enSlug": "chinese-clouds-europe-datacenter-investment",
+    "date": "2026-06-22",
+    "readTime": "5 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "Les clouds chinois en Europe : une menace ou une opportunité pour les investisseurs ?",
+      "en": "Chinese Clouds in Europe: A Threat or an Opportunity for Investors?"
+    },
+    "excerpt": {
+      "fr": "Alibaba Cloud, Huawei Cloud, Tencent Cloud — les géants chinois investissent massivement en Europe. Mais leurs datacenters posent une question de souveraineté que les investisseurs ne peuvent plus ignorer.",
+      "en": "Alibaba Cloud, Huawei Cloud, Tencent Cloud — Chinese giants are investing massively in Europe. But their datacenters raise a sovereignty question that investors can no longer ignore."
+    }
+  },
+  {
+    "frSlug": "neoclouds-vs-hyperscalers-europe",
+    "enSlug": "neoclouds-vs-hyperscalers-europe",
+    "date": "2026-06-22",
+    "readTime": "7 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "Néoclouds vs hyperscalers : qui construit l'avenir du cloud européen ?",
+      "en": "Neoclouds vs Hyperscalers: Who is Building the Future of European Cloud?"
+    },
+    "excerpt": {
+      "fr": "OVHcloud, Scaleway, STACKIT, IONOS — les néoclouds européens défient AWS, Azure et Google. Mais peuvent-ils vraiment rivaliser ? Analyse des investissements et des stratégies.",
+      "en": "OVHcloud, Scaleway, STACKIT, IONOS — European neoclouds challenge AWS, Azure and Google. But can they really compete? Analysis of investments and strategies."
+    }
+  },
+  {
+    "frSlug": "cloud-souverain-france-stackit-ovh-aws-azure",
+    "enSlug": "french-sovereign-cloud-stackit-ovh-aws-azure",
+    "date": "2026-06-22",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "Cloud souverain français : Stackit, OVHcloud et la bataille contre AWS et Azure",
+      "en": "French Sovereign Cloud: Stackit, OVHcloud and the Battle Against AWS and Azure"
+    },
+    "excerpt": {
+      "fr": "Stackit, OVHcloud, Scaleway — les clouds souverains français défient les hyperscalers américains. Mais peuvent-ils vraiment rivaliser sans une infrastructure physique de rupture ?",
+      "en": "Stackit, OVHcloud, Scaleway — French sovereign clouds challenge American hyperscalers. But can they really compete without breakthrough physical infrastructure?"
+    }
+  },
+  {
     "frSlug": "data-centers-brown-to-green-europe-strategie-investissement",
     "date": "2026-05-04",
     "readTime": "12 min",
