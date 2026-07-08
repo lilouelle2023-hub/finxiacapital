@@ -1,5 +1,50 @@
 [
   {
+    "frSlug": "datacenters-modulaires-schneider-electric-edge-computing",
+    "enSlug": "modular-datacenters-schneider-electric-edge-computing",
+    "date": "2026-07-04",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "Les datacenters modulaires : le coup d'accélération de Schneider Electric et la révolution de l'edge computing",
+      "en": "Modular Datacenters: Schneider Electric's Acceleration and the Edge Computing Revolution"
+    },
+    "excerpt": {
+      "fr": "Schneider Electric investit 1,5 milliard d'euros dans les datacenters modulaires. Mais pourquoi cette architecture est-elle le futur de l'infrastructure IA ?",
+      "en": "Schneider Electric invests 1.5 billion euros in modular datacenters. But why is this architecture the future of AI infrastructure?"
+    }
+  },
+  {
+    "frSlug": "gpu-puissance-electrique-france-ia-generative",
+    "enSlug": "gpu-electrical-power-france-generative-ai",
+    "date": "2026-07-04",
+    "readTime": "7 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "GPU et puissance électrique : la France peut-elle alimenter l'IA générative ?",
+      "en": "GPU and Electrical Power: Can France Power Generative AI?"
+    },
+    "excerpt": {
+      "fr": "NVIDIA livre 100 000 H100 par trimestre. Chaque GPU consomme 700W. La France a 18 GW de demande datacenter en file d'attente. Qui obtiendra le raccordement ?",
+      "en": "NVIDIA delivers 100,000 H100 per quarter. Each GPU consumes 700W. France has 18 GW of datacenter demand in queue. Who gets the connection?"
+    }
+  },
+  {
+    "frSlug": "titan-dc-ai-strategie-investissement-finxia-capital",
+    "enSlug": "titan-dc-ai-investment-strategy-finxia-capital",
+    "date": "2026-07-04",
+    "readTime": "8 min",
+    "category": "Investment Strategy",
+    "title": {
+      "fr": "TITAN DC AI : comment FINXIA Capital structure l'investissement en datacenter intelligence artificielle",
+      "en": "TITAN DC AI: How FINXIA Capital Structures AI Datacenter Investment"
+    },
+    "excerpt": {
+      "fr": "FINXIA Capital déploie la stratégie TITAN DC AI — une approche institutionnelle sur les actifs réels de l'infrastructure IA. Découvrez la méthode.",
+      "en": "FINXIA Capital deploys the TITAN DC AI strategy — an institutional approach to AI infrastructure real assets. Discover the method."
+    }
+  },
+  {
     "frSlug": "anthropic-mistral-ia-francaise-datacenters-europe",
     "enSlug": "anthropic-mistral-french-ai-european-datacenters",
     "date": "2026-06-22",
