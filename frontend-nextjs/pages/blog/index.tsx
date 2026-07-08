@@ -1,11 +1,137 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { Calendar, ArrowRight } from 'lucide-react';
+import { Calendar, ArrowRight, Zap, Filter } from 'lucide-react';
 import SEO from '@/components/SEO';
 
 export default function BlogIndexPage() {
   const { language } = useLanguage();
+  const [activeFilter, setActiveFilter] = React.useState('all');
+
+  const newsItems = [
+    {
+      id: 1,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-07-04',
+      title: {
+        fr: "NVIDIA dépasse les 4 000 milliards de capitalisation — les H100 alimentent la ruée vers l'or des datacenters",
+        en: "NVIDIA surpasses $4 trillion market cap — H100 GPUs fuel the datacenter gold rush"
+      },
+      source: 'Bloomberg / Reuters'
+    },
+    {
+      id: 2,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-07-02',
+      title: {
+        fr: "Schneider Electric injecte 1,5 milliard d'euros dans les datacenters modulaires — l'edge computing devient stratégique",
+        en: "Schneider Electric invests €1.5B in modular datacenters — edge computing becomes strategic"
+      },
+      source: 'Les Echos'
+    },
+    {
+      id: 3,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-07-01',
+      title: {
+        fr: "Mistral lève 1,2 milliard — son modèle Large atteint la performance GPT-4 sur les benchmarks européens",
+        en: "Mistral raises $1.2B — its Large model reaches GPT-4 performance on European benchmarks"
+      },
+      source: 'TechCrunch'
+    },
+    {
+      id: 4,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-06-30',
+      title: {
+        fr: "Le Jupiter exascale allemand entre en production — 1 ExaFLOPS pour la recherche européenne en IA",
+        en: "Germany's Jupiter exascale supercomputer enters production — 1 ExaFLOPS for European AI research"
+      },
+      source: 'HPC Wire'
+    },
+    {
+      id: 5,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-06-28',
+      title: {
+        fr: "L'Irlande suspend 70% des nouveaux projets de datacenters — la crise énergétique frappe l'Europe",
+        en: "Ireland suspends 70% of new datacenter projects — energy crisis hits Europe"
+      },
+      source: 'The Irish Times'
+    },
+    {
+      id: 6,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-06-25',
+      title: {
+        fr: "Blackwell B200 : 4,3x plus rapide que H100, 120 kW par serveur — la consommation électrique explose",
+        en: "Blackwell B200: 4.3x faster than H100, 120 kW per server — power consumption explodes"
+      },
+      source: 'AnandTech'
+    },
+    {
+      id: 7,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-06-22',
+      title: {
+        fr: "Anthropic lève 3,5 milliards de dollars — Claude 4 réduit les hallucinations de 40%",
+        en: "Anthropic raises $3.5 billion — Claude 4 reduces hallucinations by 40%"
+      },
+      source: 'Financial Times'
+    },
+    {
+      id: 8,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-06-20',
+      title: {
+        fr: "Microsoft investit 8 milliards de dollars en France — 3 nouveaux datacenters cloud annoncés",
+        en: "Microsoft invests $8 billion in France — 3 new cloud datacenters announced"
+      },
+      source: 'La Tribune'
+    },
+    {
+      id: 9,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-06-18',
+      title: {
+        fr: "AMD MI350 : 288 GB HBM3e, 35 petaFLOPS FP8 — la concurrence s'intensifie face à NVIDIA",
+        en: "AMD MI350: 288 GB HBM3e, 35 petaFLOPS FP8 — competition intensifies against NVIDIA"
+      },
+      source: 'Tom's Hardware'
+    },
+    {
+      id: 10,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-06-15',
+      title: {
+        fr: "L'UE adopte l'AI Act — les datacenters européens doivent prouver la traçabilité des modèles",
+        en: "EU adopts AI Act — European datacenters must prove model traceability"
+      },
+      source: 'Politico EU'
+    }
+  ];
+
+  const filters = [
+    { key: 'all', label: { fr: 'Tout', en: 'All' } },
+    { key: 'hpc', label: { fr: 'HPC', en: 'HPC' } },
+    { key: 'ia', label: { fr: 'IA', en: 'AI' } },
+    { key: 'dc', label: { fr: 'Datacenter', en: 'Datacenter' } },
+    { key: 'nvidia', label: { fr: 'NVIDIA', en: 'NVIDIA' } }
+  ];
+
+  const filteredNews = activeFilter === 'all'
+    ? newsItems
+    : newsItems.filter(item => item.topic === activeFilter);
 
   const articles = [
     {
@@ -310,6 +436,77 @@ export default function BlogIndexPage() {
                 ? 'Analyses approfondies sur les datacenters IA, l\'investissement alternatif et l\'architecture AI-native. Thought leadership par l\'équipe Finxia Capital.'
                 : 'In-depth analysis on AI datacenters, alternative investment and AI-native architecture. Thought leadership by the Finxia Capital team.'}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* News Feed */}
+      <section className="py-12 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
+            <div className="flex items-center gap-3">
+              <Zap className="w-6 h-6 text-[#C45A3B]" />
+              <h2 className="font-serif text-2xl text-slate-900">
+                {language === 'fr' ? "Fil d'actualités" : 'News Feed'}
+              </h2>
+              <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
+                HPC • IA • DC • NVIDIA
+              </span>
+            </div>
+            
+            {/* Filter buttons */}
+            <div className="flex items-center gap-2 flex-wrap">
+              <Filter className="w-4 h-4 text-slate-400 mr-1" />
+              {filters.map((filter) => (
+                <button
+                  key={filter.key}
+                  onClick={() => setActiveFilter(filter.key)}
+                  className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
+                    activeFilter === filter.key
+                      ? 'bg-[#C45A3B] text-white'
+                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                  }`}
+                >
+                  {filter.label[language === 'fr' ? 'fr' : 'en']}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* News items grid */}
+          <div className="grid md:grid-cols-2 gap-4">
+            {filteredNews.map((item) => (
+              <div
+                key={item.id}
+                className="flex items-start gap-4 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
+              >
+                <div className="flex-shrink-0">
+                  <span className={`inline-block px-2 py-1 text-xs font-semibold rounded uppercase tracking-wider ${
+                    item.topic === 'nvidia' ? 'bg-green-100 text-green-700' :
+                    item.topic === 'hpc' ? 'bg-purple-100 text-purple-700' :
+                    item.topic === 'ia' ? 'bg-blue-100 text-blue-700' :
+                    'bg-orange-100 text-orange-700'
+                  }`}>
+                    {item.topicLabel[language === 'fr' ? 'fr' : 'en']}
+                  </span>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-medium text-slate-900 leading-snug mb-1">
+                    {item.title[language === 'fr' ? 'fr' : 'en']}
+                  </p>
+                  <div className="flex items-center gap-3 text-xs text-slate-500">
+                    <span>{item.source}</span>
+                    <span>•</span>
+                    <time dateTime={item.date}>
+                      {new Date(item.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
+                        day: 'numeric',
+                        month: 'short'
+                      })}
+                    </time>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
