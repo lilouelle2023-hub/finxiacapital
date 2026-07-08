@@ -10,6 +10,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 11,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-07-08',
+      title: {
+        fr: "NVIDIA annonce 500 000 GPU Blackwell pour 2027 — les hyperscalers européens se précipitent sur les précommandes",
+        en: "NVIDIA announces 500,000 Blackwell GPUs for 2027 — European hyperscalers rush pre-orders"
+      },
+      source: 'Reuters'
+    },
+    {
+      id: 12,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-07-07',
+      title: {
+        fr: "La France débloque 2 milliards d'euros pour les datacenters green — les projets PUE < 1,2 prioritaires",
+        en: "France unlocks 2 billion euros for green datacenters — PUE < 1.2 projects prioritized"
+      },
+      source: "Les Echos"
+    },
+    {
+      id: 13,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-07-07',
+      title: {
+        fr: "DeepSeek lance un modèle open-source de 671 milliards de paramètres — l'entraînement coûte 10x moins cher que GPT-4",
+        en: "DeepSeek launches 671-billion-parameter open-source model — training costs 10x less than GPT-4"
+      },
+      source: 'TechCrunch'
+    },
+    {
       id: 1,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
@@ -134,6 +167,18 @@ export default function BlogIndexPage() {
     : newsItems.filter(item => item.topic === activeFilter);
 
   const articles = [
+    {
+      slug: 'gpu-shortage-nvidia-modular-datacenters-europe-2026',
+      title: language === 'fr'
+        ? "Pénurie de GPU NVIDIA en Europe : pourquoi les datacenters modulaires sont la solution d'urgence"
+        : "NVIDIA GPU Shortage in Europe: Why Modular Datacenters Are the Emergency Solution",
+      excerpt: language === 'fr'
+        ? "Avec 400 000 H100 en attente de livraison en Europe, la pénurie de GPU NVIDIA freine le déploiement de l'IA générative. Les datacenters modulaires offrent un déploiement rapide et une efficacité énergétique optimale pour répondre à cette demande explosive."
+        : "With 400,000 H100 GPUs pending delivery in Europe, the NVIDIA shortage is slowing generative AI deployment. Modular datacenters offer rapid deployment and optimal energy efficiency to meet this explosive demand.",
+      date: '2026-07-08',
+      category: 'Digital Infrastructure',
+      readTime: '6 min'
+    },
     {
       slug: 'datacenters-modulaires-schneider-electric-edge-computing',
       title: language === 'fr'
