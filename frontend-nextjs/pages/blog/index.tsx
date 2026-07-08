@@ -106,7 +106,7 @@ export default function BlogIndexPage() {
         fr: "AMD MI350 : 288 GB HBM3e, 35 petaFLOPS FP8 — la concurrence s'intensifie face à NVIDIA",
         en: "AMD MI350: 288 GB HBM3e, 35 petaFLOPS FP8 — competition intensifies against NVIDIA"
       },
-      source: 'Tom's Hardware'
+      source: "Tom's Hardware"
     },
     {
       id: 10,
