@@ -1,13 +1,97 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { Calendar, ArrowLeft, ArrowRight } from 'lucide-react';
+import { Calendar, ArrowRight } from 'lucide-react';
 import SEO from '@/components/SEO';
 
 export default function BlogIndexPage() {
   const { language } = useLanguage();
 
   const articles = [
+    {
+      slug: 'datacenters-modulaires-schneider-electric-edge-computing',
+      title: language === 'fr'
+        ? "Les datacenters modulaires : le coup d'accélération de Schneider Electric et la révolution de l'edge computing"
+        : "Modular Datacenters: Schneider Electric's Acceleration and the Edge Computing Revolution",
+      excerpt: language === 'fr'
+        ? "Schneider Electric investit 1,5 milliard d'euros dans les datacenters modulaires. Mais pourquoi cette architecture est-elle le futur de l'infrastructure IA ?"
+        : "Schneider Electric invests 1.5 billion euros in modular datacenters. But why is this architecture the future of AI infrastructure?",
+      date: '2026-07-04',
+      category: 'Digital Infrastructure',
+      readTime: '6 min'
+    },
+    {
+      slug: 'gpu-puissance-electrique-france-ia-generative',
+      title: language === 'fr'
+        ? "GPU et puissance électrique : la France peut-elle alimenter l'IA générative ?"
+        : "GPU and Electrical Power: Can France Power Generative AI?",
+      excerpt: language === 'fr'
+        ? "NVIDIA livre 100 000 H100 par trimestre. Chaque GPU consomme 700W. La France a 18 GW de demande datacenter en file d'attente. Qui obtiendra le raccordement ?"
+        : "NVIDIA delivers 100,000 H100 per quarter. Each GPU consumes 700W. France has 18 GW of datacenter demand in queue. Who gets the connection?",
+      date: '2026-07-04',
+      category: 'Energy & Infrastructure',
+      readTime: '7 min'
+    },
+    {
+      slug: 'titan-dc-ai-strategie-investissement-finxia-capital',
+      title: language === 'fr'
+        ? "TITAN DC AI : comment FINXIA Capital structure l'investissement en datacenter intelligence artificielle"
+        : "TITAN DC AI: How FINXIA Capital Structures AI Datacenter Investment",
+      excerpt: language === 'fr'
+        ? "FINXIA Capital déploie la stratégie TITAN DC AI — une approche institutionnelle sur les actifs réels de l'infrastructure IA. Découvrez la méthode."
+        : "FINXIA Capital deploys the TITAN DC AI strategy — an institutional approach to AI infrastructure real assets. Discover the method.",
+      date: '2026-07-04',
+      category: 'Investment Strategy',
+      readTime: '8 min'
+    },
+    {
+      slug: 'anthropic-mistral-ia-francaise-datacenters-europe',
+      title: language === 'fr'
+        ? "Anthropic, Mistral et l'IA française : qui alimente vraiment les datacenters européens ?"
+        : "Anthropic, Mistral and French AI: Who Really Powers European Datacenters?",
+      excerpt: language === 'fr'
+        ? "Anthropic lève 3,5 milliards de dollars, Mistral devient la licorne française de l'IA. Mais derrière ces modèles linguistiques, une question stratégique : où sont hébergés les datacenters qui les font tourner ?"
+        : "Anthropic raises $3.5 billion, Mistral becomes France's AI unicorn. But behind these language models, a strategic question: where are the datacenters that run them hosted?",
+      date: '2026-06-22',
+      category: 'Digital Infrastructure',
+      readTime: '6 min'
+    },
+    {
+      slug: 'clouds-chinois-europe-datacenter-investissement',
+      title: language === 'fr'
+        ? "Les clouds chinois en Europe : une menace ou une opportunité pour les investisseurs ?"
+        : "Chinese Clouds in Europe: A Threat or an Opportunity for Investors?",
+      excerpt: language === 'fr'
+        ? "Alibaba Cloud, Huawei Cloud, Tencent Cloud — les géants chinois investissent massivement en Europe. Mais leurs datacenters posent une question de souveraineté que les investisseurs ne peuvent plus ignorer."
+        : "Alibaba Cloud, Huawei Cloud, Tencent Cloud — Chinese giants are investing massively in Europe. But their datacenters raise a sovereignty question that investors can no longer ignore.",
+      date: '2026-06-22',
+      category: 'Digital Infrastructure',
+      readTime: '5 min'
+    },
+    {
+      slug: 'neoclouds-vs-hyperscalers-europe',
+      title: language === 'fr'
+        ? "Néoclouds vs hyperscalers : qui construit l'avenir du cloud européen ?"
+        : "Neoclouds vs Hyperscalers: Who is Building the Future of European Cloud?",
+      excerpt: language === 'fr'
+        ? "OVHcloud, Scaleway, STACKIT, IONOS — les néoclouds européens défient AWS, Azure et Google. Mais peuvent-ils vraiment rivaliser ? Analyse des investissements et des stratégies."
+        : "OVHcloud, Scaleway, STACKIT, IONOS — European neoclouds challenge AWS, Azure and Google. But can they really compete? Analysis of investments and strategies.",
+      date: '2026-06-22',
+      category: 'Market Analysis',
+      readTime: '7 min'
+    },
+    {
+      slug: 'cloud-souverain-france-stackit-ovh-aws-azure',
+      title: language === 'fr'
+        ? "Cloud souverain français : Stackit, OVHcloud et la bataille contre AWS et Azure"
+        : "French Sovereign Cloud: Stackit, OVHcloud and the Battle Against AWS and Azure",
+      excerpt: language === 'fr'
+        ? "Stackit, OVHcloud, Scaleway — les clouds souverains français défient les hyperscalers américains. Mais peuvent-ils vraiment rivaliser sans une infrastructure physique de rupture ?"
+        : "Stackit, OVHcloud, Scaleway — French sovereign clouds challenge American hyperscalers. But can they really compete without breakthrough physical infrastructure?",
+      date: '2026-06-22',
+      category: 'Digital Infrastructure',
+      readTime: '6 min'
+    },
     {
       slug: 'data-centers-brown-to-green-europe-strategie-investissement',
       title: language === 'fr'
@@ -154,6 +238,25 @@ export default function BlogIndexPage() {
     }
   ];
 
+  // Group articles by month
+  const groupedByMonth = articles.reduce((acc, article) => {
+    const date = new Date(article.date);
+    const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+    const monthLabel = date.toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
+      year: 'numeric',
+      month: 'long'
+    });
+    
+    if (!acc[monthKey]) {
+      acc[monthKey] = { label: monthLabel, articles: [] };
+    }
+    acc[monthKey].articles.push(article);
+    return acc;
+  }, {} as Record<string, { label: string; articles: typeof articles }>);
+
+  // Sort month keys descending
+  const sortedMonths = Object.keys(groupedByMonth).sort((a, b) => b.localeCompare(a));
+
   // Breadcrumb Schema
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -211,50 +314,60 @@ export default function BlogIndexPage() {
         </div>
       </section>
 
-      {/* Articles Grid */}
+      {/* Articles grouped by month */}
       <section className="py-24 md:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {articles.map((article) => (
-              <Link
-                key={article.slug}
-                href={`/blog/${article.slug}`}
-                className="group bg-slate-50 card-hover flex flex-col"
-              >
-                <div className="p-8 flex-1 flex flex-col">
-                  <div className="flex items-center gap-4 mb-4 text-sm">
-                    <span className="text-[#C45A3B] font-medium uppercase tracking-wider">
-                      {article.category}
-                    </span>
-                    <span className="text-slate-400">•</span>
-                    <span className="text-slate-600">{article.readTime}</span>
-                  </div>
-                  
-                  <h2 className="font-serif text-xl md:text-2xl mb-4 group-hover:text-[#C45A3B] transition-colors">
-                    {article.title}
-                  </h2>
-                  
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
-                    {article.excerpt}
-                  </p>
-                  
-                  <div className="flex items-center justify-between pt-4 border-t border-slate-200">
-                    <div className="flex items-center gap-2 text-sm text-slate-500">
-                      <Calendar className="w-4 h-4" />
-                      <time dateTime={article.date}>
-                        {new Date(article.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric'
-                        })}
-                      </time>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-[#C45A3B] group-hover:translate-x-1 transition-transform" />
-                  </div>
+          {sortedMonths.map((monthKey) => {
+            const month = groupedByMonth[monthKey];
+            return (
+              <div key={monthKey} className="mb-16 last:mb-0">
+                <h2 className="font-serif text-2xl md:text-3xl text-slate-900 mb-2 pb-4 border-b-2 border-[#C45A3B]">
+                  {month.label}
+                </h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                  {month.articles.map((article) => (
+                    <Link
+                      key={article.slug}
+                      href={`/blog/${article.slug}`}
+                      className="group bg-slate-50 card-hover flex flex-col"
+                    >
+                      <div className="p-8 flex-1 flex flex-col">
+                        <div className="flex items-center gap-4 mb-4 text-sm">
+                          <span className="text-[#C45A3B] font-medium uppercase tracking-wider">
+                            {article.category}
+                          </span>
+                          <span className="text-slate-400">•</span>
+                          <span className="text-slate-600">{article.readTime}</span>
+                        </div>
+                        
+                        <h3 className="font-serif text-xl md:text-2xl mb-4 group-hover:text-[#C45A3B] transition-colors">
+                          {article.title}
+                        </h3>
+                        
+                        <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
+                          {article.excerpt}
+                        </p>
+                        
+                        <div className="flex items-center justify-between pt-4 border-t border-slate-200">
+                          <div className="flex items-center gap-2 text-sm text-slate-500">
+                            <Calendar className="w-4 h-4" />
+                            <time dateTime={article.date}>
+                              {new Date(article.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
+                              })}
+                            </time>
+                          </div>
+                          <ArrowRight className="w-5 h-5 text-[#C45A3B] group-hover:translate-x-1 transition-transform" />
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-              </Link>
-            ))}
-          </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
