@@ -151,7 +151,7 @@ export default function LilaPage() {
   return (
     <div data-testid="lila-page" className="pt-20">
       <SEO
-        title={language === 'fr' ? "Lila Benhammou — Presse title={language === 'fr' ? "Presse & Médias — Lila Benhammou | Finxia Capital" : "Press & Media — Lila Benhammou | Finxia Capital"} Médias | Finxia Capital" : "Lila Benhammou — Press title={language === 'fr' ? "Presse & Médias — Lila Benhammou | Finxia Capital" : "Press & Media — Lila Benhammou | Finxia Capital"} Media | Finxia Capital"}
+        title={language === 'fr' ? "Lila Benhammou — Presse & Médias | Finxia Capital" : "Lila Benhammou — Press & Media | Finxia Capital"}
         description={language === 'fr'
           ? "Retrouvez les articles, interviews, podcasts et événements de Lila Benhammou, co-fondatrice de Finxia Capital. Tech Boost'her, France Travail, BFM Business, Bpifrance, podcasts."
           : "Find articles, interviews, podcasts and events featuring Lila Benhammou, co-founder of Finxia Capital. Tech Boost'her, France Travail, BFM Business, Bpifrance, podcasts."}
