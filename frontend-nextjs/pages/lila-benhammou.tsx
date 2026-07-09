@@ -176,44 +176,18 @@ export default function LilaPage() {
             <div className="section-divider mb-8" />
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-[#C45A3B] text-sm font-bold">2005-2007</span>
+                <span className="text-[#C45A3B] text-sm font-bold">2005-2016</span>
               </div>
               <h3 className="font-serif text-lg mb-2">
-                {language === 'fr' ? 'Etrali — Connectivity' : 'Etrali — Connectivity'}
+                {language === 'fr' ? 'Carrière Télécoms & IT' : 'Telecom & IT Career'}
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? 'Connectivity Business Developer & Network Product Manager. Supervision du portefeuille connectivité (€24,6M) sur 9 pays.'
-                  : 'Connectivity Business Developer & Network Product Manager. Supervision of connectivity portfolio (€24.6M) across 9 countries.'}
-              </p>
-            </div>
-            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-[#C45A3B] text-sm font-bold">2007-2014</span>
-              </div>
-              <h3 className="font-serif text-lg mb-2">
-                {language === 'fr' ? 'Orange — Grande Carrière Télécoms' : 'Orange — Major Telecom Career'}
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                {language === 'fr'
-                  ? 'Wireless Product Manager (Orange France, 2007-2008) puis Global Account Director (Orange Business Services, 2008-2014). Gestion de comptes majeurs : Alstom, Sagemcom, SAFRAN. Plus gros contrat outsourcing de l\'histoire d\'Orange : €40M TCV avec Sagemcom. Première voix mondiale pour un CAC 40 (85 000 utilisateurs, €20M TCV).'
-                  : 'Wireless Product Manager (Orange France, 2007-2008) then Global Account Director (Orange Business Services, 2008-2014). Management of major accounts: Alstom, Sagemcom, SAFRAN. Largest outsourcing contract in Orange history: €40M TCV with Sagemcom. First-ever worldwide voice deal for a CAC 40 (85,000 users, €20M TCV).'}
-              </p>
-            </div>
-            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-[#C45A3B] text-sm font-bold">2014-2016</span>
-              </div>
-              <h3 className="font-serif text-lg mb-2">
-                {language === 'fr' ? 'BT Global Services' : 'BT Global Services'}
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                {language === 'fr'
-                  ? 'Managed Services Sales Director. Ventes de services à forte croissance (IT, cloud, consulting). P&L Owner avec €4,8M de contribution EBITDA sur FY14-15.'
-                  : 'Managed Services Sales Director. Sales of high-growth services (IT, cloud, consulting). P&L Owner with €4.8M EBITDA contribution FY14-15.'}
+                  ? 'Etrali, Orange (France et Business Services), BT Global Services. Expertises acquises : négociation institutionnelle, gestion de comptes globaux, P&L, contrats outsourcing, transformation digitale, services cloud et ITSM. Travail avec des clients internationaux sur plusieurs continents.'
+                  : 'Etrali, Orange (France and Business Services), BT Global Services. Skills acquired: institutional negotiation, global account management, P&L, outsourcing contracts, digital transformation, cloud and ITSM services. Work with international clients across multiple continents.'}
               </p>
             </div>
             <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
@@ -221,25 +195,25 @@ export default function LilaPage() {
                 <span className="text-[#C45A3B] text-sm font-bold">2016-2026</span>
               </div>
               <h3 className="font-serif text-lg mb-2">
-                {language === 'fr' ? 'Fruition Partners — South West Europe' : 'Fruition Partners — South West Europe'}
+                {language === 'fr' ? 'Digital Transformation & IA' : 'Digital Transformation & AI'}
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? 'South West Europe Lead. Développement commercial sur 6 pays (France, Espagne, Portugal, Belgique, Luxembourg). €11,5M de turnover (2017), 130% d\'atteinte FY16-17. 90+ clients du CAC 40.'
-                  : 'South West Europe Lead. Business development across 6 countries (France, Spain, Portugal, Belgium, Luxembourg). €11.5M turnover (2017), 130% achievement FY16-17. 90+ CAC 40 clients.'}
+                  ? 'Fruition Partners (South West Europe Lead) puis fondation de Humans4Help (H4H). Expertises acquises : transformation digitale, IA, automation, machine learning, hyperautomation, services cloud, gestion de grands comptes.'
+                  : 'Fruition Partners (South West Europe Lead) then foundation of Humans4Help (H4H). Skills acquired: digital transformation, AI, automation, machine learning, hyperautomation, cloud services, large account management.'}
               </p>
             </div>
             <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-[#C45A3B] text-sm font-bold">2017</span>
+                <span className="text-[#C45A3B] text-sm font-bold">2023</span>
               </div>
               <h3 className="font-serif text-lg mb-2">
-                {language === 'fr' ? 'Fondation de Humans4Help (H4H)' : 'Foundation of Humans4Help (H4H)'}
+                {language === 'fr' ? 'Sortie Entrepreneuriale' : 'Entrepreneurial Exit'}
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? 'Création de H4H, cabinet spécialisé en IA, automation et analytics avancés. 90+ clients du CAC 40. €7,5M de revenue (2022), 85 employés, sortie réussie en 2023.'
-                  : 'Creation of H4H, consulting firm specializing in AI, automation and advanced analytics. 90+ CAC 40 clients. €7.5M revenue (2022), 85 employees, successful exit in 2023.'}
+                  ? 'Sortie réussie de Humans4Help. Compétences acquises : scale-up, levée de fonds, croissance, structuration d\'équipe, culture d\'entreprise, sortie stratégique.'
+                  : 'Successful exit of Humans4Help. Skills acquired: scale-up, fundraising, growth, team structuring, corporate culture, strategic exit.'}
               </p>
             </div>
             <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
@@ -251,8 +225,8 @@ export default function LilaPage() {
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? 'Association avec Jean-Pierre Véron. CIO de FINXIA Capital. €1,765Bn d\'AUM. 4 stratégies : TITAN DC AI, Hôtellerie Premium, Coliving Flex, C.Capital Recycling. 17 agents IA déployés. Lead author du livre blanc SSRN.'
-                  : 'Partnership with Jean-Pierre Véron. CIO of FINXIA Capital. €1.765Bn AUM. 4 strategies: TITAN DC AI, Premium Hospitality, Flex Living, C.Capital Recycling. 17 AI agents deployed. SSRN white paper lead author.'}
+                  ? 'CIO de FINXIA Capital. Déploiement de la stratégie TITAN DC AI et de son infrastructure opérationnelle. Lead author du livre blanc SSRN sur l\'optimisation énergétique des datacenters européens.'
+                  : 'CIO of FINXIA Capital. Deployment of the TITAN DC AI strategy and its operational infrastructure. Lead author of the SSRN white paper on European datacenter energy optimization.'}
               </p>
             </div>
           </div>
