@@ -171,23 +171,62 @@ export default function LilaPage() {
           <div className="mb-12">
             <p className="overline mb-4">{language === 'fr' ? 'Parcours' : 'Career'}</p>
             <h2 className="font-serif text-3xl md:text-4xl mb-6">
-              {language === 'fr' ? '13+ ans d\'expérience IA & Automation' : '13+ years of AI & Automation experience'}
+              {language === 'fr' ? '15+ ans de leadership cross-fonctionnel' : '15+ years of cross-functional leadership'}
             </h2>
             <div className="section-divider mb-8" />
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-[#C45A3B] text-sm font-bold">2013</span>
+                <span className="text-[#C45A3B] text-sm font-bold">2005-2007</span>
               </div>
               <h3 className="font-serif text-lg mb-2">
-                {language === 'fr' ? 'Fondation de Humans4Help' : 'Foundation of Humans4Help'}
+                {language === 'fr' ? 'Etrali — Connectivity' : 'Etrali — Connectivity'}
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? 'Création de H4H Humans4Help, cabinet de conseil spécialisé en data, IA et automatisation des processus métiers. Lancement de la méthodologie d\'hyperautomation.'
-                  : 'Creation of H4H Humans4Help, a consulting firm specializing in data, AI and business process automation. Launch of the hyperautomation methodology.'}
+                  ? 'Connectivity Business Developer & Network Product Manager. Supervision du portefeuille connectivité (€24,6M) sur 9 pays.'
+                  : 'Connectivity Business Developer & Network Product Manager. Supervision of connectivity portfolio (€24.6M) across 9 countries.'}
+              </p>
+            </div>
+            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[#C45A3B] text-sm font-bold">2007-2014</span>
+              </div>
+              <h3 className="font-serif text-lg mb-2">
+                {language === 'fr' ? 'Orange — Grande Carrière Télécoms' : 'Orange — Major Telecom Career'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Wireless Product Manager (Orange France, 2007-2008) puis Global Account Director (Orange Business Services, 2008-2014). Gestion de comptes majeurs : Alstom, Sagemcom, SAFRAN. Plus gros contrat outsourcing de l\'histoire d\'Orange : €40M TCV avec Sagemcom. Première voix mondiale pour un CAC 40 (85 000 utilisateurs, €20M TCV).'
+                  : 'Wireless Product Manager (Orange France, 2007-2008) then Global Account Director (Orange Business Services, 2008-2014). Management of major accounts: Alstom, Sagemcom, SAFRAN. Largest outsourcing contract in Orange history: €40M TCV with Sagemcom. First-ever worldwide voice deal for a CAC 40 (85,000 users, €20M TCV).'}
+              </p>
+            </div>
+            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[#C45A3B] text-sm font-bold">2014-2016</span>
+              </div>
+              <h3 className="font-serif text-lg mb-2">
+                {language === 'fr' ? 'BT Global Services' : 'BT Global Services'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'Managed Services Sales Director. Ventes de services à forte croissance (IT, cloud, consulting). P&L Owner avec €4,8M de contribution EBITDA sur FY14-15.'
+                  : 'Managed Services Sales Director. Sales of high-growth services (IT, cloud, consulting). P&L Owner with €4.8M EBITDA contribution FY14-15.'}
+              </p>
+            </div>
+            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[#C45A3B] text-sm font-bold">2016-2026</span>
+              </div>
+              <h3 className="font-serif text-lg mb-2">
+                {language === 'fr' ? 'Fruition Partners — South West Europe' : 'Fruition Partners — South West Europe'}
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                {language === 'fr'
+                  ? 'South West Europe Lead. Développement commercial sur 6 pays (France, Espagne, Portugal, Belgique, Luxembourg). €11,5M de turnover (2017), 130% d\'atteinte FY16-17. 90+ clients du CAC 40.'
+                  : 'South West Europe Lead. Business development across 6 countries (France, Spain, Portugal, Belgium, Luxembourg). €11.5M turnover (2017), 130% achievement FY16-17. 90+ CAC 40 clients.'}
               </p>
             </div>
             <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
@@ -195,38 +234,25 @@ export default function LilaPage() {
                 <span className="text-[#C45A3B] text-sm font-bold">2017</span>
               </div>
               <h3 className="font-serif text-lg mb-2">
-                {language === 'fr' ? 'Partenariat UiPath Gold' : 'UiPath Gold Partnership'}
+                {language === 'fr' ? 'Fondation de Humans4Help (H4H)' : 'Foundation of Humans4Help (H4H)'}
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? 'Partenariat stratégique avec UiPath (leader mondial de la RPA). Intégration de la robotisation de processus et déploiement d\'agents IA autonomes.'
-                  : 'Strategic partnership with UiPath (world leader in RPA). Integration of process robotization and deployment of autonomous AI agents.'}
+                  ? 'Création de H4H, cabinet spécialisé en IA, automation et analytics avancés. 90+ clients du CAC 40. €7,5M de revenue (2022), 85 employés, sortie réussie en 2023.'
+                  : 'Creation of H4H, consulting firm specializing in AI, automation and advanced analytics. 90+ CAC 40 clients. €7.5M revenue (2022), 85 employees, successful exit in 2023.'}
               </p>
             </div>
             <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-[#C45A3B] text-sm font-bold">2021</span>
-              </div>
-              <h3 className="font-serif text-lg mb-2">
-                {language === 'fr' ? 'Voix reconnue dans la tech' : 'Recognized voice in tech'}
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                {language === 'fr'
-                  ? 'Interventions régulières sur BFM Business, Bpifrance, podcasts et conférences. Table ronde Tech Boost\'her aux côtés d\'Élisabeth Moreno.'
-                  : 'Regular appearances on BFM Business, Bpifrance, podcasts and conferences. Tech Boost\'her panel alongside Élisabeth Moreno.'}
-              </p>
-            </div>
-            <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-[#C45A3B] text-sm font-bold">2023</span>
+                <span className="text-[#C45A3B] text-sm font-bold">2026</span>
               </div>
               <h3 className="font-serif text-lg mb-2">
                 {language === 'fr' ? 'Co-fondation de FINXIA Capital' : 'Co-foundation of FINXIA Capital'}
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? 'Association avec Jean-Pierre Véron pour créer FINXIA Capital. Déploiement de 18 agents IA autonomes dans le cycle de vie du portefeuille. Stratégie TITAN DC AI.'
-                  : 'Partnership with Jean-Pierre Véron to create FINXIA Capital. Deployment of 18 autonomous AI agents in the portfolio lifecycle. TITAN DC AI strategy.'}
+                  ? 'Association avec Jean-Pierre Véron. CIO de FINXIA Capital. €1,765Bn d\'AUM. 4 stratégies : TITAN DC AI, Hôtellerie Premium, Coliving Flex, C.Capital Recycling. 17 agents IA déployés. Lead author du livre blanc SSRN.'
+                  : 'Partnership with Jean-Pierre Véron. CIO of FINXIA Capital. €1.765Bn AUM. 4 strategies: TITAN DC AI, Premium Hospitality, Flex Living, C.Capital Recycling. 17 AI agents deployed. SSRN white paper lead author.'}
               </p>
             </div>
           </div>
