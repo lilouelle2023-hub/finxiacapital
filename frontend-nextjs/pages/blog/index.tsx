@@ -10,6 +10,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 14,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-07-10',
+      title: {
+        fr: "NVIDIA dévoile les Blackwell Ultra : 200 kW par rack, refroidissement liquide obligatoire — les datacenters européens en sursis",
+        en: "NVIDIA unveils Blackwell Ultra: 200 kW per rack, liquid cooling mandatory — European datacenters on notice"
+      },
+      source: 'Bloomberg'
+    },
+    {
+      id: 15,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-07-09',
+      title: {
+        fr: "Le projet de cloud souverain Gaia-X atteint 200 fournisseurs certifiés — la France et l'Allemagne pilotent le déploiement",
+        en: "Gaia-X sovereign cloud project reaches 200 certified providers — France and Germany lead deployment"
+      },
+      source: "Les Echos"
+    },
+    {
+      id: 16,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-07-09',
+      title: {
+        fr: "Meta investit 15 milliards de dollars dans un méga-datacenter en Lorraine — la plus grande infrastructure IA d'Europe",
+        en: "Meta invests $15 billion in mega-datacenter in Lorraine — Europe's largest AI infrastructure"
+      },
+      source: 'Reuters'
+    },
+    {
       id: 11,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
@@ -167,6 +200,18 @@ export default function BlogIndexPage() {
     : newsItems.filter(item => item.topic === activeFilter);
 
   const articles = [
+    {
+      slug: 'modular-datacenter-digital-sovereignty-europe-2026',
+      title: language === 'fr'
+        ? "Datacenters modulaires et souveraineté numérique : la nouvelle frontière de l'infrastructure IA européenne"
+        : "Modular Datacenters and Digital Sovereignty: Europe's New AI Infrastructure Frontier",
+      excerpt: language === 'fr'
+        ? "Alors que l'Europe accélère sa stratégie de souveraineté numérique, les datacenters modulaires émergent comme la réponse la plus rapide et la plus efficace aux besoins croissants en capacité de calcul IA. Finxia Capital analyse ce phénomène de rupture."
+        : "As Europe accelerates its digital sovereignty strategy, modular datacenters are emerging as the fastest and most efficient response to growing AI compute needs. Finxia Capital analyzes this breakthrough phenomenon.",
+      date: '2026-07-10',
+      category: 'Digital Infrastructure',
+      readTime: '6 min'
+    },
     {
       slug: 'gpu-shortage-nvidia-modular-datacenters-europe-2026',
       title: language === 'fr'
