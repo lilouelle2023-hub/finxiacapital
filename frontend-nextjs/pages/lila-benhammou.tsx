@@ -276,66 +276,8 @@ export default function LilaPage() {
         </div>
       </section>
 
-      {/* Events Section */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <p className="overline mb-4">{language === 'fr' ? 'Événements & Photos' : 'Events & Photos'}</p>
-            <h2 className="font-serif text-3xl md:text-4xl mb-6">
-              {language === 'fr' ? 'Interventions & Conférences' : 'Speaking & Conferences'}
-            </h2>
-            <div className="section-divider mb-8" />
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {events.map((event) => (
-              <div
-                key={event.id}
-                className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
-              >
-                <div className="relative aspect-[4/3] bg-slate-200 overflow-hidden">
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&q=80';
-                    }}
-                  />
-                  <div className="absolute top-3 left-3">
-                    <span className="bg-[#C45A3B] text-white text-xs font-semibold px-2 py-1 rounded">
-                      {event.date}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-serif text-lg mb-1">{event.title}</h3>
-                  <p className="text-[#C45A3B] text-xs font-medium mb-2">{event.subtitle}</p>
-                  <p className="text-slate-500 text-xs mb-3 flex items-center gap-1">
-                    <Camera className="w-3 h-3" />
-                    {event.location}
-                  </p>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-3">
-                    {event.description}
-                  </p>
-                  <a
-                    href={event.link}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="text-[#C45A3B] text-xs font-medium hover:underline flex items-center gap-1"
-                  >
-                    <ExternalLink className="w-3 h-3" />
-                    {language === 'fr' ? 'Voir sur LinkedIn' : 'View on LinkedIn'}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Event — Tech Boost'her */}
+      {/* CTA Section */}
       <section className="py-16 bg-[#1E2A3A] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
