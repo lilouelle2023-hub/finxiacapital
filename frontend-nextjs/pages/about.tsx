@@ -72,8 +72,8 @@ export default function AboutPage() {
       name: 'Lila Benhammou',
       role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements (CIO)' : 'Co-Founder & Chief Investment Officer (CIO)',
       bio: language === 'fr'
-        ? "Serial entrepreneur et investisseur avec 15+ ans de leadership cross-fonctionnel en asset management alternatif, private equity, infrastructure immobilière et transformation technologique. Lead des stratégies TITAN DC AI et C.CAPITAL de FINXIA Capital. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Carrière télécoms et IT : Etrali, Orange (France et Business Services), BT Global Services. Expertises acquises : négociation institutionnelle, gestion de comptes globaux, P&L, contrats outsourcing, transformation digitale, services cloud et ITSM. Expérience US : formation américaine, travail avec des clients internationaux sur plusieurs continents. Fondatrice de Humans4Help (H4H), spécialiste IA et automation d'entreprise — sortie réussie en 2023. Architecte de la stratégie TITAN DC AI et de son infrastructure opérationnelle. Expertise télécoms : fibre optique, raccordement HT, infrastructures réseau. Lead author du livre blanc SSRN sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam. L'ADN investissement et tech de FINXIA."
-        : "Serial entrepreneur and investor with 15+ years of cross-functional leadership in alternative asset management, private equity, real estate infrastructure and technology-driven business transformation. Lead of FINXIA Capital's TITAN DC AI and C.CAPITAL strategies. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Telecom and IT career: Etrali, Orange (France and Business Services), BT Global Services. Skills acquired: institutional negotiation, global account management, P&L, outsourcing contracts, digital transformation, cloud and ITSM services. US experience: American education, work with international clients across multiple continents. Founder of Humans4Help (H4H), enterprise AI and automation specialist — successful exit in 2023. Architect of the TITAN DC AI strategy and its operational infrastructure. Telecom expertise: fiber optics, HV connection, network infrastructure. Lead author of the SSRN white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam. The investment and tech DNA of FINXIA.",
+        ? "Serial entrepreneur et investisseur avec 15+ ans de leadership cross-fonctionnel en asset management alternatif, private equity, infrastructure immobilière et transformation technologique. Lead des stratégies TITAN DC AI et C.CAPITAL de FINXIA Capital. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Carrière télécoms et IT : Etrali, Orange (France et Business Services), BT Global Services. Expertises acquises : négociation institutionnelle, gestion de comptes globaux, P&L, contrats outsourcing, transformation digitale, services cloud et ITSM. Expérience US : formation américaine, travail avec des clients internationaux sur plusieurs continents. Fondatrice de Humans4Help (H4H), spécialiste IA et automation d'entreprise — sortie réussie en 2023. Architecte de la stratégie TITAN DC AI et de son infrastructure opérationnelle. Expertise télécoms : fibre optique, raccordement HT, infrastructures réseau. Lead author du livre blanc sur l'optimisation énergétique des datacenters européens (2026). Basée entre Paris, Genève et Amsterdam. L'ADN investissement et tech de FINXIA."
+        : "Serial entrepreneur and investor with 15+ years of cross-functional leadership in alternative asset management, private equity, real estate infrastructure and technology-driven business transformation. Lead of FINXIA Capital's TITAN DC AI and C.CAPITAL strategies. Executive MBA — Kellogg School of Management, Northwestern University (Chicago). Telecom and IT career: Etrali, Orange (France and Business Services), BT Global Services. Skills acquired: institutional negotiation, global account management, P&L, outsourcing contracts, digital transformation, cloud and ITSM services. US experience: American education, work with international clients across multiple continents. Founder of Humans4Help (H4H), enterprise AI and automation specialist — successful exit in 2023. Architect of the TITAN DC AI strategy and its operational infrastructure. Telecom expertise: fiber optics, HV connection, network infrastructure. Lead author of the white paper on European datacenter energy optimization (2026). Based between Paris, Geneva and Amsterdam. The investment and tech DNA of FINXIA.",
       linkedin: 'https://linkedin.com/in/lilabenhammou',
       highlights: [
         { icon: Lightbulb, text: language === 'fr' ? 'Architecte TITAN DC AI — infrastructure datacenter + télécoms' : 'TITAN DC AI architect — datacenter + telecom' },
@@ -705,32 +705,7 @@ const personSchema = {
                 <p className="text-slate-600 leading-relaxed mb-6">
                   {member.bio}
                 </p>
-                {member.id === 'lila-benhammou' && (
-                  <div className="mb-6 p-4 bg-slate-50 border-l-4 border-[#C45A3B]" data-testid="lila-ssrn-citation">
-                    <p className="text-slate-500 text-xs uppercase tracking-wider mb-2">
-                      {language === 'fr' ? 'Publication académique — en cours de revue SSRN' : 'Academic publication — under SSRN review'}
-                    </p>
-                    <a
-                      href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      className="text-slate-700 hover:text-[#C45A3B] text-sm leading-relaxed block"
-                    >
-                      <span className="font-medium">Benhammou, L. (2026).</span>{' '}
-                      <em>
-                        {language === 'fr'
-                          ? "Optimisation Énergétique des Datacenters Européens."
-                          : "European Datacenter Energy Optimization."}
-                      </em>{' '}
-                      <span className="text-[#C45A3B] underline">SSRN (Abstract ID 6597918) ↗</span>
-                    </a>
-                    <p className="text-slate-500 text-xs italic mt-2">
-                      {language === 'fr'
-                        ? "Note : papier actuellement en cours de revue sur SSRN (under review)."
-                        : "Note: paper currently under SSRN review."}
-                    </p>
-                  </div>
-                )}
+
                 <div className="space-y-3 border-t border-slate-200 pt-6">
                   {member.highlights.map((highlight, idx) => (
                     <div key={`${member.id}-highlight-${idx}`} className="flex items-center gap-3">
