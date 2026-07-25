@@ -43,8 +43,8 @@ export default function Navigation() {
   ];
 
   const pressLinks = [
-    { path: '/lila-benhammou', label: 'Lila Benhammou' },
-    { path: '/jean-pierre-veron', label: 'Jean-Pierre Véron' },
+    { path: language === 'fr' ? '/lila-benhammou' : '/en/lila-benhammou', label: 'Lila Benhammou' },
+    { path: language === 'fr' ? '/jean-pierre-veron' : '/en/jean-pierre-veron', label: 'Jean-Pierre Véron' },
   ];
 
   const secondaryLinks = [
@@ -52,7 +52,7 @@ export default function Navigation() {
   ];
 
   const isResourcesActive = router.pathname.startsWith('/guides') || router.pathname.startsWith('/blog') || router.pathname.startsWith('/auteurs');
-  const isPressActive = router.pathname === '/lila-benhammou' || router.pathname === '/lila-benhammou/' || router.pathname === '/jean-pierre-veron' || router.pathname === '/jean-pierre-veron/';
+  const isPressActive = router.pathname === '/lila-benhammou' || router.pathname === '/lila-benhammou/' || router.pathname === '/jean-pierre-veron' || router.pathname === '/jean-pierre-veron/' || router.pathname === '/en/lila-benhammou' || router.pathname === '/en/lila-benhammou/' || router.pathname === '/en/jean-pierre-veron' || router.pathname === '/en/jean-pierre-veron/';
 
   return (
     <nav
