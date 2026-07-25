@@ -206,7 +206,7 @@ export default function EuropeanApproachPage() {
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" 
-                alt="Modern corporate office buildings in Europe"
+                alt="Infrastructure datacenter européenne — transformation brown-to-green"
                 className="w-full h-auto"
               />
             </div>
