@@ -218,7 +218,7 @@ export default function LilaPage() {
             </div>
             <div className="bg-slate-50 p-6 border-l-4 border-[#C45A3B] hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-[#C45A3B] text-sm font-bold">2026</span>
+                <span className="text-[#C45A3B] text-sm font-bold">2023</span>
               </div>
               <h3 className="font-serif text-lg mb-2">
                 {language === 'fr' ? 'Co-fondation de FINXIA Capital' : 'Co-foundation of FINXIA Capital'}
