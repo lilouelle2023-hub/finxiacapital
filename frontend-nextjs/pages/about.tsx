@@ -52,6 +52,7 @@ export default function AboutPage() {
     {
       id: 'jean-pierre-veron',
       initials: 'JPV',
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
       name: 'Jean-Pierre Véron',
       role: language === 'fr' ? 'Président & Fondateur' : 'Chairman & Founder',
       bio: language === 'fr'
@@ -67,6 +68,7 @@ export default function AboutPage() {
     {
       id: 'lila-benhammou',
       initials: 'LB',
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
       name: 'Lila Benhammou',
       role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements (CIO)' : 'Co-Founder & Chief Investment Officer (CIO)',
       bio: language === 'fr'
@@ -683,9 +685,18 @@ const personSchema = {
                 data-testid={`founder-card-${member.id}`}
               >
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="w-20 h-20 bg-[#1E2A3A] rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-white font-serif text-2xl">{member.initials}</span>
-                  </div>
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-20 h-20 rounded-full object-cover flex-shrink-0 border-2 border-[#C45A3B]/30"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-20 h-20 bg-[#1E2A3A] rounded-full flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-serif text-2xl">{member.initials}</span>
+                    </div>
+                  )}
                   <div>
                     <h3 className="font-serif text-2xl mb-1">{member.name}</h3>
                     <p className="text-[#C45A3B] font-medium">{member.role}</p>
