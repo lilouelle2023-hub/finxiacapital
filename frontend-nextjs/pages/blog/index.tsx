@@ -234,6 +234,53 @@ export default function BlogIndexPage() {
 
   const articles = [
     {
+      slug: 'nvidia-blackwell-liquid-cooling-european-datacenters-2026',
+      title: language === 'fr'
+        ? "NVIDIA Blackwell Ultra : 200 kW par rack, refroidissement liquide obligatoire — les datacenters européens en sursis"
+        : "NVIDIA Blackwell Ultra: 200 kW per rack, mandatory liquid cooling — European datacenters on notice",
+      excerpt: language === 'fr'
+        ? "NVIDIA dévoile les Blackwell Ultra avec une densité de 200 kW par rack. Le refroidissement liquide devient incontournable. Quels datacenters européens survivront ?"
+        : "NVIDIA unveils Blackwell Ultra with a density of 200 kW per rack. Liquid cooling becomes mandatory. Which European datacenters will survive?",
+      date: '2026-07-25',
+      category: 'Digital Infrastructure',
+      readTime: '7 min'
+    },
+    {
+      slug: 'european-sovereign-cloud-gaia-x-investors-2026',
+      title: language === 'fr'
+        ? "Cloud souverain européen : Gaia-X atteint 200 fournisseurs certifiés — ce que cela change pour les investisseurs"
+        : "European Sovereign Cloud: Gaia-X Reaches 200 Certified Providers — What It Means for Investors",
+      excerpt: language === 'fr'
+        ? "Le projet Gaia-X compte désormais 200 fournisseurs certifiés. La France et l'Allemagne pilotent le déploiement. Analyse des implications pour les investisseurs en infrastructure."
+        : "The Gaia-X project now has 200 certified providers. France and Germany lead deployment. Analysis of implications for infrastructure investors.",
+      date: '2026-07-25',
+      category: 'Digital Infrastructure',
+      readTime: '6 min'
+    },
+    {
+      slug: 'edge-computing-modular-datacenter-generative-ai-europe-2026',
+      title: language === 'fr'
+        ? "Edge computing et datacenters modulaires : la réponse européenne à l'explosion de l'IA générative"
+        : "Edge Computing and Modular Datacenters: Europe's Answer to the Generative AI Explosion",
+      excerpt: language === 'fr'
+        ? "L'IA générative impose de nouvelles contraintes de latence. L'edge computing et les datacenters modulaires émergent comme la solution. Analyse pour les investisseurs."
+        : "Generative AI imposes new latency constraints. Edge computing and modular datacenters are emerging as the solution. Analysis for investors.",
+      date: '2026-07-25',
+      category: 'Digital Infrastructure',
+      readTime: '6 min'
+    },
+    {
+      slug: 'green-datacenter-pue-transformation-eed-regulation-2026',
+      title: language === 'fr'
+        ? "Green datacenter : la transformation PUE et la réglementation EED redessinent l'investissement infrastructure en Europe"
+        : "Green Datacenter: PUE Transformation and EED Regulation Are Reshaping Infrastructure Investment in Europe",
+      excerpt: language === 'fr'
+        ? "La directive EED et l'optimisation PUE transforment les datacenters européens. Guide pour les investisseurs sur la réglementation, la certification et les rendements."
+        : "The EED directive and PUE optimization are transforming European datacenters. Guide for investors on regulation, certification and returns.",
+      date: '2026-07-25',
+      category: 'Energy & Infrastructure',
+      readTime: '8 min'
+    },
       slug: 'datacenters-modulaires-schneider-electric-edge-computing',
       title: language === 'fr'
         ? "Les datacenters modulaires : le coup d'accélération de Schneider Electric et la révolution de l'edge computing"
