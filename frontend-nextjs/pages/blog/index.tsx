@@ -281,6 +281,7 @@ export default function BlogIndexPage() {
       category: 'Energy & Infrastructure',
       readTime: '8 min'
     },
+    {
       slug: 'datacenters-modulaires-schneider-electric-edge-computing',
       title: language === 'fr'
         ? "Les datacenters modulaires : le coup d'accélération de Schneider Electric et la révolution de l'edge computing"
