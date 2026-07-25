@@ -102,24 +102,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* SSRN Publication Reference */}
+        {/* White Paper Download */}
         <div className="border-t border-slate-700 pt-8 pb-6">
           <p className="text-slate-400 text-xs">
-            {language === 'fr'
-              ? 'Publication SSRN (en cours de revue) : '
-              : 'SSRN Publication (under review): '}
-            <a 
-              href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918" 
-              target="_blank" 
-              rel="noopener noreferrer nofollow"
-              className="text-[#C45A3B] hover:underline"
-            >
-              {language === 'fr'
-                ? 'Optimisation Énergétique des Datacenters Européens (2026) — Abstract ID 6597918'
-                : 'European Datacenter Energy Optimization (2026) — Abstract ID 6597918'}
-            </a>
-          </p>
-          <p className="text-slate-400 text-xs mt-3">
             {language === 'fr' ? 'Livre Blanc complet (PDF, 60+ pages) — ' : 'Complete White Paper (PDF, 60+ pages) — '}
             <button
               type="button"
