@@ -653,6 +653,29 @@ export default function BlogIndexPage() {
             {/* RIGHT COLUMN — News Sidebar (1/3, sticky) */}
             <div className="lg:col-span-1 order-1 lg:order-2">
               <div className="lg:sticky lg:top-28">
+                {/* Podcast Teaser */}
+                <div className="mb-6 p-4 bg-[#1E2A3A] rounded-xl text-white">
+                  <div className="flex items-center gap-3 mb-3">
+                    <img
+                      src="/images/finxia-podcast-cover.png"
+                      alt="Finxia Capital Insights"
+                      className="w-12 h-12 rounded-lg object-cover"
+                    />
+                    <div>
+                      <p className="text-xs text-[#C45A3B] font-semibold uppercase tracking-wider">Podcast</p>
+                      <p className="text-sm font-medium">Finxia Capital Insights</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-slate-300 mb-3">
+                    {language === 'fr'
+                      ? "Épisode 1 : L'électricité, le vrai goulot d'étranglement de l'IA en France"
+                      : "Episode 1: Electricity, the Real Bottleneck of AI in France"}
+                  </p>
+                  <Link href="/podcast/" className="text-xs font-medium text-[#C45A3B] hover:text-white transition-colors inline-flex items-center gap-1">
+                    {language === 'fr' ? 'Écouter' : 'Listen'}
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
+                </div>
                 <div className="flex items-center gap-3 mb-4">
                   <Zap className="w-5 h-5 text-[#C45A3B]" />
                   <h3 className="font-serif text-xl text-slate-900">
