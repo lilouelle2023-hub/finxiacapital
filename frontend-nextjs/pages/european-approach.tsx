@@ -205,7 +205,7 @@ export default function EuropeanApproachPage() {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1761916119939-166c5fd549b8?w=800&q=80" 
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" 
                 alt="Modern corporate office buildings in Europe"
                 className="w-full h-auto"
               />
