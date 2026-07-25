@@ -246,6 +246,54 @@ export default function BlogIndexPage() {
       readTime: '6 min'
     },
     {
+      slug: 'nvidia-blackwell-refroidissement-liquide-datacenters-europe-2026',
+      title: language === 'fr'
+        ? "NVIDIA Blackwell Ultra et refroidissement liquide : la révolution des datacenters AI en Europe"
+        : "NVIDIA Blackwell Ultra and Liquid Cooling: The AI Datacenter Revolution in Europe",
+      excerpt: language === 'fr'
+        ? "Avec 200 kW par rack et une consommation électrique doublée, les GPU NVIDIA Blackwell Ultra obligent les opérateurs de datacenters européens à adopter le refroidissement liquide en immersion. Finxia Capital analyse pourquoi cette transition technologique représente à la fois un défi opérationnel majeur et une opportunité d'infrastructure différenciante pour les actifs brown-to-green."
+        : "With 200 kW per rack and doubled power consumption, NVIDIA Blackwell Ultra GPUs are forcing European datacenter operators to adopt immersion liquid cooling. Finxia Capital analyzes why this technological transition represents both a major operational challenge and a differentiated infrastructure opportunity for brown-to-green assets.",
+      date: '2026-07-25',
+      category: 'Digital Infrastructure',
+      readTime: '7 min'
+    },
+    {
+      slug: 'cloud-souverain-europeen-investisseurs-infrastructure-ia-2026',
+      title: language === 'fr'
+        ? "Cloud souverain européen : pourquoi les investisseurs institutionnels se tournent vers l'infrastructure IA indépendante"
+        : "European Sovereign Cloud: Why Institutional Investors Are Turning to Independent AI Infrastructure",
+      excerpt: language === 'fr'
+        ? "Gaia-X, STACKIT, OVHcloud — le cloud souverain européen gagne du terrain. Mais derrière la bataille politique, une réalité économique émerge : les investisseurs institutionnels recherchent des actifs d'infrastructure IA indépendants des hyperscalers américains. Finxia Capital décrypte la thèse d'investissement."
+        : "Gaia-X, STACKIT, OVHcloud — European sovereign cloud is gaining ground. But behind the political battle, an economic reality is emerging: institutional investors are seeking AI infrastructure assets independent of American hyperscalers. Finxia Capital deciphers the investment thesis.",
+      date: '2026-07-24',
+      category: 'Market Analysis',
+      readTime: '6 min'
+    },
+    {
+      slug: 'edge-computing-modular-datacenter-ia-generative-europe-2026',
+      title: language === 'fr'
+        ? "Edge computing et modular datacenter : l'alliance stratégique pour l'IA générative en Europe"
+        : "Edge Computing and Modular Datacenter: The Strategic Alliance for Generative AI in Europe",
+      excerpt: language === 'fr'
+        ? "L'IA générative a besoin de latences inférieures à 10 ms. Les datacenters modulaires déployés en périphérie des réseaux urbains répondent à cette contrainte tout en offrant un déploiement rapide et une efficacité énergétique optimale. Finxia Capital analyse ce marché émergent de l'edge AI."
+        : "Generative AI requires sub-10ms latency. Modular datacenters deployed at the edge of urban networks meet this constraint while offering rapid deployment and optimal energy efficiency. Finxia Capital analyzes this emerging edge AI market.",
+      date: '2026-07-23',
+      category: 'Digital Infrastructure',
+      readTime: '5 min'
+    },
+    {
+      slug: 'modular-datacenter-digital-sovereignty-europe-2026',
+      title: language === 'fr'
+        ? "Green datacenter et HPC en Europe : pourquoi 2026 marque le point de basculement infrastructural"
+        : "Green Datacenters and HPC in Europe: Why 2026 Marks the Infrastructure Tipping Point",
+      excerpt: language === 'fr'
+        ? "L'année 2026 représente un tournant décisif pour l'infrastructure numérique européenne. Alors que la demande en calcul HPC et IA générative atteint des niveaux sans précédent, les datacenters européens héritent d'une contrainte énergétique sans équivalent : 18 GW de demande en file d'attente, des réseaux électriques saturés et une directive EED de plus en plus stricte. Pourtant, c'est précisément dans cette tension que naissent les opportunités d'investissement les plus structurantes. Finxia Capital analyse pourquoi le brown-to-green, allié à une optimisation PUE certifiée IPMVP, constitue la thèse de la décennie pour les investisseurs en infrastructure IA."
+        : "The year 2026 marks a decisive turning point for European digital infrastructure. As demand for HPC and generative AI compute reaches unprecedented levels, European datacenters face an unparalleled energy constraint: 18 GW of queued demand, saturated power grids, and an increasingly strict EED directive. Yet it is precisely in this tension that the most structural investment opportunities emerge. Finxia Capital analyzes why brown-to-green, combined with IPMVP-certified PUE optimization, constitutes the decade's thesis for AI infrastructure investors.",
+      date: '2026-07-24',
+      category: 'Energy & Infrastructure',
+      readTime: '6 min'
+    },
+    {
       slug: 'modular-datacenter-digital-sovereignty-europe-2026',
       title: language === 'fr'
         ? "Datacenters modulaires et souveraineté numérique : la nouvelle frontière de l'infrastructure IA européenne"
