@@ -675,7 +675,7 @@ export default function HomePage() {
               { value: '1', label: language === 'fr' ? 'Green Bond TITAN DC AI — Financement structuré dédié' : 'Green Bond TITAN DC AI — Dedicated structured financing', sublabel: '' },
               { value: '4', label: language === 'fr' ? 'stratégies d\'investissement complémentaires' : 'complementary investment strategies', sublabel: '' },
               { value: '3', label: language === 'fr' ? 'marchés : France, Espagne, Europe du Sud' : 'markets: France, Spain, Southern Europe', sublabel: '' },
-              { value: '1', label: language === 'fr' ? 'publication académique — SSRN (en cours de revue)' : 'academic publication — SSRN (under review)', sublabel: 'Abstract ID 6597918' },
+              { value: '116K', label: language === 'fr' ? 'm² — Plateforme logistique Vallée du Camincourt' : 'sqm — Camincourt Valley logistics platform', sublabel: 'Saint-Sauveur (80)' },
             ].map((stat, idx) => (
               <div key={idx} className="text-center p-6 bg-slate-50">
                 <div className="text-4xl font-bold text-[#C45A3B] mb-2">{stat.value}</div>
