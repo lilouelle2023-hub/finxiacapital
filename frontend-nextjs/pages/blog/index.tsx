@@ -568,7 +568,7 @@ export default function BlogIndexPage() {
       />
 
       {/* Hero Section */}
-      <section className="py-24 md:py-32 bg-slate-50">
+      <section className="py-16 md:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <p className="overline mb-4">
@@ -592,7 +592,7 @@ export default function BlogIndexPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-8">
             {/* LEFT COLUMN — Articles (2/3) */}
-            <div className="lg:col-span-2 order-1">
+            <div className="lg:col-span-2 order-2 lg:order-1">
               <h2 className="font-serif text-2xl md:text-3xl text-slate-900 mb-2 pb-4 border-b-2 border-[#C45A3B]">
                 {language === 'fr' ? 'Articles' : 'Articles'}
               </h2>
@@ -651,7 +651,7 @@ export default function BlogIndexPage() {
             </div>
 
             {/* RIGHT COLUMN — News Sidebar (1/3, sticky) */}
-            <div className="lg:col-span-1 order-2">
+            <div className="lg:col-span-1 order-1 lg:order-2">
               <div className="lg:sticky lg:top-28">
                 <div className="flex items-center gap-3 mb-4">
                   <Zap className="w-5 h-5 text-[#C45A3B]" />
@@ -682,7 +682,7 @@ export default function BlogIndexPage() {
                 </div>
 
                 {/* News items — vertical list */}
-                <div className="space-y-3 max-h-[calc(100vh-200px)] overflow-y-auto pr-1">
+                <div className="space-y-3">
                   {filteredNews.map((item) => (
                     <div
                       key={item.id}
