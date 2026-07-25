@@ -234,18 +234,6 @@ export default function BlogIndexPage() {
 
   const articles = [
     {
-      slug: 'modular-datacenter-digital-sovereignty-europe-2026',
-      title: language === 'fr'
-        ? "Datacenters modulaires et souveraineté numérique : la nouvelle frontière de l'infrastructure IA européenne"
-        : "Modular Datacenters and Digital Sovereignty: Europe's New AI Infrastructure Frontier",
-      excerpt: language === 'fr'
-        ? "Alors que l'Europe accélère sa stratégie de souveraineté numérique, les datacenters modulaires émergent comme la réponse la plus rapide et la plus efficace aux besoins croissants en capacité de calcul IA. Finxia Capital analyse ce phénomène de rupture."
-        : "As Europe accelerates its digital sovereignty strategy, modular datacenters are emerging as the fastest and most efficient response to growing AI compute needs. Finxia Capital analyzes this breakthrough phenomenon.",
-      date: '2026-07-10',
-      category: 'Digital Infrastructure',
-      readTime: '6 min'
-    },
-    {
       slug: 'datacenters-modulaires-schneider-electric-edge-computing',
       title: language === 'fr'
         ? "Les datacenters modulaires : le coup d'accélération de Schneider Electric et la révolution de l'edge computing"
