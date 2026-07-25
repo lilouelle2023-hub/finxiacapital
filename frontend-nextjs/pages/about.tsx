@@ -52,7 +52,7 @@ export default function AboutPage() {
     {
       id: 'jean-pierre-veron',
       initials: 'JPV',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
+      image: '/images/jpv-photo.jpeg',
       name: 'Jean-Pierre Véron',
       role: language === 'fr' ? 'Président & Fondateur' : 'Chairman & Founder',
       bio: language === 'fr'
@@ -68,7 +68,7 @@ export default function AboutPage() {
     {
       id: 'lila-benhammou',
       initials: 'LB',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+      image: '/images/lbe-photo.jpeg',
       name: 'Lila Benhammou',
       role: language === 'fr' ? 'Co-Fondatrice & Directrice des Investissements (CIO)' : 'Co-Founder & Chief Investment Officer (CIO)',
       bio: language === 'fr'
