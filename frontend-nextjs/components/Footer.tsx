@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Mail, Download } from 'lucide-react';
+import { Mail, Download, FileText, Shield, Cookie } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import WhitepaperModal from '@/components/WhitepaperModal';
 
@@ -15,16 +15,22 @@ export default function Footer() {
   const footerLinks = [
     { path: '/about', label: language === 'fr' ? 'À Propos' : 'About' },
     { path: '/strategies', label: language === 'fr' ? 'Stratégies' : 'Strategies' },
-    { path: '/governance', label: 'Gouvernance' },
+    { path: '/governance', label: language === 'fr' ? 'Gouvernance' : 'Governance' },
     { path: '/investors', label: language === 'fr' ? 'Investisseurs' : 'Investors' },
     { path: '/contact', label: 'Contact' },
+  ];
+
+  const legalLinks = [
+    { path: '/mentions-legales', label: language === 'fr' ? 'Mentions légales' : 'Legal Notice', icon: FileText },
+    { path: '/privacy-policy', label: language === 'fr' ? 'Politique de confidentialité' : 'Privacy Policy', icon: Shield },
+    { path: '/cookies', label: language === 'fr' ? 'Politique cookies' : 'Cookie Policy', icon: Cookie },
   ];
 
   return (
     <footer className="bg-[#1E2A3A] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="md:col-span-1">
             <h3 className="font-serif text-2xl font-bold mb-4">FINXIA</h3>
             <p className="text-slate-400 text-sm leading-relaxed max-w-md mb-6">
               {language === 'fr'
@@ -50,6 +56,26 @@ export default function Footer() {
           </div>
 
           <div>
+            <h4 className="font-serif text-lg mb-4">{language === 'fr' ? 'Légal' : 'Legal'}</h4>
+            <ul className="space-y-2">
+              {legalLinks.map((link) => {
+                const IconComponent = link.icon;
+                return (
+                  <li key={link.path}>
+                    <Link
+                      href={link.path}
+                      className="text-slate-400 hover:text-white transition-colors text-sm inline-flex items-center gap-2"
+                    >
+                      <IconComponent className="w-3.5 h-3.5" />
+                      {link.label}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          <div>
             <h4 className="font-serif text-lg mb-4">Contact</h4>
             <div className="space-y-3">
               <a
@@ -59,6 +85,7 @@ export default function Footer() {
                 <Mail className="w-4 h-4" />
                 contact@finxiacapital.com
               </a>
+              {/* LinkedIn — à réactiver quand la page entreprise sera créée
               <a
                 href="https://linkedin.com/company/finxiacapital"
                 target="_blank"
@@ -70,6 +97,7 @@ export default function Footer() {
                 </svg>
                 LinkedIn
               </a>
+              */}
             </div>
           </div>
         </div>

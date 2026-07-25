@@ -30,10 +30,7 @@ export default function HomePage() {
           "addressLocality": "Luxembourg"
         },
         "email": "contact@finxiacapital.com",
-        "sameAs": [
-          "https://linkedin.com/company/finxiacapital",
-          "https://www.crunchbase.com/organization/finxia-capital"
-        ],
+        "sameAs": [],
         "knowsAbout": [
           "Alternative Asset Management",
           "Proprietary SCSp Investment Vehicle",
