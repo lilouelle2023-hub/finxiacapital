@@ -729,10 +729,10 @@ export default function BlogIndexPage() {
               : 'Exclusive analysis on alternative assets and AI in portfolio management.'}
           </p>
           <Link
-            href="/contact"
+            href="/newsletter"
             className="btn-primary inline-flex items-center gap-2"
           >
-            {language === 'fr' ? 'Nous Contacter' : 'Contact Us'}
+            {language === 'fr' ? "S'inscrire à la newsletter" : 'Subscribe to Newsletter'}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

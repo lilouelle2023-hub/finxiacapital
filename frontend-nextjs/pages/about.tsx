@@ -81,6 +81,63 @@ export default function AboutPage() {
     },
   ];
 
+const personSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://finxiacapital.com/about/#jean-pierre-veron",
+        "name": "Jean-Pierre Véron",
+        "jobTitle": "Chairman & Founder",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "FINXIA Capital",
+          "url": "https://finxiacapital.com"
+        },
+        "alumniOf": [
+          {
+            "@type": "Organization",
+            "name": "Kaufman & Broad"
+          },
+          {
+            "@type": "Organization",
+            "name": "Financière Rive Gauche"
+          }
+        ],
+        "knowsAbout": [
+          "Real Estate Investment",
+          "Premium Hospitality",
+          "Residential Investment",
+          "European Real Estate"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://finxiacapital.com/about/#lila-benhammou",
+        "name": "Lila Benhammou",
+        "jobTitle": "Co-Founder & Chief Investment Officer (CIO)",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "FINXIA Capital",
+          "url": "https://finxiacapital.com"
+        },
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Kellogg School of Management, Northwestern University"
+          }
+        ],
+        "knowsAbout": [
+          "AI Infrastructure",
+          "Datacenter Investment",
+          "Telecom Infrastructure",
+          "Alternative Asset Management",
+          "Green Bond Structuring"
+        ]
+      }
+    ]
+  };
+
   // FAQ Schema for About page
   const faqSchema = {
     "@context": "https://schema.org",
@@ -144,6 +201,7 @@ export default function AboutPage() {
         keywords="Jean-Pierre Véron, Lila Benhammou, FINXIA Capital équipe, gestionnaire alternatif Luxembourg SCSp, TITAN DC AI investissement, datacenter brown-to-green, Green Bond, Kaufman Broad, Financière Rive Gauche, Humans4Help, Kellogg Northwestern MBA"
         faqSchema={faqSchema}
         breadcrumbSchema={breadcrumbSchema}
+        structuredData={personSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/about/"

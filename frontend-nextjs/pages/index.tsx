@@ -161,7 +161,7 @@ export default function HomePage() {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundImage: 'url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80)',
+            backgroundImage: 'url(https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             zIndex: 0
