@@ -10,6 +10,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 17,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-07-24',
+      title: {
+        fr: "NVIDIA annonce les HBM4 pour 2027 : 48 GB par stack, 12-Hi — les supercalculateurs européens se réorganisent",
+        en: "NVIDIA announces HBM4 for 2027: 48 GB per stack, 12-Hi — European supercomputers reorganize"
+      },
+      source: 'Bloomberg'
+    },
+    {
+      id: 18,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-07-23',
+      title: {
+        fr: "L'Europe déploie son premier datacenter sous-marin en Méditerranée — refroidissement naturel et latences record",
+        en: "Europe deploys its first underwater datacenter in the Mediterranean — natural cooling and record latency"
+      },
+      source: 'Les Echos'
+    },
+    {
+      id: 19,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-07-22',
+      title: {
+        fr: "L'UE exige la certification carbone pour tous les datacenters alimentant des modèles IA d'ici 2028",
+        en: "EU mandates carbon certification for all datacenters powering AI models by 2028"
+      },
+      source: 'Reuters'
+    },
+    {
       id: 14,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
@@ -200,6 +233,18 @@ export default function BlogIndexPage() {
     : newsItems.filter(item => item.topic === activeFilter);
 
   const articles = [
+    {
+      slug: 'green-datacenter-hpc-ia-europe-investissement-2026',
+      title: language === 'fr'
+        ? "Green datacenter et HPC en Europe : pourquoi 2026 marque le point de basculement infrastructural"
+        : "Green Datacenters and HPC in Europe: Why 2026 Marks the Infrastructure Tipping Point",
+      excerpt: language === 'fr'
+        ? "L'année 2026 représente un tournant décisif pour l'infrastructure numérique européenne. Alors que la demande en calcul HPC et IA générative atteint des niveaux sans précédent, les datacenters européens héritent d'une contrainte énergétique sans équivalent : 18 GW de demande en file d'attente, des réseaux électriques saturés et une directive EED de plus en plus stricte. Pourtant, c'est précisément dans cette tension que naissent les opportunités d'investissement les plus structurantes. Finxia Capital analyse pourquoi le brown-to-green, allié à une optimisation PUE certifiée IPMVP, constitue la thèse de la décennie pour les investisseurs en infrastructure IA."
+        : "The year 2026 marks a decisive turning point for European digital infrastructure. As demand for HPC and generative AI compute reaches unprecedented levels, European datacenters face an unparalleled energy constraint: 18 GW of queued demand, saturated power grids, and an increasingly strict EED directive. Yet it is precisely in this tension that the most structural investment opportunities emerge. Finxia Capital analyzes why brown-to-green, combined with IPMVP-certified PUE optimization, constitutes the decade's thesis for AI infrastructure investors.",
+      date: '2026-07-24',
+      category: 'Energy & Infrastructure',
+      readTime: '6 min'
+    },
     {
       slug: 'modular-datacenter-digital-sovereignty-europe-2026',
       title: language === 'fr'
