@@ -10,8 +10,12 @@
 /a-propos/            /about/             301
 /strategies-fr        /strategies/        301
 /contact-fr           /contact/           301
-/presse               /press/             301
-/presse/              /press/             301
+/presse               /lila-benhammou/    301
+/presse/              /lila-benhammou/    301
+
+# Press page → Lila Benhammou profile (P0 fix)
+/press                /lila-benhammou/    301
+/press/               /lila-benhammou/    301
 
 # Force trailing slash redirects (Next.js generates /page/index.html)
 /contact              /contact/           301
@@ -21,12 +25,11 @@
 /governance           /governance/        301
 /investors            /investors/         301
 /blog                 /blog/              301
-/press                /press/             301
 
 # Blog articles (preserve trailing slash)
 /blog/sustainable-investing    /blog/sustainable-investing/    301
 /blog/european-approach       /blog/european-approach/        301
-/blog/governance-matters      /blog/governance-matters/       301
+/blog/governance-matters      /blog/governance-matters/        301
 
 # Serve blog articles correctly
 /blog/*               /blog/:splat        200
