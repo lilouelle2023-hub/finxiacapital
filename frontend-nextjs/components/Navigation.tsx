@@ -37,9 +37,9 @@ export default function Navigation() {
   ];
 
   const resourcesLinks = [
-    { path: '/guides/eed-directive-datacenter-2026/', label: language === 'fr' ? 'Guide EED Datacenters 2026' : 'EED Datacenters Guide 2026' },
-    { path: '/podcast/', label: 'Podcast' },
     { path: '/blog/', label: 'Blog' },
+    { path: '/podcast/', label: 'Podcast' },
+    { path: '/guides/eed-directive-datacenter-2026/', label: language === 'fr' ? 'Guide EED Datacenters 2026' : 'EED Datacenters Guide 2026' },
   ];
 
   const pressLinks = [
