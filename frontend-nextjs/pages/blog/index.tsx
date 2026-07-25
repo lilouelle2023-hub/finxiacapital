@@ -587,135 +587,141 @@ export default function BlogIndexPage() {
         </div>
       </section>
 
-      {/* News Feed */}
-      <section className="py-12 bg-white border-b border-slate-200">
+      {/* Main Content: Articles + News Sidebar */}
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
-            <div className="flex items-center gap-3">
-              <Zap className="w-6 h-6 text-[#C45A3B]" />
-              <h2 className="font-serif text-2xl text-slate-900">
-                {language === 'fr' ? "Fil d'actualités" : 'News Feed'}
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* LEFT COLUMN — Articles (2/3) */}
+            <div className="lg:col-span-2 order-1">
+              <h2 className="font-serif text-2xl md:text-3xl text-slate-900 mb-2 pb-4 border-b-2 border-[#C45A3B]">
+                {language === 'fr' ? 'Articles' : 'Articles'}
               </h2>
-              <span className="text-sm text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
-                HPC • IA • DC • NVIDIA
-              </span>
-            </div>
-            
-            {/* Filter buttons */}
-            <div className="flex items-center gap-2 flex-wrap">
-              <Filter className="w-4 h-4 text-slate-400 mr-1" />
-              {filters.map((filter) => (
-                <button
-                  key={filter.key}
-                  onClick={() => setActiveFilter(filter.key)}
-                  className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
-                    activeFilter === filter.key
-                      ? 'bg-[#C45A3B] text-white'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                  }`}
-                >
-                  {filter.label[language === 'fr' ? 'fr' : 'en']}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* News items grid */}
-          <div className="grid md:grid-cols-2 gap-4">
-            {filteredNews.map((item) => (
-              <div
-                key={item.id}
-                className="flex items-start gap-4 p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
-              >
-                <div className="flex-shrink-0">
-                  <span className={`inline-block px-2 py-1 text-xs font-semibold rounded uppercase tracking-wider ${
-                    item.topic === 'nvidia' ? 'bg-green-100 text-green-700' :
-                    item.topic === 'hpc' ? 'bg-purple-100 text-purple-700' :
-                    item.topic === 'ia' ? 'bg-blue-100 text-blue-700' :
-                    'bg-orange-100 text-orange-700'
-                  }`}>
-                    {item.topicLabel[language === 'fr' ? 'fr' : 'en']}
-                  </span>
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-slate-900 leading-snug mb-1">
-                    {item.title[language === 'fr' ? 'fr' : 'en']}
-                  </p>
-                  <div className="flex items-center gap-3 text-xs text-slate-500">
-                    <span>{item.source}</span>
-                    <span>•</span>
-                    <time dateTime={item.date}>
-                      {new Date(item.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
-                        day: 'numeric',
-                        month: 'short'
-                      })}
-                    </time>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Articles grouped by month */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {sortedMonths.map((monthKey) => {
-            const month = groupedByMonth[monthKey];
-            return (
-              <div key={monthKey} className="mb-16 last:mb-0">
-                <h2 className="font-serif text-2xl md:text-3xl text-slate-900 mb-2 pb-4 border-b-2 border-[#C45A3B]">
-                  {month.label}
-                </h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                  {month.articles.map((article) => (
-                    <Link
-                      key={article.slug}
-                      href={`/blog/${article.slug}`}
-                      className="group bg-slate-50 card-hover flex flex-col"
-                    >
-                      <div className="p-8 flex-1 flex flex-col">
-                        <div className="flex items-center gap-4 mb-4 text-sm">
-                          <span className="text-[#C45A3B] font-medium uppercase tracking-wider">
-                            {article.category}
-                          </span>
-                          <span className="text-slate-400">•</span>
-                          <span className="text-slate-600">{article.readTime}</span>
-                        </div>
-                        
-                        <h3 className="font-serif text-xl md:text-2xl mb-4 group-hover:text-[#C45A3B] transition-colors">
-                          {article.title}
-                        </h3>
-                        
-                        <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-1">
-                          {article.excerpt}
-                        </p>
-                        
-                        <div className="flex items-center justify-between pt-4 border-t border-slate-200">
-                          <div className="flex items-center gap-2 text-sm text-slate-500">
-                            <Calendar className="w-4 h-4" />
-                            <time dateTime={article.date}>
-                              {new Date(article.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
-                                year: 'numeric',
-                                month: 'long',
-                                day: 'numeric'
-                              })}
-                            </time>
+              
+              {sortedMonths.map((monthKey) => {
+                const month = groupedByMonth[monthKey];
+                return (
+                  <div key={monthKey} className="mb-12 last:mb-0">
+                    <h3 className="font-serif text-xl text-slate-700 mb-4 mt-6">
+                      {month.label}
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      {month.articles.map((article) => (
+                        <Link
+                          key={article.slug}
+                          href={`/blog/${article.slug}`}
+                          className="group bg-slate-50 card-hover flex flex-col"
+                        >
+                          <div className="p-6 flex-1 flex flex-col">
+                            <div className="flex items-center gap-3 mb-3 text-xs">
+                              <span className="text-[#C45A3B] font-medium uppercase tracking-wider">
+                                {article.category}
+                              </span>
+                              <span className="text-slate-400">•</span>
+                              <span className="text-slate-600">{article.readTime}</span>
+                            </div>
+                            
+                            <h4 className="font-serif text-lg mb-3 group-hover:text-[#C45A3B] transition-colors leading-snug">
+                              {article.title}
+                            </h4>
+                            
+                            <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+                              {article.excerpt}
+                            </p>
+                            
+                            <div className="flex items-center justify-between pt-3 border-t border-slate-200">
+                              <div className="flex items-center gap-2 text-xs text-slate-500">
+                                <Calendar className="w-3.5 h-3.5" />
+                                <time dateTime={article.date}>
+                                  {new Date(article.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
+                                    year: 'numeric',
+                                    month: 'short',
+                                    day: 'numeric'
+                                  })}
+                                </time>
+                              </div>
+                              <ArrowRight className="w-4 h-4 text-[#C45A3B] group-hover:translate-x-1 transition-transform" />
+                            </div>
                           </div>
-                          <ArrowRight className="w-5 h-5 text-[#C45A3B] group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* RIGHT COLUMN — News Sidebar (1/3, sticky) */}
+            <div className="lg:col-span-1 order-2">
+              <div className="lg:sticky lg:top-28">
+                <div className="flex items-center gap-3 mb-4">
+                  <Zap className="w-5 h-5 text-[#C45A3B]" />
+                  <h3 className="font-serif text-xl text-slate-900">
+                    {language === 'fr' ? "Fil d'actualités" : 'News Feed'}
+                  </h3>
+                </div>
+                <p className="text-xs text-slate-500 mb-4">
+                  HPC • IA • DC • NVIDIA
+                </p>
+                
+                {/* Filter buttons */}
+                <div className="flex items-center gap-2 flex-wrap mb-4">
+                  <Filter className="w-3.5 h-3.5 text-slate-400 mr-1" />
+                  {filters.map((filter) => (
+                    <button
+                      key={filter.key}
+                      onClick={() => setActiveFilter(filter.key)}
+                      className={`px-3 py-1.5 text-xs font-medium rounded-full transition-all ${
+                        activeFilter === filter.key
+                          ? 'bg-[#C45A3B] text-white'
+                          : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                      }`}
+                    >
+                      {filter.label[language === 'fr' ? 'fr' : 'en']}
+                    </button>
+                  ))}
+                </div>
+
+                {/* News items — vertical list */}
+                <div className="space-y-3 max-h-[calc(100vh-200px)] overflow-y-auto pr-1">
+                  {filteredNews.map((item) => (
+                    <div
+                      key={item.id}
+                      className="flex items-start gap-3 p-3 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
+                    >
+                      <div className="flex-shrink-0">
+                        <span className={`inline-block px-2 py-0.5 text-[10px] font-semibold rounded uppercase tracking-wider ${
+                          item.topic === 'nvidia' ? 'bg-green-100 text-green-700' :
+                          item.topic === 'hpc' ? 'bg-purple-100 text-purple-700' :
+                          item.topic === 'ia' ? 'bg-blue-100 text-blue-700' :
+                          'bg-orange-100 text-orange-700'
+                        }`}>
+                          {item.topicLabel[language === 'fr' ? 'fr' : 'en']}
+                        </span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs font-medium text-slate-900 leading-snug mb-1">
+                          {item.title[language === 'fr' ? 'fr' : 'en']}
+                        </p>
+                        <div className="flex items-center gap-2 text-[10px] text-slate-500">
+                          <span>{item.source}</span>
+                          <span>•</span>
+                          <time dateTime={item.date}>
+                            {new Date(item.date).toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
+                              day: 'numeric',
+                              month: 'short'
+                            })}
+                          </time>
                         </div>
                       </div>
-                    </Link>
+                    </div>
                   ))}
                 </div>
               </div>
-            );
-          })}
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-16 bg-[#1E2A3A] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-2xl md:text-3xl mb-4">
