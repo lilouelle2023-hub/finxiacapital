@@ -202,23 +202,11 @@ export default function InvestorsPage() {
 
               <p className="text-slate-700 leading-relaxed mb-4">
                 {language === 'fr'
-                  ? "La stratégie TITAN DC AI est structurée selon les standards ESG de la Taxonomie Verte Européenne (Règlement 2020/852) et les principes ICMA Green Bond. La structure en trois piliers (capital propre + dette + Green Bond) permet de financer la transformation brown-to-green sans dilution du capital fondateurs."
-                  : "The TITAN DC AI strategy is structured according to EU Taxonomy (Regulation 2020/852) ESG standards and ICMA Green Bond Principles. The three-pillar structure (equity + debt + Green Bond) enables brown-to-green transformation financing without dilution of founders' capital."}
+                  ? "La stratégie TITAN DC AI est structurée selon les standards ESG de la Taxonomie Verte Européenne (Règlement 2020/852) et les principes ICMA Green Bond. L'alignement sur ces standards sera confirmé par une Second Party Opinion indépendante lors de la structuration définitive du Green Bond. La structure en trois piliers (capital propre + dette + Green Bond) permet de financer la transformation brown-to-green sans dilution du capital fondateurs."
+                  : "The TITAN DC AI strategy is structured according to EU Taxonomy (Regulation 2020/852) ESG standards and ICMA Green Bond Principles. Alignment with these standards will be confirmed by an independent Second Party Opinion during the final Green Bond structuring. The three-pillar structure (equity + debt + Green Bond) enables brown-to-green transformation financing without dilution of founders' capital."}
               </p>
 
-              <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                {language === 'fr' ? 'Publication de référence (en cours de revue SSRN) : ' : 'Reference publication (under SSRN review): '}
-                <a
-                  href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className="text-[#C45A3B] hover:underline"
-                >
-                  {language === 'fr'
-                    ? 'SSRN — European Datacenter Energy Optimization, 2026'
-                    : 'SSRN — European Datacenter Energy Optimization, 2026'}
-                </a>
-              </p>
+
               
               <p className="text-slate-700 leading-relaxed">
                 {language === 'fr'
