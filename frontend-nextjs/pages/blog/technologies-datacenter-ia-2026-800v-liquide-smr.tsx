@@ -47,7 +47,7 @@ export default function ArticleTech2026Page() {
         description="NVIDIA Blackwell impose 132 kW par rack. 67% des nouvelles capacités IA passent au refroidissement liquide. Ce que les investisseurs doivent savoir sur le reshape technologique du secteur."
         canonical="https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr/"
         keywords="datacenter 800V DC, refroidissement liquide datacenter, SMR datacenter, NVIDIA Blackwell"
-        articleSchema={articleSchema}
+        structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language="fr"
         ogLocale="fr_FR"
