@@ -279,5 +279,65 @@
       "fr": "Il y a deux ans, un investisseur qui regardait les datacenters européens voyait un marché de niche. Aujourd'hui, il voit l'un des marchés les plus disputés d'Europe.",
       "en": "Two years ago, an investor looking at European datacenters saw a niche market. Today, they see one of Europe's most contested markets."
     }
+  },
+  {
+    "frSlug": "raccordement-electrique-datacenter-europe-investissement",
+    "enSlug": "grid-connection-datacenter-europe-investment",
+    "date": "2026-07-28",
+    "readTime": "8 min",
+    "category": "Investment Analysis",
+    "title": {
+      "fr": "Pourquoi l'Europe risque de perdre la bataille de l'IA par manque de raccordements électriques",
+      "en": "Why Europe Risks Losing the AI Battle Due to Lack of Grid Connections"
+    },
+    "excerpt": {
+      "fr": "67% des opérateurs européens citent l'accès à l'électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d'étranglement structurel crée une prime de rareté sur les actifs déjà raccordés.",
+      "en": "67% of European operators cite electricity access as their number one challenge. For investors, this structural bottleneck creates a scarcity premium on already-connected assets."
+    }
+  },
+  {
+    "frSlug": "technologies-datacenter-ia-2026-800v-liquide-smr",
+    "enSlug": "datacenter-technologies-2026-800v-liquid-smr",
+    "date": "2026-07-29",
+    "readTime": "10 min",
+    "category": "Technology",
+    "title": {
+      "fr": "800V DC, refroidissement liquide, SMR : les 3 technologies qui redessinent le datacenter IA en 2026",
+      "en": "800V DC, Liquid Cooling, SMR: The 3 Technologies Reshaping AI Datacenters in 2026"
+    },
+    "excerpt": {
+      "fr": "NVIDIA Blackwell impose 132 kW par rack. 67% des nouvelles capacités IA passent au refroidissement liquide. Ce que les investisseurs doivent savoir sur le reshape technologique du secteur.",
+      "en": "NVIDIA Blackwell imposes 132 kW per rack. 67% of new AI capacity switches to liquid cooling. What investors need to know about the sector's technological reshape."
+    }
+  },
+  {
+    "frSlug": "consommation-electrique-datacenter-ia-2030-marche",
+    "enSlug": "electricity-consumption-datacenter-ai-2030-market",
+    "date": "2026-07-30",
+    "readTime": "9 min",
+    "category": "Economic Analysis",
+    "title": {
+      "fr": "L'IA pousse la consommation électrique des datacenters à 1 050 TWh d'ici 2030 — qui paiera la facture ?",
+      "en": "AI Pushes Datacenter Electricity Consumption to 1,050 TWh by 2030 — Who Will Pay the Bill?"
+    },
+    "excerpt": {
+      "fr": "Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d'ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation.",
+      "en": "The AI datacenter electricity consumption market will grow from $12.5B to $70.6B by 2035. Analysis of consequences on investments, pricing and regulation."
+    }
+  },
+  {
+    "frSlug": "neoclouds-ai-factories-carte-investissements-europe",
+    "enSlug": "neoclouds-ai-factories-investment-map-europe",
+    "date": "2026-07-31",
+    "readTime": "11 min",
+    "category": "Market Intelligence",
+    "title": {
+      "fr": "Néoclouds, AI Factories et souveraineté numérique : la nouvelle carte des investissements datacenter en Europe",
+      "en": "Neoclouds, AI Factories and Digital Sovereignty: The New Map of Datacenter Investments in Europe"
+    },
+    "excerpt": {
+      "fr": "Cerebras déploie 200 MW. Ferrovial investit 1 Md€ à Madrid. 50% de la capacité européenne pourrait être hors FLAP-D d'ici 2035. Où investir en 2026 ?",
+      "en": "Cerebras deploys 200 MW. Ferrovial invests €1B in Madrid. 50% of European capacity could be outside FLAP-D by 2035. Where to invest in 2026?"
+    }
   }
 ]
