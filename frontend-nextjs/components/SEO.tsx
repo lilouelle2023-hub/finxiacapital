@@ -1,5 +1,25 @@
 import Head from 'next/head';
 
+const ORGANIZATION_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FINXIA Capital",
+  "legalName": "FINXIA Capital S.à r.l.",
+  "url": "https://finxiacapital.com",
+  "logo": "https://finxiacapital.com/logo-finxia.png",
+  "sameAs": [
+    "https://linkedin.com/company/finxiacapital"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "LU"
+  },
+  "founder": [
+    { "@type": "Person", "name": "Jean-Pierre Véron" },
+    { "@type": "Person", "name": "Lila Benhammou" }
+  ]
+};
+
 interface SEOProps {
   title: string;
   description: string;
@@ -123,6 +143,12 @@ export default function SEO({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       )}
+      
+      {/* Organization Schema - always present */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }}
+      />
     </Head>
   );
 }
