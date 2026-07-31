@@ -47,7 +47,7 @@ export default function ArticleEnergyConsumptionPage() {
         description="Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d\'ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation."
         canonical="https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche/"
         keywords="consommation électrique datacenter IA, marché énergie datacenter 2030, investissement datacenter Europe"
-        articleSchema={articleSchema}
+        structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language="fr"
         ogLocale="fr_FR"
