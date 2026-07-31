@@ -10,8 +10,8 @@ export default function ArticleGridBottleneckPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Pourquoi l\'Europe risque de perdre la bataille de l\'IA par manque de raccordements électriques",
-    "description": "67% des opérateurs européens citent l\'accès à l\'électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d\'étranglement structurel crée une prime de rareté sur les actifs déjà raccordés.",
+    "headline": "Pourquoi l'Europe risque de perdre la bataille de l'IA par manque de raccordements électriques",
+    "description": "67% des opérateurs européens citent l'accès à l'électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d'étranglement structurel crée une prime de rareté sur les actifs déjà raccordés.",
     "image": "https://finxiacapital.com/images/finxia-podcast-cover.png",
     "datePublished": "2026-07-28T09:00:00+01:00",
     "dateModified": "2026-07-28T09:00:00+01:00",
@@ -43,8 +43,8 @@ export default function ArticleGridBottleneckPage() {
   return (
     <div className="pt-20 min-h-screen bg-white">
       <SEO
-        title="Pourquoi l\'Europe risque de perdre la bataille de l\'IA par manque de raccordements électriques"
-        description="67% des opérateurs européens citent l\'accès à l\'électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d\'étranglement structurel crée une prime de rareté sur les actifs déjà raccordés."
+        title="Pourquoi l'Europe risque de perdre la bataille de l'IA par manque de raccordements électriques"
+        description="67% des opérateurs européens citent l'accès à l'électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d'étranglement structurel crée une prime de rareté sur les actifs déjà raccordés."
         canonical="https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/"
         keywords="datacenter Europe raccordement électrique, investissement datacenter grid connection, prime rareté datacenter"
         structuredData={articleSchema}
@@ -64,11 +64,11 @@ export default function ArticleGridBottleneckPage() {
             <span>8 min de lecture</span>
           </div>
           <h1 className="font-serif text-3xl md:text-4xl text-slate-900 mb-4 leading-tight">
-            Pourquoi l\'Europe risque de perdre la bataille de l\'IA par manque de raccordements électriques
+            Pourquoi l'Europe risque de perdre la bataille de l'IA par manque de raccordements électriques
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-6">
-            67% des opérateurs européens citent l\'accès à l\'électricité comme leur défi numéro 1. 
-            Pour les investisseurs, ce goulot d\'étranglement structurel crée une prime de rareté 
+            67% des opérateurs européens citent l'accès à l'électricité comme leur défi numéro 1. 
+            Pour les investisseurs, ce goulot d'étranglement structurel crée une prime de rareté 
             sur les actifs déjà raccordés — et une menace existentielle pour les projets greenfield.
           </p>
           <div className="flex flex-wrap gap-2">
@@ -93,7 +93,7 @@ export default function ArticleGridBottleneckPage() {
               <div>
                 <p className="font-semibold text-amber-900 mb-1">Le chiffre qui change tout</p>
                 <p className="text-amber-800">
-                  L\'Europe doit <strong>tripler sa capacité datacenter</strong> d\'ici 2030 pour répondre 
+                  L'Europe doit <strong>tripler sa capacité datacenter</strong> d'ici 2030 pour répondre 
                   à la demande IA. Or, le temps moyen de raccordement au réseau dans les hubs FLAP-D 
                   atteint désormais <strong>7 à 13 ans</strong>.
                 </p>
@@ -101,20 +101,20 @@ export default function ArticleGridBottleneckPage() {
             </div>
           </div>
 
-          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">L\'investisseur : une prime de rareté sur les actifs raccordés</h2>
+          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">L'investisseur : une prime de rareté sur les actifs raccordés</h2>
           
           <p>
-            Pour un investisseur institutionnel, le délai de raccordement électrique n\'est pas un problème 
-            technique — c\'est un <strong>risque de duration</strong>. Un projet greenfield avec 10 ans de queue 
+            Pour un investisseur institutionnel, le délai de raccordement électrique n'est pas un problème 
+            technique — c'est un <strong>risque de duration</strong>. Un projet greenfield avec 10 ans de queue 
             électrique représente un IRR théorique dilué de 40 à 60% par rapport à un actif brownfield 
             déjà raccordé en haute tension.
           </p>
 
           <p>
-            C\'est précisément ce que mesure le <strong>Time-to-Power Score (TTPS)</strong> que nous utilisons 
-            chez FINXIA Capital : un site avec raccordement HT existant se négocie aujourd\'hui avec une 
+            C'est précisément ce que mesure le <strong>Time-to-Power Score (TTPS)</strong> que nous utilisons 
+            chez FINXIA Capital : un site avec raccordement HT existant se négocie aujourd'hui avec une 
             <strong>prime de 15 à 25%</strong> sur le prix au m² comparé à un site nu équivalent. Cette prime 
-            reflète la valeur temps — le seul facteur que l\'IA ne peut pas compresser.
+            reflète la valeur temps — le seul facteur que l'IA ne peut pas compresser.
           </p>
 
           <div className="bg-[#1E2A3A] text-white p-6 rounded-xl my-8">
@@ -141,10 +141,10 @@ export default function ArticleGridBottleneckPage() {
             </ul>
           </div>
 
-          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">L\'utilisateur : pourquoi votre cloud coûtera plus cher</h2>
+          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">L'utilisateur : pourquoi votre cloud coûtera plus cher</h2>
 
           <p>
-            Si vous êtes DSI, CTO ou responsable infrastructure, ce goulot d\'étranglement a un impact 
+            Si vous êtes DSI, CTO ou responsable infrastructure, ce goulot d'étranglement a un impact 
             direct sur vos budgets. La pénurie de capacité électrique se traduit par :
           </p>
 
@@ -157,7 +157,7 @@ export default function ArticleGridBottleneckPage() {
           <p>
             La solution ? Anticiper la <strong>géographie du pouvoir électrique</strong>. Les entreprises 
             qui négocient dès 2026 des contrats de colocation dans des marchés secondaires bien 
-            raccordés (région parisienne périphérique, nord de l\'Espagne, sud de l\'Italie) sécurisent 
+            raccordés (région parisienne périphérique, nord de l'Espagne, sud de l'Italie) sécurisent 
             leur capacité à prix constant sur 3-5 ans.
           </p>
 
@@ -166,8 +166,8 @@ export default function ArticleGridBottleneckPage() {
           <p>
             Notre véhicule TITAN DC AI ne développe pas sur des terrains vierges. Nous ciblons 
             exclusivement des <strong>friches industrielles avec raccordement HT existant</strong> — 
-            anciennes usines, sites chimiques, plateformes logistiques désaffectées. L\'infrastructure 
-            électrique est là. Il suffit de la requalifier pour l\'IA.
+            anciennes usines, sites chimiques, plateformes logistiques désaffectées. L'infrastructure 
+            électrique est là. Il suffit de la requalifier pour l'IA.
           </p>
 
           <p>
