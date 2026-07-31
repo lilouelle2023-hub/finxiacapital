@@ -47,7 +47,7 @@ export default function ArticleGeographyPage() {
         description="Cerebras déploie 200 MW. Ferrovial investit 1 Md€ à Madrid. 50% de la capacité européenne pourrait être hors FLAP-D d\'ici 2035. Où investir en 2026 ?"
         canonical="https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe/"
         keywords="néoclouds Europe, AI Factory Europe, investissement datacenter Espagne Italie"
-        articleSchema={articleSchema}
+        structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language="fr"
         ogLocale="fr_FR"
