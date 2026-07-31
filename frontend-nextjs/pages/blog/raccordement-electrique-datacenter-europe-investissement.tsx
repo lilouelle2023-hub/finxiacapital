@@ -47,7 +47,7 @@ export default function ArticleGridBottleneckPage() {
         description="67% des opérateurs européens citent l\'accès à l\'électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d\'étranglement structurel crée une prime de rareté sur les actifs déjà raccordés."
         canonical="https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/"
         keywords="datacenter Europe raccordement électrique, investissement datacenter grid connection, prime rareté datacenter"
-        articleSchema={articleSchema}
+        structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language="fr"
         ogLocale="fr_FR"
