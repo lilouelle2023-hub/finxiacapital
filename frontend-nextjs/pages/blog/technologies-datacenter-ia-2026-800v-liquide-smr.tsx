@@ -84,39 +84,39 @@ export default function ArticleTech2026Page() {
           
           <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4 flex items-center gap-2">
             <Cpu className="w-6 h-6 text-[#C45A3B]" />
-            1. 800V DC : la nouvelle norme électrique imposée par l\'IA
+            1. 800V DC : la nouvelle norme électrique imposée par l'IA
           </h2>
 
           <p>
-            La semaine dernière, les principaux hyperscalers se sont alignés sur l\'architecture 
-            <strong>800V DC de NVIDIA</strong>. Ce n\'est pas une évolution — c\'est une rupture. 
+            La semaine dernière, les principaux hyperscalers se sont alignés sur l'architecture 
+            <strong>800V DC de NVIDIA</strong>. Ce n'est pas une évolution — c'est une rupture. 
             Les Power Distribution Boards (PDB) convertissent désormais le 800V directement en 6V 
             pour les accélérateurs IA, éliminant une étape de conversion et réduisant les pertes 
             énergétiques de 15 à 20%.
           </p>
 
           <p>
-            <strong>Pour l\'investisseur</strong> : un datacenter legacy conçu pour du 400V AC 
+            <strong>Pour l'investisseur</strong> : un datacenter legacy conçu pour du 400V AC 
             nécessite une refonte complète de son infrastructure électrique pour accueillir du 
             Blackwell. Coût de retrofit : 800 à 1 200 €/kW. Un actif brownfield avec infrastructure 
             800V-ready se négocie avec une prime de 20-30%.
           </p>
 
           <p>
-            <strong>Pour l\'utilisateur</strong> : vérifiez que votre contrat de colocation inclut 
-            une clause de mise à niveau électrique. Sinon, vous risquez d\'être bloqué sur du 
+            <strong>Pour l'utilisateur</strong> : vérifiez que votre contrat de colocation inclut 
+            une clause de mise à niveau électrique. Sinon, vous risquez d'être bloqué sur du 
             matériel H100 alors que vos concurrents déploient du Blackwell.
           </p>
 
           <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4 flex items-center gap-2">
             <Droplets className="w-6 h-6 text-[#C45A3B]" />
-            2. Refroidissement liquide : de l\'option au standard
+            2. Refroidissement liquide : de l'option au standard
           </h2>
 
           <p>
-            Le taux d\'adoption du refroidissement liquide est passé de <strong>41% en Q1 2025 
+            Le taux d'adoption du refroidissement liquide est passé de <strong>41% en Q1 2025 
             à 67% en Q1 2026</strong> (QYResearch). La raison est simple : un rack Blackwell 
-            à 132 kW ne peut pas être refroidi à l\'air. C\'est physiquement impossible.
+            à 132 kW ne peut pas être refroidi à l'air. C'est physiquement impossible.
           </p>
 
           <div className="bg-slate-50 p-6 rounded-xl my-6">
@@ -159,9 +159,9 @@ export default function ArticleTech2026Page() {
           </div>
 
           <p>
-            <strong>Pour l\'investisseur</strong> : la directive EED impose un PUE &lt; 1,2 d\'ici 2030. 
+            <strong>Pour l'investisseur</strong> : la directive EED impose un PUE &lt; 1,2 d'ici 2030. 
             Un datacenter air-cooled deviendra non conforme. La valeur résiduelle de ces actifs 
-            risque de chuter de 30 à 50% d\'ici 2028. Privilégiez les actifs avec infrastructure 
+            risque de chuter de 30 à 50% d'ici 2028. Privilégiez les actifs avec infrastructure 
             liquid-cooling-ready ou avec espace technique suffisant pour le retrofit.
           </p>
 
@@ -172,22 +172,22 @@ export default function ArticleTech2026Page() {
 
           <p>
             Google a signé un PPA avec Kairos Power pour des réacteurs modulaires (SMR). 
-            Amazon s\'est associé à Talen Energy pour 960 MW nucléaires. Microsoft a ressuscité 
-            Three Mile Island. Les hyperscalers deviennent des producteurs d\'énergie — parce 
-            qu\'ils n\'ont pas le choix.
+            Amazon s'est associé à Talen Energy pour 960 MW nucléaires. Microsoft a ressuscité 
+            Three Mile Island. Les hyperscalers deviennent des producteurs d'énergie — parce 
+            qu'ils n'ont pas le choix.
           </p>
 
           <p>
-            <strong>Pour l\'investisseur</strong> : les SMR ne seront pas opérationnels à l\'échelle 
+            <strong>Pour l'investisseur</strong> : les SMR ne seront pas opérationnels à l'échelle 
             avant 2030-2032. Ne misez pas dessus pour votre rendement à 5 ans. En revanche, 
             les <strong>PPAs long terme (15-20 ans)</strong> signés avec des opérateurs nucléaires 
             existants (EDF, Vattenfall) offrent une stabilité de coût énergétique précieuse.
           </p>
 
           <p>
-            <strong>Pour l\'utilisateur</strong> : un contrat de colocation avec PPA nucléaire 
-            garanti = prix de l\'électricité stable sur 10-15 ans. Dans un marché où les prix 
-            du MWh peuvent varier de ±30% selon les conditions météo et géopolitiques, c\'est 
+            <strong>Pour l'utilisateur</strong> : un contrat de colocation avec PPA nucléaire 
+            garanti = prix de l'électricité stable sur 10-15 ans. Dans un marché où les prix 
+            du MWh peuvent varier de ±30% selon les conditions météo et géopolitiques, c'est 
             un avantage compétitif majeur.
           </p>
 
