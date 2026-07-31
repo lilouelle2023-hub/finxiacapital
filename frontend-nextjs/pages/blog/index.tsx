@@ -10,6 +10,50 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 20,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-07-28',
+      title: {
+        fr: "67% des opérateurs européens citent l'accès à l'électricité comme défi numéro 1 — prime de rareté sur les actifs raccordés",
+        en: "67% of European operators cite electricity access as top challenge — scarcity premium on connected assets"
+      },
+      source: 'EUDCA 2026'
+    },
+    {
+      id: 21,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-07-27',
+      title: {
+        fr: "NVIDIA aligne les hyperscalers sur l'architecture 800V DC — les PDB convertissent directement 800V en 6V pour les accélérateurs IA",
+        en: "NVIDIA aligns hyperscalers on 800V DC architecture — PDBs convert 800V directly to 6V for AI accelerators"
+      },
+      source: 'PCIM 2026'
+    },
+    {
+      id: 22,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-07-26',
+      title: {
+        fr: "Le marché de la consommation électrique des datacenters IA atteindra 70,6 Md$ d'ici 2035 — CAGR de 18,9%",
+        en: "AI datacenter electricity consumption market to reach $70.6B by 2035 — 18.9% CAGR"
+      },
+      source: 'Precedence Research'
+    },
+    {
+      id: 23,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-07-25',
+      title: {
+        fr: "Cerebras déploie 200 MW en Europe d'ici fin 2027 — Ferrovial investit 1 Md€ à Madrid",
+        en: "Cerebras deploys 200 MW in Europe by end 2027 — Ferrovial invests €1B in Madrid"
+      },
+      source: 'DataX Connect'
+    },
+    {
       id: 17,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
