@@ -234,6 +234,54 @@ export default function BlogIndexPage() {
 
   const articles = [
     {
+      slug: 'raccordement-electrique-datacenter-europe-investissement',
+      title: language === 'fr'
+        ? "Pourquoi l'Europe risque de perdre la bataille de l'IA par manque de raccordements électriques"
+        : "Why Europe Risks Losing the AI Battle Due to Lack of Grid Connections",
+      excerpt: language === 'fr'
+        ? "67% des opérateurs européens citent l'accès à l'électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d'étranglement structurel crée une prime de rareté sur les actifs déjà raccordés."
+        : "67% of European operators cite electricity access as their number one challenge. For investors, this structural bottleneck creates a scarcity premium on already-connected assets.",
+      date: '2026-07-28',
+      category: 'Investment Analysis',
+      readTime: '8 min'
+    },
+    {
+      slug: 'technologies-datacenter-ia-2026-800v-liquide-smr',
+      title: language === 'fr'
+        ? "800V DC, refroidissement liquide, SMR : les 3 technologies qui redessinent le datacenter IA en 2026"
+        : "800V DC, Liquid Cooling, SMR: The 3 Technologies Reshaping AI Datacenters in 2026",
+      excerpt: language === 'fr'
+        ? "NVIDIA Blackwell impose 132 kW par rack. 67% des nouvelles capacités IA passent au refroidissement liquide. Ce que les investisseurs doivent savoir sur le reshape technologique du secteur."
+        : "NVIDIA Blackwell imposes 132 kW per rack. 67% of new AI capacity switches to liquid cooling. What investors need to know about the sector's technological reshape.",
+      date: '2026-07-29',
+      category: 'Technology',
+      readTime: '10 min'
+    },
+    {
+      slug: 'consommation-electrique-datacenter-ia-2030-marche',
+      title: language === 'fr'
+        ? "L'IA pousse la consommation électrique des datacenters à 1 050 TWh d'ici 2030 — qui paiera la facture ?"
+        : "AI Pushes Datacenter Electricity Consumption to 1,050 TWh by 2030 — Who Will Pay the Bill?",
+      excerpt: language === 'fr'
+        ? "Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d'ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation."
+        : "The AI datacenter electricity consumption market will grow from $12.5B to $70.6B by 2035. Analysis of consequences on investments, pricing and regulation.",
+      date: '2026-07-30',
+      category: 'Economic Analysis',
+      readTime: '9 min'
+    },
+    {
+      slug: 'neoclouds-ai-factories-carte-investissements-europe',
+      title: language === 'fr'
+        ? "Néoclouds, AI Factories et souveraineté numérique : la nouvelle carte des investissements datacenter en Europe"
+        : "Neoclouds, AI Factories and Digital Sovereignty: The New Map of Datacenter Investments in Europe",
+      excerpt: language === 'fr'
+        ? "Cerebras déploie 200 MW. Ferrovial investit 1 Md€ à Madrid. 50% de la capacité européenne pourrait être hors FLAP-D d'ici 2035. Où investir en 2026 ?"
+        : "Cerebras deploys 200 MW. Ferrovial invests €1B in Madrid. 50% of European capacity could be outside FLAP-D by 2035. Where to invest in 2026?",
+      date: '2026-07-31',
+      category: 'Market Intelligence',
+      readTime: '11 min'
+    },
+    {
       slug: 'nvidia-blackwell-liquid-cooling-european-datacenters-2026',
       title: language === 'fr'
         ? "NVIDIA Blackwell Ultra : 200 kW par rack, refroidissement liquide obligatoire — les datacenters européens en sursis"
