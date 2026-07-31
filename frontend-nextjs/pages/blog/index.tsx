@@ -742,6 +742,18 @@ export default function BlogIndexPage() {
               })}
             </div>
 
+            {/* Newsletter CTA */}
+            <div className="mb-6 p-5 bg-[#1E2A3A] rounded-xl text-white">
+              <p className="text-xs text-[#C45A3B] font-semibold uppercase tracking-wider mb-2">Newsletter</p>
+              <h3 className="font-serif text-lg mb-2">FINXIA Capital Insights</h3>
+              <p className="text-sm text-slate-300 mb-4">
+                Analyses mensuelles sur les datacenters IA, l'investissement alternatif et la réglementation européenne.
+              </p>
+              <a href="/newsletter/" className="inline-flex items-center gap-2 px-4 py-2 bg-[#C45A3B] text-white rounded-lg text-sm font-medium hover:bg-[#a84a2f] transition-colors">
+                S'inscrire
+              </a>
+            </div>
+
             {/* RIGHT COLUMN — News Sidebar (1/3, sticky) */}
             <div className="lg:col-span-1 order-1 lg:order-2">
               <div className="lg:sticky lg:top-28">
