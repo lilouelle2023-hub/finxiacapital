@@ -10,8 +10,8 @@ export default function ArticleEnergyConsumptionPage() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "L\'IA pousse la consommation électrique des datacenters à 1 050 TWh d\'ici 2030 — qui paiera la facture ?",
-    "description": "Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d\'ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation.",
+    "headline": "L'IA pousse la consommation électrique des datacenters à 1 050 TWh d'ici 2030 — qui paiera la facture ?",
+    "description": "Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d'ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation.",
     "image": "https://finxiacapital.com/images/finxia-podcast-cover.png",
     "datePublished": "2026-07-30T09:00:00+01:00",
     "dateModified": "2026-07-30T09:00:00+01:00",
@@ -43,8 +43,8 @@ export default function ArticleEnergyConsumptionPage() {
   return (
     <div className="pt-20 min-h-screen bg-white">
       <SEO
-        title="L\'IA pousse la consommation électrique des datacenters à 1 050 TWh d\'ici 2030"
-        description="Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d\'ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation."
+        title="L'IA pousse la consommation électrique des datacenters à 1 050 TWh d'ici 2030"
+        description="Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d'ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation."
         canonical="https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche/"
         keywords="consommation électrique datacenter IA, marché énergie datacenter 2030, investissement datacenter Europe"
         structuredData={articleSchema}
@@ -63,7 +63,7 @@ export default function ArticleEnergyConsumptionPage() {
             <span>9 min de lecture</span>
           </div>
           <h1 className="font-serif text-3xl md:text-4xl text-slate-900 mb-4 leading-tight">
-            L\'IA pousse la consommation électrique des datacenters à 1 050 TWh d\'ici 2030 — qui paiera la facture ?
+            L'IA pousse la consommation électrique des datacenters à 1 050 TWh d'ici 2030 — qui paiera la facture ?
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-6">
             Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ (2025) 
@@ -91,19 +91,19 @@ export default function ArticleEnergyConsumptionPage() {
               <div>
                 <p className="font-semibold text-red-900 mb-1">Le choc quantitatif</p>
                 <p className="text-red-800">
-                  <strong>1 050 TWh d\'ici 2030</strong> = consommation électrique du Japon entier. 
-                  Les datacenters passeront de 1,5% à <strong>4-8% de la consommation mondiale</strong> d\'ici 2030.
+                  <strong>1 050 TWh d'ici 2030</strong> = consommation électrique du Japon entier. 
+                  Les datacenters passeront de 1,5% à <strong>4-8% de la consommation mondiale</strong> d'ici 2030.
                 </p>
               </div>
             </div>
           </div>
 
-          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">L\'investisseur : un marché de 70 Md$ en croissance de 19% par an</h2>
+          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">L'investisseur : un marché de 70 Md$ en croissance de 19% par an</h2>
 
           <p>
             Le marché de la consommation électrique des datacenters IA affiche un 
-            <strong>CAGR de 18,9%</strong> (2026-2035). C\'est l\'un des segments de croissance 
-            les plus rapides de l\'économie mondiale — supérieur aux énergies renouvelables 
+            <strong>CAGR de 18,9%</strong> (2026-2035). C'est l'un des segments de croissance 
+            les plus rapides de l'économie mondiale — supérieur aux énergies renouvelables 
             (12%), au cloud computing (15%), et au e-commerce (9%).
           </p>
 
@@ -132,9 +132,9 @@ export default function ArticleEnergyConsumptionPage() {
               déjà disponible captent la prime de demande. Rendement cible 12-15% IRR.
             </li>
             <li>
-              <strong>Producteurs d\'énergie dédiés</strong> : les utilities qui signent des 
+              <strong>Producteurs d'énergie dédiés</strong> : les utilities qui signent des 
               PPAs long terme avec les hyperscalers (Constellation Energy, Vattenfall, EDF) 
-              bénéficient d\'un flux de revenus stable sur 15-20 ans.
+              bénéficient d'un flux de revenus stable sur 15-20 ans.
             </li>
             <li>
               <strong>Équipementiers électriques</strong> : les fabricants de transformateurs, 
@@ -143,11 +143,11 @@ export default function ArticleEnergyConsumptionPage() {
             </li>
           </ol>
 
-          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">L\'utilisateur : préparez-vous à une hausse de 20 à 40% de votre facture cloud</h2>
+          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">L'utilisateur : préparez-vous à une hausse de 20 à 40% de votre facture cloud</h2>
 
           <p>
             La pénurie de capacité électrique ne touche pas que les investisseurs. Les entreprises 
-            qui consomment du cloud — c\'est-à-dire <strong>toutes les entreprises</strong> — vont 
+            qui consomment du cloud — c'est-à-dire <strong>toutes les entreprises</strong> — vont 
             subir une hausse structurelle des coûts.
           </p>
 
@@ -182,18 +182,18 @@ export default function ArticleEnergyConsumptionPage() {
             inférieur de 30 à 50% à celui des hubs contraints dans 2 ans.
           </p>
 
-          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">La régulation : l\'arme à double tranchant</h2>
+          <h2 className="font-serif text-2xl text-slate-900 mt-10 mb-4">La régulation : l'arme à double tranchant</h2>
 
           <p>
-            La directive EED impose un PUE &lt; 1,2 d\'ici 2030. L\'Irlande a déjà un moratoire 
-            sur les datacenters jusqu\'en 2028. L\'Amsterdam limite les nouvelles constructions. 
+            La directive EED impose un PUE &lt; 1,2 d'ici 2030. L'Irlande a déjà un moratoire 
+            sur les datacenters jusqu'en 2028. L'Amsterdam limite les nouvelles constructions. 
             Ces régulations créent deux effets :
           </p>
 
           <ul className="list-disc pl-6 space-y-2 my-4">
             <li>
               <strong>Effet restriction</strong> : moins de nouvelle capacité = hausse des prix 
-              de l\'existant. Bon pour les investisseurs en place, mauvais pour les nouveaux entrants.
+              de l'existant. Bon pour les investisseurs en place, mauvais pour les nouveaux entrants.
             </li>
             <li>
               <strong>Effet redirection</strong> : les investissements fuient vers les marchés 
@@ -222,7 +222,7 @@ export default function ArticleEnergyConsumptionPage() {
             comment nous protégeons les investisseurs et les utilisateurs contre la volatilité des prix.
           </p>
           <Link href="/investors/" className="btn-primary inline-flex items-center gap-2">
-            Contacter l\'équipe
+            Contacter l'équipe
           </Link>
         </div>
 
