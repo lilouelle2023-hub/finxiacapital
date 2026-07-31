@@ -79,7 +79,7 @@ export default function Footer() {
             <h4 className="font-serif text-lg mb-4">Contact</h4>
             <div className="space-y-3">
               <a
-                href="mailto:contact@finxiacapital.com"
+                href="/newsletter/" className="text-slate-400 hover:text-white transition-colors text-sm flex items-center gap-2 mb-2">📧 Newsletter</a><a href="mailto:contact@finxiacapital.com"
                 className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm"
               >
                 <Mail className="w-4 h-4" />
