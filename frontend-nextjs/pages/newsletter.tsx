@@ -1,24 +1,26 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { ArrowLeft, Mail, CheckCircle, Zap, BookOpen, BarChart3 } from 'lucide-react';
+import { ArrowLeft, Mail, CheckCircle, Zap, BookOpen, BarChart3, Headphones } from 'lucide-react';
 import SEO from '@/components/SEO';
 
 export default function NewsletterPage() {
   const { language } = useLanguage();
-  const [email, setEmail] = useState('');
-  const [consent, setConsent] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState('');
 
   const content = {
     fr: {
       title: 'Newsletter FINXIA Capital',
       subtitle: 'Analyses exclusives sur les datacenters IA, l\'investissement alternatif et la réglementation européenne.',
+      podcastSubtitle: 'Ou écoutez nos analyses en podcast — Finxia Capital Insights.',
       back: 'Retour',
       emailLabel: 'Adresse email professionnelle',
       emailPlaceholder: 'votre.email@entreprise.com',
-      consentLabel: 'J\'accepte de recevoir la newsletter de FINXIA Capital et j\'ai lu la politique de confidentialité.',
+      firstNameLabel: 'Prénom',
+      lastNameLabel: 'Nom',
+      companyLabel: 'Entreprise',
+      roleLabel: 'Fonction',
+      consentLabel: 'J\'accepte de recevoir la newsletter de FINXIA Capital et j\'ai lu la',
       submit: 'S\'inscrire',
       submitting: 'Inscription...',
       successTitle: 'Inscription confirmée',
@@ -30,15 +32,24 @@ export default function NewsletterPage() {
       ],
       frequency: 'Fréquence : 1 à 2 emails par mois. Désinscription à tout moment.',
       privacyLink: '/privacy-policy/',
-      privacyText: 'Politique de confidentialité'
+      privacyText: 'politique de confidentialité',
+      podcastCta: 'Écouter le podcast',
+      investorProfile: 'Profil investisseur',
+      userProfile: 'Profil utilisateur',
+      bothProfiles: 'Les deux'
     },
     en: {
       title: 'FINXIA Capital Newsletter',
       subtitle: 'Exclusive analysis on AI datacenters, alternative investment and European regulation.',
+      podcastSubtitle: 'Or listen to our analysis on podcast — Finxia Capital Insights.',
       back: 'Back',
       emailLabel: 'Professional email address',
       emailPlaceholder: 'your.email@company.com',
-      consentLabel: 'I agree to receive FINXIA Capital\'s newsletter and have read the privacy policy.',
+      firstNameLabel: 'First name',
+      lastNameLabel: 'Last name',
+      companyLabel: 'Company',
+      roleLabel: 'Role',
+      consentLabel: 'I agree to receive FINXIA Capital\'s newsletter and have read the',
       submit: 'Subscribe',
       submitting: 'Subscribing...',
       successTitle: 'Subscription Confirmed',
@@ -50,28 +61,15 @@ export default function NewsletterPage() {
       ],
       frequency: 'Frequency: 1-2 emails per month. Unsubscribe at any time.',
       privacyLink: '/privacy-policy/',
-      privacyText: 'Privacy Policy'
+      privacyText: 'privacy policy',
+      podcastCta: 'Listen to podcast',
+      investorProfile: 'Investor profile',
+      userProfile: 'User profile',
+      bothProfiles: 'Both'
     }
   };
 
   const t = content[language];
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setError('');
-    
-    if (!email || !email.includes('@')) {
-      setError(language === 'fr' ? 'Veuillez saisir une adresse email valide.' : 'Please enter a valid email address.');
-      return;
-    }
-    if (!consent) {
-      setError(language === 'fr' ? 'Veuillez accepter la politique de confidentialité.' : 'Please accept the privacy policy.');
-      return;
-    }
-    
-    // Simulate submission — in production, connect to Netlify Forms, Mailchimp, Brevo, etc.
-    setSubmitted(true);
-  };
 
   return (
     <div className="pt-20 min-h-screen bg-white">
@@ -88,7 +86,12 @@ export default function NewsletterPage() {
         </Link>
         
         <h1 className="font-serif text-3xl md:text-4xl mb-4">{t.title}</h1>
-        <p className="text-slate-600 text-lg mb-12">{t.subtitle}</p>
+        <p className="text-slate-600 text-lg mb-4">{t.subtitle}</p>
+        <p className="text-slate-500 text-sm mb-8 flex items-center gap-2">
+          <Headphones className="w-4 h-4" />
+          {t.podcastSubtitle}{' '}
+          <Link href="/podcast/" className="text-[#C45A3B] hover:underline">{t.podcastCta}</Link>
+        </p>
 
         {/* Benefits */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -108,8 +111,43 @@ export default function NewsletterPage() {
             <p className="text-slate-600">{t.successText}</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="bg-slate-50 p-8 rounded-lg">
-            <div className="mb-6">
+          <form 
+            name="newsletter-subscription" 
+            method="POST" 
+            data-netlify="true"
+            action="/newsletter/?success=true"
+            className="bg-slate-50 p-8 rounded-lg"
+          >
+            <input type="hidden" name="form-name" value="newsletter-subscription" />
+            
+            <div className="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">
+                  {t.firstNameLabel}
+                </label>
+                <input
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C45A3B] focus:border-transparent"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-2">
+                  {t.lastNameLabel}
+                </label>
+                <input
+                  id="lastName"
+                  name="lastName"
+                  type="text"
+                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C45A3B] focus:border-transparent"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="mb-4">
               <label htmlFor="newsletter-email" className="block text-sm font-medium text-slate-700 mb-2">
                 {t.emailLabel}
               </label>
@@ -117,13 +155,57 @@ export default function NewsletterPage() {
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                 <input
                   id="newsletter-email"
+                  name="email"
                   type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                   placeholder={t.emailPlaceholder}
                   className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C45A3B] focus:border-transparent"
                   required
                 />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-2">
+                  {t.companyLabel}
+                </label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C45A3B] focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label htmlFor="role" className="block text-sm font-medium text-slate-700 mb-2">
+                  {t.roleLabel}
+                </label>
+                <input
+                  id="role"
+                  name="role"
+                  type="text"
+                  className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-[#C45A3B] focus:border-transparent"
+                />
+              </div>
+            </div>
+
+            <div className="mb-4">
+              <label className="block text-sm font-medium text-slate-700 mb-2">
+                {language === 'fr' ? 'Votre profil' : 'Your profile'}
+              </label>
+              <div className="flex gap-4">
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="profile" value="investor" className="text-[#C45A3B]" />
+                  <span className="text-sm text-slate-600">{t.investorProfile}</span>
+                </label>
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="profile" value="user" className="text-[#C45A3B]" />
+                  <span className="text-sm text-slate-600">{t.userProfile}</span>
+                </label>
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input type="radio" name="profile" value="both" defaultChecked className="text-[#C45A3B]" />
+                  <span className="text-sm text-slate-600">{t.bothProfiles}</span>
+                </label>
               </div>
             </div>
             
@@ -131,8 +213,8 @@ export default function NewsletterPage() {
               <label className="flex items-start gap-3 cursor-pointer">
                 <input
                   type="checkbox"
-                  checked={consent}
-                  onChange={(e) => setConsent(e.target.checked)}
+                  name="consent"
+                  required
                   className="mt-1 w-4 h-4 text-[#C45A3B] rounded border-slate-300"
                 />
                 <span className="text-sm text-slate-600">
@@ -143,8 +225,6 @@ export default function NewsletterPage() {
                 </span>
               </label>
             </div>
-            
-            {error && <p className="text-red-600 text-sm mb-4">{error}</p>}
             
             <button
               type="submit"
