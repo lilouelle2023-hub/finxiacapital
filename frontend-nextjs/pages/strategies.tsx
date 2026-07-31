@@ -31,7 +31,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Financement : capital propre + dette senior amortissante + Green Bond ESG ICMA conditionné aux objectifs PUE' : 'Financing: own equity + senior amortizing debt + ICMA ESG Green Bond conditioned on PUE targets',
       ],
       markets: language === 'fr' ? 'France · Espagne · Italie · Europe du Nord' : 'France · Spain · Italy · Northern Europe',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80&fm=webp',
     },
     {
       id: 'hospitality-premium',
@@ -54,7 +54,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Marché : RevPAR européen premium +8,2% vs 2019, 60% des transactions &gt;50M€ concentrées à Paris/Barcelone/Madrid' : 'Market: European premium RevPAR +8.2% vs 2019, 60% of transactions &gt;€50M concentrated in Paris/Barcelona/Madrid',
       ],
       markets: 'Paris · Barcelone · Madrid · Milan',
-      image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80&fm=webp',
     },
     {
       id: 'residential-flex',
@@ -77,7 +77,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Rendement cible : IRR 10-13% via création de valeur opérationnelle et effet de portefeuille' : 'Target return: IRR 10-13% through operational value creation and portfolio effect',
       ],
       markets: language === 'fr' ? 'Grandes Métropoles Européennes' : 'Major European Metropolises',
-      image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80&fm=webp',
     },
     {
       id: 'capital-opportunities',
@@ -98,7 +98,7 @@ export default function StrategiesPage() {
         language === 'fr' ? 'Discipline : taux de conversion &lt;5%, conviction maximale, ticket moyen 2-10M€' : 'Discipline: &lt;5% conversion rate, maximum conviction, average ticket €2-10M',
       ],
       markets: 'Late-Stage · Secondaires · Special Situations',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80&fm=webp',
     },
   ];
 
@@ -617,6 +617,9 @@ export default function StrategiesPage() {
                       src={strategy.image}
                       alt={strategy.title}
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      width={800}
+                      height={600}
                     />
                   </div>
                 </div>
