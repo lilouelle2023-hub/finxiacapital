@@ -67,10 +67,6 @@ export default function Navigation() {
               alt="FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg"
               className="h-14 md:h-16 w-auto"
             />
-              src="/logo-finxia.png"
-              alt="FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg"
-              className="h-14 md:h-16 w-auto"
-            />
           </Link>
 
           {/* Desktop Navigation */}
