@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>FINXIA Capital — Blog</title>
+    <link>https://finxiacapital.com/blog/</link>
+    <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
+    <language>fr-FR</language>
+    <lastBuildDate>Sat, 01 Aug 2026 09:34:41 GMT</lastBuildDate>
+    <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://finxiacapital.com/logo-finxia.png</url>
+      <title>FINXIA Capital</title>
+      <link>https://finxiacapital.com/</link>
+    </image>
+    <item>
+      <title>Les datacenters modulaires : le coup d&apos;accélération de Schneider Electric et la révolution de l&apos;edge computing</title>
+      <link>https://finxiacapital.com/blog/datacenters-modulaires-schneider-electric-edge-computing/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/datacenters-modulaires-schneider-electric-edge-computing/</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Schneider Electric investit 1,5 milliard d&apos;euros dans les datacenters modulaires. Mais pourquoi cette architecture est-elle le futur de l&apos;infrastructure IA ?</description>
+      <category>Digital Infrastructure</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/modular-datacenters-schneider-electric-edge-computing/" />
+      
+    </item>
+    <item>
+      <title>GPU et puissance électrique : la France peut-elle alimenter l&apos;IA générative ?</title>
+      <link>https://finxiacapital.com/blog/gpu-puissance-electrique-france-ia-generative/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/gpu-puissance-electrique-france-ia-generative/</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <description>NVIDIA livre 100 000 H100 par trimestre. Chaque GPU consomme 700W. La France a 18 GW de demande datacenter en file d&apos;attente. Qui obtiendra le raccordement ?</description>
+      <category>Energy &amp; Infrastructure</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/gpu-electrical-power-france-generative-ai/" />
+      
+    </item>
+    <item>
+      <title>TITAN DC AI : comment FINXIA Capital structure l&apos;investissement en datacenter intelligence artificielle</title>
+      <link>https://finxiacapital.com/blog/titan-dc-ai-strategie-investissement-finxia-capital/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/titan-dc-ai-strategie-investissement-finxia-capital/</guid>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <description>FINXIA Capital déploie la stratégie TITAN DC AI — une approche institutionnelle sur les actifs réels de l&apos;infrastructure IA. Découvrez la méthode.</description>
+      <category>Investment Strategy</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/titan-dc-ai-investment-strategy-finxia-capital/" />
+      
+    </item>
+    <item>
+      <title>Anthropic, Mistral et l&apos;IA française : qui alimente vraiment les datacenters européens ?</title>
+      <link>https://finxiacapital.com/blog/anthropic-mistral-ia-francaise-datacenters-europe/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/anthropic-mistral-ia-francaise-datacenters-europe/</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Anthropic lève 3,5 milliards de dollars, Mistral devient la licorne française de l&apos;IA. Mais derrière ces modèles linguistiques, une question stratégique : où sont hébergés les datacenters qui les font tourner ?</description>
+      <category>Digital Infrastructure</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/anthropic-mistral-french-ai-european-datacenters/" />
+      
+    </item>
+    <item>
+      <title>Les clouds chinois en Europe : une menace ou une opportunité pour les investisseurs ?</title>
+      <link>https://finxiacapital.com/blog/clouds-chinois-europe-datacenter-investissement/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/clouds-chinois-europe-datacenter-investissement/</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Alibaba Cloud, Huawei Cloud, Tencent Cloud — les géants chinois investissent massivement en Europe. Mais leurs datacenters posent une question de souveraineté que les investisseurs ne peuvent plus ignorer.</description>
+      <category>Digital Infrastructure</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/chinese-clouds-europe-datacenter-investment/" />
+      
+    </item>
+    <item>
+      <title>Néoclouds vs hyperscalers : qui construit l&apos;avenir du cloud européen ?</title>
+      <link>https://finxiacapital.com/blog/neoclouds-vs-hyperscalers-europe/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/neoclouds-vs-hyperscalers-europe/</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <description>OVHcloud, Scaleway, STACKIT, IONOS — les néoclouds européens défient AWS, Azure et Google. Mais peuvent-ils vraiment rivaliser ? Analyse des investissements et des stratégies.</description>
+      <category>Market Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/neoclouds-vs-hyperscalers-europe/" />
+      
+    </item>
+    <item>
+      <title>Cloud souverain français : Stackit, OVHcloud et la bataille contre AWS et Azure</title>
+      <link>https://finxiacapital.com/blog/cloud-souverain-france-stackit-ovh-aws-azure/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/cloud-souverain-france-stackit-ovh-aws-azure/</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Stackit, OVHcloud, Scaleway — les clouds souverains français défient les hyperscalers américains. Mais peuvent-ils vraiment rivaliser sans une infrastructure physique de rupture ?</description>
+      <category>Digital Infrastructure</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/french-sovereign-cloud-stackit-ovh-aws-azure/" />
+      
+    </item>
+    <item>
+      <title>Data centers brown-to-green : pourquoi les actifs existants vont battre les greenfields en Europe</title>
+      <link>https://finxiacapital.com/blog/data-centers-brown-to-green-europe-strategie-investissement/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/data-centers-brown-to-green-europe-strategie-investissement/</guid>
+      <pubDate>Mon, 04 May 2026 00:00:00 GMT</pubDate>
+      <description>Face aux délais de raccordement de 4-7 ans, aux coûts greenfield en hausse et aux contraintes PUE imposées par l&apos;EED, les data centers existants mal optimisés représentent la meilleure opportunité d&apos;investissement en Europe.</description>
+      <category>Investment Strategy</category>
+      
+    </item>
+    <item>
+      <title>Data centers IA : l&apos;angle mort énergétique de la stratégie européenne</title>
+      <link>https://finxiacapital.com/blog/data-centers-ia-energie-strategie-europe-2030/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/data-centers-ia-energie-strategie-europe-2030/</guid>
+      <pubDate>Mon, 04 May 2026 00:00:00 GMT</pubDate>
+      <description>L&apos;IA fait exploser la demande électrique des data centers : 415 TWh en 2024, potentiellement 945 TWh en 2030 (IEA). En Irlande, les data centers pèsent déjà 21% de la consommation nationale. Comment l&apos;Europe peut-elle aligner ambitions IA et contraintes réseau ?</description>
+      <category>Digital Infrastructure</category>
+      
+    </item>
+    <item>
+      <title>Lidl, STACKIT et le cloud souverain européen : la souveraineté se joue dans le béton</title>
+      <link>https://finxiacapital.com/blog/stackit-lidl-cloud-souverain-infrastructure-data-centers-europe/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/stackit-lidl-cloud-souverain-infrastructure-data-centers-europe/</guid>
+      <pubDate>Mon, 04 May 2026 00:00:00 GMT</pubDate>
+      <description>STACKIT et Lidl font les gros titres pour le cloud souverain européen. Mais la souveraineté réelle se joue dans les MW, le réseau et l&apos;efficacité énergétique des data centers sous-jacents.</description>
+      <category>Digital Infrastructure</category>
+      
+    </item>
+    <item>
+      <title>Directive EED, secret commercial et PUE : ce que l&apos;Europe ne veut pas voir sur ses data centers</title>
+      <link>https://finxiacapital.com/blog/eed-directive-secret-commercial-pue-datacenters-europe/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/eed-directive-secret-commercial-pue-datacenters-europe/</guid>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <description>L&apos;Article 12 EED impose un reporting annuel aux data centers UE dès 500 kW. Mais la transparence reste partielle et crée un marché à deux vitesses dont les investisseurs spécialisés peuvent tirer parti.</description>
+      <category>Regulatory Compliance</category>
+      
+    </item>
+    <item>
+      <title>Loi PINM : ce que le statut de Projet d&apos;Intérêt National Majeur change pour les datacenters B2G</title>
+      <link>https://finxiacapital.com/blog/loi-pinm-statut-datacenter-brown-to-green/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/loi-pinm-statut-datacenter-brown-to-green/</guid>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Le 14 avril 2026, l&apos;Assemblée nationale adopte la loi PINM. Analyse de l&apos;avantage structurel brown-to-green pour les datacenters européens.</description>
+      <category>TITAN Strategy</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/pinm-law-datacenter-brown-to-green-status/" />
+      
+    </item>
+    <item>
+      <title>TITAN DC AI : La Transformation des Datacenters Européens Legacy</title>
+      <link>https://finxiacapital.com/blog/titan-dc-ai-strategie-datacenters-europeens-finxia/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/titan-dc-ai-strategie-datacenters-europeens-finxia/</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+      <description>La stratégie d&apos;investissement de FINXIA Capital dédiée à l&apos;acquisition et la transformation des datacenters européens legacy en plateformes haute efficacité pour l&apos;IA.</description>
+      <category>TITAN Strategy</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/titan-dc-ai-european-datacenters-strategy-finxia/" />
+      
+    </item>
+    <item>
+      <title>EED Article 12 : Guide Complet pour la Déclaration Obligatoire avant le 15 Mai 2026</title>
+      <link>https://finxiacapital.com/blog/eed-article-12-declaration-datacenter-guide-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/eed-article-12-declaration-datacenter-guide-2026/</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Le 15 mai 2026 est la première échéance de déclaration obligatoire imposée par l&apos;EED Article 12. Guide complet pour les opérateurs de datacenters.</description>
+      <category>Regulatory Compliance</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/eed-article-12-datacenter-declaration-guide-2026/" />
+      
+    </item>
+    <item>
+      <title>Optimisation PUE dans les Datacenters Européens : Guide 2026</title>
+      <link>https://finxiacapital.com/blog/pue-optimisation-datacenters-europeens-guide-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/pue-optimisation-datacenters-europeens-guide-2026/</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Le PUE est devenu l&apos;indicateur de performance le plus scruté de l&apos;industrie des datacenters. Guide complet d&apos;optimisation et de certification IPMVP.</description>
+      <category>Technical Guide</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/pue-optimization-european-datacenters-guide-2026/" />
+      
+    </item>
+    <item>
+      <title>SCSp Luxembourgeoise vs RAIF : Quel Véhicule pour les Actifs Alternatifs ?</title>
+      <link>https://finxiacapital.com/blog/scsp-vs-raif-vehicule-investissement-luxembourgeois/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/scsp-vs-raif-vehicule-investissement-luxembourgeois/</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+      <description>FINXIA Capital est structurée en SCSp luxembourgeoise, et non en RAIF. Cette distinction reflète des choix stratégiques précis en matière de gouvernance.</description>
+      <category>Structure &amp; Governance</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/luxembourg-scsp-vs-raif-investment-vehicle/" />
+      
+    </item>
+    <item>
+      <title>La prochaine crise énergétique de l&apos;IA se joue dans les datacenters européens</title>
+      <link>https://finxiacapital.com/blog/crise-energetique-datacenters-ia-europe/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/crise-energetique-datacenters-ia-europe/</guid>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate>
+      <description>L&apos;intelligence artificielle a un problème que personne ne veut regarder en face : elle consomme une quantité d&apos;énergie que l&apos;infrastructure existante ne peut pas absorber.</description>
+      <category>TITAN Strategy</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/ai-energy-crisis-european-datacenters/" />
+      
+    </item>
+    <item>
+      <title>Gérer un fonds alternatif avec 18 agents IA : ce que ça change vraiment</title>
+      <link>https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/</guid>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate>
+      <description>La gestion d&apos;actifs alternatifs a un problème de latence. Entre le signal et la décision, il se passe des semaines. L&apos;architecture AI-native change la donne.</description>
+      <category>AI-Native</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/managing-alternative-fund-18-ai-agents/" />
+      
+    </item>
+    <item>
+      <title>Datacenters en Europe : pourquoi 2026 est l&apos;année où les investisseurs en retard paieront le prix fort</title>
+      <link>https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/</guid>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Il y a deux ans, un investisseur qui regardait les datacenters européens voyait un marché de niche. Aujourd&apos;hui, il voit l&apos;un des marchés les plus disputés d&apos;Europe.</description>
+      <category>Market Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/european-datacenters-2026-investor-opportunity/" />
+      
+    </item>
+    <item>
+      <title>Pourquoi l&apos;Europe risque de perdre la bataille de l&apos;IA par manque de raccordements électriques</title>
+      <link>https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/</guid>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <description>67% des opérateurs européens citent l&apos;accès à l&apos;électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d&apos;étranglement structurel crée une prime de rareté sur les actifs déjà raccordés.</description>
+      <category>Investment Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/grid-connection-datacenter-europe-investment/" />
+      
+    </item>
+    <item>
+      <title>800V DC, refroidissement liquide, SMR : les 3 technologies qui redessinent le datacenter IA en 2026</title>
+      <link>https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr/</guid>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+      <description>NVIDIA Blackwell impose 132 kW par rack. 67% des nouvelles capacités IA passent au refroidissement liquide. Ce que les investisseurs doivent savoir sur le reshape technologique du secteur.</description>
+      <category>Technology</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/datacenter-technologies-2026-800v-liquid-smr/" />
+      
+    </item>
+    <item>
+      <title>L&apos;IA pousse la consommation électrique des datacenters à 1 050 TWh d&apos;ici 2030 — qui paiera la facture ?</title>
+      <link>https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche/</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d&apos;ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation.</description>
+      <category>Economic Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/electricity-consumption-datacenter-ai-2030-market/" />
+      
+    </item>
+    <item>
+      <title>Néoclouds, AI Factories et souveraineté numérique : la nouvelle carte des investissements datacenter en Europe</title>
+      <link>https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe/</guid>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Cerebras déploie 200 MW. Ferrovial investit 1 Md€ à Madrid. 50% de la capacité européenne pourrait être hors FLAP-D d&apos;ici 2035. Où investir en 2026 ?</description>
+      <category>Market Intelligence</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/neoclouds-ai-factories-investment-map-europe/" />
+      
+    </item>
+  </channel>
+</rss>

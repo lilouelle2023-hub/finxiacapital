@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "next dev -p 3001",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
-    "prebuild": "node scripts/generate-sitemap.mjs",
+    "prebuild": "node scripts/generate-sitemap.mjs && node scripts/generate-rss.mjs",
     "build": "next build",
     "start": "next start -p 3001",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate:rss": "node scripts/generate-rss.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",

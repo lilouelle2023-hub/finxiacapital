@@ -6,7 +6,7 @@ const ORGANIZATION_SCHEMA = {
   "name": "FINXIA Capital",
   "legalName": "FINXIA Capital S.à r.l.",
   "url": "https://finxiacapital.com",
-  "logo": "https://finxiacapital.com/logo-finxia.png",
+  "logo": "https://finxiacapital.com/logo-finxia.svg",
   "sameAs": [
     "https://linkedin.com/company/finxiacapital"
   ],

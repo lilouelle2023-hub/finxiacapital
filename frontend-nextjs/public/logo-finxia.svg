@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <defs>
+    <style>
+      .arc-outer { fill: #D3543B; }
+      .arc-inner { fill: #D3543B; }
+      .text-finxia { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 42px; fill: #2C3E50; }
+      .text-capital { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 400; font-size: 24px; fill: #2C3E50; letter-spacing: 4px; }
+    </style>
+  </defs>
+  
+  <!-- Outer arc -->
+  <path class="arc-outer" d="M 40 140 Q 200 -20 360 140 L 340 140 Q 200 0 60 140 Z"/>
+  
+  <!-- Inner arc -->
+  <path class="arc-inner" d="M 80 140 Q 200 20 320 140 L 300 140 Q 200 40 100 140 Z"/>
+  
+  <!-- FINXIA text -->
+  <text x="200" y="185" text-anchor="middle" class="text-finxia">FINXIA</text>
+  
+  <!-- CAPITAL text -->
+  <text x="200" y="215" text-anchor="middle" class="text-capital">CAPITAL</text>
+</svg>
