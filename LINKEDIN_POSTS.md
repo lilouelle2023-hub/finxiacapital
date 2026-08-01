@@ -1,0 +1,79 @@
+# Posts LinkedIn FINXIA Capital — Prêts à publier
+
+## Post 1 : TITAN DC AI — L'angle investisseur
+
+**Accroche :**
+L'IA générative consomme déjà 415 TWh par an. D'ici 2030 : 1 050 TWh.
+
+C'est l'équivalent de la consommation totale de l'Inde.
+
+**Corps :**
+Mais voici ce que personne ne dit : 67% des opérateurs européens citent l'accès à l'électricité comme leur défi numéro 1.
+
+Pas les GPU. Pas les modèles. L'électricité.
+
+Ce goulot d'étranglement crée une prime de rareté sur les datacenters déjà raccordés. C'est exactement là que FINXIA Capital positionne sa stratégie TITAN DC AI — acquisition et transformation brown-to-green d'actifs existants en Europe.
+
+Pas de greenfield. Pas d'attente de 7 ans pour un raccordement RTE.
+Des actifs qui existent, qui tournent, et qu'on optimise.
+
+→ Article complet : https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/
+
+**Hashtags :** #Datacenter #IA #Investissement #Infrastructure #GreenBond #ESG #Europe #TITANDCAI
+
+---
+
+## Post 2 : 800V DC, refroidissement liquide, SMR — Les 3 technologies 2026
+
+**Accroche :**
+NVIDIA Blackwell impose 132 kW par rack.
+
+Votre datacenter actuel ne peut pas absorber ça.
+
+**Corps :**
+3 technologies redessinent le secteur en 2026 :
+
+1. **800V DC** — Réduit les pertes de conversion de 30%. Schneider Electric et Vertiv déploient déjà.
+
+2. **Refroidissement liquide** — 67% des nouvelles capacités IA y passent. Immersion, cold plate, deux approches, un même objectif : extraire 100+ kW par rack.
+
+3. **SMR (Small Modular Reactors)** — 300 MW par unité, déploiement 3-5 ans. NuScale, Rolls-Royce, EDF en course. La question n'est plus "si" mais "quand".
+
+Pour les investisseurs : ce reshape technologique crée deux catégories d'actifs — ceux qui s'adaptent, et ceux qui deviennent obsolètes.
+
+→ Analyse complète : https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr/
+
+**Hashtags :** #Datacenter #NVIDIA #RefroidissementLiquide #SMR #Investissement #IA #Infrastructure
+
+---
+
+## Post 3 : Néoclouds, AI Factories et la nouvelle carte européenne
+
+**Accroche :**
+Cerebras déploie 200 MW. Ferrovial investit 1 Md€ à Madrid.
+
+L'Europe des datacenters ne se limite plus à Frankfurt, London, Amsterdam, Paris.
+
+**Corps :**
+50% de la capacité européenne pourrait être hors FLAP-D d'ici 2035.
+
+Ce que nous observons chez FINXIA Capital :
+
+• **Néoclouds** (OVHcloud, Scaleway, STACKIT) gagnent du terrain sur les hyperscalers
+• **AI Factories** (Cerebras, Groq) choisissent des sites éloignés pour l'énergie bon marché
+• **Souveraineté numérique** devient un critère de sélection, pas un slogan
+
+L'implication pour les investisseurs : la géographie des opportunités change. Les actifs bien raccordés en zone périphérique valent désormais plus que les greenfields mal situés.
+
+→ Carte complète : https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe/
+
+**Hashtags :** #Neocloud #AIFactory #Datacenter #Investissement #Europe #SouverainetéNumérique #FLAPD
+
+---
+
+## Notes de publication
+
+- **Fréquence recommandée** : 1 post par semaine (mardi ou jeudi, 9h-11h CET)
+- **Format** : Texte + lien article (LinkedIn favorise les liens externes moins qu'avant, mais le contenu de qualité est toujours distribué)
+- **CTA** : Chaque post redirige vers un article de blog complet — boucle de trafic organique
+- **Validation** : Ces posts sont des propositions — à valider/modifier avant publication
