@@ -63,7 +63,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-24">
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/logo-finxia.svg"
+              src="/logo-finxia.png"
               alt="FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg"
               className="h-14 md:h-16 w-auto"
             />
