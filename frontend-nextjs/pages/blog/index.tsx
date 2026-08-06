@@ -787,44 +787,10 @@ export default function BlogIndexPage() {
               })}
             </div>
 
-            {/* Newsletter CTA */}
-            <div className="mb-6 p-5 bg-[#1E2A3A] rounded-xl text-white">
-              <p className="text-xs text-[#C45A3B] font-semibold uppercase tracking-wider mb-2">Newsletter</p>
-              <h3 className="font-serif text-lg mb-2">FINXIA Capital Insights</h3>
-              <p className="text-sm text-slate-300 mb-4">
-                Analyses mensuelles sur les datacenters IA, l'investissement alternatif et la réglementation européenne.
-              </p>
-              <a href="/newsletter/" className="inline-flex items-center gap-2 px-4 py-2 bg-[#C45A3B] text-white rounded-lg text-sm font-medium hover:bg-[#a84a2f] transition-colors">
-                S'inscrire
-              </a>
-            </div>
-
             {/* RIGHT COLUMN — News Sidebar (1/3, sticky) */}
             <div className="lg:col-span-1 order-1 lg:order-2">
               <div className="lg:sticky lg:top-28">
-                {/* Podcast Teaser */}
-                <div className="mb-6 p-4 bg-[#1E2A3A] rounded-xl text-white">
-                  <div className="flex items-center gap-3 mb-3">
-                    <img
-                      src="/images/finxia-podcast-cover.png"
-                      alt="Finxia Capital Insights"
-                      className="w-12 h-12 rounded-lg object-cover"
-                    />
-                    <div>
-                      <p className="text-xs text-[#C45A3B] font-semibold uppercase tracking-wider">Podcast</p>
-                      <p className="text-sm font-medium">Finxia Capital Insights</p>
-                    </div>
-                  </div>
-                  <p className="text-xs text-slate-300 mb-3">
-                    {language === 'fr'
-                      ? "Épisode 1 : L'électricité, le vrai goulot d'étranglement de l'IA en France"
-                      : "Episode 1: Electricity, the Real Bottleneck of AI in France"}
-                  </p>
-                  <Link href="/podcast/" className="text-xs font-medium text-[#C45A3B] hover:text-white transition-colors inline-flex items-center gap-1">
-                    {language === 'fr' ? 'Écouter' : 'Listen'}
-                    <ArrowRight className="w-3 h-3" />
-                  </Link>
-                </div>
+                {/* News Feed — EN HAUT */}
                 <div className="flex items-center gap-3 mb-4">
                   <Zap className="w-5 h-5 text-[#C45A3B]" />
                   <h3 className="font-serif text-xl text-slate-900">
@@ -854,7 +820,7 @@ export default function BlogIndexPage() {
                 </div>
 
                 {/* News items — vertical list */}
-                <div className="space-y-3">
+                <div className="space-y-3 mb-6">
                   {filteredNews.map((item) => (
                     <div
                       key={item.id}
@@ -887,6 +853,30 @@ export default function BlogIndexPage() {
                       </div>
                     </div>
                   ))}
+                </div>
+
+                {/* Podcast Teaser — APRÈS les actualités */}
+                <div className="p-4 bg-[#1E2A3A] rounded-xl text-white">
+                  <div className="flex items-center gap-3 mb-3">
+                    <img
+                      src="/images/finxia-podcast-cover.png"
+                      alt="Finxia Capital Insights"
+                      className="w-12 h-12 rounded-lg object-cover"
+                    />
+                    <div>
+                      <p className="text-xs text-[#C45A3B] font-semibold uppercase tracking-wider">Podcast</p>
+                      <p className="text-sm font-medium">Finxia Capital Insights</p>
+                    </div>
+                  </div>
+                  <p className="text-xs text-slate-300 mb-3">
+                    {language === 'fr'
+                      ? "Épisode 1 : L'électricité, le vrai goulot d'étranglement de l'IA en France"
+                      : "Episode 1: Electricity, the Real Bottleneck of AI in France"}
+                  </p>
+                  <Link href="/podcast/" className="text-xs font-medium text-[#C45A3B] hover:text-white transition-colors inline-flex items-center gap-1">
+                    {language === 'fr' ? 'Écouter' : 'Listen'}
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
               </div>
             </div>
