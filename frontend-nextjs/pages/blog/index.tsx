@@ -10,6 +10,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 24,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-08-05',
+      title: {
+        fr: "Le supercalculateur exascale francais atteint 2 ExaFLOPS — 4 milliards d'euros investis pour la souverainete numerique",
+        en: "French exascale supercomputer reaches 2 ExaFLOPS — 4 billion euros invested for digital sovereignty"
+      },
+      source: 'HPC Wire'
+    },
+    {
+      id: 25,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-08-04',
+      title: {
+        fr: "Google annonce 3 milliards d'euros d'investissement en Pologne — 2 datacenters hyperscale a Varsovie",
+        en: "Google announces 3 billion euros investment in Poland — 2 hyperscale datacenters in Warsaw"
+      },
+      source: 'Bloomberg'
+    },
+    {
+      id: 26,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-08-04',
+      title: {
+        fr: "xAI de Elon Musk deploye 100 000 GPU H100 a Memphis — le plus grand cluster d'entrainement IA au monde",
+        en: "Elon Musk's xAI deploys 100,000 H100 GPUs in Memphis — the world's largest AI training cluster"
+      },
+      source: 'TechCrunch'
+    },
+    {
       id: 20,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
@@ -277,6 +310,18 @@ export default function BlogIndexPage() {
     : newsItems.filter(item => item.topic === activeFilter);
 
   const articles = [
+    {
+      slug: 'hpc-europe-exascale-souverainete-numerique-investissement',
+      title: language === 'fr'
+        ? "HPC et exascale en Europe : l'investissement dans les supercalculateurs comme levier de souverainete numerique"
+        : "HPC and Exascale in Europe: Supercomputing Investment as a Digital Sovereignty Lever",
+      excerpt: language === 'fr'
+        ? "Avec le supercalculateur Jupiter en Allemagne et les projets exascale francais, l'Europe investit massivement dans le HPC. Ces infrastructures strategiques redessinent la carte de la souverainete numerique et ouvrent de nouvelles opportunites pour les investisseurs en datacenter."
+        : "With the Jupiter supercomputer in Germany and French exascale projects, Europe is investing massively in HPC. These strategic infrastructures are reshaping the digital sovereignty map and opening new opportunities for datacenter investors.",
+      date: '2026-08-05',
+      category: 'Digital Infrastructure',
+      readTime: '7 min'
+    },
     {
       slug: 'raccordement-electrique-datacenter-europe-investissement',
       title: language === 'fr'
