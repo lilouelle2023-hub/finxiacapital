@@ -14,8 +14,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="alternate" type="application/rss+xml" title="FINXIA Capital — Blog" href="https://finxiacapital.com/feed.xml" />
       </Head>
-        <meta key="viewport" name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <div className="min-h-screen flex flex-col">
         <Navigation />
         <main className="flex-grow">
