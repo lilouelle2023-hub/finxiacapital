@@ -10,6 +10,40 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 27,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-08-07',
+      title: {
+        fr: "NVIDIA commande 1,2 million de GPU Blackwell pour 2027 — la penurie de puces menace les datacenters europeens",
+        en: "NVIDIA orders 1.2 million Blackwell GPUs for 2027 — chip shortage threatens European datacenters"
+      },
+      source: 'Reuters'
+    },
+    {
+      id: 28,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-08-06',
+      title: {
+        fr: "Atos et Schneider Electric lancent un datacenter modulaire green de 50 MW pour le cloud souverain francais",
+        en: "Atos and Schneider Electric launch a 50 MW green modular datacenter for French sovereign cloud"
+      },
+      source: 'Les Echos'
+    },
+    {
+      id: 29,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-08-06',
+      title: {
+        fr: "L'UE impose la certification energie-carbone pour tous les modeles IA d'ici 2028 — les datacenters en premiere ligne",
+        en: "EU mandates energy-carbon certification for all AI models by 2028 — datacenters on the front line"
+      },
+      source: 'Bloomberg'
+    },
+
+    {
       id: 24,
       topic: 'hpc',
       topicLabel: { fr: 'HPC', en: 'HPC' },
@@ -310,6 +344,19 @@ export default function BlogIndexPage() {
     : newsItems.filter(item => item.topic === activeFilter);
 
   const articles = [
+    {
+      slug: 'edge-computing-modular-datacenter-sovereign-ai-europe-2026',
+      title: language === 'fr'
+        ? "Edge computing et datacenters modulaires : la nouvelle frontiere de l'IA souveraine en Europe"
+        : "Edge Computing and Modular Datacenters: The New Frontier of Sovereign AI in Europe",
+      excerpt: language === 'fr'
+        ? "L'explosion de l'IA generative transforme l'edge computing en infrastructure critique. Les datacenters modulaires green, deployables en 12 semaines, deviennent le pilier de la souverainete numerique europeenne face aux hyperscalers americains."
+        : "The generative AI explosion is transforming edge computing into critical infrastructure. Green modular datacenters, deployable in 12 weeks, are becoming the pillar of European digital sovereignty against American hyperscalers.",
+      date: '2026-08-07',
+      category: 'Digital Infrastructure',
+      readTime: '6 min'
+    },
+
     {
       slug: 'hpc-europe-exascale-souverainete-numerique-investissement',
       title: language === 'fr'
