@@ -91,8 +91,8 @@ export default function PodcastPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://finxiacapital.com" },
-      { "@type": "ListItem", "position": 2, "name": "Podcast", "item": "https://finxiacapital.com/podcast" }
+      { "@type": "ListItem", "position": 1, "name": language === 'fr' ? "Accueil" : "Home", "item": "https://finxiacapital.com" },
+      { "@type": "ListItem", "position": 2, "name": "Podcast", "item": language === 'fr' ? "https://finxiacapital.com/podcast" : "https://finxiacapital.com/en/podcast" }
     ]
   };
 
@@ -103,11 +103,14 @@ export default function PodcastPage() {
         description={language === 'fr'
           ? "Chaque mois, Lila Benhammou décrypte l'infrastructure IA, l'énergie et les actifs réels en Europe. Le podcast de FINXIA Capital."
           : "Every month, Lila Benhammou decodes AI infrastructure, energy and real assets in Europe. The FINXIA Capital podcast."}
-        canonical="https://finxiacapital.com/podcast/"
+        canonical={language === 'fr' ? "https://finxiacapital.com/podcast/" : "https://finxiacapital.com/en/podcast/"}
         keywords="podcast, Finxia Capital, datacenter IA, infrastructure IA, investissement alternatif, Lila Benhammou"
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
+        hreflangFr="https://finxiacapital.com/podcast/"
+        hreflangEn="https://finxiacapital.com/en/podcast/"
+        hreflangDefault="https://finxiacapital.com/podcast/"
       />
 
       {/* Hero */}
