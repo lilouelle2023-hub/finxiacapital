@@ -735,9 +735,6 @@ export default function BlogIndexPage() {
   };
 
   return (
-
-
-  return (
     <div data-testid="blog-index-page" className="pt-20">
       <SEO
         title={language === 'fr' ? "Blog — Recherche & Stratégie" : "Blog — Research & Strategy"}
