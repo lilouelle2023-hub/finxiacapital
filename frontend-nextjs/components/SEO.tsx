@@ -37,7 +37,10 @@ interface SEOProps {
 }
 
 // Clean breadcrumb URLs: ensure trailing slash and correct EN localization
-const cleanBreadcrumbSchema = (schema: any, lang: 'fr' | 'en') => {
+const cleanBreadcrumbSchema = (schema: any, lang: 'fr' | 'en', canonicalUrl?: string) => {
+  // Auto-detect EN from canonical URL when page hardcodes FR
+  const effectiveLang = (lang === 'fr' && canonicalUrl && canonicalUrl.includes('/en/')) ? 'en' : lang;
+  
   if (!schema || !Array.isArray(schema.itemListElement)) return schema;
   
   const cleaned = {
@@ -53,7 +56,7 @@ const cleanBreadcrumbSchema = (schema: any, lang: 'fr' | 'en') => {
       }
       
       // For EN pages, ensure non-home URLs use /en/ prefix
-      if (lang === 'en' && url !== 'https://finxiacapital.com/') {
+      if (effectiveLang === 'en' && url !== 'https://finxiacapital.com/') {
         const path = url.replace('https://finxiacapital.com/', '');
         if (!path.startsWith('en/')) {
           url = 'https://finxiacapital.com/en/' + path;
@@ -171,7 +174,7 @@ export default function SEO({
       {breadcrumbSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(cleanBreadcrumbSchema(breadcrumbSchema, language)) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(cleanBreadcrumbSchema(breadcrumbSchema, language, canonical)) }}
         />
       )}
       
