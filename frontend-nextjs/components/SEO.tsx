@@ -36,6 +36,37 @@ interface SEOProps {
   breadcrumbSchema?: any;
 }
 
+// Clean breadcrumb URLs: ensure trailing slash and correct EN localization
+const cleanBreadcrumbSchema = (schema: any, lang: 'fr' | 'en') => {
+  if (!schema || !Array.isArray(schema.itemListElement)) return schema;
+  
+  const cleaned = {
+    ...schema,
+    itemListElement: schema.itemListElement.map((item: any) => {
+      if (!item.item || typeof item.item !== 'string') return item;
+      
+      let url = item.item;
+      
+      // Ensure trailing slash
+      if (!url.endsWith('/')) {
+        url = url + '/';
+      }
+      
+      // For EN pages, ensure non-home URLs use /en/ prefix
+      if (lang === 'en' && url !== 'https://finxiacapital.com/') {
+        const path = url.replace('https://finxiacapital.com/', '');
+        if (!path.startsWith('en/')) {
+          url = 'https://finxiacapital.com/en/' + path;
+        }
+      }
+      
+      return { ...item, item: url };
+    })
+  };
+  
+  return cleaned;
+};
+
 export default function SEO({ 
   title, 
   description, 
@@ -140,7 +171,7 @@ export default function SEO({
       {breadcrumbSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(cleanBreadcrumbSchema(breadcrumbSchema, language)) }}
         />
       )}
       
