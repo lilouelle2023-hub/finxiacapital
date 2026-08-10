@@ -257,7 +257,7 @@ export default function LilaPage() {
               {/* Contenu */}
               <div className="lg:col-span-3 flex flex-col">
                 <p className="text-slate-400 text-sm font-medium uppercase tracking-wider mb-3">
-                  {language === 'fr' ? 'Enquête · 2026' : 'Investigation · 2026'}
+                  {language === 'fr' ? 'Deuxième livre · 2026' : 'Second book · 2026'}
                 </p>
                 <h3 className="font-serif text-2xl md:text-4xl text-white mb-3 leading-tight">
                   {language === 'fr'
@@ -315,7 +315,6 @@ export default function LilaPage() {
               <div className="md:col-span-8">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="px-3 py-1 bg-white/10 text-slate-300 text-xs font-medium rounded-full">2020</span>
-                  <span className="text-slate-500 text-sm">Wiley / Packt</span>
                 </div>
                 <h3 className="font-serif text-xl md:text-2xl text-white mb-3">
                   RPA, AI, Chatbots: How to Scale with Hyperautomation
