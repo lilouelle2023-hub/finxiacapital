@@ -336,9 +336,11 @@ export default function LilaPage() {
                 </a>
               </div>
               <div className="md:col-span-4 flex justify-end">
-                <div className="w-24 h-32 bg-gradient-to-br from-[#C45A3B]/20 to-[#C45A3B]/5 rounded-lg border border-white/10 flex items-center justify-center">
-                  <BookOpen className="w-10 h-10 text-[#C45A3B]/40" />
-                </div>
+                <img
+                  src="/images/rpa-book-cover.webp"
+                  alt="RPA, AI, Chatbots: How to Scale with Hyperautomation"
+                  className="w-24 h-auto rounded-lg shadow-md border border-white/10"
+                />
               </div>
             </div>
           </div>
