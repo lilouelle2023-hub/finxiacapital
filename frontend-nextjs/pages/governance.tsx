@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumb';
 import { 
   TrendingDown, 
   CreditCard, 
@@ -49,25 +50,11 @@ export default function GovernancePage() {
     },
   ];
 
-  // Breadcrumb Schema
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "https://finxiacapital.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": language === 'fr' ? "Gouvernance & Risques" : "Governance & Risks",
-        "item": "https://finxiacapital.com/governance"
-      }
-    ]
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema(
+    language,
+    'governance',
+    language === 'fr' ? "Gouvernance & Risques" : "Governance & Risks"
+  );
 
   return (
     <div data-testid="governance-page" className="pt-20">
@@ -79,8 +66,8 @@ export default function GovernancePage() {
         canonical="https://finxiacapital.com/governance/"
         keywords="gouvernance fonds alternatif Luxembourg, SCSp gestion risques, Green Bond ESG datacenter, surveillance TITAN DC AI temps réel"
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/governance/"
         hreflangEn="https://finxiacapital.com/en/governance/"
         hreflangDefault="https://finxiacapital.com/governance/"

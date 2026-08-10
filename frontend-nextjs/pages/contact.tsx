@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumb';
 import { MapPin, Mail } from 'lucide-react';
 import SEO from '@/components/SEO';
 
@@ -42,8 +43,8 @@ export default function ContactPage() {
         canonical="https://finxiacapital.com/contact/"
         keywords="contact Finxia Capital Luxembourg, investissement TITAN DC AI, SCSp Luxembourg contact, co-investissement datacenter, Green Bond ESG"
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/contact/"
         hreflangEn="https://finxiacapital.com/en/contact/"
         hreflangDefault="https://finxiacapital.com/contact/"

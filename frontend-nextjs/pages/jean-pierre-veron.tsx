@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumb';
 import { ExternalLink, Calendar, User, Camera, MapPin, Mail, Briefcase } from 'lucide-react';
 import SEO from '@/components/SEO';
 
@@ -7,24 +8,11 @@ export default function PressJPVPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "https://finxiacapital.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": language === 'fr' ? "Presse — Jean-Pierre Véron" : "Press — Jean-Pierre Véron",
-        "item": "https://finxiacapital.com/press/jean-pierre-veron"
-      }
-    ]
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema(
+    language,
+    'jean-pierre-veron',
+    language === 'fr' ? "Jean-Pierre Véron" : "Jean-Pierre Véron"
+  );
 
   const pressArticles = [
     {
@@ -101,11 +89,11 @@ export default function PressJPVPage() {
         description={language === 'fr'
           ? "Jean-Pierre Véron, co-fondateur de Finxia Capital. 40+ ans de track record immobilier institutionnel. ESSEC, Master d'Urbanisme. Fondateur de Financière Rive Gauche, Norev, NRE Partners."
           : "Jean-Pierre Véron, co-founder of Finxia Capital. 40+ years of institutional real estate track record. ESSEC, Urban Planning Master. Founder of Financière Rive Gauche, Norev, NRE Partners."}
-        canonical="https://finxiacapital.com/press/jean-pierre-veron/"
+        canonical="https://finxiacapital.com/jean-pierre-veron/"
         keywords="Jean-Pierre Véron, Finxia Capital, Financière Rive Gauche, Norev, NRE Partners, immobilier institutionnel, ESSEC, FADESA, Binswanger, asset management"
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
       />
 
       {/* Hero Section */}

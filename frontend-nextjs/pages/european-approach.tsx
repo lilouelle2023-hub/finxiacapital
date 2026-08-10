@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumb';
 import { MapPin, Building2, CheckCircle } from 'lucide-react';
 import SEO from '@/components/SEO';
 
@@ -63,8 +64,8 @@ export default function EuropeanApproachPage() {
         canonical="https://finxiacapital.com/european-approach/"
         keywords="investissement alternatif Europe du Sud, France Espagne Italie immobilier, datacenter AI Europe, hôtellerie premium Europe"
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/european-approach/"
         hreflangEn="https://finxiacapital.com/en/european-approach/"
         hreflangDefault="https://finxiacapital.com/european-approach/"

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumb';
 import { ExternalLink, Calendar, User, Camera, MapPin, Mail } from 'lucide-react';
 import SEO from '@/components/SEO';
 
@@ -158,8 +159,8 @@ export default function LilaPage() {
         canonical="https://finxiacapital.com/lila-benhammou/"
         keywords="Lila Benhammou presse, Humans4help, Tech Boost'her, France Travail, Social Builder, IA intelligence artificielle, BFM Business, Bpifrance, podcast IA, hyperautomation"
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/lila-benhammou/"
         hreflangEn="https://finxiacapital.com/en/lila-benhammou/"
         hreflangDefault="https://finxiacapital.com/lila-benhammou/"
