@@ -221,79 +221,124 @@ export default function LilaPage() {
         </div>
       </section>
 
-      {/* Auteure / Author Section */}
-      <section className="py-16 bg-slate-50">
+      {/* Auteure / Author Section — refonte */}
+      <section className="py-20 md:py-28 bg-[#1E2A3A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12">
-            <p className="overline mb-4">{language === 'fr' ? 'Auteure' : 'Author'}</p>
-            <h2 className="font-serif text-3xl md:text-4xl mb-6">
+          {/* Header */}
+          <div className="mb-16">
+            <p className="text-[#C45A3B] font-medium uppercase tracking-wider text-sm mb-4">
+              {language === 'fr' ? 'Auteure' : 'Author'}
+            </p>
+            <h2 className="font-serif text-3xl md:text-5xl text-white mb-6">
               {language === 'fr' ? 'Publications' : 'Publications'}
             </h2>
-            <div className="section-divider mb-8" />
+            <div className="w-24 h-1 bg-[#C45A3B]" />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Livre 1 — RPA, AI, Chatbots */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col">
-              <div className="flex items-center gap-2 mb-4">
-                <BookOpen className="w-5 h-5 text-[#C45A3B]" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#C45A3B]">2020</span>
-              </div>
-              <h3 className="font-serif text-xl mb-3">
-                RPA, AI, Chatbots: How to Scale with Hyperautomation
-              </h3>
-              <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
-                {language === 'fr'
-                  ? "Premier ouvrage de Lila Benhammou, coécrit avec Nandan Nandan et Iaad Ben Dia. Un guide pratique sur le passage à l'échelle de l'automatisation intelligente (RPA, IA, chatbots) en entreprise — né de son expérience opérationnelle chez Humans4Help."
-                  : "Lila Benhammou's first book, co-authored with Nandan Nandan and Iaad Ben Dia. A practical guide on scaling intelligent automation (RPA, AI, chatbots) in business — born from her operational experience at Humans4Help."}
-              </p>
-              <a
-                href="https://www.amazon.com/RPA-AI-Chatbots-scale-Hyperautomation-ebook/dp/B08P8X1MTP"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="inline-flex items-center gap-2 text-[#C45A3B] text-sm font-medium hover:underline"
-              >
-                <ExternalLink className="w-4 h-4" />
-                {language === 'fr' ? 'Voir sur Amazon' : 'View on Amazon'}
-              </a>
-            </div>
-
-            {/* Livre 2 — Power-Bound */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col md:flex-row gap-8">
-              <div className="flex-shrink-0 w-full md:w-48">
-                <img
-                  src={language === 'fr' ? "/images/power-bound-cover-fr.jpg" : "/images/power-bound-cover-en.jpg"}
-                  alt={language === 'fr' ? "Couverture Power-Bound — La guerre du mégawatt" : "Cover Power-Bound — The Megawatt War"}
-                  className="w-full rounded-lg shadow-md"
-                />
-              </div>
-              <div className="flex-1 flex flex-col">
-                <div className="flex items-center gap-2 mb-4">
-                  <BookOpen className="w-5 h-5 text-[#C45A3B]" />
-                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C45A3B]">
-                    {language === 'fr' ? 'À paraître' : 'Coming soon'}
-                  </span>
+          {/* Livre phare — Power-Bound */}
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 mb-12">
+            <div className="grid lg:grid-cols-5 gap-10 items-start">
+              {/* Couverture */}
+              <div className="lg:col-span-2">
+                <div className="relative group">
+                  <img
+                    src={language === 'fr' ? "/images/power-bound-cover-fr.jpg" : "/images/power-bound-cover-en.jpg"}
+                    alt={language === 'fr' ? "Couverture Power-Bound" : "Power-Bound Cover"}
+                    className="w-full max-w-sm mx-auto rounded-lg shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute -top-3 -right-3 md:top-4 md:right-4">
+                    <span className="inline-block px-4 py-2 bg-[#C45A3B] text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-lg">
+                      {language === 'fr' ? 'À paraître' : 'Coming Soon'}
+                    </span>
+                  </div>
                 </div>
-                <h3 className="font-serif text-xl mb-2">
+              </div>
+
+              {/* Contenu */}
+              <div className="lg:col-span-3 flex flex-col">
+                <p className="text-slate-400 text-sm font-medium uppercase tracking-wider mb-3">
+                  {language === 'fr' ? 'Enquête · 2026' : 'Investigation · 2026'}
+                </p>
+                <h3 className="font-serif text-2xl md:text-4xl text-white mb-3 leading-tight">
                   {language === 'fr'
                     ? 'Power-Bound — La guerre du mégawatt'
                     : 'Power-Bound — The Megawatt War'}
                 </h3>
-                <p className="text-slate-500 text-sm mb-4">
+                <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-8">
                   {language === 'fr'
                     ? 'Comment l\'Europe joue son avenir énergétique et numérique face à l\'intelligence artificielle'
                     : 'How Europe Is Gambling Its Energy and Digital Future on Artificial Intelligence'}
                 </p>
-                <blockquote className="border-l-4 border-[#C45A3B] pl-4 italic text-slate-600 text-sm mb-4 flex-1">
-                  {language === 'fr'
-                    ? "La question n'est pas de choisir entre l'IA et l'électricité. Elle est de savoir comment les deux peuvent coexister sans que l'une ne détruise l'autre."
-                    : "The question is not choosing between AI and electricity. It is knowing how the two can coexist without one destroying the other."}
+
+                {/* Thèmes */}
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {[
+                    language === 'fr' ? 'Datacenter AI' : 'AI Datacenter',
+                    language === 'fr' ? 'Géopolitique de l\'énergie' : 'Energy Geopolitics',
+                    language === 'fr' ? 'Europe' : 'Europe',
+                    language === 'fr' ? 'Régulation' : 'Regulation',
+                  ].map((tag) => (
+                    <span key={tag} className="px-3 py-1 bg-white/10 text-slate-300 text-xs rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Citation */}
+                <blockquote className="relative mb-8">
+                  <span className="absolute -top-2 -left-2 text-6xl text-[#C45A3B]/30 font-serif leading-none">"</span>
+                  <p className="relative pl-6 text-slate-200 italic text-lg leading-relaxed border-l-2 border-[#C45A3B]">
+                    {language === 'fr'
+                      ? "La question n'est pas de choisir entre l'IA et l'électricité. Elle est de savoir comment les deux peuvent coexister sans que l'une ne détruise l'autre."
+                      : 'The question is not choosing between AI and electricity. It is knowing how the two can coexist without one destroying the other.'}
+                  </p>
                 </blockquote>
-                <p className="text-xs text-slate-400">
+
+                {/* Méta */}
+                <div className="mt-auto pt-6 border-t border-white/10 flex flex-wrap items-center gap-4 text-sm text-slate-400">
+                  <span className="flex items-center gap-2">
+                    <BookOpen className="w-4 h-4 text-[#C45A3B]" />
+                    {language === 'fr' ? 'Auto-édition' : 'Self-published'}
+                  </span>
+                  <span>·</span>
+                  <span>© 2026 Lila Benhammou</span>
+                  <span>·</span>
+                  <span>{language === 'fr' ? 'Édition bilingue FR / EN' : 'Bilingual FR / EN'}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Livre précédent — RPA */}
+          <div className="border-t border-white/10 pt-12">
+            <div className="grid md:grid-cols-12 gap-8 items-center">
+              <div className="md:col-span-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="px-3 py-1 bg-white/10 text-slate-300 text-xs font-medium rounded-full">2020</span>
+                  <span className="text-slate-500 text-sm">Wiley / Packt</span>
+                </div>
+                <h3 className="font-serif text-xl md:text-2xl text-white mb-3">
+                  RPA, AI, Chatbots: How to Scale with Hyperautomation
+                </h3>
+                <p className="text-slate-400 leading-relaxed mb-4 max-w-2xl">
                   {language === 'fr'
-                    ? 'Auto-édition · © 2026 Lila Benhammou · Édition bilingue FR / EN'
-                    : 'Self-published · © 2026 Lila Benhammou · Bilingual FR / EN edition'}
+                    ? "Premier ouvrage de Lila Benhammou, coécrit avec Nandan Nandan et Iaad Ben Dia. Un guide pratique sur le passage à l'échelle de l'automatisation intelligente en entreprise — né de son expérience opérationnelle chez Humans4Help."
+                    : "Lila Benhammou's first book, co-authored with Nandan Nandan and Iaad Ben Dia. A practical guide on scaling intelligent automation in business — born from her operational experience at Humans4Help."}
                 </p>
+                <a
+                  href="https://www.amazon.com/RPA-AI-Chatbots-scale-Hyperautomation-ebook/dp/B08P8X1MTP"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="inline-flex items-center gap-2 text-[#C45A3B] text-sm font-medium hover:text-white transition-colors"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  {language === 'fr' ? 'Voir sur Amazon' : 'View on Amazon'}
+                </a>
+              </div>
+              <div className="md:col-span-4 flex justify-end">
+                <div className="w-24 h-32 bg-gradient-to-br from-[#C45A3B]/20 to-[#C45A3B]/5 rounded-lg border border-white/10 flex items-center justify-center">
+                  <BookOpen className="w-10 h-10 text-[#C45A3B]/40" />
+                </div>
               </div>
             </div>
           </div>
