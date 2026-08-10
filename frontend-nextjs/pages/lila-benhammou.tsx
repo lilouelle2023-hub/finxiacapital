@@ -1,31 +1,18 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumb';
-import { ExternalLink, Calendar, User, Camera, MapPin, Mail } from 'lucide-react';
+import { ExternalLink, Calendar, User, Camera, MapPin, Mail, BookOpen } from 'lucide-react';
 import SEO from '@/components/SEO';
 
 export default function LilaPage() {
   const context = useLanguage();
   const language = context?.language || 'fr';
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "https://finxiacapital.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": language === 'fr' ? "Lila Benhammou" : "Lila Benhammou",
-        "item": "https://finxiacapital.com/lila-benhammou"
-      }
-    ]
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema(
+    language,
+    'lila-benhammou',
+    'Lila Benhammou'
+  );
 
   const pressArticles = [
     {
@@ -228,6 +215,76 @@ export default function LilaPage() {
                 {language === 'fr'
                   ? 'CIO de FINXIA Capital. Déploiement de la stratégie TITAN DC AI et de son infrastructure opérationnelle. Lead author du livre blanc SSRN sur l\'optimisation énergétique des datacenters européens.'
                   : 'CIO of FINXIA Capital. Deployment of the TITAN DC AI strategy and its operational infrastructure. Lead author of the SSRN white paper on European datacenter energy optimization.'}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Auteure / Author Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <p className="overline mb-4">{language === 'fr' ? 'Auteure' : 'Author'}</p>
+            <h2 className="font-serif text-3xl md:text-4xl mb-6">
+              {language === 'fr' ? 'Publications' : 'Publications'}
+            </h2>
+            <div className="section-divider mb-8" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Livre 1 — RPA, AI, Chatbots */}
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col">
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="w-5 h-5 text-[#C45A3B]" />
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#C45A3B]">2020</span>
+              </div>
+              <h3 className="font-serif text-xl mb-3">
+                RPA, AI, Chatbots: How to Scale with Hyperautomation
+              </h3>
+              <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
+                {language === 'fr'
+                  ? "Premier ouvrage de Lila Benhammou, coécrit avec Nandan Nandan et Iaad Ben Dia. Un guide pratique sur le passage à l'échelle de l'automatisation intelligente (RPA, IA, chatbots) en entreprise — né de son expérience opérationnelle chez Humans4Help."
+                  : "Lila Benhammou's first book, co-authored with Nandan Nandan and Iaad Ben Dia. A practical guide on scaling intelligent automation (RPA, AI, chatbots) in business — born from her operational experience at Humans4Help."}
+              </p>
+              <a
+                href="https://www.amazon.com/RPA-AI-Chatbots-scale-Hyperautomation-ebook/dp/B08P8X1MTP"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="inline-flex items-center gap-2 text-[#C45A3B] text-sm font-medium hover:underline"
+              >
+                <ExternalLink className="w-4 h-4" />
+                {language === 'fr' ? 'Voir sur Amazon' : 'View on Amazon'}
+              </a>
+            </div>
+
+            {/* Livre 2 — Power-Bound */}
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col">
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="w-5 h-5 text-[#C45A3B]" />
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#C45A3B]">
+                  {language === 'fr' ? 'À paraître' : 'Coming soon'}
+                </span>
+              </div>
+              <h3 className="font-serif text-xl mb-2">
+                {language === 'fr'
+                  ? 'Power-Bound — La guerre du mégawatt'
+                  : 'Power-Bound — The Megawatt War'}
+              </h3>
+              <p className="text-slate-500 text-sm mb-4">
+                {language === 'fr'
+                  ? 'Comment l\'Europe joue son avenir énergétique et numérique face à l\'intelligence artificielle'
+                  : 'How Europe Is Gambling Its Energy and Digital Future on Artificial Intelligence'}
+              </p>
+              <blockquote className="border-l-4 border-[#C45A3B] pl-4 italic text-slate-600 text-sm mb-4 flex-1">
+                {language === 'fr'
+                  ? "La question n'est pas de choisir entre l'IA et l'électricité. Elle est de savoir comment les deux peuvent coexister sans que l'une ne détruise l'autre."
+                  : "The question is not choosing between AI and electricity. It is knowing how the two can coexist without one destroying the other."}
+              </blockquote>
+              <p className="text-xs text-slate-400">
+                {language === 'fr'
+                  ? 'Auto-édition · © 2026 Lila Benhammou · Édition bilingue FR / EN'
+                  : 'Self-published · © 2026 Lila Benhammou · Bilingual FR / EN edition'}
               </p>
             </div>
           </div>
