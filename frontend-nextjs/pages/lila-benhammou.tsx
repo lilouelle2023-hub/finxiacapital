@@ -259,33 +259,42 @@ export default function LilaPage() {
             </div>
 
             {/* Livre 2 — Power-Bound */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col">
-              <div className="flex items-center gap-2 mb-4">
-                <BookOpen className="w-5 h-5 text-[#C45A3B]" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#C45A3B]">
-                  {language === 'fr' ? 'À paraître' : 'Coming soon'}
-                </span>
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col md:flex-row gap-8">
+              <div className="flex-shrink-0 w-full md:w-48">
+                <img
+                  src={language === 'fr' ? "/images/power-bound-cover-fr.jpg" : "/images/power-bound-cover-en.jpg"}
+                  alt={language === 'fr' ? "Couverture Power-Bound — La guerre du mégawatt" : "Cover Power-Bound — The Megawatt War"}
+                  className="w-full rounded-lg shadow-md"
+                />
               </div>
-              <h3 className="font-serif text-xl mb-2">
-                {language === 'fr'
-                  ? 'Power-Bound — La guerre du mégawatt'
-                  : 'Power-Bound — The Megawatt War'}
-              </h3>
-              <p className="text-slate-500 text-sm mb-4">
-                {language === 'fr'
-                  ? 'Comment l\'Europe joue son avenir énergétique et numérique face à l\'intelligence artificielle'
-                  : 'How Europe Is Gambling Its Energy and Digital Future on Artificial Intelligence'}
-              </p>
-              <blockquote className="border-l-4 border-[#C45A3B] pl-4 italic text-slate-600 text-sm mb-4 flex-1">
-                {language === 'fr'
-                  ? "La question n'est pas de choisir entre l'IA et l'électricité. Elle est de savoir comment les deux peuvent coexister sans que l'une ne détruise l'autre."
-                  : "The question is not choosing between AI and electricity. It is knowing how the two can coexist without one destroying the other."}
-              </blockquote>
-              <p className="text-xs text-slate-400">
-                {language === 'fr'
-                  ? 'Auto-édition · © 2026 Lila Benhammou · Édition bilingue FR / EN'
-                  : 'Self-published · © 2026 Lila Benhammou · Bilingual FR / EN edition'}
-              </p>
+              <div className="flex-1 flex flex-col">
+                <div className="flex items-center gap-2 mb-4">
+                  <BookOpen className="w-5 h-5 text-[#C45A3B]" />
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#C45A3B]">
+                    {language === 'fr' ? 'À paraître' : 'Coming soon'}
+                  </span>
+                </div>
+                <h3 className="font-serif text-xl mb-2">
+                  {language === 'fr'
+                    ? 'Power-Bound — La guerre du mégawatt'
+                    : 'Power-Bound — The Megawatt War'}
+                </h3>
+                <p className="text-slate-500 text-sm mb-4">
+                  {language === 'fr'
+                    ? 'Comment l\'Europe joue son avenir énergétique et numérique face à l\'intelligence artificielle'
+                    : 'How Europe Is Gambling Its Energy and Digital Future on Artificial Intelligence'}
+                </p>
+                <blockquote className="border-l-4 border-[#C45A3B] pl-4 italic text-slate-600 text-sm mb-4 flex-1">
+                  {language === 'fr'
+                    ? "La question n'est pas de choisir entre l'IA et l'électricité. Elle est de savoir comment les deux peuvent coexister sans que l'une ne détruise l'autre."
+                    : "The question is not choosing between AI and electricity. It is knowing how the two can coexist without one destroying the other."}
+                </blockquote>
+                <p className="text-xs text-slate-400">
+                  {language === 'fr'
+                    ? 'Auto-édition · © 2026 Lila Benhammou · Édition bilingue FR / EN'
+                    : 'Self-published · © 2026 Lila Benhammou · Bilingual FR / EN edition'}
+                </p>
+              </div>
             </div>
           </div>
         </div>
