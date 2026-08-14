@@ -14,6 +14,67 @@ export default function PressJPVPage() {
     language === 'fr' ? "Jean-Pierre Véron" : "Jean-Pierre Véron"
   );
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jean-Pierre Véron",
+    "url": language === 'fr' ? "https://finxiacapital.com/jean-pierre-veron/" : "https://finxiacapital.com/en/jean-pierre-veron/",
+    "image": "https://finxiacapital.com/images/jpv-photo.jpeg",
+    "jobTitle": language === 'fr' ? "Co-Fondateur & Président" : "Co-Founder & Chairman",
+    "description": language === 'fr'
+      ? "Co-fondateur de Finxia Capital, entrepreneur immobilier français avec plus de 40 ans de track record institutionnel. Diplômé ESSEC et Master d'Urbanisme. Fondateur de Financière Rive Gauche, Norev et NRE Partners."
+      : "Co-founder of Finxia Capital, French real estate entrepreneur with 40+ years of institutional track record. ESSEC graduate and Master in Urban Planning. Founder of Financière Rive Gauche, Norev and NRE Partners.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Finxia Capital",
+      "url": "https://finxiacapital.com"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "ESSEC Business School"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/jean-pierre-veron-31ab0499/"
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": language === 'fr' ? "Qui est Jean-Pierre Véron ?" : "Who is Jean-Pierre Véron?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": language === 'fr'
+            ? "Jean-Pierre Véron est co-fondateur et président de Finxia Capital, un véhicule d'investissement propriétaire luxembourgeois (SCSp). Diplômé de l'ESSEC et titulaire d'un Master d'Urbanisme, il compte plus de 40 ans de track record en investissement immobilier institutionnel."
+            : "Jean-Pierre Véron is co-founder and chairman of Finxia Capital, a Luxembourg proprietary investment vehicle (SCSp). An ESSEC graduate with a Master in Urban Planning, he has more than 40 years of track record in institutional real estate investment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": language === 'fr' ? "Quel est le parcours professionnel de Jean-Pierre Véron ?" : "What is Jean-Pierre Véron's professional background?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": language === 'fr'
+            ? "Jean-Pierre Véron a fondé Financière Rive Gauche en 1991, cédée à 70% au groupe espagnol FADESA en 2005, puis créé Financière Norev en 2006. En 2023, il co-fonde Finxia Capital avec Lila Benhammou pour déployer des stratégies institutionnelles en datacenter IA, hôtellerie premium et résidentiel flexible."
+            : "Jean-Pierre Véron founded Financière Rive Gauche in 1991, of which 70% was sold to the Spanish group FADESA in 2005, then created Financière Norev in 2006. In 2023, he co-founded Finxia Capital with Lila Benhammou to deploy institutional strategies in AI datacenter, premium hospitality and flexible residential."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": language === 'fr' ? "Quel est le rôle de Jean-Pierre Véron chez Finxia Capital ?" : "What is Jean-Pierre Véron's role at Finxia Capital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": language === 'fr'
+            ? "Jean-Pierre Véron est co-fondateur et président de Finxia Capital SCSp, aux côtés de Lila Benhammou, Co-Fondatrice et Directrice des Investissements (CIO). Finxia Capital déploie exclusivement son capital propre sur des stratégies d'actifs réels, dont la stratégie phare TITAN DC AI de transformation brown-to-green de datacenters européens."
+            : "Jean-Pierre Véron is co-founder and chairman of Finxia Capital SCSp, alongside Lila Benhammou, Co-Founder and Chief Investment Officer (CIO). Finxia Capital deploys exclusively its own equity capital on real asset strategies, including the flagship TITAN DC AI strategy for brown-to-green transformation of European datacenters."
+        }
+      }
+    ]
+  };
+
   const pressArticles = [
     {
       id: 'businessimmo-frg-norev',
@@ -89,11 +150,16 @@ export default function PressJPVPage() {
         description={language === 'fr'
           ? "Jean-Pierre Véron, co-fondateur de Finxia Capital. 40+ ans de track record immobilier institutionnel. ESSEC, Master d'Urbanisme. Fondateur de Financière Rive Gauche, Norev, NRE Partners."
           : "Jean-Pierre Véron, co-founder of Finxia Capital. 40+ years of institutional real estate track record. ESSEC, Urban Planning Master. Founder of Financière Rive Gauche, Norev, NRE Partners."}
-        canonical="https://finxiacapital.com/jean-pierre-veron/"
+        canonical={language === 'fr' ? "https://finxiacapital.com/jean-pierre-veron/" : "https://finxiacapital.com/en/jean-pierre-veron/"}
         keywords="Jean-Pierre Véron, Finxia Capital, Financière Rive Gauche, Norev, NRE Partners, immobilier institutionnel, ESSEC, FADESA, Binswanger, asset management"
         breadcrumbSchema={breadcrumbSchema}
+        structuredData={personSchema}
+        faqSchema={faqSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
+        hreflangFr="https://finxiacapital.com/jean-pierre-veron/"
+        hreflangEn="https://finxiacapital.com/en/jean-pierre-veron/"
+        hreflangDefault="https://finxiacapital.com/jean-pierre-veron/"
       />
 
       {/* Hero Section */}

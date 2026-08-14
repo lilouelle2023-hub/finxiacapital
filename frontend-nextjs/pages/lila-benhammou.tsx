@@ -14,6 +14,64 @@ export default function LilaPage() {
     'Lila Benhammou'
   );
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lila Benhammou",
+    "url": language === 'fr' ? "https://finxiacapital.com/lila-benhammou/" : "https://finxiacapital.com/en/lila-benhammou/",
+    "image": "https://finxiacapital.com/images/lbe-photo.jpeg",
+    "jobTitle": language === 'fr' ? "Co-Fondatrice & Directrice des Investissements (CIO)" : "Co-Founder & Chief Investment Officer (CIO)",
+    "description": language === 'fr'
+      ? "Co-Fondatrice et Directrice des Investissements (CIO) de Finxia Capital. Architecte de l'infrastructure IA du fonds (18 agents autonomes). Fondatrice de Humans4help. Autrice de \"RPA, AI, Chatbots\" (2020) et \"Power-Bound\" (2026)."
+      : "Co-Founder and Chief Investment Officer (CIO) of Finxia Capital. Architect of the fund's AI infrastructure (18 autonomous agents). Founder of Humans4help. Author of \"RPA, AI, Chatbots\" (2020) and \"Power-Bound\" (2026).",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Finxia Capital",
+      "url": "https://finxiacapital.com"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/lila-benhammou/",
+      "https://twitter.com/LilaBenhammou"
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": language === 'fr' ? "Qui est Lila Benhammou ?" : "Who is Lila Benhammou?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": language === 'fr'
+            ? "Lila Benhammou est Co-Fondatrice et Directrice des Investissements (CIO) de Finxia Capital, un véhicule d'investissement propriétaire luxembourgeois (SCSp). Serial entrepreneure, elle a fondé Humans4help avant de co-créer Finxia Capital avec Jean-Pierre Véron. Elle est autrice de deux ouvrages : \"RPA, AI, Chatbots: How to Scale with Hyperautomation\" (2020) et \"Power-Bound — La guerre du mégawatt\" (2026)."
+            : "Lila Benhammou is Co-Founder and Chief Investment Officer (CIO) of Finxia Capital, a Luxembourg proprietary investment vehicle (SCSp). A serial entrepreneur, she founded Humans4help before co-creating Finxia Capital with Jean-Pierre Véron. She is the author of two books: \"RPA, AI, Chatbots: How to Scale with Hyperautomation\" (2020) and \"Power-Bound — The Megawatt War\" (2026)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": language === 'fr' ? "Quel est le rôle de Lila Benhammou chez Finxia Capital ?" : "What is Lila Benhammou's role at Finxia Capital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": language === 'fr'
+            ? "Lila Benhammou est Co-Fondatrice et Directrice des Investissements (CIO) de Finxia Capital. Elle est l'architecte de l'infrastructure IA-native du fonds, composée de 18 agents autonomes couvrant le deal sourcing, le suivi d'actifs, la conformité et le reporting ESG. Elle est également co-auteure du livre blanc \"Optimisation Énergétique des Datacenters Européens\" (SSRN, 2026)."
+            : "Lila Benhammou is Co-Founder and Chief Investment Officer (CIO) of Finxia Capital. She is the architect of the fund's AI-native infrastructure, composed of 18 autonomous agents covering deal sourcing, asset monitoring, compliance and ESG reporting. She is also co-author of the white paper \"Energy Optimization of European Datacenters\" (SSRN, 2026)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": language === 'fr' ? "Quels livres a écrit Lila Benhammou ?" : "What books has Lila Benhammou written?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": language === 'fr'
+            ? "Lila Benhammou a coécrit \"RPA, AI, Chatbots: How to Scale with Hyperautomation\" (2020, avec Nandan Nandan et Iaad Ben Dia), disponible sur Amazon. Son second ouvrage, \"Power-Bound — La guerre du mégawatt\" (2026), documente le basculement de la pénurie de puces vers la pénurie d'électricité comme goulot d'étranglement de l'IA en Europe."
+            : "Lila Benhammou co-wrote \"RPA, AI, Chatbots: How to Scale with Hyperautomation\" (2020, with Nandan Nandan and Iaad Ben Dia), available on Amazon. Her second book, \"Power-Bound — The Megawatt War\" (2026), documents the shift from chip scarcity to power scarcity as AI's real bottleneck in Europe."
+        }
+      }
+    ]
+  };
+
   const pressArticles = [
     {
       id: 'bfm-business',
@@ -143,9 +201,11 @@ export default function LilaPage() {
         description={language === 'fr'
           ? "Retrouvez les articles, interviews, podcasts et événements de Lila Benhammou, co-fondatrice de Finxia Capital. Tech Boost'her, France Travail, BFM Business, Bpifrance, podcasts."
           : "Find articles, interviews, podcasts and events featuring Lila Benhammou, co-founder of Finxia Capital. Tech Boost'her, France Travail, BFM Business, Bpifrance, podcasts."}
-        canonical="https://finxiacapital.com/lila-benhammou/"
+        canonical={language === 'fr' ? "https://finxiacapital.com/lila-benhammou/" : "https://finxiacapital.com/en/lila-benhammou/"}
         keywords="Lila Benhammou presse, Humans4help, Tech Boost'her, France Travail, Social Builder, IA intelligence artificielle, BFM Business, Bpifrance, podcast IA, hyperautomation"
         breadcrumbSchema={breadcrumbSchema}
+        structuredData={personSchema}
+        faqSchema={faqSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/lila-benhammou/"

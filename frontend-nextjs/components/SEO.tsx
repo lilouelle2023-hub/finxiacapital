@@ -15,8 +15,20 @@ const ORGANIZATION_SCHEMA = {
     "addressCountry": "LU"
   },
   "founder": [
-    { "@type": "Person", "name": "Jean-Pierre Véron" },
-    { "@type": "Person", "name": "Lila Benhammou" }
+    {
+      "@type": "Person",
+      "name": "Jean-Pierre Véron",
+      "jobTitle": "Co-Founder & Chairman",
+      "url": "https://finxiacapital.com/jean-pierre-veron/",
+      "sameAs": ["https://www.linkedin.com/in/jean-pierre-veron-31ab0499/"]
+    },
+    {
+      "@type": "Person",
+      "name": "Lila Benhammou",
+      "jobTitle": "Co-Founder & Chief Investment Officer",
+      "url": "https://finxiacapital.com/lila-benhammou/",
+      "sameAs": ["https://www.linkedin.com/in/lila-benhammou/", "https://twitter.com/LilaBenhammou"]
+    }
   ]
 };
 
