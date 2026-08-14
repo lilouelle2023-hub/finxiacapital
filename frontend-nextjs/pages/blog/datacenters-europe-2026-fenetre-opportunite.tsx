@@ -46,20 +46,20 @@ export default function Article3Page() {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Accueil",
-        "item": "https://finxiacapital.com"
+        "name": language === 'fr' ? "Accueil" : "Home",
+        "item": language === 'fr' ? "https://finxiacapital.com/" : "https://finxiacapital.com/en/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://finxiacapital.com/blog"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/" : "https://finxiacapital.com/en/blog/"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Datacenters en Europe : fenêtre 2026",
-        "item": "https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/" : "https://finxiacapital.com/en/blog/european-datacenters-2026-investor-opportunity/"
       }
     ]
   };
@@ -69,12 +69,12 @@ export default function Article3Page() {
       <SEO
         title="Datacenters en Europe : pourquoi 2026 est l'année où les investisseurs en retard paieront le prix fort"
         description="Les datacenters européens connaissent un déséquilibre structurel entre offre et demande. 2026 marque la dernière fenêtre d'entrée pour les investisseurs sur le segment brown-to-green avant l'arrivée des capitaux Core."
-        canonical="https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/"
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/" : "https://finxiacapital.com/en/blog/european-datacenters-2026-investor-opportunity/"}
         keywords="marché datacenters Europe 2026, investissement datacenter Europe secondaire, Madrid Barcelone Milan datacenter, compression cap rates infrastructure, hyperscaler Europe marchés secondaires"
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/"
         hreflangEn="https://finxiacapital.com/en/blog/european-datacenters-2026-investor-opportunity/"
         hreflangDefault="https://finxiacapital.com/blog/datacenters-europe-2026-fenetre-opportunite/"

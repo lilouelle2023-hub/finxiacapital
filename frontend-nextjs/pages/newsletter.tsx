@@ -71,12 +71,36 @@ export default function NewsletterPage() {
 
   const t = content[language];
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": language === 'fr' ? "Accueil" : "Home",
+        "item": language === 'fr' ? "https://finxiacapital.com/" : "https://finxiacapital.com/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": t.title,
+        "item": language === 'fr' ? "https://finxiacapital.com/newsletter/" : "https://finxiacapital.com/en/newsletter/"
+      }
+    ]
+  };
+
   return (
     <div className="pt-20 min-h-screen bg-white">
       <SEO
         title={language === 'fr' ? 'Newsletter — Analyses Datacenter IA & Investissement Alternatif' : 'Newsletter — AI Datacenter & Alternative Investment Analysis'}
         description={language === 'fr' ? 'Inscrivez-vous à la newsletter de FINXIA Capital pour recevoir nos analyses exclusives sur les datacenters IA, la réglementation EED et l\'investissement alternatif en Europe.' : 'Subscribe to FINXIA Capital\'s newsletter for exclusive analysis on AI datacenters, EED regulation and alternative investment in Europe.'}
         canonical={language === 'fr' ? 'https://finxiacapital.com/newsletter/' : 'https://finxiacapital.com/en/newsletter/'}
+        breadcrumbSchema={breadcrumbSchema}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
+        hreflangFr="https://finxiacapital.com/newsletter/"
+        hreflangEn="https://finxiacapital.com/en/newsletter/"
+        hreflangDefault="https://finxiacapital.com/newsletter/"
         language={language}
       />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

@@ -47,12 +47,38 @@ export default function Article8Page() {
     }
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": language === 'fr' ? "Accueil" : "Home",
+        "item": language === 'fr' ? "https://finxiacapital.com/" : "https://finxiacapital.com/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/" : "https://finxiacapital.com/en/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": t.title,
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/loi-pinm-statut-datacenter-brown-to-green/" : "https://finxiacapital.com/en/blog/pinm-law-datacenter-brown-to-green-status/"
+      }
+    ]
+  };
+
   return (
     <div data-testid="article-8-page" className="pt-20">
       <SEO
         title={t.title}
         description={language === 'fr' ? "Le 14 avril 2026, la loi PINM change les règles du jeu pour les datacenters européens. Analyse de l'avantage structurel brown-to-green par Lila Benhammou, CIO FINXIA Capital." : "On April 14, 2026, the PINM law changes the game for European datacenters. Analysis of brown-to-green structural advantage by Lila Benhammou, CIO FINXIA Capital."}
         canonical={language === 'fr' ? "https://finxiacapital.com/blog/loi-pinm-statut-datacenter-brown-to-green/" : "https://finxiacapital.com/en/blog/pinm-law-datacenter-brown-to-green-status/"}
+        breadcrumbSchema={breadcrumbSchema}
         keywords={language === 'fr' ? "loi PINM, Projet Intérêt National Majeur, datacenter France, brown-to-green, raccordement RTE, TITAN DC AI, souveraineté numérique" : "PINM law, Major National Interest Project, France datacenter, brown-to-green, RTE connection, TITAN DC AI, digital sovereignty"}
         structuredData={articleSchema}
         language={language}

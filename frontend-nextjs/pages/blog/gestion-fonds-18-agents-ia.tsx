@@ -46,20 +46,20 @@ export default function Article2Page() {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Accueil",
-        "item": "https://finxiacapital.com"
+        "name": language === 'fr' ? "Accueil" : "Home",
+        "item": language === 'fr' ? "https://finxiacapital.com/" : "https://finxiacapital.com/en/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://finxiacapital.com/blog"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/" : "https://finxiacapital.com/en/blog/"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Gérer un fonds alternatif avec 18 agents IA",
-        "item": "https://finxiacapital.com/blog/gestion-fonds-18-agents-ia"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/" : "https://finxiacapital.com/en/blog/managing-alternative-fund-18-ai-agents/"
       }
     ]
   };
@@ -69,12 +69,12 @@ export default function Article2Page() {
       <SEO
         title="Gérer un fonds alternatif avec 18 agents IA : ce que ça change vraiment"
         description="La gestion d'actifs alternatifs a un problème de latence. L'architecture AI-native avec 18 agents IA opérant 24/7 transforme la gestion de portefeuille et l'exécution des stratégies d'investissement."
-        canonical="https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/"
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/" : "https://finxiacapital.com/en/blog/managing-alternative-fund-18-ai-agents/"}
         keywords="AI-native fund, 18 agents IA investissement, gestion actifs alternatifs IA, Deal Intelligence Agent, Asset Monitor, architecture multi-agents, alternative asset management automatisé"
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
-        language="fr"
-        ogLocale="fr_FR"
+        language={language}
+        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/"
         hreflangEn="https://finxiacapital.com/en/blog/managing-alternative-fund-18-ai-agents/"
         hreflangDefault="https://finxiacapital.com/blog/gestion-fonds-18-agents-ia/"
