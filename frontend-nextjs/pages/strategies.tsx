@@ -332,16 +332,16 @@ export default function StrategiesPage() {
                     </div>
                   )}
 
-                  {/* TITAN DC AI - Certification PUE */}
+                  {/* TITAN DC AI - Certification PUE + Horizon d'investissement (côte à côte) */}
                   {strategy.id === 'titan-datacenter' && (
                     <>
-                      <div className="my-8 p-6 bg-gradient-to-br from-[#1E2A3A] to-[#2A3A4A] text-white rounded-lg border-l-4 border-[#C45A3B]">
-                        <h4 className="font-semibold text-white mb-4">
-                          {language === 'fr' ? 'Certification énergétique indépendante' : 'Independent Energy Certification'}
-                        </h4>
-                        <div className="flex items-center gap-6">
-                          <div className="text-center flex-shrink-0">
-                            <div className="text-5xl font-bold text-[#C45A3B]">≤ 1,30</div>
+                      <div className="grid md:grid-cols-2 gap-6 my-8">
+                        <div className="p-6 bg-gradient-to-br from-[#1E2A3A] to-[#2A3A4A] text-white rounded-lg border-l-4 border-[#C45A3B]">
+                          <h4 className="font-semibold text-white mb-4">
+                            {language === 'fr' ? 'Certification énergétique indépendante' : 'Independent Energy Certification'}
+                          </h4>
+                          <div className="text-center mb-3">
+                            <div className="text-4xl font-bold text-[#C45A3B]">≤ 1,30</div>
                             <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'PUE cible' : 'Target PUE'}</div>
                           </div>
                           <p className="text-sm text-slate-300 leading-relaxed">
@@ -350,30 +350,30 @@ export default function StrategiesPage() {
                               : "EED 2027 reference threshold, per asset — independent certification (IPMVP Option C)."}
                           </p>
                         </div>
-                      </div>
 
-                      {/* Horizon d'investissement */}
-                      <div className="my-8 p-6 bg-white border-2 border-slate-200 rounded-lg">
-                        <h4 className="font-semibold text-slate-800 mb-4">
-                          {language === 'fr' ? "Horizon d'investissement" : 'Investment horizon'}
-                        </h4>
-                        <div className="grid sm:grid-cols-3 gap-4 mb-4">
-                          {[
-                            { period: language === 'fr' ? 'Acquisition' : 'Acquisition', date: language === 'fr' ? 'À partir de 2026' : 'From 2026' },
-                            { period: language === 'fr' ? 'Transformation & Stabilisation' : 'Transformation & Stabilization', date: '2027 — 2029' },
-                            { period: language === 'fr' ? 'Sorties stratégiques' : 'Strategic exits', date: language === 'fr' ? 'À partir de 2031' : 'From 2031' },
-                          ].map((phase, idx) => (
-                            <div key={idx} className="border-l-4 border-[#C45A3B] pl-3 py-1">
-                              <p className="text-[#C45A3B] text-xs uppercase tracking-wider font-medium mb-1">{phase.period}</p>
-                              <p className="text-slate-700 text-sm font-medium">{phase.date}</p>
-                            </div>
-                          ))}
+                        {/* Horizon d'investissement */}
+                        <div className="p-6 bg-white border-2 border-slate-200 rounded-lg">
+                          <h4 className="font-semibold text-slate-800 mb-4">
+                            {language === 'fr' ? "Horizon d'investissement" : 'Investment horizon'}
+                          </h4>
+                          <div className="space-y-3 mb-4">
+                            {[
+                              { period: language === 'fr' ? 'Acquisition' : 'Acquisition', date: language === 'fr' ? 'À partir de 2026' : 'From 2026' },
+                              { period: language === 'fr' ? 'Transformation & Stabilisation' : 'Transformation & Stabilization', date: '2027 — 2029' },
+                              { period: language === 'fr' ? 'Sorties stratégiques' : 'Strategic exits', date: language === 'fr' ? 'À partir de 2031' : 'From 2031' },
+                            ].map((phase, idx) => (
+                              <div key={idx} className="border-l-4 border-[#C45A3B] pl-3 py-1">
+                                <p className="text-[#C45A3B] text-xs uppercase tracking-wider font-medium mb-1">{phase.period}</p>
+                                <p className="text-slate-700 text-sm font-medium">{phase.date}</p>
+                              </div>
+                            ))}
+                          </div>
+                          <p className="text-slate-600 text-sm leading-relaxed">
+                            {language === 'fr'
+                              ? 'Horizon cible de détention : 5 à 6 ans par actif.'
+                              : 'Target holding horizon: 5 to 6 years per asset.'}
+                          </p>
                         </div>
-                        <p className="text-slate-600 text-sm leading-relaxed">
-                          {language === 'fr'
-                            ? 'Horizon cible de détention : 5 à 6 ans par actif.'
-                            : 'Target holding horizon: 5 to 6 years per asset.'}
-                        </p>
                       </div>
 
                       {/* Pour aller plus loin — deep dives blog */}
