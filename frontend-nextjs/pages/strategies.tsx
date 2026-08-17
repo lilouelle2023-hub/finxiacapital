@@ -89,15 +89,14 @@ export default function StrategiesPage() {
         ? 'Là où la visibilité sur l\'actif crée l\'avantage informationnel.'
         : 'Where asset visibility creates informational advantage.',
       thesis: language === 'fr'
-        ? <><strong>Stratégie portée par Lila Benhammou</strong> — CIO, expertise finance × IA. <br/><br/>Late-stage, secondaires décotés, situations spéciales. Une approche ultra-sélective — réservée aux opportunités où notre expertise sectorielle nous confère un avantage décisif. <strong>Thèses actuelles</strong> : (1) secondaires d'infrastructure IA décotés de 25-40% par rapport aux last rounds, suite au resserrement des LP sur les actifs illiquides ; (2) situations spéciales dans l'immobilier de télécoms (tours, fibre) où la consolidation sectorielle crée des primes de contrôle ; (3) positions secondaires late-stage sur des leaders technologiques américains de l'IA et de l'infrastructure cloud, accédées via les marchés de liquidité pré-IPO. <br/><br/>Taux de conversion volontairement bas (&lt;5%). Conviction maximale sur chaque position. Ticket moyen : 2-10M€.</>
-        : <><strong>Strategy led by Lila Benhammou</strong> — CIO, finance × AI expertise. <br/><br/>Late-stage, discounted secondaries, special situations. An ultra-selective approach — reserved for opportunities where our sector expertise confers a decisive advantage. <strong>Current theses</strong>: (1) AI infrastructure secondaries discounted 25-40% vs last rounds, following LP tightening on illiquid assets; (2) special situations in telecom real estate (towers, fiber) where sector consolidation creates control premiums; (3) late-stage secondary positions in leading US AI and cloud infrastructure companies, accessed via pre-IPO liquidity markets. <br/><br/>Deliberately low conversion rate (&lt;5%). Maximum conviction on each position. Average ticket: €2-10M.</>,
+        ? <><strong>Stratégie portée par Lila Benhammou</strong> — CIO, expertise finance × IA. <br/><br/>Late-stage, secondaires décotés. Une approche ultra-sélective — réservée aux opportunités où notre expertise sectorielle nous confère un avantage décisif. <strong>Thèses actuelles</strong> : (1) secondaires d'infrastructure IA décotés de 25-40% par rapport aux last rounds, suite au resserrement des LP sur les actifs illiquides ; (2) positions secondaires late-stage sur des leaders technologiques américains de l'IA et de l'infrastructure cloud, accédées via les marchés de liquidité pré-IPO. <br/><br/>Taux de conversion volontairement bas (&lt;5%). Conviction maximale sur chaque position. Ticket moyen : 2-10M€.</>
+        : <><strong>Strategy led by Lila Benhammou</strong> — CIO, finance × AI expertise. <br/><br/>Late-stage, discounted secondaries. An ultra-selective approach — reserved for opportunities where our sector expertise confers a decisive advantage. <strong>Current theses</strong>: (1) AI infrastructure secondaries discounted 25-40% vs last rounds, following LP tightening on illiquid assets; (2) late-stage secondary positions in leading US AI and cloud infrastructure companies, accessed via pre-IPO liquidity markets. <br/><br/>Deliberately low conversion rate (&lt;5%). Maximum conviction on each position. Average ticket: €2-10M.</>,
       approach: [
         language === 'fr' ? 'Focus : secondaires d\'infrastructure IA décotés 25-40% vs last rounds, resserrement LP sur illiquide' : 'Focus: AI infrastructure secondaries discounted 25-40% vs last rounds, LP tightening on illiquid assets',
-        language === 'fr' ? 'Situations spéciales immobilier télécoms : tours, fibre — consolidation sectorielle créant des primes de contrôle' : 'Telecom real estate special situations: towers, fiber — sector consolidation creating control premiums',
         language === 'fr' ? 'Late-stage tech américaine : IA & infrastructure cloud — accès secondaire via marchés pré-IPO (Forge Global)' : 'Late-stage US tech: AI & cloud infrastructure — secondary access via pre-IPO markets (Forge Global)',
         language === 'fr' ? 'Discipline : taux de conversion <5%, conviction maximale, ticket moyen 2-10M€' : 'Discipline: <5% conversion rate, maximum conviction, average ticket €2-10M',
       ],
-      markets: 'Late-Stage · Secondaires · Special Situations',
+      markets: 'Late-Stage · Secondaires Pré-IPO',
       image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80&fm=webp',
     },
   ];
@@ -128,7 +127,7 @@ export default function StrategiesPage() {
         "name": "Quelles sont les 4 stratégies d'investissement de Finxia Capital ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Finxia Capital déploie 4 stratégies : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living (coliving, PBSA, build-to-rent), et C.Capital (late-stage, secondaires décotés, situations spéciales)."
+          "text": "Finxia Capital déploie 4 stratégies : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living (coliving, PBSA, build-to-rent), et C.Capital (late-stage, secondaires décotés)."
         }
       }
     ]
@@ -269,7 +268,7 @@ export default function StrategiesPage() {
                   <td className="px-5 py-4">{language === 'fr' ? 'Opportuniste / convexité' : 'Opportunistic / convexity'}</td>
                   <td className="px-5 py-4">{language === 'fr' ? 'High alpha, <5% conversion' : 'High alpha, <5% conversion'}</td>
                   <td className="px-5 py-4">{language === 'fr' ? '3–5 ans' : '3–5 years'}</td>
-                  <td className="px-5 py-4">{language === 'fr' ? 'Late-stage, secondaires décotés, situations spéciales' : 'Late-stage, discounted secondaries, special situations'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? 'Late-stage, secondaires décotés' : 'Late-stage, discounted secondaries'}</td>
                 </tr>
               </tbody>
             </table>
