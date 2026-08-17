@@ -22,7 +22,7 @@ export default function HomePage() {
         "name": "FINXIA Capital",
         "url": "https://finxiacapital.com",
         "description": "Proprietary investment vehicle Luxembourg SCSp. Flagship strategy TITAN DC AI (datacenter brown-to-green transformation for AI in Europe), financed by equity + debt + Green Bond. Premium Hospitality, Urban Residential, C.CAPITAL. Augmented operational discipline across portfolio lifecycle.",
-        "foundingDate": "2024",
+        "foundingDate": "2025",
         "legalName": "FINXIA Capital SCSp",
         "address": {
           "@type": "PostalAddress",

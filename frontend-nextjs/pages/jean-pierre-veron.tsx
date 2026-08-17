@@ -58,8 +58,8 @@ export default function PressJPVPage() {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": language === 'fr'
-            ? "Jean-Pierre Véron a fondé Financière Rive Gauche en 1991, cédée à 70% au groupe espagnol FADESA en 2005, puis créé Financière Norev en 2006. En 2023, il co-fonde Finxia Capital avec Lila Benhammou pour déployer des stratégies institutionnelles en datacenter IA, hôtellerie premium et résidentiel flexible."
-            : "Jean-Pierre Véron founded Financière Rive Gauche in 1991, of which 70% was sold to the Spanish group FADESA in 2005, then created Financière Norev in 2006. In 2023, he co-founded Finxia Capital with Lila Benhammou to deploy institutional strategies in AI datacenter, premium hospitality and flexible residential."
+            ? "Jean-Pierre Véron a fondé Financière Rive Gauche en 1991, cédée à 70% au groupe espagnol FADESA en 2005, puis créé Financière Norev en 2006. En 2025, il co-fonde Finxia Capital avec Lila Benhammou pour déployer des stratégies institutionnelles en datacenter IA, hôtellerie premium et résidentiel flexible."
+            : "Jean-Pierre Véron founded Financière Rive Gauche in 1991, of which 70% was sold to the Spanish group FADESA in 2005, then created Financière Norev in 2006. In 2025, he co-founded Finxia Capital with Lila Benhammou to deploy institutional strategies in AI datacenter, premium hospitality and flexible residential."
         }
       },
       {
@@ -134,7 +134,7 @@ export default function PressJPVPage() {
       icon: Briefcase,
     },
     {
-      year: '2023',
+      year: '2025',
       title: language === 'fr' ? 'Co-fondation de FINXIA Capital' : 'Co-foundation of FINXIA Capital',
       description: language === 'fr' 
         ? 'Association avec Lila Benhammou pour créer FINXIA Capital, SCSp luxembourgeoise déployant des stratégies institutionnelles en datacenter AI, hôtellerie premium et résidentiel flexible.' 
@@ -286,8 +286,8 @@ export default function PressJPVPage() {
                 </p>
                 <p>
                   {language === 'fr'
-                    ? 'En 2023, il co-fonde FINXIA Capital avec Lila Benhammou, structurant un véhicule d\'investissement propriétaire en SCSp luxembourgeoise dédié aux stratégies institutionnelles en datacenter AI, hôtellerie premium et résidentiel flexible.'
-                    : 'In 2023, he co-founded FINXIA Capital with Lila Benhammou, structuring a proprietary investment vehicle in Luxembourg SCSp dedicated to institutional strategies in AI datacenter, premium hospitality and flexible residential.'}
+                    ? 'En 2025, il co-fonde FINXIA Capital avec Lila Benhammou, structurant un véhicule d\'investissement propriétaire en SCSp luxembourgeoise dédié aux stratégies institutionnelles en datacenter AI, hôtellerie premium et résidentiel flexible.'
+                    : 'In 2025, he co-founded FINXIA Capital with Lila Benhammou, structuring a proprietary investment vehicle in Luxembourg SCSp dedicated to institutional strategies in AI datacenter, premium hospitality and flexible residential.'}
                 </p>
               </div>
             </div>
@@ -300,7 +300,7 @@ export default function PressJPVPage() {
                   <div className="w-2 h-2 rounded-full bg-[#C45A3B] mt-2 flex-shrink-0" />
                   <div>
                     <p className="text-white font-medium">FINXIA</p>
-                    <p className="text-slate-400 text-sm">{language === 'fr' ? 'Président — Depuis 2023' : 'President — Since 2023'}</p>
+                    <p className="text-slate-400 text-sm">{language === 'fr' ? 'Président — Depuis 2025' : 'President — Since 2025'}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
