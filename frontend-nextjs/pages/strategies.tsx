@@ -325,15 +325,10 @@ export default function StrategiesPage() {
                       <h4 className="font-semibold text-slate-800 mb-4">
                         {language === 'fr' ? 'Campus IA Formation' : 'AI Training Campus'}
                       </h4>
-                      <p className="text-slate-700 text-sm leading-relaxed mb-4">
-                        {language === 'fr'
-                          ? "Là où nous installons des datacenters, nous créons de l'emploi local. Chaque site TITAN DC intègre un campus de formation pour jeunes de 18 à 25 ans (sans diplôme requis), avec formation pratique sur équipement réel : serveurs, racks, câblage, UPS."
-                          : "Where we install datacenters, we create local jobs. Each TITAN DC site includes a training campus for young people aged 18-25 (no diploma required), with hands-on training on real equipment: servers, racks, cabling, UPS."}
-                      </p>
                       <p className="text-slate-700 text-sm leading-relaxed">
                         {language === 'fr'
-                          ? "Garantie d'embauche via les partenaires opérateurs qui louent les sites. Objectif : 70%+ d'emploi à 6 mois. Les projets DC s'implantent sur des territoires en transition — les emplois doivent rester sur ces territoires."
-                          : "Hiring guarantee via operator partners who lease the sites. Target: 70%+ employment at 6 months. DC projects are located in transitioning territories — jobs must stay in those territories."}
+                          ? "Là où nous installons des datacenters, nous créons de l'emploi local. Chaque site TITAN DC intègre un campus de formation pour jeunes de 18-25 ans (sans diplôme requis) sur équipement réel, avec garantie d'embauche via nos opérateurs locataires — objectif 70%+ d'emploi à 6 mois, ancré sur le territoire du site."
+                          : "Where we install datacenters, we create local jobs. Each TITAN DC site includes a training campus for young people aged 18-25 (no diploma required) on real equipment, with a hiring guarantee via our operator tenants — targeting 70%+ employment at 6 months, anchored in the site's territory."}
                       </p>
                     </div>
                   )}
@@ -388,71 +383,6 @@ export default function StrategiesPage() {
                             </div>
                           ))}
                         </div>
-                      </div>
-
-                      {/* TITAN DC AI - Cadre réglementaire favorable */}
-                      <div className="my-8 p-6 bg-white border-2 border-[#C45A3B]/20 rounded-lg">
-                        <h4 className="font-semibold text-slate-800 mb-6 flex items-center gap-2">
-                          <span className="text-[#C45A3B]">✓</span>
-                          {language === 'fr' ? 'Cadre réglementaire favorable' : 'Favorable Regulatory Framework'}
-                        </h4>
-                        <div className="space-y-6">
-                          {/* Loi PINM */}
-                          <div className="border-l-4 border-[#C45A3B] pl-4">
-                            <h5 className="font-medium text-slate-800 mb-2">
-                              {language === 'fr' ? 'Loi PINM (avril 2026)' : 'PINM Law (April 2026)'}
-                            </h5>
-                            <p className="text-slate-600 text-sm leading-relaxed">
-                              {language === 'fr'
-                                ? "La loi de simplification économique adoptée le 14 avril 2026 crée un statut de Projet d'Intérêt National Majeur pour les datacenters, réduisant les délais administratifs de 5-7 ans à fast track. Les actifs TITAN DC AI sont structurés pour qualifier à ce statut."
-                                : "The economic simplification law adopted on April 14, 2026 creates a Major National Interest Project status for datacenters, reducing administrative delays from 5-7 years to fast track. TITAN DC AI assets are structured to qualify for this status."}
-                            </p>
-                          </div>
-
-                          {/* EED Article 12 */}
-                          <div className="border-l-4 border-slate-300 pl-4">
-                            <h5 className="font-medium text-slate-800 mb-2">
-                              {language === 'fr' ? 'EED Article 12 — deadline 15 mai 2026' : 'EED Article 12 — May 15, 2026 deadline'}
-                            </h5>
-                            <p className="text-slate-600 text-sm leading-relaxed">
-                              {language === 'fr'
-                                ? "Première échéance de déclaration obligatoire pour les datacenters européens. La stratégie TITAN DC AI est structurée pour anticiper cette conformité dès l'acquisition des premiers actifs — méthode IPMVP et certification indépendante intégrées au plan de rénovation."
-                                : "First mandatory declaration deadline for European datacenters. The TITAN DC AI strategy is structured to anticipate this compliance from the first asset acquisitions — IPMVP methodology and independent certification integrated into the retrofit plan."}
-                              {' '}
-                              <a 
-                                href={language === 'fr' ? '/blog/eed-article-12-declaration-datacenter-guide-2026' : '/en/blog/eed-article-12-datacenter-declaration-guide-2026'}
-                                className="text-[#C45A3B] hover:underline text-xs font-medium"
-                              >
-                                {language === 'fr' ? '→ Lire notre guide complet' : '→ Read our complete guide'}
-                              </a>
-                            </p>
-                          </div>
-
-                          {/* Avantage B2G */}
-                          <div className="border-l-4 border-slate-300 pl-4">
-                            <h5 className="font-medium text-slate-800 mb-2">
-                              {language === 'fr' ? 'Avantage brown-to-green explicite' : 'Explicit brown-to-green advantage'}
-                            </h5>
-                            <p className="text-slate-600 text-sm leading-relaxed">
-                              {language === 'fr'
-                                ? "En repositionnant des sites raccordés existants, TITAN DC AI contourne la file d'attente RTE qui représentait 50% des demandes de raccordement en 2025."
-                                : "By repositioning existing connected sites, TITAN DC AI bypasses the RTE queue which represented 50% of connection requests in 2025."}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Pourquoi maintenant */}
-                      <div className="my-8 p-6 bg-[#1E2A3A] text-white rounded-lg">
-                        <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-                          <span className="text-[#C45A3B] text-2xl">→</span>
-                          {language === 'fr' ? 'Pourquoi maintenant' : 'Why now'}
-                        </h4>
-                        <p className="text-slate-300 text-sm leading-relaxed">
-                          {language === 'fr'
-                            ? "La Directive Efficacité Énergétique impose aux datacenters européens de déclarer leur consommation avant mai 2026 et d'atteindre un PUE ≤ 1,30 d'ici janvier 2027. Les actifs non conformes subissent une décote de valeur immédiate. TITAN DC AI acquiert précisément ces actifs en période de stress réglementaire, les met en conformité, et les repositionne comme infrastructure certifiée premium — capturant la compression de rendement entre l'entrée et la sortie."
-                            : "The Energy Efficiency Directive requires European datacenters to declare their consumption before May 2026 and to achieve a PUE ≤ 1.30 by January 2027. Non-compliant assets suffer immediate value discount. TITAN DC AI acquires precisely these assets during regulatory stress, brings them into compliance, and repositions them as certified premium infrastructure — capturing the yield compression between entry and exit."}
-                        </p>
                       </div>
 
                       {/* SSRN Research Anchor */}
@@ -529,15 +459,10 @@ export default function StrategiesPage() {
                               <div className="text-xs text-slate-500 uppercase tracking-wider mt-1">{language === 'fr' ? 'Sites fast track identifiés par l\'État' : 'Fast track sites identified by the State'}</div>
                             </div>
                           </div>
-                          <p className="text-slate-700 text-sm leading-relaxed">
+                          <p className="text-slate-600 text-sm leading-relaxed">
                             {language === 'fr'
-                              ? "RTE, le gestionnaire de réseau de transport français, fait face à une tension structurelle : 18 GW de capacité électrique sont aujourd'hui réservés aux projets datacenter sur le territoire français, mais seulement une fraction (~15%) est effectivement raccordée et opérationnelle. La file d'attente de raccordement bloque 50% des nouvelles demandes. Les acteurs greenfield attendent 5 à 7 ans pour un raccordement neuf."
-                              : "RTE, the French transmission system operator, faces structural tension: 18 GW of electrical capacity is currently reserved for datacenter projects on French territory, but only a fraction (~15%) is actually connected and operational. The connection queue blocks 50% of new requests. Greenfield players wait 5 to 7 years for a new connection."}
-                          </p>
-                          <p className="text-slate-700 text-sm leading-relaxed">
-                            {language === 'fr'
-                              ? "TITAN DC AI contourne cette contrainte en ciblant des sites industriels brownfield <strong>déjà raccordés au réseau HT</strong> — anciennes usines, friches manufacturières, entrepôts de première génération disposant d'un substation existant. Pas de file d'attente RTE. Pas de spéculation sur la capacité. Un raccordement existant = un avantage de temps de 3 à 5 ans."
-                              : "TITAN DC AI bypasses this constraint by targeting brownfield industrial sites <strong>already connected to the HV grid</strong> — former factories, manufacturing brownfields, first-generation warehouses with an existing substation. No RTE queue. No capacity speculation. An existing connection = a 3 to 5 year time advantage."}
+                              ? "Sites brownfield déjà raccordés au réseau HT — avantage de temps de 3 à 5 ans sur les acteurs greenfield."
+                              : "Brownfield sites already connected to the HV grid — a 3 to 5 year time advantage over greenfield players."}
                           </p>
                         </div>
                       </div>
@@ -558,21 +483,58 @@ export default function StrategiesPage() {
                             <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Électricité française décarbonisée' : 'French electricity decarbonized'}</div>
                           </div>
                         </div>
-                        <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                          {language === 'fr'
-                            ? "L'IA générative, la défense européenne, la santé et les administrations publiques ont un besoin impératif d'infrastructure de calcul souveraine. Or, 92% des données de l'Occident sont stockées sur le sol américain. La dépendance stratégique est totale."
-                            : "Generative AI, European defense, healthcare, and public administrations have an imperative need for sovereign computing infrastructure. Yet, 92% of Western data is stored on US soil. The strategic dependence is total."}
-                        </p>
-                        <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                          {language === 'fr'
-                            ? "La France dispose d'un atout énergétique unique en Europe : un mix électrique <strong>95% décarbonisé</strong> (nucléaire + renouvelables), et un pays qui <strong>exporte 20% de sa production électrique</strong>. Cela fait du territoire français une destination de choix pour les hyperscalers en quête d'image carbone et de souveraineté."
-                            : "France has a unique energy advantage in Europe: an electricity mix that is <strong>95% decarbonized</strong> (nuclear + renewables), and a country that <strong>exports 20% of its electricity production</strong>. This makes French territory a destination of choice for hyperscalers seeking carbon reputation and sovereignty."}
-                        </p>
                         <p className="text-slate-300 text-sm leading-relaxed">
                           {language === 'fr'
-                            ? "TITAN DC AI transforme cet atout énergétique en infrastructure IA certifiée — capturant la double prime de la souveraineté numérique et de la décarbonation. Les locataires cibles (opérateurs cloud européens, administrations publiques, acteurs IA) paient un premium pour cette garantie."
-                            : "TITAN DC AI transforms this energy advantage into certified AI infrastructure — capturing the double premium of digital sovereignty and decarbonization. Target tenants (European cloud operators, public administrations, AI actors) pay a premium for this guarantee."}
+                            ? "Mix électrique décarbonisé et énergie disponible : la France capte la double prime de souveraineté numérique et de décarbonation recherchée par les hyperscalers."
+                            : "Decarbonized electricity mix and available energy: France captures the double premium of digital sovereignty and decarbonization sought by hyperscalers."}
                         </p>
+                      </div>
+
+                      {/* Pour aller plus loin — deep dives blog */}
+                      <div className="my-8 p-6 bg-slate-50 rounded-lg">
+                        <h4 className="font-semibold text-slate-800 mb-4">
+                          {language === 'fr' ? 'Pour aller plus loin' : 'Learn more'}
+                        </h4>
+                        <div className="grid sm:grid-cols-2 gap-3">
+                          {[
+                            {
+                              fr: { href: '/blog/data-centers-brown-to-green-europe-strategie-investissement', label: 'La thèse brown-to-green en détail' },
+                              en: { href: '/blog/data-centers-brown-to-green-europe-strategie-investissement', label: 'The brown-to-green thesis in detail (FR)' },
+                            },
+                            {
+                              fr: { href: '/blog/raccordement-electrique-datacenter-europe-investissement', label: 'Raccordement électrique : la prime de rareté' },
+                              en: { href: '/en/blog/grid-connection-datacenter-europe-investment', label: 'Grid connection: the scarcity premium' },
+                            },
+                            {
+                              fr: { href: '/blog/loi-pinm-statut-datacenter-brown-to-green', label: 'Loi PINM : l\'avantage réglementaire' },
+                              en: { href: '/en/blog/pinm-law-datacenter-brown-to-green-status', label: 'PINM Law: the regulatory advantage' },
+                            },
+                            {
+                              fr: { href: '/blog/eed-article-12-declaration-datacenter-guide-2026', label: 'EED Article 12 : le guide de conformité' },
+                              en: { href: '/en/blog/eed-article-12-datacenter-declaration-guide-2026', label: 'EED Article 12: the compliance guide' },
+                            },
+                            {
+                              fr: { href: '/blog/pue-optimisation-datacenters-europeens-guide-2026', label: 'Optimisation PUE : la méthode' },
+                              en: { href: '/en/blog/pue-optimization-european-datacenters-guide-2026', label: 'PUE optimization: the method' },
+                            },
+                            {
+                              fr: { href: '/blog/gpu-puissance-electrique-france-ia-generative', label: 'Souveraineté énergétique française' },
+                              en: { href: '/en/blog/gpu-electrical-power-france-generative-ai', label: 'French energy sovereignty' },
+                            },
+                          ].map((link, idx) => {
+                            const l = language === 'fr' ? link.fr : link.en;
+                            return (
+                              <a
+                                key={idx}
+                                href={l.href}
+                                className="flex items-center justify-between gap-2 px-4 py-3 bg-white border border-slate-200 hover:border-[#C45A3B] text-sm text-slate-700 hover:text-[#C45A3B] transition-colors"
+                              >
+                                {l.label}
+                                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                              </a>
+                            );
+                          })}
+                        </div>
                       </div>
                     </>
                   )}
