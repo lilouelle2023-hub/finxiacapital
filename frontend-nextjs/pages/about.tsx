@@ -253,7 +253,7 @@ const personSchema = {
             </div>
             <div>
               <p className="overline text-[#C45A3B] mb-4">
-                {language === 'fr' ? 'Trajectoire 2025-2029' : 'Roadmap 2025-2029'}
+                {language === 'fr' ? 'Trajectoire 2025-2032' : 'Roadmap 2025-2032'}
               </p>
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -273,7 +273,7 @@ const personSchema = {
                 </div>
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-14 h-14 bg-[#C45A3B]/20 rounded-full flex items-center justify-center">
-                    <span className="text-[#C45A3B] font-bold">2027</span>
+                    <span className="text-[#C45A3B] font-bold text-[11px] leading-tight text-center">2027<br/>2029</span>
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1">
@@ -288,7 +288,7 @@ const personSchema = {
                 </div>
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-14 h-14 bg-[#C45A3B]/20 rounded-full flex items-center justify-center">
-                    <span className="text-[#C45A3B] font-bold">2029</span>
+                    <span className="text-[#C45A3B] font-bold text-[11px] leading-tight text-center">2031<br/>2032</span>
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1">
