@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
       sections: [
         {
           h2: '1. Responsable du traitement',
-          p: 'Le responsable du traitement des données personnelles collectées sur ce site est :\n\nFINXIA Capital S.à r.l.\n12, rue du Commerce\nL-1234 Luxembourg\nEmail : contact@finxiacapital.com\n\nLa déléguée à la protection des données (DPO) est Madame Lila Benhammou.'
+          p: 'Le responsable du traitement des données personnelles collectées sur ce site est :\n\nFINXIA Capital SCSp\n12, rue du Commerce\nL-1234 Luxembourg\nEmail : contact@finxiacapital.com\n\nLa déléguée à la protection des données (DPO) est Madame Lila Benhammou.'
         },
         {
           h2: '2. Données collectées',
@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
       sections: [
         {
           h2: '1. Data Controller',
-          p: 'The data controller for personal data collected on this site is:\n\nFINXIA Capital S.à r.l.\n12, rue du Commerce\nL-1234 Luxembourg\nEmail: contact@finxiacapital.com\n\nThe Data Protection Officer (DPO) is Ms. Lila Benhammou.'
+          p: 'The data controller for personal data collected on this site is:\n\nFINXIA Capital SCSp\n12, rue du Commerce\nL-1234 Luxembourg\nEmail: contact@finxiacapital.com\n\nThe Data Protection Officer (DPO) is Ms. Lila Benhammou.'
         },
         {
           h2: '2. Data Collected',

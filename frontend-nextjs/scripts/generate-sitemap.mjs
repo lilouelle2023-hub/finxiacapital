@@ -36,7 +36,6 @@ const STATIC_PAGES = [
   { path: '/european-approach/',                       priority: '0.8', changefreq: 'monthly', bilingual: true  },
   { path: '/governance/',                              priority: '0.7', changefreq: 'monthly', bilingual: true  },
   { path: '/investors/',                               priority: '0.7', changefreq: 'monthly', bilingual: true  },
-  { path: '/titan-dc-ai/',                             priority: '0.9', changefreq: 'monthly', bilingual: true  },
   { path: '/lila-benhammou/',                         priority: '0.8', changefreq: 'monthly', bilingual: true  },
   { path: '/jean-pierre-veron/',                      priority: '0.8', changefreq: 'monthly', bilingual: true  },
   { path: '/blog/',                                    priority: '0.8', changefreq: 'weekly',  bilingual: true  },

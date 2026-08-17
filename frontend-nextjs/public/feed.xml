@@ -8,13 +8,88 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Fri, 14 Aug 2026 11:28:08 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 11:17:02 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
       <title>FINXIA Capital</title>
       <link>https://finxiacapital.com/</link>
     </image>
+    <item>
+      <title>HPC et exascale en Europe : l&apos;investissement dans les supercalculateurs comme levier de souveraineté numérique</title>
+      <link>https://finxiacapital.com/blog/hpc-europe-exascale-souverainete-numerique-investissement/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/hpc-europe-exascale-souverainete-numerique-investissement/</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+      <description>L&apos;Europe investit massivement dans le HPC et l&apos;exascale avec Jupiter et les projets français. Quelles opportunités pour les investisseurs dans la souveraineté numérique ?</description>
+      <category>Digital Infrastructure</category>
+      
+    </item>
+    <item>
+      <title>NVIDIA Blackwell Ultra : 200 kW par rack, refroidissement liquide obligatoire — les datacenters européens en sursis</title>
+      <link>https://finxiacapital.com/blog/nvidia-blackwell-liquid-cooling-european-datacenters-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/nvidia-blackwell-liquid-cooling-european-datacenters-2026/</guid>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <description>NVIDIA dévoile les Blackwell Ultra avec une densité de 200 kW par rack. Le refroidissement liquide devient incontournable. Quels datacenters européens survivront ?</description>
+      <category>Digital Infrastructure</category>
+      
+    </item>
+    <item>
+      <title>Cloud souverain européen : Gaia-X atteint 200 fournisseurs certifiés — ce que cela change pour les investisseurs</title>
+      <link>https://finxiacapital.com/blog/european-sovereign-cloud-gaia-x-investors-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/european-sovereign-cloud-gaia-x-investors-2026/</guid>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Le projet Gaia-X compte désormais 200 fournisseurs certifiés. La France et l&apos;Allemagne pilotent le déploiement. Analyse des implications pour les investisseurs en infrastructure.</description>
+      <category>Digital Infrastructure</category>
+      
+    </item>
+    <item>
+      <title>Edge computing et datacenters modulaires : la réponse européenne à l&apos;explosion de l&apos;IA générative</title>
+      <link>https://finxiacapital.com/blog/edge-computing-modular-datacenter-generative-ai-europe-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/edge-computing-modular-datacenter-generative-ai-europe-2026/</guid>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <description>L&apos;IA générative impose de nouvelles contraintes de latence. L&apos;edge computing et les datacenters modulaires émergent comme la solution. Analyse pour les investisseurs.</description>
+      <category>Digital Infrastructure</category>
+      
+    </item>
+    <item>
+      <title>Green datacenter : la transformation PUE et la réglementation EED redessinent l&apos;investissement infrastructure en Europe</title>
+      <link>https://finxiacapital.com/blog/green-datacenter-pue-transformation-eed-regulation-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/green-datacenter-pue-transformation-eed-regulation-2026/</guid>
+      <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+      <description>La directive EED et l&apos;optimisation PUE transforment les datacenters européens. Guide pour les investisseurs sur la réglementation, la certification et les rendements.</description>
+      <category>Energy &amp; Infrastructure</category>
+      
+    </item>
+    <item>
+      <title>Green Bond ICMA vs Prêt à Impact (Sustainability-Linked Loan) : Quel Financement pour la Transformation Brown-to-Green ?</title>
+      <link>https://finxiacapital.com/blog/green-bond-vs-pret-a-impact-financement-datacenter-europe/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/green-bond-vs-pret-a-impact-financement-datacenter-europe/</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Deux instruments dominent le financement de la transformation ESG des datacenters européens. Leurs mécaniques, garanties et implications pour l&apos;investisseur sont radicalement différentes.</description>
+      <category>Financing &amp; Structuring</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/green-bond-vs-sustainability-linked-loan-datacenter-financing-europe/" />
+      
+    </item>
+    <item>
+      <title>Shell Lease NNN vs Build-to-Suit : Quel Modèle Locatif pour l&apos;Infrastructure Datacenter en Europe ?</title>
+      <link>https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe/</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Powered shell en triple net (NNN) ou build-to-suit sur mesure : deux modèles dominent le marché datacenter européen, avec des implications de risque et de rendement fondamentalement différentes.</description>
+      <category>Real Assets &amp; Infrastructure</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe/" />
+      
+    </item>
+    <item>
+      <title>Pourquoi TITAN DC AI Échappe à la Classification SFDR Article 8/9 — et Pourquoi C&apos;est un Avantage Structurel</title>
+      <link>https://finxiacapital.com/blog/titan-dc-ai-hors-perimetre-sfdr-article-8-9-avantage-structurel/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/titan-dc-ai-hors-perimetre-sfdr-article-8-9-avantage-structurel/</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+      <description>TITAN DC AI n&apos;est ni Article 8 ni Article 9 au sens de SFDR. Ce n&apos;est pas une lacune de conformité : c&apos;est la conséquence directe d&apos;un choix de structuration en capital propre.</description>
+      <category>Structure &amp; Governance</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/titan-dc-ai-outside-sfdr-article-8-9-structural-advantage/" />
+      
+    </item>
     <item>
       <title>Les datacenters modulaires : le coup d&apos;accélération de Schneider Electric et la révolution de l&apos;edge computing</title>
       <link>https://finxiacapital.com/blog/datacenters-modulaires-schneider-electric-edge-computing/</link>

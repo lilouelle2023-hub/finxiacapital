@@ -31,7 +31,6 @@ export default function Navigation() {
   const navLinks = [
     { path: '/about', label: language === 'fr' ? 'À Propos' : 'About' },
     { path: '/strategies', label: language === 'fr' ? 'Stratégies' : 'Strategies' },
-    { path: '/titan-dc-ai', label: 'TITAN DC AI' },
     { path: '/governance', label: language === 'fr' ? 'Gouvernance & Risques' : 'Governance & Risks' },
     { path: '/european-approach', label: language === 'fr' ? 'Approche Européenne' : 'European Approach' },
     { path: '/investors', label: language === 'fr' ? 'Investisseurs' : 'Investors' },

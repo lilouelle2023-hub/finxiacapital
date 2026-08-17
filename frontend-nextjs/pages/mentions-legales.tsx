@@ -14,7 +14,7 @@ export default function MentionsLegalesPage() {
       sections: [
         {
           h2: 'Éditeur du site',
-          p: 'FINXIA Capital S.à r.l.\nSociété en commandite simple par actions (SCSp)\nRCS Luxembourg : B123456\nSiège social : 12, rue du Commerce, L-1234 Luxembourg\nDirecteur de publication : Lila Benhammou, Co-Fondatrice & CIO'
+          p: 'FINXIA Capital SCSp\nSociété en Commandite Spéciale (SCSp)\nRCS Luxembourg : B123456\nSiège social : 12, rue du Commerce, L-1234 Luxembourg\nDirecteur de publication : Lila Benhammou, Co-Fondatrice & CIO'
         },
         {
           h2: 'Hébergeur',
@@ -22,7 +22,7 @@ export default function MentionsLegalesPage() {
         },
         {
           h2: 'Propriété intellectuelle',
-          p: 'L\'ensemble du contenu de ce site (textes, images, logos, charte graphique) est la propriété exclusive de FINXIA Capital S.à r.l. Toute reproduction, représentation ou diffusion, en tout ou en partie, à des fins commerciales ou non, est interdite sans l\'autorisation écrite préalable de FINXIA Capital.'
+          p: 'L\'ensemble du contenu de ce site (textes, images, logos, charte graphique) est la propriété exclusive de FINXIA Capital SCSp. Toute reproduction, représentation ou diffusion, en tout ou en partie, à des fins commerciales ou non, est interdite sans l\'autorisation écrite préalable de FINXIA Capital.'
         },
         {
           h2: 'Responsabilité',
@@ -40,7 +40,7 @@ export default function MentionsLegalesPage() {
       sections: [
         {
           h2: 'Publisher',
-          p: 'FINXIA Capital S.à r.l.\nSpecial Limited Partnership (SCSp)\nLuxembourg RCS: B123456\nRegistered office: 12, rue du Commerce, L-1234 Luxembourg\nPublication director: Lila Benhammou, Co-Founder & CIO'
+          p: 'FINXIA Capital SCSp\nSpecial Limited Partnership (SCSp)\nLuxembourg RCS: B123456\nRegistered office: 12, rue du Commerce, L-1234 Luxembourg\nPublication director: Lila Benhammou, Co-Founder & CIO'
         },
         {
           h2: 'Hosting Provider',
@@ -48,7 +48,7 @@ export default function MentionsLegalesPage() {
         },
         {
           h2: 'Intellectual Property',
-          p: 'All content on this site (text, images, logos, graphic design) is the exclusive property of FINXIA Capital S.à r.l. Any reproduction, representation or distribution, in whole or in part, for commercial or non-commercial purposes, is prohibited without the prior written consent of FINXIA Capital.'
+          p: 'All content on this site (text, images, logos, graphic design) is the exclusive property of FINXIA Capital SCSp. Any reproduction, representation or distribution, in whole or in part, for commercial or non-commercial purposes, is prohibited without the prior written consent of FINXIA Capital.'
         },
         {
           h2: 'Liability',

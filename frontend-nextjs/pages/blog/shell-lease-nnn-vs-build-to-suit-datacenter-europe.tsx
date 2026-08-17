@@ -229,7 +229,7 @@ export default function ShellLeaseVsBuildToSuitPage() {
             <div className="mt-16 pt-8 border-t border-slate-200">
               <h3 className="font-serif text-xl mb-6">{t.learnMoreTitle}</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href={language === 'fr' ? "/titan-dc-ai" : "/en/titan-dc-ai"} className="p-6 bg-slate-50 hover:bg-slate-100 transition-colors border-l-4 border-[#C45A3B]">
+                <Link href={language === 'fr' ? "/strategies" : "/en/strategies"} className="p-6 bg-slate-50 hover:bg-slate-100 transition-colors border-l-4 border-[#C45A3B]">
                   <h4 className="font-medium text-slate-900 mb-2">{t.link1Title}</h4>
                   <p className="text-slate-600 text-sm">{t.link1Desc}</p>
                 </Link>

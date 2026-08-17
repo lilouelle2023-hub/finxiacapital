@@ -4,7 +4,7 @@ const ORGANIZATION_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "FINXIA Capital",
-  "legalName": "FINXIA Capital S.à r.l.",
+  "legalName": "FINXIA Capital SCSp",
   "url": "https://finxiacapital.com",
   "logo": "https://finxiacapital.com/logo-finxia.png",
   "sameAs": [

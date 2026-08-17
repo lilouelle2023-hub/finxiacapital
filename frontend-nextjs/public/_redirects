@@ -21,6 +21,13 @@
 /en/press             /en/lila-benhammou/    301
 /en/press/            /en/lila-benhammou/    301
 
+# TITAN DC AI Moselle project page depublished — deal not yet won (Novasco
+# adjudication pending, 1 Sept). Will be republished on award confirmation.
+/titan-dc-ai          /strategies/           301
+/titan-dc-ai/         /strategies/           301
+/en/titan-dc-ai       /en/strategies/        301
+/en/titan-dc-ai/      /en/strategies/        301
+
 # Force trailing slash redirects (Next.js generates /page/index.html)
 /contact              /contact/           301
 /about                /about/             301

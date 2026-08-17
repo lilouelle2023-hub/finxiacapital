@@ -125,7 +125,7 @@ export default function Footer() {
               : 'Luxembourg SCSp — Proprietary Vehicle · Own Capital · Debt Leverage · TITAN DC AI Green Bond'}
           </p>
           <p className="text-slate-500 text-xs mt-2">
-            © {currentYear} FINXIA Capital S.à r.l.
+            © {currentYear} FINXIA Capital SCSp
           </p>
         </div>
       </div>
