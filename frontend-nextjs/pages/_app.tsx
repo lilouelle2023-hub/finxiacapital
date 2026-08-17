@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { LanguageProvider } from '@/context/LanguageContext'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import CookieConsent from '@/components/CookieConsent'
 
 export default function App({ Component, pageProps }: AppProps) {
   const initialLanguage = pageProps.initialLanguage || 'fr';
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </main>
         <Footer />
       </div>
+      <CookieConsent />
     </LanguageProvider>
   )
 }
