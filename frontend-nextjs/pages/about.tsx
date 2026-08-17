@@ -266,8 +266,8 @@ const personSchema = {
                     </h4>
                     <p className="text-slate-400 text-sm">
                       {language === 'fr' 
-                        ? "Structuration juridique et fiscale SCSp finalisée. Identification de sites brownfield cibles en France, Espagne, Italie. Ambition : campus datacenter IA souverain 40 MW, optimisation énergétique certifiée EU Taxonomy 8.1, financement Green Bond ESG."
-                        : "SCSp legal and tax structuring finalized. Target brownfield site identification across France, Spain, Italy. Ambition: sovereign 40 MW AI datacenter campus, EU Taxonomy 8.1-certified energy optimization, ESG Green Bond financing."}
+                        ? "Structuration juridique et fiscale SCSp finalisée. Identification de sites brownfield cibles en France, Espagne, Italie. Ambition : portefeuille multi-sites de datacenters IA souverains, optimisation énergétique certifiée EU Taxonomy 8.1, financement Green Bond ESG."
+                        : "SCSp legal and tax structuring finalized. Target brownfield site identification across France, Spain, Italy. Ambition: multi-site portfolio of sovereign AI datacenters, EU Taxonomy 8.1-certified energy optimization, ESG Green Bond financing."}
                     </p>
                   </div>
                 </div>

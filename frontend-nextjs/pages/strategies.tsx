@@ -13,7 +13,7 @@ export default function StrategiesPage() {
       id: 'titan-datacenter',
       icon: Server,
       num: '01',
-      subtitle: language === 'fr' ? 'Stratégie brownfield · Campus 40 MW · EU Taxonomy 8.1' : 'Brownfield strategy · 40 MW Campus · EU Taxonomy 8.1',
+      subtitle: language === 'fr' ? 'Stratégie brownfield · Multi-Sites · EU Taxonomy 8.1' : 'Brownfield strategy · Multi-Site · EU Taxonomy 8.1',
       title: language === 'fr' ? 'TITAN DC AI — Datacenters IA Souverains Européens' : 'TITAN DC AI — Sovereign European AI Datacenters',
       headline: language === 'fr' 
         ? 'L\'infrastructure de l\'IA a besoin d\'un socle. Nous le transformons.'
