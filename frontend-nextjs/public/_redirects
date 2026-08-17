@@ -17,6 +17,10 @@
 /press                /lila-benhammou/    301
 /press/               /lila-benhammou/    301
 
+# EN mirror of the P0 press fix above — was missing, confirmed 404 via GSC
+/en/press             /en/lila-benhammou/    301
+/en/press/            /en/lila-benhammou/    301
+
 # Force trailing slash redirects (Next.js generates /page/index.html)
 /contact              /contact/           301
 /about                /about/             301
