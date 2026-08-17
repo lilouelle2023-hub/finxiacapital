@@ -340,21 +340,16 @@ export default function StrategiesPage() {
                         <h4 className="font-semibold text-white mb-4">
                           {language === 'fr' ? 'Certification énergétique indépendante' : 'Independent Energy Certification'}
                         </h4>
-                        <div className="flex items-center gap-6 mb-4">
-                          <div className="text-center">
+                        <div className="flex items-center gap-6">
+                          <div className="text-center flex-shrink-0">
                             <div className="text-5xl font-bold text-[#C45A3B]">≤ 1,30</div>
                             <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'PUE cible' : 'Target PUE'}</div>
                           </div>
-                          <div className="flex-1">
-                            <div className="text-xs font-medium text-[#C45A3B] uppercase tracking-wider mb-1">
-                              {language === 'fr' ? 'Méthode IPMVP Option C' : 'IPMVP Option C Method'}
-                            </div>
-                            <p className="text-sm text-slate-300 leading-relaxed">
-                              {language === 'fr'
-                                ? "Pour chaque actif acquis dans le cadre de TITAN DC AI, FINXIA Capital cible un PUE inférieur ou égal à 1,30 — seuil de référence de l'Article 21 EED à horizon 2027. La progression PUE sera mesurée selon la méthode IPMVP Option C et documentée en vue d'une certification indépendante."
-                                : "For each asset acquired under TITAN DC AI, FINXIA Capital targets a PUE below or equal to 1.30 — the EED Article 21 reference threshold by 2027. PUE progression will be measured according to IPMVP Option C methodology and documented for independent certification."}
-                            </p>
-                          </div>
+                          <p className="text-sm text-slate-300 leading-relaxed">
+                            {language === 'fr'
+                              ? "Seuil de référence EED 2027, par actif — certification indépendante (IPMVP Option C)."
+                              : "EED 2027 reference threshold, per asset — independent certification (IPMVP Option C)."}
+                          </p>
                         </div>
                       </div>
 
@@ -365,10 +360,10 @@ export default function StrategiesPage() {
                         </h4>
                         <div className="space-y-4">
                           {[
-                            { quarter: 'Q2 2026', event: language === 'fr' ? 'Premier LOI signé sur actif TITAN DC AI · Due diligence technique lancée' : 'First LOI signed on TITAN DC AI asset · Technical due diligence launched' },
-                            { quarter: 'Q3 2026', event: language === 'fr' ? 'Acquisition finalisée · Baseline PUE établie selon méthode IPMVP Option C' : 'Acquisition finalized · PUE baseline established per IPMVP Option C methodology' },
-                            { quarter: 'Q4 2026', event: language === 'fr' ? 'Plan de rénovation énergétique en cours · Dossier Green Bond structuré' : 'Energy retrofit program in progress · Green Bond dossier structured' },
-                            { quarter: '2027', event: language === 'fr' ? 'Première certification Bureau Veritas · Actif opérationnel IA-ready · Locataire en place' : 'First Bureau Veritas certification · Asset operational and AI-ready · Tenant in place' },
+                            { quarter: 'Q2 2026', event: language === 'fr' ? 'LOI signé sur le premier actif' : 'LOI signed on first asset' },
+                            { quarter: 'Q3 2026', event: language === 'fr' ? 'Acquisition finalisée · baseline PUE établie' : 'Acquisition finalized · PUE baseline established' },
+                            { quarter: 'Q4 2026', event: language === 'fr' ? 'Rénovation énergétique lancée' : 'Energy retrofit launched' },
+                            { quarter: '2027', event: language === 'fr' ? 'Certification Bureau Veritas · actif IA-ready' : 'Bureau Veritas certification · asset AI-ready' },
                           ].map((item, idx) => (
                             <div key={idx} className="flex items-start gap-4">
                               <div className="flex-shrink-0 w-20 pt-1">
@@ -414,80 +409,52 @@ export default function StrategiesPage() {
                         </p>
                       </div>
 
-                      {/* Horizon d'investissement */}
-                      <div className="my-8 p-6 bg-white border-2 border-slate-200 rounded-lg">
-                        <h4 className="font-semibold text-slate-800 mb-4">
-                          {language === 'fr' ? "Horizon d'investissement" : 'Investment horizon'}
-                        </h4>
-                        <div className="grid sm:grid-cols-3 gap-4 mb-4">
-                          {[
-                            { period: language === 'fr' ? 'Acquisition' : 'Acquisition', date: language === 'fr' ? 'À partir de 2026' : 'From 2026' },
-                            { period: language === 'fr' ? 'Transformation & Stabilisation' : 'Transformation & Stabilization', date: '2027 — 2029' },
-                            { period: language === 'fr' ? 'Sorties stratégiques' : 'Strategic exits', date: language === 'fr' ? 'À partir de 2031' : 'From 2031' },
-                          ].map((phase, idx) => (
-                            <div key={idx} className="border-l-4 border-[#C45A3B] pl-3 py-1">
-                              <p className="text-[#C45A3B] text-xs uppercase tracking-wider font-medium mb-1">{phase.period}</p>
-                              <p className="text-slate-700 text-sm font-medium">{phase.date}</p>
-                            </div>
-                          ))}
-                        </div>
-                        <p className="text-slate-600 text-sm leading-relaxed">
-                          {language === 'fr'
-                            ? 'Horizon cible de détention : 5 à 6 ans par actif.'
-                            : 'Target holding horizon: 5 to 6 years per asset.'}
-                        </p>
-                      </div>
-
-                      {/* La crise de capacité électrique — avantage brownfield */}
-                      <div className="my-8 p-6 bg-gradient-to-br from-[#C45A3B]/10 to-white border-l-4 border-[#C45A3B] rounded-lg">
-                        <h4 className="font-semibold text-slate-800 mb-4 flex items-center gap-2">
-                          <span className="text-[#C45A3B] text-2xl">⚡</span>
-                          {language === 'fr' ? 'La crise de capacité électrique : un avantage structurel pour le brownfield' : 'The capacity crisis: a structural advantage for brownfield'}
-                        </h4>
-                        <div className="space-y-4">
-                          <div className="grid sm:grid-cols-3 gap-4">
-                            <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
-                              <div className="text-3xl font-bold text-[#C45A3B]">18 GW</div>
-                              <div className="text-xs text-slate-500 uppercase tracking-wider mt-1">{language === 'fr' ? 'Demande réservée datacenters France' : 'Reserved datacenter demand France'}</div>
-                            </div>
-                            <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
-                              <div className="text-3xl font-bold text-[#C45A3B]">~15%</div>
-                              <div className="text-xs text-slate-500 uppercase tracking-wider mt-1">{language === 'fr' ? 'Concrétisé aujourd\'hui' : 'Realized today'}</div>
-                            </div>
-                            <div className="text-center p-4 bg-white rounded-lg border border-slate-200">
-                              <div className="text-3xl font-bold text-[#C45A3B]">5</div>
-                              <div className="text-xs text-slate-500 uppercase tracking-wider mt-1">{language === 'fr' ? 'Sites fast track identifiés par l\'État' : 'Fast track sites identified by the State'}</div>
-                            </div>
+                      {/* Horizon d'investissement + Souveraineté numérique — côte à côte */}
+                      <div className="grid md:grid-cols-2 gap-6 my-8">
+                        <div className="p-6 bg-white border-2 border-slate-200 rounded-lg">
+                          <h4 className="font-semibold text-slate-800 mb-4">
+                            {language === 'fr' ? "Horizon d'investissement" : 'Investment horizon'}
+                          </h4>
+                          <div className="space-y-3 mb-4">
+                            {[
+                              { period: language === 'fr' ? 'Acquisition' : 'Acquisition', date: language === 'fr' ? 'À partir de 2026' : 'From 2026' },
+                              { period: language === 'fr' ? 'Transformation & Stabilisation' : 'Transformation & Stabilization', date: '2027 — 2029' },
+                              { period: language === 'fr' ? 'Sorties stratégiques' : 'Strategic exits', date: language === 'fr' ? 'À partir de 2031' : 'From 2031' },
+                            ].map((phase, idx) => (
+                              <div key={idx} className="border-l-4 border-[#C45A3B] pl-3 py-1">
+                                <p className="text-[#C45A3B] text-xs uppercase tracking-wider font-medium mb-1">{phase.period}</p>
+                                <p className="text-slate-700 text-sm font-medium">{phase.date}</p>
+                              </div>
+                            ))}
                           </div>
                           <p className="text-slate-600 text-sm leading-relaxed">
                             {language === 'fr'
-                              ? "Sites brownfield déjà raccordés au réseau HT — avantage de temps de 3 à 5 ans sur les acteurs greenfield."
-                              : "Brownfield sites already connected to the HV grid — a 3 to 5 year time advantage over greenfield players."}
+                              ? 'Horizon cible de détention : 5 à 6 ans par actif.'
+                              : 'Target holding horizon: 5 to 6 years per asset.'}
                           </p>
                         </div>
-                      </div>
 
-                      {/* Souveraineté numérique et atout énergétique français */}
-                      <div className="my-8 p-6 bg-[#1E2A3A] text-white rounded-lg">
-                        <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-                          <span className="text-[#C45A3B] text-2xl">🛡️</span>
-                          {language === 'fr' ? 'Souveraineté numérique française & européenne' : 'French & European digital sovereignty'}
-                        </h4>
-                        <div className="grid sm:grid-cols-2 gap-4 mb-4">
-                          <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
-                            <div className="text-3xl font-bold text-[#C45A3B]">92%</div>
-                            <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Données occidentales stockées aux USA' : 'Western data stored in the USA'}</div>
+                        <div className="p-6 bg-[#1E2A3A] text-white rounded-lg">
+                          <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
+                            <span className="text-[#C45A3B] text-2xl">🛡️</span>
+                            {language === 'fr' ? 'Souveraineté numérique française & européenne' : 'French & European digital sovereignty'}
+                          </h4>
+                          <div className="grid grid-cols-2 gap-4 mb-4">
+                            <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
+                              <div className="text-3xl font-bold text-[#C45A3B]">92%</div>
+                              <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Données occidentales stockées aux USA' : 'Western data stored in the USA'}</div>
+                            </div>
+                            <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
+                              <div className="text-3xl font-bold text-[#C45A3B]">95%</div>
+                              <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Électricité française décarbonisée' : 'French electricity decarbonized'}</div>
+                            </div>
                           </div>
-                          <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
-                            <div className="text-3xl font-bold text-[#C45A3B]">95%</div>
-                            <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Électricité française décarbonisée' : 'French electricity decarbonized'}</div>
-                          </div>
+                          <p className="text-slate-300 text-sm leading-relaxed">
+                            {language === 'fr'
+                              ? "La France capte la double prime de souveraineté numérique et de décarbonation recherchée par les hyperscalers."
+                              : "France captures the double premium of digital sovereignty and decarbonization sought by hyperscalers."}
+                          </p>
                         </div>
-                        <p className="text-slate-300 text-sm leading-relaxed">
-                          {language === 'fr'
-                            ? "Mix électrique décarbonisé et énergie disponible : la France capte la double prime de souveraineté numérique et de décarbonation recherchée par les hyperscalers."
-                            : "Decarbonized electricity mix and available energy: France captures the double premium of digital sovereignty and decarbonization sought by hyperscalers."}
-                        </p>
                       </div>
 
                       {/* Pour aller plus loin — deep dives blog */}
