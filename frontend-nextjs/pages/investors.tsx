@@ -32,12 +32,12 @@ export default function InvestorsPage() {
       <SEO
         title={language === 'fr' ? "Partenaires Institutionnels — FINXIA Capital SCSp Luxembourg" : "Institutional Partners — FINXIA Capital SCSp Luxembourg"}
         description={language === 'fr'
-          ? "FINXIA Capital est un véhicule propriétaire SCSp luxembourgeois. TITAN DC AI déployé sur capital propre + financement Green Bond pour investisseurs professionnels MiFID II."
-          : "FINXIA Capital is a Luxembourg SCSp proprietary vehicle. TITAN DC AI deployed on own equity + Green Bond financing for MiFID II professional investors."}
+          ? "FINXIA Capital est un véhicule propriétaire SCSp luxembourgeois. TITAN DC AI déployé sur capital propre, sans levée auprès d'investisseurs tiers, complété par un financement Green Bond et dette pour contreparties financières."
+          : "FINXIA Capital is a Luxembourg SCSp proprietary vehicle. TITAN DC AI deployed on own equity, without third-party fundraising, supplemented by Green Bond and debt financing for financial counterparties."}
         canonical={language === 'fr' ? "https://finxiacapital.com/investors/" : "https://finxiacapital.com/en/investors/"}
-        keywords={language === 'fr' 
-          ? "FINXIA Capital SCSp, véhicule propriétaire Luxembourg, TITAN DC AI capital propre, Green Bond datacenter, investisseurs professionnels MiFID II"
-          : "FINXIA Capital SCSp, Luxembourg proprietary vehicle, TITAN DC AI own equity, datacenter Green Bond, MiFID II professional investors"}
+        keywords={language === 'fr'
+          ? "FINXIA Capital SCSp, véhicule propriétaire Luxembourg, TITAN DC AI capital propre, Green Bond datacenter, financement dette institutionnelle"
+          : "FINXIA Capital SCSp, Luxembourg proprietary vehicle, TITAN DC AI own equity, datacenter Green Bond, institutional debt financing"}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
@@ -276,8 +276,8 @@ export default function InvestorsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-slate-600 text-sm leading-relaxed max-w-4xl">
             {language === 'fr'
-              ? "FINXIA Capital SCSp, Luxembourg. Ce contenu est fourni à titre informatif uniquement. Il ne constitue pas une offre de souscription ni un conseil en investissement. FINXIA Capital est réservé aux investisseurs professionnels au sens de la Directive MiFID II (2014/65/UE)."
-              : "FINXIA Capital SCSp, Luxembourg. This content is provided for informational purposes only. It does not constitute a subscription offer or investment advice. FINXIA Capital is reserved for professional investors within the meaning of MiFID II Directive (2014/65/EU)."}
+              ? "FINXIA Capital SCSp, Luxembourg. Ce contenu est fourni à titre informatif uniquement et ne constitue pas une offre de souscription ni un conseil en investissement — FINXIA Capital est un véhicule propriétaire déployant son capital propre, sans collecte de fonds auprès d'investisseurs tiers. Le Green Bond et les instruments de dette TITAN DC AI, lorsqu'ils sont distribués à des banques, fonds de dette et investisseurs obligataires, le sont exclusivement auprès de contreparties professionnelles au sens de la Directive MiFID II (2014/65/UE)."
+              : "FINXIA Capital SCSp, Luxembourg. This content is provided for informational purposes only and does not constitute a subscription offer or investment advice — FINXIA Capital is a proprietary vehicle deploying its own capital, without raising funds from third-party investors. The TITAN DC AI Green Bond and debt instruments, when distributed to banks, debt funds and bond investors, are placed exclusively with professional counterparties within the meaning of MiFID II Directive (2014/65/EU)."}
           </p>
         </div>
       </section>

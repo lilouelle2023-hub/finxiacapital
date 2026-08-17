@@ -85,7 +85,7 @@ export default function Article7Page() {
               </p>
             </div>
             <div className="mt-16 pt-8 border-t border-slate-200">
-              <p className="text-slate-600 text-sm leading-relaxed"><strong className="text-slate-900">Finxia Capital</strong> {language === 'fr' ? "SCSp, Luxembourg. Réservé aux investisseurs professionnels au sens de MiFID II." : "SCSp, Luxembourg. Reserved for professional investors within the meaning of MiFID II."}</p>
+              <p className="text-slate-600 text-sm leading-relaxed"><strong className="text-slate-900">Finxia Capital</strong> {language === 'fr' ? "SCSp, Luxembourg. Véhicule propriétaire déployant son capital propre, sans collecte de fonds auprès d'investisseurs tiers." : "SCSp, Luxembourg. Proprietary vehicle deploying its own capital, without raising funds from third-party investors."}</p>
             </div>
           </div>
         </div>
