@@ -70,12 +70,12 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-5 xl:gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 href={link.path + '/'}
-                className={`text-sm font-medium tracking-wide transition-colors link-hover ${
+                className={`whitespace-nowrap flex-shrink-0 text-sm font-medium tracking-wide transition-colors link-hover ${
                   router.pathname === link.path || router.pathname === link.path + '/'
                     ? 'text-[#C45A3B]'
                     : 'text-slate-700 hover:text-[#C45A3B]'
@@ -94,7 +94,7 @@ export default function Navigation() {
               <button
                 data-testid="nav-resources-trigger"
                 onClick={() => setIsResourcesOpen(!isResourcesOpen)}
-                className={`inline-flex items-center gap-1 text-sm font-medium tracking-wide transition-colors link-hover ${
+                className={`whitespace-nowrap flex-shrink-0 inline-flex items-center gap-1 text-sm font-medium tracking-wide transition-colors link-hover ${
                   isResourcesActive ? 'text-[#C45A3B]' : 'text-slate-700 hover:text-[#C45A3B]'
                 }`}
               >
@@ -134,7 +134,7 @@ export default function Navigation() {
               <button
                 data-testid="nav-press-trigger"
                 onClick={() => setIsPressOpen(!isPressOpen)}
-                className={`inline-flex items-center gap-1 text-sm font-medium tracking-wide transition-colors link-hover ${
+                className={`whitespace-nowrap flex-shrink-0 inline-flex items-center gap-1 text-sm font-medium tracking-wide transition-colors link-hover ${
                   isPressActive ? 'text-[#C45A3B]' : 'text-slate-700 hover:text-[#C45A3B]'
                 }`}
               >
@@ -169,7 +169,7 @@ export default function Navigation() {
               <Link
                 key={link.path}
                 href={link.path + '/'}
-                className={`text-sm font-medium tracking-wide transition-colors link-hover ${
+                className={`whitespace-nowrap flex-shrink-0 text-sm font-medium tracking-wide transition-colors link-hover ${
                   router.pathname === link.path || router.pathname === link.path + '/'
                     ? 'text-[#C45A3B]'
                     : 'text-slate-700 hover:text-[#C45A3B]'
