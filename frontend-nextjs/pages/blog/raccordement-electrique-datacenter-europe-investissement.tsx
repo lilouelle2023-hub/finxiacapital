@@ -120,7 +120,7 @@ export default function ArticleRaccordementElectriqueDatacenterEuropeInvestissem
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement" : "https://finxiacapital.com/en/blog/raccordement-electrique-datacenter-europe-investissement"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement" : "https://finxiacapital.com/en/blog/grid-connection-datacenter-europe-investment"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleRaccordementElectriqueDatacenterEuropeInvestissem
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/" : "https://finxiacapital.com/en/blog/raccordement-electrique-datacenter-europe-investissement/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/" : "https://finxiacapital.com/en/blog/grid-connection-datacenter-europe-investment/"}
         keywords={language === 'fr' ? "raccordement électrique, datacenter, Europe, RTE, investissement, prime de rareté" : "grid connection, datacenter, Europe, RTE, investment, scarcity premium"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/"
-        hreflangEn="https://finxiacapital.com/en/blog/raccordement-electrique-datacenter-europe-investissement/"
+        hreflangEn="https://finxiacapital.com/en/blog/grid-connection-datacenter-europe-investment/"
         hreflangDefault="https://finxiacapital.com/blog/raccordement-electrique-datacenter-europe-investissement/"
       />
       <article className="bg-white">

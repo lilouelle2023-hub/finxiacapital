@@ -1,5 +1,75 @@
 [
   {
+    "frSlug": "hpc-europe-exascale-souverainete-numerique-investissement",
+    "date": "2026-08-05",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "HPC et exascale en Europe : l'investissement dans les supercalculateurs comme levier de souveraineté numérique",
+      "en": "HPC and Exascale in Europe: Supercomputing Investment as a Digital Sovereignty Lever"
+    },
+    "excerpt": {
+      "fr": "L'Europe investit massivement dans le HPC et l'exascale avec Jupiter et les projets français. Quelles opportunités pour les investisseurs dans la souveraineté numérique ?",
+      "en": "Europe is investing massively in HPC and exascale with Jupiter and French projects. What opportunities for investors in digital sovereignty?"
+    }
+  },
+  {
+    "frSlug": "nvidia-blackwell-liquid-cooling-european-datacenters-2026",
+    "date": "2026-07-25",
+    "readTime": "7 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "NVIDIA Blackwell Ultra : 200 kW par rack, refroidissement liquide obligatoire — les datacenters européens en sursis",
+      "en": "NVIDIA Blackwell Ultra: 200 kW per rack, mandatory liquid cooling — European datacenters on notice"
+    },
+    "excerpt": {
+      "fr": "NVIDIA dévoile les Blackwell Ultra avec une densité de 200 kW par rack. Le refroidissement liquide devient incontournable. Quels datacenters européens survivront ?",
+      "en": "NVIDIA unveils Blackwell Ultra with a density of 200 kW per rack. Liquid cooling becomes mandatory. Which European datacenters will survive?"
+    }
+  },
+  {
+    "frSlug": "european-sovereign-cloud-gaia-x-investors-2026",
+    "date": "2026-07-25",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "Cloud souverain européen : Gaia-X atteint 200 fournisseurs certifiés — ce que cela change pour les investisseurs",
+      "en": "European Sovereign Cloud: Gaia-X Reaches 200 Certified Providers — What It Means for Investors"
+    },
+    "excerpt": {
+      "fr": "Le projet Gaia-X compte désormais 200 fournisseurs certifiés. La France et l'Allemagne pilotent le déploiement. Analyse des implications pour les investisseurs en infrastructure.",
+      "en": "The Gaia-X project now has 200 certified providers. France and Germany lead deployment. Analysis of implications for infrastructure investors."
+    }
+  },
+  {
+    "frSlug": "edge-computing-modular-datacenter-generative-ai-europe-2026",
+    "date": "2026-07-25",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "Edge computing et datacenters modulaires : la réponse européenne à l'explosion de l'IA générative",
+      "en": "Edge Computing and Modular Datacenters: Europe's Answer to the Generative AI Explosion"
+    },
+    "excerpt": {
+      "fr": "L'IA générative impose de nouvelles contraintes de latence. L'edge computing et les datacenters modulaires émergent comme la solution. Analyse pour les investisseurs.",
+      "en": "Generative AI imposes new latency constraints. Edge computing and modular datacenters are emerging as the solution. Analysis for investors."
+    }
+  },
+  {
+    "frSlug": "green-datacenter-pue-transformation-eed-regulation-2026",
+    "date": "2026-07-25",
+    "readTime": "8 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "Green datacenter : la transformation PUE et la réglementation EED redessinent l'investissement infrastructure en Europe",
+      "en": "Green Datacenter: PUE Transformation and EED Regulation Are Reshaping Infrastructure Investment in Europe"
+    },
+    "excerpt": {
+      "fr": "La directive EED et l'optimisation PUE transforment les datacenters européens. Guide pour les investisseurs sur la réglementation, la certification et les rendements.",
+      "en": "The EED directive and PUE optimization are transforming European datacenters. Guide for investors on regulation, certification and returns."
+    }
+  },
+  {
     "frSlug": "green-bond-vs-pret-a-impact-financement-datacenter-europe",
     "enSlug": "green-bond-vs-sustainability-linked-loan-datacenter-financing-europe",
     "date": "2026-08-17",

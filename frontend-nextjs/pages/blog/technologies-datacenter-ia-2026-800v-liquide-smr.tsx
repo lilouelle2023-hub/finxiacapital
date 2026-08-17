@@ -120,7 +120,7 @@ export default function ArticleTechnologiesDatacenterIa2026800vLiquideSmrPage() 
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr" : "https://finxiacapital.com/en/blog/technologies-datacenter-ia-2026-800v-liquide-smr"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr" : "https://finxiacapital.com/en/blog/datacenter-technologies-2026-800v-liquid-smr"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleTechnologiesDatacenterIa2026800vLiquideSmrPage() 
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr/" : "https://finxiacapital.com/en/blog/technologies-datacenter-ia-2026-800v-liquide-smr/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr/" : "https://finxiacapital.com/en/blog/datacenter-technologies-2026-800v-liquid-smr/"}
         keywords={language === 'fr' ? "800V DC, refroidissement liquide, SMR, datacenter IA, NVIDIA Blackwell, PUE" : "800V DC, liquid cooling, SMR, AI datacenter, NVIDIA Blackwell, PUE"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr/"
-        hreflangEn="https://finxiacapital.com/en/blog/technologies-datacenter-ia-2026-800v-liquide-smr/"
+        hreflangEn="https://finxiacapital.com/en/blog/datacenter-technologies-2026-800v-liquid-smr/"
         hreflangDefault="https://finxiacapital.com/blog/technologies-datacenter-ia-2026-800v-liquide-smr/"
       />
       <article className="bg-white">

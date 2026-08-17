@@ -1,3 +1,7 @@
+# Redirect http+www to https+non-www in a single hop (must precede the two rules below,
+# otherwise Netlify's own http->https upgrade fires first and creates a 2-hop chain)
+http://www.finxiacapital.com/* https://finxiacapital.com/:splat 301!
+
 # Redirect www to non-www
 https://www.finxiacapital.com/* https://finxiacapital.com/:splat 301!
 

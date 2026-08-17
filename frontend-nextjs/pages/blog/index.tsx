@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { Calendar, ArrowRight, Zap, Filter } from 'lucide-react';
 import SEO from '@/components/SEO';
+import blogPosts from '@/data/blogPosts.json';
 
 export default function BlogIndexPage() {
   const { language } = useLanguage();
@@ -343,393 +344,28 @@ export default function BlogIndexPage() {
     ? newsItems
     : newsItems.filter(item => item.topic === activeFilter);
 
-  const articles = [
-    {
-      slug: language === 'fr' ? 'green-bond-vs-pret-a-impact-financement-datacenter-europe' : 'green-bond-vs-sustainability-linked-loan-datacenter-financing-europe',
-      title: language === 'fr'
-        ? "Green Bond ICMA vs Prêt à Impact (Sustainability-Linked Loan) : Quel Financement pour la Transformation Brown-to-Green ?"
-        : "ICMA Green Bond vs Sustainability-Linked Loan: Which Financing for Brown-to-Green Datacenter Transformation?",
-      excerpt: language === 'fr'
-        ? "Deux instruments dominent le financement de la transformation ESG des datacenters européens. Leurs mécaniques, garanties et implications pour l'investisseur sont radicalement différentes."
-        : "Two debt instruments dominate ESG transformation financing for European datacenters. Their mechanics, safeguards and implications for investors are radically different.",
-      date: '2026-08-17',
-      category: 'Financing & Structuring',
-      readTime: '9 min'
-    },
-    {
-      slug: language === 'fr' ? 'shell-lease-nnn-vs-build-to-suit-datacenter-europe' : 'shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe',
-      title: language === 'fr'
-        ? "Shell Lease NNN vs Build-to-Suit : Quel Modèle Locatif pour l'Infrastructure Datacenter en Europe ?"
-        : "Shell Lease NNN vs Build-to-Suit: Which Leasing Model for Datacenter Infrastructure in Europe?",
-      excerpt: language === 'fr'
-        ? "Powered shell en triple net (NNN) ou build-to-suit sur mesure : deux modèles dominent le marché datacenter européen, avec des implications de risque et de rendement fondamentalement différentes."
-        : "Triple-net (NNN) powered shell or custom build-to-suit: two leasing models dominate the European datacenter market, with fundamentally different risk and return implications.",
-      date: '2026-08-17',
-      category: 'Real Assets & Infrastructure',
-      readTime: '8 min'
-    },
-    {
-      slug: language === 'fr' ? 'titan-dc-ai-hors-perimetre-sfdr-article-8-9-avantage-structurel' : 'titan-dc-ai-outside-sfdr-article-8-9-structural-advantage',
-      title: language === 'fr'
-        ? "Pourquoi TITAN DC AI Échappe à la Classification SFDR Article 8/9 — et Pourquoi C'est un Avantage Structurel"
-        : "Why TITAN DC AI Falls Outside SFDR Article 8/9 Classification — and Why That's a Structural Advantage",
-      excerpt: language === 'fr'
-        ? "TITAN DC AI n'est ni Article 8 ni Article 9 au sens de SFDR. Ce n'est pas une lacune de conformité : c'est la conséquence directe d'un choix de structuration en capital propre."
-        : "TITAN DC AI is neither Article 8 nor Article 9 under SFDR. This is not a compliance gap: it is the direct consequence of a proprietary-equity structuring choice.",
-      date: '2026-08-17',
-      category: 'Structure & Governance',
-      readTime: '8 min'
-    },
-    {
-      slug: 'edge-computing-modular-datacenter-sovereign-ai-europe-2026',
-      title: language === 'fr'
-        ? "Edge computing et datacenters modulaires : la nouvelle frontiere de l'IA souveraine en Europe"
-        : "Edge Computing and Modular Datacenters: The New Frontier of Sovereign AI in Europe",
-      excerpt: language === 'fr'
-        ? "L'explosion de l'IA generative transforme l'edge computing en infrastructure critique. Les datacenters modulaires green, deployables en 12 semaines, deviennent le pilier de la souverainete numerique europeenne face aux hyperscalers americains."
-        : "The generative AI explosion is transforming edge computing into critical infrastructure. Green modular datacenters, deployable in 12 weeks, are becoming the pillar of European digital sovereignty against American hyperscalers.",
-      date: '2026-08-07',
-      category: 'Digital Infrastructure',
-      readTime: '6 min'
-    },
-
-    {
-      slug: 'hpc-europe-exascale-souverainete-numerique-investissement',
-      title: language === 'fr'
-        ? "HPC et exascale en Europe : l'investissement dans les supercalculateurs comme levier de souverainete numerique"
-        : "HPC and Exascale in Europe: Supercomputing Investment as a Digital Sovereignty Lever",
-      excerpt: language === 'fr'
-        ? "Avec le supercalculateur Jupiter en Allemagne et les projets exascale francais, l'Europe investit massivement dans le HPC. Ces infrastructures strategiques redessinent la carte de la souverainete numerique et ouvrent de nouvelles opportunites pour les investisseurs en datacenter."
-        : "With the Jupiter supercomputer in Germany and French exascale projects, Europe is investing massively in HPC. These strategic infrastructures are reshaping the digital sovereignty map and opening new opportunities for datacenter investors.",
-      date: '2026-08-05',
-      category: 'Digital Infrastructure',
-      readTime: '7 min'
-    },
-    {
-      slug: 'raccordement-electrique-datacenter-europe-investissement',
-      title: language === 'fr'
-        ? "Pourquoi l'Europe risque de perdre la bataille de l'IA par manque de raccordements électriques"
-        : "Why Europe Risks Losing the AI Battle Due to Lack of Grid Connections",
-      excerpt: language === 'fr'
-        ? "67% des opérateurs européens citent l'accès à l'électricité comme leur défi numéro 1. Pour les investisseurs, ce goulot d'étranglement structurel crée une prime de rareté sur les actifs déjà raccordés."
-        : "67% of European operators cite electricity access as their number one challenge. For investors, this structural bottleneck creates a scarcity premium on already-connected assets.",
-      date: '2026-07-28',
-      category: 'Investment Analysis',
-      readTime: '8 min'
-    },
-    {
-      slug: 'technologies-datacenter-ia-2026-800v-liquide-smr',
-      title: language === 'fr'
-        ? "800V DC, refroidissement liquide, SMR : les 3 technologies qui redessinent le datacenter IA en 2026"
-        : "800V DC, Liquid Cooling, SMR: The 3 Technologies Reshaping AI Datacenters in 2026",
-      excerpt: language === 'fr'
-        ? "NVIDIA Blackwell impose 132 kW par rack. 67% des nouvelles capacités IA passent au refroidissement liquide. Ce que les investisseurs doivent savoir sur le reshape technologique du secteur."
-        : "NVIDIA Blackwell imposes 132 kW per rack. 67% of new AI capacity switches to liquid cooling. What investors need to know about the sector's technological reshape.",
-      date: '2026-07-29',
-      category: 'Technology',
-      readTime: '10 min'
-    },
-    {
-      slug: 'consommation-electrique-datacenter-ia-2030-marche',
-      title: language === 'fr'
-        ? "L'IA pousse la consommation électrique des datacenters à 1 050 TWh d'ici 2030 — qui paiera la facture ?"
-        : "AI Pushes Datacenter Electricity Consumption to 1,050 TWh by 2030 — Who Will Pay the Bill?",
-      excerpt: language === 'fr'
-        ? "Le marché de la consommation électrique des datacenters IA passera de 12,5 Md$ à 70,6 Md$ d'ici 2035. Analyse des conséquences sur les investissements, les prix et la régulation."
-        : "The AI datacenter electricity consumption market will grow from $12.5B to $70.6B by 2035. Analysis of consequences on investments, pricing and regulation.",
-      date: '2026-07-30',
-      category: 'Economic Analysis',
-      readTime: '9 min'
-    },
-    {
-      slug: 'neoclouds-ai-factories-carte-investissements-europe',
-      title: language === 'fr'
-        ? "Néoclouds, AI Factories et souveraineté numérique : la nouvelle carte des investissements datacenter en Europe"
-        : "Neoclouds, AI Factories and Digital Sovereignty: The New Map of Datacenter Investments in Europe",
-      excerpt: language === 'fr'
-        ? "Cerebras déploie 200 MW. Ferrovial investit 1 Md€ à Madrid. 50% de la capacité européenne pourrait être hors FLAP-D d'ici 2035. Où investir en 2026 ?"
-        : "Cerebras deploys 200 MW. Ferrovial invests €1B in Madrid. 50% of European capacity could be outside FLAP-D by 2035. Where to invest in 2026?",
-      date: '2026-07-31',
-      category: 'Market Intelligence',
-      readTime: '11 min'
-    },
-    {
-      slug: 'nvidia-blackwell-liquid-cooling-european-datacenters-2026',
-      title: language === 'fr'
-        ? "NVIDIA Blackwell Ultra : 200 kW par rack, refroidissement liquide obligatoire — les datacenters européens en sursis"
-        : "NVIDIA Blackwell Ultra: 200 kW per rack, mandatory liquid cooling — European datacenters on notice",
-      excerpt: language === 'fr'
-        ? "NVIDIA dévoile les Blackwell Ultra avec une densité de 200 kW par rack. Le refroidissement liquide devient incontournable. Quels datacenters européens survivront ?"
-        : "NVIDIA unveils Blackwell Ultra with a density of 200 kW per rack. Liquid cooling becomes mandatory. Which European datacenters will survive?",
-      date: '2026-07-25',
-      category: 'Digital Infrastructure',
-      readTime: '7 min'
-    },
-    {
-      slug: 'european-sovereign-cloud-gaia-x-investors-2026',
-      title: language === 'fr'
-        ? "Cloud souverain européen : Gaia-X atteint 200 fournisseurs certifiés — ce que cela change pour les investisseurs"
-        : "European Sovereign Cloud: Gaia-X Reaches 200 Certified Providers — What It Means for Investors",
-      excerpt: language === 'fr'
-        ? "Le projet Gaia-X compte désormais 200 fournisseurs certifiés. La France et l'Allemagne pilotent le déploiement. Analyse des implications pour les investisseurs en infrastructure."
-        : "The Gaia-X project now has 200 certified providers. France and Germany lead deployment. Analysis of implications for infrastructure investors.",
-      date: '2026-07-25',
-      category: 'Digital Infrastructure',
-      readTime: '6 min'
-    },
-    {
-      slug: 'edge-computing-modular-datacenter-generative-ai-europe-2026',
-      title: language === 'fr'
-        ? "Edge computing et datacenters modulaires : la réponse européenne à l'explosion de l'IA générative"
-        : "Edge Computing and Modular Datacenters: Europe's Answer to the Generative AI Explosion",
-      excerpt: language === 'fr'
-        ? "L'IA générative impose de nouvelles contraintes de latence. L'edge computing et les datacenters modulaires émergent comme la solution. Analyse pour les investisseurs."
-        : "Generative AI imposes new latency constraints. Edge computing and modular datacenters are emerging as the solution. Analysis for investors.",
-      date: '2026-07-25',
-      category: 'Digital Infrastructure',
-      readTime: '6 min'
-    },
-    {
-      slug: 'green-datacenter-pue-transformation-eed-regulation-2026',
-      title: language === 'fr'
-        ? "Green datacenter : la transformation PUE et la réglementation EED redessinent l'investissement infrastructure en Europe"
-        : "Green Datacenter: PUE Transformation and EED Regulation Are Reshaping Infrastructure Investment in Europe",
-      excerpt: language === 'fr'
-        ? "La directive EED et l'optimisation PUE transforment les datacenters européens. Guide pour les investisseurs sur la réglementation, la certification et les rendements."
-        : "The EED directive and PUE optimization are transforming European datacenters. Guide for investors on regulation, certification and returns.",
-      date: '2026-07-25',
-      category: 'Energy & Infrastructure',
-      readTime: '8 min'
-    },
-    {
-      slug: 'datacenters-modulaires-schneider-electric-edge-computing',
-      title: language === 'fr'
-        ? "Les datacenters modulaires : le coup d'accélération de Schneider Electric et la révolution de l'edge computing"
-        : "Modular Datacenters: Schneider Electric's Acceleration and the Edge Computing Revolution",
-      excerpt: language === 'fr'
-        ? "Schneider Electric investit 1,5 milliard d'euros dans les datacenters modulaires. Mais pourquoi cette architecture est-elle le futur de l'infrastructure IA ?"
-        : "Schneider Electric invests 1.5 billion euros in modular datacenters. But why is this architecture the future of AI infrastructure?",
-      date: '2026-07-04',
-      category: 'Digital Infrastructure',
-      readTime: '6 min'
-    },
-    {
-      slug: 'gpu-puissance-electrique-france-ia-generative',
-      title: language === 'fr'
-        ? "GPU et puissance électrique : la France peut-elle alimenter l'IA générative ?"
-        : "GPU and Electrical Power: Can France Power Generative AI?",
-      excerpt: language === 'fr'
-        ? "NVIDIA livre 100 000 H100 par trimestre. Chaque GPU consomme 700W. La France a 18 GW de demande datacenter en file d'attente. Qui obtiendra le raccordement ?"
-        : "NVIDIA delivers 100,000 H100 per quarter. Each GPU consumes 700W. France has 18 GW of datacenter demand in queue. Who gets the connection?",
-      date: '2026-07-04',
-      category: 'Energy & Infrastructure',
-      readTime: '7 min'
-    },
-    {
-      slug: 'titan-dc-ai-strategie-investissement-finxia-capital',
-      title: language === 'fr'
-        ? "TITAN DC AI : comment FINXIA Capital structure l'investissement en datacenter intelligence artificielle"
-        : "TITAN DC AI: How FINXIA Capital Structures AI Datacenter Investment",
-      excerpt: language === 'fr'
-        ? "FINXIA Capital déploie la stratégie TITAN DC AI — une approche institutionnelle sur les actifs réels de l'infrastructure IA. Découvrez la méthode."
-        : "FINXIA Capital deploys the TITAN DC AI strategy — an institutional approach to AI infrastructure real assets. Discover the method.",
-      date: '2026-07-04',
-      category: 'Investment Strategy',
-      readTime: '8 min'
-    },
-    {
-      slug: 'anthropic-mistral-ia-francaise-datacenters-europe',
-      title: language === 'fr'
-        ? "Anthropic, Mistral et l'IA française : qui alimente vraiment les datacenters européens ?"
-        : "Anthropic, Mistral and French AI: Who Really Powers European Datacenters?",
-      excerpt: language === 'fr'
-        ? "Anthropic lève 3,5 milliards de dollars, Mistral devient la licorne française de l'IA. Mais derrière ces modèles linguistiques, une question stratégique : où sont hébergés les datacenters qui les font tourner ?"
-        : "Anthropic raises $3.5 billion, Mistral becomes France's AI unicorn. But behind these language models, a strategic question: where are the datacenters that run them hosted?",
-      date: '2026-06-22',
-      category: 'Digital Infrastructure',
-      readTime: '6 min'
-    },
-    {
-      slug: 'clouds-chinois-europe-datacenter-investissement',
-      title: language === 'fr'
-        ? "Les clouds chinois en Europe : une menace ou une opportunité pour les investisseurs ?"
-        : "Chinese Clouds in Europe: A Threat or an Opportunity for Investors?",
-      excerpt: language === 'fr'
-        ? "Alibaba Cloud, Huawei Cloud, Tencent Cloud — les géants chinois investissent massivement en Europe. Mais leurs datacenters posent une question de souveraineté que les investisseurs ne peuvent plus ignorer."
-        : "Alibaba Cloud, Huawei Cloud, Tencent Cloud — Chinese giants are investing massively in Europe. But their datacenters raise a sovereignty question that investors can no longer ignore.",
-      date: '2026-06-22',
-      category: 'Digital Infrastructure',
-      readTime: '5 min'
-    },
-    {
-      slug: 'neoclouds-vs-hyperscalers-europe',
-      title: language === 'fr'
-        ? "Néoclouds vs hyperscalers : qui construit l'avenir du cloud européen ?"
-        : "Neoclouds vs Hyperscalers: Who is Building the Future of European Cloud?",
-      excerpt: language === 'fr'
-        ? "OVHcloud, Scaleway, STACKIT, IONOS — les néoclouds européens défient AWS, Azure et Google. Mais peuvent-ils vraiment rivaliser ? Analyse des investissements et des stratégies."
-        : "OVHcloud, Scaleway, STACKIT, IONOS — European neoclouds challenge AWS, Azure and Google. But can they really compete? Analysis of investments and strategies.",
-      date: '2026-06-22',
-      category: 'Market Analysis',
-      readTime: '7 min'
-    },
-    {
-      slug: 'cloud-souverain-france-stackit-ovh-aws-azure',
-      title: language === 'fr'
-        ? "Cloud souverain français : Stackit, OVHcloud et la bataille contre AWS et Azure"
-        : "French Sovereign Cloud: Stackit, OVHcloud and the Battle Against AWS and Azure",
-      excerpt: language === 'fr'
-        ? "Stackit, OVHcloud, Scaleway — les clouds souverains français défient les hyperscalers américains. Mais peuvent-ils vraiment rivaliser sans une infrastructure physique de rupture ?"
-        : "Stackit, OVHcloud, Scaleway — French sovereign clouds challenge American hyperscalers. But can they really compete without breakthrough physical infrastructure?",
-      date: '2026-06-22',
-      category: 'Digital Infrastructure',
-      readTime: '6 min'
-    },
-    {
-      slug: 'data-centers-brown-to-green-europe-strategie-investissement',
-      title: language === 'fr'
-        ? "Data centers brown-to-green : pourquoi les actifs existants vont battre les greenfields en Europe"
-        : "Brown-to-Green Datacenters: Why Existing Assets Will Beat Greenfields in Europe",
-      excerpt: language === 'fr'
-        ? "Les data centers existants mal optimisés offrent un rendement supérieur aux greenfields en Europe. Pourquoi le brown-to-green est la thèse de la décennie."
-        : "Existing, poorly optimized datacenters offer superior returns over greenfields in Europe. Why brown-to-green is the decade's investment thesis.",
-      date: '2026-05-23',
-      category: 'Investment Strategy',
-      readTime: '12 min'
-    },
-    {
-      slug: 'data-centers-ia-energie-strategie-europe-2030',
-      title: language === 'fr'
-        ? "Data centers IA : l'angle mort énergétique de la stratégie européenne"
-        : "AI Datacenters: The Energy Blind Spot of European Strategy",
-      excerpt: language === 'fr'
-        ? "L'IA fait exploser la demande électrique des data centers. L'Europe peut-elle aligner ambitions IA et contraintes réseau ? Analyse chiffrée (IEA, Irlande 21%) et stratégie FINXIA."
-        : "AI is exploding datacenter electricity demand. Can Europe align AI ambitions with grid constraints? Data-driven analysis and FINXIA strategy.",
-      date: '2026-05-16',
-      category: 'Digital Infrastructure',
-      readTime: '11 min'
-    },
-    {
-      slug: 'stackit-lidl-cloud-souverain-infrastructure-data-centers-europe',
-      title: language === 'fr'
-        ? "Lidl, STACKIT et le cloud souverain européen : la souveraineté se joue dans le béton"
-        : "Lidl, STACKIT and European Sovereign Cloud: Sovereignty is Built in Concrete",
-      excerpt: language === 'fr'
-        ? "STACKIT et Lidl font les gros titres pour le cloud souverain européen. Mais la souveraineté réelle se joue dans les MW, le réseau et l'efficacité énergétique."
-        : "STACKIT and Lidl make headlines for European sovereign cloud. But real sovereignty is fought in megawatts, grid and energy efficiency.",
-      date: '2026-05-09',
-      category: 'Digital Infrastructure',
-      readTime: '11 min'
-    },
-    {
-      slug: 'eed-directive-secret-commercial-pue-datacenters-europe',
-      title: language === 'fr'
-        ? "Directive EED, secret commercial et PUE : ce que l'Europe ne veut pas voir sur ses data centers"
-        : "EED Directive, Trade Secret and PUE: What Europe Won't Look at on its Datacenters",
-      excerpt: language === 'fr'
-        ? "L'Article 12 EED impose un reporting annuel aux data centers UE. Mais la transparence reste partielle. Ce que cela change pour les investisseurs et les actifs."
-        : "EED Article 12 imposes annual reporting on EU datacenters. But transparency remains partial. What this changes for investors and assets.",
-      date: '2026-05-02',
-      category: 'Regulatory Compliance',
-      readTime: '10 min'
-    },
-    {
-      slug: language === 'fr' ? 'loi-pinm-statut-datacenter-brown-to-green' : 'pinm-law-datacenter-brown-to-green-status',
-      title: language === 'fr'
-        ? "Loi PINM : ce que le statut de Projet d'Intérêt National Majeur change pour les datacenters B2G"
-        : "PINM Law: What the Major National Interest Project Status Changes for B2G Datacenters",
-      excerpt: language === 'fr'
-        ? "Le 14 avril 2026, l'Assemblée nationale adopte la loi PINM. Analyse de l'avantage structurel brown-to-green pour les datacenters européens."
-        : "On April 14, 2026, the National Assembly adopts the PINM law. Analysis of the brown-to-green structural advantage for European datacenters.",
-      date: '2026-04-20',
-      category: 'TITAN Strategy',
-      readTime: '8 min'
-    },
-    {
-      slug: language === 'fr' ? 'titan-dc-ai-strategie-datacenters-europeens-finxia' : 'titan-dc-ai-european-datacenters-strategy-finxia',
-      title: language === 'fr'
-        ? "TITAN DC AI : La Transformation des Datacenters Européens Legacy"
-        : "TITAN DC AI: Transforming European Legacy Datacenters",
-      excerpt: language === 'fr'
-        ? "La stratégie d'investissement de FINXIA Capital dédiée à l'acquisition et la transformation des datacenters européens legacy en plateformes haute efficacité pour l'IA."
-        : "FINXIA Capital's investment strategy dedicated to acquiring and transforming European legacy datacenters into high-efficiency AI platforms.",
-      date: '2026-04-15',
-      category: 'TITAN Strategy',
-      readTime: '10 min'
-    },
-    {
-      slug: language === 'fr' ? 'eed-article-12-declaration-datacenter-guide-2026' : 'eed-article-12-datacenter-declaration-guide-2026',
-      title: language === 'fr'
-        ? "EED Article 12 : Guide Complet pour la Déclaration Obligatoire avant le 15 Mai 2026"
-        : "EED Article 12: Complete Guide for Mandatory Declaration before May 15, 2026",
-      excerpt: language === 'fr'
-        ? "Le 15 mai 2026 est la première échéance de déclaration obligatoire imposée par l'EED Article 12. Guide complet pour les opérateurs de datacenters."
-        : "May 15, 2026 is the first mandatory declaration deadline imposed by EED Article 12. Complete guide for datacenter operators.",
-      date: '2026-04-15',
-      category: 'Regulatory Compliance',
-      readTime: '10 min'
-    },
-    {
-      slug: language === 'fr' ? 'pue-optimisation-datacenters-europeens-guide-2026' : 'pue-optimization-european-datacenters-guide-2026',
-      title: language === 'fr'
-        ? "Optimisation PUE dans les Datacenters Européens : Guide 2026"
-        : "PUE Optimization in European Datacenters: 2026 Guide",
-      excerpt: language === 'fr'
-        ? "Le PUE est devenu l'indicateur de performance le plus scruté de l'industrie des datacenters. Guide complet d'optimisation et de certification IPMVP."
-        : "PUE has become the most scrutinized performance indicator in the datacenter industry. Complete optimization and IPMVP certification guide.",
-      date: '2026-04-15',
-      category: 'Technical Guide',
-      readTime: '11 min'
-    },
-    {
-      slug: language === 'fr' ? 'scsp-vs-raif-vehicule-investissement-luxembourgeois' : 'luxembourg-scsp-vs-raif-investment-vehicle',
-      title: language === 'fr'
-        ? "SCSp Luxembourgeoise vs RAIF : Quel Véhicule pour les Actifs Alternatifs ?"
-        : "Luxembourg SCSp vs RAIF: Which Vehicle for Alternative Assets?",
-      excerpt: language === 'fr'
-        ? "FINXIA Capital est structurée en SCSp luxembourgeoise, et non en RAIF. Cette distinction reflète des choix stratégiques précis en matière de gouvernance."
-        : "FINXIA Capital is structured as a Luxembourg SCSp, not a RAIF. This distinction reflects specific strategic choices in governance.",
-      date: '2026-04-15',
-      category: 'Structure & Governance',
-      readTime: '10 min'
-    },
-    {
-      slug: 'crise-energetique-datacenters-ia-europe',
-      title: language === 'fr'
-        ? "La prochaine crise énergétique de l'IA se joue dans les datacenters européens"
-        : "AI's Next Energy Crisis is Playing Out in European Datacenters",
-      excerpt: language === 'fr'
-        ? "L'intelligence artificielle a un problème que personne ne veut regarder en face : elle consomme une quantité d'énergie que l'infrastructure existante ne peut pas absorber."
-        : "Artificial intelligence has a problem no one wants to face: it consumes an amount of energy that existing infrastructure cannot absorb.",
-      date: '2026-01-16',
-      category: 'TITAN Strategy',
-      readTime: '4 min'
-    },
-    {
-      slug: 'gestion-fonds-18-agents-ia',
-      title: language === 'fr'
-        ? "Gérer un fonds alternatif avec 18 agents IA : ce que ça change vraiment"
-        : "Managing an Alternative Fund with 18 AI Agents: What Really Changes",
-      excerpt: language === 'fr'
-        ? "La gestion d'actifs alternatifs a un problème de latence. Entre le signal et la décision, il se passe des semaines. L'architecture AI-native change la donne."
-        : "Alternative asset management has a latency problem. Between signal and decision, weeks pass. AI-native architecture changes the game.",
-      date: '2026-01-16',
-      category: 'AI-Native',
-      readTime: '4 min'
-    },
-    {
-      slug: 'datacenters-europe-2026-fenetre-opportunite',
-      title: language === 'fr'
-        ? "Datacenters en Europe : pourquoi 2026 est l'année où les investisseurs en retard paieront le prix fort"
-        : "European Datacenters: Why 2026 is the Year Late Investors Will Pay the Price",
-      excerpt: language === 'fr'
-        ? "Il y a deux ans, un investisseur qui regardait les datacenters européens voyait un marché de niche. Aujourd'hui, il voit l'un des marchés les plus disputés d'Europe."
-        : "Two years ago, an investor looking at European datacenters saw a niche market. Today, they see one of Europe's most contested markets.",
-      date: '2026-01-16',
-      category: 'Market Analysis',
-      readTime: '4 min'
-    }
-  ];
+  // Single source of truth: data/blogPosts.json (also feeds sitemap.xml and feed.xml).
+  // Per-post href resolves to the real EN page when one exists, otherwise falls back
+  // to the FR page (never links to a slug that doesn't correspond to an actual file).
+  const articles = [...blogPosts]
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
+    .map((post) => {
+      const hasEn = Boolean(post.enSlug);
+      const href = (language === 'en' && hasEn)
+        ? `/en/blog/${post.enSlug}`
+        : `/blog/${post.frSlug}`;
+      const localizedTitle = (post.title as Record<string, string>)[language] ?? post.title.fr;
+      const localizedExcerpt = (post.excerpt as Record<string, string>)[language] ?? post.excerpt.fr;
+      return {
+        key: post.frSlug,
+        href,
+        title: localizedTitle,
+        excerpt: localizedExcerpt,
+        date: post.date,
+        category: post.category,
+        readTime: post.readTime
+      };
+    });
 
   // Group articles by month
   const groupedByMonth = articles.reduce((acc, article) => {
@@ -827,8 +463,8 @@ export default function BlogIndexPage() {
                     <div className="grid md:grid-cols-2 gap-6">
                       {month.articles.map((article) => (
                         <Link
-                          key={article.slug}
-                          href={language === 'fr' ? `/blog/${article.slug}` : `/en/blog/${article.slug}`}
+                          key={article.key}
+                          href={article.href}
                           className="group bg-slate-50 card-hover flex flex-col"
                         >
                           <div className="p-6 flex-1 flex flex-col">

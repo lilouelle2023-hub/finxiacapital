@@ -120,7 +120,7 @@ export default function ArticleConsommationElectriqueDatacenterIa2030MarchePage(
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche" : "https://finxiacapital.com/en/blog/consommation-electrique-datacenter-ia-2030-marche"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche" : "https://finxiacapital.com/en/blog/electricity-consumption-datacenter-ai-2030-market"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleConsommationElectriqueDatacenterIa2030MarchePage(
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche/" : "https://finxiacapital.com/en/blog/consommation-electrique-datacenter-ia-2030-marche/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche/" : "https://finxiacapital.com/en/blog/electricity-consumption-datacenter-ai-2030-market/"}
         keywords={language === 'fr' ? "consommation électrique, datacenter IA, TWh, marché énergie, investissement" : "electricity consumption, AI datacenter, TWh, energy market, investment"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche/"
-        hreflangEn="https://finxiacapital.com/en/blog/consommation-electrique-datacenter-ia-2030-marche/"
+        hreflangEn="https://finxiacapital.com/en/blog/electricity-consumption-datacenter-ai-2030-market/"
         hreflangDefault="https://finxiacapital.com/blog/consommation-electrique-datacenter-ia-2030-marche/"
       />
       <article className="bg-white">

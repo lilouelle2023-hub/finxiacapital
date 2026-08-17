@@ -120,7 +120,7 @@ export default function ArticleNeocloudsAiFactoriesCarteInvestissementsEuropePag
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe" : "https://finxiacapital.com/en/blog/neoclouds-ai-factories-carte-investissements-europe"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe" : "https://finxiacapital.com/en/blog/neoclouds-ai-factories-investment-map-europe"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleNeocloudsAiFactoriesCarteInvestissementsEuropePag
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe/" : "https://finxiacapital.com/en/blog/neoclouds-ai-factories-carte-investissements-europe/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe/" : "https://finxiacapital.com/en/blog/neoclouds-ai-factories-investment-map-europe/"}
         keywords={language === 'fr' ? "néoclouds, AI factories, souveraineté numérique, Cerebras, Ferrovial, investissement Europe" : "neoclouds, AI factories, digital sovereignty, Cerebras, Ferrovial, Europe investment"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe/"
-        hreflangEn="https://finxiacapital.com/en/blog/neoclouds-ai-factories-carte-investissements-europe/"
+        hreflangEn="https://finxiacapital.com/en/blog/neoclouds-ai-factories-investment-map-europe/"
         hreflangDefault="https://finxiacapital.com/blog/neoclouds-ai-factories-carte-investissements-europe/"
       />
       <article className="bg-white">
