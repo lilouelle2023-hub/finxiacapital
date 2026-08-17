@@ -1,5 +1,50 @@
 [
   {
+    "frSlug": "green-bond-vs-pret-a-impact-financement-datacenter-europe",
+    "enSlug": "green-bond-vs-sustainability-linked-loan-datacenter-financing-europe",
+    "date": "2026-08-17",
+    "readTime": "9 min",
+    "category": "Financing & Structuring",
+    "title": {
+      "fr": "Green Bond ICMA vs Prêt à Impact (Sustainability-Linked Loan) : Quel Financement pour la Transformation Brown-to-Green ?",
+      "en": "ICMA Green Bond vs Sustainability-Linked Loan: Which Financing for Brown-to-Green Datacenter Transformation?"
+    },
+    "excerpt": {
+      "fr": "Deux instruments dominent le financement de la transformation ESG des datacenters européens. Leurs mécaniques, garanties et implications pour l'investisseur sont radicalement différentes.",
+      "en": "Two debt instruments dominate ESG transformation financing for European datacenters. Their mechanics, safeguards and implications for investors are radically different."
+    }
+  },
+  {
+    "frSlug": "shell-lease-nnn-vs-build-to-suit-datacenter-europe",
+    "enSlug": "shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe",
+    "date": "2026-08-17",
+    "readTime": "8 min",
+    "category": "Real Assets & Infrastructure",
+    "title": {
+      "fr": "Shell Lease NNN vs Build-to-Suit : Quel Modèle Locatif pour l'Infrastructure Datacenter en Europe ?",
+      "en": "Shell Lease NNN vs Build-to-Suit: Which Leasing Model for Datacenter Infrastructure in Europe?"
+    },
+    "excerpt": {
+      "fr": "Powered shell en triple net (NNN) ou build-to-suit sur mesure : deux modèles dominent le marché datacenter européen, avec des implications de risque et de rendement fondamentalement différentes.",
+      "en": "Triple-net (NNN) powered shell or custom build-to-suit: two leasing models dominate the European datacenter market, with fundamentally different risk and return implications."
+    }
+  },
+  {
+    "frSlug": "titan-dc-ai-hors-perimetre-sfdr-article-8-9-avantage-structurel",
+    "enSlug": "titan-dc-ai-outside-sfdr-article-8-9-structural-advantage",
+    "date": "2026-08-17",
+    "readTime": "8 min",
+    "category": "Structure & Governance",
+    "title": {
+      "fr": "Pourquoi TITAN DC AI Échappe à la Classification SFDR Article 8/9 — et Pourquoi C'est un Avantage Structurel",
+      "en": "Why TITAN DC AI Falls Outside SFDR Article 8/9 Classification — and Why That's a Structural Advantage"
+    },
+    "excerpt": {
+      "fr": "TITAN DC AI n'est ni Article 8 ni Article 9 au sens de SFDR. Ce n'est pas une lacune de conformité : c'est la conséquence directe d'un choix de structuration en capital propre.",
+      "en": "TITAN DC AI is neither Article 8 nor Article 9 under SFDR. This is not a compliance gap: it is the direct consequence of a proprietary-equity structuring choice."
+    }
+  },
+  {
     "frSlug": "datacenters-modulaires-schneider-electric-edge-computing",
     "enSlug": "modular-datacenters-schneider-electric-edge-computing",
     "date": "2026-07-04",
