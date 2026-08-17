@@ -353,108 +353,28 @@ export default function StrategiesPage() {
                         </div>
                       </div>
 
-                      {/* TITAN DC AI - Timeline */}
-                      <div className="my-8 p-6 bg-slate-50 rounded-lg">
-                        <h4 className="font-semibold text-slate-800 mb-6">
-                          {language === 'fr' ? 'Calendrier d\'exécution' : 'Execution Timeline'}
+                      {/* Horizon d'investissement */}
+                      <div className="my-8 p-6 bg-white border-2 border-slate-200 rounded-lg">
+                        <h4 className="font-semibold text-slate-800 mb-4">
+                          {language === 'fr' ? "Horizon d'investissement" : 'Investment horizon'}
                         </h4>
-                        <div className="space-y-4">
+                        <div className="grid sm:grid-cols-3 gap-4 mb-4">
                           {[
-                            { quarter: 'Q2 2026', event: language === 'fr' ? 'LOI signé sur le premier actif' : 'LOI signed on first asset' },
-                            { quarter: 'Q3 2026', event: language === 'fr' ? 'Acquisition finalisée · baseline PUE établie' : 'Acquisition finalized · PUE baseline established' },
-                            { quarter: 'Q4 2026', event: language === 'fr' ? 'Rénovation énergétique lancée' : 'Energy retrofit launched' },
-                            { quarter: '2027', event: language === 'fr' ? 'Certification Bureau Veritas · actif IA-ready' : 'Bureau Veritas certification · asset AI-ready' },
-                          ].map((item, idx) => (
-                            <div key={idx} className="flex items-start gap-4">
-                              <div className="flex-shrink-0 w-20 pt-1">
-                                <span className="text-xs font-bold text-[#C45A3B] uppercase tracking-wider">{item.quarter}</span>
-                              </div>
-                              <div className="flex-1 relative">
-                                <div className="absolute left-0 top-2 w-2 h-2 bg-[#C45A3B] rounded-full" />
-                                <div className="pl-4 border-l-2 border-slate-200 pb-4 last:border-0">
-                                  <span className="text-slate-700 text-sm">{item.event}</span>
-                                </div>
-                              </div>
+                            { period: language === 'fr' ? 'Acquisition' : 'Acquisition', date: language === 'fr' ? 'À partir de 2026' : 'From 2026' },
+                            { period: language === 'fr' ? 'Transformation & Stabilisation' : 'Transformation & Stabilization', date: '2027 — 2029' },
+                            { period: language === 'fr' ? 'Sorties stratégiques' : 'Strategic exits', date: language === 'fr' ? 'À partir de 2031' : 'From 2031' },
+                          ].map((phase, idx) => (
+                            <div key={idx} className="border-l-4 border-[#C45A3B] pl-3 py-1">
+                              <p className="text-[#C45A3B] text-xs uppercase tracking-wider font-medium mb-1">{phase.period}</p>
+                              <p className="text-slate-700 text-sm font-medium">{phase.date}</p>
                             </div>
                           ))}
                         </div>
-                      </div>
-
-                      {/* SSRN Research Anchor */}
-                      <div className="my-8 p-6 bg-white border-l-4 border-[#C45A3B] rounded-lg">
-                        <p className="text-slate-700 text-sm leading-relaxed italic">
-                          {language === 'fr' ? (
-                            <>FINXIA Capital a publié en 2026 une analyse académique sur SSRN portant sur l'optimisation PUE et le cadre réglementaire EED, qui structure directement la thèse d'investissement TITAN.{' '}
-                              <a
-                                href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
-                                target="_blank"
-                                rel="noopener noreferrer nofollow"
-                                className="text-[#C45A3B] hover:underline font-medium not-italic"
-                              >
-                                Consulter la publication SSRN →
-                              </a>
-                            </>
-                          ) : (
-                            <>FINXIA Capital published in 2026 an academic analysis on SSRN covering PUE optimization and the EED regulatory framework, which directly structures the TITAN investment thesis.{' '}
-                              <a
-                                href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
-                                target="_blank"
-                                rel="noopener noreferrer nofollow"
-                                className="text-[#C45A3B] hover:underline font-medium not-italic"
-                              >
-                                View SSRN publication →
-                              </a>
-                            </>
-                          )}
+                        <p className="text-slate-600 text-sm leading-relaxed">
+                          {language === 'fr'
+                            ? 'Horizon cible de détention : 5 à 6 ans par actif.'
+                            : 'Target holding horizon: 5 to 6 years per asset.'}
                         </p>
-                      </div>
-
-                      {/* Horizon d'investissement + Souveraineté numérique — côte à côte */}
-                      <div className="grid md:grid-cols-2 gap-6 my-8">
-                        <div className="p-6 bg-white border-2 border-slate-200 rounded-lg">
-                          <h4 className="font-semibold text-slate-800 mb-4">
-                            {language === 'fr' ? "Horizon d'investissement" : 'Investment horizon'}
-                          </h4>
-                          <div className="space-y-3 mb-4">
-                            {[
-                              { period: language === 'fr' ? 'Acquisition' : 'Acquisition', date: language === 'fr' ? 'À partir de 2026' : 'From 2026' },
-                              { period: language === 'fr' ? 'Transformation & Stabilisation' : 'Transformation & Stabilization', date: '2027 — 2029' },
-                              { period: language === 'fr' ? 'Sorties stratégiques' : 'Strategic exits', date: language === 'fr' ? 'À partir de 2031' : 'From 2031' },
-                            ].map((phase, idx) => (
-                              <div key={idx} className="border-l-4 border-[#C45A3B] pl-3 py-1">
-                                <p className="text-[#C45A3B] text-xs uppercase tracking-wider font-medium mb-1">{phase.period}</p>
-                                <p className="text-slate-700 text-sm font-medium">{phase.date}</p>
-                              </div>
-                            ))}
-                          </div>
-                          <p className="text-slate-600 text-sm leading-relaxed">
-                            {language === 'fr'
-                              ? 'Horizon cible de détention : 5 à 6 ans par actif.'
-                              : 'Target holding horizon: 5 to 6 years per asset.'}
-                          </p>
-                        </div>
-
-                        <div className="p-6 bg-[#1E2A3A] text-white rounded-lg">
-                          <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
-                            <span className="text-[#C45A3B] text-2xl">🛡️</span>
-                            {language === 'fr' ? 'Souveraineté numérique française & européenne' : 'French & European digital sovereignty'}
-                          </h4>
-                          <div className="grid grid-cols-2 gap-4 mb-4">
-                            <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
-                              <div className="text-3xl font-bold text-[#C45A3B]">92%</div>
-                              <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Données occidentales stockées aux USA' : 'Western data stored in the USA'}</div>
-                            </div>
-                            <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
-                              <div className="text-3xl font-bold text-[#C45A3B]">95%</div>
-                              <div className="text-xs text-slate-300 uppercase tracking-wider mt-1">{language === 'fr' ? 'Électricité française décarbonisée' : 'French electricity decarbonized'}</div>
-                            </div>
-                          </div>
-                          <p className="text-slate-300 text-sm leading-relaxed">
-                            {language === 'fr'
-                              ? "La France capte la double prime de souveraineté numérique et de décarbonation recherchée par les hyperscalers."
-                              : "France captures the double premium of digital sovereignty and decarbonization sought by hyperscalers."}
-                          </p>
-                        </div>
                       </div>
 
                       {/* Pour aller plus loin — deep dives blog */}
@@ -485,8 +405,13 @@ export default function StrategiesPage() {
                               en: { href: '/en/blog/pue-optimization-european-datacenters-guide-2026', label: 'PUE optimization: the method' },
                             },
                             {
-                              fr: { href: '/blog/gpu-puissance-electrique-france-ia-generative', label: 'Souveraineté énergétique française' },
-                              en: { href: '/en/blog/gpu-electrical-power-france-generative-ai', label: 'French energy sovereignty' },
+                              fr: { href: '/blog/souverainete-numerique-atout-energetique-francais-datacenter-ia', label: 'Souveraineté numérique : l\'atout énergétique français' },
+                              en: { href: '/en/blog/digital-sovereignty-french-energy-advantage-ai-datacenter', label: 'Digital sovereignty: France\'s energy advantage' },
+                            },
+                            {
+                              fr: { href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918', label: 'Notre publication académique SSRN' },
+                              en: { href: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918', label: 'Our SSRN academic publication' },
+                              external: true,
                             },
                           ].map((link, idx) => {
                             const l = language === 'fr' ? link.fr : link.en;
@@ -494,6 +419,7 @@ export default function StrategiesPage() {
                               <a
                                 key={idx}
                                 href={l.href}
+                                {...(link.external ? { target: '_blank', rel: 'noopener noreferrer nofollow' } : {})}
                                 className="flex items-center justify-between gap-2 px-4 py-3 bg-white border border-slate-200 hover:border-[#C45A3B] text-sm text-slate-700 hover:text-[#C45A3B] transition-colors"
                               >
                                 {l.label}

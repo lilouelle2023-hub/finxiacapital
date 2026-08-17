@@ -8,13 +8,23 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 17 Aug 2026 11:17:02 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 11:53:21 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
       <title>FINXIA Capital</title>
       <link>https://finxiacapital.com/</link>
     </image>
+    <item>
+      <title>Souveraineté Numérique Européenne : Pourquoi l&apos;Avantage Énergétique Français Devient un Critère d&apos;Investissement</title>
+      <link>https://finxiacapital.com/blog/souverainete-numerique-atout-energetique-francais-datacenter-ia/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/souverainete-numerique-atout-energetique-francais-datacenter-ia/</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+      <description>La majorité des données occidentales transitent par des infrastructures américaines. Le mix électrique décarboné français en fait une destination de choix pour les opérateurs cherchant à concilier souveraineté et décarbonation.</description>
+      <category>TITAN Strategy</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/digital-sovereignty-french-energy-advantage-ai-datacenter/" />
+      
+    </item>
     <item>
       <title>HPC et exascale en Europe : l&apos;investissement dans les supercalculateurs comme levier de souveraineté numérique</title>
       <link>https://finxiacapital.com/blog/hpc-europe-exascale-souverainete-numerique-investissement/</link>
