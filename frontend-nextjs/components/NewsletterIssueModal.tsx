@@ -7,7 +7,7 @@ interface NewsletterIssueModalProps {
   onClose: () => void;
 }
 
-const PDF_URL = '/documents/FINXIA_Capital_Note_Trimestrielle_T3_2026.pdf';
+const NEWSLETTER_URL = '/newsletter/finxia-newsletter-t3-2026.html';
 const FORM_NAME = 'newsletter-issue-download';
 
 function encode(data: Record<string, string>) {
@@ -84,6 +84,9 @@ export const NewsletterIssueModal: React.FC<NewsletterIssueModalProps> = ({ isOp
         : "Please use a professional email address (company, organization). Personal addresses (Gmail, Yahoo, Outlook, etc.) are not accepted.");
       return;
     }
+    // Open the tab synchronously (inside the click handler) so popup blockers don't intercept it —
+    // we navigate it to the newsletter URL once the lead is captured below.
+    const newTab = window.open('', '_blank', 'noopener');
     setSubmitting(true);
     try {
       const submittedAt = new Date().toISOString();
@@ -99,16 +102,15 @@ export const NewsletterIssueModal: React.FC<NewsletterIssueModalProps> = ({ isOp
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode(payload),
       });
-      const a = document.createElement('a');
-      a.href = PDF_URL;
-      a.download = 'FINXIA_Capital_Note_Trimestrielle_T3_2026.pdf';
-      a.rel = 'noopener';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
+      if (newTab) {
+        newTab.location.href = NEWSLETTER_URL;
+      } else {
+        window.location.href = NEWSLETTER_URL;
+      }
       setSuccess(true);
       setTimeout(() => { onClose(); }, 3000);
     } catch (err) {
+      if (newTab) newTab.close();
       setError(language === 'fr' ? 'Une erreur est survenue. Veuillez réessayer.' : 'An error occurred. Please try again.');
     } finally {
       setSubmitting(false);
@@ -127,10 +129,10 @@ export const NewsletterIssueModal: React.FC<NewsletterIssueModalProps> = ({ isOp
     consent: language === 'fr'
       ? "J'accepte que FINXIA Capital conserve mes coordonnées pour me tenir informé de ses publications et actualités. Données traitées conformément au RGPD. Aucune cession à des tiers."
       : "I accept that FINXIA Capital retains my contact details to inform me of its publications and news. Data processed under GDPR. No third-party transfer.",
-    submit: language === 'fr' ? 'Accéder au document' : 'Access the document',
+    submit: language === 'fr' ? 'Accéder à la note' : 'Access the note',
     submitting: language === 'fr' ? 'Envoi en cours…' : 'Submitting…',
-    successTitle: language === 'fr' ? 'Téléchargement démarré' : 'Download started',
-    successMsg: language === 'fr' ? 'Votre téléchargement a démarré. Merci de votre intérêt pour nos travaux de recherche.' : 'Your download has started. Thank you for your interest in our research.',
+    successTitle: language === 'fr' ? 'Accès accordé' : 'Access granted',
+    successMsg: language === 'fr' ? 'La note trimestrielle vient de s\'ouvrir dans un nouvel onglet. Merci de votre intérêt pour nos travaux de recherche.' : 'The quarterly note just opened in a new tab. Thank you for your interest in our research.',
     required: language === 'fr' ? 'Champs obligatoires' : 'Required fields',
   };
 
