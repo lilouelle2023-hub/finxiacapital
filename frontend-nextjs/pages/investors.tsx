@@ -132,8 +132,8 @@ export default function InvestorsPage() {
                 {language === 'fr'
                   ? "Pour toute discussion stratégique avec FINXIA Capital : "
                   : "For strategic inquiries with FINXIA Capital: "}
-                <a href="mailto:invest@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
-                  invest@finxiacapital.com
+                <a href="mailto:contact@finxiacapital.com" className="text-[#C45A3B] hover:underline font-medium">
+                  contact@finxiacapital.com
                 </a>
               </p>
             </div>

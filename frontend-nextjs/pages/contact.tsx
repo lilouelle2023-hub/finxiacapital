@@ -213,10 +213,10 @@ export default function ContactPage() {
                         {language === 'fr' ? 'Contact investisseurs' : 'Investor Contact'}
                       </p>
                       <a 
-                        href="mailto:invest@finxiacapital.com" 
+                        href="mailto:contact@finxiacapital.com" 
                         className="text-[#C45A3B] hover:underline"
                       >
-                        invest@finxiacapital.com
+                        contact@finxiacapital.com
                       </a>
                     </div>
                     <div>
