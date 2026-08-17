@@ -21,32 +21,32 @@ export default function GovernancePage() {
       icon: TrendingDown, 
       title: language === 'fr' ? 'Risque de Marché' : 'Market Risk', 
       text: language === 'fr'
-        ? 'Suivi quotidien des valorisations, des cap rates de marché et des spreads de crédit. Alertes automatisées sur tout mouvement dépassant nos seuils de tolérance.'
-        : 'Daily monitoring of valuations, market cap rates and credit spreads. Automated alerts on any movement exceeding our tolerance thresholds.'
+        ? 'Suivi continu des valorisations et des spreads de crédit, avec seuils d\'alerte définis par actif.'
+        : 'Continuous monitoring of valuations and credit spreads, with per-asset alert thresholds.'
     },
     {
       id: 'credit-risk',
       icon: CreditCard, 
       title: language === 'fr' ? 'Risque de Crédit' : 'Credit Risk', 
       text: language === 'fr'
-        ? 'Monitoring en temps réel des ratios LTV, DSCR et ICR sur l\'ensemble des structures de financement TITAN DC AI. Reporting covenant J-30 automatique — activé à chaque mise en place de financement.'
-        : 'Real-time monitoring of LTV, DSCR and ICR ratios across all TITAN DC AI financing structures. Automatic D-30 covenant reporting — activated upon each financing arrangement.'
+        ? 'Monitoring des ratios LTV, DSCR et ICR sur l\'ensemble des structures de financement TITAN DC AI.'
+        : 'Monitoring of LTV, DSCR and ICR ratios across all TITAN DC AI financing structures.'
     },
     {
       id: 'operational-risk',
       icon: Settings, 
       title: language === 'fr' ? 'Risque Opérationnel' : 'Operational Risk', 
       text: language === 'fr'
-        ? 'Supervision du NOI actif par actif via intégration BMS et Yardi — déployée sur chaque actif acquis en portefeuille. Détection d\'anomalies par machine learning. Alertes de vacance locative J-90 activées sur chaque actif en portefeuille.'
-        : 'Asset-by-asset NOI supervision via BMS and Yardi integration — deployed on each acquired portfolio asset. Machine learning anomaly detection. D-90 vacancy alerts activated on each portfolio asset.'
+        ? 'Supervision du NOI actif par actif et détection d\'anomalies sur l\'ensemble du portefeuille.'
+        : 'Asset-by-asset NOI supervision and anomaly detection across the portfolio.'
     },
     {
       id: 'esg-risk',
       icon: Leaf, 
       title: language === 'fr' ? 'Risque ESG' : 'ESG Risk', 
       text: language === 'fr'
-        ? 'Suivi des certifications environnementales (BREEAM, LEED) et conformité PUE cible TITAN DC AI intégré dès l\'acquisition de chaque actif. Alignement Taxonomie Verte Européenne (Règlement 2020/852) et Directive EED documenté en continu. Reporting ESG trimestriel automatisé.'
-        : 'Environmental certification tracking (BREEAM, LEED) and TITAN DC AI target PUE compliance integrated from each asset acquisition. Continuous EU Taxonomy (Regulation 2020/852) and EED Directive alignment documentation. Automated quarterly ESG reporting.'
+        ? 'Suivi des certifications environnementales et de la conformité PUE, alignés sur la Taxonomie Verte Européenne.'
+        : 'Environmental certification tracking and PUE compliance, aligned with the EU Green Taxonomy.'
     },
   ];
 
@@ -61,8 +61,8 @@ export default function GovernancePage() {
       <SEO
         title={language === 'fr' ? "Gouvernance & Risques — Framework & Structure SCSp" : "Governance & Risks — Framework & SCSp Structure"}
         description={language === 'fr'
-          ? "Gouvernance rigoureuse et discipline opérationnelle augmentée. Structure SCSp Luxembourg. Surveillance 24/7 des actifs TITAN DC AI. Transparence totale pour investisseurs institutionnels."
-          : "Rigorous governance and augmented operational discipline. Luxembourg SCSp structure. 24/7 monitoring of TITAN DC AI assets. Full transparency for institutional investors."}
+          ? "Gouvernance rigoureuse et discipline opérationnelle augmentée. Structure SCSp Luxembourg. Surveillance continue des actifs TITAN DC AI. Transparence totale pour nos partenaires financiers institutionnels."
+          : "Rigorous governance and augmented operational discipline. Luxembourg SCSp structure. Continuous monitoring of TITAN DC AI assets. Full transparency for our institutional financing partners."}
         canonical="https://finxiacapital.com/governance/"
         keywords="gouvernance fonds alternatif Luxembourg, SCSp gestion risques, Green Bond ESG datacenter, surveillance TITAN DC AI temps réel"
         breadcrumbSchema={breadcrumbSchema}
@@ -172,7 +172,7 @@ export default function GovernancePage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#C45A3B] flex-shrink-0 mt-0.5" />
                   <span className="text-slate-300">
-                    {language === 'fr' ? 'Reporting institutionnel sous 45 jours' : 'Institutional-grade reporting within 45 days'}
+                    {language === 'fr' ? 'Reporting institutionnel aux partenaires financiers sous 45 jours' : 'Institutional-grade reporting to financing partners within 45 days'}
                   </span>
                 </li>
               </ul>
