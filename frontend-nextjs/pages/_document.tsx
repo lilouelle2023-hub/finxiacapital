@@ -20,6 +20,16 @@ export default function Document() {
           <input type="text" name="submittedAt" />
           <input type="text" name="language" />
         </form>
+        <form name="newsletter-issue-download" data-netlify="true" hidden>
+          <input type="text" name="firstName" />
+          <input type="text" name="lastName" />
+          <input type="text" name="company" />
+          <input type="text" name="role" />
+          <input type="email" name="email" />
+          <input type="text" name="consent" />
+          <input type="text" name="submittedAt" />
+          <input type="text" name="language" />
+        </form>
         <Main />
         <NextScript />
       </body>

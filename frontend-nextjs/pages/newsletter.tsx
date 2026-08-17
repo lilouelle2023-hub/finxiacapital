@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { ArrowLeft, Mail, CheckCircle, Zap, BookOpen, BarChart3, Headphones } from 'lucide-react';
+import { ArrowLeft, Mail, CheckCircle, Zap, BookOpen, BarChart3, Headphones, Download, FileText } from 'lucide-react';
 import SEO from '@/components/SEO';
+import NewsletterIssueModal from '@/components/NewsletterIssueModal';
 
 export default function NewsletterPage() {
   const { language } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
+  const [issueModalOpen, setIssueModalOpen] = useState(false);
 
   const content = {
     fr: {
@@ -14,6 +16,10 @@ export default function NewsletterPage() {
       subtitle: 'Analyses exclusives sur les datacenters IA, l\'investissement alternatif et la réglementation européenne.',
       podcastSubtitle: 'Ou écoutez nos analyses en podcast — Finxia Capital Insights.',
       back: 'Retour',
+      latestIssueLabel: 'Dernier Numéro',
+      latestIssueTitle: 'Note Trimestrielle — T3 2026',
+      latestIssueDesc: 'Le meilleur de nos publications de recherche du trimestre, réuni dans un document unique : TITAN DC AI, marché de l\'infrastructure numérique, réglementation énergétique et financement brown-to-green.',
+      latestIssueCta: 'Télécharger la note (PDF)',
       emailLabel: 'Adresse email professionnelle',
       emailPlaceholder: 'votre.email@entreprise.com',
       firstNameLabel: 'Prénom',
@@ -43,6 +49,10 @@ export default function NewsletterPage() {
       subtitle: 'Exclusive analysis on AI datacenters, alternative investment and European regulation.',
       podcastSubtitle: 'Or listen to our analysis on podcast — Finxia Capital Insights.',
       back: 'Back',
+      latestIssueLabel: 'Latest Issue',
+      latestIssueTitle: 'Quarterly Note — Q3 2026',
+      latestIssueDesc: 'The best of our quarterly research, gathered in a single document: TITAN DC AI, digital infrastructure market, energy regulation and brown-to-green financing.',
+      latestIssueCta: 'Download the note (PDF)',
       emailLabel: 'Professional email address',
       emailPlaceholder: 'your.email@company.com',
       firstNameLabel: 'First name',
@@ -116,6 +126,27 @@ export default function NewsletterPage() {
           {t.podcastSubtitle}{' '}
           <Link href="/podcast/" className="text-[#C45A3B] hover:underline">{t.podcastCta}</Link>
         </p>
+
+        {/* Latest Issue — gated PDF download */}
+        <div className="mb-12 p-6 md:p-8 bg-[#1E2A3A] text-white rounded-lg flex flex-col md:flex-row md:items-center gap-6">
+          <div className="flex-shrink-0 w-14 h-14 bg-[#C45A3B]/20 rounded-full flex items-center justify-center">
+            <FileText className="w-7 h-7 text-[#C45A3B]" />
+          </div>
+          <div className="flex-1">
+            <p className="text-[#C45A3B] text-xs uppercase tracking-wider font-medium mb-1">{t.latestIssueLabel}</p>
+            <h2 className="font-serif text-xl md:text-2xl mb-2">{t.latestIssueTitle}</h2>
+            <p className="text-slate-300 text-sm leading-relaxed">{t.latestIssueDesc}</p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setIssueModalOpen(true)}
+            data-testid="newsletter-issue-cta"
+            className="flex-shrink-0 px-6 py-3 bg-[#C45A3B] text-white font-medium hover:bg-[#A04A2F] transition-colors inline-flex items-center justify-center gap-2 whitespace-nowrap"
+          >
+            <Download className="w-4 h-4" />
+            {t.latestIssueCta}
+          </button>
+        </div>
 
         {/* Benefits */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -261,6 +292,7 @@ export default function NewsletterPage() {
           </form>
         )}
       </div>
+      <NewsletterIssueModal isOpen={issueModalOpen} onClose={() => setIssueModalOpen(false)} />
     </div>
   );
 }
