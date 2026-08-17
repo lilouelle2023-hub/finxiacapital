@@ -43,6 +43,7 @@ const STATIC_PAGES = [
   { path: '/podcast/',                                 priority: '0.7', changefreq: 'weekly',  bilingual: true  },
   { path: '/newsletter/',                              priority: '0.7', changefreq: 'monthly', bilingual: true  },
   { path: '/contact/',                                 priority: '0.7', changefreq: 'monthly', bilingual: true  },
+  { path: '/cookies/',                                 priority: '0.3', changefreq: 'yearly',  bilingual: true  },
   { path: '/guides/eed-directive-datacenter-2026/',    priority: '0.9', changefreq: 'monthly', bilingual: false },
   { path: '/auteurs/lila-benhammou/',                  priority: '0.7', changefreq: 'monthly', bilingual: false },
 ];

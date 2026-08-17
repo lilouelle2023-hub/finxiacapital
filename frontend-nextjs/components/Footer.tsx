@@ -23,7 +23,7 @@ export default function Footer() {
   const legalLinks = [
     { path: '/mentions-legales', label: language === 'fr' ? 'Mentions légales' : 'Legal Notice', icon: FileText },
     { path: '/privacy-policy', label: language === 'fr' ? 'Politique de confidentialité' : 'Privacy Policy', icon: Shield },
-    { path: '/cookies', label: language === 'fr' ? 'Politique cookies' : 'Cookie Policy', icon: Cookie },
+    { path: language === 'fr' ? '/cookies' : '/en/cookies', label: language === 'fr' ? 'Politique cookies' : 'Cookie Policy', icon: Cookie },
   ];
 
   return (

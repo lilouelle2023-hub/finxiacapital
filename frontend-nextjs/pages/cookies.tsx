@@ -109,6 +109,9 @@ export default function CookiesPage() {
         description={language === 'fr' ? 'Politique cookies et gestion du consentement de FINXIA Capital.' : 'Cookie policy and consent management of FINXIA Capital.'}
         canonical={language === 'fr' ? 'https://finxiacapital.com/cookies/' : 'https://finxiacapital.com/en/cookies/'}
         language={language}
+        hreflangFr="https://finxiacapital.com/cookies/"
+        hreflangEn="https://finxiacapital.com/en/cookies/"
+        hreflangDefault="https://finxiacapital.com/cookies/"
       />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <Link href="/" className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-[#C45A3B] transition-colors mb-8">

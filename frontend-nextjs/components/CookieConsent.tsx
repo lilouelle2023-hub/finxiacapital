@@ -94,7 +94,7 @@ export default function CookieConsent() {
           <p className="text-sm text-slate-600 leading-relaxed">
             {t.message}{' '}
             <Link
-              href={language === 'fr' ? '/cookies' : '/cookies'}
+              href={language === 'fr' ? '/cookies' : '/en/cookies'}
               className="text-[#C45A3B] hover:underline font-medium whitespace-nowrap"
             >
               {t.link}
