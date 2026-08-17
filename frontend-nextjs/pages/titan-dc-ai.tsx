@@ -293,8 +293,8 @@ export default function TitanDcAiPage() {
               </h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 {language === 'fr'
-                  ? 'Reporting SFDR Article 8, audit annuel des émissions (Scope 1, 2, 3), conformité EU Taxonomy sur les critères DNSH. La composante Green Bond est dédiée à la rénovation énergétique et à l\'installation de production solaire sur site.'
-                  : 'SFDR Article 8 reporting, annual emissions audit (Scope 1, 2, 3), EU Taxonomy DNSH compliance. The Green Bond component is dedicated to energy renovation and on-site solar power installation.'}
+                  ? 'TITAN DC AI est déployé en capital propre par un véhicule propriétaire — hors périmètre de classification SFDR Article 8/9, qui s\'applique aux produits financiers commercialisés auprès d\'investisseurs tiers. Audit annuel des émissions (Scope 1, 2, 3), conformité EU Taxonomy sur les critères DNSH. La composante Green Bond est dédiée à la rénovation énergétique et à l\'installation de production solaire sur site.'
+                  : 'TITAN DC AI is deployed with proprietary equity by an owner-operated vehicle — outside the scope of SFDR Article 8/9 classification, which applies to financial products marketed to third-party investors. Annual emissions audit (Scope 1, 2, 3), EU Taxonomy DNSH compliance. The Green Bond component is dedicated to energy renovation and on-site solar power installation.'}
               </p>
             </div>
           </div>
