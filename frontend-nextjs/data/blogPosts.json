@@ -387,8 +387,8 @@
     "readTime": "4 min",
     "category": "AI-Native",
     "title": {
-      "fr": "Gérer un fonds alternatif avec 18 agents IA : ce que ça change vraiment",
-      "en": "Managing an Alternative Fund with 18 AI Agents: What Really Changes"
+      "fr": "Gérer un fonds alternatif avec des agents IA : ce que ça change vraiment",
+      "en": "Managing an Alternative Fund with AI Agents: What Really Changes"
     },
     "excerpt": {
       "fr": "La gestion d'actifs alternatifs a un problème de latence. Entre le signal et la décision, il se passe des semaines. L'architecture AI-native change la donne.",

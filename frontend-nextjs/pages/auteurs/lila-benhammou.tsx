@@ -15,7 +15,7 @@ const articles = [
   { href: "/blog/loi-pinm-statut-datacenter-brown-to-green/", title: "Loi PINM — Statut datacenter brown-to-green", tag: "Regulatory" },
   { href: "/blog/datacenters-europe-2026-fenetre-opportunite/", title: "Datacenters européens 2026 — Fenêtre d'opportunité investisseur", tag: "Marché" },
   { href: "/blog/crise-energetique-datacenters-ia-europe/", title: "Crise énergétique des datacenters IA en Europe", tag: "Marché" },
-  { href: "/blog/gestion-fonds-18-agents-ia/", title: "Gestion d'un fonds alternatif avec 18 agents IA", tag: "AI-Native" },
+  { href: "/blog/gestion-fonds-18-agents-ia/", title: "Gestion d'un fonds alternatif avec des agents IA", tag: "AI-Native" },
   { href: "/blog/scsp-vs-raif-vehicule-investissement-luxembourgeois/", title: "SCSp vs RAIF — Véhicule d'investissement luxembourgeois", tag: "Structure" },
 ];
 

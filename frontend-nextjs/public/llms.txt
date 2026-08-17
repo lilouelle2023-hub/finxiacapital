@@ -11,7 +11,7 @@
 
 ## About
 
-- [About FINXIA Capital](/about/): AI-native architecture with 18 AI agents. Alternative assets + AI infrastructure thesis.
+- [About FINXIA Capital](/about/): AI-native architecture with AI agents. Alternative assets + AI infrastructure thesis.
 - [European Approach](/european-approach/): EED Art.12, NIS2, GRESB, EU AI Act regulatory framework
 - [Blog](/blog/): Expert analysis on European datacenter energy, AI-native fund management
 

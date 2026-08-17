@@ -22,8 +22,8 @@ export default function LilaPage() {
     "image": "https://finxiacapital.com/images/lbe-photo.jpeg",
     "jobTitle": language === 'fr' ? "Co-Fondatrice & Directrice des Investissements (CIO)" : "Co-Founder & Chief Investment Officer (CIO)",
     "description": language === 'fr'
-      ? "Co-Fondatrice et Directrice des Investissements (CIO) de Finxia Capital. Architecte de l'infrastructure IA du fonds (18 agents autonomes). Fondatrice de Humans4help. Autrice de \"RPA, AI, Chatbots\" (2020) et \"Power-Bound\" (2026)."
-      : "Co-Founder and Chief Investment Officer (CIO) of Finxia Capital. Architect of the fund's AI infrastructure (18 autonomous agents). Founder of Humans4help. Author of \"RPA, AI, Chatbots\" (2020) and \"Power-Bound\" (2026).",
+      ? "Co-Fondatrice et Directrice des Investissements (CIO) de Finxia Capital. Architecte de l'infrastructure IA du fonds (agents autonomes). Fondatrice de Humans4help. Autrice de \"RPA, AI, Chatbots\" (2020) et \"Power-Bound\" (2026)."
+      : "Co-Founder and Chief Investment Officer (CIO) of Finxia Capital. Architect of the fund's AI infrastructure (autonomous agents). Founder of Humans4help. Author of \"RPA, AI, Chatbots\" (2020) and \"Power-Bound\" (2026).",
     "worksFor": {
       "@type": "Organization",
       "name": "Finxia Capital",
@@ -55,8 +55,8 @@ export default function LilaPage() {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": language === 'fr'
-            ? "Lila Benhammou est Co-Fondatrice et Directrice des Investissements (CIO) de Finxia Capital. Elle est l'architecte de l'infrastructure IA-native du fonds, composée de 18 agents autonomes couvrant le deal sourcing, le suivi d'actifs, la conformité et le reporting ESG. Elle est également co-auteure du livre blanc \"Optimisation Énergétique des Datacenters Européens\" (SSRN, 2026)."
-            : "Lila Benhammou is Co-Founder and Chief Investment Officer (CIO) of Finxia Capital. She is the architect of the fund's AI-native infrastructure, composed of 18 autonomous agents covering deal sourcing, asset monitoring, compliance and ESG reporting. She is also co-author of the white paper \"Energy Optimization of European Datacenters\" (SSRN, 2026)."
+            ? "Lila Benhammou est Co-Fondatrice et Directrice des Investissements (CIO) de Finxia Capital. Elle est l'architecte de l'infrastructure IA-native du fonds, composée d'agents autonomes couvrant le deal sourcing, le suivi d'actifs, la conformité et le reporting ESG. Elle est également co-auteure du livre blanc \"Optimisation Énergétique des Datacenters Européens\" (SSRN, 2026)."
+            : "Lila Benhammou is Co-Founder and Chief Investment Officer (CIO) of Finxia Capital. She is the architect of the fund's AI-native infrastructure, composed of autonomous agents covering deal sourcing, asset monitoring, compliance and ESG reporting. She is also co-author of the white paper \"Energy Optimization of European Datacenters\" (SSRN, 2026)."
         }
       },
       {
