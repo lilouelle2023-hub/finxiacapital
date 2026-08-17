@@ -14,7 +14,7 @@ export default function EuropeanApproachPage() {
       text: t('europe.franceText'),
       flag: '🇫🇷',
       cities: ['Paris', 'Lyon', 'Marseille', 'Bordeaux'],
-      focus: ['Logistique', 'Hôtellerie', 'Résidentiel']
+      focus: ['TITAN DC AI', 'Hôtellerie', 'Résidentiel']
     },
     { 
       key: 'spain', 
@@ -22,7 +22,7 @@ export default function EuropeanApproachPage() {
       text: t('europe.spainText'),
       flag: '🇪🇸',
       cities: ['Madrid', 'Barcelona', 'Valencia', 'Sevilla'],
-      focus: ['Logistique', 'Hôtellerie']
+      focus: ['TITAN DC AI', 'Hôtellerie']
     },
     { 
       key: 'italy', 
@@ -30,7 +30,7 @@ export default function EuropeanApproachPage() {
       text: t('europe.italyText'),
       flag: '🇮🇹',
       cities: ['Milano', 'Roma', 'Firenze', 'Torino'],
-      focus: ['Hôtellerie', 'Résidentiel']
+      focus: ['TITAN DC AI', 'Hôtellerie', 'Résidentiel']
     },
   ];
 
