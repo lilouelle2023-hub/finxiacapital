@@ -503,7 +503,7 @@ export default function StrategiesPage() {
             </Link>
             <Link href="/investors" className="group p-8 bg-white card-hover border-l-4 border-[#C45A3B]">
               <h3 className="font-serif text-xl mb-3 group-hover:text-[#C45A3B] transition-colors">
-                {language === 'fr' ? 'Espace Investisseurs' : 'Investors'}
+                {language === 'fr' ? 'Partenaires Institutionnels' : 'Institutional Partners'}
               </h3>
               <p className="text-slate-600 text-sm mb-4">
                 {language === 'fr' 

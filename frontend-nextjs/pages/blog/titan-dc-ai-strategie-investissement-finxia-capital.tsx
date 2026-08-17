@@ -37,7 +37,7 @@ export default function ArticleStrategieDCAIFinxiaPage() {
       learnMoreTitle: "En savoir plus",
       link1Title: "Nos Stratégies",
       link1Desc: "Découvrez TITAN et nos 3 autres pôles d'investissement",
-      link2Title: "Investisseurs",
+      link2Title: "Partenaires Institutionnels",
       link2Desc: "Architecture de financement et rendements cibles"
     },
     en: {
@@ -69,7 +69,7 @@ export default function ArticleStrategieDCAIFinxiaPage() {
       learnMoreTitle: "Learn more",
       link1Title: "Our Strategies",
       link1Desc: "Discover TITAN and our 3 other investment poles",
-      link2Title: "Investors",
+      link2Title: "Institutional Partners",
       link2Desc: "Financing architecture and target returns"
     }
   };

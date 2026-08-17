@@ -33,7 +33,7 @@ export default function Navigation() {
     { path: '/strategies', label: language === 'fr' ? 'Stratégies' : 'Strategies' },
     { path: '/governance', label: language === 'fr' ? 'Gouvernance & Risques' : 'Governance & Risks' },
     { path: '/european-approach', label: language === 'fr' ? 'Approche Européenne' : 'European Approach' },
-    { path: '/investors', label: language === 'fr' ? 'Investisseurs' : 'Investors' },
+    { path: '/investors', label: language === 'fr' ? 'Partenaires Institutionnels' : 'Institutional Partners' },
   ];
 
   const resourcesLinks = [

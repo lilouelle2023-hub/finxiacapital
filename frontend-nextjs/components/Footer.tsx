@@ -16,7 +16,7 @@ export default function Footer() {
     { path: '/about', label: language === 'fr' ? 'À Propos' : 'About' },
     { path: '/strategies', label: language === 'fr' ? 'Stratégies' : 'Strategies' },
     { path: '/governance', label: language === 'fr' ? 'Gouvernance' : 'Governance' },
-    { path: '/investors', label: language === 'fr' ? 'Investisseurs' : 'Investors' },
+    { path: '/investors', label: language === 'fr' ? 'Partenaires Institutionnels' : 'Institutional Partners' },
     { path: '/contact', label: 'Contact' },
   ];
 
