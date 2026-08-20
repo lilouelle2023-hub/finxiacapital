@@ -355,19 +355,21 @@ export default function BlogIndexPage() {
     'gestion-fonds-18-agents-ia'
   ]);
 
-  const POLE_ORDER = ['titan', 'hospitality', 'residential', 'fund'] as const;
+  const POLE_ORDER = ['titan', 'hospitality', 'residential', 'ccapital', 'fund'] as const;
   type PoleKey = typeof POLE_ORDER[number];
 
   const POLE_LABELS: Record<PoleKey, { fr: string; en: string }> = {
     titan: { fr: 'TITAN DC AI', en: 'TITAN DC AI' },
     hospitality: { fr: 'Hôtellerie Premium', en: 'Premium Hospitality' },
     residential: { fr: 'Résidentiel & Flex Living', en: 'Residential & Flex Living' },
+    ccapital: { fr: 'C.CAPITAL', en: 'C.CAPITAL' },
     fund: { fr: 'Fonds & Gouvernance', en: 'Fund & Governance' },
   };
 
   const getPole = (post: typeof blogPosts[number]): PoleKey => {
     if (post.category === 'Hospitality') return 'hospitality';
     if (post.category === 'Residential') return 'residential';
+    if (post.category === 'C.CAPITAL') return 'ccapital';
     if (FUND_LEVEL_SLUGS.has(post.frSlug)) return 'fund';
     return 'titan';
   };
