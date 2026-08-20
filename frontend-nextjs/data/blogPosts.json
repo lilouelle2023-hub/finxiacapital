@@ -469,5 +469,65 @@
       "fr": "Cerebras déploie 200 MW. Ferrovial investit 1 Md€ à Madrid. 50% de la capacité européenne pourrait être hors FLAP-D d'ici 2035. Où investir en 2026 ?",
       "en": "Cerebras deploys 200 MW. Ferrovial invests €1B in Madrid. 50% of European capacity could be outside FLAP-D by 2035. Where to invest in 2026?"
     }
+  },
+  {
+    "frSlug": "repositionnement-hotelier-premium-europe-methode-brownfield",
+    "enSlug": "premium-hotel-repositioning-europe-brownfield-method",
+    "date": "2026-08-17",
+    "readTime": "5 min",
+    "category": "Hospitality",
+    "title": {
+      "fr": "Repositionnement hôtelier premium en Europe : la méthode brownfield qui crée de la valeur",
+      "en": "Premium Hotel Repositioning in Europe: The Brownfield Method That Creates Value"
+    },
+    "excerpt": {
+      "fr": "22,6 Md€ investis dans l'hôtellerie européenne en 2025 (+30% sur un an). Comment une méthode d'acquisition-repositionnement-stabilisation-rotation, éprouvée sur Cœur Défense et Washington Plaza, s'applique à l'hôtellerie premium sous-performante.",
+      "en": "€22.6bn invested in European hospitality in 2025 (+30% YoY). How an acquisition-repositioning-stabilization-rotation method, proven on Cœur Défense and Washington Plaza, applies to underperforming premium hospitality."
+    }
+  },
+  {
+    "frSlug": "marche-hotelier-europe-2026-revpar-investissement",
+    "enSlug": "european-hotel-market-2026-revpar-investment",
+    "date": "2026-08-18",
+    "readTime": "5 min",
+    "category": "Hospitality",
+    "title": {
+      "fr": "Marché hôtelier européen 2026 : concentration géographique et croissance du RevPAR",
+      "en": "European Hotel Market 2026: Geographic Concentration and RevPAR Growth"
+    },
+    "excerpt": {
+      "fr": "60% des transactions hôtelières de plus de 50 M€ se concentrent sur Paris, Barcelone et Madrid. RevPAR en hausse de 8,2% par rapport à 2019. Analyse du marché et des opportunités d'investissement en 2026.",
+      "en": "60% of hotel transactions over €50M concentrate in Paris, Barcelona and Madrid. RevPAR up 8.2% versus 2019. Analysis of the market and investment opportunities in 2026."
+    }
+  },
+  {
+    "frSlug": "deficit-logement-europe-these-residentielle-flex-living",
+    "enSlug": "european-housing-deficit-residential-flex-living-thesis",
+    "date": "2026-08-19",
+    "readTime": "5 min",
+    "category": "Residential",
+    "title": {
+      "fr": "Déficit de logement en Europe : la thèse résidentielle et flex living de FINXIA Capital",
+      "en": "Europe's Housing Deficit: FINXIA Capital's Residential and Flex Living Thesis"
+    },
+    "excerpt": {
+      "fr": "4,5 millions de logements manquants en Europe. 62,2 Md€ investis dans le résidentiel en 2025 (+22%). PBSA en hausse de 52%. Pourquoi le déficit structurel de logement crée une thèse d'investissement institutionnelle durable.",
+      "en": "4.5 million missing homes across Europe. €62.2bn invested in residential in 2025 (+22%). PBSA up 52%. Why the structural housing deficit creates a durable institutional investment thesis."
+    }
+  },
+  {
+    "frSlug": "coliving-europe-modele-operationnel-institutionnel",
+    "enSlug": "coliving-europe-institutional-operating-model",
+    "date": "2026-08-20",
+    "readTime": "4 min",
+    "category": "Residential",
+    "title": {
+      "fr": "Coliving en Europe : pourquoi ce modèle opéré redéfinit le résidentiel institutionnel",
+      "en": "Coliving in Europe: Why This Operated Model Is Redefining Institutional Residential"
+    },
+    "excerpt": {
+      "fr": "Marché mondial du coliving à 13 Md$ en 2026, projeté à 35 Md$ d'ici 2030. 38% des investisseurs institutionnels européens y sont déjà exposés, 51% prévoient d'y entrer sous 3 ans.",
+      "en": "Global coliving market at $13bn in 2026, projected to reach $35bn by 2030. 38% of European institutional investors already exposed, 51% plan to enter within 3 years."
+    }
   }
 ]
