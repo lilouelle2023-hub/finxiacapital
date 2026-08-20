@@ -111,7 +111,7 @@ export default function StrategiesPage() {
         "name": "Qu'est-ce que la stratégie TITAN ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "TITAN est la stratégie phare de Finxia Capital : acquisition et transformation de datacenters en infrastructure IA décarbonée, financée via un Green Bond ESG, ciblant des locataires hyperscaler en bail long terme."
+          "text": "TITAN est la stratégie phare de Finxia Capital : acquisition et transformation de datacenters en infrastructure IA décarbonée, financée via un Green Bond ESG, ciblant des opérateurs cloud tier-2 et acteurs IA d'inférence en bail long terme."
         }
       },
       {
@@ -127,7 +127,7 @@ export default function StrategiesPage() {
         "name": "Quelles sont les 4 stratégies d'investissement de Finxia Capital ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Finxia Capital déploie 4 stratégies : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living (coliving, PBSA, build-to-rent), et C.Capital (late-stage, secondaires décotés)."
+          "text": "Finxia Capital déploie 4 stratégies : TITAN Datacenter AI Brown-to-Green, Hôtellerie Premium, Résidentiel Flex Living (coliving, PBSA, build-to-rent), et C.CAPITAL (late-stage, secondaires décotés)."
         }
       }
     ]
@@ -156,7 +156,7 @@ export default function StrategiesPage() {
   return (
     <div data-testid="strategies-page" className="pt-20">
       <SEO
-        title={language === 'fr' ? "Stratégies — TITAN, Hôtellerie, Résidentiel, C.Capital" : "Strategies — TITAN, Hospitality, Residential, C.Capital"}
+        title={language === 'fr' ? "Stratégies — TITAN, Hôtellerie, Résidentiel, C.CAPITAL" : "Strategies — TITAN, Hospitality, Residential, C.CAPITAL"}
         description={language === 'fr'
           ? "Découvrez les 4 stratégies de FINXIA Capital : TITAN DC AI (datacenter brown-to-green), Hôtellerie Premium, Résidentiel Urbain Flex et C.CAPITAL."
           : "Discover FINXIA Capital's 4 strategies: TITAN DC AI (datacenter brown-to-green transformation), Premium Hospitality, Urban Residential Flex, and C.CAPITAL."}
@@ -199,8 +199,8 @@ export default function StrategiesPage() {
           <div className="max-w-4xl mx-auto">
             <p className="text-slate-700 leading-relaxed mb-6">
               {language === 'fr' 
-                ? "FINXIA Capital déploie ses stratégies d'investissement sur quatre pôles complémentaires, avec une approche institutionnelle rigoureuse. Notre stratégie phare, TITAN Datacenter AI, cible la transformation brown-to-green d'infrastructures datacenters en Europe, positionnées pour répondre à la demande croissante des hyperscalers en quête de baux long terme et d'infrastructure décarbonée." 
-                : "FINXIA Capital deploys its investment strategies across four complementary pillars, with a rigorous institutional approach. Our flagship strategy, TITAN Datacenter AI, targets the brown-to-green transformation of datacenter infrastructure in Europe, positioned to meet the growing demand from hyperscalers seeking long-term leases and decarbonized infrastructure."}
+                ? "FINXIA Capital déploie ses stratégies d'investissement sur quatre pôles complémentaires, avec une approche institutionnelle rigoureuse. Notre stratégie phare, TITAN Datacenter AI, cible la transformation brown-to-green d'infrastructures datacenters en Europe, positionnées pour répondre à la demande des opérateurs cloud tier-2, acteurs IA d'inférence et administrations en quête de souveraineté numérique et d'infrastructure décarbonée."
+                : "FINXIA Capital deploys its investment strategies across four complementary pillars, with a rigorous institutional approach. Our flagship strategy, TITAN Datacenter AI, targets the brown-to-green transformation of datacenter infrastructure in Europe, positioned to meet demand from tier-2 cloud operators, AI inference players and public administrations seeking digital sovereignty and decarbonized infrastructure."}
             </p>
             <p className="text-slate-700 leading-relaxed mb-6">
               {language === 'fr'
@@ -209,8 +209,8 @@ export default function StrategiesPage() {
             </p>
             <p className="text-slate-700 leading-relaxed mb-6">
               {language === 'fr'
-                ? "En parallèle, nos stratégies Hôtellerie Premium et Résidentiel Flex Living (coliving, PBSA, build-to-rent) capitalisent sur la dynamique structurelle de la demande urbaine européenne, avec des sorties calibrées vers investisseurs Core. Le pôle C.Capital cible des opportunités late-stage et secondaires décotés, avec un taux de conversion volontairement inférieur à 5 % pour maximiser la conviction sur chaque position."
-                : "In parallel, our Premium Hospitality and Flex Living Residential strategies (coliving, PBSA, build-to-rent) capitalize on the structural dynamics of European urban demand, with exits calibrated for Core investors. The C.Capital division targets late-stage and discounted secondary opportunities, with a deliberately sub-5% conversion rate to maximize conviction on each position."}
+                ? "En parallèle, nos stratégies Hôtellerie Premium et Résidentiel Flex Living (coliving, PBSA, build-to-rent) capitalisent sur la dynamique structurelle de la demande urbaine européenne, avec des sorties calibrées vers investisseurs Core. Le pôle C.CAPITAL cible des opportunités late-stage et secondaires décotés, avec un taux de conversion volontairement inférieur à 5 % pour maximiser la conviction sur chaque position."
+                : "In parallel, our Premium Hospitality and Flex Living Residential strategies (coliving, PBSA, build-to-rent) capitalize on the structural dynamics of European urban demand, with exits calibrated for Core investors. The C.CAPITAL division targets late-stage and discounted secondary opportunities, with a deliberately sub-5% conversion rate to maximize conviction on each position."}
             </p>
             <p className="text-slate-700 leading-relaxed">
               {language === 'fr'
@@ -246,7 +246,7 @@ export default function StrategiesPage() {
                   <td className="px-5 py-4 font-semibold text-[#1E2A3A]">TITAN DC AI</td>
                   <td className="px-5 py-4">{language === 'fr' ? 'Infrastructure core IA' : 'Core AI infrastructure'}</td>
                   <td className="px-5 py-4">{language === 'fr' ? 'Rendement + croissance long terme' : 'Yield + long-term growth'}</td>
-                  <td className="px-5 py-4">{language === 'fr' ? '5–7 ans' : '5–7 years'}</td>
+                  <td className="px-5 py-4">{language === 'fr' ? '5–6 ans' : '5–6 years'}</td>
                   <td className="px-5 py-4">{language === 'fr' ? 'Datacenters brownfield EU' : 'EU brownfield datacenters'}</td>
                 </tr>
                 <tr className="border-t border-slate-200 bg-slate-50/50">
