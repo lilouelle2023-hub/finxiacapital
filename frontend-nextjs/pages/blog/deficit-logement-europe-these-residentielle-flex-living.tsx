@@ -10,7 +10,7 @@ export default function HousingDeficitArticlePage() {
   const content = {
     fr: {
       title: "4,5 millions de logements manquants : la thèse résidentielle de FINXIA Capital en Europe",
-      description: "L'investissement résidentiel européen a atteint 62,2 Md€ en 2025 (+22%) et devrait dépasser 70 Md€ en 2026. FINXIA Capital détaille sa thèse sur le déficit structurel de logements et le résidentiel flexible.",
+      description: "4,5 millions de logements manquent en Europe. Investissement résidentiel à 62,2 Md€ en 2025 (+22%). La thèse Résidentiel & Flex Living de FINXIA Capital.",
       metaDescription: "Déficit de 4,5 millions de logements en Europe (Commission européenne). Investissement résidentiel institutionnel : 62,2 Md€ en 2025, plus de 70 Md€ attendus en 2026. La thèse Résidentiel & Flex Living de FINXIA Capital.",
       breadcrumbLabel: "Déficit de logement en Europe : la thèse résidentielle FINXIA",
       keywords: "déficit logement Europe, résidentiel flex living, build-to-rent, PBSA coliving investissement, immobilier résidentiel institutionnel Europe, FINXIA Capital",
@@ -26,8 +26,8 @@ export default function HousingDeficitArticlePage() {
       p2: "L'investissement résidentiel européen a progressé de 34% en 2024 et de 22% en 2025 — une accélération continue, pas un rebond ponctuel. Une croissance stable de 10 à 15% est anticipée pour 2026. Ce mouvement de capital reflète un changement structurel dans la manière dont les investisseurs institutionnels perçoivent le résidentiel : non plus comme un actif défensif à faible rendement, mais comme une classe d'actifs opérée, avec un potentiel de création de valeur comparable à l'hôtellerie ou à la logistique.",
       p3: "Le segment PBSA (résidences étudiantes) illustre cette dynamique : les investissements ont bondi de 52% en 2025, et pour la première fois, l'activité en Europe continentale a dépassé celle du Royaume-Uni — signe que la thèse résidentielle institutionnelle dépasse désormais son marché historique.",
       h2_2: "Le coliving, segment le plus dynamique du résidentiel opéré",
-      p4: "Le coliving émerge comme le sous-segment le plus dynamique de cette classe d'actifs. Une enquête auprès d'investisseurs européens gérant plus de 1 000 milliards d'euros d'actifs montre que 38% investissent déjà dans le coliving, et 51% prévoient de le faire dans les trois prochaines années. Le marché mondial du coliving est valorisé à 13 milliards de dollars en 2026 et devrait atteindre 35 milliards d'ici 2030 — une trajectoire de croissance qui dépasse largement celle du résidentiel traditionnel.",
-      p5: "Cette dynamique s'explique par la nature opérationnelle du modèle : le coliving, comme le PBSA et le build-to-rent, génère un revenu récurrent piloté activement — optimisation des surfaces communes, digitalisation de la gestion locative, montée en gamme des services — plutôt qu'un simple loyer passif. C'est cette dimension opérationnelle qui rapproche le résidentiel flexible de la discipline de gestion d'actifs déjà appliquée par FINXIA sur l'hôtellerie premium et les datacenters IA.",
+      p4: "Le coliving émerge comme le sous-segment le plus dynamique de cette classe d'actifs : marché mondial valorisé à 13 milliards de dollars en 2026, sur une trajectoire de croissance qui dépasse largement celle du résidentiel traditionnel. L'adoption institutionnelle suit la même dynamique — plus d'un tiers des grands investisseurs européens y sont déjà exposés, et la majorité prévoit d'y entrer sous trois ans.",
+      p5: "Cette dynamique n'est pas isolée : elle s'inscrit dans une classe d'actifs plus large — coliving, PBSA, build-to-rent — où la performance dépend d'une gestion active plutôt que d'un loyer passif. Nous détaillons le modèle opérationnel du coliving, et ce qu'il change pour la création de valeur résidentielle, dans une analyse dédiée.",
       h2_3: "La thèse FINXIA : structuration grand format transposée au résidentiel opéré",
       p6: "FINXIA Capital cible des actifs résidentiels de 80 à 300 unités dans les métropoles tier-1 européennes — coliving, résidences étudiantes, build-to-rent, senior living — opérés par des partenaires spécialisés, avec des sorties calibrées en bloc vers des investisseurs Core à horizon 5 à 7 ans. Cette approche s'appuie directement sur un savoir-faire déjà démontré : la Vallée du Camincourt, plateforme logistique de 116 991 m² développée en partenariat avec Elcimaï sur un terrain de près de 300 000 m², illustre la capacité à structurer des actifs grand format — dalle technique, raccordement énergétique haute densité, conformité réglementaire — le même socle de compétences qui s'applique aujourd'hui à la fois au résidentiel opéré et, via TITAN DC AI, aux datacenters européens.",
       p7: "La création de valeur ne vient pas seulement de l'appréciation de marché — elle vient de l'optimisation opérationnelle active et de l'effet de portefeuille à la cession, pour une performance alignée sur les standards institutionnels européens.",
@@ -35,12 +35,12 @@ export default function HousingDeficitArticlePage() {
       learnMore: 'En savoir plus',
       link1Title: 'Notre Stratégie Résidentiel & Flex Living',
       link1Text: 'La thèse complète et le track record JPV',
-      link2Title: 'Approche Européenne',
-      link2Text: 'Nos marchés cibles : France, Espagne, Italie',
+      link2Title: 'Coliving : le Modèle Opérationnel',
+      link2Text: 'Pourquoi ce modèle opéré redéfinit le résidentiel institutionnel',
     },
     en: {
       title: "4.5 Million Missing Homes: FINXIA Capital's Residential Thesis in Europe",
-      description: "European residential investment reached €62.2bn in 2025 (+22%) and is expected to exceed €70bn in 2026. FINXIA Capital details its thesis on the structural housing deficit and flexible residential.",
+      description: "Europe is short 4.5 million homes. Residential investment reached €62.2bn in 2025 (+22%). FINXIA Capital's Residential & Flex Living thesis.",
       metaDescription: "4.5 million housing unit deficit in Europe (European Commission). Institutional residential investment: €62.2bn in 2025, over €70bn expected in 2026. FINXIA Capital's Residential & Flex Living thesis.",
       breadcrumbLabel: "European Housing Deficit: The FINXIA Residential Thesis",
       keywords: "European housing deficit, residential flex living, build-to-rent, PBSA coliving investment, institutional residential real estate Europe, FINXIA Capital",
@@ -56,8 +56,8 @@ export default function HousingDeficitArticlePage() {
       p2: "European residential investment grew 34% in 2024 and 22% in 2025 — a continuous acceleration, not a one-off rebound. Stable growth of 10 to 15% is anticipated for 2026. This capital movement reflects a structural shift in how institutional investors view residential: no longer a defensive, low-yield asset, but an operated asset class with value-creation potential comparable to hospitality or logistics.",
       p3: "The PBSA (student housing) segment illustrates this dynamic: investment jumped 52% in 2025, and for the first time, activity in Continental Europe exceeded that of the UK — a sign the institutional residential thesis now extends beyond its historical market.",
       h2_2: "Coliving, the most dynamic segment of operated residential",
-      p4: "Coliving is emerging as the most dynamic sub-segment of this asset class. A survey of European investors managing over €1 trillion in assets found 38% already invest in coliving, and 51% plan to within the next three years. The global coliving market is valued at $13 billion in 2026 and is projected to reach $35 billion by 2030 — a growth trajectory well ahead of traditional residential.",
-      p5: "This dynamic reflects the operational nature of the model: coliving, like PBSA and build-to-rent, generates recurring income that is actively managed — optimizing common areas, digitalizing lease management, upgrading service levels — rather than simple passive rent. It's this operational dimension that brings flexible residential closer to the asset management discipline FINXIA already applies to premium hospitality and AI datacenters.",
+      p4: "Coliving is emerging as the most dynamic sub-segment of this asset class: a global market valued at $13 billion in 2026, on a growth trajectory well ahead of traditional residential. Institutional adoption is following the same curve — over a third of major European investors are already exposed, and a majority plan to enter within three years.",
+      p5: "This dynamic isn't isolated: it belongs to a broader asset class — coliving, PBSA, build-to-rent — where performance depends on active management rather than passive rent. We detail the coliving operating model, and what it changes for residential value creation, in a dedicated analysis.",
       h2_3: "The FINXIA thesis: large-format structuring transposed to operated residential",
       p6: "FINXIA Capital targets residential assets of 80 to 300 units in tier-1 European metros — coliving, student housing, build-to-rent, senior living — operated by specialized partners, with block exits calibrated for Core investors on a 5 to 7 year horizon. This approach draws directly on already-demonstrated know-how: Vallée du Camincourt, a 116,991 sqm logistics platform developed in partnership with Elcimaï on nearly 300,000 sqm of land, illustrates the ability to structure large-format assets — technical slab, high-density power connection, regulatory compliance — the same skill base that today applies both to operated residential and, via TITAN DC AI, to European datacenters.",
       p7: "Value creation doesn't come only from market appreciation — it comes from active operational optimization and portfolio effect at exit, for performance aligned with European institutional standards.",
@@ -65,8 +65,8 @@ export default function HousingDeficitArticlePage() {
       learnMore: 'Learn more',
       link1Title: 'Our Residential & Flex Living Strategy',
       link1Text: 'The full thesis and JPV track record',
-      link2Title: 'European Approach',
-      link2Text: 'Our target markets: France, Spain, Italy',
+      link2Title: 'Coliving: The Operating Model',
+      link2Text: 'Why this operated model is redefining institutional residential',
     },
   };
 
@@ -222,7 +222,7 @@ export default function HousingDeficitArticlePage() {
                   <h4 className="font-medium text-slate-900 mb-2">{t.link1Title}</h4>
                   <p className="text-slate-600 text-sm">{t.link1Text}</p>
                 </Link>
-                <Link href={language === 'fr' ? '/european-approach' : '/en/european-approach'} className="p-6 bg-slate-50 hover:bg-slate-100 transition-colors border-l-4 border-[#C45A3B]">
+                <Link href={language === 'fr' ? '/blog/coliving-europe-modele-operationnel-institutionnel' : '/en/blog/coliving-europe-institutional-operating-model'} className="p-6 bg-slate-50 hover:bg-slate-100 transition-colors border-l-4 border-[#C45A3B]">
                   <h4 className="font-medium text-slate-900 mb-2">{t.link2Title}</h4>
                   <p className="text-slate-600 text-sm">{t.link2Text}</p>
                 </Link>

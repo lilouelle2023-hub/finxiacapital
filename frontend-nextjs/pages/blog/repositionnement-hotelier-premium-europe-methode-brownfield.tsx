@@ -10,7 +10,7 @@ export default function HotelRepositioningArticlePage() {
   const content = {
     fr: {
       title: "Repositionnement hôtelier premium en Europe : la méthode qui transforme un actif sous-optimisé en machine à cash-flow",
-      description: "Les transactions hôtelières européennes ont atteint 22,6 Md€ en 2025 (+30% sur un an), leur meilleur niveau depuis 2019. FINXIA Capital détaille sa méthode de repositionnement d'actifs 4-5 étoiles sous-optimisés.",
+      description: "22,6 Md€ de transactions hôtelières en Europe en 2025 (+30%). La méthode FINXIA de repositionnement d'actifs 4-5 étoiles sous-optimisés.",
       metaDescription: "Marché hôtelier premium européen : 22,6 Md€ de transactions en 2025, plus de 90% des investisseurs prévoient de maintenir ou augmenter leur allocation en 2026. La méthode de repositionnement FINXIA Capital, portée par 40 ans de track record immobilier institutionnel.",
       breadcrumbLabel: "Repositionnement hôtelier premium : la méthode FINXIA",
       keywords: "hôtellerie premium Europe, repositionnement hôtelier, RevPAR, investissement hôtelier institutionnel, value-add hospitality, Marriott Accor Hilton, FINXIA Capital",
@@ -40,7 +40,7 @@ export default function HotelRepositioningArticlePage() {
     },
     en: {
       title: "Premium Hotel Repositioning in Europe: The Method That Turns an Underperforming Asset into a Cash-Flow Machine",
-      description: "European hotel transactions reached €22.6bn in 2025 (+30% year-on-year), their best level since 2019. FINXIA Capital details its repositioning method for underperforming 4-5 star assets.",
+      description: "€22.6bn in European hotel transactions in 2025 (+30%). FINXIA's method for repositioning underperforming 4-5 star assets into value-add performance.",
       metaDescription: "European premium hotel market: €22.6bn in transactions in 2025, over 90% of investors plan to maintain or increase their allocation in 2026. The FINXIA Capital repositioning method, backed by 40 years of institutional real estate track record.",
       breadcrumbLabel: "Premium Hotel Repositioning: The FINXIA Method",
       keywords: "premium hospitality Europe, hotel repositioning, RevPAR, institutional hotel investment, value-add hospitality, Marriott Accor Hilton, FINXIA Capital",

@@ -10,7 +10,7 @@ export default function ColivingArticlePage() {
   const content = {
     fr: {
       title: "Coliving en Europe : pourquoi ce modèle opéré redéfinit le résidentiel institutionnel",
-      description: "Le marché mondial du coliving atteint 13 Md$ en 2026 et devrait tripler d'ici 2030. 38% des investisseurs institutionnels européens y sont déjà exposés. Ce que le modèle opérationnel change pour la création de valeur résidentielle.",
+      description: "Coliving : marché mondial de 13 Md$ en 2026, projeté à 35 Md$ en 2030. 38% des investisseurs européens y sont déjà exposés. Analyse FINXIA Capital.",
       metaDescription: "Coliving : marché mondial de 13 Md$ en 2026, projeté à 35 Md$ en 2030. 38% des investisseurs européens (>1 000 Md€ d'AUM) y investissent déjà, 51% prévoient d'y entrer sous 3 ans. Analyse du modèle opérationnel FINXIA Capital.",
       breadcrumbLabel: "Coliving : le modèle opérationnel institutionnel",
       keywords: "coliving Europe, résidentiel opéré, flex living institutionnel, coliving investissement institutionnel, build-to-rent gestion locative, FINXIA Capital",
@@ -28,7 +28,7 @@ export default function ColivingArticlePage() {
       h2_2: "L'effet de portefeuille à la sortie",
       p4: "La discipline d'exécution ne s'arrête pas à l'exploitation quotidienne. FINXIA cible des actifs de 80 à 300 unités dans les métropoles tier-1 européennes, opérés par des partenaires spécialisés, avec des sorties calibrées en bloc vers des investisseurs Core à horizon 5 à 7 ans. L'effet de portefeuille — la prime de liquidité qu'obtient un ensemble d'actifs stabilisés cédé en bloc plutôt qu'unité par unité — est un levier de création de valeur à part entière, distinct du rendement locatif courant.",
       h2_3: "Un socle de compétences déjà démontré",
-      p5: "La structuration d'actifs résidentiels grand format n'est pas un territoire nouveau pour l'équipe fondatrice de FINXIA. La Vallée du Camincourt — plateforme logistique de 116 991 m² développée en partenariat avec Elcimaï sur un terrain de près de 300 000 m² — a demandé la même discipline technique que le résidentiel opéré aujourd'hui : structuration foncière grand format, conformité réglementaire, coordination multi-partenaires. C'est ce socle de compétences, plus que la taille du marché, qui détermine la capacité à exécuter une thèse coliving à l'échelle institutionnelle.",
+      p5: "La structuration d'actifs résidentiels grand format n'est pas un territoire nouveau pour l'équipe fondatrice de FINXIA — la même discipline de structuration foncière grand format et de coordination multi-partenaires qui fonde la thèse Résidentiel & Flex Living du fonds (détaillée dans notre analyse sur le déficit de logement, ci-dessous) s'applique directement au coliving. C'est ce socle de compétences, plus que la taille du marché, qui détermine la capacité à exécuter à l'échelle institutionnelle.",
       p6: "Le coliving redéfinit le résidentiel institutionnel parce qu'il exige la même rigueur qu'un actif opéré classique — hôtellerie, datacenter, logistique — appliquée à un besoin structurel : loger une population urbaine européenne en croissance, dans un marché où l'offre reste durablement inférieure à la demande.",
       authorBioRest: "est Président et Fondateur de FINXIA Capital SCSp. Plus de 40 ans de track record sur des cycles complets d'acquisition, développement, restructuration et cession d'actifs immobiliers institutionnels en Europe — Financière Rive Gauche, Directeur Général France de Kaufman & Broad (20 ans), Financière Norev.",
       learnMore: 'En savoir plus',
@@ -39,7 +39,7 @@ export default function ColivingArticlePage() {
     },
     en: {
       title: "Coliving in Europe: Why This Operated Model Is Redefining Institutional Residential",
-      description: "The global coliving market reaches $13bn in 2026 and is expected to triple by 2030. 38% of European institutional investors are already exposed. What the operating model changes for residential value creation.",
+      description: "Coliving: global market of $13bn in 2026, projected to reach $35bn by 2030. 38% of European investors are already exposed. FINXIA Capital analysis.",
       metaDescription: "Coliving: $13bn global market in 2026, projected to reach $35bn by 2030. 38% of European investors (over €1 trillion AUM) already invest in it, 51% plan to enter within 3 years. FINXIA Capital's analysis of the operating model.",
       breadcrumbLabel: "Coliving: The Institutional Operating Model",
       keywords: "coliving Europe, operated residential, institutional flex living, coliving institutional investment, build-to-rent lease management, FINXIA Capital",
@@ -57,7 +57,7 @@ export default function ColivingArticlePage() {
       h2_2: "The portfolio effect at exit",
       p4: "Execution discipline doesn't stop at day-to-day operations. FINXIA targets assets of 80 to 300 units in tier-1 European metros, operated by specialized partners, with block exits calibrated for Core investors on a 5 to 7 year horizon. The portfolio effect — the liquidity premium a set of stabilized assets commands when sold as a block rather than unit by unit — is a value-creation lever in its own right, distinct from current rental yield.",
       h2_3: "An already-demonstrated skill base",
-      p5: "Structuring large-format residential assets isn't new territory for FINXIA's founding team. Vallée du Camincourt — a 116,991 sqm logistics platform developed in partnership with Elcimaï on nearly 300,000 sqm of land — required the same technical discipline as operated residential today: large-format land structuring, regulatory compliance, multi-partner coordination. It's this skill base, more than market size, that determines the ability to execute a coliving thesis at institutional scale.",
+      p5: "Structuring large-format residential assets isn't new territory for FINXIA's founding team — the same large-format land structuring and multi-partner coordination discipline that underpins the fund's broader Residential & Flex Living thesis (detailed in our housing deficit analysis, linked below) applies directly to coliving. It's this skill base, more than market size, that determines the ability to execute a coliving thesis at institutional scale.",
       p6: "Coliving is redefining institutional residential because it demands the same rigor as a classic operated asset — hospitality, datacenter, logistics — applied to a structural need: housing a growing European urban population, in a market where supply remains durably below demand.",
       authorBioRest: "is Chairman and Founder of FINXIA Capital SCSp. Over 40 years of full-cycle track record in acquisition, development, restructuring and disposal of institutional real estate assets across Europe — Financière Rive Gauche, Managing Director France of Kaufman & Broad (20 years), Financière Norev.",
       learnMore: 'Learn more',

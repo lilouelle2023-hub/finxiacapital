@@ -347,6 +347,31 @@ export default function BlogIndexPage() {
   // Single source of truth: data/blogPosts.json (also feeds sitemap.xml and feed.xml).
   // Per-post href resolves to the real EN page when one exists, otherwise falls back
   // to the FR page (never links to a slug that doesn't correspond to an actual file).
+  //
+  // Articles are grouped by strategic pole (not by month) for readability — a reader
+  // scanning the blog should immediately see which fund strategy an article belongs to.
+  const FUND_LEVEL_SLUGS = new Set([
+    'scsp-vs-raif-vehicule-investissement-luxembourgeois',
+    'gestion-fonds-18-agents-ia'
+  ]);
+
+  const POLE_ORDER = ['titan', 'hospitality', 'residential', 'fund'] as const;
+  type PoleKey = typeof POLE_ORDER[number];
+
+  const POLE_LABELS: Record<PoleKey, { fr: string; en: string }> = {
+    titan: { fr: 'TITAN DC AI', en: 'TITAN DC AI' },
+    hospitality: { fr: 'Hôtellerie Premium', en: 'Premium Hospitality' },
+    residential: { fr: 'Résidentiel & Flex Living', en: 'Residential & Flex Living' },
+    fund: { fr: 'Fonds & Gouvernance', en: 'Fund & Governance' },
+  };
+
+  const getPole = (post: typeof blogPosts[number]): PoleKey => {
+    if (post.category === 'Hospitality') return 'hospitality';
+    if (post.category === 'Residential') return 'residential';
+    if (FUND_LEVEL_SLUGS.has(post.frSlug)) return 'fund';
+    return 'titan';
+  };
+
   const articles = [...blogPosts]
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
     .map((post) => {
@@ -363,28 +388,22 @@ export default function BlogIndexPage() {
         excerpt: localizedExcerpt,
         date: post.date,
         category: post.category,
-        readTime: post.readTime
+        readTime: post.readTime,
+        pole: getPole(post)
       };
     });
 
-  // Group articles by month
-  const groupedByMonth = articles.reduce((acc, article) => {
-    const date = new Date(article.date);
-    const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
-    const monthLabel = date.toLocaleDateString(language === 'fr' ? 'fr-FR' : 'en-US', {
-      year: 'numeric',
-      month: 'long'
-    });
-    
-    if (!acc[monthKey]) {
-      acc[monthKey] = { label: monthLabel, articles: [] };
+  // Group articles by strategic pole (dates stay sorted desc within each pole)
+  const groupedByPole = articles.reduce((acc, article) => {
+    if (!acc[article.pole]) {
+      acc[article.pole] = [];
     }
-    acc[monthKey].articles.push(article);
+    acc[article.pole].push(article);
     return acc;
-  }, {} as Record<string, { label: string; articles: typeof articles }>);
+  }, {} as Record<PoleKey, typeof articles>);
 
-  // Sort month keys descending
-  const sortedMonths = Object.keys(groupedByMonth).sort((a, b) => b.localeCompare(a));
+  // Only render poles that actually have published articles, in the fixed strategic order
+  const activePoles = POLE_ORDER.filter((pole) => (groupedByPole[pole]?.length ?? 0) > 0);
 
   // Breadcrumb Schema
   const breadcrumbSchema = {
@@ -453,15 +472,20 @@ export default function BlogIndexPage() {
                 {language === 'fr' ? 'Articles' : 'Articles'}
               </h2>
               
-              {sortedMonths.map((monthKey) => {
-                const month = groupedByMonth[monthKey];
+              {activePoles.map((poleKey) => {
+                const poleArticles = groupedByPole[poleKey];
                 return (
-                  <div key={monthKey} className="mb-12 last:mb-0">
-                    <h3 className="font-serif text-xl text-slate-700 mb-4 mt-6">
-                      {month.label}
-                    </h3>
+                  <div key={poleKey} className="mb-12 last:mb-0">
+                    <div className="flex items-baseline gap-3 mb-4 mt-6 pb-2 border-b border-slate-200">
+                      <h3 className="font-serif text-xl text-slate-900">
+                        {POLE_LABELS[poleKey][language]}
+                      </h3>
+                      <span className="text-xs text-slate-400 font-medium">
+                        {poleArticles.length} {poleArticles.length > 1 ? (language === 'fr' ? 'articles' : 'articles') : (language === 'fr' ? 'article' : 'article')}
+                      </span>
+                    </div>
                     <div className="grid md:grid-cols-2 gap-6">
-                      {month.articles.map((article) => (
+                      {poleArticles.map((article) => (
                         <Link
                           key={article.key}
                           href={article.href}
