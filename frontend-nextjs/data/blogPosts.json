@@ -1,5 +1,47 @@
 [
   {
+    "frSlug": "ppa-raccordement-securiser-electricite-datacenter-investisseur",
+    "date": "2026-09-12",
+    "readTime": "7 min",
+    "category": "Investment Strategy",
+    "title": {
+      "fr": "PPA, raccordement, flexibilité : comment un datacenter sécurise son électricité (et sa valorisation)",
+      "en": "PPAs, Grid Connections, Flexibility: How a Datacenter Secures Its Power (and Its Valuation)"
+    },
+    "excerpt": {
+      "fr": "PPA de 10 à 20 ans, convention de raccordement, effacement : la due diligence énergétique est devenue le cœur de la valorisation d'un datacenter. Ce qu'un investisseur doit vérifier avant d'acquérir.",
+      "en": "10 to 20-year PPAs, grid connection agreements, demand response: energy due diligence has become the core of datacenter valuation. What investors must check before acquiring."
+    }
+  },
+  {
+    "frSlug": "electricite-decarbonee-france-avantage-datacenter-ia-souverain",
+    "date": "2026-09-11",
+    "readTime": "6 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "Électricité décarbonée : l'avantage français qui attire les datacenters IA",
+      "en": "Decarbonized Electricity: France's Advantage in Attracting AI Datacenters"
+    },
+    "excerpt": {
+      "fr": "Mix nucléaire et hydraulique décarboné à plus de 90 %, prix industriels compétitifs : la France devient une destination privilégiée pour les datacenters IA. Analyse d'un avantage sous-estimé.",
+      "en": "A nuclear and hydro power mix that is over 90% decarbonized, competitive industrial prices: France is becoming a destination of choice for AI datacenters. Analysis of an underestimated advantage."
+    }
+  },
+  {
+    "frSlug": "electricite-goulot-etranglement-datacenter-ia-europe",
+    "date": "2026-09-10",
+    "readTime": "6 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "Électricité : le vrai goulot d'étranglement des datacenters IA en Europe",
+      "en": "Electricity: The Real Bottleneck for AI Datacenters in Europe"
+    },
+    "excerpt": {
+      "fr": "18 GW de demande en file d'attente auprès de RTE, des délais de raccordement qui doublent : en Europe, ce n'est plus le GPU qui manque, c'est le mégawatt. Analyse pour investisseurs.",
+      "en": "18 GW of demand queued with RTE, connection timelines doubling: in Europe, the scarce resource is no longer the GPU, it is the megawatt. Analysis for investors."
+    }
+  },
+  {
     "frSlug": "mistral-ai-3-milliards-compute-souverainete-datacenter-investissement",
     "date": "2026-09-10",
     "readTime": "6 min",
