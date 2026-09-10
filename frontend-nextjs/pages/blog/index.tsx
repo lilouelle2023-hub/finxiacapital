@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 30,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-09-08',
+      title: {
+        fr: "Mistral AI lève 3 milliards d'euros — valorisation 21,3 Md€, Samsung entre au capital aux côtés de NVIDIA et ASML",
+        en: "Mistral AI raises 3 billion euros — 21.3 billion valuation, Samsung joins the cap table alongside NVIDIA and ASML"
+      },
+      source: "France Inter"
+    },
+    {
+      id: 31,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-09-09',
+      title: {
+        fr: "Mistral va quadrupler sa capacité de calcul — le modèle Large-4 attendu fin 2026 sur des GPU hébergés en Europe",
+        en: "Mistral to quadruple compute capacity — Large-4 model expected end 2026 on Europe-hosted GPUs"
+      },
+      source: "Numerama"
+    },
+    {
+      id: 32,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-09-10',
+      title: {
+        fr: "Campus AI : Mistral et NVIDIA partenaires du site de Fouju (1,4 GW) — un deuxième campus à 7,5 Md€ financé par MGX et Bpifrance",
+        en: "Campus AI: Mistral and NVIDIA partner at the Fouju site (1.4 GW) — second 7.5 billion euro campus backed by MGX and Bpifrance"
+      },
+      source: "Les Echos"
+    },
+    {
       id: 27,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
