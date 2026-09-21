@@ -1,5 +1,19 @@
 [
   {
+    "frSlug": "gpu-shortage-hbm4-europe-datacenter-investment-2026",
+    "date": "2026-09-22",
+    "readTime": "6 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "Pénurie de mémoire HBM4 : quand la rareté mémoire dicte le calendrier d'investissement datacenter en Europe",
+      "en": "HBM4 Memory Shortage: When Memory Scarcity Dictates the Datacenter Investment Calendar in Europe"
+    },
+    "excerpt": {
+      "fr": "SK Hynix, Samsung et Micron affichent 12 à 18 mois de délai sur la HBM4, la mémoire des prochains GPU NVIDIA. Pour les datacenters européens, la rareté se déplace — et les actifs déjà équipés voient leur prime monter.",
+      "en": "SK Hynix, Samsung and Micron quote 12 to 18-month lead times on HBM4, the memory inside NVIDIA's next GPUs. For European datacenters, scarcity is shifting — and already-equipped assets command a rising premium."
+    }
+  },
+  {
     "frSlug": "ppa-raccordement-securiser-electricite-datacenter-investisseur",
     "date": "2026-09-12",
     "readTime": "7 min",

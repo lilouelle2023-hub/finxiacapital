@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 33,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-09-22',
+      title: {
+        fr: "NVIDIA lance le programme AI Cloud Partner en Europe — 12 opérateurs de datacenters certifiés pour la plateforme Rubin",
+        en: "NVIDIA launches the AI Cloud Partner program in Europe — 12 datacenter operators certified for the Rubin platform"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 34,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-09-21',
+      title: {
+        fr: "EED : Bruxelles publie la première base de données européenne des PUE — les datacenters français parmi les plus efficaces",
+        en: "EED: Brussels publishes the first European PUE database — French datacenters among the most efficient"
+      },
+      source: "Les Echos"
+    },
+    {
+      id: 35,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-09-21',
+      title: {
+        fr: "OpenAI et Microsoft étudient des sites d'entraînement IA en Espagne — 2 GW de capacité datacenter visés d'ici 2029",
+        en: "OpenAI and Microsoft scout AI training sites in Spain — 2 GW of datacenter capacity targeted by 2029"
+      },
+      source: "Bloomberg"
+    },
+    {
       id: 30,
       topic: 'ia',
       topicLabel: { fr: 'IA', en: 'AI' },
