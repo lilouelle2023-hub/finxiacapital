@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 36,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-10-02',
+      title: {
+        fr: "EuroHPC inaugure 13 AI factories en Europe — la France obtient deux sites de calcul souverain adossés à ses datacenters",
+        en: "EuroHPC inaugurates 13 AI factories across Europe — France secures two sovereign compute sites backed by its datacenters"
+      },
+      source: "HPC Wire"
+    },
+    {
+      id: 37,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-01',
+      title: {
+        fr: "NVIDIA ouvre les précommandes du Vera Rubin NVL144 — 3,6 ExaFLOPS par rack, les datacenters européens préparent le 600 kW",
+        en: "NVIDIA opens Vera Rubin NVL144 pre-orders — 3.6 ExaFLOPS per rack, European datacenters prepare for 600 kW"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 38,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-01',
+      title: {
+        fr: "Irlande : le moratoire sur les datacenters de Dublin prolongé jusqu'en 2028 — les capitaux se tournent vers la France et l'Espagne",
+        en: "Ireland: Dublin datacenter moratorium extended to 2028 — capital shifts toward France and Spain"
+      },
+      source: "Les Echos"
+    },
+    {
       id: 33,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },

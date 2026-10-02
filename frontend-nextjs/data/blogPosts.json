@@ -1,5 +1,19 @@
 [
   {
+    "frSlug": "chaleur-fatale-datacenters-europe-eed-investissement-2026",
+    "date": "2026-10-02",
+    "readTime": "6 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "Chaleur fatale des datacenters : comment la réglementation européenne transforme un déchet en revenu",
+      "en": "Datacenter Waste Heat: How European Regulation Turns a Byproduct into Revenue"
+    },
+    "excerpt": {
+      "fr": "La directive EED impose aux datacenters d'étudier la valorisation de leur chaleur fatale — l'Allemagne la rend obligatoire dès 2026. Réseaux urbains, revenus complémentaires, décote pour les réfractaires : le nouveau calcul de l'investisseur.",
+      "en": "The EED directive forces datacenters to study waste-heat reuse — Germany makes it mandatory from 2026. Urban networks, additional revenue, discounts for laggards: the investor's new calculus."
+    }
+  },
+  {
     "frSlug": "gpu-shortage-hbm4-europe-datacenter-investment-2026",
     "date": "2026-09-22",
     "readTime": "6 min",
