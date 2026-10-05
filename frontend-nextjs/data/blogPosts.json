@@ -1,5 +1,19 @@
 [
   {
+    "frSlug": "smr-datacenter-ia-energie-247-europe-investissement-2026",
+    "date": "2026-10-05",
+    "readTime": "7 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "SMR pour datacenters IA : le pari nucléaire 24/7 qui redessine l'investissement énergétique en Europe",
+      "en": "SMRs for AI Datacenters: The 24/7 Nuclear Bet Reshaping Energy Investment in Europe"
+    },
+    "excerpt": {
+      "fr": "Les hyperscalers passent au 24/7 carbon-free energy : chaque heure de calcul doit être décarbonée. Aux États-Unis, ils achètent des réacteurs. En Europe, les datacenters raccordés au nucléaire français tiennent déjà l'atout maître.",
+      "en": "Hyperscalers are moving to 24/7 carbon-free energy: every hour of compute must be decarbonized. In the US they are buying reactors. In Europe, datacenters wired into French nuclear already hold the winning card."
+    }
+  },
+  {
     "frSlug": "chaleur-fatale-datacenters-europe-eed-investissement-2026",
     "date": "2026-10-02",
     "readTime": "6 min",

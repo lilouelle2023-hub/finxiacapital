@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 39,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-05',
+      title: {
+        fr: "NVIDIA et Deutsche Telekom inaugurent l'Industrial AI Cloud de Munich — 10 000 GPU Blackwell pour l'industrie européenne",
+        en: "NVIDIA and Deutsche Telekom inaugurate the Munich Industrial AI Cloud — 10,000 Blackwell GPUs for European industry"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 40,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-04',
+      title: {
+        fr: "Equinix investit 2 milliards d'euros en Espagne — trois datacenters IA à Madrid et Barcelone d'ici 2029",
+        en: "Equinix invests 2 billion euros in Spain — three AI datacenters in Madrid and Barcelona by 2029"
+      },
+      source: "Bloomberg"
+    },
+    {
+      id: 41,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-04',
+      title: {
+        fr: "Mistral AI déploie Large-4 sur le campus de Fouju — 40 000 GPU pour l'inférence souveraine européenne",
+        en: "Mistral AI deploys Large-4 at the Fouju campus — 40,000 GPUs for European sovereign inference"
+      },
+      source: "Les Echos"
+    },
+    {
       id: 36,
       topic: 'hpc',
       topicLabel: { fr: 'HPC', en: 'HPC' },
