@@ -120,7 +120,7 @@ export default function ArticleElectriciteDecarboneePage() {
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain" : "https://finxiacapital.com/en/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain" : "https://finxiacapital.com/en/blog/decarbonized-electricity-france-sovereign-ai-datacenter-advantage"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleElectriciteDecarboneePage() {
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain/" : "https://finxiacapital.com/en/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain/" : "https://finxiacapital.com/en/blog/decarbonized-electricity-france-sovereign-ai-datacenter-advantage/"}
         keywords={language === 'fr' ? "électricité décarbonée, datacenter, IA, nucléaire, souveraineté numérique, green datacenter, PUE, investissement" : "decarbonized electricity, datacenter, AI, nuclear, digital sovereignty, green datacenter, PUE, investment"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain/"
-        hreflangEn="https://finxiacapital.com/en/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain/"
+        hreflangEn="https://finxiacapital.com/en/blog/decarbonized-electricity-france-sovereign-ai-datacenter-advantage/"
         hreflangDefault="https://finxiacapital.com/blog/electricite-decarbonee-france-avantage-datacenter-ia-souverain/"
       />
       <article className="bg-white">

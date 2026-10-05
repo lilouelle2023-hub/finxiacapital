@@ -120,7 +120,7 @@ export default function ArticleSmrDatacenterPage() {
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/smr-datacenter-ia-energie-247-europe-investissement-2026" : "https://finxiacapital.com/en/blog/smr-datacenter-ia-energie-247-europe-investissement-2026"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/smr-datacenter-ia-energie-247-europe-investissement-2026" : "https://finxiacapital.com/en/blog/smr-ai-datacenter-247-energy-europe-investment-2026"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleSmrDatacenterPage() {
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/smr-datacenter-ia-energie-247-europe-investissement-2026/" : "https://finxiacapital.com/en/blog/smr-datacenter-ia-energie-247-europe-investissement-2026/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/smr-datacenter-ia-energie-247-europe-investissement-2026/" : "https://finxiacapital.com/en/blog/smr-ai-datacenter-247-energy-europe-investment-2026/"}
         keywords={language === 'fr' ? "SMR, nucléaire, datacenter, IA, énergie 24/7, green datacenter, investissement infrastructure IA, Europe" : "SMR, nuclear, datacenter, AI, 24/7 carbon-free energy, green datacenter, AI infrastructure investment, Europe"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/smr-datacenter-ia-energie-247-europe-investissement-2026/"
-        hreflangEn="https://finxiacapital.com/en/blog/smr-datacenter-ia-energie-247-europe-investissement-2026/"
+        hreflangEn="https://finxiacapital.com/en/blog/smr-ai-datacenter-247-energy-europe-investment-2026/"
         hreflangDefault="https://finxiacapital.com/blog/smr-datacenter-ia-energie-247-europe-investissement-2026/"
       />
       <article className="bg-white">

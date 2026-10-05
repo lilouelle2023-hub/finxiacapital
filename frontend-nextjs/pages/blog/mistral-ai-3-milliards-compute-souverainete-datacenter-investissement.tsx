@@ -120,7 +120,7 @@ export default function ArticleMistral3MilliardsPage() {
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement" : "https://finxiacapital.com/en/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement" : "https://finxiacapital.com/en/blog/mistral-ai-3-billion-compute-sovereignty-datacenter-investment"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleMistral3MilliardsPage() {
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement/" : "https://finxiacapital.com/en/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement/" : "https://finxiacapital.com/en/blog/mistral-ai-3-billion-compute-sovereignty-datacenter-investment/"}
         keywords={language === 'fr' ? "Mistral AI, datacenter, IA, NVIDIA, GPU, cloud souverain, souveraineté numérique, investissement infrastructure IA" : "Mistral AI, datacenter, AI, NVIDIA, GPU, sovereign cloud, digital sovereignty, AI infrastructure investment"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement/"
-        hreflangEn="https://finxiacapital.com/en/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement/"
+        hreflangEn="https://finxiacapital.com/en/blog/mistral-ai-3-billion-compute-sovereignty-datacenter-investment/"
         hreflangDefault="https://finxiacapital.com/blog/mistral-ai-3-milliards-compute-souverainete-datacenter-investissement/"
       />
       <article className="bg-white">

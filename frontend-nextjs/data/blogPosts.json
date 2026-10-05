@@ -11,7 +11,8 @@
     "excerpt": {
       "fr": "Les hyperscalers passent au 24/7 carbon-free energy : chaque heure de calcul doit être décarbonée. Aux États-Unis, ils achètent des réacteurs. En Europe, les datacenters raccordés au nucléaire français tiennent déjà l'atout maître.",
       "en": "Hyperscalers are moving to 24/7 carbon-free energy: every hour of compute must be decarbonized. In the US they are buying reactors. In Europe, datacenters wired into French nuclear already hold the winning card."
-    }
+    },
+    "enSlug": "smr-ai-datacenter-247-energy-europe-investment-2026"
   },
   {
     "frSlug": "chaleur-fatale-datacenters-europe-eed-investissement-2026",
@@ -25,7 +26,8 @@
     "excerpt": {
       "fr": "La directive EED impose aux datacenters d'étudier la valorisation de leur chaleur fatale — l'Allemagne la rend obligatoire dès 2026. Réseaux urbains, revenus complémentaires, décote pour les réfractaires : le nouveau calcul de l'investisseur.",
       "en": "The EED directive forces datacenters to study waste-heat reuse — Germany makes it mandatory from 2026. Urban networks, additional revenue, discounts for laggards: the investor's new calculus."
-    }
+    },
+    "enSlug": "waste-heat-datacenters-europe-eed-investment-2026"
   },
   {
     "frSlug": "gpu-shortage-hbm4-europe-datacenter-investment-2026",
@@ -39,7 +41,8 @@
     "excerpt": {
       "fr": "SK Hynix, Samsung et Micron affichent 12 à 18 mois de délai sur la HBM4, la mémoire des prochains GPU NVIDIA. Pour les datacenters européens, la rareté se déplace — et les actifs déjà équipés voient leur prime monter.",
       "en": "SK Hynix, Samsung and Micron quote 12 to 18-month lead times on HBM4, the memory inside NVIDIA's next GPUs. For European datacenters, scarcity is shifting — and already-equipped assets command a rising premium."
-    }
+    },
+    "enSlug": "gpu-shortage-hbm4-europe-datacenter-investment-2026"
   },
   {
     "frSlug": "ppa-raccordement-securiser-electricite-datacenter-investisseur",
@@ -53,7 +56,8 @@
     "excerpt": {
       "fr": "PPA de 10 à 20 ans, convention de raccordement, effacement : la due diligence énergétique est devenue le cœur de la valorisation d'un datacenter. Ce qu'un investisseur doit vérifier avant d'acquérir.",
       "en": "10 to 20-year PPAs, grid connection agreements, demand response: energy due diligence has become the core of datacenter valuation. What investors must check before acquiring."
-    }
+    },
+    "enSlug": "ppa-grid-connection-datacenter-power-investor-guide"
   },
   {
     "frSlug": "electricite-decarbonee-france-avantage-datacenter-ia-souverain",
@@ -67,7 +71,8 @@
     "excerpt": {
       "fr": "Mix nucléaire et hydraulique décarboné à plus de 90 %, prix industriels compétitifs : la France devient une destination privilégiée pour les datacenters IA. Analyse d'un avantage sous-estimé.",
       "en": "A nuclear and hydro power mix that is over 90% decarbonized, competitive industrial prices: France is becoming a destination of choice for AI datacenters. Analysis of an underestimated advantage."
-    }
+    },
+    "enSlug": "decarbonized-electricity-france-sovereign-ai-datacenter-advantage"
   },
   {
     "frSlug": "electricite-goulot-etranglement-datacenter-ia-europe",
@@ -81,7 +86,8 @@
     "excerpt": {
       "fr": "18 GW de demande en file d'attente auprès de RTE, des délais de raccordement qui doublent : en Europe, ce n'est plus le GPU qui manque, c'est le mégawatt. Analyse pour investisseurs.",
       "en": "18 GW of demand queued with RTE, connection timelines doubling: in Europe, the scarce resource is no longer the GPU, it is the megawatt. Analysis for investors."
-    }
+    },
+    "enSlug": "electricity-bottleneck-ai-datacenter-europe"
   },
   {
     "frSlug": "mistral-ai-3-milliards-compute-souverainete-datacenter-investissement",
@@ -95,7 +101,8 @@
     "excerpt": {
       "fr": "Mistral AI boucle une série D de 3 milliards d'euros et vise à quadrupler sa capacité de calcul. Derrière la valorisation à 21,3 milliards, un signal clair pour les investisseurs : la puissance de compute souveraine devient l'actif stratégique de la décennie.",
       "en": "Mistral AI closes a €3 billion Series D and plans to quadruple its compute capacity. Behind the €21.3 billion valuation, a clear signal for investors: sovereign compute power is becoming the strategic asset of the decade."
-    }
+    },
+    "enSlug": "mistral-ai-3-billion-compute-sovereignty-datacenter-investment"
   },
   {
     "frSlug": "souverainete-numerique-atout-energetique-francais-datacenter-ia",
@@ -124,7 +131,8 @@
     "excerpt": {
       "fr": "L'Europe investit massivement dans le HPC et l'exascale avec Jupiter et les projets français. Quelles opportunités pour les investisseurs dans la souveraineté numérique ?",
       "en": "Europe is investing massively in HPC and exascale with Jupiter and French projects. What opportunities for investors in digital sovereignty?"
-    }
+    },
+    "enSlug": "hpc-europe-exascale-souverainete-numerique-investissement"
   },
   {
     "frSlug": "nvidia-blackwell-liquid-cooling-european-datacenters-2026",
@@ -138,7 +146,8 @@
     "excerpt": {
       "fr": "NVIDIA dévoile les Blackwell Ultra avec une densité de 200 kW par rack. Le refroidissement liquide devient incontournable. Quels datacenters européens survivront ?",
       "en": "NVIDIA unveils Blackwell Ultra with a density of 200 kW per rack. Liquid cooling becomes mandatory. Which European datacenters will survive?"
-    }
+    },
+    "enSlug": "nvidia-blackwell-liquid-cooling-european-datacenters-2026"
   },
   {
     "frSlug": "european-sovereign-cloud-gaia-x-investors-2026",
@@ -152,7 +161,8 @@
     "excerpt": {
       "fr": "Le projet Gaia-X compte désormais 200 fournisseurs certifiés. La France et l'Allemagne pilotent le déploiement. Analyse des implications pour les investisseurs en infrastructure.",
       "en": "The Gaia-X project now has 200 certified providers. France and Germany lead deployment. Analysis of implications for infrastructure investors."
-    }
+    },
+    "enSlug": "european-sovereign-cloud-gaia-x-investors-2026"
   },
   {
     "frSlug": "edge-computing-modular-datacenter-generative-ai-europe-2026",
@@ -166,7 +176,8 @@
     "excerpt": {
       "fr": "L'IA générative impose de nouvelles contraintes de latence. L'edge computing et les datacenters modulaires émergent comme la solution. Analyse pour les investisseurs.",
       "en": "Generative AI imposes new latency constraints. Edge computing and modular datacenters are emerging as the solution. Analysis for investors."
-    }
+    },
+    "enSlug": "edge-computing-modular-datacenter-generative-ai-europe-2026"
   },
   {
     "frSlug": "green-datacenter-pue-transformation-eed-regulation-2026",
@@ -180,7 +191,8 @@
     "excerpt": {
       "fr": "La directive EED et l'optimisation PUE transforment les datacenters européens. Guide pour les investisseurs sur la réglementation, la certification et les rendements.",
       "en": "The EED directive and PUE optimization are transforming European datacenters. Guide for investors on regulation, certification and returns."
-    }
+    },
+    "enSlug": "green-datacenter-pue-transformation-eed-regulation-2026"
   },
   {
     "frSlug": "green-bond-vs-pret-a-impact-financement-datacenter-europe",
@@ -344,7 +356,8 @@
     "excerpt": {
       "fr": "Face aux délais de raccordement de 4-7 ans, aux coûts greenfield en hausse et aux contraintes PUE imposées par l'EED, les data centers existants mal optimisés représentent la meilleure opportunité d'investissement en Europe.",
       "en": "Facing 4-7 year grid connection delays, rising greenfield costs and PUE constraints imposed by the EED, existing, poorly optimized datacenters represent the best investment opportunity in Europe."
-    }
+    },
+    "enSlug": "brown-to-green-data-centers-europe-investment-strategy"
   },
   {
     "frSlug": "data-centers-ia-energie-strategie-europe-2030",
@@ -358,7 +371,8 @@
     "excerpt": {
       "fr": "L'IA fait exploser la demande électrique des data centers : 415 TWh en 2024, potentiellement 945 TWh en 2030 (IEA). En Irlande, les data centers pèsent déjà 21% de la consommation nationale. Comment l'Europe peut-elle aligner ambitions IA et contraintes réseau ?",
       "en": "AI is exploding datacenter electricity demand: 415 TWh in 2024, potentially 945 TWh in 2030 (IEA). In Ireland, datacenters already account for 21% of national consumption. How can Europe align AI ambitions with grid constraints?"
-    }
+    },
+    "enSlug": "ai-data-centers-energy-strategy-europe-2030"
   },
   {
     "frSlug": "stackit-lidl-cloud-souverain-infrastructure-data-centers-europe",
@@ -372,7 +386,8 @@
     "excerpt": {
       "fr": "STACKIT et Lidl font les gros titres pour le cloud souverain européen. Mais la souveraineté réelle se joue dans les MW, le réseau et l'efficacité énergétique des data centers sous-jacents.",
       "en": "STACKIT and Lidl make headlines for European sovereign cloud. But real sovereignty is fought in megawatts, grid and energy efficiency of the underlying datacenters."
-    }
+    },
+    "enSlug": "stackit-lidl-sovereign-cloud-data-center-infrastructure-europe"
   },
   {
     "frSlug": "eed-directive-secret-commercial-pue-datacenters-europe",
@@ -386,7 +401,8 @@
     "excerpt": {
       "fr": "L'Article 12 EED impose un reporting annuel aux data centers UE dès 500 kW. Mais la transparence reste partielle et crée un marché à deux vitesses dont les investisseurs spécialisés peuvent tirer parti.",
       "en": "EED Article 12 imposes annual reporting on EU datacenters from 500 kW. But transparency remains partial and creates a two-tier market that specialized investors can leverage."
-    }
+    },
+    "enSlug": "eed-directive-trade-secret-pue-datacenters-europe"
   },
   {
     "frSlug": "loi-pinm-statut-datacenter-brown-to-green",

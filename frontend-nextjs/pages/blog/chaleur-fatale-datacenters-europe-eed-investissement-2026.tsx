@@ -120,7 +120,7 @@ export default function ArticleChaleurFatalePage() {
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026" : "https://finxiacapital.com/en/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026" : "https://finxiacapital.com/en/blog/waste-heat-datacenters-europe-eed-investment-2026"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleChaleurFatalePage() {
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026/" : "https://finxiacapital.com/en/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026/" : "https://finxiacapital.com/en/blog/waste-heat-datacenters-europe-eed-investment-2026/"}
         keywords={language === 'fr' ? "chaleur fatale, datacenter, EED, green datacenter, refroidissement liquide, efficacité énergétique, investissement datacenter Europe" : "waste heat, datacenter, EED, green datacenter, liquid cooling, energy efficiency, datacenter investment Europe"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026/"
-        hreflangEn="https://finxiacapital.com/en/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026/"
+        hreflangEn="https://finxiacapital.com/en/blog/waste-heat-datacenters-europe-eed-investment-2026/"
         hreflangDefault="https://finxiacapital.com/blog/chaleur-fatale-datacenters-europe-eed-investissement-2026/"
       />
       <article className="bg-white">

@@ -120,7 +120,7 @@ export default function ArticlePpaRaccordementPage() {
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur" : "https://finxiacapital.com/en/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur" : "https://finxiacapital.com/en/blog/ppa-grid-connection-datacenter-power-investor-guide"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticlePpaRaccordementPage() {
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur/" : "https://finxiacapital.com/en/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur/" : "https://finxiacapital.com/en/blog/ppa-grid-connection-datacenter-power-investor-guide/"}
         keywords={language === 'fr' ? "PPA, datacenter, électricité, raccordement, effacement, investissement infrastructure IA, due diligence" : "PPA, datacenter, electricity, grid connection, demand response, AI infrastructure investment, due diligence"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur/"
-        hreflangEn="https://finxiacapital.com/en/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur/"
+        hreflangEn="https://finxiacapital.com/en/blog/ppa-grid-connection-datacenter-power-investor-guide/"
         hreflangDefault="https://finxiacapital.com/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur/"
       />
       <article className="bg-white">

@@ -120,7 +120,7 @@ export default function ArticleElectriciteGoulotPage() {
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/electricite-goulot-etranglement-datacenter-ia-europe" : "https://finxiacapital.com/en/blog/electricite-goulot-etranglement-datacenter-ia-europe"
+        "item": language === 'fr' ? "https://finxiacapital.com/blog/electricite-goulot-etranglement-datacenter-ia-europe" : "https://finxiacapital.com/en/blog/electricity-bottleneck-ai-datacenter-europe"
       }
     ]
   };
@@ -130,14 +130,14 @@ export default function ArticleElectriciteGoulotPage() {
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/electricite-goulot-etranglement-datacenter-ia-europe/" : "https://finxiacapital.com/en/blog/electricite-goulot-etranglement-datacenter-ia-europe/"}
+        canonical={language === 'fr' ? "https://finxiacapital.com/blog/electricite-goulot-etranglement-datacenter-ia-europe/" : "https://finxiacapital.com/en/blog/electricity-bottleneck-ai-datacenter-europe/"}
         keywords={language === 'fr' ? "électricité, datacenter, IA, raccordement RTE, mégawatt, investissement infrastructure IA, green datacenter" : "electricity, datacenter, AI, grid connection, megawatt, AI infrastructure investment, green datacenter"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
         ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/electricite-goulot-etranglement-datacenter-ia-europe/"
-        hreflangEn="https://finxiacapital.com/en/blog/electricite-goulot-etranglement-datacenter-ia-europe/"
+        hreflangEn="https://finxiacapital.com/en/blog/electricity-bottleneck-ai-datacenter-europe/"
         hreflangDefault="https://finxiacapital.com/blog/electricite-goulot-etranglement-datacenter-ia-europe/"
       />
       <article className="bg-white">
