@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "eau-wue-datacenter-europe-investissement-2026",
+    "date": "2026-10-07",
+    "readTime": "6 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "Eau et datacenters : le WUE, prochaine frontière de l'investissement numérique en Europe",
+      "en": "Water and Datacenters: WUE, the Next Frontier of Digital Investment in Europe"
+    },
+    "excerpt": {
+      "fr": "Après l'électricité, l'eau devient la contrainte numéro un des datacenters européens. EED, sécheresses en Espagne et en Italie, permis suspendus : le WUE entre dans la due diligence — et redistribue les valorisations.",
+      "en": "After electricity, water is becoming the top constraint for European datacenters. EED, droughts in Spain and Italy, suspended permits: WUE enters due diligence — and reshuffles valuations."
+    },
+    "enSlug": "water-wue-datacenter-europe-investment-2026"
+  },
+  {
     "frSlug": "smr-datacenter-ia-energie-247-europe-investissement-2026",
     "date": "2026-10-05",
     "readTime": "7 min",

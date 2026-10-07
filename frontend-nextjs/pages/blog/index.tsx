@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 42,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-10-07',
+      title: {
+        fr: "Jupiter, le premier supercalculateur exascale européen, ouvre aux chercheurs — 1 ExaFLOPS dédié à l'IA souveraine",
+        en: "Jupiter, Europe's first exascale supercomputer, opens to researchers — 1 ExaFLOPS dedicated to sovereign AI"
+      },
+      source: "HPC Wire"
+    },
+    {
+      id: 43,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-06',
+      title: {
+        fr: "NVIDIA double ses revenus réseau avec Spectrum-X — les datacenters IA européens passent au 800 GbE",
+        en: "NVIDIA doubles networking revenue with Spectrum-X — European AI datacenters move to 800 GbE"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 44,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-06',
+      title: {
+        fr: "Cloud souverain : la France consacre 500 millions d'euros aux datacenters SecNumCloud pour les données de santé",
+        en: "Sovereign cloud: France commits 500 million euros to SecNumCloud datacenters for health data"
+      },
+      source: "Les Echos"
+    },
+    {
       id: 39,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
