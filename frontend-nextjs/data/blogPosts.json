@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "datacenter-autonome-ia-operations-europe-2026",
+    "date": "2026-10-09",
+    "readTime": "6 min",
+    "category": "AI-Native",
+    "title": {
+      "fr": "Datacenter autonome : quand l'IA pilote le refroidissement, l'énergie et la maintenance",
+      "en": "The Autonomous Datacenter: When AI Drives Cooling, Energy and Maintenance"
+    },
+    "excerpt": {
+      "fr": "Refroidissement prédictif, dispatch énergétique, maintenance anticipée : l'IA embarquée dans les outils DCIM gagne 10 à 15 % de PUE et compense la pénurie d'exploitants. Ce que l'autonomie change dans la valorisation d'un datacenter.",
+      "en": "Predictive cooling, energy dispatch, early maintenance: AI embedded in DCIM tools cuts PUE by 10 to 15% and offsets the operator shortage. What autonomy changes in datacenter valuation."
+    },
+    "enSlug": "autonomous-ai-datacenter-operations-europe-2026"
+  },
+  {
     "frSlug": "eau-wue-datacenter-europe-investissement-2026",
     "date": "2026-10-07",
     "readTime": "6 min",

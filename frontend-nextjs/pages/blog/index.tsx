@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 45,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-09',
+      title: {
+        fr: "NVIDIA déploie DSX, sa plateforme de pilotage des AI factories — orchestration énergétique intégrée des campus GPU",
+        en: "NVIDIA rolls out DSX, its AI factory management platform — integrated energy orchestration for GPU campuses"
+      },
+      source: "TechCrunch"
+    },
+    {
+      id: 46,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-08',
+      title: {
+        fr: "Digital Realty ouvre son plus grand campus français à Marseille — 50 MW dédiés à l'IA et au cloud souverain",
+        en: "Digital Realty opens its largest French campus in Marseille — 50 MW dedicated to AI and sovereign cloud"
+      },
+      source: "Les Echos"
+    },
+    {
+      id: 47,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-08',
+      title: {
+        fr: "Anthropic quadruple sa capacité de calcul en Europe — 200 000 GPU commandés pour 2027",
+        en: "Anthropic quadruples its European compute capacity — 200,000 GPUs ordered for 2027"
+      },
+      source: "Bloomberg"
+    },
+    {
       id: 42,
       topic: 'hpc',
       topicLabel: { fr: 'HPC', en: 'HPC' },
