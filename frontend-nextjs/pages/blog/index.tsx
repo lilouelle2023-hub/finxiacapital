@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 48,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-12',
+      title: {
+        fr: "NVIDIA expédie les premiers racks Vera Rubin NVL144 vers les AI factories européennes — déploiement prévu début 2027",
+        en: "NVIDIA ships first Vera Rubin NVL144 racks to European AI factories — deployment planned for early 2027"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 49,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-11',
+      title: {
+        fr: "Brookfield lève 10 milliards de dollars pour son fonds infrastructure IA — les datacenters européens en première ligne",
+        en: "Brookfield raises 10 billion dollars for its AI infrastructure fund — European datacenters on the front line"
+      },
+      source: "Bloomberg"
+    },
+    {
+      id: 50,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-11',
+      title: {
+        fr: "Souveraineté numérique : le Parlement européen adopte son rapport — priorité aux datacenters et au cloud européens",
+        en: "Digital sovereignty: the European Parliament adopts its report — priority to European datacenters and cloud"
+      },
+      source: "Les Echos"
+    },
+    {
       id: 45,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },

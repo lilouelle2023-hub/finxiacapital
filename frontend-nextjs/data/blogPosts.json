@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "ai-act-datacenters-europe-obligations-investissement-2026",
+    "date": "2026-10-12",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "AI Act et datacenters : ce que la réglementation européenne change pour les infrastructures IA",
+      "en": "AI Act and Datacenters: What European Regulation Changes for AI Infrastructure"
+    },
+    "excerpt": {
+      "fr": "L'AI Act impose aux fournisseurs de modèles d'IA une traçabilité complète de l'entraînement — énergie, calcul, données. Les datacenters européens deviennent un maillon de la conformité, et la capacité documentée prend de la valeur.",
+      "en": "The AI Act requires AI model providers to fully document training — energy, compute, data. European datacenters become a link in the compliance chain, and documented capacity gains value."
+    },
+    "enSlug": "ai-act-european-datacenters-obligations-investment-2026"
+  },
+  {
     "frSlug": "datacenter-autonome-ia-operations-europe-2026",
     "date": "2026-10-09",
     "readTime": "6 min",
