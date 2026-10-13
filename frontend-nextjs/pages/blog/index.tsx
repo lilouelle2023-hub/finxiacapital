@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 51,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-10-13',
+      title: {
+        fr: "Alice Recoque, le supercalculateur français exascale, entre en phase de test — montée en charge prévue début 2027",
+        en: "Alice Recoque, France's exascale supercomputer, enters testing phase — ramp-up planned for early 2027"
+      },
+      source: "HPC Wire"
+    },
+    {
+      id: 52,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-12',
+      title: {
+        fr: "NVIDIA capte 70 % des dépenses IA européennes — les neoclouds souverains tentent la riposte avec AMD",
+        en: "NVIDIA captures 70% of European AI spending — sovereign neoclouds attempt a riposte with AMD"
+      },
+      source: "Bloomberg"
+    },
+    {
+      id: 53,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-12',
+      title: {
+        fr: "TotalEnergies signe un PPA de 15 ans avec un opérateur de datacenters espagnol — 800 MW solaires pour l'IA",
+        en: "TotalEnergies signs a 15-year PPA with a Spanish datacenter operator — 800 MW of solar for AI"
+      },
+      source: "Reuters"
+    },
+    {
       id: 48,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },

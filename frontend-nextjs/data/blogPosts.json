@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "batteries-flexibilite-datacenter-revenus-reseau-europe-2026",
+    "date": "2026-10-13",
+    "readTime": "6 min",
+    "category": "Investment Strategy",
+    "title": {
+      "fr": "Batteries et flexibilité : quand le datacenter devient un actif du réseau électrique européen",
+      "en": "Batteries and Flexibility: When the Datacenter Becomes an Asset of the European Power Grid"
+    },
+    "excerpt": {
+      "fr": "Batteries géantes, effacement rémunéré, mécanismes de capacité : les datacenters ne sont plus seulement des consommateurs d'électricité, ils deviennent des actifs réseau. Une ligne de revenus que les modèles de valorisation ignorent encore.",
+      "en": "Giant batteries, paid demand response, capacity mechanisms: datacenters are no longer just power consumers, they are becoming grid assets. A revenue line that valuation models still ignore."
+    },
+    "enSlug": "batteries-flexibility-datacenter-grid-revenue-europe-2026"
+  },
+  {
     "frSlug": "ai-act-datacenters-europe-obligations-investissement-2026",
     "date": "2026-10-12",
     "readTime": "6 min",
