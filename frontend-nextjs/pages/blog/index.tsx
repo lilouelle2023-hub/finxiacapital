@@ -11,290 +11,26 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
-      id: 58,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-10-14',
-      title: {
-        fr: "NVIDIA lance Rubin CPX, un GPU pensé pour l'inférence longue contexte — les AI factories européennes ciblées pour 2027",
-        en: "NVIDIA launches Rubin CPX, a GPU built for long-context inference — European AI factories targeted for 2027"
-      },
-      source: "Reuters"
-    },
-    {
-      id: 59,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-10-14',
-      title: {
-        fr: "OpenAI signe 1 GW de capacité en Europe pour rapprocher l'inférence de ses utilisateurs — les datacenters souverains sollicités",
-        en: "OpenAI signs 1 GW of capacity in Europe to bring inference closer to users — sovereign datacenters in demand"
-      },
-      source: "Bloomberg"
-    },
-    {
-      id: 60,
-      topic: 'hpc',
-      topicLabel: { fr: 'HPC', en: 'HPC' },
-      date: '2026-10-13',
-      title: {
-        fr: "EuroHPC débloque 1,5 milliard d'euros pour la génération post-exascale — la souveraineté numérique européenne passe à l'échelle",
-        en: "EuroHPC unlocks 1.5 billion euros for the post-exascale generation — European digital sovereignty scales up"
-      },
-      source: "HPC Wire"
-    },
-    {
-      id: 54,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-14',
-      title: {
-        fr: "Ardian et Verne annoncent un campus de 500 MW en Ile-de-France — 5 milliards d'euros pour la plus grande Gigafactory IA de France, premiere tranche en 2030",
-        en: "Ardian and Verne announce a 500 MW campus in Ile-de-France — 5 billion euros for France's largest AI gigafactory, first phase by 2030"
-      },
-      source: "Les Echos"
-    },
-    {
-      id: 55,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-14',
-      title: {
-        fr: "Campus AI : Mistral AI, Bpifrance et MGX portent l'ambition a 3 GW de capacite de calcul — l'equivalent de trois reacteurs nucleaires en Seine-et-Marne",
-        en: "Campus AI: Mistral AI, Bpifrance and MGX scale ambition to 3 GW of compute — the equivalent of three nuclear reactors in Seine-et-Marne"
-      },
-      source: 'Silicon.fr'
-    },
-    {
-      id: 56,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-13',
-      title: {
-        fr: "Blackstone fait coter son trust d'infrastructure digitale BXDC — le plus grand proprietaire mondial de datacenters stabilises loues aux hyperscalers",
-        en: "Blackstone lists its digital infrastructure trust BXDC — the world's largest owner of stabilized datacenters leased to hyperscalers"
-      },
-      source: 'CNBC'
-    },
-    {
-      id: 57,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-13',
-      title: {
-        fr: "Dette privee : les prets aux infrastructures IA bondissent a 200 milliards de dollars debut 2026 — la BRI anticipe 600 milliards d'ici 2030",
-        en: "Private debt: loans to AI infrastructure reach $200 billion in early 2026 — BIS forecasts $600 billion by 2030"
-      },
-      source: 'Financial Times'
-    },
-    {
       id: 51,
-      topic: 'hpc',
-      topicLabel: { fr: 'HPC', en: 'HPC' },
-      date: '2026-10-13',
-      title: {
-        fr: "Alice Recoque, le supercalculateur français exascale, entre en phase de test — montée en charge prévue début 2027",
-        en: "Alice Recoque, France's exascale supercomputer, enters testing phase — ramp-up planned for early 2027"
-      },
-      source: "HPC Wire"
-    },
-    {
-      id: 52,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-10-12',
-      title: {
-        fr: "NVIDIA capte 70 % des dépenses IA européennes — les neoclouds souverains tentent la riposte avec AMD",
-        en: "NVIDIA captures 70% of European AI spending — sovereign neoclouds attempt a riposte with AMD"
-      },
-      source: "Bloomberg"
-    },
-    {
-      id: 53,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-12',
-      title: {
-        fr: "TotalEnergies signe un PPA de 15 ans avec un opérateur de datacenters espagnol — 800 MW solaires pour l'IA",
-        en: "TotalEnergies signs a 15-year PPA with a Spanish datacenter operator — 800 MW of solar for AI"
-      },
-      source: "Reuters"
-    },
-    {
-      id: 48,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-10-12',
-      title: {
-        fr: "NVIDIA expédie les premiers racks Vera Rubin NVL144 vers les AI factories européennes — déploiement prévu début 2027",
-        en: "NVIDIA ships first Vera Rubin NVL144 racks to European AI factories — deployment planned for early 2027"
-      },
-      source: "Reuters"
-    },
-    {
-      id: 49,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-11',
-      title: {
-        fr: "Brookfield lève 10 milliards de dollars pour son fonds infrastructure IA — les datacenters européens en première ligne",
-        en: "Brookfield raises 10 billion dollars for its AI infrastructure fund — European datacenters on the front line"
-      },
-      source: "Bloomberg"
-    },
-    {
-      id: 50,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-10-11',
-      title: {
-        fr: "Souveraineté numérique : le Parlement européen adopte son rapport — priorité aux datacenters et au cloud européens",
-        en: "Digital sovereignty: the European Parliament adopts its report — priority to European datacenters and cloud"
-      },
-      source: "Les Echos"
-    },
-    {
-      id: 45,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-10-09',
-      title: {
-        fr: "NVIDIA déploie DSX, sa plateforme de pilotage des AI factories — orchestration énergétique intégrée des campus GPU",
-        en: "NVIDIA rolls out DSX, its AI factory management platform — integrated energy orchestration for GPU campuses"
-      },
-      source: "TechCrunch"
-    },
-    {
-      id: 46,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-08',
-      title: {
-        fr: "Digital Realty ouvre son plus grand campus français à Marseille — 50 MW dédiés à l'IA et au cloud souverain",
-        en: "Digital Realty opens its largest French campus in Marseille — 50 MW dedicated to AI and sovereign cloud"
-      },
-      source: "Les Echos"
-    },
-    {
-      id: 47,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-10-08',
-      title: {
-        fr: "Anthropic quadruple sa capacité de calcul en Europe — 200 000 GPU commandés pour 2027",
-        en: "Anthropic quadruples its European compute capacity — 200,000 GPUs ordered for 2027"
-      },
-      source: "Bloomberg"
-    },
-    {
-      id: 42,
-      topic: 'hpc',
-      topicLabel: { fr: 'HPC', en: 'HPC' },
-      date: '2026-10-07',
-      title: {
-        fr: "Jupiter, le premier supercalculateur exascale européen, ouvre aux chercheurs — 1 ExaFLOPS dédié à l'IA souveraine",
-        en: "Jupiter, Europe's first exascale supercomputer, opens to researchers — 1 ExaFLOPS dedicated to sovereign AI"
-      },
-      source: "HPC Wire"
-    },
-    {
-      id: 43,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-10-06',
-      title: {
-        fr: "NVIDIA double ses revenus réseau avec Spectrum-X — les datacenters IA européens passent au 800 GbE",
-        en: "NVIDIA doubles networking revenue with Spectrum-X — European AI datacenters move to 800 GbE"
-      },
-      source: "Reuters"
-    },
-    {
-      id: 44,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-10-06',
-      title: {
-        fr: "Cloud souverain : la France consacre 500 millions d'euros aux datacenters SecNumCloud pour les données de santé",
-        en: "Sovereign cloud: France commits 500 million euros to SecNumCloud datacenters for health data"
-      },
-      source: "Les Echos"
-    },
-    {
-      id: 39,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-10-05',
-      title: {
-        fr: "NVIDIA et Deutsche Telekom inaugurent l'Industrial AI Cloud de Munich — 10 000 GPU Blackwell pour l'industrie européenne",
-        en: "NVIDIA and Deutsche Telekom inaugurate the Munich Industrial AI Cloud — 10,000 Blackwell GPUs for European industry"
-      },
-      source: "Reuters"
-    },
-    {
-      id: 40,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-04',
-      title: {
-        fr: "Equinix investit 2 milliards d'euros en Espagne — trois datacenters IA à Madrid et Barcelone d'ici 2029",
-        en: "Equinix invests 2 billion euros in Spain — three AI datacenters in Madrid and Barcelona by 2029"
-      },
-      source: "Bloomberg"
-    },
-    {
-      id: 41,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-10-04',
-      title: {
-        fr: "Mistral AI déploie Large-4 sur le campus de Fouju — 40 000 GPU pour l'inférence souveraine européenne",
-        en: "Mistral AI deploys Large-4 at the Fouju campus — 40,000 GPUs for European sovereign inference"
-      },
-      source: "Les Echos"
-    },
-    {
-      id: 36,
       topic: 'hpc',
       topicLabel: { fr: 'HPC', en: 'HPC' },
       date: '2026-10-02',
       title: {
-        fr: "EuroHPC inaugure 13 AI factories en Europe — la France obtient deux sites de calcul souverain adossés à ses datacenters",
-        en: "EuroHPC inaugurates 13 AI factories across Europe — France secures two sovereign compute sites backed by its datacenters"
-      },
-      source: "HPC Wire"
-    },
-    {
-      id: 37,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-10-01',
-      title: {
-        fr: "NVIDIA ouvre les précommandes du Vera Rubin NVL144 — 3,6 ExaFLOPS par rack, les datacenters européens préparent le 600 kW",
-        en: "NVIDIA opens Vera Rubin NVL144 pre-orders — 3.6 ExaFLOPS per rack, European datacenters prepare for 600 kW"
+        fr: "Alice Recoque : Bull assemble en France le supercalculateur exascale français, livraison en tranches des fin 2026",
+        en: "Alice Recoque: Bull assembles France's exascale supercomputer in Angers, phased delivery from late 2026"
       },
       source: "Reuters"
     },
     {
-      id: 38,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-10-01',
+      id: 31,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-06',
       title: {
-        fr: "Irlande : le moratoire sur les datacenters de Dublin prolongé jusqu'en 2028 — les capitaux se tournent vers la France et l'Espagne",
-        en: "Ireland: Dublin datacenter moratorium extended to 2028 — capital shifts toward France and Spain"
+        fr: "Mistral presente Large 4, entraine sur 3 800 GPU europeens — l'inference souveraine a l'echelle de la preview",
+        en: "Mistral unveils Large 4, trained on 3,800 European GPUs — sovereign inference at preview scale"
       },
-      source: "Les Echos"
-    },
-    {
-      id: 33,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-09-22',
-      title: {
-        fr: "NVIDIA lance le programme AI Cloud Partner en Europe — 12 opérateurs de datacenters certifiés pour la plateforme Rubin",
-        en: "NVIDIA launches the AI Cloud Partner program in Europe — 12 datacenter operators certified for the Rubin platform"
-      },
-      source: "Reuters"
+      source: "Mistral AI"
     },
     {
       id: 34,
@@ -302,21 +38,21 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
       date: '2026-09-21',
       title: {
-        fr: "EED : Bruxelles publie la première base de données européenne des PUE — les datacenters français parmi les plus efficaces",
-        en: "EED: Brussels publishes the first European PUE database — French datacenters among the most efficient"
+        fr: "Datacenters : Bruxelles propose un label europeen de performance energetique et publie les donnees 2024 declarees",
+        en: "Datacenters: Brussels proposes European energy performance label and publishes 2024 reported data"
       },
-      source: "Les Echos"
+      source: "Commission europeenne"
     },
     {
-      id: 35,
+      id: 26,
       topic: 'ia',
       topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-09-21',
+      date: '2026-09-10',
       title: {
-        fr: "OpenAI et Microsoft étudient des sites d'entraînement IA en Espagne — 2 GW de capacité datacenter visés d'ici 2029",
-        en: "OpenAI and Microsoft scout AI training sites in Spain — 2 GW of datacenter capacity targeted by 2029"
+        fr: "xAI double Colossus a Memphis : 200 000 GPU, toujours le plus grand cluster d'entrainement IA au monde",
+        en: "xAI doubles Colossus in Memphis: 200,000 GPUs, still the world's largest AI training cluster"
       },
-      source: "Bloomberg"
+      source: "DataCenterDynamics"
     },
     {
       id: 30,
@@ -324,99 +60,21 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'IA', en: 'AI' },
       date: '2026-09-08',
       title: {
-        fr: "Mistral AI lève 3 milliards d'euros — valorisation 21,3 Md€, Samsung entre au capital aux côtés de NVIDIA et ASML",
-        en: "Mistral AI raises 3 billion euros — 21.3 billion valuation, Samsung joins the cap table alongside NVIDIA and ASML"
+        fr: "Mistral AI leve 3 milliards d'euros dans un tour mene par Samsung — valorisation superieure a 21 milliards, record europeen",
+        en: "Mistral AI raises 3 billion euros in round led by Samsung — valuation above 21 billion, European record"
       },
-      source: "France Inter"
+      source: "Bpifrance"
     },
     {
-      id: 31,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-09-09',
-      title: {
-        fr: "Mistral va quadrupler sa capacité de calcul — le modèle Large-4 attendu fin 2026 sur des GPU hébergés en Europe",
-        en: "Mistral to quadruple compute capacity — Large-4 model expected end 2026 on Europe-hosted GPUs"
-      },
-      source: "Numerama"
-    },
-    {
-      id: 32,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-09-10',
-      title: {
-        fr: "Campus AI : Mistral et NVIDIA partenaires du site de Fouju (1,4 GW) — un deuxième campus à 7,5 Md€ financé par MGX et Bpifrance",
-        en: "Campus AI: Mistral and NVIDIA partner at the Fouju site (1.4 GW) — second 7.5 billion euro campus backed by MGX and Bpifrance"
-      },
-      source: "Les Echos"
-    },
-    {
-      id: 27,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-08-07',
-      title: {
-        fr: "NVIDIA commande 1,2 million de GPU Blackwell pour 2027 — la penurie de puces menace les datacenters europeens",
-        en: "NVIDIA orders 1.2 million Blackwell GPUs for 2027 — chip shortage threatens European datacenters"
-      },
-      source: 'Reuters'
-    },
-    {
-      id: 28,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-08-06',
-      title: {
-        fr: "Atos et Schneider Electric lancent un datacenter modulaire green de 50 MW pour le cloud souverain francais",
-        en: "Atos and Schneider Electric launch a 50 MW green modular datacenter for French sovereign cloud"
-      },
-      source: 'Les Echos'
-    },
-    {
-      id: 29,
+      id: 10,
       topic: 'ia',
       topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-08-06',
+      date: '2026-08-02',
       title: {
-        fr: "L'UE impose la certification energie-carbone pour tous les modeles IA d'ici 2028 — les datacenters en premiere ligne",
-        en: "EU mandates energy-carbon certification for all AI models by 2028 — datacenters on the front line"
+        fr: "AI Act : les obligations de transparence s'appliquent depuis le 2 aout 2026 — le reglement avait ete adopte en 2024",
+        en: "AI Act: transparency obligations apply since August 2, 2026 — the regulation was adopted in 2024"
       },
-      source: 'Bloomberg'
-    },
-
-    {
-      id: 24,
-      topic: 'hpc',
-      topicLabel: { fr: 'HPC', en: 'HPC' },
-      date: '2026-08-05',
-      title: {
-        fr: "Le supercalculateur exascale francais atteint 2 ExaFLOPS — 4 milliards d'euros investis pour la souverainete numerique",
-        en: "French exascale supercomputer reaches 2 ExaFLOPS — 4 billion euros invested for digital sovereignty"
-      },
-      source: 'HPC Wire'
-    },
-    {
-      id: 25,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-08-04',
-      title: {
-        fr: "Google annonce 3 milliards d'euros d'investissement en Pologne — 2 datacenters hyperscale a Varsovie",
-        en: "Google announces 3 billion euros investment in Poland — 2 hyperscale datacenters in Warsaw"
-      },
-      source: 'Bloomberg'
-    },
-    {
-      id: 26,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-08-04',
-      title: {
-        fr: "xAI de Elon Musk deploye 100 000 GPU H100 a Memphis — le plus grand cluster d'entrainement IA au monde",
-        en: "Elon Musk's xAI deploys 100,000 H100 GPUs in Memphis — the world's largest AI training cluster"
-      },
-      source: 'TechCrunch'
+      source: "Commission europeenne"
     },
     {
       id: 20,
@@ -424,21 +82,10 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
       date: '2026-07-28',
       title: {
-        fr: "67% des opérateurs européens citent l'accès à l'électricité comme défi numéro 1 — prime de rareté sur les actifs raccordés",
+        fr: "67% des operateurs europeens citent l'acces a l'electricite comme defi numero 1 — prime de rarete sur les actifs raccordes",
         en: "67% of European operators cite electricity access as top challenge — scarcity premium on connected assets"
       },
-      source: 'EUDCA 2026'
-    },
-    {
-      id: 21,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-07-27',
-      title: {
-        fr: "NVIDIA aligne les hyperscalers sur l'architecture 800V DC — les PDB convertissent directement 800V en 6V pour les accélérateurs IA",
-        en: "NVIDIA aligns hyperscalers on 800V DC architecture — PDBs convert 800V directly to 6V for AI accelerators"
-      },
-      source: 'PCIM 2026'
+      source: "EUDCA 2026"
     },
     {
       id: 22,
@@ -446,120 +93,21 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'IA', en: 'AI' },
       date: '2026-07-26',
       title: {
-        fr: "Le marché de la consommation électrique des datacenters IA atteindra 70,6 Md$ d'ici 2035 — CAGR de 18,9%",
+        fr: "Le marche de la consommation electrique des datacenters IA atteindra 70,6 Md$ d'ici 2035 — CAGR de 18,9%",
         en: "AI datacenter electricity consumption market to reach $70.6B by 2035 — 18.9% CAGR"
       },
-      source: 'Precedence Research'
+      source: "Precedence Research"
     },
     {
       id: 23,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-07-25',
-      title: {
-        fr: "Cerebras déploie 200 MW en Europe d'ici fin 2027 — Ferrovial investit 1 Md€ à Madrid",
-        en: "Cerebras deploys 200 MW in Europe by end 2027 — Ferrovial invests €1B in Madrid"
-      },
-      source: 'DataX Connect'
-    },
-    {
-      id: 17,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-07-24',
-      title: {
-        fr: "NVIDIA annonce les HBM4 pour 2027 : 48 GB par stack, 12-Hi — les supercalculateurs européens se réorganisent",
-        en: "NVIDIA announces HBM4 for 2027: 48 GB per stack, 12-Hi — European supercomputers reorganize"
-      },
-      source: 'Bloomberg'
-    },
-    {
-      id: 18,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-07-23',
-      title: {
-        fr: "L'Europe déploie son premier datacenter sous-marin en Méditerranée — refroidissement naturel et latences record",
-        en: "Europe deploys its first underwater datacenter in the Mediterranean — natural cooling and record latency"
-      },
-      source: 'Les Echos'
-    },
-    {
-      id: 19,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-07-22',
-      title: {
-        fr: "L'UE exige la certification carbone pour tous les datacenters alimentant des modèles IA d'ici 2028",
-        en: "EU mandates carbon certification for all datacenters powering AI models by 2028"
-      },
-      source: 'Reuters'
-    },
-    {
-      id: 14,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-07-10',
-      title: {
-        fr: "NVIDIA dévoile les Blackwell Ultra : 200 kW par rack, refroidissement liquide obligatoire — les datacenters européens en sursis",
-        en: "NVIDIA unveils Blackwell Ultra: 200 kW per rack, liquid cooling mandatory — European datacenters on notice"
-      },
-      source: 'Bloomberg'
-    },
-    {
-      id: 15,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
       date: '2026-07-09',
       title: {
-        fr: "Le projet de cloud souverain Gaia-X atteint 200 fournisseurs certifiés — la France et l'Allemagne pilotent le déploiement",
-        en: "Gaia-X sovereign cloud project reaches 200 certified providers — France and Germany lead deployment"
+        fr: "Cerebras deploiera 200 MW de calcul IA en Europe d'ici fin 2027 — France et Nordiques, en partie pour OpenAI",
+        en: "Cerebras to deploy 200 MW of AI compute in Europe by end 2027 — France and Nordics, partly for OpenAI"
       },
-      source: "Les Echos"
-    },
-    {
-      id: 16,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-07-09',
-      title: {
-        fr: "Meta investit 15 milliards de dollars dans un méga-datacenter en Lorraine — la plus grande infrastructure IA d'Europe",
-        en: "Meta invests $15 billion in mega-datacenter in Lorraine — Europe's largest AI infrastructure"
-      },
-      source: 'Reuters'
-    },
-    {
-      id: 11,
-      topic: 'nvidia',
-      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-07-08',
-      title: {
-        fr: "NVIDIA annonce 500 000 GPU Blackwell pour 2027 — les hyperscalers européens se précipitent sur les précommandes",
-        en: "NVIDIA announces 500,000 Blackwell GPUs for 2027 — European hyperscalers rush pre-orders"
-      },
-      source: 'Reuters'
-    },
-    {
-      id: 12,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-07-07',
-      title: {
-        fr: "La France débloque 2 milliards d'euros pour les datacenters green — les projets PUE < 1,2 prioritaires",
-        en: "France unlocks 2 billion euros for green datacenters — PUE < 1.2 projects prioritized"
-      },
-      source: "Les Echos"
-    },
-    {
-      id: 13,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-07-07',
-      title: {
-        fr: "DeepSeek lance un modèle open-source de 671 milliards de paramètres — l'entraînement coûte 10x moins cher que GPT-4",
-        en: "DeepSeek launches 671-billion-parameter open-source model — training costs 10x less than GPT-4"
-      },
-      source: 'TechCrunch'
+      source: "DataCenterDynamics"
     },
     {
       id: 1,
@@ -567,109 +115,241 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
       date: '2026-07-04',
       title: {
-        fr: "NVIDIA dépasse les 4 000 milliards de capitalisation — les H100 alimentent la ruée vers l'or des datacenters",
-        en: "NVIDIA surpasses $4 trillion market cap — H100 GPUs fuel the datacenter gold rush"
+        fr: "NVIDIA, premiere capitalisation mondiale : le titre depasse 4 700 milliards de dollars debut juillet",
+        en: "NVIDIA tops world market cap: stock surpasses $4.7 trillion in early July"
       },
-      source: 'Bloomberg / Reuters'
+      source: "Reuters"
     },
     {
-      id: 2,
+      id: 54,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-07-02',
+      date: '2026-06-04',
       title: {
-        fr: "Schneider Electric injecte 1,5 milliard d'euros dans les datacenters modulaires — l'edge computing devient stratégique",
-        en: "Schneider Electric invests €1.5B in modular datacenters — edge computing becomes strategic"
+        fr: "Ardian et Verne annoncent un campus de 500 MW en Ile-de-France — 5 milliards d'euros, premiere tranche de 200 MW en 2030",
+        en: "Ardian and Verne announce 500 MW campus in Ile-de-France — 5 billion euros, first 200 MW phase by 2030"
       },
-      source: 'Les Echos'
+      source: "Les Echos"
     },
     {
-      id: 3,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-07-01',
-      title: {
-        fr: "Mistral lève 1,2 milliard — son modèle Large atteint la performance GPT-4 sur les benchmarks européens",
-        en: "Mistral raises $1.2B — its Large model reaches GPT-4 performance on European benchmarks"
-      },
-      source: 'TechCrunch'
-    },
-    {
-      id: 4,
-      topic: 'hpc',
-      topicLabel: { fr: 'HPC', en: 'HPC' },
-      date: '2026-06-30',
-      title: {
-        fr: "Le Jupiter exascale allemand entre en production — 1 ExaFLOPS pour la recherche européenne en IA",
-        en: "Germany's Jupiter exascale supercomputer enters production — 1 ExaFLOPS for European AI research"
-      },
-      source: 'HPC Wire'
-    },
-    {
-      id: 5,
-      topic: 'dc',
-      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-06-28',
-      title: {
-        fr: "L'Irlande suspend 70% des nouveaux projets de datacenters — la crise énergétique frappe l'Europe",
-        en: "Ireland suspends 70% of new datacenter projects — energy crisis hits Europe"
-      },
-      source: 'The Irish Times'
-    },
-    {
-      id: 6,
+      id: 45,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
-      date: '2026-06-25',
+      date: '2026-06-02',
       title: {
-        fr: "Blackwell B200 : 4,3x plus rapide que H100, 120 kW par serveur — la consommation électrique explose",
-        en: "Blackwell B200: 4.3x faster than H100, 120 kW per server — power consumption explodes"
+        fr: "NVIDIA lance DSX, sa plateforme de conception et d'exploitation des AI factories avec optimisation energetique",
+        en: "NVIDIA launches DSX, its AI factory design and operations platform with energy optimization"
       },
-      source: 'AnandTech'
+      source: "NVIDIA"
     },
     {
-      id: 7,
-      topic: 'ia',
-      topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-06-22',
-      title: {
-        fr: "Anthropic lève 3,5 milliards de dollars — Claude 4 réduit les hallucinations de 40%",
-        en: "Anthropic raises $3.5 billion — Claude 4 reduces hallucinations by 40%"
-      },
-      source: 'Financial Times'
-    },
-    {
-      id: 8,
+      id: 32,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
-      date: '2026-06-20',
+      date: '2026-06-01',
       title: {
-        fr: "Microsoft investit 8 milliards de dollars en France — 3 nouveaux datacenters cloud annoncés",
-        en: "Microsoft invests $8 billion in France — 3 new cloud datacenters announced"
+        fr: "Choose France : le Campus IA etendu a 3 GW — MGX engage 7,5 milliards d'euros pour un second site a selectionner",
+        en: "Choose France: AI Campus extended to 3 GW — MGX commits 7.5 billion euros for a second site to be selected"
       },
-      source: 'La Tribune'
+      source: "Bpifrance"
+    },
+    {
+      id: 37,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-06-01',
+      title: {
+        fr: "Vera Rubin en production depuis juin : 3,6 ExaFLOPS FP4 par rack, les 600 kW attendus avec le NVL576 en 2027",
+        en: "Vera Rubin in production since June: 3.6 ExaFLOPS FP4 per rack, 600 kW expected with NVL576 in 2027"
+      },
+      source: "NVIDIA"
+    },
+    {
+      id: 43,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-05-15',
+      title: {
+        fr: "NVIDIA : les revenus reseau explosent (+199% sur un an), portes par Spectrum-X et l'Ethernet 800 Gb/s",
+        en: "NVIDIA: networking revenue soars (+199% year-on-year), driven by Spectrum-X and 800 Gb/s Ethernet"
+      },
+      source: "NVIDIA"
+    },
+    {
+      id: 56,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-05-14',
+      title: {
+        fr: "Blackstone introduit en Bourse son trust d'infrastructure digitale BXDC — des datacenters stabilises loues aux hyperscalers",
+        en: "Blackstone lists digital infrastructure trust BXDC — stabilized datacenters leased to hyperscalers"
+      },
+      source: "CNBC"
+    },
+    {
+      id: 57,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-05-07',
+      title: {
+        fr: "Dette privee : les prets aux infrastructures IA atteignent 200 milliards de dollars — la BRI anticipe 600 milliards d'ici 2030",
+        en: "Private debt: loans to AI infrastructure reach $200 billion — BIS forecasts $600 billion by 2030"
+      },
+      source: "BRI"
+    },
+    {
+      id: 17,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-03-16',
+      title: {
+        fr: "HBM4 : 36 GB par stack en 12-Hi des 2026, 48 GB en 16-Hi en 2027 pour les GPU NVIDIA Rubin",
+        en: "HBM4: 36 GB per stack in 12-Hi from 2026, 48 GB in 16-Hi in 2027 for NVIDIA Rubin GPUs"
+      },
+      source: "Micron"
+    },
+    {
+      id: 21,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-03-16',
+      title: {
+        fr: "800 V DC : NVIDIA et l'OCP standardisent l'alimentation des racks IA — des convertisseurs 800 V vers 6 V devoiles",
+        en: "800 V DC: NVIDIA and OCP standardize AI rack power — 800V-to-6V converters unveiled"
+      },
+      source: "Navitas"
+    },
+    {
+      id: 46,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-03-11',
+      title: {
+        fr: "Digital Realty obtient le feu vert pour MRS6 a Marseille : 50 MW pour 700 millions d'euros, serveurs en ligne vers 2028",
+        en: "Digital Realty gets green light for MRS6 in Marseille: 50 MW for 700 million euros, servers online around 2028"
+      },
+      source: "DataCenterDynamics"
+    },
+    {
+      id: 44,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-02-06',
+      title: {
+        fr: "Donnees de sante : la France quitte Azure pour un cloud qualifie SecNumCloud — bascule complete visee fin 2026",
+        en: "Health data: France moves off Azure to SecNumCloud-qualified cloud — full migration targeted by end 2026"
+      },
+      source: "CIO"
+    },
+    {
+      id: 39,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-02-04',
+      title: {
+        fr: "Deutsche Telekom et NVIDIA mettent en service l'Industrial AI Cloud de Munich — 10 000 GPU Blackwell pour l'industrie",
+        en: "Deutsche Telekom and NVIDIA bring Munich Industrial AI Cloud online — 10,000 Blackwell GPUs for industry"
+      },
+      source: "Deutsche Telekom"
+    },
+    {
+      id: 50,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-01-22',
+      title: {
+        fr: "Souverainete numerique : le Parlement europeen appelle au cloud souverain et a des investissements dans les datacenters europeens",
+        en: "Digital sovereignty: European Parliament calls for sovereign cloud and investment in European datacenters"
+      },
+      source: "Parlement europeen"
+    },
+    {
+      id: 38,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2025-12-15',
+      title: {
+        fr: "Irlande : fin du gel des raccordements datacenters a Dublin — les nouveaux projets doivent apporter production renouvelable et flexibilite",
+        en: "Ireland: Dublin datacenter grid connection freeze lifted — new projects must bring renewable generation and flexibility"
+      },
+      source: "DataCenterDynamics"
+    },
+    {
+      id: 49,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2025-11-19',
+      title: {
+        fr: "Brookfield : le fonds infrastructure IA vise 10 milliards de dollars, 5 milliards deja engages fin 2025",
+        en: "Brookfield: AI infrastructure fund targets $10 billion, $5 billion already committed end of 2025"
+      },
+      source: "Brookfield"
+    },
+    {
+      id: 42,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2025-11-07',
+      title: {
+        fr: "JUPITER : l'exascale europeen ouvert aux chercheurs et aux entreprises via sa AI Factory depuis fin 2025",
+        en: "JUPITER: Europe's exascale supercomputer open to researchers and businesses via its AI Factory since late 2025"
+      },
+      source: "EuroHPC"
     },
     {
       id: 9,
       topic: 'hpc',
       topicLabel: { fr: 'HPC', en: 'HPC' },
-      date: '2026-06-18',
+      date: '2025-06-12',
       title: {
-        fr: "AMD MI350 : 288 GB HBM3e, 35 petaFLOPS FP8 — la concurrence s'intensifie face à NVIDIA",
-        en: "AMD MI350: 288 GB HBM3e, 35 petaFLOPS FP8 — competition intensifies against NVIDIA"
+        fr: "AMD lance l'Instinct MI355X : 288 GB de HBM3E et 10 petaFLOPS FP8 face aux GPU NVIDIA Blackwell",
+        en: "AMD launches Instinct MI355X: 288 GB HBM3E and 10 petaFLOPS FP8 against NVIDIA Blackwell GPUs"
       },
-      source: "Tom's Hardware"
+      source: "AMD"
     },
     {
-      id: 10,
+      id: 14,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2025-03-18',
+      title: {
+        fr: "Blackwell Ultra : jusqu'a 145 kW par rack, le refroidissement liquide devient la norme des datacenters IA",
+        en: "Blackwell Ultra: up to 145 kW per rack, liquid cooling becomes the norm for AI datacenters"
+      },
+      source: "NVIDIA"
+    },
+    {
+      id: 7,
       topic: 'ia',
       topicLabel: { fr: 'IA', en: 'AI' },
-      date: '2026-06-15',
+      date: '2025-03-03',
       title: {
-        fr: "L'UE adopte l'AI Act — les datacenters européens doivent prouver la traçabilité des modèles",
-        en: "EU adopts AI Act — European datacenters must prove model traceability"
+        fr: "Anthropic leve 3,5 milliards de dollars a 61,5 milliards de valorisation — sa plus grande levee de fonds",
+        en: "Anthropic raises $3.5 billion at $61.5 billion valuation — its largest funding round"
       },
-      source: 'Politico EU'
+      source: "Anthropic"
+    },
+    {
+      id: 8,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2024-05-12',
+      title: {
+        fr: "Microsoft investit 4 milliards d'euros dans les datacenters francais — nouveau site pres de Mulhouse, extensions a Paris et Marseille",
+        en: "Microsoft invests 4 billion euros in French datacenters — new site near Mulhouse, expansions in Paris and Marseille"
+      },
+      source: "Microsoft"
+    },
+    {
+      id: 6,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2024-03-18',
+      title: {
+        fr: "NVIDIA presente Blackwell : jusqu'a 4x le H100 selon le constructeur, 120 kW par baie GB200 NVL72",
+        en: "NVIDIA unveils Blackwell: up to 4x H100 per the vendor, 120 kW per GB200 NVL72 rack"
+      },
+      source: "NVIDIA"
     }
   ];
 
