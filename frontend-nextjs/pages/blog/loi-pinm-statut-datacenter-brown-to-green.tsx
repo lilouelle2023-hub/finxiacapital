@@ -8,7 +8,7 @@ export default function Article8Page() {
 
   const content = {
     fr: {
-      title: "Loi PINM : ce que le statut de Projet d'Intérêt National Majeur change pour les datacenters B2G",
+      title: "Statut PINM : ce que la loi de simplification de 2026 change pour les datacenters brown-to-green",
       tag: "TITAN Strategy",
       date: "Avril 2026",
       readTime: "8 min de lecture",
@@ -16,7 +16,7 @@ export default function Article8Page() {
       backToBlog: "Retour au blog"
     },
     en: {
-      title: "PINM Law: What the Major National Interest Project Status Changes for B2G Datacenters",
+      title: "PINM Status: What the 2026 Simplification Law Changes for B2G Datacenters",
       tag: "TITAN Strategy",
       date: "April 2026",
       readTime: "8 min read",
@@ -76,7 +76,7 @@ export default function Article8Page() {
     <div data-testid="article-8-page" className="pt-20">
       <SEO
         title={t.title}
-        description={language === 'fr' ? "Le 14 avril 2026, la loi PINM change les règles du jeu pour les datacenters européens. Analyse de l'avantage structurel brown-to-green par Lila Benhammou, CIO FINXIA Capital." : "On April 14, 2026, the PINM law changes the game for European datacenters. Analysis of brown-to-green structural advantage by Lila Benhammou, CIO FINXIA Capital."}
+        description={language === 'fr' ? "Le 26 mai 2026, la loi de simplification de la vie économique a été promulguée (loi n° 2026-403, JO du 27 mai 2026). Son article 35 change les règles du jeu pour les datacenters européens. Analyse de l'avantage structurel brown-to-green par Lila Benhammou, CIO FINXIA Capital." : "On May 26, 2026, the economic simplification law was promulgated (Law No. 2026-403, Official Journal of May 27). Its article 35 changes the game for European datacenters. Analysis of brown-to-green structural advantage by Lila Benhammou, CIO FINXIA Capital."}
         canonical={language === 'fr' ? "https://finxiacapital.com/blog/loi-pinm-statut-datacenter-brown-to-green/" : "https://finxiacapital.com/en/blog/pinm-law-datacenter-brown-to-green-status/"}
         breadcrumbSchema={breadcrumbSchema}
         keywords={language === 'fr' ? "loi PINM, Projet Intérêt National Majeur, datacenter France, brown-to-green, raccordement RTE, TITAN DC AI, souveraineté numérique" : "PINM law, Major National Interest Project, France datacenter, brown-to-green, RTE connection, TITAN DC AI, digital sovereignty"}
@@ -125,8 +125,8 @@ export default function Article8Page() {
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-xl text-slate-700 font-medium leading-relaxed mb-8">
                 {language === 'fr'
-                  ? "Le 14 avril 2026, l'Assemblée nationale a adopté la loi de simplification de la vie économique. Son article 15 est passé presque inaperçu dans la presse généraliste. Pour les investisseurs positionnés sur les datacenters européens, il change pourtant les règles du jeu."
-                  : "On April 14, 2026, the National Assembly adopted the economic simplification law. Its article 15 went almost unnoticed in the mainstream press. For investors positioned on European datacenters, it changes the game."}
+                  ? "Le 26 mai 2026, la loi de simplification de la vie économique a été promulguée (loi n° 2026-403, JO du 27 mai 2026). Son article 35 est passé presque inaperçu dans la presse généraliste. Pour les investisseurs positionnés sur les datacenters européens, il change pourtant les règles du jeu."
+                  : "On May 26, 2026, the economic simplification law was promulgated (Law No. 2026-403, Official Journal of May 27). Its article 35 went almost unnoticed in the mainstream press. For investors positioned on European datacenters, it changes the game."}
               </p>
 
               <p>{language === 'fr' ? "Voici ce que cela signifie concrètement — et pourquoi l'approche brown-to-green (B2G) en sort renforcée." : "Here's what it means concretely — and why the brown-to-green (B2G) approach emerges strengthened."}</p>
@@ -142,14 +142,14 @@ export default function Article8Page() {
               <ul className="space-y-2">
                 <li>{language === 'fr' ? "Procédures administratives accélérées — délais de 5-7 ans réduits à fast track" : "Accelerated administrative procedures — 5-7 year delays reduced to fast track"}</li>
                 <li>{language === 'fr' ? "Gestion centralisée par l'État — substitution aux collectivités locales" : "Centralized management by the State — substitution for local authorities"}</li>
-                <li>{language === 'fr' ? "Reconnaissance d'intérêt public majeur — accès facilité aux financements ESG" : "Recognition of major public interest — facilitated access to ESG financing"}</li>
+                <li>{language === 'fr' ? "Dérogation aux règles de hauteur des PLU et mise en compatibilité accélérée des documents d'urbanisme ; le permis est instruit par le préfet" : "Exemption from local plan height limits and accelerated urban-plan compatibility procedures; the permit is processed by the prefect"}</li>
               </ul>
 
               <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">
                 {language === 'fr' ? "Le vrai problème que cette loi résout" : "The Real Problem This Law Solves"}
               </h2>
 
-              <p>{language === 'fr' ? "En 2025, la moitié des demandes de raccordement à RTE concernait des datacenters. Cette congestion a porté les délais moyens de raccordement à 5-7 ans. Le PINM n'est pas qu'un label administratif. C'est un accès prioritaire à la file d'attente réseau — le principal goulot d'étranglement du secteur en France aujourd'hui." : "In 2025, half of RTE connection requests concerned datacenters. This congestion has brought average connection delays to 5-7 years. PINM is not just an administrative label. It's priority access to the network queue — the main bottleneck in the sector in France today."}</p>
+              <p>{language === 'fr' ? "Début 2025, RTE comptait quelque 140 projets industriels contractualisés pour 21 GW, dont environ 40 datacenters ; mi-2026, environ 18 GW étaient réservés pour une quatre-vingtaine de projets de datacenters. Cette congestion a porté les délais moyens de raccordement à 5-7 ans. Le PINM n'est pas qu'un label administratif. C'est un accès prioritaire à la file d'attente réseau — le principal goulot d'étranglement du secteur en France aujourd'hui — mesure transitoire, par décret d'application, devant prendre fin le 10 mars 2027." : "In early 2025, RTE counted some 140 contracted industrial projects totaling 21 GW, including around 40 datacenters; by mid-2026, around 18 GW were reserved for roughly eighty datacenter projects. This congestion has brought average connection delays to 5-7 years. PINM is not just an administrative label. It's priority access to the network queue — the main bottleneck in the sector in France today — a transitional measure, by implementing decree, due to end on March 10, 2027."}</p>
 
               <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">
                 {language === 'fr' ? "Pourquoi le B2G est structurellement avantagé" : "Why B2G is Structurally Advantaged"}
@@ -172,17 +172,17 @@ export default function Article8Page() {
                 {language === 'fr' ? "Ce que les investisseurs doivent retenir" : "What Investors Should Remember"}
               </h2>
 
-              <p>{language === 'fr' ? "La loi PINM valide trois éléments de la thèse d'investissement datacenter en France :" : "The PINM law validates three elements of the datacenter investment thesis in France:"}</p>
+              <p>{language === 'fr' ? "Le statut PINM valide trois éléments de la thèse d'investissement datacenter en France :" : "PINM status validates three elements of the datacenter investment thesis in France:"}</p>
 
               <ol className="space-y-3">
-                <li><strong>{language === 'fr' ? "La souveraineté numérique est une priorité d'État durable" : "Digital sovereignty is a sustainable State priority"}</strong> — {language === 'fr' ? "L'article 15 s'inscrit dans une politique industrielle construite depuis le Sommet de l'IA de février 2025." : "Article 15 is part of an industrial policy built since the AI Summit of February 2025."}</li>
+                <li><strong>{language === 'fr' ? "La souveraineté numérique est une priorité d'État durable" : "Digital sovereignty is a sustainable State priority"}</strong> — {language === 'fr' ? "L'article 35 s'inscrit dans une politique industrielle construite depuis le Sommet de l'IA de février 2025." : "Article 35 is part of an industrial policy built since the AI Summit of February 2025."}</li>
                 <li><strong>{language === 'fr' ? "Le raccordement électrique reste le vrai actif rare" : "Electrical connection remains the real scarce asset"}</strong> — {language === 'fr' ? "Un datacenter existant avec raccordement en place vaut structurellement plus qu'un terrain nu — même qualifié PINM." : "An existing datacenter with connection in place is structurally worth more than bare land — even PINM-qualified."}</li>
                 <li><strong>{language === 'fr' ? "La performance énergétique est le critère de survie réglementaire" : "Energy performance is the regulatory survival criterion"}</strong> — {language === 'fr' ? "Entre l'EED, la Taxonomie Verte et les conditions fiscales, les datacenters non optimisés sont en sursis." : "Between EED, Green Taxonomy and fiscal conditions, non-optimized datacenters are on borrowed time."}</li>
               </ol>
 
               <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">Conclusion</h2>
 
-              <p>{language === 'fr' ? "La loi du 14 avril 2026 est une bonne nouvelle pour le secteur. Pour les investisseurs qui ont choisi le bon angle d'entrée — des actifs existants, raccordés, avec une technologie d'optimisation énergétique certifiée — la fenêtre est maintenant ouverte, et la loi vient de la sécuriser davantage." : "The law of April 14, 2026 is good news for the sector. For investors who have chosen the right entry angle — existing assets, connected, with certified energy optimization technology — the window is now open, and the law has just secured it further."}</p>
+              <p>{language === 'fr' ? "La loi du 26 mai 2026 est une bonne nouvelle pour le secteur. Pour les investisseurs qui ont choisi le bon angle d'entrée — des actifs existants, raccordés, avec une technologie d'optimisation énergétique certifiée — la fenêtre est maintenant ouverte, et la loi vient de la sécuriser davantage." : "The law of May 26, 2026 is good news for the sector. For investors who have chosen the right entry angle — existing assets, connected, with certified energy optimization technology — the window is now open, and the law has just secured it further."}</p>
             </div>
 
             <div className="mt-16 pt-8 border-t border-slate-200">
