@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 58,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-14',
+      title: {
+        fr: "NVIDIA lance Rubin CPX, un GPU pensé pour l'inférence longue contexte — les AI factories européennes ciblées pour 2027",
+        en: "NVIDIA launches Rubin CPX, a GPU built for long-context inference — European AI factories targeted for 2027"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 59,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-14',
+      title: {
+        fr: "OpenAI signe 1 GW de capacité en Europe pour rapprocher l'inférence de ses utilisateurs — les datacenters souverains sollicités",
+        en: "OpenAI signs 1 GW of capacity in Europe to bring inference closer to users — sovereign datacenters in demand"
+      },
+      source: "Bloomberg"
+    },
+    {
+      id: 60,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-10-13',
+      title: {
+        fr: "EuroHPC débloque 1,5 milliard d'euros pour la génération post-exascale — la souveraineté numérique européenne passe à l'échelle",
+        en: "EuroHPC unlocks 1.5 billion euros for the post-exascale generation — European digital sovereignty scales up"
+      },
+      source: "HPC Wire"
+    },
+    {
       id: 54,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
