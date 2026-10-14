@@ -99,7 +99,7 @@ export default function ArticleEedSecretPage() {
                 <li>un PUE de 1,8 signifie que pour 1 MWh consommé par l&apos;IT, 0,8 MWh supplémentaires sont consommés par l&apos;infrastructure (refroidissement, UPS, auxiliaires) ;</li>
                 <li>un PUE de 1,2 signifie que pour 1 MWh IT, seuls 0,2 MWh sont consommés par l&apos;infrastructure.</li>
               </ul>
-              <p>Passer de 1,8 à 1,2 réduit donc d&apos;environ un tiers la consommation totale du site, ce qui se traduit par une baisse potentielle de 40 à 50 % de la facture électrique liée à l&apos;infrastructure non-IT, à prix de l&apos;énergie constant.</p>
+              <p>Passer de 1,8 à 1,2 réduit donc d&apos;environ un tiers la consommation totale du site, ce qui se traduit par une réduction d&apos;environ 75 % de l&apos;énergie d&apos;infrastructure non-IT (de 0,8 à 0,2 MWh par MWh IT), à prix de l&apos;énergie constant.</p>
               <p>Aux Pays-Bas, où les enjeux réseau sont déjà très sensibles, la combinaison puissance IT + PUE conditionne désormais l&apos;acceptabilité des nouveaux projets. Les gestionnaires de réseau comme <a href="https://www.alliander.com/" target="_blank" rel="noopener noreferrer nofollow">Alliander</a> signalent des listes d&apos;attente record pour les raccordements de grandes charges, dont les data centers, dans leurs documents de planification 2024–2025.</p>
               <p>Ces écarts de performance et ces contraintes réseau restent pourtant peu visibles dans le débat public, alors même qu&apos;ils déterminent directement la compétitivité des opérateurs, la trajectoire de décarbonation réelle et la valeur des actifs sur le marché secondaire.</p>
 
