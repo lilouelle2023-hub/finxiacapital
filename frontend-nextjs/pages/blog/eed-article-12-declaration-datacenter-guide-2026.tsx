@@ -4,9 +4,9 @@ import SEO from '../../components/SEO';
 import { useLanguage } from '../../context/LanguageContext';
 
 const faqDataFr = [
-  { q: "Mon datacenter fait 480 kW IT. Suis-je concerné ?", a: "Non, le seuil est strictement de 500 kW IT installée. Attention cependant à la trajectoire de croissance : dès que la puissance IT installée dépasse 500 kW (y compris temporairement pour un pic de charge documenté), l'obligation de déclaration s'applique sur l'exercice suivant complet." },
-  { q: "Est-ce que le PUE doit être certifié par un tiers ?", a: "Non, pas pour la déclaration Article 12. Une mesure interne conforme ISO/IEC 30134-2 est suffisante. Cependant, l'article 21 imposera à partir de 2027 une certification indépendante pour les sites cherchant une qualification PUE ≤ 1,30. Nous recommandons de passer dès 2026 en certification IPMVP Option C pour anticiper les exigences futures." },
-  { q: "Que se passe-t-il si je ne peux pas mesurer certains indicateurs ?", a: "Les indicateurs non mesurables doivent faire l'objet d'une estimation documentée (méthode de calcul, hypothèses, marge d'incertitude) conformément aux lignes directrices du JRC. Une déclaration avec estimation documentée est préférable à une absence de déclaration — les autorités tolèrent une marge d'erreur déclarée tant qu'elle reste sous 15%." },
+  { q: "Mon datacenter fait 480 kW IT. Suis-je concerné ?", a: "Non, le seuil est strictement de 500 kW IT installée. Le seuil porte sur la puissance IT installée (somme des puissances nominales des équipements installés), dès 500 kW. Attention cependant à la trajectoire de croissance : dès que la puissance IT installée dépasse durablement 500 kW, l'obligation de déclaration s'applique sur l'exercice suivant complet." },
+  { q: "Est-ce que le PUE doit être certifié par un tiers ?", a: "Non, pas pour la déclaration Article 12. Une mesure interne conforme ISO/IEC 30134-2 est suffisante. À ce jour, aucun seuil PUE contraignant n'existe au niveau européen ; seule l'Allemagne, via sa loi sur l'efficacité énergétique (EnEfG), conditionne les nouveaux sites à un PUE ≤ 1,2 à partir de juillet 2026. Nous recommandons de passer dès 2026 en certification IPMVP Option C pour anticiper les exigences futures." },
+  { q: "Que se passe-t-il si je ne peux pas mesurer certains indicateurs ?", a: "Les indicateurs non mesurables doivent faire l'objet d'une estimation documentée (méthode de calcul, hypothèses, marge d'incertitude) conformément aux lignes directrices du JRC. Une déclaration avec estimation documentée est préférable à une absence de déclaration." },
   { q: "Les colocations doivent-elles déclarer au niveau du site ou par tenant ?", a: "Déclaration au niveau du site (l'opérateur exploitant l'infrastructure physique), avec consolidation de l'ensemble des charges IT des tenants. Les tenants individuels n'ont aucune obligation de déclaration EED Article 12 — l'obligation pèse sur l'opérateur de colocation." },
   { q: "Quelle est la différence entre les Garanties d'Origine et les PPA renouvelables pour le REF ?", a: "Les GO sont des certificats électroniques confirmant qu'un MWh a été produit d'origine renouvelable — elles peuvent être achetées séparément de l'énergie consommée. Les PPA renouvelables couplent contractuellement fourniture physique et certificats. Les deux sont recevables pour le REF, mais la Commission considère les PPA avec supplementarity comme qualitativement supérieurs." },
   { q: "Mon datacenter fonctionne en free cooling 100%. WUE = 0 est-il recevable ?", a: "Oui, strictement. Les sites en free cooling sec sans adiabatique déclarent WUE = 0 avec documentation technique du mode de refroidissement. Attention aux sites « free cooling avec assistance adiabatique en été » qui ont un WUE non nul, même faible (~0,05 à 0,15 L/kWh)." },
@@ -18,8 +18,8 @@ export default function Article6Page() {
   const { language } = useLanguage();
   const content = {
     fr: {
-      title: "EED Article 12 : Guide Complet pour la Déclaration Obligatoire des Datacenters avant le 15 Mai 2026",
-      description: "Guide complet EED datacenters 2026 : Article 12, déclaration obligatoire 15 mai 2026, seuils 500 kW IT, indicateurs PUE WUE REF ERF, sanctions, préparation 90 jours.",
+      title: "EED Article 12 : Guide Complet pour la Déclaration Annuelle des Datacenters — Échéance du 15 Mai 2026",
+      description: "Guide complet EED datacenters 2026 : Article 12, déclaration annuelle du 15 mai 2026 (données 2025, troisième échéance du dispositif), seuils 500 kW IT, indicateurs PUE WUE REF ERF, sanctions, préparation 90 jours.",
       tag: "Regulatory Compliance",
       date: "Avril 2026",
       readTime: "12 min de lecture",
@@ -27,8 +27,8 @@ export default function Article6Page() {
       author: "Lila Benhammou, Co-Fondatrice & CIO"
     },
     en: {
-      title: "EED Article 12: Complete Guide for Mandatory Datacenter Declaration before May 15, 2026",
-      description: "May 15, 2026 is the first mandatory declaration deadline imposed by EED Article 12. Complete guide for European datacenter operators.",
+      title: "EED Article 12: Complete Guide for the Annual Datacenter Declaration — May 15, 2026 Deadline",
+      description: "May 15, 2026 is the annual filing deadline for 2025 data — the third reporting exercise, after September 15, 2024 and May 15, 2025. Complete guide for European datacenter operators.",
       tag: "Regulatory Compliance",
       date: "April 2026",
       readTime: "12 min read",
@@ -113,13 +113,13 @@ export default function Article6Page() {
               {language === 'fr' ? (
                 <>
                   <p className="text-xl text-slate-700 font-medium leading-relaxed mb-8">
-                    Le 15 mai 2026 marque la première échéance de déclaration obligatoire imposée par l&apos;Article 12 de la Directive européenne sur l&apos;efficacité énergétique (EED 2023/1791, refonte). Tout datacenter dépassant <strong>500 kW de puissance IT installée</strong> sur le territoire de l&apos;Union européenne doit transmettre, via la base européenne centralisée, cinq indicateurs de performance énergétique — sous peine de sanctions nationales allant de l&apos;amende administrative à la suspension d&apos;exploitation selon les transpositions locales.
+                    Le 15 mai 2026 est l&apos;échéance annuelle de déclaration des données 2025 — la troisième du dispositif, après le 15 septembre 2024 et le 15 mai 2025 — imposée par l&apos;Article 12 de la Directive européenne sur l&apos;efficacité énergétique (EED 2023/1791, refonte). Tout datacenter dépassant <strong>500 kW de puissance IT installée</strong> sur le territoire de l&apos;Union européenne doit transmettre, via la base européenne centralisée, cinq indicateurs de performance énergétique — sous peine de sanctions nationales allant de l&apos;amende administrative à la suspension d&apos;exploitation selon les transpositions locales.
                   </p>
                   <p>
-                    Cette échéance n&apos;est pas un exercice bureaucratique. Elle constitue le point de bascule réglementaire du marché européen des datacenters : elle crée la base de données publique qui alimentera l&apos;application de l&apos;Article 21 (seuils PUE contraignants au 2 janvier 2027), conditionne l&apos;éligibilité à l&apos;EU Taxonomy 8.1 pour les financements Green Bond, et trie mécaniquement le parc européen entre actifs conformes (premium de valorisation) et actifs non conformes (décote immédiate).
+                    Cette échéance n&apos;est pas un exercice bureaucratique. Elle constitue le point de bascule réglementaire du marché européen des datacenters : elle crée la base de données publique qui alimentera les politiques de performance énergétique des datacenters européens, conditionne l&apos;éligibilité à l&apos;EU Taxonomy 8.1 pour les financements Green Bond, et trie mécaniquement le parc européen entre actifs conformes (premium de valorisation) et actifs non conformes (décote immédiate).
                   </p>
                   <p>
-                    Ce guide couvre le périmètre exact de l&apos;obligation, les cinq indicateurs techniques à déclarer, la méthodologie de préparation en 90 jours, l&apos;articulation avec l&apos;Article 21, les sanctions encourues et répond aux 8 questions les plus fréquentes des opérateurs.
+                    Ce guide couvre le périmètre exact de l&apos;obligation, les cinq indicateurs techniques à déclarer, la méthodologie de préparation en 90 jours, l&apos;articulation avec la transposition française, les sanctions encourues et répond aux 8 questions les plus fréquentes des opérateurs.
                   </p>
 
                   <h2>1. Qu&apos;est-ce que l&apos;Article 12 de la Directive EED ?</h2>
@@ -130,10 +130,10 @@ export default function Article6Page() {
                     L&apos;objectif affiché par la Commission européenne est triple : (1) créer la première base de données publique européenne sur la consommation énergétique réelle des datacenters, segment qui représente désormais près de 3 % de la consommation électrique de l&apos;UE et croît de 10 % par an sous l&apos;effet de la demande IA ; (2) doter les régulateurs nationaux et européens d&apos;un outil de pilotage fin pour ajuster les politiques de décarbonation ; (3) créer un mécanisme de transparence qui force les opérateurs à mesurer, documenter et améliorer leurs performances — le simple fait de devoir déclarer induit une dynamique d&apos;optimisation.
                   </p>
                   <p>
-                    L&apos;Article 12 a été complété par le Règlement délégué (UE) 2024/1364 du 14 mars 2024, qui précise le format de déclaration, la méthodologie de calcul des indicateurs, et le calendrier de remontée des données. La première échéance du 15 mai 2026 portera sur les données consolidées de l&apos;exercice 2025 complet (1er janvier — 31 décembre 2025). Les déclarations suivantes devront être remises avant le 15 mai de chaque année, couvrant l&apos;exercice N-1.
+                    L&apos;Article 12 a été complété par le Règlement délégué (UE) 2024/1364 du 14 mars 2024, qui précise le format de déclaration, la méthodologie de calcul des indicateurs, et le calendrier de remontée des données. Le 15 mai 2026 est l&apos;échéance annuelle de déclaration des données 2025 — la troisième du dispositif, après le 15 septembre 2024 (données 2023) et le 15 mai 2025 (données 2024). Les déclarations suivantes devront être remises avant le 15 mai de chaque année, couvrant l&apos;exercice N-1.
                   </p>
                   <p>
-                    La Commission a précisé que la base de données publique ne sera accessible qu&apos;à partir de 2027 dans sa version agrégée — les données individuelles des opérateurs resteront confidentielles pour les deux premières années. Mais cette confidentialité est temporaire : à partir de 2028, les indicateurs par site seront publiés, créant de facto un classement public des datacenters européens par efficacité énergétique.
+                    La base européenne publie les données de manière agrégée ; la Commission a proposé en septembre 2026 un schéma de classement européen qui, s&apos;il est adopté, renforcera la comparabilité des sites.
                   </p>
 
                   <h2>2. Qui est concerné — seuils et périmètre exact</h2>
@@ -157,7 +157,7 @@ export default function Article6Page() {
                     <li>Les infrastructures classifiées relevant de la sécurité nationale (décision discrétionnaire des États membres)</li>
                   </ul>
                   <p>
-                    Pour la France, l&apos;organe collecteur sera l&apos;<strong>ADEME</strong> (Agence de la Transition Écologique) via une plateforme dédiée qui sera mise en ligne d&apos;ici fin mars 2026. Le portail national reprendra les indicateurs harmonisés de l&apos;UE et transmettra automatiquement les données consolidées à la base européenne gérée par le JRC (Joint Research Centre de la Commission).
+                    En France, la transposition est déjà en vigueur (loi DDADUE n° 2025-391 du 30 avril 2025 et décret n° 2025-1382 du 29 décembre 2025) : déclaration annuelle de transparence pour les centres de données ≥ 500 kW, transmise via le dispositif national à la base européenne gérée par le JRC (Joint Research Centre de la Commission).
                   </p>
 
                   <h2>3. Les 5 indicateurs à déclarer avant le 15 mai 2026</h2>
@@ -175,30 +175,19 @@ export default function Article6Page() {
                   <p>La préparation d&apos;une déclaration EED conforme requiert entre 60 et 120 jours selon la maturité de l&apos;opérateur.</p>
                   <p><strong>Phase 1 (J0 à J30) — Cartographie et instrumentation.</strong> Inventaire des compteurs existants. Identification des points de mesure manquants pour atteindre une couverture PUE conforme ISO 30134-2 : compteur au point de livraison, sous-comptage IT (PDU, TGBT IT), mesure des auxiliaires (groupes froid, UPS, auxiliaires HVAC). Déploiement des compteurs manquants (comptage classe 1 requis pour PUE certifiable).</p>
                   <p><strong>Phase 2 (J30 à J60) — Collecte et fiabilisation des données historiques.</strong> Récupération des données 2025 complètes via DCIM, BMS ou SCADA. Validation croisée avec les factures du fournisseur d&apos;énergie. Correction des anomalies (coupures, périodes de maintenance, valeurs aberrantes). Production d&apos;un jeu de données mensuel consolidé.</p>
-                  <p><strong>Phase 3 (J60 à J90) — Calcul des indicateurs et rédaction du dossier.</strong> Application des formules du Règlement délégué 2024/1364. Calcul du PUE annualisé (moyenne pondérée 12 mois). Calcul du WUE avec sources documentées. Vérification du REF via les certificats GO du fournisseur. Estimation ERF si applicable. Rédaction du rapport de déclaration au format attendu par l&apos;ADEME.</p>
-                  <p><strong>Phase 4 (J90 à J120) — Vérification indépendante (recommandée).</strong> Bien que non obligatoire pour la première déclaration 2026, la vérification par un tiers accrédité (Bureau Veritas, TÜV Rheinland, SGS) sous protocole <strong>IPMVP Option C</strong> apporte une crédibilité commerciale forte. Les actifs vérifiés IPMVP bénéficient d&apos;une prime de valorisation mesurée entre 8 et 15 % sur le marché secondaire des datacenters en 2025 (source : CBRE Data Center Investor Intentions Survey).</p>
+                  <p><strong>Phase 3 (J60 à J90) — Calcul des indicateurs et rédaction du dossier.</strong> Application des formules du Règlement délégué 2024/1364. Calcul du PUE annualisé (moyenne pondérée 12 mois). Calcul du WUE avec sources documentées. Vérification du REF via les certificats GO du fournisseur. Estimation ERF si applicable. Rédaction du rapport de déclaration au format prévu par le règlement délégué 2024/1364.</p>
+                  <p><strong>Phase 4 (J90 à J120) — Vérification indépendante (recommandée).</strong> Bien que non obligatoire pour la première déclaration 2026, la vérification par un tiers accrédité (Bureau Veritas, TÜV Rheinland, SGS) sous protocole <strong>IPMVP Option C</strong> apporte une crédibilité commerciale forte. Selon nos estimations, les actifs vérifiés IPMVP bénéficient d&apos;une prime de valorisation de 8 à 15 % sur le marché secondaire des datacenters.</p>
                   <p>Pour les opérateurs dont les datacenters sont déjà instrumentés via un DCIM professionnel (Schneider EcoStruxure IT, Vertiv Trellis, Nlyte), la préparation peut être bouclée en 30 à 45 jours.</p>
 
-                  <h2>5. Article 21 : ce qui arrive après la déclaration — PUE ≤ 1,30 au 2 janvier 2027</h2>
-                  <p>L&apos;Article 12 n&apos;est que le premier étage d&apos;une architecture réglementaire à trois niveaux. L&apos;Article 21 de la même Directive, qui entrera en application au <strong>2 janvier 2027</strong>, introduit des seuils contraignants de performance énergétique — basés précisément sur les données collectées via l&apos;Article 12.</p>
-                  <p>Les seuils retenus par la Commission sont :</p>
-                  <ul>
-                    <li><strong>PUE annualisé ≤ 1,30</strong> pour tout datacenter existant mis en service avant 2027</li>
-                    <li><strong>PUE annualisé ≤ 1,20</strong> pour tout datacenter neuf (permis de construire déposé après le 1er janvier 2027)</li>
-                    <li><strong>WUE maximal</strong> : seuil national laissé à la discrétion des États membres, typiquement entre 0,4 et 1,8 L/kWh</li>
-                  </ul>
-                  <p>Les datacenters non conformes devront présenter un plan de mise à niveau avec un calendrier de retour à la conformité sur 36 mois maximum. En cas d&apos;incapacité à se conformer, les États membres pourront appliquer des pénalités croissantes, imposer des restrictions d&apos;exploitation, voire refuser les autorisations d&apos;extension ou de renouvellement.</p>
-                  <p>Cette séquence Art. 12 → Art. 21 crée mécaniquement une bifurcation du marché en trois catégories : (1) les datacenters récents (post-2020) atteignant déjà des PUE entre 1,15 et 1,35 — conformes sans travaux lourds ; (2) les datacenters intermédiaires (2005-2020) affichant des PUE entre 1,40 et 1,70 — nécessitant des investissements de 500 à 2 500 €/kW IT pour passer sous la barre de 1,30 ; (3) les datacenters anciens (pré-2005) avec PUE supérieurs à 1,70 — pour lesquels la rénovation est souvent non rentable, ouvrant la voie à des opportunités de repositionnement brownfield.</p>
-                  <p>C&apos;est précisément cette troisième catégorie que <strong>TITAN DC AI</strong> cible en priorité : acquisition à décote des actifs brownfield non conformes, transformation technique complète, remise en conformité certifiée sous IPMVP, et repositionnement comme infrastructure premium certifiée EU Taxonomy 8.1.</p>
+                  <div className="my-8 p-6 bg-slate-50 border-l-4 border-[#C45A3B] rounded">
+                    <p className="text-slate-700 leading-relaxed">
+                      <strong>À ce jour, l&apos;EED n&apos;impose aucun seuil PUE contraignant.</strong> Seule l&apos;Allemagne, via sa loi sur l&apos;efficacité énergétique (EnEfG), impose un PUE ≤ 1,2 pour les datacenters mis en service à partir de juillet 2026, puis ≤ 1,5 (juillet 2027) et ≤ 1,3 (juillet 2030) pour l&apos;existant. En septembre 2026, la Commission européenne a en outre proposé un schéma de classement européen des datacenters, encore à adopter.
+                    </p>
+                  </div>
+                  <p>Cette troisième catégorie d&apos;actifs — les datacenters anciens à PUE élevé — est précisément celle que <strong>TITAN DC AI</strong> cible en priorité : acquisition à décote des actifs brownfield, transformation technique complète, remise en conformité certifiée sous IPMVP, et repositionnement comme infrastructure premium certifiée EU Taxonomy 8.1.</p>
 
                   <h2>6. Sanctions et risques en cas de non-conformité</h2>
-                  <p>L&apos;Article 12 lui-même ne fixe pas de sanctions harmonisées — chaque État membre transpose et définit son régime. En France, le projet de transposition (avril 2026, loi de simplification économique intégrant les dispositions EED) prévoit :</p>
-                  <ul>
-                    <li><strong>Amende administrative</strong> de 15 000 à 100 000 € pour défaut de déclaration initiale</li>
-                    <li><strong>Astreinte journalière</strong> de 1 500 €/jour au-delà de 30 jours de retard</li>
-                    <li><strong>Publication des manquements</strong> sur le portail ADEME (effet réputationnel direct)</li>
-                    <li>En cas de fausse déclaration avérée : sanctions pénales (article 441-1 du Code pénal) pouvant atteindre 3 ans de prison et 45 000 € d&apos;amende</li>
-                  </ul>
+                  <p>L&apos;Article 12 lui-même ne fixe pas de sanctions harmonisées — chaque État membre transpose et définit son régime. En France, la transposition est déjà en vigueur (loi DDADUE n° 2025-391 du 30 avril 2025 et décret n° 2025-1382 du 29 décembre 2025) : déclaration annuelle de transparence pour les centres de données ≥ 500 kW ; en cas de non-conformité, mise en demeure puis amende pouvant atteindre 50 000 €.</p>
                   <p>Au-delà des sanctions directes, le risque majeur est <strong>réputationnel et commercial</strong> : les grands donneurs d&apos;ordre (hyperscalers pour leur colocation, administrations publiques via commande publique, grandes entreprises avec engagements ESG) intègrent désormais la conformité EED comme critère d&apos;attribution. Un datacenter non déclaré au 15 mai 2026 est de facto disqualifié des appels d&apos;offres cloud publics européens à partir de 2026.</p>
                   <p>Enfin, sur le plan du financement, les banques et fonds Green Bond appliquent des conditions suspensives à leurs instruments de dette verte : absence de déclaration EED = sortie du périmètre éligible à l&apos;EU Taxonomy 8.1 = inéligibilité aux Green Bonds ICMA, avec refinancement potentiellement renchéri de 80 à 150 bps.</p>
 
@@ -229,7 +218,7 @@ export default function Article6Page() {
               ) : (
                 <>
                   <p className="text-xl text-slate-700 font-medium leading-relaxed mb-8">
-                    May 15, 2026 is the first mandatory declaration deadline imposed by Article 12 of the Energy Efficiency Directive. Every datacenter exceeding 500 kW of installed IT capacity in the EU must declare five energy performance indicators.
+                    May 15, 2026 is the annual filing deadline for 2025 data — the third reporting exercise, after September 15, 2024 and May 15, 2025 — imposed by Article 12 of the Energy Efficiency Directive. Every datacenter exceeding 500 kW of installed IT capacity in the EU must declare five energy performance indicators.
                   </p>
                   <p>FINXIA Capital supports datacenter operators in their EED compliance via its TITAN DC AI strategy. A fully expanded English version of this guide is in preparation.</p>
                 </>
