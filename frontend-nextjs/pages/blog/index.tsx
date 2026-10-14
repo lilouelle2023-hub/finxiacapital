@@ -16,10 +16,10 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
       date: '2026-10-14',
       title: {
-        fr: "Blackstone lève 30 milliards de dollars pour son fonds infrastructure digitale — les datacenters européens premiers cibles d'acquisition",
-        en: "Blackstone raises $30 billion for its digital infrastructure fund — European datacenters top the acquisition targets"
+        fr: "Ardian et Verne annoncent un campus de 500 MW en Ile-de-France — 5 milliards d'euros pour la plus grande Gigafactory IA de France, premiere tranche en 2030",
+        en: "Ardian and Verne announce a 500 MW campus in Ile-de-France — 5 billion euros for France's largest AI gigafactory, first phase by 2030"
       },
-      source: 'Bloomberg'
+      source: "Les Echos"
     },
     {
       id: 55,
@@ -27,10 +27,10 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
       date: '2026-10-14',
       title: {
-        fr: "KKR et Ardian s'associent pour 5 milliards d'euros — un portefeuille de datacenters edge en Europe du Sud d'ici 2028",
-        en: "KKR and Ardian team up for 5 billion euros — an edge datacenter portfolio in Southern Europe by 2028"
+        fr: "Campus AI : Mistral AI, Bpifrance et MGX portent l'ambition a 3 GW de capacite de calcul — l'equivalent de trois reacteurs nucleaires en Seine-et-Marne",
+        en: "Campus AI: Mistral AI, Bpifrance and MGX scale ambition to 3 GW of compute — the equivalent of three nuclear reactors in Seine-et-Marne"
       },
-      source: 'Financial Times'
+      source: 'Silicon.fr'
     },
     {
       id: 56,
@@ -38,10 +38,10 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
       date: '2026-10-13',
       title: {
-        fr: "Macquarie lance un fonds européen de 8 milliards d'euros dédié à la transformation brown-to-green des datacenters",
-        en: "Macquarie launches an 8 billion euro European fund dedicated to brown-to-green datacenter transformation"
+        fr: "Blackstone fait coter son trust d'infrastructure digitale BXDC — le plus grand proprietaire mondial de datacenters stabilises loues aux hyperscalers",
+        en: "Blackstone lists its digital infrastructure trust BXDC — the world's largest owner of stabilized datacenters leased to hyperscalers"
       },
-      source: 'Reuters'
+      source: 'CNBC'
     },
     {
       id: 57,
@@ -49,10 +49,10 @@ export default function BlogIndexPage() {
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
       date: '2026-10-13',
       title: {
-        fr: "PGIM et Vauban Infrastructure acquièrent 12 datacenters européens pour 3,2 milliards d'euros — la consolidation du secteur s'accélère",
-        en: "PGIM and Vauban Infrastructure acquire 12 European datacenters for 3.2 billion euros — sector consolidation accelerates"
+        fr: "Dette privee : les prets aux infrastructures IA bondissent a 200 milliards de dollars debut 2026 — la BRI anticipe 600 milliards d'ici 2030",
+        en: "Private debt: loans to AI infrastructure reach $200 billion in early 2026 — BIS forecasts $600 billion by 2030"
       },
-      source: "Les Echos"
+      source: 'Financial Times'
     },
     {
       id: 51,
