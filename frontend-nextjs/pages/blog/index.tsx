@@ -11,6 +11,50 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 54,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-14',
+      title: {
+        fr: "Blackstone lève 30 milliards de dollars pour son fonds infrastructure digitale — les datacenters européens premiers cibles d'acquisition",
+        en: "Blackstone raises $30 billion for its digital infrastructure fund — European datacenters top the acquisition targets"
+      },
+      source: 'Bloomberg'
+    },
+    {
+      id: 55,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-14',
+      title: {
+        fr: "KKR et Ardian s'associent pour 5 milliards d'euros — un portefeuille de datacenters edge en Europe du Sud d'ici 2028",
+        en: "KKR and Ardian team up for 5 billion euros — an edge datacenter portfolio in Southern Europe by 2028"
+      },
+      source: 'Financial Times'
+    },
+    {
+      id: 56,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-13',
+      title: {
+        fr: "Macquarie lance un fonds européen de 8 milliards d'euros dédié à la transformation brown-to-green des datacenters",
+        en: "Macquarie launches an 8 billion euro European fund dedicated to brown-to-green datacenter transformation"
+      },
+      source: 'Reuters'
+    },
+    {
+      id: 57,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-13',
+      title: {
+        fr: "PGIM et Vauban Infrastructure acquièrent 12 datacenters européens pour 3,2 milliards d'euros — la consolidation du secteur s'accélère",
+        en: "PGIM and Vauban Infrastructure acquire 12 European datacenters for 3.2 billion euros — sector consolidation accelerates"
+      },
+      source: "Les Echos"
+    },
+    {
       id: 51,
       topic: 'hpc',
       topicLabel: { fr: 'HPC', en: 'HPC' },
