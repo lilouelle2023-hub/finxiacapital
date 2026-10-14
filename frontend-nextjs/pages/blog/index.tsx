@@ -798,7 +798,7 @@ export default function BlogIndexPage() {
 
             {/* RIGHT COLUMN — News Sidebar (1/3, sticky) */}
             <div className="lg:col-span-1 order-1 lg:order-2">
-              <div className="lg:sticky lg:top-28">
+              <div className="lg:sticky lg:top-28 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:overscroll-contain lg:pr-1">
                 {/* News Feed — EN HAUT */}
                 <div className="flex items-center gap-3 mb-4">
                   <Zap className="w-5 h-5 text-[#C45A3B]" />
@@ -828,8 +828,8 @@ export default function BlogIndexPage() {
                   ))}
                 </div>
 
-                {/* News items — vertical list */}
-                <div className="space-y-3 mb-6">
+                {/* News items — vertical list (scrollable) */}
+                <div className="space-y-3 mb-6 max-h-[60vh] overflow-y-auto overscroll-contain pr-1">
                   {filteredNews.map((item) => (
                     <div
                       key={item.id}
