@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "refroidissement-immersion-datacenter-gpu-ia-europe-investissement-2026",
+    "date": "2026-10-16",
+    "readTime": "6 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "Refroidissement par immersion : la réponse des datacenters européens à la densité GPU de l'IA",
+      "en": "Immersion Cooling: European Datacenters' Answer to AI GPU Density"
+    },
+    "excerpt": {
+      "fr": "L'air ne suffit plus face aux racks GPU de 100 kW et plus. Refroidissement liquide direct et immersion redessinent la salle blanche — et la facture énergétique. Ce que l'investisseur doit vérifier avant de parier sur l'immersion.",
+      "en": "Air cooling is no longer enough against 100 kW-plus GPU racks. Direct liquid and immersion cooling are redrawing the white room — and the energy bill. What investors should check before betting on immersion."
+    },
+    "enSlug": "immersion-cooling-datacenter-gpu-ai-europe-investment-2026"
+  },
+  {
     "frSlug": "batteries-flexibilite-datacenter-revenus-reseau-europe-2026",
     "date": "2026-10-13",
     "readTime": "6 min",

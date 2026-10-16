@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 61,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-16',
+      title: {
+        fr: "NVIDIA promet 2 milliards de dollars d'accords IA en Europe — après 8 milliards investis en un an, GTC Berlin ouvre la semaine prochaine",
+        en: "NVIDIA pledges 2 billion dollars in European AI deals — after 8 billion invested in a year, GTC Berlin opens next week"
+      },
+      source: "Fortune"
+    },
+    {
+      id: 62,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-14',
+      title: {
+        fr: "Salience Labs lève 125 millions de dollars pour ses commutateurs photoniques destinés aux datacenters IA — AMD Ventures et Intel Capital au tour de table",
+        en: "Salience Labs raises 125 million dollars for its photonic switches for AI datacenters — AMD Ventures and Intel Capital join the round"
+      },
+      source: "Business Wire"
+    },
+    {
+      id: 63,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-15',
+      title: {
+        fr: "Google, NVIDIA et Emerald AI lancent une alliance pour des datacenters IA capables de moduler leur consommation en temps réel",
+        en: "Google, NVIDIA and Emerald AI launch an alliance for AI datacenters able to modulate their power consumption in real time"
+      },
+      source: "NVIDIA Blog"
+    },
+    {
       id: 51,
       topic: 'hpc',
       topicLabel: { fr: 'HPC', en: 'HPC' },
