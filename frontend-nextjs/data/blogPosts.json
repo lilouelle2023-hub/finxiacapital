@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "inference-ia-edge-datacenter-proximite-europe-investissement-2026",
+    "date": "2026-10-19",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "Inférence IA et edge computing : pourquoi les datacenters européens se rapprochent des utilisateurs",
+      "en": "AI Inference and Edge Computing: Why European Datacenters Are Moving Closer to Users"
+    },
+    "excerpt": {
+      "fr": "L'entraînement concentre les gigawatts, l'inférence les distribue. Avec les agents IA qui multiplient les appels aux modèles, la valeur migre vers des datacenters de proximité, proches des utilisateurs et des données. Une géographie nouvelle pour les investisseurs.",
+      "en": "Training concentrates gigawatts, inference distributes them. As AI agents multiply model calls, value migrates toward proximity datacenters, close to users and data. A new geography for investors."
+    },
+    "enSlug": "ai-inference-edge-datacenter-proximity-europe-investment-2026"
+  },
+  {
     "frSlug": "refroidissement-immersion-datacenter-gpu-ia-europe-investissement-2026",
     "date": "2026-10-16",
     "readTime": "6 min",

@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 64,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-19',
+      title: {
+        fr: "Microsoft se retire du projet de datacenter de Nscale à Loughton faute d'électricité — le neocloud britannique prépare son IPO",
+        en: "Microsoft withdraws from Nscale's Loughton datacenter project over power constraints — the British neocloud is preparing its IPO"
+      },
+      source: "The Telegraph"
+    },
+    {
+      id: 65,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-19',
+      title: {
+        fr: "GTC Berlin ouvre demain : NVIDIA doit détailler 2 milliards de dollars d'accords IA européens — Rubin et souveraineté numérique au menu",
+        en: "GTC Berlin opens tomorrow: NVIDIA to detail 2 billion dollars in European AI deals — Rubin and digital sovereignty on the agenda"
+      },
+      source: "CNBC"
+    },
+    {
+      id: 66,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-17',
+      title: {
+        fr: "SemiAnalysis : NVIDIA écarte de GTC Berlin les neoclouds ayant ajouté des GPU AMD ou des TPU Google à leur offre",
+        en: "SemiAnalysis: NVIDIA bars neoclouds that added AMD GPUs or Google TPUs to their offering from GTC Berlin"
+      },
+      source: "SemiAnalysis"
+    },
+    {
       id: 61,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
