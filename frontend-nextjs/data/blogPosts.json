@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "au-dela-nvidia-amd-alternatives-gpu-datacenter-europe-2026",
+    "date": "2026-10-20",
+    "readTime": "6 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "Au-delà de NVIDIA : AMD, ASIC et la diversification des GPU dans les datacenters européens",
+      "en": "Beyond NVIDIA: AMD, ASICs and GPU Diversification in European Datacenters"
+    },
+    "excerpt": {
+      "fr": "NVIDIA domine, mais la diversification progresse : AMD, ASIC des hyperscalers, startups comme Tenstorrent. Pour un datacenter, la question n'est plus de choisir un camp, mais d'être capable d'héberger les deux. Ce que cela change pour la valorisation.",
+      "en": "NVIDIA dominates, but diversification is advancing: AMD, hyperscaler ASICs, startups like Tenstorrent. For a datacenter, the question is no longer picking a side, but being able to host both. What this changes for valuation."
+    },
+    "enSlug": "beyond-nvidia-amd-gpu-alternatives-european-datacenters-2026"
+  },
+  {
     "frSlug": "inference-ia-edge-datacenter-proximite-europe-investissement-2026",
     "date": "2026-10-19",
     "readTime": "6 min",

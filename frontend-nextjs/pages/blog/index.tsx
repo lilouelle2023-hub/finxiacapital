@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 67,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-20',
+      title: {
+        fr: "Nscale en pourparlers avec Anthropic pour un contrat cloud de 45 milliards de dollars — le campus Monarch et ses 460 MW en Vera Rubin au cœur du deal",
+        en: "Nscale in talks with Anthropic for a 45 billion dollar cloud contract — the Monarch campus and its 460 MW of Vera Rubin at the heart of the deal"
+      },
+      source: "Bloomberg"
+    },
+    {
+      id: 68,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-18',
+      title: {
+        fr: "Scale Up Europe : le fonds européen de 5 milliards d'euros piloté par EQT a investi dans Mistral — 200 MW de capacité datacenter visés fin 2027",
+        en: "Scale Up Europe: the 5 billion euro fund run by EQT has invested in Mistral — 200 MW of datacenter capacity targeted by end-2027"
+      },
+      source: "Rothschild & Co"
+    },
+    {
+      id: 69,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-20',
+      title: {
+        fr: "GTC Berlin : l'Union européenne de radiodiffusion collabore avec NVIDIA sur un cadre souverain pour les médias publics européens",
+        en: "GTC Berlin: the European Broadcasting Union collaborates with NVIDIA on a sovereign framework for European public media"
+      },
+      source: "NVIDIA Blog"
+    },
+    {
       id: 64,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
