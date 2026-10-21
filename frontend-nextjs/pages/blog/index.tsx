@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 70,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-21',
+      title: {
+        fr: "GTC Berlin : NVIDIA, Nokia et les grands opérateurs télécoms transforment les réseaux en plateformes d'IA distribuée — jusqu'à 100 000 sites par opérateur",
+        en: "GTC Berlin: NVIDIA, Nokia and leading telecom operators turn networks into distributed AI platforms — up to 100,000 sites per operator"
+      },
+      source: "NVIDIA Newsroom"
+    },
+    {
+      id: 71,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-20',
+      title: {
+        fr: "Made for Germany : Siemens, Deutsche Bank et 150 entreprises visent 850 milliards d'euros d'investissements d'ici 2028 — IA, énergie et défense en tête",
+        en: "Made for Germany: Siemens, Deutsche Bank and 150 companies target 850 billion euros of investment by 2028 — AI, energy and defense first"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 72,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-10-19',
+      title: {
+        fr: "Record : NVIDIA simule 104 qubits tolérants aux fautes sur JUPITER, le supercalculateur exascale européen de Jülich",
+        en: "Record: NVIDIA simulates 104 fault-tolerant qubits on JUPITER, Europe's exascale supercomputer at Jülich"
+      },
+      source: "NVIDIA Blog"
+    },
+    {
       id: 67,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },

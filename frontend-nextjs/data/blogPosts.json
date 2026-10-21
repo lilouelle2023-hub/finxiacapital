@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "ai-ran-operateurs-telecoms-datacenters-distribues-edge-europe-2026",
+    "date": "2026-10-21",
+    "readTime": "6 min",
+    "category": "Investment Strategy",
+    "title": {
+      "fr": "AI-RAN : quand les opérateurs télécoms transforment leurs réseaux en datacenters distribués",
+      "en": "AI-RAN: When Telecom Operators Turn Their Networks into Distributed Datacenters"
+    },
+    "excerpt": {
+      "fr": "Annoncé au GTC Berlin : NVIDIA, Nokia et les grands opérateurs télécoms équipent leurs réseaux de calcul accéléré. Des centaines de milliers de sites pourraient devenir des nœuds d'inférence IA. Un nouvel acteur — et un nouveau concurrent — entre sur le marché du datacenter.",
+      "en": "Announced at GTC Berlin: NVIDIA, Nokia and leading telecom operators are equipping their networks with accelerated computing. Hundreds of thousands of sites could become AI inference nodes. A new player — and a new competitor — is entering the datacenter market."
+    },
+    "enSlug": "ai-ran-telecom-operators-distributed-datacenters-edge-europe-2026"
+  },
+  {
     "frSlug": "au-dela-nvidia-amd-alternatives-gpu-datacenter-europe-2026",
     "date": "2026-10-20",
     "readTime": "6 min",
