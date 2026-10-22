@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 73,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-21',
+      title: {
+        fr: "Vertiv et NVIDIA présentent une approche d'usine à IA pré-ingénierée : jusqu'à 30 % de tokens cumulés en plus la première année — Polar Data Centers l'applique à ses 41 MW de Herøya, en Norvège",
+        en: "Vertiv and NVIDIA unveil a pre-engineered AI factory approach: up to 30% more cumulative tokens in the first year — Polar Data Centers applies it to its 41 MW Herøya site in Norway"
+      },
+      source: "PR Newswire"
+    },
+    {
+      id: 74,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-22',
+      title: {
+        fr: "Cadence inaugure à Munich la première plateforme d'IA souveraine d'Europe dédiée à la conception de semiconducteurs, avec des systèmes NVIDIA Vera et Grace",
+        en: "Cadence launches in Munich Europe's first sovereign AI platform for semiconductor design, powered by NVIDIA Vera and Grace systems"
+      },
+      source: "Design And Reuse"
+    },
+    {
+      id: 75,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-22',
+      title: {
+        fr: "Google Cloud et NVIDIA annoncent la disponibilité générale de l'infrastructure Vera Rubin, avec une expansion prévue en Europe — jusqu'à 960 000 GPU Rubin déployés",
+        en: "Google Cloud and NVIDIA announce general availability of Vera Rubin infrastructure, with planned expansion to Europe — up to 960,000 Rubin GPUs to be deployed"
+      },
+      source: "NVIDIA Blog"
+    },
+    {
       id: 70,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },

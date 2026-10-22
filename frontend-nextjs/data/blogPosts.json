@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "nvidia-dsx-pod-usine-ia-conteneur-modular-datacenter-europe-2026",
+    "date": "2026-10-22",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "NVIDIA DSX POD : l'usine à IA en conteneur qui redéfinit le modular datacenter",
+      "en": "NVIDIA DSX POD: The Containerized AI Factory Redefining the Modular Datacenter"
+    },
+    "excerpt": {
+      "fr": "Annoncé au GTC Berlin : le DSX POD de NVIDIA embarque sept racks Vera Rubin dans un conteneur assemblé et validé en usine, déployable en 14 jours sur un site préparé. Le modular datacenter passe à l'échelle industrielle — et le time-to-tokens devient la métrique qui compte.",
+      "en": "Announced at GTC Berlin: NVIDIA's DSX POD packs seven Vera Rubin racks into a container assembled and validated at the factory, deployable in 14 days on a prepared site. The modular datacenter goes industrial — and time-to-tokens becomes the metric that matters."
+    },
+    "enSlug": "nvidia-dsx-pod-containerized-ai-factory-modular-datacenter-europe-2026"
+  },
+  {
     "frSlug": "ai-ran-operateurs-telecoms-datacenters-distribues-edge-europe-2026",
     "date": "2026-10-21",
     "readTime": "6 min",
