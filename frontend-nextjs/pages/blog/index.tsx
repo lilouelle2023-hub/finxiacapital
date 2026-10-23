@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 76,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-23',
+      title: {
+        fr: "Cloud souverain : l'allemand Polarise lance sa plateforme d'IA souveraine au GTC Berlin, de l'usine à IA jusqu'à l'application",
+        en: "Sovereign cloud: Germany's Polarise launches its sovereign AI platform at GTC Berlin, from AI factory to application"
+      },
+      source: "Asia News Network"
+    },
+    {
+      id: 77,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-23',
+      title: {
+        fr: "Jensen Huang au Kazakhstan : le pays pourrait devenir un hub de calcul IA pour l'Europe — projet Firebird de 10 Md$ et 100 000 GPU",
+        en: "Jensen Huang in Kazakhstan: the country could become an AI computing hub for Europe — a $10B Firebird project with 100,000 GPUs"
+      },
+      source: "CNBC"
+    },
+    {
+      id: 78,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-23',
+      title: {
+        fr: "Google et Voltus s'associent pour environ 1 GW de capacité électrique flexible dédiée aux datacenters sur le réseau PJM, jusqu'en 2040",
+        en: "Google and Voltus partner on roughly 1 GW of flexible power capacity for data centers on the PJM grid, through 2040"
+      },
+      source: "Utility Dive"
+    },
+    {
       id: 73,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },

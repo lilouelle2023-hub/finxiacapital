@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "800-volts-dc-alimentation-datacenter-ia-nvidia-infineon-gan-europe-2026",
+    "date": "2026-10-23",
+    "readTime": "6 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "800 volts DC : comment NVIDIA et Infineon réinventent l'alimentation du datacenter IA",
+      "en": "800 VDC: How NVIDIA and Infineon Are Reinventing AI Datacenter Power"
+    },
+    "excerpt": {
+      "fr": "Annoncé au GTC Berlin : Infineon et NVIDIA approfondissent leur collaboration sur les architectures 800 volts DC, avec le nitrure de gallium au cœur de la conversion. Derrière la prouesse technique, un enjeu d'investissement : chaque point de rendement gagné est un mégawatt rendu au calcul.",
+      "en": "Announced at GTC Berlin: Infineon and NVIDIA are deepening their collaboration on 800-volt DC architectures, with gallium nitride at the heart of conversion. Behind the engineering feat lies an investment stake: every efficiency point gained is a megawatt returned to compute."
+    },
+    "enSlug": "800-vdc-power-ai-datacenter-nvidia-infineon-gan-europe-2026"
+  },
+  {
     "frSlug": "nvidia-dsx-pod-usine-ia-conteneur-modular-datacenter-europe-2026",
     "date": "2026-10-22",
     "readTime": "6 min",
