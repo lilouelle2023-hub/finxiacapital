@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 79,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-10-26',
+      title: {
+        fr: "La Grèce inaugure Daedalus, un supercalculateur de 85 pétaflops équipé de GPU NVIDIA H200, hébergé dans un bâtiment réhabilité",
+        en: "Greece inaugurates Daedalus, an 85-petaflop supercomputer powered by NVIDIA H200 GPUs, housed in a repurposed building"
+      },
+      source: "Data Center Dynamics"
+    },
+    {
+      id: 80,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-26',
+      title: {
+        fr: "Transformateurs : des délais de livraison dépassant 160 semaines — l'équipement électrique, et pas seulement les GPU, bloque désormais les calendriers des datacenters IA",
+        en: "Transformers: lead times exceeding 160 weeks — grid equipment, not just GPUs, now gates AI datacenter timelines"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 81,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-26',
+      title: {
+        fr: "Kao Data accueillera le laboratoire d'inférence IA CommonAI dans son datacenter de Harlow, avec du matériel NVIDIA et AMD",
+        en: "Kao Data to host CommonAI's AI inference lab at its Harlow datacenter, with NVIDIA and AMD hardware"
+      },
+      source: "Data Center Dynamics"
+    },
+    {
       id: 76,
       topic: 'ia',
       topicLabel: { fr: 'IA', en: 'AI' },

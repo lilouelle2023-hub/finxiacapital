@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "physical-ai-robots-humanoides-datacenter-europe-souverainete-2026",
+    "date": "2026-10-26",
+    "readTime": "6 min",
+    "category": "AI-Native",
+    "title": {
+      "fr": "Physical AI : pourquoi les robots humanoïdes vont remplir les datacenters européens",
+      "en": "Physical AI: Why Humanoid Robots Will Fill European Datacenters"
+    },
+    "excerpt": {
+      "fr": "De Milan au GTC Berlin, la Physical AI s'installe en Europe : Generative Bionics construit avec AMD une usine de données pour entraîner ses humanoïdes, NVIDIA place la robotique au cœur de sa stratégie. Derrière les robots, une nouvelle couche de demande pour les datacenters.",
+      "en": "From Milan to GTC Berlin, Physical AI is taking root in Europe: Generative Bionics is building a data factory with AMD to train its humanoids, while NVIDIA puts robotics at the heart of its strategy. Behind the robots lies a new layer of demand for datacenters."
+    },
+    "enSlug": "physical-ai-humanoid-robots-datacenter-europe-sovereignty-2026"
+  },
+  {
     "frSlug": "800-volts-dc-alimentation-datacenter-ia-nvidia-infineon-gan-europe-2026",
     "date": "2026-10-23",
     "readTime": "6 min",
