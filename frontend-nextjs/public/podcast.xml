@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Finxia Capital Insights</title>
+    <link>https://finxiacapital.com/podcast/</link>
+    <language>fr</language>
+    <description>Chaque mois, Lila Benhammou décrypte l'infrastructure IA, l'énergie et les actifs réels en Europe. Le podcast de FINXIA Capital.</description>
+    <itunes:author>FINXIA Capital</itunes:author>
+    <itunes:owner>
+      <itunes:name>Lila Benhammou</itunes:name>
+    </itunes:owner>
+    <itunes:image href="https://finxiacapital.com/images/finxia-podcast-cover.png"/>
+    <itunes:category text="Business"/>
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>Épisode 1 — L'électricité, le vrai goulot d'étranglement de l'IA en France</title>
+      <link>https://finxiacapital.com/podcast/</link>
+      <guid isPermaLink="false">finxia-capital-insights-episode-1</guid>
+      <pubDate>Fri, 25 Jul 2026 09:00:00 +0200</pubDate>
+      <description>Chaque nouvelle génération de puces NVIDIA consomme presque le double d'énergie que la précédente. Lila Benhammou explique pourquoi la France a l'énergie mais pas la vitesse de raccordement — et comment TITAN DC AI se positionne sur des sites déjà raccordés en haute tension.</description>
+      <enclosure url="https://finxiacapital.com/podcast/episode-1-electricite-ia-france.m4a" length="2872690" type="audio/mp4"/>
+      <itunes:duration>202</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

@@ -19,9 +19,7 @@ export default function PodcastPage() {
         fr: "Chaque nouvelle génération de puces NVIDIA consomme presque le double d'énergie que la précédente. Lila Benhammou explique pourquoi la France a l'énergie mais pas la vitesse de raccordement — et comment TITAN DC AI se positionne sur des sites déjà raccordés en haute tension.",
         en: "Each new generation of NVIDIA chips consumes almost twice as much energy as the previous one. Lila Benhammou explains why France has the energy but not the connection speed — and how TITAN DC AI positions itself on sites already connected to high voltage."
       },
-      embedUrl: 'https://share.transistor.fm/e/a3c3b47e/dark',
-      shareUrl: 'https://share.transistor.fm/s/a3c3b47e',
-      mp3Url: 'https://media.transistor.fm/a3c3b47e/edb761fc.mp3'
+      mp3Url: '/podcast/episode-1-electricite-ia-france.m4a'
     }
   ];
 
@@ -82,7 +80,7 @@ export default function PodcastPage() {
     },
     {
       name: 'RSS',
-      url: 'https://feeds.transistor.fm/finxia-capital-insights',
+      url: '/podcast.xml',
       icon: <Rss className="w-5 h-5" />
     }
   ];
@@ -186,18 +184,19 @@ export default function PodcastPage() {
                 </div>
               </div>
 
-              {/* Transistor Embed Player */}
-              <div className="rounded-xl overflow-hidden shadow-lg">
-                <iframe
-                  src={ep.embedUrl}
-                  width="100%"
-                  height="180"
-                  frameBorder="0"
-                  scrolling="no"
-                  seamless
+              {/* Lecteur audio natif — MP3 auto-hébergé */}
+              <div className="rounded-xl overflow-hidden shadow-lg bg-[#1E2A3A] p-4">
+                <audio
+                  controls
+                  preload="metadata"
+                  src={ep.mp3Url}
                   title={ep.title[language === 'fr' ? 'fr' : 'en']}
-                  style={{ width: '100%', height: '180px' }}
-                />
+                  className="w-full"
+                >
+                  {language === 'fr'
+                    ? "Votre navigateur ne supporte pas la lecture audio."
+                    : "Your browser does not support audio playback."}
+                </audio>
               </div>
             </div>
           ))}
@@ -217,7 +216,7 @@ export default function PodcastPage() {
               : "Subscribe on your favorite platform to receive new episodes as soon as they are published."}
           </p>
           <a
-            href="https://feeds.transistor.fm/finxia-capital-insights"
+            href="/podcast.xml"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center gap-2"
