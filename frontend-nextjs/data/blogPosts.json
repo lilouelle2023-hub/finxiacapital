@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "financement-infrastructure-ia-gpu-credit-spv-dette-leasing-datacenter-2026",
+    "date": "2026-10-27",
+    "readTime": "6 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "GPU à crédit : SPV, dette et leasing, la nouvelle finance du datacenter IA",
+      "en": "GPUs on Credit: SPVs, Debt and Leasing — the New Finance of the AI Datacenter"
+    },
+    "excerpt": {
+      "fr": "Broadcom et ses banques structurent un véhicule de 63 milliards de dollars pour louer des accélérateurs à Anthropic, SpaceX boucle environ 40 milliards de dette adossée à des GPU, Meta prépare des levées géantes. L'infrastructure IA ne s'achète plus seulement : elle se finance comme une flotte aérienne.",
+      "en": "Broadcom and its banks are structuring a $63 billion vehicle to lease accelerators to Anthropic, SpaceX is closing roughly $40 billion of GPU-backed debt, and Meta is preparing giant equity raises. AI infrastructure is no longer just bought: it is financed like an aircraft fleet."
+    },
+    "enSlug": "ai-infrastructure-financing-gpu-debt-spv-leasing-datacenter-2026"
+  },
+  {
     "frSlug": "physical-ai-robots-humanoides-datacenter-europe-souverainete-2026",
     "date": "2026-10-26",
     "readTime": "6 min",

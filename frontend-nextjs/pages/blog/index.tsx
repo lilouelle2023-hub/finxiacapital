@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 82,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-27',
+      title: {
+        fr: "NVIDIA investit 3 milliards de dollars dans Meta et élargit leur partenariat IA : Vera Rubin, CPU Vera et réseaux — le capex 2026 de Meta visé entre 135 et 145 milliards",
+        en: "NVIDIA invests $3 billion in Meta and expands their AI partnership: Vera Rubin, Vera CPUs and networking — Meta's 2026 capex targeted at $135-145 billion"
+      },
+      source: "CNBC"
+    },
+    {
+      id: 83,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-27',
+      title: {
+        fr: "Anthropic dépose son dossier d'introduction au Nasdaq sous le symbole ANT, avec un chiffre d'affaires trimestriel de 11,6 milliards de dollars",
+        en: "Anthropic files to list on the Nasdaq under ticker ANT, with quarterly revenue of $11.6 billion"
+      },
+      source: "Axios"
+    },
+    {
+      id: 84,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-27',
+      title: {
+        fr: "Datacenters IA au Royaume-Uni : le gouvernement a consulté 137 entreprises sur ses projets, mais aucune association environnementale, révèle The Guardian",
+        en: "AI datacentres in the UK: the government consulted 137 businesses on its plans, but no environmental groups, The Guardian reveals"
+      },
+      source: "The Guardian"
+    },
+    {
       id: 79,
       topic: 'hpc',
       topicLabel: { fr: 'HPC', en: 'HPC' },
