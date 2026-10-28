@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "anciennes-centrales-nucleaires-datacenter-ia-nvidia-preussenelektra-brownfield-2026",
+    "date": "2026-10-28",
+    "readTime": "6 min",
+    "category": "Energy & Infrastructure",
+    "title": {
+      "fr": "Datacenter IA : pourquoi NVIDIA évalue d'anciennes centrales nucléaires allemandes",
+      "en": "AI Datacenters: Why NVIDIA Is Assessing Former German Nuclear Sites"
+    },
+    "excerpt": {
+      "fr": "NVIDIA et PreussenElektra, filiale d'E.ON, vont évaluer huit anciennes centrales nucléaires allemandes comme sites potentiels d'usines à IA. Foncier industriel, raccordements haute tension, infrastructure en place : les friches électro-intensives deviennent des actifs stratégiques — et le brown-to-green une thèse centrale.",
+      "en": "NVIDIA and PreussenElektra, an E.ON subsidiary, will assess eight former German nuclear plants as potential AI factory sites. Industrial land, high-voltage grid connections, existing infrastructure: electro-intensive brownfields are becoming strategic assets — and brown-to-green a core thesis."
+    },
+    "enSlug": "former-nuclear-sites-ai-datacenter-nvidia-preussenelektra-brownfield-2026"
+  },
+  {
     "frSlug": "financement-infrastructure-ia-gpu-credit-spv-dette-leasing-datacenter-2026",
     "date": "2026-10-27",
     "readTime": "6 min",

@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 85,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-28',
+      title: {
+        fr: "Sécuriser le calcul IA : un rapport de l'OCDE décrit comment les États recourent au zonage, aux permis accélérés et au statut d'infrastructure critique pour les datacenters",
+        en: "Securing AI compute: an OECD report details how governments use zoning, fast-tracked permits and critical infrastructure status for data centers"
+      },
+      source: "OECD"
+    },
+    {
+      id: 86,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-10-28',
+      title: {
+        fr: "Mémoire HBM : le chinois CXMT démarre la HBM3E avec des rendements limités de 20 à 30 %, contre environ 70 % chez SK Hynix, selon Reuters",
+        en: "HBM memory: China's CXMT starts HBM3E output at limited yields of 20-30%, versus around 70% at SK Hynix, Reuters reports"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 87,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-27',
+      title: {
+        fr: "Oracle proposera les TPU de Google sur son cloud OCI à partir de 2027, et annonce la disponibilité générale de NVIDIA Vera Rubin et des CPU Vera",
+        en: "Oracle will offer Google's TPUs on its OCI cloud from 2027, and announces general availability of NVIDIA Vera Rubin and Vera CPUs"
+      },
+      source: "Data Center Dynamics"
+    },
+    {
       id: 82,
       topic: 'nvidia',
       topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
