@@ -1,5 +1,50 @@
 [
   {
+    "frSlug": "recours-environnementaux-datacenter-france-risque-juridique-investissement-2026",
+    "date": "2026-10-28",
+    "readTime": "6 min",
+    "category": "Investment Strategy",
+    "title": {
+      "fr": "Datacenters en France : ce que les recours environnementaux changent pour l'investisseur",
+      "en": "Datacenters in France: What Environmental Appeals Change for Investors"
+    },
+    "excerpt": {
+      "fr": "Suspension du permis de Sesterce à Alixan, recours contre le projet Telehouse aux Pennes-Mirabeau : le contentieux environnemental devient un risque de calendrier et de capital pour les datacenters français. Analyse des atouts et des limites du marché.",
+      "en": "The permit suspension at Sesterce's Alixan project and appeals against Telehouse near Marseille turn environmental litigation into a timing and capital risk. France's low-carbon power remains attractive, but legal and local due diligence is now decisive."
+    },
+    "enSlug": "environmental-appeals-datacenter-france-legal-risk-investment-2026"
+  },
+  {
+    "frSlug": "datacenter-europe-nordiques-allemagne-energie-pue-investissement-2026",
+    "date": "2026-10-28",
+    "readTime": "6 min",
+    "category": "Digital Infrastructure",
+    "title": {
+      "fr": "Datacenter : pourquoi les capitaux remontent vers les pays nordiques et l'Allemagne",
+      "en": "Datacenters: Why Capital Is Moving to the Nordics and Germany"
+    },
+    "excerpt": {
+      "fr": "Électricité renouvelable, free cooling et chaleur fatale attirent les capitaux dans les pays nordiques, tandis que l'Allemagne combine demande cloud, interconnexion et règles PUE exigeantes. Analyse des avantages, coûts et risques pour l'investisseur en datacenter.",
+      "en": "Renewable power, free cooling and heat reuse attract capital to the Nordics, while Germany offers cloud demand and interconnection under strict PUE rules. A comparison of the advantages, costs and risks for datacenter investors."
+    },
+    "enSlug": "datacenter-europe-nordics-germany-energy-pue-investment-2026"
+  },
+  {
+    "frSlug": "datacenter-espagne-portugal-iberia-investissement-sines-aragon-2026",
+    "date": "2026-10-28",
+    "readTime": "6 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "Espagne et Portugal : la nouvelle frontière du datacenter européen ?",
+      "en": "Spain and Portugal: Europe's New Datacenter Frontier?"
+    },
+    "excerpt": {
+      "fr": "Aragón et Sines concentrent des investissements géants dans les datacenters IA. Énergie renouvelable, foncier et câbles sous-marins soutiennent la péninsule ibérique, mais l'eau, le raccordement et l'exécution restent décisifs pour l'investisseur.",
+      "en": "Aragón and Sines are attracting huge AI datacenter investments. Renewable energy, land and subsea cables support Iberia, but water, grid connections and execution remain decisive for investors."
+    },
+    "enSlug": "datacenter-spain-portugal-iberia-investment-sines-aragon-2026"
+  },
+  {
     "frSlug": "anciennes-centrales-nucleaires-datacenter-ia-nvidia-preussenelektra-brownfield-2026",
     "date": "2026-10-28",
     "readTime": "6 min",
