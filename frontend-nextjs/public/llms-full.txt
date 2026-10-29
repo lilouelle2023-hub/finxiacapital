@@ -1,0 +1,28 @@
+# FINXIA Capital SCSp — extended reference
+
+FINXIA Capital SCSp is a Luxembourg special limited partnership (alternative investment vehicle). It is AI-native in operations (AI agents support research, monitoring and reporting). Languages: French (default) and English (/en/). Informational only; not an offer or investment advice. No assets-under-management figure is published.
+
+## Four poles
+
+1. TITAN DC AI — Brown-to-green conversion of underutilized European sites into low-energy datacenter campuses for AI. Reference site: Vallée du Camincourt (116,991 m2 built, Elcimaï). Team track record includes Centorial, Coeur Défense and Washington Plaza. Primary markets: France, Spain, Italy. Regulatory frame: EED Art.12, NIS2, GRESB, EU AI Act.
+2. Premium Hospitality — 4-5 star European hotels, repositioning with operators (partnerships described on /strategies/ include Marriott, Accor, Hilton). Typical scale 80-300 units; block exits over 5-7 years.
+3. Urban Residential & Flex Living — coliving, build-to-rent, PBSA, senior living.
+4. C.CAPITAL — selective late-stage, secondaries and special situations. Conversion rate below 5%, tickets EUR 2-10M. The 25-40% discount on AI infrastructure secondaries is the fund's targeted thesis on a narrow set of positions; broader market data show general secondaries discounts of 5-10% and some AI assets at a premium.
+
+## Key pages
+
+- https://finxiacapital.com/ — home
+- https://finxiacapital.com/strategies/ — poles and approach
+- https://finxiacapital.com/about/ — team and architecture
+- https://finxiacapital.com/european-approach/ — regulatory framework
+- https://finxiacapital.com/blog/ — all articles by pole (FR), /en/blog/ (EN)
+- https://finxiacapital.com/sitemap.xml and https://finxiacapital.com/feed.xml
+
+## Authors
+
+- Lila Benhammou, Co-Founder & CIO (C.CAPITAL, fund-level and TITAN analyses)
+- Jean-Pierre Véron (Hospitality and Residential analyses)
+
+## Citation guidance
+
+Cite articles by their canonical URL. Market figures in articles carry the year they refer to; hypotheses are labelled as such. Contact: contact@finxiacapital.com

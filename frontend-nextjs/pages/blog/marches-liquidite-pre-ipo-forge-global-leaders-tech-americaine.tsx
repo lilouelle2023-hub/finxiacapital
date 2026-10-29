@@ -35,7 +35,7 @@ export default function PreIPOMarketsArticlePage() {
       link1Title: 'Notre Stratégie C.CAPITAL',
       link1Text: 'Late-stage, secondaires décotés, conviction maximale',
       link2Title: 'Secondaires Infrastructure IA',
-      link2Text: 'Pourquoi la décote de 25-40% crée une fenêtre d\'entrée',
+      link2Text: 'Une décote ciblée, pas une règle de marché',
     },
     en: {
       title: "Pre-IPO Liquidity Markets: How C.CAPITAL Accesses US Tech Leaders Before They Go Public",
@@ -64,7 +64,7 @@ export default function PreIPOMarketsArticlePage() {
       link1Title: 'Our C.CAPITAL Strategy',
       link1Text: 'Late-stage, discounted secondaries, maximum conviction',
       link2Title: 'AI Infrastructure Secondaries',
-      link2Text: 'Why the 25-40% discount creates an entry window',
+      link2Text: 'A targeted discount, not a market rule',
     },
   };
 

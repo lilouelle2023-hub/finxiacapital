@@ -1,21 +1,28 @@
 # FINXIA Capital
 
-> FINXIA Capital is an AI-native alternative asset management vehicle (Luxembourg SCSp) that deploys capital across real assets enhanced by artificial intelligence infrastructure.
+> FINXIA Capital SCSp is a Luxembourg alternative investment vehicle, AI-native in its operations, deploying capital across four poles: TITAN DC AI (datacenter infrastructure), Premium Hospitality, Urban Residential & Flex Living, and C.CAPITAL (selective late-stage and secondaries). No fund-size figure is published. Content is informational and is not an offer of securities or investment advice.
 
-## Core Strategies
+## Strategies
 
-- [TITAN DC AI](/strategies/): Brown-to-green transformation of underutilized European datacenter campuses. Geographic focus: Europe-wide (France, Spain, Italy primary markets). ESG Green Bond / SFDR Article 9.
-- [Premium Hospitality](/strategies/): 4-5 star European hotels with operational repositioning
-- [Urban Residential Flex](/strategies/): Coliving, build-to-rent, PBSA across major European cities
-- [C.CAPITAL](/strategies/): Ultra-selective late-stage, secondaries and special situations
+- [TITAN DC AI](https://finxiacapital.com/strategies/): Brown-to-green transformation of underutilized European datacenter campuses for AI workloads (France, Spain, Italy primary markets).
+- [Premium Hospitality](https://finxiacapital.com/strategies/): 4-5 star European hotels, operational repositioning with international operators.
+- [Urban Residential & Flex Living](https://finxiacapital.com/strategies/): Coliving, build-to-rent, PBSA, senior living in major European cities.
+- [C.CAPITAL](https://finxiacapital.com/strategies/): Ultra-selective late-stage, secondaries and special situations; conversion rate below 5%, tickets EUR 2-10M. Discount levels cited are a thesis target, not a market observation.
 
-## About
+## Company
 
-- [About FINXIA Capital](/about/): AI-native architecture with AI agents. Alternative assets + AI infrastructure thesis.
-- [European Approach](/european-approach/): EED Art.12, NIS2, GRESB, EU AI Act regulatory framework
-- [Blog](/blog/): Expert analysis on European datacenter energy, AI-native fund management
+- [About](https://finxiacapital.com/about/)
+- [European Approach](https://finxiacapital.com/european-approach/): EED Art.12, NIS2, GRESB, EU AI Act framework
+- [Blog](https://finxiacapital.com/blog/): bilingual FR/EN analysis grouped by pole (TITAN DC AI, Hospitality, Residential, C.CAPITAL, Fund & Governance)
+- [Sitemap](https://finxiacapital.com/sitemap.xml) | [RSS](https://finxiacapital.com/feed.xml)
+- Extended version: https://finxiacapital.com/llms-full.txt
 
-## Key Contact
+## People
+
+- Lila Benhammou: Co-Founder & CIO
+- Jean-Pierre Véron: author, hospitality and residential
+
+## Contact
 
 - Email: contact@finxiacapital.com
 - LinkedIn: https://linkedin.com/company/finxiacapital

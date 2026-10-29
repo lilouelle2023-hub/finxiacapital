@@ -137,7 +137,7 @@ export default function HomePage() {
   return (
     <div data-testid="home-page">
       <SEO
-        title={language === 'fr' ? "Accueil — TITAN DC : Infrastructure Data Center low-energy pour l'IA en Europe | FINXIA Capital" : "Home — TITAN DC: Low-Energy Data Center Infrastructure for AI in Europe | FINXIA Capital"}
+        title={language === 'fr' ? "FINXIA Capital SCSp — Fonds alternatif luxembourgeois : TITAN DC AI, infrastructure datacenter pour l'IA en Europe" : "FINXIA Capital SCSp — Luxembourg Alternative Fund: TITAN DC AI, Datacenter Infrastructure for AI in Europe"}
         description={language === 'fr' 
           ? "FINXIA Capital, véhicule d'investissement propriétaire SCSp luxembourgeois. Stratégie phare TITAN DC AI — infrastructure datacenter brown-to-green pour l'IA en Europe, financée par capital propre + dette + Green Bond." 
           : "FINXIA Capital, proprietary investment vehicle Luxembourg SCSp. Flagship TITAN DC AI — brown-to-green datacenter infrastructure for AI in Europe, financed by equity + debt + Green Bond."}
