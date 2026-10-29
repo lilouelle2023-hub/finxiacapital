@@ -42,7 +42,7 @@ const ORGANIZATION_SCHEMA = {
       "name": "Lila Benhammou",
       "jobTitle": "Co-Founder & Chief Investment Officer",
       "url": "https://finxiacapital.com/lila-benhammou/",
-      "sameAs": ["https://www.linkedin.com/in/lila-benhammou/", "https://twitter.com/LilaBenhammou"]
+      "sameAs": ["https://www.linkedin.com/in/lila-benhammou/", "https://twitter.com/LilaBenhammou", "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"]
     }
   ]
 };

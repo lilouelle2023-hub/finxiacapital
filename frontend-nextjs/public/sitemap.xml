@@ -169,6 +169,24 @@
   </url>
 
   <url>
+    <loc>https://finxiacapital.com/publications/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/publications/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/publications/" />
+  </url>
+
+  <url>
+    <loc>https://finxiacapital.com/en/publications/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/publications/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://finxiacapital.com/publications/" />
+  </url>
+
+  <url>
     <loc>https://finxiacapital.com/podcast/</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>weekly</changefreq>

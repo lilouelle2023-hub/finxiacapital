@@ -31,7 +31,8 @@ export default function LilaPage() {
     },
     "sameAs": [
       "https://www.linkedin.com/in/lila-benhammou/",
-      "https://twitter.com/LilaBenhammou"
+      "https://twitter.com/LilaBenhammou",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6597918"
     ]
   };
 

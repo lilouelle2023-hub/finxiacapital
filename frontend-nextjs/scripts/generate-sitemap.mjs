@@ -54,6 +54,7 @@ const STATIC_PAGES = [
   { path: '/lila-benhammou/',                         priority: '0.8', changefreq: 'monthly', bilingual: true  },
   { path: '/jean-pierre-veron/',                      priority: '0.8', changefreq: 'monthly', bilingual: true  },
   { path: '/blog/',                                    priority: '0.8', changefreq: 'weekly',  bilingual: true  },
+  { path: '/publications/',                            priority: '0.8', changefreq: 'weekly',  bilingual: true  },
   { path: '/podcast/',                                 priority: '0.7', changefreq: 'weekly',  bilingual: true  },
   { path: '/newsletter/',                              priority: '0.7', changefreq: 'monthly', bilingual: true  },
   { path: '/contact/',                                 priority: '0.7', changefreq: 'monthly', bilingual: true  },
