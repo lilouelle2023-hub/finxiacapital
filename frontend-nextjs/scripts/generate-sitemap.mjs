@@ -15,6 +15,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
+import { execSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -23,6 +24,20 @@ const OUT_PATH = resolve(ROOT, 'public/sitemap.xml');
 
 const SITE = 'https://finxiacapital.com';
 const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+
+/** Real last-modified date of a static page = last git commit touching its source file (fallback: today). */
+const PAGE_SRC = (path) => {
+  if (path === '/') return 'pages/index.tsx';
+  const clean = path.replace(/^\/|\/$/g, '');
+  if (clean === 'auteurs/lila-benhammou') return 'pages/auteurs/lila-benhammou.tsx';
+  return `pages/${clean}.tsx`;
+};
+const lastmodOf = (path) => {
+  try {
+    const d = execSync(`git log -1 --format=%cs -- "${PAGE_SRC(path)}"`, { cwd: ROOT, stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : today;
+  } catch { return today; }
+};
 
 /**
  * Static pages (non-blog).
@@ -79,7 +94,7 @@ for (const page of STATIC_PAGES) {
     staticEntries.push(
       buildUrl({
         loc: frUrl,
-        lastmod: today,
+        lastmod: lastmodOf(page.path),
         changefreq: page.changefreq,
         priority: page.priority,
         alternates: [
@@ -91,7 +106,7 @@ for (const page of STATIC_PAGES) {
     staticEntries.push(
       buildUrl({
         loc: enUrl,
-        lastmod: today,
+        lastmod: lastmodOf(page.path),
         changefreq: page.changefreq,
         priority: page.priority,
         alternates: [
@@ -104,7 +119,7 @@ for (const page of STATIC_PAGES) {
     staticEntries.push(
       buildUrl({
         loc: frUrl,
-        lastmod: today,
+        lastmod: lastmodOf(page.path),
         changefreq: page.changefreq,
         priority: page.priority,
         alternates: [],

@@ -1,4 +1,19 @@
 import Head from 'next/head';
+import blogPosts from '../data/blogPosts.json';
+
+const POLE_OG: Record<string, string> = {
+  Hospitality: 'og-hospitality.jpg',
+  Residential: 'og-residential.jpg',
+  'C.CAPITAL': 'og-ccapital.jpg',
+};
+const DEFAULT_OG = 'https://finxiacapital.com/og-image.jpg';
+const ogForCanonical = (canonical: string): string | null => {
+  const m = canonical.match(/\/blog\/([^/]+)\/?$/);
+  if (!m) return null;
+  const post = (blogPosts as any[]).find((p) => p.frSlug === m[1] || p.enSlug === m[1]);
+  const img = post && POLE_OG[post.category];
+  return img ? `https://finxiacapital.com/${img}` : null;
+};
 
 const ORGANIZATION_SCHEMA = {
   "@context": "https://schema.org",
@@ -86,7 +101,7 @@ export default function SEO({
   title, 
   description, 
   canonical = 'https://finxiacapital.com',
-  ogImage = 'https://finxiacapital.com/og-image.jpg',
+  ogImage: ogImageProp,
   keywords,
   language = 'fr',
   ogLocale = 'fr_FR',
@@ -105,6 +120,7 @@ export default function SEO({
     return t;
   };
   
+  const ogImage = ogImageProp || ogForCanonical(canonical) || DEFAULT_OG;
   const translatedTitle = translateTitle(title, language);
 
   // Build the full <title>, avoiding duplication when the page-supplied
