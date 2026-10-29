@@ -155,7 +155,7 @@ export default function StrategiesPage() {
         "@type": "ListItem",
         "position": 2,
         "name": language === 'fr' ? "Stratégies" : "Strategies",
-        "item": "https://finxiacapital.com/strategies"
+        "item": "https://finxiacapital.com/strategies/"
       }
     ]
   };

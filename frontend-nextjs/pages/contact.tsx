@@ -30,7 +30,7 @@ export default function ContactPage() {
         "@type": "ListItem",
         "position": 2,
         "name": language === 'fr' ? "Contact" : "Contact",
-        "item": "https://finxiacapital.com/contact"
+        "item": "https://finxiacapital.com/contact/"
       }
     ]
   };

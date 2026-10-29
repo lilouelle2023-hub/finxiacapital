@@ -49,7 +49,7 @@ export default function EuropeanApproachPage() {
         "@type": "ListItem",
         "position": 2,
         "name": language === 'fr' ? "Approche Européenne" : "European Approach",
-        "item": "https://finxiacapital.com/european-approach"
+        "item": "https://finxiacapital.com/european-approach/"
       }
     ]
   };
