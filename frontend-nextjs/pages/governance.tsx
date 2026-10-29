@@ -63,7 +63,7 @@ export default function GovernancePage() {
         description={language === 'fr'
           ? "Gouvernance rigoureuse et discipline opérationnelle augmentée. Structure SCSp Luxembourg. Surveillance continue des actifs TITAN DC AI. Transparence totale pour nos partenaires financiers institutionnels."
           : "Rigorous governance and augmented operational discipline. Luxembourg SCSp structure. Continuous monitoring of TITAN DC AI assets. Full transparency for our institutional financing partners."}
-        canonical="https://finxiacapital.com/governance/"
+        canonical={language === 'fr' ? "https://finxiacapital.com/governance/" : "https://finxiacapital.com/en/governance/"}
         keywords="gouvernance fonds alternatif Luxembourg, SCSp gestion risques, Green Bond ESG datacenter, surveillance TITAN DC AI temps réel"
         breadcrumbSchema={breadcrumbSchema}
         language={language}

@@ -750,7 +750,7 @@ export default function HomePage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/about"
+              href="/about/"
               className="btn-secondary inline-flex items-center gap-2"
             >
               {language === 'fr' ? 'Notre Équipe' : 'Our Team'}

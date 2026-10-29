@@ -61,7 +61,7 @@ export default function EuropeanApproachPage() {
         description={language === 'fr'
           ? "Déploiement stratégique sur 3 marchés européens : France, Espagne, Italie. Grandes métropoles, liquidité institutionnelle, infrastructure mature. Focus datacenters, hôtellerie, résidentiel."
           : "Strategic deployment across 3 European markets: France, Spain, Italy. Major cities, institutional liquidity, mature infrastructure. Focus on datacenters, hospitality, residential."}
-        canonical="https://finxiacapital.com/european-approach/"
+        canonical={language === 'fr' ? "https://finxiacapital.com/european-approach/" : "https://finxiacapital.com/en/european-approach/"}
         keywords="investissement alternatif Europe du Sud, France Espagne Italie immobilier, datacenter AI Europe, hôtellerie premium Europe"
         breadcrumbSchema={breadcrumbSchema}
         language={language}

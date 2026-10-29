@@ -187,7 +187,7 @@ const personSchema = {
         "@type": "ListItem",
         "position": 2,
         "name": language === 'fr' ? "À Propos" : "About",
-        "item": "https://finxiacapital.com/about"
+        "item": "https://finxiacapital.com/about/"
       }
     ]
   };
