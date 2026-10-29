@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 88,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-27',
+      title: {
+        fr: "Liquid AI lance LFM3, une famille de modèles compacts en poids ouverts, exécutables sur infrastructure propre — une option pour l'IA embarquée et souveraine",
+        en: "Liquid AI launches LFM3, a family of compact open-weight models that can run on private infrastructure — an option for embedded and sovereign AI"
+      },
+      source: "Liquid AI"
+    },
+    {
+      id: 89,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-27',
+      title: {
+        fr: "CoreWeave met en service l'essentiel de son datacenter DEN01 près de Copenhague avec atNorth : 22,5 MW de capacité IT et récupération de la chaleur fatale vers le réseau de chaleur",
+        en: "CoreWeave brings most of its DEN01 data center near Copenhagen online with atNorth: 22.5 MW of IT capacity and waste heat recovery to the district heating network"
+      },
+      source: "CoreWeave"
+    },
+    {
+      id: 90,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-10-29',
+      title: {
+        fr: "PowerBank annonce son premier modular datacenter de 2 MW, conçu pour environ 500 GPU NVIDIA GB300 fournis par un client cloud IA",
+        en: "PowerBank announces its first 2 MW modular data center, designed for approximately 500 NVIDIA GB300 GPUs supplied by an AI cloud tenant"
+      },
+      source: "Yahoo Finance"
+    },
+    {
       id: 85,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
