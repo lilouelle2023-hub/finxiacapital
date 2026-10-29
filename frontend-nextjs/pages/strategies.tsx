@@ -3,6 +3,13 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { Server, Building, Home, TrendingUp, CheckCircle, ArrowRight } from 'lucide-react';
 import SEO from '@/components/SEO';
+import blogPosts from '../data/blogPosts.json';
+
+const POLE_CATEGORY: Record<string, string> = {
+  'hospitality-premium': 'Hospitality',
+  'residential-flex': 'Residential',
+  'capital-opportunities': 'C.CAPITAL',
+};
 
 export default function StrategiesPage() {
   const context = useLanguage();
@@ -429,6 +436,30 @@ export default function StrategiesPage() {
                         </div>
                       </div>
                     </>
+                  )}
+
+                  {POLE_CATEGORY[strategy.id] && (
+                    <div className="my-8 p-6 bg-slate-50 rounded-lg">
+                      <h4 className="font-semibold text-slate-800 mb-4">
+                        {language === 'fr' ? 'Analyses associées' : 'Related analysis'}
+                      </h4>
+                      <div className="grid sm:grid-cols-2 gap-3">
+                        {(blogPosts as any[])
+                          .filter((p) => p.category === POLE_CATEGORY[strategy.id])
+                          .sort((a, b) => (a.date < b.date ? 1 : -1))
+                          .slice(0, 10)
+                          .map((p) => (
+                            <a
+                              key={p.frSlug}
+                              href={language === 'fr' ? `/blog/${p.frSlug}/` : `/en/blog/${p.enSlug}/`}
+                              className="flex items-center justify-between gap-2 px-4 py-3 bg-white border border-slate-200 hover:border-[#C45A3B] text-sm text-slate-700 hover:text-[#C45A3B] transition-colors"
+                            >
+                              {language === 'fr' ? p.title.fr : p.title.en}
+                              <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                            </a>
+                          ))}
+                      </div>
+                    </div>
                   )}
 
                   {/* C.CAPITAL - Portfolio Targets */}
