@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 91,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-10-30',
+      title: {
+        fr: "Google achète 56 hectares à Hamina, en Finlande, pendant que Tekova prépare un datacenter de 50 MW à Perho et que SRV se retire d'un projet de 40 MW à Eura",
+        en: "Google buys 56 hectares in Hamina, Finland, as Tekova plans a 50 MW data center in Perho and SRV withdraws from a 40 MW project in Eura"
+      },
+      source: "Data Center Dynamics"
+    },
+    {
+      id: 92,
+      topic: 'hpc',
+      topicLabel: { fr: 'HPC', en: 'HPC' },
+      date: '2026-10-30',
+      title: {
+        fr: "Intel chiffre à 600 millions de dollars les pertes liées à l'explosion de son usine en Israël, avec un chiffre d'affaires trimestriel de 16,5 milliards",
+        en: "Intel estimates losses from the explosion at its Israel fab at $600 million, with quarterly revenue reaching $16.5 billion"
+      },
+      source: "Data Center Dynamics"
+    },
+    {
+      id: 93,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-10-29',
+      title: {
+        fr: "Le cloud IA OneQode loue 14 MW de capacité à AdaniConneX pour sa première implantation en Inde, avec d'autres déploiements prévus",
+        en: "AI cloud company OneQode leases 14 MW from AdaniConneX for its first deployment in India, with more planned"
+      },
+      source: "Data Center Dynamics"
+    },
+    {
       id: 88,
       topic: 'ia',
       topicLabel: { fr: 'IA', en: 'AI' },
