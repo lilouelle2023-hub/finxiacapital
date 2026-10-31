@@ -1,5 +1,35 @@
 [
   {
+    "frSlug": "crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026",
+    "enSlug": "neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026",
+    "date": "2026-10-31",
+    "readTime": "6 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "Crise des néoclouds : le rendement de 15 % de CoreWeave inquiète les marchés",
+      "en": "Neocloud Crisis: CoreWeave's 15% Yield Rattles Markets"
+    },
+    "excerpt": {
+      "fr": "Dette GPU à 15-16 %, CDS de CoreWeave autour de 1 200 points de base, actions néoclouds en chute de 30 à 40 % sur un mois : le modèle de financement de l'IA entre en crise. Analyse des mécanismes et de ce qui change pour l'investisseur.",
+      "en": "GPU-backed debt at 15-16%, CoreWeave CDS near 1,200 basis points, neocloud stocks down 30-40% in a month: the AI funding model is in crisis. What changes for investors."
+    }
+  },
+  {
+    "frSlug": "titan-dc-strategie-long-terme-datacenter-institutionnels-baux-15-ans-2026",
+    "enSlug": "titan-dc-long-term-strategy-institutional-datacenter-15-year-leases-2026",
+    "date": "2026-10-31",
+    "readTime": "6 min",
+    "category": "Investment Strategy",
+    "title": {
+      "fr": "TITAN DC : pourquoi les baux de 15 ans séduisent les institutionnels dans la tempête IA",
+      "en": "TITAN DC: Why 15-Year Leases Appeal to Institutions in the AI Storm"
+    },
+    "excerpt": {
+      "fr": "Pendant que les néoclouds vacillent sous le poids de dettes à 15 %, les investisseurs institutionnels se tournent vers les datacenters physiques contractés sur 10 à 15 ans. Comment TITAN DC AI structure ce positionnement long terme.",
+      "en": "As neoclouds wobble under 15% debt, institutional investors turn to physical datacenters on 10-15 year leases. How TITAN DC AI structures this long-term positioning."
+    }
+  },
+  {
     "frSlug": "green-datacenter-beton-bas-carbone-construction-ia-meta-fortera-2026",
     "date": "2026-10-31",
     "readTime": "6 min",

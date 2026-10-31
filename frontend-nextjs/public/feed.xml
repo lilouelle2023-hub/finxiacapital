@@ -8,13 +8,53 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 29 Oct 2026 11:54:06 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 16:38:02 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
       <title>FINXIA Capital</title>
       <link>https://finxiacapital.com/</link>
     </image>
+    <item>
+      <title>Crise des néoclouds : le rendement de 15 % de CoreWeave inquiète les marchés</title>
+      <link>https://finxiacapital.com/blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Dette GPU à 15-16 %, CDS de CoreWeave autour de 1 200 points de base, actions néoclouds en chute de 30 à 40 % sur un mois : le modèle de financement de l&apos;IA entre en crise. Analyse des mécanismes et de ce qui change pour l&apos;investisseur.</description>
+      <category>Market Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026/" />
+      
+    </item>
+    <item>
+      <title>TITAN DC : pourquoi les baux de 15 ans séduisent les institutionnels dans la tempête IA</title>
+      <link>https://finxiacapital.com/blog/titan-dc-strategie-long-terme-datacenter-institutionnels-baux-15-ans-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/titan-dc-strategie-long-terme-datacenter-institutionnels-baux-15-ans-2026/</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Pendant que les néoclouds vacillent sous le poids de dettes à 15 %, les investisseurs institutionnels se tournent vers les datacenters physiques contractés sur 10 à 15 ans. Comment TITAN DC AI structure ce positionnement long terme.</description>
+      <category>Investment Strategy</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/titan-dc-long-term-strategy-institutional-datacenter-15-year-leases-2026/" />
+      
+    </item>
+    <item>
+      <title>Green datacenter : le béton bas carbone devient un enjeu de la construction IA</title>
+      <link>https://finxiacapital.com/blog/green-datacenter-beton-bas-carbone-construction-ia-meta-fortera-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/green-datacenter-beton-bas-carbone-construction-ia-meta-fortera-2026/</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Meta vient de signer avec Fortera un accord pluriannuel portant sur 200 000 tonnes de crédits de ciment bas carbone. Derrière le contrat, un angle mort du green datacenter : le carbone gris de la construction. Et un avantage méconnu de la transformation brown-to-green.</description>
+      <category>Energy &amp; Infrastructure</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/green-datacenter-low-carbon-concrete-ai-construction-meta-fortera-2026/" />
+      
+    </item>
+    <item>
+      <title>Capex des hyperscalers : 300 milliards chez Alphabet, 175 chez Microsoft — quelle demande pour les datacenters ?</title>
+      <link>https://finxiacapital.com/blog/capex-hyperscalers-2027-demande-datacenters-ia-alphabet-microsoft-investissement/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/capex-hyperscalers-2027-demande-datacenters-ia-alphabet-microsoft-investissement/</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Les résultats trimestriels confirment l&apos;ampleur du cycle : Microsoft guide vers environ 175 milliards de dollars de capex en 2026, Alphabet prépare plus de 300 milliards pour 2027, Azure croît de 48 %. Analyse d&apos;une demande d&apos;infrastructure IA qui s&apos;inscrit dans la durée — et de ses points de vigilance.</description>
+      <category>Investment Strategy</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/hyperscaler-capex-2027-ai-datacenter-demand-alphabet-microsoft-investment/" />
+      
+    </item>
     <item>
       <title>Datacenters en France : ce que les recours environnementaux changent pour l&apos;investisseur</title>
       <link>https://finxiacapital.com/blog/recours-environnementaux-datacenter-france-risque-juridique-investissement-2026/</link>
