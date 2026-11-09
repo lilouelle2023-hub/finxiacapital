@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 94,
+      topic: 'dc',
+      topicLabel: { fr: 'Datacenter', en: 'Datacenter' },
+      date: '2026-11-09',
+      title: {
+        fr: "Les obligations CoreWeave touchent de nouveaux plus bas pendant que les CDS dépassent 1 100 points de base, avec une probabilité de défaut implicite à cinq ans estimée à 60 %",
+        en: "CoreWeave bonds hit new lows as CDS exceed 1,100 basis points, with implied five-year default odds estimated at 60%"
+      },
+      source: "Bloomberg"
+    },
+    {
+      id: 95,
+      topic: 'ia',
+      topicLabel: { fr: 'IA', en: 'AI' },
+      date: '2026-11-09',
+      title: {
+        fr: "Gartner prévoit que plus de 80 % des néoclouds cesseront leurs opérations indépendantes d'ici 2030, avec 3 500 milliards de dollars de dépenses IA exposées à des dépréciations",
+        en: "Gartner expects over 80% of neoclouds to cease independent operations by 2030, with $3.5 trillion of AI spending exposed to impairments"
+      },
+      source: "TechCrunch"
+    },
+    {
+      id: 96,
+      topic: 'nvidia',
+      topicLabel: { fr: 'NVIDIA', en: 'NVIDIA' },
+      date: '2026-11-08',
+      title: {
+        fr: "Semaine décisive pour l'IA : Nebius et CoreWeave publient le 10 novembre, NVIDIA le 17 — premier test de la demande de GPU après la tempête d'octobre",
+        en: "Decisive week for AI: Nebius and CoreWeave report on November 10, NVIDIA on November 17 — the first GPU demand test after October's storm"
+      },
+      source: "HPC Wire"
+    },
+    {
       id: 91,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },

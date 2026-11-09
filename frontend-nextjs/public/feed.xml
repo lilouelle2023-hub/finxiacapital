@@ -8,13 +8,23 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Sat, 31 Oct 2026 16:38:02 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 13:39:12 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
       <title>FINXIA Capital</title>
       <link>https://finxiacapital.com/</link>
     </image>
+    <item>
+      <title>Dette GPU : ce que les résultats de CoreWeave, Nebius et NVIDIA diront vraiment</title>
+      <link>https://finxiacapital.com/blog/neoclouds-resultats-dette-gpu-coreweave-nebius-nvidia-novembre-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/neoclouds-resultats-dette-gpu-coreweave-nebius-nvidia-novembre-2026/</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Semaine du 10 au 17 novembre 2026 : Nebius, CoreWeave, IREN puis NVIDIA publient leurs résultats. Dette de 35,1 Md$, intérêts à 24,9 % du chiffre d&apos;affaires, obligations à 80 cents : ce que les filings disent du modèle néocloud.</description>
+      <category>Market Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/neocloud-earnings-gpu-debt-coreweave-nebius-nvidia-november-2026/" />
+      
+    </item>
     <item>
       <title>Crise des néoclouds : le rendement de 15 % de CoreWeave inquiète les marchés</title>
       <link>https://finxiacapital.com/blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/</link>
