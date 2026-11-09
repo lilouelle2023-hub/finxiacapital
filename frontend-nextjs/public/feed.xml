@@ -8,13 +8,33 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 09 Nov 2026 13:39:12 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 16:50:33 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
       <title>FINXIA Capital</title>
       <link>https://finxiacapital.com/</link>
     </image>
+    <item>
+      <title>Turbulences IA : pourquoi nous souscrivons un datacenter en pensant d&apos;abord à la sortie</title>
+      <link>https://finxiacapital.com/blog/datacenter-securiser-sortie-turbulences-ia-liquidite-investissement-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/datacenter-securiser-sortie-turbulences-ia-liquidite-investissement-2026/</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Dans un marché IA volatil, la rentabilité d&apos;un datacenter se juge à sa liquidité de sortie. Baux take-or-pay, pénalités NPV, cap rates hyperscalers à 5,5-6,5 %, prudence de Moody&apos;s sur la valeur terminale : les règles d&apos;une souscription sortie d&apos;abord.</description>
+      <category>Investment Strategy</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/datacenter-securing-exit-ai-turbulence-liquidity-investment-2026/" />
+      
+    </item>
+    <item>
+      <title>Datacenters : la hiérarchie des preneurs, des GAFAM à Cerebras en passant par les néoclouds</title>
+      <link>https://finxiacapital.com/blog/datacenter-hierarchie-preneurs-gafam-nvidia-cerebras-neoclouds-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/datacenter-hierarchie-preneurs-gafam-nvidia-cerebras-neoclouds-2026/</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>GAFAM en signature-obligation, NVIDIA en faiseur de marché, Cerebras en preneur à fort potentiel concentré, néoclouds sous surveillance : comment hiérarchiser la qualité des contreparties d&apos;un datacenter en 2026.</description>
+      <category>Market Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/datacenter-tenant-hierarchy-hyperscalers-nvidia-cerebras-neoclouds-2026/" />
+      
+    </item>
     <item>
       <title>Dette GPU : ce que les résultats de CoreWeave, Nebius et NVIDIA diront vraiment</title>
       <link>https://finxiacapital.com/blog/neoclouds-resultats-dette-gpu-coreweave-nebius-nvidia-novembre-2026/</link>
