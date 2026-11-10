@@ -8,13 +8,23 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 09 Nov 2026 16:50:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 13:39:45 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
       <title>FINXIA Capital</title>
       <link>https://finxiacapital.com/</link>
     </image>
+    <item>
+      <title>Google TPU 8tx et 8i Max : l&apos;inférence devient la contrainte n°1 des datacenters</title>
+      <link>https://finxiacapital.com/blog/google-tpu-8tx-inference-datacenter-europe-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/google-tpu-8tx-inference-datacenter-europe-2026/</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Google dévoile ses TPU 8tx et 8i Max, quatrième système TPU de l&apos;année, déjà adopté par une centaine de clients. La demande IA bascule du training vers l&apos;inférence continue : conséquences pour la conception des datacenters, le PUE et la stratégie d&apos;investissement.</description>
+      <category>Market Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/google-tpu-8tx-8i-max-inference-datacenters-europe-2026/" />
+      
+    </item>
     <item>
       <title>Turbulences IA : pourquoi nous souscrivons un datacenter en pensant d&apos;abord à la sortie</title>
       <link>https://finxiacapital.com/blog/datacenter-securiser-sortie-turbulences-ia-liquidite-investissement-2026/</link>

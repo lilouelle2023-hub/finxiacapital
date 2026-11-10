@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 97,
+      topic: "dc",
+      topicLabel: { fr: "Datacenter", en: "Datacenter" },
+      date: "2026-11-10",
+      title: {
+        fr: "Jour J pour les néoclouds : CoreWeave publie ses résultats du troisième trimestre ce soir, Nebius jeudi — le consensus attend 3,54 milliards de dollars de revenus pour CoreWeave",
+        en: "Neocloud earnings day: CoreWeave reports Q3 results tonight, Nebius on Thursday — consensus expects $3.54bn in CoreWeave revenue"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 98,
+      topic: "ia",
+      topicLabel: { fr: "IA", en: "AI" },
+      date: "2026-11-10",
+      title: {
+        fr: "SoftBank accuse une perte nette d'environ 7 milliards de dollars liée à ses paris IA, dont 597 milliards de yens de charge d'électricité pour ses datacenters américains, mais bondit de 13,9 % grâce à sa participation OpenAI valorisée 99,6 milliards",
+        en: "SoftBank posts a net loss of around $7bn tied to its AI bets, including a JPY 597bn power charge for its US datacenters, but jumps 13.9% on its OpenAI stake valued at $99.6bn"
+      },
+      source: "CNBC"
+    },
+    {
+      id: 99,
+      topic: "nvidia",
+      topicLabel: { fr: "NVIDIA", en: "NVIDIA" },
+      date: "2026-11-09",
+      title: {
+        fr: "Le conseil d'administration de NVIDIA ouvre une enquête indépendante après le ciblage de Jensen Huang par une opération de renseignement étrangère, sans preuve de compromission à ce stade",
+        en: "NVIDIA's board opens an independent investigation after CEO Jensen Huang was targeted by a foreign intelligence operation, with no evidence of compromise so far"
+      },
+      source: "Ars Technica"
+    },
+    {
       id: 94,
       topic: 'dc',
       topicLabel: { fr: 'Datacenter', en: 'Datacenter' },

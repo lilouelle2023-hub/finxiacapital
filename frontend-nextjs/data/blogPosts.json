@@ -1,5 +1,20 @@
 [
   {
+    "frSlug": "google-tpu-8tx-inference-datacenter-europe-2026",
+    "enSlug": "google-tpu-8tx-8i-max-inference-datacenters-europe-2026",
+    "date": "2026-11-10",
+    "readTime": "7 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "Google TPU 8tx et 8i Max : l'inférence devient la contrainte n°1 des datacenters",
+      "en": "Google TPU 8tx and 8i Max: Inference Becomes the #1 Datacenter Constraint"
+    },
+    "excerpt": {
+      "fr": "Google dévoile ses TPU 8tx et 8i Max, quatrième système TPU de l'année, déjà adopté par une centaine de clients. La demande IA bascule du training vers l'inférence continue : conséquences pour la conception des datacenters, le PUE et la stratégie d'investissement.",
+      "en": "Google unveiled TPU 8tx and 8i Max, its fourth TPU system this year, already serving around a hundred customers. AI demand is shifting from training to continuous inference: consequences for datacenter design, PUE and investment strategy."
+    }
+  },
+  {
     "frSlug": "datacenter-securiser-sortie-turbulences-ia-liquidite-investissement-2026",
     "enSlug": "datacenter-securing-exit-ai-turbulence-liquidity-investment-2026",
     "date": "2026-11-09",
