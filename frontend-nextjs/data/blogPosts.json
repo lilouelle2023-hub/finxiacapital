@@ -1,5 +1,35 @@
 [
   {
+    "frSlug": "coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche",
+    "enSlug": "coreweave-q3-2026-results-debt-neoclouds-market-verdict",
+    "date": "2026-11-11",
+    "readTime": "7 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "CoreWeave T3 2026 : revenus record, intérêts record — le verdict nuancé du marché",
+      "en": "CoreWeave Q3 2026: Record Revenue, Record Interest — the Market's Mixed Verdict"
+    },
+    "excerpt": {
+      "fr": "CoreWeave a battu le consensus au T3 2026 avec 3,66 milliards de dollars de revenus (+168 %) et relevé sa guidance, mais ses charges d'intérêts de 846 millions dépassent quatre fois son résultat opérationnel. Ce que cette publication charnière révèle de la valeur des néoclouds et des datacenters.",
+      "en": "CoreWeave beat Q3 2026 consensus with $3.66bn revenue (+168%) and raised guidance, but its $846m interest expense exceeds operating income fourfold. What this pivotal report reveals about neocloud and datacenter value."
+    }
+  },
+  {
+    "frSlug": "ipo-anthropic-ant-valorisation-consommation-datacenters-2026",
+    "enSlug": "anthropic-ipo-ant-valuation-consumption-revenue-datacenters-2026",
+    "date": "2026-11-11",
+    "readTime": "7 min",
+    "category": "AI-Native",
+    "title": {
+      "fr": "IPO Anthropic : 70-78 $, ticker ANT — ce que le S-1 révèle pour les datacenters",
+      "en": "Anthropic IPO: $70-78, Ticker ANT — What the S-1 Reveals for Datacenters"
+    },
+    "excerpt": {
+      "fr": "Anthropic a lancé le 10 novembre le roadshow de son IPO : 825 millions d'actions à 70-78 dollars, jusqu'à 64,4 milliards levés, valorisation jusqu'à 1,4 billion. Au-delà des chiffres, le S-1 révèle un modèle de revenus à consommation qui change la donne pour les propriétaires de datacenters.",
+      "en": "Anthropic launched its IPO roadshow on November 10: 825 million shares at $70-78, up to $64.4bn raised, valuation up to $1.4 trillion. Beyond the numbers, the S-1 reveals a consumption-based revenue model that changes the game for datacenter owners."
+    }
+  },
+  {
     "frSlug": "google-tpu-8tx-inference-datacenter-europe-2026",
     "enSlug": "google-tpu-8tx-8i-max-inference-datacenters-europe-2026",
     "date": "2026-11-10",

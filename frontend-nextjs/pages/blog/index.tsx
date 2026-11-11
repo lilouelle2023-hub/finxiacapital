@@ -11,6 +11,39 @@ export default function BlogIndexPage() {
 
   const newsItems = [
     {
+      id: 100,
+      topic: "dc",
+      topicLabel: { fr: "Datacenter", en: "Datacenter" },
+      date: "2026-11-11",
+      title: {
+        fr: "CoreWeave T3 : revenus de 3,66 Md$ (+168 %), backlog de 132,5 Md$ et guidance 2026 relevée à 13-13,3 Md$ — mais 846 M$ de charges d'intérêts et 709 M$ de perte nette",
+        en: "CoreWeave Q3: revenue of $3.66bn (+168%), $132.5bn backlog and 2026 guidance raised to $13-13.3bn — but $846m of interest expense and a $709m net loss"
+      },
+      source: "Reuters"
+    },
+    {
+      id: 101,
+      topic: "ia",
+      topicLabel: { fr: "IA", en: "AI" },
+      date: "2026-11-10",
+      title: {
+        fr: "Anthropic lance le roadshow de son IPO : 825 millions d'actions à 70-78 $, ticker ANT, jusqu'à 64,4 Md$ levés — pricing attendu le 18 novembre avec environ 20 % réservés aux particuliers",
+        en: "Anthropic launches its IPO roadshow: 825 million shares at $70-78, ticker ANT, up to $64.4bn raised — pricing expected on November 18 with about 20% reserved for retail"
+      },
+      source: "CNBC"
+    },
+    {
+      id: 102,
+      topic: "nvidia",
+      topicLabel: { fr: "NVIDIA", en: "NVIDIA" },
+      date: "2026-11-10",
+      title: {
+        fr: "NVIDIA, Google, Microsoft, AMD, Broadcom, Micron et TSMC prennent pour 26 Md$ d'actions Anthropic de classe N au prix de l'IPO — Google et NVIDIA à 10 Md$ chacun",
+        en: "NVIDIA, Google, Microsoft, AMD, Broadcom, Micron and TSMC take $26bn of Anthropic Class N shares at the IPO price — Google and NVIDIA at $10bn each"
+      },
+      source: "TechCrunch"
+    },
+    {
       id: 97,
       topic: "dc",
       topicLabel: { fr: "Datacenter", en: "Datacenter" },

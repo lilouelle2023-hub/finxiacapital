@@ -8,13 +8,33 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Tue, 10 Nov 2026 13:39:45 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:58:03 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
       <title>FINXIA Capital</title>
       <link>https://finxiacapital.com/</link>
     </image>
+    <item>
+      <title>CoreWeave T3 2026 : revenus record, intérêts record — le verdict nuancé du marché</title>
+      <link>https://finxiacapital.com/blog/coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche/</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>CoreWeave a battu le consensus au T3 2026 avec 3,66 milliards de dollars de revenus (+168 %) et relevé sa guidance, mais ses charges d&apos;intérêts de 846 millions dépassent quatre fois son résultat opérationnel. Ce que cette publication charnière révèle de la valeur des néoclouds et des datacenters.</description>
+      <category>Market Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/coreweave-q3-2026-results-debt-neoclouds-market-verdict/" />
+      
+    </item>
+    <item>
+      <title>IPO Anthropic : 70-78 $, ticker ANT — ce que le S-1 révèle pour les datacenters</title>
+      <link>https://finxiacapital.com/blog/ipo-anthropic-ant-valorisation-consommation-datacenters-2026/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/ipo-anthropic-ant-valorisation-consommation-datacenters-2026/</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Anthropic a lancé le 10 novembre le roadshow de son IPO : 825 millions d&apos;actions à 70-78 dollars, jusqu&apos;à 64,4 milliards levés, valorisation jusqu&apos;à 1,4 billion. Au-delà des chiffres, le S-1 révèle un modèle de revenus à consommation qui change la donne pour les propriétaires de datacenters.</description>
+      <category>AI-Native</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/anthropic-ipo-ant-valuation-consumption-revenue-datacenters-2026/" />
+      
+    </item>
     <item>
       <title>Google TPU 8tx et 8i Max : l&apos;inférence devient la contrainte n°1 des datacenters</title>
       <link>https://finxiacapital.com/blog/google-tpu-8tx-inference-datacenter-europe-2026/</link>
