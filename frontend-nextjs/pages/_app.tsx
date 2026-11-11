@@ -5,6 +5,7 @@ import { LanguageProvider } from '@/context/LanguageContext'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import CookieConsent from '@/components/CookieConsent'
+import RelatedArticles from '@/components/RelatedArticles'
 
 export default function App({ Component, pageProps }: AppProps) {
   const initialLanguage = pageProps.initialLanguage || 'fr';
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Navigation />
         <main className="flex-grow">
           <Component {...pageProps} />
+          <RelatedArticles />
         </main>
         <Footer />
       </div>

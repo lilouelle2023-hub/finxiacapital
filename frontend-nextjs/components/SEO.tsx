@@ -12,7 +12,8 @@ const ogForCanonical = (canonical: string): string | null => {
   if (!m) return null;
   const post = (blogPosts as any[]).find((p) => p.frSlug === m[1] || p.enSlug === m[1]);
   const img = post && POLE_OG[post.category];
-  return img ? `https://finxiacapital.com/${img}` : null;
+  if (img) return `https://finxiacapital.com/${img}`;
+  return post ? 'https://finxiacapital.com/og-titan-dc-ai.jpg' : null;
 };
 
 const ORGANIZATION_SCHEMA = {
@@ -125,16 +126,32 @@ export default function SEO({
 
   // Build the full <title>, avoiding duplication when the page-supplied
   // title already ends with "| FINXIA Capital" (a common pattern across the site).
-  const brandSuffixFr = "FINXIA Capital - Gestion d'Actifs Alternatifs Luxembourg";
-  const brandSuffixEn = 'FINXIA Capital - Alternative Asset Management Luxembourg';
-  const brandSuffix = language === 'fr' ? brandSuffixFr : brandSuffixEn;
+  // Title: strip any existing brand suffix, then append the short brand only when the
+  // result stays within ~70 chars (search engines truncate around 60 chars).
+  const BRAND = 'FINXIA Capital';
+  const baseTitle = translatedTitle
+    .replace(/\s*\|\s*FINXIA Capital[^|]*$/i, '')
+    .trim();
+  // Over-long titles: cut at the last ' — ' / ' : ' / ' – ' separator when a meaningful lead remains.
+  const shortTitle = (t: string): string => {
+    if (t.length <= 62) return t;
+    const cuts = [' — ', ' – ', ' : ', ': '].map((s) => t.lastIndexOf(s)).filter((i) => i >= 25 && i <= 66);
+    return cuts.length ? t.slice(0, Math.max(...cuts)).trim() : t;
+  };
+  const titleCore = shortTitle(baseTitle);
+  const fullTitle = titleCore.length + BRAND.length + 3 <= 70 ? `${titleCore} | ${BRAND}` : titleCore;
 
-  const fullTitle = /\|\s*FINXIA Capital\s*$/i.test(translatedTitle)
-    // Replace the trailing "| FINXIA Capital" by the descriptive variant.
-    ? translatedTitle.replace(/\|\s*FINXIA Capital\s*$/i, `| ${brandSuffix}`)
-    // No brand suffix yet — append the full descriptive one.
-    : `${translatedTitle} | ${brandSuffix}`;
-  
+  // Meta description: cap at 155 chars, cutting on a sentence or word boundary.
+  const capDescription = (text: string, max = 155): string => {
+    if (!text || text.length <= max) return text;
+    const slice = text.slice(0, max);
+    const sentenceEnd = Math.max(slice.lastIndexOf('. '), slice.lastIndexOf('; '));
+    if (sentenceEnd > 80) return slice.slice(0, sentenceEnd + 1);
+    const wordEnd = slice.lastIndexOf(' ');
+    return slice.slice(0, wordEnd > 80 ? wordEnd : max).replace(/[,;:\s]+$/, '') + '…';
+  };
+  const metaDescription = capDescription(description);
+
   // Default keywords if not provided
   const defaultKeywordsFr = "Finxia Capital, SCSp Luxembourg, Datacenter AI, Hôtellerie Premium, Résidentiel Flex Living, Gestion Actifs Alternatifs, Green Bond ESG, Intelligence Artificielle";
   const defaultKeywordsEn = "Finxia Capital, Luxembourg SCSp, Datacenter AI, Premium Hospitality, Flex Living Residential, Alternative Asset Management, Green Bond ESG, Artificial Intelligence";
@@ -144,7 +161,7 @@ export default function SEO({
     <Head>
       {/* Primary Meta Tags */}
       <title>{fullTitle}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={metaDescription} />
       <meta name="robots" content="index, follow" />
       <meta name="msvalidate.01" content="6794AC65382D0A98594B01BC1432995A" />
       {/* Google Search Console verification — set via NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION env var. */}
@@ -160,7 +177,7 @@ export default function SEO({
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonical} />
       <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={metaDescription} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content="FINXIA Capital" />
       <meta property="og:locale" content={ogLocale} />
@@ -169,7 +186,7 @@ export default function SEO({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content={canonical} />
       <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={ogImage} />
       
       {/* Additional SEO */}
