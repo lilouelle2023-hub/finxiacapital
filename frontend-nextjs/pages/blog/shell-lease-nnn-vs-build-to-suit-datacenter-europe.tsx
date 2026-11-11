@@ -1,4 +1,4 @@
-import { ArrowLeft, Calendar, Tag } from 'lucide-react';
+import { ArrowLeft, Calendar, Tag, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import SEO from '../../components/SEO';
 import { useLanguage } from '../../context/LanguageContext';
@@ -7,103 +7,459 @@ export default function ShellLeaseVsBuildToSuitPage() {
   const { language } = useLanguage();
 
   const content = {
-    fr: {
-      title: "Shell Lease NNN vs Build-to-Suit : Quel Modèle Locatif pour l'Infrastructure Datacenter en Europe ?",
-      description: "Powered shell en triple net (NNN) ou build-to-suit sur mesure : deux modèles de location dominent le marché datacenter européen. Leurs implications en termes de risque, de contrôle technique et de rendement diffèrent fondamentalement.",
-      tag: "Immobilier & Infrastructure",
-      date: "Août 2026",
-      readTime: "8 min de lecture",
-      backToBlog: "Retour au blog",
-      author: "Lila Benhammou, Co-Fondatrice & CIO",
-      intro: "Lorsqu'un opérateur hyperscale ou un néocloud cherche à sécuriser de la capacité datacenter en Europe, deux modèles contractuels structurent l'essentiel des transactions : le Shell Lease en triple net (NNN), portant sur une « powered shell », et le Build-to-Suit, où l'infrastructure est conçue et livrée selon les spécifications techniques exactes du locataire. Ces deux modèles impliquent des répartitions de risque, de capital et de contrôle radicalement différentes entre propriétaire et locataire.",
-      lead: "Pour un investisseur en actifs réels datacenter, le choix du modèle locatif n'est pas une question secondaire de structuration juridique — c'est une décision qui détermine le profil de risque de l'investissement, la durée d'engagement du capital, et la nature de l'exposition technologique.",
-      h2_1: "1. La Powered Shell : La Frontière entre Structure et Équipement",
-      p1: "Une powered shell est une installation sécurisée livrée avec la structure physique du bâtiment, l'alimentation électrique jusqu'au site et les options de connectivité — mais sans les équipements IT critiques : onduleurs (UPS), générateurs de secours et systèmes de refroidissement. Ces éléments relèvent du fit-out du locataire, qui les installe et les exploite selon ses propres spécifications techniques.",
-      p2: "Cette frontière entre structure de base et aménagement locataire doit être documentée avec une précision contractuelle rigoureuse : elle détermine qui investit, qui maintient, et à qui appartient chaque composant en fin de bail.",
-      h2_2: "2. Le Bail Triple Net (NNN) : Structure Dominante des Powered Shells",
-      p3: "Les powered shells sont quasi systématiquement louées sous des baux triple net d'une durée de 10 à 20 ans ou plus, dans lesquels le locataire assume les « trois nets » : taxes foncières, assurance et maintenance. Le propriétaire perçoit un loyer net de ces charges, avec un profil de revenu prévisible et une exposition opérationnelle minimale — comparable, dans sa logique économique, à l'immobilier logistique ou industriel institutionnel.",
-      p4: "Pour l'investisseur propriétaire, le NNN offre une visibilité de cash-flow élevée sur longue durée, adossée à la solvabilité du locataire plutôt qu'à la performance opérationnelle de l'actif lui-même.",
-      h2_3: "3. Le Build-to-Suit : Contrôle Technique Total, Engagement Amont",
-      p5: "Le Build-to-Suit inverse la logique : l'infrastructure est conçue, dès l'origine, selon les spécifications techniques précises d'un locataire identifié — densité de puissance par rack, architecture de refroidissement, redondance électrique. Ce modèle est particulièrement recherché par les hyperscalers dont les exigences techniques (refroidissement liquide, très haute densité GPU) dépassent les standards génériques d'une powered shell.",
-      p6: "En contrepartie de cette personnalisation, le Build-to-Suit engage davantage de capital en amont côté investisseur-développeur, sur un horizon de pré-commercialisation plus long, et crée une dépendance technique plus forte à un locataire unique — un risque de concentration que le modèle powered shell, plus générique, atténue naturellement.",
-      h2_4: "4. Rendement, Risque et Liquidité de Sortie",
-      p7: "La powered shell en NNN offre un profil investisseur plus proche de l'immobilier core : rendement modéré, risque opérationnel limité, mais aussi liquidité de sortie plus large — un actif shell générique peut, en théorie, être relocalisé à un nouveau locataire technique en fin de bail sans reconstruction majeure. Le Build-to-Suit, à l'inverse, offre potentiellement un rendement ajusté au risque supérieur en phase de développement, mais une liquidité de sortie plus contrainte : un actif hyperconfiguré pour un locataire spécifique est structurellement plus difficile à requalifier pour un tiers.",
-      h2_5: "5. L'Approche de FINXIA Capital sur le Marché Brown-to-Green",
-      p8: "La stratégie TITAN DC AI de FINXIA Capital se positionne principalement sur des actifs existants en transformation — un contexte différent de l'arbitrage shell/build-to-suit qui s'applique typiquement au développement greenfield. Pour autant, la logique contractuelle reste pertinente au stade de la remise en location de la capacité rénovée : un actif repositionné avec un PUE optimisé et une conformité EU Taxonomy peut être commercialisé soit en powered shell NNN générique auprès d'un panel élargi de locataires potentiels, soit en configuration plus personnalisée pour un opérateur ayant des besoins techniques spécifiques.",
-      p9: "Ce choix de commercialisation, mené actif par actif, conditionne directement le profil de sortie et la base d'acheteurs institutionnels adressable — un paramètre central de la thèse de repositionnement brown-to-green.",
-      h2_6: "Conclusion",
-      conclusion: "Shell Lease NNN et Build-to-Suit ne sont pas deux variantes d'un même contrat — ce sont deux philosophies d'allocation du risque entre propriétaire et locataire. Le premier privilégie la prévisibilité et la liquidité ; le second privilégie le contrôle technique et l'alignement avec un locataire spécifique. Pour l'investisseur en infrastructure datacenter européenne, le choix dépend moins d'une préférence générale que de la nature de l'actif, du profil du locataire visé et de l'horizon de sortie recherché.",
-      authorBio: "est un gestionnaire d'actifs alternatifs. Ce contenu est fourni à titre informatif uniquement et ne constitue pas une offre de souscription ni un conseil en investissement.",
-      learnMoreTitle: "En savoir plus",
-      link1Title: "Notre Stratégie TITAN DC AI",
-      link1Desc: "Découvrez la transformation brown-to-green des datacenters européens",
-      link2Title: "Nos Stratégies",
-      link2Desc: "TITAN et nos 3 autres pôles d'investissement"
-    },
-    en: {
-      title: "Shell Lease NNN vs Build-to-Suit: Which Leasing Model for Datacenter Infrastructure in Europe?",
-      description: "Triple-net (NNN) powered shell or custom build-to-suit: two leasing models dominate the European datacenter market. Their implications for risk, technical control and returns differ fundamentally.",
-      tag: "Real Assets & Infrastructure",
-      date: "August 2026",
-      readTime: "8 min read",
-      backToBlog: "Back to blog",
-      author: "Lila Benhammou, Co-Founder & CIO",
-      intro: "When a hyperscale operator or a neocloud seeks to secure datacenter capacity in Europe, two contractual models structure the bulk of transactions: the triple-net (NNN) Shell Lease, covering a 'powered shell', and Build-to-Suit, where infrastructure is designed and delivered to the tenant's exact technical specifications. These two models involve radically different distributions of risk, capital and control between landlord and tenant.",
-      lead: "For a datacenter real-assets investor, the choice of leasing model is not a secondary legal-structuring question — it is a decision that determines the investment's risk profile, the duration of capital commitment, and the nature of technology exposure.",
-      h2_1: "1. The Powered Shell: The Boundary Between Structure and Equipment",
-      p1: "A powered shell is a secure facility delivered with the physical building structure, power to the site and connectivity options — but without critical IT equipment: uninterruptible power supplies (UPS), backup generators and cooling systems. These fall under the tenant's fit-out, which the tenant installs and operates to its own technical specifications.",
-      p2: "This boundary between base structure and tenant improvement must be documented with rigorous contractual precision: it determines who invests, who maintains, and who owns each component at lease end.",
-      h2_2: "2. The Triple-Net (NNN) Lease: The Dominant Structure for Powered Shells",
-      p3: "Powered shells are almost universally leased under triple-net leases lasting 10 to 20 years or more, in which the tenant assumes the 'three nets': property taxes, insurance and maintenance. The landlord collects rent net of these costs, with a predictable income profile and minimal operational exposure — comparable, in its economic logic, to institutional logistics or industrial real estate.",
-      p4: "For the owner-investor, NNN offers high cash-flow visibility over a long horizon, backed by tenant creditworthiness rather than the asset's own operational performance.",
-      h2_3: "3. Build-to-Suit: Full Technical Control, Upfront Commitment",
-      p5: "Build-to-Suit reverses the logic: infrastructure is designed from the outset to the precise technical specifications of an identified tenant — power density per rack, cooling architecture, electrical redundancy. This model is particularly sought by hyperscalers whose technical requirements (liquid cooling, very high-density GPU) exceed the generic standards of a powered shell.",
-      p6: "In exchange for this customization, Build-to-Suit commits more upfront capital on the investor-developer side, over a longer pre-leasing horizon, and creates stronger technical dependency on a single tenant — a concentration risk that the more generic powered shell model naturally mitigates.",
-      h2_4: "4. Return, Risk and Exit Liquidity",
-      p7: "The NNN powered shell offers an investor profile closer to core real estate: moderate return, limited operational risk, but also broader exit liquidity — a generic shell asset can, in theory, be re-let to a new technical tenant at lease end without major reconstruction. Build-to-Suit, conversely, potentially offers a higher risk-adjusted return during the development phase, but more constrained exit liquidity: an asset hyper-configured for a specific tenant is structurally harder to requalify for a third party.",
-      h2_5: "5. FINXIA Capital's Approach in the Brown-to-Green Market",
-      p8: "FINXIA Capital's TITAN DC AI strategy is positioned primarily on existing assets undergoing transformation — a different context from the shell/build-to-suit trade-off that typically applies to greenfield development. Even so, the contractual logic remains relevant at the stage of re-leasing renovated capacity: a repositioned asset with optimized PUE and EU Taxonomy compliance can be marketed either as a generic NNN powered shell to a broad panel of potential tenants, or in a more customized configuration for an operator with specific technical needs.",
-      p9: "This leasing decision, made asset by asset, directly shapes the exit profile and the addressable base of institutional buyers — a central parameter of the brown-to-green repositioning thesis.",
-      h2_6: "Conclusion",
-      conclusion: "Shell Lease NNN and Build-to-Suit are not two variants of the same contract — they are two philosophies for allocating risk between landlord and tenant. The former favors predictability and liquidity; the latter favors technical control and alignment with a specific tenant. For the European datacenter infrastructure investor, the choice depends less on a general preference than on the nature of the asset, the profile of the targeted tenant, and the desired exit horizon.",
-      authorBio: "is an alternative asset manager. This content is provided for information purposes only and does not constitute a subscription offer or investment advice.",
-      learnMoreTitle: "Learn more",
-      link1Title: "Our TITAN DC AI Strategy",
-      link1Desc: "Discover the brown-to-green transformation of European datacenters",
-      link2Title: "Our Strategies",
-      link2Desc: "TITAN and our 3 other investment poles"
-    }
-  };
+  "fr": {
+    "title": "Shell lease NNN ou build-to-suit : le comparatif",
+    "description": "Shell lease NNN ou build-to-suit pour un datacenter en Europe : répartition des risques et des responsabilités, tableau comparatif et critères de choix.",
+    "tag": "Investment Strategy",
+    "date": "11 novembre 2026",
+    "readTime": "12 min de lecture",
+    "backToBlog": "Retour au blog",
+    "author": "Lila Benhammou, Co-Fondatrice & CIO",
+    "intro": "Quand un hyperscaler, un opérateur de cloud souverain ou un néocloud sécurise de la capacité datacenter en Europe, deux montages contractuels structurent l'essentiel des transactions : le shell lease en triple net (NNN), portant sur une powered shell, et le build-to-suit, où l'infrastructure est conçue puis livrée selon les spécifications techniques exactes du locataire. Derrière ces deux termes se cachent deux philosophies opposées d'allocation du capital, du risque et du contrôle technique entre propriétaire et locataire.",
+    "lead": "Ce choix n'a rien d'académique. Selon CBRE, le taux de vacance des datacenters européens est passé sous les 10 % pour la première fois fin 2024 et devrait atteindre un plus bas historique de 6,5 % fin 2026, alors que plus de 750 MW de nouvelle capacité sont attendus sur l'année. Dans un marché où la capacité se pré-loue avant même d'être construite, la structure du bail détermine qui porte le risque de développement, qui finance les équipements techniques — et qui capte la valeur à la sortie.",
+    "sections": [
+      {
+        "h": "Powered shell et build-to-suit : de quoi parle-t-on exactement ?",
+        "ps": [
+          "Une powered shell est un bâtiment sécurisé livré avec sa structure physique, l'alimentation électrique jusqu'au site et les options de connectivité — mais sans les équipements techniques critiques : onduleurs (UPS), groupes électrogènes de secours et systèmes de refroidissement. Ces éléments relèvent du fit-out du locataire, qui les conçoit, les installe et les exploite selon ses propres spécifications. Le propriétaire fournit l'enveloppe et l'énergie disponible ; le locataire y construit sa salle informatique.",
+          "Le build-to-suit inverse la logique. Le développeur-propriétaire conçoit et livre une installation complète, dimensionnée selon les spécifications d'un locataire identifié dès l'origine : densité de puissance par rack, architecture de refroidissement — souvent liquide pour les charges GPU —, niveau de redondance électrique, exigences de sécurité. Ce modèle domine chez les hyperscalers, dont les standards techniques dépassent ceux d'une shell générique.",
+          "Entre les deux, la frontière exacte des responsabilités est la clause la plus importante du contrat : elle détermine qui investit, qui maintient, qui assure, et à qui appartient chaque composant en fin de bail. Le tableau ci-dessous donne un exemple de répartition courante sur le marché européen — à titre illustratif, car chaque contrat se négocie."
+        ],
+        "link": {
+          "href": "/blog/financement-infrastructure-ia-gpu-credit-spv-dette-leasing-datacenter-2026/",
+          "label": "Lire aussi : comment se finance l'infrastructure IA — crédit, SPV et leasing GPU"
+        }
+      },
+      {
+        "h": "Le tableau comparatif",
+        "ps": [
+          "Au-delà des définitions, c'est la comparaison critère par critère qui éclaire la décision. Voici les huit dimensions que nous examinons systématiquement avant de structurer ou d'acquérir un actif."
+        ],
+        "link": null
+      },
+      {
+        "h": "Ce que dit le marché européen en 2026",
+        "ps": [
+          "Les données de CBRE brossent un marché sous tension. Au premier trimestre 2026, le taux de vacance européen s'établissait à 7,3 % en moyenne, avec de forts écarts : 5 % à Francfort, 6,7 % à Paris, 8,6 % à Londres et 9,4 % à Amsterdam. La prévision de fin d'année est un plus bas historique de 6,5 % pour l'ensemble de l'Europe, malgré une offre nouvelle record : plus de 750 MW livrés en 2026, portant le marché total à environ 13 GW, en hausse de 20 % sur un an.",
+          "La structure de la demande évolue vite. Les signatures de néoclouds sur la colocation européenne ont quadruplé au premier semestre 2026, à 420 MW contre 89 MW un an plus tôt — l'essentiel dans les pays nordiques, où l'électricité renouvelable est moins chère. Côté prix, les loyers demandés en Europe atteignaient en 2026 entre 165 et 265 dollars par kW et par mois sur les déploiements de 250 à 500 kW, Francfort se situant en haut de fourchette (235-265 dollars).",
+          "Dans un tel marché, le rapport de force penche côté propriétaires — et il modifie l'arbitrage entre les deux modèles. Le shell NNN permet de conserver un actif générique pendant que le locataire finance son propre capex technique : le bailleur capte la rareté sans s'exposer à l'obsolescence des équipements. Le build-to-suit ne se justifie pleinement que lorsque le locataire est de premier ordre et ses exigences techniques — refroidissement liquide, très haute densité — inaccessibles à une shell standard. Deux paramètres pèsent de plus en plus dans la négociation : l'efficacité énergétique, désormais déclarée sous la directive EED, et la sécurisation de l'alimentation électrique, qui conditionne la valeur de toute l'opération."
+        ],
+        "link": {
+          "href": "/blog/pue-optimisation-datacenters-europeens-guide-2026/",
+          "label": "Lire aussi : PUE, définition et optimisation pour les datacenters européens"
+        }
+      },
+      {
+        "h": "Comment choisir : la grille de lecture de l'investisseur",
+        "ps": [
+          "Quatre questions structurent la décision. Qui paie le capex technique, et à quel coût du capital ? Quelle est la solvabilité du locataire — sa signature transforme-t-elle le bail en quasi-obligation ? L'actif est-il réversible, c'est-à-dire relouable à un tiers sans reconstruction majeure ? Et quel est l'horizon de sortie visé ? Un investisseur core à dix ans ne regarde pas le même contrat qu'un développeur à trois ans.",
+          "Le rythme du silicium ajoute un argument en faveur de la réversibilité : avec quatre générations de puces lancées par un seul acteur en un an, un bâtiment configuré pour une architecture unique concentre un risque d'obsolescence réel. La powered shell générique conserve l'optionnalité — elle peut accueillir successivement des configurations différentes au gré des évolutions du marché.",
+          "C'est la logique que nous appliquons chez TITAN DC AI sur le segment brown-to-green : repositionner des actifs existants, optimiser leur efficacité, puis les commercialiser en shell NNN auprès d'un panel élargi de locataires — opérateurs de cloud souverain, hébergeurs, entreprises — plutôt que de verrouiller chaque actif sur une configuration unique. Le choix se fait actif par actif, en fonction du locataire visé et de la liquidité de sortie recherchée. Ce contenu est fourni à titre informatif uniquement et ne constitue pas un conseil en investissement."
+        ],
+        "link": {
+          "href": "/blog/ppa-raccordement-securiser-electricite-datacenter-investisseur/",
+          "label": "Lire aussi : PPA et raccordement — sécuriser l'électricité d'un datacenter"
+        }
+      },
+      {
+        "h": "Questions fréquentes",
+        "ps": [],
+        "link": null
+      }
+    ],
+    "respTitle": "Exemple de répartition des responsabilités",
+    "respNote": "Répartition courante sur le marché européen, à titre illustratif — chaque contrat se négocie.",
+    "respHeaders": [
+      "Composant",
+      "Powered shell (NNN)",
+      "Build-to-suit"
+    ],
+    "respRows": [
+      [
+        "Gros œuvre, façade, toiture",
+        "Propriétaire",
+        "Propriétaire-développeur"
+      ],
+      [
+        "Raccordement haute tension au site",
+        "Propriétaire",
+        "Propriétaire-développeur"
+      ],
+      [
+        "Onduleurs (UPS) et groupes électrogènes",
+        "Locataire",
+        "Développeur, selon les spécifications du locataire"
+      ],
+      [
+        "Systèmes de refroidissement",
+        "Locataire",
+        "Développeur, selon les spécifications du locataire"
+      ],
+      [
+        "Racks, câblage, sécurité IT",
+        "Locataire",
+        "Locataire"
+      ],
+      [
+        "Maintenance de la structure",
+        "Locataire (bail triple net)",
+        "Selon contrat, souvent propriétaire"
+      ]
+    ],
+    "tableTitle": "Shell lease NNN vs build-to-suit : les huit critères",
+    "tableHeaders": [
+      "Critère",
+      "Shell lease NNN",
+      "Build-to-suit"
+    ],
+    "tableRows": [
+      [
+        "Ce qui est livré",
+        "Structure sécurisée, électricité jusqu'au site, connectivité",
+        "Installation complète, conçue sur spécifications du locataire"
+      ],
+      [
+        "Capex d'équipement technique",
+        "Locataire",
+        "Propriétaire-développeur"
+      ],
+      [
+        "Durée de bail usuelle",
+        "10 à 20 ans",
+        "15 à 25 ans, parfois davantage"
+      ],
+      [
+        "Contrôle technique",
+        "Locataire (fit-out)",
+        "Locataire (dès la conception)"
+      ],
+      [
+        "Risque de relocation en fin de bail",
+        "Modéré : actif générique",
+        "Élevé : actif spécifique"
+      ],
+      [
+        "Profil de revenu",
+        "Net, prévisible, indexé",
+        "Loyer ajusté au risque, plus élevé en phase développement"
+      ],
+      [
+        "Pool d'acheteurs à la sortie",
+        "Large (fonds core, value-add)",
+        "Restreint (acheteurs spécialisés)"
+      ],
+      [
+        "Locataires types",
+        "Opérateurs de colocation, clouds souverains, néoclouds structurés",
+        "Hyperscalers, très grandes plateformes IA"
+      ]
+    ],
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      {
+        "q": "Quelle est la différence entre un shell lease et un build-to-suit ?",
+        "a": "Le shell lease porte sur une powered shell : le propriétaire livre la structure, l'alimentation électrique jusqu'au site et la connectivité, et le locataire installe ses équipements techniques. Dans un build-to-suit, le développeur livre l'installation complète, conçue selon les spécifications du locataire."
+      },
+      {
+        "q": "Quelle est la durée typique d'un bail datacenter en triple net ?",
+        "a": "Les baux NNN sur les powered shells courent usuellement de 10 à 20 ans, une pratique de marché documentée par CBRE sur les transactions européennes. Les montages build-to-suit hyperscale vont souvent au-delà, de 15 à 25 ans."
+      },
+      {
+        "q": "Qui finance les équipements techniques dans une powered shell ?",
+        "a": "Le locataire finance et installe onduleurs, groupes électrogènes et refroidissement. Le loyer par MW est plus faible qu'en build-to-suit, mais le capex du propriétaire reste limité à l'enveloppe et au raccordement."
+      },
+      {
+        "q": "Un actif build-to-suit peut-il être reloué à un autre locataire ?",
+        "a": "C'est possible mais potentiellement coûteux si l'actif a été hyperconfiguré : très haute densité, refroidissement propriétaire, sécurité spécifique. Les clauses de réversibilité et de remise en état se négocient donc dès la signature."
+      },
+      {
+        "q": "Quel modèle privilégier pour un actif existant repositionné (brown-to-green) ?",
+        "a": "Le shell NNN générique élargit à la fois le pool de locataires potentiels et celui des acheteurs à la sortie. Le build-to-suit ne se justifie, dans ce contexte, que si un locataire de premier ordre s'engage sur une longue durée avant les travaux."
+      }
+    ],
+    "sourcesTitle": "Références consultées",
+    "sources": [
+      {
+        "label": "CBRE — European Data Centres Outlook 2026 (janvier 2026)",
+        "url": "https://www.cbre.com/insights/books/european-real-estate-market-outlook-2026/data-centres"
+      },
+      {
+        "label": "CBRE — Global Data Center Trends 2026 (juin 2026)",
+        "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+      },
+      {
+        "label": "Data Center Dynamics — Europe data center market to grow by nearly a quarter in 2026 (18 août 2026)",
+        "url": "https://www.datacenterdynamics.com/en/news/cbre-europe-data-center-market-to-grow-by-nearly-a-quarter-in-2026/"
+      },
+      {
+        "label": "Data Center Knowledge — Power, Not Space: The Colocation Battleground in 2026 (14 janvier 2026)",
+        "url": "https://www.datacenterknowledge.com/colocation/power-not-space-the-colocation-battleground-in-2026"
+      }
+    ],
+    "conclusionTitle": "Ce qu'il faut retenir",
+    "conclusionPoints": [
+      "Shell lease NNN et build-to-suit sont deux philosophies d'allocation du risque : le premier privilégie la prévisibilité et la liquidité, le second le contrôle technique et l'alignement sur un locataire unique.",
+      "Le marché européen 2026 renforce le pouvoir de négociation des propriétaires : vacance à 6,5-7,3 % selon CBRE, offre pré-louée, loyers en hausse.",
+      "La powered shell NNN conserve l'optionnalité technique et un large pool d'acheteurs à la sortie ; le build-to-suit offre un potentiel de loyer supérieur au prix d'un risque de concentration.",
+      "La bonne décision est toujours croisée : nature de l'actif × qualité de la signature × horizon de sortie. Ce contenu est informatif et ne constitue pas un conseil en investissement."
+    ],
+    "authorBio": "est Co-Fondatrice et Directrice des Investissements (CIO) de FINXIA Capital SCSp, véhicule d'investissement propriétaire luxembourgeois positionné sur les actifs réels et l'infrastructure IA.",
+    "learnMoreTitle": "En savoir plus",
+    "link1Title": "Notre Stratégie TITAN DC AI",
+    "link1Desc": "Découvrez la transformation brown-to-green des datacenters européens",
+    "link2Title": "Nos Stratégies",
+    "link2Desc": "TITAN et nos 3 autres pôles d'investissement"
+  },
+  "en": {
+    "title": "Shell Lease NNN vs Build-to-Suit: How to Choose",
+    "description": "NNN shell lease or build-to-suit for a European datacenter: risk and responsibility allocation, comparison table and decision criteria for investors.",
+    "tag": "Investment Strategy",
+    "date": "November 11, 2026",
+    "readTime": "12 min read",
+    "backToBlog": "Back to blog",
+    "author": "Lila Benhammou, Co-Founder & CIO",
+    "intro": "When a hyperscaler, a sovereign cloud operator or a neocloud secures datacenter capacity in Europe, two contractual structures govern most transactions: the triple-net (NNN) shell lease, covering a powered shell, and build-to-suit, where infrastructure is designed and delivered to the tenant's exact technical specifications. Behind these two terms lie two opposite philosophies for allocating capital, risk and technical control between landlord and tenant.",
+    "lead": "The choice is anything but academic. According to CBRE, European datacenter vacancy fell below 10% for the first time in late 2024 and is forecast to reach an all-time low of 6.5% by the end of 2026, with more than 750 MW of new capacity expected this year. In a market where capacity is pre-let before it is built, the lease structure determines who carries development risk, who funds the technical equipment — and who captures value at exit.",
+    "sections": [
+      {
+        "h": "Powered Shell and Build-to-Suit: What Exactly Are We Talking About?",
+        "ps": [
+          "A powered shell is a secure building delivered with its physical structure, power supply to the site and connectivity options — but without critical technical equipment: uninterruptible power supplies (UPS), backup generators and cooling systems. These fall to the tenant's fit-out, which the tenant designs, installs and operates to its own specifications. The landlord provides the envelope and available power; the tenant builds its computer room inside.",
+          "Build-to-suit reverses the logic. The developer-landlord designs and delivers a complete facility, dimensioned to the specifications of a tenant identified from the outset: power density per rack, cooling architecture — often liquid for GPU loads — electrical redundancy levels, security requirements. This model dominates among hyperscalers, whose technical standards exceed those of a generic shell.",
+          "Between the two, the exact boundary of responsibilities is the most important clause in the contract: it determines who invests, who maintains, who insures, and who owns each component at lease end. The table below shows a common allocation in the European market — for illustration, as every contract is negotiated."
+        ],
+        "link": {
+          "href": "/en/blog/ai-infrastructure-financing-gpu-debt-spv-leasing-datacenter-2026/",
+          "label": "Read also: how AI infrastructure is financed — credit, SPVs and GPU leasing"
+        }
+      },
+      {
+        "h": "The Comparison Table",
+        "ps": [
+          "Beyond definitions, the criterion-by-criterion comparison is what informs the decision. Here are the eight dimensions we systematically examine before structuring or acquiring an asset."
+        ],
+        "link": null
+      },
+      {
+        "h": "What the European Market Says in 2026",
+        "ps": [
+          "CBRE data depicts a market under strain. In Q1 2026, the European vacancy rate averaged 7.3%, with wide disparities: 5% in Frankfurt, 6.7% in Paris, 8.6% in London and 9.4% in Amsterdam. The year-end forecast is an all-time low of 6.5% across Europe, despite record new supply: more than 750 MW delivered in 2026, taking the total market to roughly 13 GW, up 20% year on year.",
+          "The demand structure is evolving fast. Neocloud signings for European colocation quadrupled in H1 2026, to 420 MW from 89 MW a year earlier — mostly in the Nordics, where renewable electricity is cheaper. On pricing, European asking rents in 2026 reached $165-265 per kW per month on 250-500 kW deployments, with Frankfurt at the top of the range ($235-265).",
+          "In such a market, the balance of power tilts towards landlords — and it changes the trade-off between the two models. The NNN shell keeps the asset generic while the tenant funds its own technical capex: the landlord captures scarcity without exposure to equipment obsolescence. Build-to-suit is fully justified only when the tenant is first-tier and its technical requirements — liquid cooling, very high density — exceed what a standard shell can host. Two parameters weigh increasingly in negotiations: energy efficiency, now reported under the EED directive, and power security, which conditions the value of the entire transaction."
+        ],
+        "link": {
+          "href": "/en/blog/pue-optimization-european-datacenters-guide-2026/",
+          "label": "Read also: PUE, definition and optimisation for European datacenters"
+        }
+      },
+      {
+        "h": "How to Choose: the Investor's Reading Grid",
+        "ps": [
+          "Four questions structure the decision. Who pays the technical capex, and at what cost of capital? How strong is the tenant covenant — does the signature turn the lease into a quasi-bond? Is the asset reversible, meaning re-lettable to a third party without major reconstruction? And what exit horizon is targeted? A ten-year core investor does not read the same contract as a three-year developer.",
+          "The pace of silicon adds an argument for reversibility: with four chip generations launched by a single player in one year, a building configured for a single architecture concentrates real obsolescence risk. The generic powered shell preserves optionality — it can successively host different configurations as the market evolves.",
+          "That is the logic we apply at TITAN DC AI in the brown-to-green segment: reposition existing assets, optimise their efficiency, then market them as NNN shells to an expanded panel of tenants — sovereign cloud operators, hosters, enterprises — rather than locking each asset into a single configuration. The choice is made asset by asset, based on the target tenant and the exit liquidity sought. This content is provided for information purposes only and does not constitute investment advice."
+        ],
+        "link": {
+          "href": "/en/blog/ppa-grid-connection-datacenter-power-investor-guide/",
+          "label": "Read also: PPAs and grid connection — securing datacenter power"
+        }
+      },
+      {
+        "h": "Frequently Asked Questions",
+        "ps": [],
+        "link": null
+      }
+    ],
+    "respTitle": "Example Responsibility Allocation",
+    "respNote": "A common allocation in the European market, for illustration — every contract is negotiated.",
+    "respHeaders": [
+      "Component",
+      "Powered shell (NNN)",
+      "Build-to-suit"
+    ],
+    "respRows": [
+      [
+        "Shell and core, facade, roof",
+        "Landlord",
+        "Developer-landlord"
+      ],
+      [
+        "High-voltage grid connection to site",
+        "Landlord",
+        "Developer-landlord"
+      ],
+      [
+        "UPS and backup generators",
+        "Tenant",
+        "Developer, to tenant specifications"
+      ],
+      [
+        "Cooling systems",
+        "Tenant",
+        "Developer, to tenant specifications"
+      ],
+      [
+        "Racks, cabling, IT security",
+        "Tenant",
+        "Tenant"
+      ],
+      [
+        "Structural maintenance",
+        "Tenant (triple-net lease)",
+        "Contract-dependent, often landlord"
+      ]
+    ],
+    "tableTitle": "NNN Shell Lease vs Build-to-Suit: the Eight Criteria",
+    "tableHeaders": [
+      "Criterion",
+      "NNN shell lease",
+      "Build-to-suit"
+    ],
+    "tableRows": [
+      [
+        "What is delivered",
+        "Secure structure, power to site, connectivity",
+        "Complete facility designed to tenant specifications"
+      ],
+      [
+        "Technical equipment capex",
+        "Tenant",
+        "Developer-landlord"
+      ],
+      [
+        "Typical lease term",
+        "10 to 20 years",
+        "15 to 25 years, sometimes longer"
+      ],
+      [
+        "Technical control",
+        "Tenant (fit-out)",
+        "Tenant (from design stage)"
+      ],
+      [
+        "Re-letting risk at lease end",
+        "Moderate: generic asset",
+        "High: tenant-specific asset"
+      ],
+      [
+        "Income profile",
+        "Net, predictable, indexed",
+        "Risk-adjusted rent, higher in development phase"
+      ],
+      [
+        "Exit buyer pool",
+        "Broad (core, value-add funds)",
+        "Narrow (specialist buyers)"
+      ],
+      [
+        "Typical tenants",
+        "Colocation operators, sovereign clouds, structured neoclouds",
+        "Hyperscalers, very large AI platforms"
+      ]
+    ],
+    "faqTitle": "Frequently Asked Questions",
+    "faq": [
+      {
+        "q": "What is the difference between a shell lease and build-to-suit?",
+        "a": "A shell lease covers a powered shell: the landlord delivers the structure, power to the site and connectivity, and the tenant installs its technical equipment. In build-to-suit, the developer delivers the complete facility, designed to the tenant's specifications."
+      },
+      {
+        "q": "What is the typical term of a triple-net datacenter lease?",
+        "a": "NNN leases on powered shells usually run 10 to 20 years, a market practice documented by CBRE on European transactions. Hyperscale build-to-suit structures often run longer, 15 to 25 years."
+      },
+      {
+        "q": "Who funds the technical equipment in a powered shell?",
+        "a": "The tenant funds and installs UPS, generators and cooling. Rent per MW is lower than in build-to-suit, but landlord capex remains limited to the envelope and grid connection."
+      },
+      {
+        "q": "Can a build-to-suit asset be re-let to another tenant?",
+        "a": "It can, but potentially at high cost if the asset was hyper-configured: very high density, proprietary cooling, specific security. Reversibility and reinstatement clauses are therefore negotiated at signing."
+      },
+      {
+        "q": "Which model should be favoured for a repositioned brown-to-green asset?",
+        "a": "The generic NNN shell widens both the pool of potential tenants and the pool of exit buyers. In this context, build-to-suit is justified only if a first-tier tenant commits to a long term before works begin."
+      }
+    ],
+    "sourcesTitle": "References consulted",
+    "sources": [
+      {
+        "label": "CBRE — European Data Centres Outlook 2026 (January 2026)",
+        "url": "https://www.cbre.com/insights/books/european-real-estate-market-outlook-2026/data-centres"
+      },
+      {
+        "label": "CBRE — Global Data Center Trends 2026 (June 2026)",
+        "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+      },
+      {
+        "label": "Data Center Dynamics — Europe data center market to grow by nearly a quarter in 2026 (18 August 2026)",
+        "url": "https://www.datacenterdynamics.com/en/news/cbre-europe-data-center-market-to-grow-by-nearly-a-quarter-in-2026/"
+      },
+      {
+        "label": "Data Center Knowledge — Power, Not Space: The Colocation Battleground in 2026 (14 January 2026)",
+        "url": "https://www.datacenterknowledge.com/colocation/power-not-space-the-colocation-battleground-in-2026"
+      }
+    ],
+    "conclusionTitle": "Key Takeaways",
+    "conclusionPoints": [
+      "NNN shell lease and build-to-suit are two philosophies of risk allocation: the former favours predictability and liquidity, the latter technical control and alignment with a single tenant.",
+      "The 2026 European market strengthens landlords' negotiating power: vacancy at 6.5-7.3% per CBRE, pre-let supply, rising rents.",
+      "The NNN powered shell preserves technical optionality and a broad exit buyer pool; build-to-suit offers higher rent potential at the price of concentration risk.",
+      "The right decision is always a cross-product: nature of the asset × quality of the signature × exit horizon. This content is informational and does not constitute investment advice."
+    ],
+    "authorBio": "is Co-Founder and Chief Investment Officer (CIO) of FINXIA Capital SCSp, a Luxembourg proprietary investment vehicle positioned on real assets and AI infrastructure.",
+    "learnMoreTitle": "Learn more",
+    "link1Title": "Our TITAN DC AI Strategy",
+    "link1Desc": "Discover the brown-to-green transformation of European datacenters",
+    "link2Title": "Our Strategies",
+    "link2Desc": "TITAN and our 3 other investment poles"
+  }
+};
 
   const t = content[language];
+  const isFr = language === 'fr';
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": t.title,
-    "description": t.description,
-    "image": "https://finxiacapital.com/logo-finxia.png",
-    "datePublished": "2026-08-17T09:00:00+02:00",
-    "dateModified": "2026-08-17T09:00:00+02:00",
-    "author": {
-      "@type": "Person",
-      "name": "Lila Benhammou",
-      "jobTitle": "Co-Founder & Chief Investment Officer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "FINXIA Capital"
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": t.title,
+        "description": t.description,
+        "image": "https://finxiacapital.com/logo-finxia.png",
+        "datePublished": "2026-08-17T09:00:00+02:00",
+        "dateModified": "2026-11-11T09:00:00+01:00",
+        "author": {
+          "@type": "Person",
+          "name": "Lila Benhammou",
+          "jobTitle": "Co-Founder & Chief Investment Officer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "FINXIA Capital"
+          }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "FINXIA Capital",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://finxiacapital.com/logo-finxia.png"
+          }
+        },
+        "articleSection": "Investment Strategy",
+        "keywords": isFr ? "shell lease NNN, build-to-suit, powered shell, datacenter Europe, bail triple net" : "shell lease NNN, build-to-suit, powered shell, European datacenter, triple net lease"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": t.faq.map((f: { q: string; a: string }) => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": f.a
+          }
+        }))
       }
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "FINXIA Capital",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://finxiacapital.com/logo-finxia.png"
-      }
-    },
-    "articleSection": language === 'fr' ? "Immobilier & Infrastructure" : "Real Assets & Infrastructure",
-    "keywords": language === 'fr' ? "Shell Lease NNN, Build-to-Suit, powered shell, datacenter Europe, triple net, FINXIA Capital" : "Shell Lease NNN, Build-to-Suit, powered shell, European datacenter, triple net, FINXIA Capital"
+    ]
   };
 
   const breadcrumbSchema = {
@@ -113,35 +469,58 @@ export default function ShellLeaseVsBuildToSuitPage() {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": language === 'fr' ? "Accueil" : "Home",
-        "item": language === 'fr' ? "https://finxiacapital.com" : "https://finxiacapital.com/en/"
+        "name": isFr ? "Accueil" : "Home",
+        "item": isFr ? "https://finxiacapital.com" : "https://finxiacapital.com/en/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": language === 'fr' ? "https://finxiacapital.com/blog" : "https://finxiacapital.com/en/blog"
+        "item": isFr ? "https://finxiacapital.com/blog" : "https://finxiacapital.com/en/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": t.title,
-        "item": language === 'fr' ? "https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe" : "https://finxiacapital.com/en/blog/shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe"
+        "item": isFr ? "https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe" : "https://finxiacapital.com/en/blog/shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe"
       }
     ]
   };
+
+  const renderTable = (headers: string[], rows: string[][]) => (
+    <div className="overflow-x-auto my-8">
+      <table className="w-full text-sm border border-slate-200">
+        <thead>
+          <tr className="bg-slate-50">
+            {headers.map((h: string, i: number) => (
+              <th key={i} className="text-left p-3 font-medium text-slate-900 border-b border-slate-200">{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row: string[], i: number) => (
+            <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}>
+              {row.map((cell: string, j: number) => (
+                <td key={j} className="p-3 text-slate-600 border-b border-slate-100 align-top">{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 
   return (
     <div data-testid="article-shell-lease-vs-bts-page" className="pt-20">
       <SEO
         title={t.title}
         description={t.description}
-        canonical={language === 'fr' ? "https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe/" : "https://finxiacapital.com/en/blog/shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe/"}
-        keywords={language === 'fr' ? "Shell Lease NNN, Build-to-Suit, powered shell, datacenter Europe, triple net, hyperscale, brown-to-green" : "Shell Lease NNN, Build-to-Suit, powered shell, European datacenter, triple net, hyperscale, brown-to-green"}
+        canonical={isFr ? "https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe/" : "https://finxiacapital.com/en/blog/shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe/"}
+        keywords={isFr ? "shell lease NNN, build-to-suit, powered shell, datacenter Europe, bail triple net, hyperscale, brown-to-green" : "shell lease NNN, build-to-suit, powered shell, European datacenter, triple net, hyperscale, brown-to-green"}
         structuredData={articleSchema}
         breadcrumbSchema={breadcrumbSchema}
         language={language}
-        ogLocale={language === 'fr' ? "fr_FR" : "en_US"}
+        ogLocale={isFr ? "fr_FR" : "en_US"}
         hreflangFr="https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe/"
         hreflangEn="https://finxiacapital.com/en/blog/shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe/"
         hreflangDefault="https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe/"
@@ -150,7 +529,7 @@ export default function ShellLeaseVsBuildToSuitPage() {
       <article className="bg-white">
         <header className="py-16 md:py-24 bg-slate-50">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Link href={language === 'fr' ? "/blog" : "/en/blog"} className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-[#C45A3B] transition-colors mb-8">
+            <Link href={isFr ? "/blog" : "/en/blog"} className="inline-flex items-center gap-2 text-sm text-slate-600 hover:text-[#C45A3B] transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               {t.backToBlog}
             </Link>
@@ -161,7 +540,7 @@ export default function ShellLeaseVsBuildToSuitPage() {
                 {t.tag}
               </span>
               <span className="text-slate-400">•</span>
-              <time className="text-slate-600 flex items-center gap-2" dateTime="2026-08-17">
+              <time className="text-slate-600 flex items-center gap-2" dateTime="2026-11-11">
                 <Calendar className="w-4 h-4" />
                 {t.date}
               </time>
@@ -174,7 +553,7 @@ export default function ShellLeaseVsBuildToSuitPage() {
             </h1>
 
             <p className="text-slate-500 text-sm">
-              {language === 'fr' ? 'Par ' : 'By '}{t.author} — FINXIA Capital
+              {isFr ? 'Par ' : 'By '}{t.author} — FINXIA Capital
             </p>
           </div>
         </header>
@@ -188,27 +567,81 @@ export default function ShellLeaseVsBuildToSuitPage() {
 
               <p className="text-lg text-slate-600 mb-8">{t.lead}</p>
 
-              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_1}</h2>
-              <p>{t.p1}</p>
-              <p>{t.p2}</p>
+              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.sections[0].h}</h2>
+              {t.sections[0].ps.map((p: string, i: number) => (
+                <p key={i}>{p}</p>
+              ))}
+              <h3 className="font-serif text-xl mt-8 mb-2">{t.respTitle}</h3>
+              <p className="text-sm text-slate-500 mb-4">{t.respNote}</p>
+              {renderTable(t.respHeaders, t.respRows)}
+              {t.sections[0].link && (
+                <p className="text-sm">
+                  <Link href={t.sections[0].link.href} className="text-[#C45A3B] hover:underline">→ {t.sections[0].link.label}</Link>
+                </p>
+              )}
 
-              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_2}</h2>
-              <p>{t.p3}</p>
-              <p>{t.p4}</p>
+              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.sections[1].h}</h2>
+              {t.sections[1].ps.map((p: string, i: number) => (
+                <p key={i}>{p}</p>
+              ))}
+              <h3 className="font-serif text-xl mt-8 mb-4">{t.tableTitle}</h3>
+              {renderTable(t.tableHeaders, t.tableRows)}
 
-              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_3}</h2>
-              <p>{t.p5}</p>
-              <p>{t.p6}</p>
+              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.sections[2].h}</h2>
+              {t.sections[2].ps.map((p: string, i: number) => (
+                <p key={i}>{p}</p>
+              ))}
+              {t.sections[2].link && (
+                <p className="text-sm">
+                  <Link href={t.sections[2].link.href} className="text-[#C45A3B] hover:underline">→ {t.sections[2].link.label}</Link>
+                </p>
+              )}
 
-              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_4}</h2>
-              <p>{t.p7}</p>
+              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.sections[3].h}</h2>
+              {t.sections[3].ps.map((p: string, i: number) => (
+                <p key={i}>{p}</p>
+              ))}
+              {t.sections[3].link && (
+                <p className="text-sm">
+                  <Link href={t.sections[3].link.href} className="text-[#C45A3B] hover:underline">→ {t.sections[3].link.label}</Link>
+                </p>
+              )}
+              <p className="text-sm mt-4">
+                <Link href={isFr ? "/strategies/" : "/en/strategies/"} className="text-[#C45A3B] hover:underline">→ {isFr ? "Découvrir nos stratégies d'investissement" : "Discover our investment strategies"}</Link>
+              </p>
 
-              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_5}</h2>
-              <p>{t.p8}</p>
-              <p>{t.p9}</p>
+              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.faqTitle}</h2>
+              <div className="space-y-6">
+                {t.faq.map((f: { q: string; a: string }, i: number) => (
+                  <div key={i} className="border-l-4 border-[#C45A3B] pl-4">
+                    <p className="font-medium text-slate-900 mb-2">{f.q}</p>
+                    <p className="text-slate-600">{f.a}</p>
+                  </div>
+                ))}
+              </div>
 
-              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_6}</h2>
-              <p>{t.conclusion}</p>
+              <div className="mt-12 p-6 bg-slate-50 border-l-4 border-[#C45A3B]">
+                <p className="font-serif text-xl mb-4">{t.conclusionTitle}</p>
+                <ul className="list-disc pl-5 space-y-2 text-slate-600">
+                  {t.conclusionPoints.map((p: string, i: number) => (
+                    <li key={i}>{p}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-12">
+                <p className="font-serif text-xl mb-4">{t.sourcesTitle}</p>
+                <ul className="space-y-2 text-sm">
+                  {t.sources.map((s: { label: string; url: string }, i: number) => (
+                    <li key={i}>
+                      <a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="text-[#C45A3B] hover:underline inline-flex items-center gap-1">
+                        {s.label}
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             <div className="mt-16 pt-8 border-t border-slate-200">
@@ -229,11 +662,11 @@ export default function ShellLeaseVsBuildToSuitPage() {
             <div className="mt-16 pt-8 border-t border-slate-200">
               <h3 className="font-serif text-xl mb-6">{t.learnMoreTitle}</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href={language === 'fr' ? "/strategies" : "/en/strategies"} className="p-6 bg-slate-50 hover:bg-slate-100 transition-colors border-l-4 border-[#C45A3B]">
+                <Link href={isFr ? "/strategies" : "/en/strategies"} className="p-6 bg-slate-50 hover:bg-slate-100 transition-colors border-l-4 border-[#C45A3B]">
                   <h4 className="font-medium text-slate-900 mb-2">{t.link1Title}</h4>
                   <p className="text-slate-600 text-sm">{t.link1Desc}</p>
                 </Link>
-                <Link href={language === 'fr' ? "/strategies" : "/en/strategies"} className="p-6 bg-slate-50 hover:bg-slate-100 transition-colors border-l-4 border-[#C45A3B]">
+                <Link href={isFr ? "/strategies" : "/en/strategies"} className="p-6 bg-slate-50 hover:bg-slate-100 transition-colors border-l-4 border-[#C45A3B]">
                   <h4 className="font-medium text-slate-900 mb-2">{t.link2Title}</h4>
                   <p className="text-slate-600 text-sm">{t.link2Desc}</p>
                 </Link>

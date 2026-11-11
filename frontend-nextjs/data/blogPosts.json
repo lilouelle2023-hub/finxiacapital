@@ -599,17 +599,35 @@
   {
     "frSlug": "shell-lease-nnn-vs-build-to-suit-datacenter-europe",
     "enSlug": "shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe",
-    "date": "2026-08-17",
-    "readTime": "8 min",
-    "category": "Real Assets & Infrastructure",
+    "date": "2026-11-11",
+    "readTime": "12 min",
+    "category": "Investment Strategy",
     "title": {
-      "fr": "Shell Lease NNN vs Build-to-Suit : Quel Modèle Locatif pour l'Infrastructure Datacenter en Europe ?",
-      "en": "Shell Lease NNN vs Build-to-Suit: Which Leasing Model for Datacenter Infrastructure in Europe?"
+      "fr": "Shell lease NNN ou build-to-suit : le comparatif",
+      "en": "Shell Lease NNN vs Build-to-Suit: How to Choose"
     },
     "excerpt": {
-      "fr": "Powered shell en triple net (NNN) ou build-to-suit sur mesure : deux modèles dominent le marché datacenter européen, avec des implications de risque et de rendement fondamentalement différentes.",
-      "en": "Triple-net (NNN) powered shell or custom build-to-suit: two leasing models dominate the European datacenter market, with fundamentally different risk and return implications."
-    }
+      "fr": "Shell lease NNN ou build-to-suit : définitions, répartition des responsabilités, tableau comparatif et données de marché CBRE 2026 pour choisir le modèle locatif d'un datacenter européen.",
+      "en": "NNN shell lease or build-to-suit: definitions, responsibility allocation, comparison table and CBRE 2026 market data to choose the right European datacenter lease."
+    },
+    "sources": [
+      {
+        "label": "CBRE — European Data Centres Outlook 2026 (janvier 2026)",
+        "url": "https://www.cbre.com/insights/books/european-real-estate-market-outlook-2026/data-centres"
+      },
+      {
+        "label": "CBRE — Global Data Center Trends 2026 (juin 2026)",
+        "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026"
+      },
+      {
+        "label": "Data Center Dynamics — Europe data center market to grow by nearly a quarter in 2026 (18 août 2026)",
+        "url": "https://www.datacenterdynamics.com/en/news/cbre-europe-data-center-market-to-grow-by-nearly-a-quarter-in-2026/"
+      },
+      {
+        "label": "Data Center Knowledge — Power, Not Space: The Colocation Battleground in 2026 (14 janvier 2026)",
+        "url": "https://www.datacenterknowledge.com/colocation/power-not-space-the-colocation-battleground-in-2026"
+      }
+    ]
   },
   {
     "frSlug": "titan-dc-ai-hors-perimetre-sfdr-article-8-9-avantage-structurel",
