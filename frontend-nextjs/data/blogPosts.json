@@ -1,26 +1,5 @@
 [
   {
-    "frSlug": "coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche",
-    "enSlug": "coreweave-q3-2026-results-debt-neoclouds-market-verdict",
-    "date": "2026-11-11",
-    "readTime": "7 min",
-    "category": "Market Analysis",
-    "title": {
-      "fr": "CoreWeave T3 2026 : revenus record, intérêts record — le verdict nuancé du marché",
-      "en": "CoreWeave Q3 2026: Record Revenue, Record Interest — the Market's Mixed Verdict"
-    },
-    "excerpt": {
-      "fr": "CoreWeave a battu le consensus au T3 2026 avec 3,66 milliards de dollars de revenus (+168 %) et relevé sa guidance, mais ses charges d'intérêts de 846 millions dépassent quatre fois son résultat opérationnel. Ce que cette publication charnière révèle de la valeur des néoclouds et des datacenters.",
-      "en": "CoreWeave beat Q3 2026 consensus with $3.66bn revenue (+168%) and raised guidance, but its $846m interest expense exceeds operating income fourfold. What this pivotal report reveals about neocloud and datacenter value."
-    },
-    "sources": [
-      {
-        "label": "TIKR — CoreWeave et les néoclouds : guidance T3 2026",
-        "url": "https://www.tikr.com/blog/coreweave-rises-3-as-a-rivals-results-lift-neoclouds-not-a-fundamental-reset"
-      }
-    ]
-  },
-  {
     "frSlug": "ipo-anthropic-ant-valorisation-consommation-datacenters-2026",
     "enSlug": "anthropic-ipo-ant-valuation-consumption-revenue-datacenters-2026",
     "date": "2026-11-11",
@@ -72,49 +51,37 @@
     }
   },
   {
-    "frSlug": "datacenter-hierarchie-preneurs-gafam-nvidia-cerebras-neoclouds-2026",
-    "enSlug": "datacenter-tenant-hierarchy-hyperscalers-nvidia-cerebras-neoclouds-2026",
-    "date": "2026-11-09",
-    "readTime": "7 min",
-    "category": "Market Analysis",
-    "title": {
-      "fr": "Datacenters : la hiérarchie des preneurs, des GAFAM à Cerebras en passant par les néoclouds",
-      "en": "Datacenters: The Tenant Hierarchy, from GAFAM to Cerebras via Neoclouds"
-    },
-    "excerpt": {
-      "fr": "GAFAM en signature-obligation, NVIDIA en faiseur de marché, Cerebras en preneur à fort potentiel concentré, néoclouds sous surveillance : comment hiérarchiser la qualité des contreparties d'un datacenter en 2026.",
-      "en": "GAFAM as bond-grade signatures, NVIDIA as market maker, Cerebras as high-potential concentrated tenant, neoclouds on watch: how to rank datacenter counterparty quality in 2026."
-    }
-  },
-  {
-    "frSlug": "neoclouds-resultats-dette-gpu-coreweave-nebius-nvidia-novembre-2026",
-    "enSlug": "neocloud-earnings-gpu-debt-coreweave-nebius-nvidia-november-2026",
-    "date": "2026-11-09",
-    "readTime": "7 min",
-    "category": "Market Analysis",
-    "title": {
-      "fr": "Dette GPU : ce que les résultats de CoreWeave, Nebius et NVIDIA diront vraiment",
-      "en": "GPU Debt: What CoreWeave, Nebius and NVIDIA Earnings Will Really Say"
-    },
-    "excerpt": {
-      "fr": "Semaine du 10 au 17 novembre 2026 : Nebius, CoreWeave, IREN puis NVIDIA publient leurs résultats. Dette de 35,1 Md$, intérêts à 24,9 % du chiffre d'affaires, obligations à 80 cents : ce que les filings disent du modèle néocloud.",
-      "en": "November 10-17, 2026: Nebius, CoreWeave, IREN and NVIDIA report. $35.1bn of debt, interest at 24.9% of revenue, bonds at 80 cents: what the filings actually say about the neocloud model."
-    }
-  },
-  {
     "frSlug": "crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026",
     "enSlug": "neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026",
-    "date": "2026-10-31",
-    "readTime": "6 min",
+    "date": "2026-11-12",
+    "readTime": "9 min",
     "category": "Market Analysis",
     "title": {
-      "fr": "Crise des néoclouds : le rendement de 15 % de CoreWeave inquiète les marchés",
-      "en": "Neocloud Crisis: CoreWeave's 15% Yield Rattles Markets"
+      "fr": "Néoclouds : dette GPU, CoreWeave et qualité du preneur",
+      "en": "Neocloud Debt Risk: CoreWeave, GPUs and Tenant Quality"
     },
     "excerpt": {
-      "fr": "Dette GPU à 15-16 %, CDS de CoreWeave autour de 1 200 points de base, actions néoclouds en chute de 30 à 40 % sur un mois : le modèle de financement de l'IA entre en crise. Analyse des mécanismes et de ce qui change pour l'investisseur.",
-      "en": "GPU-backed debt at 15-16%, CoreWeave CDS near 1,200 basis points, neocloud stocks down 30-40% in a month: the AI funding model is in crisis. What changes for investors."
-    }
+      "fr": "Comment la dette GPU des néoclouds est tarifée selon le locataire, ce que révèlent le T3 de CoreWeave et son carnet de commandes, et pourquoi la qualité du preneur décide de la valeur d'un datacenter.",
+      "en": "How neocloud GPU debt is priced by tenant, what CoreWeave's Q3 and backlog reveal, and why tenant quality decides the value of a datacenter lease."
+    },
+    "sources": [
+      {
+        "label": "TIKR — CoreWeave rises as a rival's results lift neoclouds (novembre 2026)",
+        "url": "https://www.tikr.com/blog/coreweave-rises-3-as-a-rivals-results-lift-neoclouds-not-a-fundamental-reset"
+      },
+      {
+        "label": "CoreWeave — Investor relations (communiqués et résultats)",
+        "url": "https://investors.coreweave.com/"
+      },
+      {
+        "label": "SEC EDGAR — CoreWeave filings",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=coreweave&type=&dateb=&owner=include&count=40"
+      },
+      {
+        "label": "Gartner — Newsroom (prévisions infrastructure IA, octobre 2026)",
+        "url": "https://www.gartner.com/en/newsroom"
+      }
+    ]
   },
   {
     "frSlug": "titan-dc-strategie-long-terme-datacenter-institutionnels-baux-15-ans-2026",

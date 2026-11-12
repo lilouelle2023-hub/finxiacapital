@@ -42,6 +42,20 @@
 /blog/european-approach       /blog/european-approach/        301
 /blog/governance-matters      /blog/governance-matters/        301
 
+# Neocloud consolidation (2026-11-12)
+/blog/coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche  /blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/  301
+/blog/coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche/  /blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/  301
+/en/blog/coreweave-q3-2026-results-debt-neoclouds-market-verdict  /en/blog/neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026/  301
+/en/blog/coreweave-q3-2026-results-debt-neoclouds-market-verdict/  /en/blog/neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026/  301
+/blog/datacenter-hierarchie-preneurs-gafam-nvidia-cerebras-neoclouds-2026  /blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/  301
+/blog/datacenter-hierarchie-preneurs-gafam-nvidia-cerebras-neoclouds-2026/  /blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/  301
+/en/blog/datacenter-tenant-hierarchy-hyperscalers-nvidia-cerebras-neoclouds-2026  /en/blog/neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026/  301
+/en/blog/datacenter-tenant-hierarchy-hyperscalers-nvidia-cerebras-neoclouds-2026/  /en/blog/neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026/  301
+/blog/neoclouds-resultats-dette-gpu-coreweave-nebius-nvidia-novembre-2026  /blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/  301
+/blog/neoclouds-resultats-dette-gpu-coreweave-nebius-nvidia-novembre-2026/  /blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/  301
+/en/blog/neocloud-earnings-gpu-debt-coreweave-nebius-nvidia-november-2026  /en/blog/neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026/  301
+/en/blog/neocloud-earnings-gpu-debt-coreweave-nebius-nvidia-november-2026/  /en/blog/neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026/  301
+
 # Serve blog articles correctly
 /blog/*               /blog/:splat        200
 

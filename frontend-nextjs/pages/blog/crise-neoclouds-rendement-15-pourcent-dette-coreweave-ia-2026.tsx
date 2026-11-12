@@ -9,27 +9,29 @@ export default function ArticleCriseNeocloudsRendementPage() {
 
   const content = {
       "fr": {
-            "title": "Crise des néoclouds : le rendement de 15 % de CoreWeave inquiète les marchés",
-            "description": "Dette GPU à 15-16 %, CDS de CoreWeave autour de 1 200 points de base, actions néoclouds en chute de 30 à 40 % sur un mois : le modèle de financement de l'IA entre en crise. Analyse des mécanismes et de ce qui change pour l'investisseur.",
+            "title": "Néoclouds : dette GPU, CoreWeave et qualité du preneur",
+            "description": "Néoclouds : comment la dette GPU de CoreWeave est tarifée selon le locataire, ce que révèlent le T3 et le carnet de commandes, et ce que cela change pour un bailleur de datacenter.",
             "tag": "Market Analysis",
-            "date": "31 octobre 2026",
-            "readTime": "6 min de lecture",
+            "date": "12 novembre 2026",
+            "readTime": "9 min de lecture",
             "backToBlog": "Retour au blog",
-            "lead": "Fin octobre 2026, la tempête frappe les néoclouds. CoreWeave, Nebius et IREN perdent environ 30 % en un mois, jusqu'à 40 % pour les plus exposés. Pourtant, ces mêmes sociétés affichent des carnets de commandes records. Ce qui se joue n'est pas un doute sur la demande d'IA : c'est un doute sur le modèle de financement qui la porte.",
-            "p1": "Le point de départ est bien connu. CoreWeave, pionnier du néocloud, a levé environ 50 milliards de dollars de dette, en grande partie garantie par ses GPU NVIDIA. Pour attirer les prêteurs, la société offre des rendements de 15 à 16 % — des taux de crédit élevé, comparables à de la dette de turnaround, pour financer des actifs qui se déprécient en trois à cinq ans. Les CDS de la société évoluent autour de 1 200 points de base, un niveau qui signale un risque de détresse perçu.",
-            "p2": "Du 28 au 30 octobre, le signal est devenu systémique. Microsoft a réduit son objectif de dépenses d'infrastructure à 170 milliards de dollars pour l'exercice en cours, Alphabet a chuté de 12 % le 29 octobre et Intel de 29 % le 30 octobre. Le marché lit ces annonces pour ce qu'elles sont : les hypothèses de croissance infinie de la demande de GPU viennent d'être examinées sous un angle comptable.",
-            "h2_1": "Un modèle de financement qui devient le sujet",
-            "p3": "La structure classique du néocloud est simple : emprunter à des taux élevés, acheter des GPU, louer la capacité à des clients souvent eux-mêmes sous pression financière. Le modèle fonctionne tant que deux conditions tiennent : les revenus des clients couvrent la dette, et la valeur résiduelle des GPU ne s'effondre pas trop vite. Quand Microsoft rogne ses dépenses, les deux conditions sont remises en question simultanément.",
-            "p4": "L'autre débat porte sur le financement fournisseur. NVIDIA a annoncé en août 2026 des plateformes de financement mobilisant plus de 500 milliards de dollars avec Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs et KKR. Pour ses partisans, c'est un ancrage de long terme. Pour ses détracteurs, c'est une circularité : le fabricant de GPU prête de l'argent à son propre écosystème pour soutenir ses commandes.",
-            "h2_2": "Crise de liquidité ou crise de modèle ?",
-            "p5": "Pour : la demande d'inférence reste réelle, les hyperscalers affichent toujours des carnets d'investissement massifs, et les contrats de capacité signés ces dernières années ne disparaissent pas avec une ligne de trimestre. Les taux de 15 % ont, de fait, réussi à attirer une énorme liquidité vers le secteur.",
-            "p6": "Contre : la liquidité à 15 % est un prix, pas un verdict. Elle dit que les prêteurs exigent une prime de risque de crédit élevée sur des actifs cycliques. Si les prix de location des GPU baissent plus vite que prévu ou si les renouvellements de contrats arrivent à mauvais moment, l'effet de levier transforme une baisse de marges en crise de bilan.",
-            "h2_3": "Ce que cela change pour l'investisseur en datacenter",
-            "p7": "La première conséquence est une rotation de la prime de risque. Les actifs les plus fragiles ne sont pas les bâtiments : ce sont les bilans construits sur de la dette adossée à du matériel. Les actifs réels — foncier, bâtiments, raccordements électriques, longue durée — gardent une valeur qui ne dépend pas du cycle des GPU.",
-            "p8": "La deuxième conséquence est réglementaire et institutionnelle. Les gestionnaires d'actifs soumis à des mandats d'infrastructure ont des limites strictes sur l'effet de levier et la qualité des collatéraux. Une dette garantie par des GPU qui se déprécient ne passera jamais un comité d'investissement core : c'est précisément le type de complexité que les allocations long terme cherchent à éviter.",
-            "h2_4": "Ce qu'il faut retenir",
-            "p9": "La crise des néoclouds n'est pas la fin de l'IA : c'est sa première crise de maturité financière. Les modèles qui confiaient toute la structure de financement au cycle des GPU seront restructurés, consolidés ou disparus. Les actifs physiques, contractés sur longue durée, traverseront la tempête avec des baisses de valorisation mais sans risque de ruine.",
-            "p10": "Pour évaluer un actif aujourd'hui, trois questions priment : qui porte le risque GPU, quelle est la durée résiduelle des contrats de location, et la dette est-elle adossée au bâtiment ou au matériel ? Les réponses déterminent de quel côté de la ligne l'actif se trouvera quand la poussière retombera.",
+            "lead": "Fin octobre 2026, les néoclouds ont perdu environ 30 % en un mois, jusqu'à 40 % pour les plus exposés, alors que leurs carnets de commandes n'ont jamais été aussi garnis. Le sujet n'est pas la demande d'IA : c'est le coût et la structure du capital qui la finance. Cet article de référence réunit trois lectures : le prix de la dette, le troisième trimestre de CoreWeave, et la hiérarchie des locataires pour un propriétaire de datacenter.",
+            "h2_1": "La dette GPU se tarife selon le locataire, pas selon le GPU",
+            "p1": "CoreWeave, pionnier du segment, a levé de l'ordre de 50 milliards de dollars de dette au total selon la presse financière, en grande partie adossée à ses GPU NVIDIA ; au bilan, le deuxième trimestre faisait ressortir 35,1 milliards de dette contre 5,5 milliards de trésorerie, avec des intérêts équivalant à près d'un quart du chiffre d'affaires trimestriel (chiffres issus des publications de la société, à confirmer sur les filings). Côté marché, les obligations se négocient nettement sous le pair et les CDS évoluent entre 1 000 et 1 200 points de base : le marché price un risque de défaut, pas un simple ralentissement.",
+            "p2": "Les documents de financement montrent une chose décisive : à GPU identiques, le prix de la dette dépend du client. Une facilité adossée à un contrat investment grade est sortie à SOFR + 2,25 % ; une facilité garantie par des clients non notés à SOFR + 4,50 % ; les obligations senior non garanties paient autour de 9,6 à 9,75 %, et l'obligation 2031 a brièvement dépassé 16 % de rendement en octobre (données de la société et de la presse, à confirmer). Un locataire solvable abaisse donc le coût du financement de plusieurs centaines de points de base : il vaut plus que son propre chiffre d'affaires.",
+            "h2_2": "Le troisième trimestre : demande intacte, structure tendue",
+            "p3": "Le 10 novembre, CoreWeave a publié un troisième trimestre que baissiers et haussiers peuvent tous deux revendiquer : revenus de 3,66 milliards de dollars (+168 %), backlog contracté de 132,5 milliards, guidance annuelle relevée, mais aussi une perte nette de 709 millions et 846 millions de charges d'intérêts, plus de quatre fois le résultat opérationnel de 207 millions (chiffres rapportés par la presse financière, à confirmer sur le communiqué de la société). La puissance active dépasse 1,7 GW pour 4,6 GW contractés.",
+            "p4": "Un carnet de commandes n'est pas un chiffre d'affaires : c'est un calendrier de construction à financer. Pour financer un capex 2026 de l'ordre de 37 à 39 milliards, CoreWeave compte sur des convertibles, un programme d'émission au marché et environ 9 milliards de prépaiements clients : ce sont les clients qui cofinancent la croissance. Les bilans divergent d'ailleurs fortement dans le secteur : Nebius, par exemple, combine une dette plus faible, une trésorerie quasi équivalente et des revenus différés prépayés, c'est-à-dire du financement sans intérêts. Même secteur, même matériel, deux risques très différents. Les analystes actions valorisent le backlog ; les obligataires valorisent le bilan.",
+            "h2_3": "La hiérarchie des preneurs en quatre étages",
+            "p5": "Pour un propriétaire de datacenter, la qualité de signature est devenue la première variable de risque, devant le PUE et le prix du foncier. Au sommet, les hyperscalers notés (Microsoft, Google, Amazon, Meta, Oracle) : leur signature transforme un bail en actif quasi obligataire et permet au marché de la titrisation d'accepter ces baux comme collatéral. Juste en dessous, les fabricants de puces devenus contreparties : NVIDIA a accepté en septembre 2025 de racheter jusqu'à 6,3 milliards de dollars de capacité inutilisée de CoreWeave jusqu'en 2032, et a structuré en août 2026 des plateformes visant plus de 500 milliards de dollars de capital tiers avec plusieurs grands gestionnaires d'actifs (annonces de sociétés, à confirmer).",
+            "p6": "Troisième marche, les preneurs d'avenir à structurer : Cerebras, introduit au Nasdaq en mai 2026, dispose d'un contrat-cadre avec OpenAI et déploie ses propres sites, y compris en Europe, mais sa concentration de clientèle et l'abaissement de sa guidance de marge dès le premier trimestre post-IPO imposent des protections (bail ferme cautionné, jalons de livraison). Enfin, les néoclouds à forte dette, acceptables seulement avec prépaiements, dépôts de garantie, jalons de livraison et plan de re-commercialisation de l'actif ; et les acteurs non notés, à refuser sauf garantie externe.",
+            "h2_4": "Consolidation ou crise de refinancement ?",
+            "p7": "Gartner prévoit que plus de 80 % des néoclouds cesseront d'exister en tant qu'acteurs indépendants d'ici 2030 (communiqué du 14 octobre 2026, à confirmer). Nuance importante : ne plus être indépendant ne signifie pas faire défaut. Les dettes adossées aux GPU isolent le matériel, le contrat client et le bail dans une filiale dédiée ; en cas de rachat, le collatéral survit. Le risque de consolidation est surtout porté par les actionnaires, tandis que les prêteurs garantis l'ont déjà tarifé, ce que dit précisément l'écart entre SOFR + 2,25 % et 9,75 %.",
+            "p8": "Reste le débat circulaire : le financement fournisseur est un ancrage de long terme pour ses partisans, une circularité pour ses détracteurs. Tant que les marchés du capital restent ouverts, la machine tourne ; un assèchement de la liquidité est le scénario qui la grippe. Notre lecture : l'octobre 2026 des néoclouds est d'abord une crise de modèle de financement, pas de demande. C'est une hypothèse de travail FINXIA, non un fait de marché.",
+            "p9": "Pour le bailleur, la conséquence est concrète. Les actifs fragiles ne sont pas les bâtiments, mais les bilans construits sur de la dette adossée à du matériel qui se déprécie en trois à cinq ans. Foncier, bâtiment, raccordement électrique et bail long conservent une valeur indépendante du cycle des GPU, à condition que le locataire soit solvable. Nous notons chaque contrepartie sur quatre axes : solvabilité autonome, diversité de clientèle, part de revenus contractés, flexibilité technique.",
+            "h2_5": "Ce qu'il faut retenir",
+            "p10": "La demande d'IA est vérifiée et contractée ; le coût du capital est la variable décisive des néoclouds ; la qualité du preneur change non seulement le risque d'impayé mais le coût de tout le capital de l'actif. Avant tout bail, trois questions : qui porte le risque GPU, quelle est la durée résiduelle du contrat, la dette est-elle adossée au bâtiment ou au matériel ? Lire la contrepartie comme un créancier, pas comme un commercial. Contenu informatif, ne constituant ni un conseil en investissement ni une offre de titres.",
+            "readAlso": "À lire aussi :",
             "authorBio": "est Co-Fondatrice et Directrice des Investissements (CIO) de FINXIA Capital SCSp, véhicule d'investissement propriétaire luxembourgeois positionné sur les actifs réels et l'infrastructure IA.",
             "learnMoreTitle": "En savoir plus",
             "link1Title": "Nos Stratégies",
@@ -38,27 +40,29 @@ export default function ArticleCriseNeocloudsRendementPage() {
             "link2Desc": "France, Espagne, Italie : nos marchés cibles européens"
       },
       "en": {
-            "title": "Neocloud Crisis: CoreWeave's 15% Yield Rattles Markets",
-            "description": "GPU-backed debt at 15-16%, CoreWeave CDS near 1,200 basis points, neocloud stocks down 30-40% in a month: the AI funding model is in crisis. What changes for investors.",
+            "title": "Neocloud Debt Risk: CoreWeave, GPUs and Tenant Quality",
+            "description": "Neocloud debt explained: how CoreWeave's GPU financing is priced by tenant, what Q3 and the backlog reveal, and what it means for datacenter landlords.",
             "tag": "Market Analysis",
-            "date": "October 31, 2026",
-            "readTime": "6 min read",
+            "date": "November 12, 2026",
+            "readTime": "9 min read",
             "backToBlog": "Back to blog",
-            "lead": "In late October 2026 the storm hit the neoclouds. CoreWeave, Nebius and IREN fell roughly 30% in a month, up to 40% for the most exposed. Yet their order books remain at record levels. The doubt is not about AI demand — it is about the funding model carrying it.",
-            "p1": "CoreWeave has raised roughly $50bn of debt, much of it secured by its NVIDIA GPUs. To attract lenders it pays 15-16% yields — turnaround-style credit rates financing assets that depreciate in three to five years. Its CDS trade near 1,200 basis points, a level signalling perceived distress risk.",
-            "p2": "Between October 28 and 30 the signal turned systemic. Microsoft cut its infrastructure spending target to $170bn, Alphabet fell 12% on October 29 and Intel 29% on October 30. The market read these announcements as what they are: infinite GPU demand growth has just been examined from an accounting angle.",
-            "h2_1": "The Funding Model Becomes the Story",
-            "p3": "The neocloud structure is simple: borrow at high rates, buy GPUs, lease capacity to customers often under financial pressure themselves. It works while two conditions hold: client revenue covers the debt, and GPU residual value does not collapse too fast. When Microsoft trims spending, both conditions are questioned at once.",
-            "p4": "The other debate is vendor financing. In August 2026 NVIDIA announced financing platforms mobilising over $500bn with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR. Supporters call it long-term anchoring; critics call it circularity — the GPU maker lending into its own ecosystem to support its orders.",
-            "h2_2": "Liquidity Crisis or Model Crisis?",
-            "p5": "The bull case: inference demand is real, hyperscalers still show massive investment plans, and capacity contracts signed over recent years do not vanish with one quarter.",
-            "p6": "The bear case: liquidity at 15% is a price, not a verdict. It says lenders demand a high credit risk premium on cyclical assets. If GPU rental prices fall faster than expected, leverage turns a margin decline into a balance-sheet crisis.",
-            "h2_3": "What Changes for Datacenter Investors",
-            "p7": "Risk premiums are rotating. The fragile assets are not buildings but balance sheets built on hardware-backed debt. Real assets — land, buildings, grid connections, long duration — retain value independent of the GPU cycle.",
-            "p8": "The second consequence is institutional. Core infrastructure mandates impose strict limits on leverage and collateral quality. Debt secured by depreciating GPUs will never pass a core investment committee — precisely the complexity long-term allocations avoid.",
-            "h2_4": "Key Takeaways",
-            "p9": "The neocloud crisis is not the end of AI: it is its first financial maturity crisis. Models that tied their entire funding structure to the GPU cycle will be restructured, consolidated or disappear. Physical assets on long contracts will survive with lower valuations but no risk of ruin.",
-            "p10": "Three questions now come first: who carries the GPU risk, what is the residual contract duration, and is the debt secured on the building or the hardware? The answers determine which side of the line an asset sits on when the dust settles.",
+            "lead": "In late October 2026 neocloud stocks fell roughly 30% in a month, up to 40% for the most exposed, while order books had never been fuller. The issue is not AI demand: it is the cost and structure of the capital financing it. This reference article combines three readings: the price of debt, CoreWeave's third quarter, and the tenant hierarchy for a datacenter owner.",
+            "h2_1": "GPU Debt Is Priced by the Tenant, Not the GPU",
+            "p1": "CoreWeave, the segment's pioneer, has raised in the order of $50bn of debt in total according to financial press, largely secured on its NVIDIA GPUs; on the balance sheet, Q2 showed $35.1bn of debt against $5.5bn of cash, with interest equal to nearly a quarter of quarterly revenue (company disclosures, to be confirmed against filings). In markets, bonds trade well below par and CDS sit between 1,000 and 1,200 basis points: the market is pricing default risk, not mere slowdown.",
+            "p2": "Financing documents show something decisive: for identical GPUs, the price of debt depends on the customer. A facility backed by an investment-grade contract priced at SOFR + 2.25%; one backed by unrated customers at SOFR + 4.50%; senior unsecured bonds pay roughly 9.6-9.75%, and the 2031 bond briefly exceeded a 16% yield in October (company and press data, to be confirmed). A creditworthy tenant lowers funding cost by several hundred basis points: it is worth more than its own revenue.",
+            "h2_2": "The Third Quarter: Demand Intact, Structure Strained",
+            "p3": "On November 10 CoreWeave reported a quarter both bulls and bears can claim: revenue of $3.66bn (+168%), contracted backlog of $132.5bn, raised full-year guidance, but also a $709m net loss and $846m of interest expense, more than four times the $207m operating income (figures reported by financial press, to be confirmed against the company release). Active power exceeds 1.7 GW against 4.6 GW contracted.",
+            "p4": "A backlog is not revenue: it is a construction schedule to finance. To fund 2026 capex of roughly $37-39bn, CoreWeave relies on convertibles, an at-the-market programme and about $9bn of customer prepayments: customers are co-financing growth. Balance sheets diverge sharply across the sector: Nebius, for example, combines lower debt, near-matching cash and prepaid deferred revenue, which is interest-free funding. Same sector, same hardware, very different risk. Equity analysts value the backlog; bond investors value the balance sheet.",
+            "h2_3": "The Four-Rung Tenant Hierarchy",
+            "p5": "For a datacenter owner, signature quality has become the first risk variable, ahead of PUE and land price. At the top, rated hyperscalers (Microsoft, Google, Amazon, Meta, Oracle): their signature turns a lease into a quasi-bond and lets securitisation markets accept these leases as collateral. Just below, chipmakers turned counterparties: NVIDIA agreed in September 2025 to buy up to $6.3bn of CoreWeave's unused capacity through 2032, and in August 2026 structured platforms targeting over $500bn of third-party capital with several large asset managers (company announcements, to be confirmed).",
+            "p6": "Third rung, future tenants to be structured: Cerebras, listed on Nasdaq in May 2026, has a framework contract with OpenAI and deploys its own sites, including in Europe, but customer concentration and a lowered margin guidance in its first post-IPO quarter call for protections (firm guaranteed lease, delivery milestones). Last, high-debt neoclouds, acceptable only with prepayments, security deposits, delivery milestones and an asset re-letting plan; and unrated players, to refuse absent external guarantee.",
+            "h2_4": "Consolidation or Refinancing Crisis?",
+            "p7": "Gartner forecasts that over 80% of neoclouds will cease to exist as independents by 2030 (14 October 2026 release, to be confirmed). Important nuance: ceasing to be independent does not mean defaulting. GPU-backed debt ring-fences the hardware, customer contract and lease in a dedicated subsidiary; in a takeover the collateral survives. Consolidation risk falls mainly on shareholders, while secured lenders have already priced it, which is exactly what the gap between SOFR + 2.25% and 9.75% says.",
+            "p8": "Then there is the circularity debate: vendor financing is a long-term anchor to supporters, circularity to critics. While capital markets stay open the machine runs; a liquidity drought is the scenario that jams it. Our reading: October 2026 for neoclouds is first a funding-model crisis, not a demand crisis. This is a FINXIA working hypothesis, not a market fact.",
+            "p9": "For the landlord the consequence is concrete. The fragile assets are not buildings but balance sheets built on hardware-backed debt depreciating over three to five years. Land, building, grid connection and long lease keep value independent of the GPU cycle, provided the tenant is solvent. We score each counterparty on four axes: standalone solvency, customer diversity, share of contracted revenue, technical flexibility.",
+            "h2_5": "Key Takeaways",
+            "p10": "AI demand is verified and contracted; cost of capital is the decisive neocloud variable; tenant quality changes not just default risk but the cost of the asset's entire capital. Before any lease, three questions: who carries the GPU risk, what is the residual contract term, is the debt secured on the building or the hardware? Read the counterparty like a creditor, not a salesperson. Informational content, not investment advice or an offer of securities.",
+            "readAlso": "Read also:",
             "authorBio": "is Co-Founder and Chief Investment Officer (CIO) of FINXIA Capital SCSp, a Luxembourg proprietary investment vehicle positioned on real assets and AI infrastructure.",
             "learnMoreTitle": "Learn more",
             "link1Title": "Our Strategies",
@@ -79,7 +83,7 @@ export default function ArticleCriseNeocloudsRendementPage() {
     "description": t.description,
     "image": "https://finxiacapital.com/logo-finxia.png",
     "datePublished": "2026-10-31T09:00:00+01:00",
-    "dateModified": "2026-10-31T09:00:00+01:00",
+    "dateModified": "2026-11-12T09:00:00+01:00",
     "author": {
       "@type": "Person",
       "name": "Lila Benhammou",
@@ -92,7 +96,7 @@ export default function ArticleCriseNeocloudsRendementPage() {
       "logo": { "@type": "ImageObject", "url": "https://finxiacapital.com/logo-finxia.png" }
     },
     "articleSection": "Market Analysis",
-    "keywords": language === 'fr' ? "neocloud, CoreWeave, rendement 15%, dette, GPU, NVIDIA, IA, datacenter, investissement" : "neocloud, CoreWeave, 15% yield, debt, GPU, NVIDIA, AI, datacenter, investment"
+    "keywords": language === 'fr' ? "néocloud, CoreWeave, dette GPU, locataire datacenter, NVIDIA, Cerebras, bail, investissement" : "neocloud, CoreWeave, GPU debt, datacenter tenant, NVIDIA, Cerebras, lease, investment"
   };
 
   const breadcrumbSchema = {
@@ -142,15 +146,23 @@ export default function ArticleCriseNeocloudsRendementPage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-slate prose-lg max-w-none">
               <p className="text-xl text-slate-700 font-medium leading-relaxed mb-8">{t.lead}</p>
-              <p>{t.p1}</p><p>{t.p2}</p>
               <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_1}</h2>
-              <p>{t.p3}</p><p>{t.p4}</p>
+              <p>{t.p1}</p><p>{t.p2}</p>
               <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_2}</h2>
-              <p>{t.p5}</p><p>{t.p6}</p>
+              <p>{t.p3}</p><p>{t.p4}</p>
               <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_3}</h2>
-              <p>{t.p7}</p><p>{t.p8}</p>
+              <p>{t.p5}</p><p>{t.p6}</p>
               <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_4}</h2>
-              <p>{t.p9}</p><p>{t.p10}</p>
+              <p>{t.p7}</p><p>{t.p8}</p><p>{t.p9}</p>
+              <h2 className="font-serif text-2xl md:text-3xl mt-12 mb-6">{t.h2_5}</h2>
+              <p>{t.p10}</p>
+              <p>{t.readAlso}{' '}
+                <Link href="/blog/ipo-anthropic-ant-valorisation-consommation-datacenters-2026/">{language === 'fr' ? "IPO Anthropic et consommation de datacenters" : "Anthropic IPO and datacenter consumption"}</Link>{' · '}
+                <Link href="/blog/datacenter-securiser-sortie-turbulences-ia-liquidite-investissement-2026/">{language === 'fr' ? "sécuriser la sortie d'un datacenter" : "securing a datacenter exit"}</Link>{' · '}
+                <Link href="/blog/neoclouds-vs-hyperscalers-europe/">{language === 'fr' ? "néoclouds vs hyperscalers en Europe" : "neoclouds vs hyperscalers in Europe"}</Link>{' · '}
+                <Link href="/blog/financement-infrastructure-ia-gpu-credit-spv-dette-leasing-datacenter-2026/">{language === 'fr' ? "financement GPU, SPV et dette" : "GPU financing, SPV and debt"}</Link>{' · '}
+                <Link href="/strategies/">TITAN DC AI</Link>
+              </p>
             </div>
             <div className="mt-16 pt-8 border-t border-slate-200"><p className="text-slate-600 text-sm leading-relaxed"><strong className="text-slate-900">Lila Benhammou</strong> {t.authorBio}</p></div>
             <div className="mt-16 pt-8 border-t border-slate-200">
