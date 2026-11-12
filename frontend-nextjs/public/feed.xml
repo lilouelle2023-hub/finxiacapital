@@ -8,13 +8,23 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 11 Nov 2026 14:21:31 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 12:58:41 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
       <title>FINXIA Capital</title>
       <link>https://finxiacapital.com/</link>
     </image>
+    <item>
+      <title>SPV datacenter : holding, dette et PPA</title>
+      <link>https://finxiacapital.com/blog/spv-datacenter-structures-luxembourg-holding-dette-ppa/</link>
+      <guid isPermaLink="true">https://finxiacapital.com/blog/spv-datacenter-structures-luxembourg-holding-dette-ppa/</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Structuration d&apos;un SPV datacenter : chaîne de détention (véhicule, holding, SPV d&apos;actif), dette de projet, garanties, covenants, PPA et bail long terme. Cadre pratique pour l&apos;Europe.</description>
+      <category>Market Analysis</category>
+      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/datacenter-spv-structures-luxembourg-holding-debt-ppa/" />
+      
+    </item>
     <item>
       <title>CoreWeave T3 2026 : revenus record, intérêts record — le verdict nuancé du marché</title>
       <link>https://finxiacapital.com/blog/coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche/</link>
@@ -406,12 +416,12 @@
       
     </item>
     <item>
-      <title>Shell Lease NNN vs Build-to-Suit : Quel Modèle Locatif pour l&apos;Infrastructure Datacenter en Europe ?</title>
+      <title>Shell lease NNN ou build-to-suit : le comparatif</title>
       <link>https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe/</link>
       <guid isPermaLink="true">https://finxiacapital.com/blog/shell-lease-nnn-vs-build-to-suit-datacenter-europe/</guid>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
-      <description>Powered shell en triple net (NNN) ou build-to-suit sur mesure : deux modèles dominent le marché datacenter européen, avec des implications de risque et de rendement fondamentalement différentes.</description>
-      <category>Real Assets &amp; Infrastructure</category>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Shell lease NNN ou build-to-suit : définitions, répartition des responsabilités, tableau comparatif et données de marché CBRE 2026 pour choisir le modèle locatif d&apos;un datacenter européen.</description>
+      <category>Investment Strategy</category>
       <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/shell-lease-nnn-vs-build-to-suit-datacenter-leasing-europe/" />
       
     </item>

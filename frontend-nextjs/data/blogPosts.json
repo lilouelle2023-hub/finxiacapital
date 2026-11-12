@@ -1,5 +1,38 @@
 [
   {
+    "frSlug": "spv-datacenter-structures-luxembourg-holding-dette-ppa",
+    "enSlug": "datacenter-spv-structures-luxembourg-holding-debt-ppa",
+    "date": "2026-11-12",
+    "readTime": "12 min",
+    "category": "Market Analysis",
+    "title": {
+      "fr": "SPV datacenter : holding, dette et PPA",
+      "en": "Datacenter SPV: Holding, Debt and PPA Structures"
+    },
+    "excerpt": {
+      "fr": "Structuration d'un SPV datacenter : chaîne de détention (véhicule, holding, SPV d'actif), dette de projet, garanties, covenants, PPA et bail long terme. Cadre pratique pour l'Europe.",
+      "en": "How to structure a datacenter SPV: holding chain (fund vehicle, holding, asset SPV), project debt, security, covenants, PPA and long-term lease. A practical framework for Europe."
+    },
+    "sources": [
+      {
+        "label": "EUR-Lex — Directive (UE) 2023/1791, article 12 (obligations de déclaration des datacenters)",
+        "url": "https://eur-lex.europa.eu/eli/dir/2023/1791/oj"
+      },
+      {
+        "label": "EUR-Lex — Règlement délégué (UE) 2024/1364 (base de données européenne des datacenters, mars 2024)",
+        "url": "https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj"
+      },
+      {
+        "label": "BEI — Data centres for Europe's digital future (advisory, février 2025)",
+        "url": "https://advisory.eib.org/stories/data-centres-for-europe-digital-future"
+      },
+      {
+        "label": "BEI — Activités financières de la Banque européenne d'investissement, rapport annuel 2024 (OJ C, 31 mars 2026)",
+        "url": "https://eur-lex.europa.eu/eli/C/2026/1432/oj/eng"
+      }
+    ]
+  },
+  {
     "frSlug": "ipo-anthropic-ant-valorisation-consommation-datacenters-2026",
     "enSlug": "anthropic-ipo-ant-valuation-consumption-revenue-datacenters-2026",
     "date": "2026-11-11",
