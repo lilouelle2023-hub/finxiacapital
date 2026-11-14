@@ -857,17 +857,43 @@
   {
     "frSlug": "pue-optimisation-datacenters-europeens-guide-2026",
     "enSlug": "pue-optimization-european-datacenters-guide-2026",
-    "date": "2026-04-15",
-    "readTime": "11 min",
-    "category": "Technical Guide",
+    "date": "2026-11-14",
+    "readTime": "12 min",
+    "category": "Energy & Infrastructure",
     "title": {
-      "fr": "Optimisation PUE dans les Datacenters Européens : Guide 2026",
-      "en": "PUE Optimization in European Datacenters: 2026 Guide"
+      "fr": "PUE : définition, formule de calcul et seuils 2026",
+      "en": "PUE Explained: Formula, Calculation and Targets"
     },
     "excerpt": {
-      "fr": "Le PUE est devenu l'indicateur de performance le plus scruté de l'industrie des datacenters. Guide complet d'optimisation et de certification IPMVP.",
-      "en": "PUE has become the most scrutinized performance indicator in the datacenter industry. Complete optimization and IPMVP certification guide."
-    }
+      "fr": "PUE : définition normalisée ISO/IEC 30134-2, formule de calcul, exemple chiffré illustratif, moyennes 2025 (Uptime Institute 1,54 ; Google 1,09) et seuils réglementaires EED et EnEfG allemand, expliqués pour l'investisseur.",
+      "en": "PUE explained for investors: ISO/IEC 30134-2 definition, the calculation formula, an illustrative worked example, 2025 averages (Uptime 1.54, Google 1.09) and binding EED and German EnEfG thresholds."
+    },
+    "sources": [
+      {
+        "label": "ISO/IEC 30134-2:2016 — Power usage effectiveness",
+        "url": "https://www.iso.org/standard/63451.html"
+      },
+      {
+        "label": "EUR-Lex — Directive (UE) 2023/1791 (EED), article 12",
+        "url": "https://eur-lex.europa.eu/eli/dir/2023/1791/oj"
+      },
+      {
+        "label": "EUR-Lex — Règlement délégué (UE) 2024/1364 du 14 mars 2024",
+        "url": "https://eur-lex.europa.eu/eli/reg_del/2024/1364/oj"
+      },
+      {
+        "label": "Energieeffizienzgesetz (EnEfG), § 11 — seuils PUE datacenters",
+        "url": "https://www.gesetze-im-internet.de/enefg/"
+      },
+      {
+        "label": "Uptime Institute — Global Data Center Survey 2025 (PUE moyen 1,54)",
+        "url": "https://uptimeinstitute.com/resources/research-and-reports"
+      },
+      {
+        "label": "Climate Neutral Data Centre Pact — cibles PUE 1,3 / 1,4",
+        "url": "https://www.climateneutraldatacentre.net/"
+      }
+    ]
   },
   {
     "frSlug": "scsp-vs-raif-vehicule-investissement-luxembourgeois",

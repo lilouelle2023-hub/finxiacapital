@@ -8,7 +8,7 @@
     <link>https://finxiacapital.com/blog/</link>
     <description>Investissement en infrastructure datacenter IA en Europe. Analyses stratégiques, réglementation EED, et opportunités brown-to-green.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 12 Nov 2026 12:58:41 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:41:52 GMT</lastBuildDate>
     <atom:link href="https://finxiacapital.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://finxiacapital.com/logo-finxia.png</url>
@@ -23,16 +23,6 @@
       <description>Structuration d&apos;un SPV datacenter : chaîne de détention (véhicule, holding, SPV d&apos;actif), dette de projet, garanties, covenants, PPA et bail long terme. Cadre pratique pour l&apos;Europe.</description>
       <category>Market Analysis</category>
       <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/datacenter-spv-structures-luxembourg-holding-debt-ppa/" />
-      
-    </item>
-    <item>
-      <title>CoreWeave T3 2026 : revenus record, intérêts record — le verdict nuancé du marché</title>
-      <link>https://finxiacapital.com/blog/coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche/</link>
-      <guid isPermaLink="true">https://finxiacapital.com/blog/coreweave-t3-2026-resultats-dette-neoclouds-verdict-marche/</guid>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-      <description>CoreWeave a battu le consensus au T3 2026 avec 3,66 milliards de dollars de revenus (+168 %) et relevé sa guidance, mais ses charges d&apos;intérêts de 846 millions dépassent quatre fois son résultat opérationnel. Ce que cette publication charnière révèle de la valeur des néoclouds et des datacenters.</description>
-      <category>Market Analysis</category>
-      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/coreweave-q3-2026-results-debt-neoclouds-market-verdict/" />
       
     </item>
     <item>
@@ -66,31 +56,11 @@
       
     </item>
     <item>
-      <title>Datacenters : la hiérarchie des preneurs, des GAFAM à Cerebras en passant par les néoclouds</title>
-      <link>https://finxiacapital.com/blog/datacenter-hierarchie-preneurs-gafam-nvidia-cerebras-neoclouds-2026/</link>
-      <guid isPermaLink="true">https://finxiacapital.com/blog/datacenter-hierarchie-preneurs-gafam-nvidia-cerebras-neoclouds-2026/</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description>GAFAM en signature-obligation, NVIDIA en faiseur de marché, Cerebras en preneur à fort potentiel concentré, néoclouds sous surveillance : comment hiérarchiser la qualité des contreparties d&apos;un datacenter en 2026.</description>
-      <category>Market Analysis</category>
-      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/datacenter-tenant-hierarchy-hyperscalers-nvidia-cerebras-neoclouds-2026/" />
-      
-    </item>
-    <item>
-      <title>Dette GPU : ce que les résultats de CoreWeave, Nebius et NVIDIA diront vraiment</title>
-      <link>https://finxiacapital.com/blog/neoclouds-resultats-dette-gpu-coreweave-nebius-nvidia-novembre-2026/</link>
-      <guid isPermaLink="true">https://finxiacapital.com/blog/neoclouds-resultats-dette-gpu-coreweave-nebius-nvidia-novembre-2026/</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description>Semaine du 10 au 17 novembre 2026 : Nebius, CoreWeave, IREN puis NVIDIA publient leurs résultats. Dette de 35,1 Md$, intérêts à 24,9 % du chiffre d&apos;affaires, obligations à 80 cents : ce que les filings disent du modèle néocloud.</description>
-      <category>Market Analysis</category>
-      <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/neocloud-earnings-gpu-debt-coreweave-nebius-nvidia-november-2026/" />
-      
-    </item>
-    <item>
-      <title>Crise des néoclouds : le rendement de 15 % de CoreWeave inquiète les marchés</title>
+      <title>Néoclouds : dette GPU, CoreWeave et qualité du preneur</title>
       <link>https://finxiacapital.com/blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/</link>
       <guid isPermaLink="true">https://finxiacapital.com/blog/crise-neoclouds-rendement-15-pourcent-dette-coreweave-ia-2026/</guid>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Dette GPU à 15-16 %, CDS de CoreWeave autour de 1 200 points de base, actions néoclouds en chute de 30 à 40 % sur un mois : le modèle de financement de l&apos;IA entre en crise. Analyse des mécanismes et de ce qui change pour l&apos;investisseur.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Comment la dette GPU des néoclouds est tarifée selon le locataire, ce que révèlent le T3 de CoreWeave et son carnet de commandes, et pourquoi la qualité du preneur décide de la valeur d&apos;un datacenter.</description>
       <category>Market Analysis</category>
       <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/neocloud-crisis-15-percent-yield-coreweave-debt-ai-2026/" />
       
@@ -576,12 +546,12 @@
       
     </item>
     <item>
-      <title>Optimisation PUE dans les Datacenters Européens : Guide 2026</title>
+      <title>PUE : définition, formule de calcul et seuils 2026</title>
       <link>https://finxiacapital.com/blog/pue-optimisation-datacenters-europeens-guide-2026/</link>
       <guid isPermaLink="true">https://finxiacapital.com/blog/pue-optimisation-datacenters-europeens-guide-2026/</guid>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
-      <description>Le PUE est devenu l&apos;indicateur de performance le plus scruté de l&apos;industrie des datacenters. Guide complet d&apos;optimisation et de certification IPMVP.</description>
-      <category>Technical Guide</category>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+      <description>PUE : définition normalisée ISO/IEC 30134-2, formule de calcul, exemple chiffré illustratif, moyennes 2025 (Uptime Institute 1,54 ; Google 1,09) et seuils réglementaires EED et EnEfG allemand, expliqués pour l&apos;investisseur.</description>
+      <category>Energy &amp; Infrastructure</category>
       <link rel="alternate" hreflang="en" href="https://finxiacapital.com/en/blog/pue-optimization-european-datacenters-guide-2026/" />
       
     </item>
